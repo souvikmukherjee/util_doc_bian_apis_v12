@@ -1,0 +1,183 @@
+---
+id: OpenItemManagement
+title: OpenItemManagement
+---
+
+<h1 style='color:red;'>OpenItemManagement</h1>
+
+**BIAN Documentation:** [OpenItemManagement v12](https://app.swaggerhub.com/apis/BIAN-3/OpenItemManagement/12.0.0)
+
+<details open>
+  <summary><span style='color:red;'>POST: /OpenItemManagement/Initiate</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) InCR Initiate an open item procedure
+
+  **Documentation**
+
+  This API path "/OpenItemManagement/Initiate" allows you to initiate a process for handling and resolving open items, like overdue loan payments, associated with accounts. By sending a POST request to this endpoint, you can create a new resource to start the procedure for managing these open items. This service is designed to help streamline the resolution of outstanding issues related to accounts.
+
+  **Limitations**
+
+  POST: Based on RESTful best practices, the path '/OpenItemManagement/Initiate' could be renamed to something that is more resource-focused and follows a noun-based approach. For example, it could be renamed to '/item', '/items', '/open-items', or '/item-initiation'. These suggestions represent a more resource-oriented naming convention that aligns with REST standards.
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>PUT: /OpenItemManagement/{openitemmanagementid}/Update</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) UpCR Update details of an active open item procedure
+
+  **Documentation**
+
+  This BIAN API path allows you to update the details of an active open item procedure related to managing and resolving issues with accounts, such as overdue loan payments. By making a PUT request to this endpoint with the specific ID of the open item management, you can modify or update the information associated with that particular open item procedure. This functionality helps streamline the management of open items and facilitates the resolution process for accounts with outstanding issues.
+
+  **Limitations**
+
+  PUT: The appropriate name for the path '/OpenItemManagement/{openitemmanagementid}/Update' following RESTful best practices would be:
+
+PUT /OpenItemManagement/{openitemmanagementid}
+
+This name reflects the use of the HTTP method (PUT) for updating a specific resource (OpenItemManagement) identified by its unique identifier (openitemmanagementid).
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>PUT: /OpenItemManagement/{openitemmanagementid}/Request</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) RqCR Request manual intervention with an active open item procedure
+
+  **Documentation**
+
+  This API path allows you to update an existing open item management request by requesting manual intervention in resolving an open item on an account, such as overdue loan payments. The PUT method is used to make changes to an existing resource, in this case, the open item management request identified by the provided {openitemmanagementid}.
+
+  **Limitations**
+
+  PUT: The name of the path should be `/open-item-management/{openitemmanagementid}/requests` following REST best practices. The path should use lowercase letters and kebab-case for better readability and consistency.
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>GET: /OpenItemManagement/{openitemmanagementid}/Retrieve</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) ReCR Retrieve details about an open item
+
+  **Documentation**
+
+  This BIAN API path allows you to retrieve details about a specific open item in the Open Item Management system by providing the unique identifier for that item. This can be useful for handling tasks related to resolving open items, like overdue loan payments. By making a GET request to this path with the appropriate ID, you can access information about the open item for further processing or resolution.
+
+  **Limitations**
+
+  GET: Following REST best practices, the name of the path should be something that represents a resource, not an action. A suitable name for the path '/OpenItemManagement/{openitemmanagementid}/Retrieve' could be
+'/OpenItemManagements/{openitemmanagementid}'. This path conveys that you are accessing a specific Open Item Management resource identified by its ID.
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>GET: /OpenItemManagement/{openitemmanagementid}/Tracking/{trackingid}/Retrieve</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) ReBQ Retrieve tracking details about an open item
+
+  **Documentation**
+
+  This API path allows you to retrieve tracking details about a specific open item within the Open Item Management service. You can provide the ID of the open item you are interested in and also specify the tracking ID to retrieve information about the tracking details associated with that item. This API is useful for managing and resolving issues like overdue loan payments or other account-related open items.
+
+  **Limitations**
+
+  GET: Based on RESTful API best practices, the name of the path could be as follows:
+'/open-item-managements/{openitemmanagementid}/trackings/{trackingid}'
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>POST: /OpenItemManagement/{openitemmanagementid}/Repayment/Initiate</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) InBQ Initiate repayment transaction against an open item
+
+  **Documentation**
+
+  This BIAN API path allows you to initiate a repayment transaction against a specific open item within an account. It is designed to help manage and resolve outstanding items like overdue loan payments. By using this API endpoint, you can take action to start the process of repaying an open item associated with an account.
+
+  **Limitations**
+
+  POST: The name of the path should be:
+
+"/open-item-management/{openitemmanagementid}/repayments"
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>PUT: /OpenItemManagement/{openitemmanagementid}/Repayment/{repaymentid}/Update</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) UpBQ Update repayment transaction details
+
+  **Documentation**
+
+  This API path "Update" allows you to update the repayment transaction details associated with a specific open item management ID and repayment ID. It is used for managing and resolving open items against accounts, such as overdue loan payments. By making a PUT request to this endpoint, you can modify and update information related to a repayment transaction within the context of open item management.
+
+  **Limitations**
+
+  PUT: Following REST best practices, the name of the path should be:
+
+'/open-item-management/{openitemmanagementid}/repayment/{repaymentid}'
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>PUT: /OpenItemManagement/{openitemmanagementid}/Repayment/{repaymentid}/Execute</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) ExBQ Execute an automated repayment task (e.g. trigger scheduled repayment)
+
+  **Documentation**
+
+  This API path allows the user to update an existing resource related to the repayment of open items against accounts. Specifically, it enables the execution of an automated repayment task, such as triggering a scheduled repayment for a particular open item identified by the {openitemmanagementid} and {repaymentid}. Essentially, it provides a way to manage and process repayments for outstanding items like overdue loan payments through automation.
+
+  **Limitations**
+
+  PUT: Following REST best practices, the name of the path should be structured in a way that is clear, concise, and adheres to standard naming conventions. For the given path, a name like '/open-item-management/{openitemmanagementid}/repayments/{repaymentid}/execute' would be more suitable. This naming convention uses lowercase letters, hyphens for word separation, and singular nouns for resources.
+
+</details>
+
+<details open>
+  <summary><span style='color:red;'>GET: /OpenItemManagement/{openitemmanagementid}/Repayment/{repaymentid}/Retrieve</span></summary>
+
+  **Description**
+
+  This service domain provides a service for handling the resolution of open items against accounts (such as overdue loan payments) ReBQ retrieve details about a repayment transaction
+
+  **Documentation**
+
+  This API path allows you to retrieve details about a repayment transaction related to handling open items against accounts. For example, if there are overdue loan payments that need to be resolved, this API can be used to retrieve specific information about a repayment transaction associated with a particular open item management ID and repayment ID.
+
+  **Limitations**
+
+  GET: The name of the path should be:
+ 
+```
+/OpenItemManagement/{openitemmanagementid}/Repayment/{repaymentid}
+``` 
+
+The "Retrieve" action is typically expressed using HTTP method such as GET, so the full path would be: 
+
+```
+GET /OpenItemManagement/{openitemmanagementid}/Repayment/{repaymentid}
+```
+
+</details>
+
+> **Disclaimer:** This guide was created with OpenAI and might not be perfect. Enjoy the insights, but double-check important details!
