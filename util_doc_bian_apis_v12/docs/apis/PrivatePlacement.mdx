@@ -1,42 +1,14 @@
 # PrivatePlacement
 
-## Table of Contents
-- [PUT: /PrivatePlacement/\{privateplacementid\}/Control](#put-/privateplacement/\{privateplacementid\}/control)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/Exchange](#put-/privateplacement/\{privateplacementid\}/exchange)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/Execute](#put-/privateplacement/\{privateplacementid\}/execute)
-- [POST: /PrivatePlacement/Initiate](#post-/privateplacement/initiate)
-- [GET: /PrivatePlacement/\{privateplacementid\}/Notify](#get-/privateplacement/\{privateplacementid\}/notify)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/Request](#put-/privateplacement/\{privateplacementid\}/request)
-- [GET: /PrivatePlacement/\{privateplacementid\}/Retrieve](#get-/privateplacement/\{privateplacementid\}/retrieve)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/Update](#put-/privateplacement/\{privateplacementid\}/update)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Exchange](#put-/privateplacement/\{privateplacementid\}/privateplacement/\{privateplacementid\}/exchange)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Exchange](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/\{privateplacementinstrumentmaintenanceid\}/exchange)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Exchange](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/\{privateplacementinstrumentspecificationid\}/exchange)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Execute](#put-/privateplacement/\{privateplacementid\}/privateplacement/\{privateplacementid\}/execute)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Execute](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/\{privateplacementinstrumentmaintenanceid\}/execute)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Execute](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/\{privateplacementinstrumentspecificationid\}/execute)
-- [POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/Initiate](#post-/privateplacement/\{privateplacementid\}/privateplacement/initiate)
-- [POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/Initiate](#post-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/initiate)
-- [POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/Initiate](#post-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/initiate)
-- [GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Notify](#get-/privateplacement/\{privateplacementid\}/privateplacement/\{privateplacementid\}/notify)
-- [GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Notify](#get-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/\{privateplacementinstrumentmaintenanceid\}/notify)
-- [GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Notify](#get-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/\{privateplacementinstrumentspecificationid\}/notify)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Request](#put-/privateplacement/\{privateplacementid\}/privateplacement/\{privateplacementid\}/request)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Request](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/\{privateplacementinstrumentmaintenanceid\}/request)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Request](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/\{privateplacementinstrumentspecificationid\}/request)
-- [GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Retrieve](#get-/privateplacement/\{privateplacementid\}/privateplacement/\{privateplacementid\}/retrieve)
-- [GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Retrieve](#get-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/\{privateplacementinstrumentmaintenanceid\}/retrieve)
-- [GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Retrieve](#get-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/\{privateplacementinstrumentspecificationid\}/retrieve)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Update](#put-/privateplacement/\{privateplacementid\}/privateplacement/\{privateplacementid\}/update)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Update](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentmaintenance/\{privateplacementinstrumentmaintenanceid\}/update)
-- [PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Update](#put-/privateplacement/\{privateplacementid\}/privateplacementinstrumentspecification/\{privateplacementinstrumentspecificationid\}/update)
-
-
 **BIAN Documentation:** [PrivatePlacement v12](https://app.swaggerhub.com/apis/BIAN-3/PrivatePlacement/12.0.0)
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/Control
+## PUT: /PrivatePlacement/\{privateplacementid\}/Control
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/Control
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Control Private Placement Facility
 
@@ -55,9 +27,13 @@ In this naming convention:
 \- Plural nouns are used to represent collections
 \- Hyphens are used to separate words in multi\-word path segments
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/Exchange
+## PUT: /PrivatePlacement/\{privateplacementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Exchange Private Placement Facility
 
@@ -69,9 +45,13 @@ This API path allows you to update an existing resource related to a private pla
 
 PUT: The name of the path should be \`/private\-placements/\{privateplacementid\}/exchange\` in kebab case format\, following REST best practices\. Each part of the path should be in lowercase and separated by hyphens for better readability and consistency\.
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/Execute
+## PUT: /PrivatePlacement/\{privateplacementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Execute Private Placement Facility
 
@@ -87,9 +67,13 @@ PUT: A suitable name for the path '/PrivatePlacement/\{privateplacementid\}/Exec
 POST /private\-placements/\{privateplacementid\}/execute
 \`\`\`
 
-### POST: /PrivatePlacement/Initiate
+## POST: /PrivatePlacement/Initiate
 
-**Description**
+:::info Path
+POST: /PrivatePlacement/Initiate
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Initiate Private Placement Facility
 
@@ -101,9 +85,13 @@ This BIAN API path allows you to initiate a private placement facility for corpo
 
 POST: The name of the path '/PrivatePlacement/Initiate' following REST best practices could be simplified to something like '/private\-placements'\. This new path provides a more general and resource\-oriented name that better aligns with REST principles\.
 
-### GET: /PrivatePlacement/\{privateplacementid\}/Notify
+## GET: /PrivatePlacement/\{privateplacementid\}/Notify
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Notify Private Placement Facility
 
@@ -115,9 +103,13 @@ This API path \`/PrivatePlacement/\{privateplacementid\}/Notify\` allows you to 
 
 GET: The name of the path should be \`/private\-placements/\{privateplacementid\}/notify\` following REST best practices\.
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/Request
+## PUT: /PrivatePlacement/\{privateplacementid\}/Request
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/Request
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Request Private Placement Facility
 
@@ -133,9 +125,13 @@ PUT: Based on RESTful API naming conventions\, the path should be named as follo
 
 This naming convention typically uses lowercase letters for paths and plural nouns for collections of resources\. Additionally\, it separates words with hyphens for readability and consistency\.
 
-### GET: /PrivatePlacement/\{privateplacementid\}/Retrieve
+## GET: /PrivatePlacement/\{privateplacementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Retrieve Private Placement Facility
 
@@ -149,9 +145,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 / private\-placements /\{privateplacementid\} /retrieve
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/Update
+## PUT: /PrivatePlacement/\{privateplacementid\}/Update
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/Update
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Update Private Placement Facility
 
@@ -169,9 +169,13 @@ PUT /PrivatePlacements/\{privateplacementid\}
 
 This path suggests that a PUT request should be made to update a specific Private Placement resource identified by \{privateplacementid\}\.
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Exchange
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Exchange Private Placement Fulfillment
 
@@ -185,9 +189,13 @@ PUT: The name of the path should be:
 
 / private\-placements / \{privateplacementid\} / exchanges
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Exchange
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Exchange Private Placement Instrument Maintenance Fulfillment
 
@@ -203,9 +211,13 @@ PUT: The name of the path could be following REST best practices:
 / private\-placements /\{privateplacementid\}/instrument\-maintenance /\{privateplacementinstrumentmaintenanceid\}/exchange
 \`\`\`
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Exchange
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Exchange Private Placement Instrument Specification Fulfillment
 
@@ -219,9 +231,13 @@ PUT: The name of the path should be:
 
 '/private\-placements/\{privatePlacementId\}/instrument\-specifications/\{instrumentSpecificationId\}/exchanges'
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Execute
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Execute Private Placement Fulfillment
 
@@ -234,9 +250,13 @@ This BIAN API path allows you to update an existing private placement by executi
 PUT: Based on REST best practices\, the name of the path should be:
 '/private\-placements/\{privateplacementid\}/execute'
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Execute
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Execute Private Placement Instrument Maintenance Fulfillment
 
@@ -252,9 +272,13 @@ A suggestion for the name of the path could be:
 
 '/private\-placements/\{privateplacementid\}/instrument\-maintenance/\{privateplacementinstrumentmaintenanceid\}/execute'
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Execute
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Execute Private Placement Instrument Specification Fulfillment
 
@@ -270,9 +294,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 Ensure to use lowercase letters\, hyphens for readability\, and focus on resource naming conventions for better clarity and consistency\.
 
-### POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/Initiate
+## POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/Initiate
 
-**Description**
+:::info Path
+POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/Initiate
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Initiate Private Placement Fulfillment
 
@@ -286,9 +314,13 @@ POST: Following REST best practices\, the name of the path '/PrivatePlacement/\{
 
 This naming convention uses all lowercase letters and separates words with hyphens for better readability while also indicating the specific resource being accessed \('private\-placements' in this case\) followed by the unique identifier \('privateplacement
 
-### POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/Initiate
+## POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/Initiate
 
-**Description**
+:::info Path
+POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/Initiate
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Initiate Private Placement Instrument Maintenance Fulfillment
 
@@ -304,9 +336,13 @@ POST: A possible RESTful name for the path could be:
 / private\-placements / \{privateplacementid\} / instruments / initiate 
 \`\`\`
 
-### POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/Initiate
+## POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/Initiate
 
-**Description**
+:::info Path
+POST: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/Initiate
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Initiate Private Placement Instrument Specification Fulfillment
 
@@ -322,9 +358,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, it is recommended to use all lowercase letters\, separate words with hyphens\, and use plural nouns for resource names\.
 
-### GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Notify
+## GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Notify
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Notify Private Placement Fulfillment
 
@@ -340,9 +380,13 @@ GET: Following REST best practices\, the name of the path should be:
 /PrivatePlacements/\{privateplacementid\}/Notify
 \`\`\`
 
-### GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Notify
+## GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Notify Private Placement Instrument Maintenance Fulfillment
 
@@ -360,9 +404,13 @@ GET: The name of the path based on REST best practices should be:
 
 In RESTful API design\, it is recommended to use lowercase letters\, use hyphens to separate words\, and use plural nouns for resources\. Also\, it's a good practice to keep the path segments descriptive and concise\.
 
-### GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Notify
+## GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Notify
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Notify Private Placement Instrument Specification Fulfillment
 
@@ -375,9 +423,13 @@ This API path\, \`/PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstr
 GET: The name of the path should be:
 '/private\-placements/\{privatePlacementId\}/instrument\-specifications/\{privatePlacementInstrumentSpecificationId\}/notify'
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Request
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Request
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Request
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Request Private Placement Fulfillment
 
@@ -390,9 +442,13 @@ This BIAN API path allows you to update an existing private placement request fo
 PUT: For following REST best practices\, the name of the path should be:
 \`/private\-placements/\{privateplacementid\}/requests\`
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Request
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Request
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Request Private Placement Instrument Maintenance Fulfillment
 
@@ -410,9 +466,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using plural nouns for resource names and using camel case for multi\-word resource names\.
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Request
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Request
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Request Private Placement Instrument Specification Fulfillment
 
@@ -432,9 +492,13 @@ Here are some key points in the suggested path:
 \- Resource names should be in plural form\.
 \- Path parameters \(e\.g\.\, privateplacementid\, privateplacementinstrumentspecificationid\) should be
 
-### GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Retrieve
+## GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Retrieve Private Placement Fulfillment
 
@@ -451,9 +515,13 @@ A possible name for the path could be:
 
 This naming convention is clear and concise\, representing the resource 'private placements' and the action of retrieving a specific private placement based on its ID\.
 
-### GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Retrieve
+## GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Retrieve Private Placement Instrument Maintenance Fulfillment
 
@@ -467,9 +535,13 @@ GET: A possible name for the path '/PrivatePlacement/\{privateplacementid\}/Priv
 
 GET /private\-placements/\{privateplacementid\}/instrument\-maintenance/\{privateplacementinstrumentmaintenanceid\}
 
-### GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Retrieve
+## GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Retrieve Private Placement Instrument Specification Fulfillment
 
@@ -488,9 +560,13 @@ In this revised path name:
 \- The use of plural form \('private\-placements' and 'instrument\-specifications'\) aligns with REST conventions\.
 \- The action 'retrieve' indicates a specific operation to be performed on the resource\.
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Update
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Update
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacement/\{privateplacementid\}/Update
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Update Private Placement Fulfillment
 
@@ -504,9 +580,13 @@ PUT: The name of the path should be: "/PrivatePlacements/\{privateplacementid\}/
 
 Ensuring consistency and clarity in the naming convention is essential in following REST best practices\. This path structure is concise\, reflects the resource being updated\, and adheres to the standard of using plural nouns for resource names\.
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Update
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentMaintenance/\{privateplacementinstrumentmaintenanceid\}/Update
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Update Private Placement Instrument Maintenance Fulfillment
 
@@ -519,9 +599,13 @@ This API path allows you to update a specific private placement instrument maint
 PUT: The name of the path should be:
 '/private\-placements/\{privateplacementid\}/instruments/\{privateplacementinstrumentmaintenanceid\}/update'
 
-### PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Update
+## PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PrivatePlacement/\{privateplacementid\}/PrivatePlacementInstrumentSpecification/\{privateplacementinstrumentspecificationid\}/Update
+:::
+
+### Description
 
 This Service Domain provides the complete range of functions involved in providing private placement services to corporate customers\. Update Private Placement Instrument Specification Fulfillment
 

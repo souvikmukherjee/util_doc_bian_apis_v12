@@ -1,42 +1,14 @@
 # PaymentInstruction
 
-## Table of Contents
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/Control](#put-/paymentinstruction/\{paymentinstructionid\}/control)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/Exchange](#put-/paymentinstruction/\{paymentinstructionid\}/exchange)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/Execute](#put-/paymentinstruction/\{paymentinstructionid\}/execute)
-- [POST: /PaymentInstruction/Initiate](#post-/paymentinstruction/initiate)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/Notify](#get-/paymentinstruction/\{paymentinstructionid\}/notify)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/Request](#put-/paymentinstruction/\{paymentinstructionid\}/request)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/Retrieve](#get-/paymentinstruction/\{paymentinstructionid\}/retrieve)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/Update](#put-/paymentinstruction/\{paymentinstructionid\}/update)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Exchange](#put-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/\{agreementconfirmationid\}/exchange)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Exchange](#put-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/\{compliancecheckid\}/exchange)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Exchange](#put-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/\{paymentinstructionid\}/exchange)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Execute](#put-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/\{agreementconfirmationid\}/execute)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Execute](#put-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/\{compliancecheckid\}/execute)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Execute](#put-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/\{paymentinstructionid\}/execute)
-- [POST: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/Initiate](#post-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/initiate)
-- [POST: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/Initiate](#post-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/initiate)
-- [POST: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/Initiate](#post-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/initiate)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Notify](#get-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/\{agreementconfirmationid\}/notify)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Notify](#get-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/\{compliancecheckid\}/notify)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Notify](#get-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/\{paymentinstructionid\}/notify)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Request](#put-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/\{agreementconfirmationid\}/request)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Request](#put-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/\{compliancecheckid\}/request)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Request](#put-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/\{paymentinstructionid\}/request)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Retrieve](#get-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/\{agreementconfirmationid\}/retrieve)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Retrieve](#get-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/\{compliancecheckid\}/retrieve)
-- [GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Retrieve](#get-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/\{paymentinstructionid\}/retrieve)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Update](#put-/paymentinstruction/\{paymentinstructionid\}/agreementconfirmation/\{agreementconfirmationid\}/update)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Update](#put-/paymentinstruction/\{paymentinstructionid\}/compliancecheck/\{compliancecheckid\}/update)
-- [PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Update](#put-/paymentinstruction/\{paymentinstructionid\}/paymentinstruction/\{paymentinstructionid\}/update)
-
-
 **BIAN Documentation:** [PaymentInstruction v12](https://app.swaggerhub.com/apis/BIAN-3/PaymentInstruction/12.0.0)
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/Control
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/Control
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/Control
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Control Payment Instruction Procedure
 
@@ -48,9 +20,13 @@ This API path allows you to update an existing payment instruction by processing
 
 PUT: The name of the path should be \`/payment\-instructions/\{paymentinstructionid\}/controls\`\, following REST best practices of using lowercase letters and using plural nouns for resource names\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/Exchange
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Exchange Payment Instruction Procedure
 
@@ -64,9 +40,13 @@ PUT: The name of the path should ideally be: \`/payment\-instructions/\{paymenti
 
 Following REST best practices\, paths should use lowercase letters\, use hyphens to separate words\, and be descriptive of the resource being accessed\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/Execute
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/Execute
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Execute Payment Instruction Procedure
 
@@ -80,9 +60,13 @@ PUT: A suitable name for the path '/PaymentInstruction/\{paymentinstructionid\}/
 
 \- POST /PaymentInstructions/\{paymentinstructionid\}/Execution
 
-### POST: /PaymentInstruction/Initiate
+## POST: /PaymentInstruction/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentInstruction/Initiate
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Initiate Payment Instruction Procedure
 
@@ -94,9 +78,13 @@ This API path \(/PaymentInstruction/Initiate\) allows users to create a new reso
 
 POST: The path '/PaymentInstructions' would be a more appropriate name in adherence with REST best practices\. This path should use nouns to represent resources rather than verbs\, which are more action\-oriented\. This way\, the path indicates a collection of payment instructions\, making it more semantic and aligned with REST conventions\.
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/Notify
+## GET: /PaymentInstruction/\{paymentinstructionid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/Notify
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Notify Payment Instruction Procedure
 
@@ -110,9 +98,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/payment\-instructions/\{paymentinstructionid\}/notify'
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/Request
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/Request
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Request Payment Instruction Procedure
 
@@ -126,9 +118,13 @@ PUT: The name of the path should be \`/payment\-instructions/\{paymentinstructio
 
 In RESTful API design\, it is recommended to use lowercase letters and hyphens to separate words in the URL path as it helps improve readability and maintain consistency\.
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/Retrieve
+## GET: /PaymentInstruction/\{paymentinstructionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Retrieve Payment Instruction Procedure
 
@@ -142,9 +138,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/payments/\{paymentId\}'
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/Update
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/Update
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Update Payment Instruction Procedure
 
@@ -160,9 +160,13 @@ PUT: Following REST best practices\, the name of the path should be:
 /PaymentInstructions/\{paymentinstructionid\}
 \`\`\`
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Exchange
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Exchange Agreement Confirmation Workstep
 
@@ -176,9 +180,13 @@ PUT: The appropriate name for this path\, following REST best practices\, would 
 
 /payment\-instructions/\{paymentinstructionid\}/agreement\-confirmations/\{agreementconfirmationid\}/exchange
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Exchange
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Exchange
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Exchange Compliance Check Workstep
 
@@ -192,9 +200,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/payment\-instructions/\{paymentinstructionid\}/compliance\-checks/\{compliancecheckid\}/exchange'
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Exchange
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Exchange Payment Instruction Workstep
 
@@ -206,9 +218,13 @@ This API path is used to update an existing payment instruction by exchanging pa
 
 PUT: Following REST best practices\, the path name should be simplified and structured in a more resource\-oriented way\. One possible suggestion for the path name would be '/payment\-instructions/\{paymentinstructionid\}/exchange'\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Execute
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Execute
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Execute Agreement Confirmation Workstep
 
@@ -222,9 +238,13 @@ PUT: A suitable name for the path based on REST best practices could be:
 
 /payment\-instructions/\{paymentinstructionid\}/agreement\-confirmations/\{agreementconfirmationid\}/execute
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Execute
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Execute
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Execute Compliance Check Workstep
 
@@ -240,9 +260,13 @@ POST /payments/\{paymentId\}/compliance\-checks/\{checkId\}/execute
 
 This name effectively conveys the action to be performed \(execute the compliance check\) on a specific payment instruction in compliance with RESTful principles\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Execute
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Execute
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Execute Payment Instruction Workstep
 
@@ -254,9 +278,13 @@ This BIAN API path allows you to update an existing payment instruction by execu
 
 PUT: The name of the path should be something like '/payment\-instructions/\{paymentinstructionid\}/execute'\. It is recommended to use lowercase letters\, hyphens to separate words\, and avoid repeating the resource name 'PaymentInstruction'\.
 
-### POST: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/Initiate
+## POST: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/Initiate
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Initiate Agreement Confirmation Workstep
 
@@ -270,9 +298,13 @@ POST: If the path '/PaymentInstruction/\{paymentinstructionid\}/AgreementConfirm
 
 '/payment\-instructions/\{paymentinstructionid\}/agreement\-confirmations/initiate'
 
-### POST: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/Initiate
+## POST: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/Initiate
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Initiate Compliance Check Workstep
 
@@ -293,9 +325,13 @@ Here are some key points:
 
 This naming convention follows
 
-### POST: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/Initiate
+## POST: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/Initiate
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Initiate Payment Instruction Workstep
 
@@ -309,9 +345,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 \`/payment\-instructions/\{paymentinstructionid\}/initiate\-payment\`
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Notify
+## GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Notify
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Notify Agreement Confirmation Workstep
 
@@ -327,9 +367,13 @@ GET: A suitable name for this path following REST best practices could be:
 /PaymentInstructions/\{paymentinstructionid\}/AgreementConfirmations/\{agreementconfirmationid\}/Notify
 \`\`\`
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Notify
+## GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Notify
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Notify Compliance Check Workstep
 
@@ -343,9 +387,13 @@ GET: A name that follows REST best practices for the given path could be:
 
 /PaymentInstructions/\{paymentinstructionid\}/ComplianceChecks/\{compliancecheckid\}/Notify
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Notify
+## GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Notify
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Notify Payment Instruction Workstep
 
@@ -359,9 +407,13 @@ GET: The name of the path should be:
 
 /payment\-instructions/\{paymentinstructionid\}/notify
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Request
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Request
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Request Agreement Confirmation Workstep
 
@@ -377,9 +429,13 @@ PUT: The name of the path should be:
 
 Make sure to use lowercase letters and hyphens to separate words in the path to follow REST best practices\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Request
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Request
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Request Compliance Check Workstep
 
@@ -392,9 +448,13 @@ This API path is used to update an existing resource related to payment instruct
 PUT: A suitable name for this path following REST best practices could be:  
 '/payment\-instructions/\{paymentinstructionid\}/compliance\-checks/\{compliancecheckid\}/requests'
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Request
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Request
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Request Payment Instruction Workstep
 
@@ -412,9 +472,13 @@ In this format:
 \- Use plural nouns to represent collections of resources
 \- Avoid repeating resource names in the path
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Retrieve
+## GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Retrieve Agreement Confirmation Workstep
 
@@ -428,9 +492,13 @@ GET: The appropriate name for the path would be:
 
 '/payment\-instructions/\{paymentinstructionid\}/agreement\-confirmations/\{agreementconfirmationid\}'
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Retrieve
+## GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Retrieve Compliance Check Workstep
 
@@ -442,9 +510,13 @@ This API path retrieves information about a specific compliance check workstep a
 
 GET: The name of the path '/PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Retrieve' following REST best practices could be simplified to '/payment\-instructions/\{paymentinstructionid\}/compliance\-checks/\{compliancecheckid\}'\.
 
-### GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Retrieve
+## GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Retrieve Payment Instruction Workstep
 
@@ -460,9 +532,13 @@ GET: The name of the path could simply be:
 
 In RESTful design\, it's important to use plural nouns for resource names\. In this case\, "paymentInstructions" is used in its plural form to represent a collection of payment instruction resources\. The path parameter \{paymentInstructionId\} should be singular to represent a specific payment instruction within the collection\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Update
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/AgreementConfirmation/\{agreementconfirmationid\}/Update
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Update Agreement Confirmation Workstep
 
@@ -478,9 +554,13 @@ PUT: Following REST best practices\, the name of the path should be descriptive 
 
 This naming convention uses lowercase letters\, dashes to separate words\, and uses plural nouns to represent resources\.
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Update
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/ComplianceCheck/\{compliancecheckid\}/Update
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Update Compliance Check Workstep
 
@@ -494,9 +574,13 @@ PUT: Based on REST best practices\, the name of the path should ideally be:
 
 /PaymentInstructions/\{paymentinstructionid\}/ComplianceChecks/\{compliancecheckid\}
 
-### PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Update
+## PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentInstruction/\{paymentinstructionid\}/PaymentInstruction/\{paymentinstructionid\}/Update
+:::
+
+### Description
 
 This Service Domain processes the pre\-checks needed to confirm the necessary arrangements are in place and assemble and rout payment related requests received from third party payment services\. Update Payment Instruction Workstep
 

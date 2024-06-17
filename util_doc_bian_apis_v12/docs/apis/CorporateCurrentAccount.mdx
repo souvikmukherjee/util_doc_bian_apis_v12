@@ -1,43 +1,14 @@
 # CorporateCurrentAccount
 
-## Table of Contents
-- [POST: /CorporateCurrentAccount/Initiate](#post-/corporatecurrentaccount/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/update)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Control](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/control)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/retrieve)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Interest/\{interestid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/interest/\{interestid\}/retrieve)
-- [POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/Initiate](#post-/corporatecurrentaccount/\{corporatecurrentaccountid\}/servicefees/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/servicefees/\{servicefeesid\}/retrieve)
-- [POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/Initiate](#post-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountlien/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountlien/\{accountlienid\}/update)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Exchange](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountlien/\{accountlienid\}/exchange)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountlien/\{accountlienid\}/retrieve)
-- [POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/Initiate](#post-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountsweep/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountsweep/\{accountsweepid\}/update)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Execute](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountsweep/\{accountsweepid\}/execute)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/accountsweep/\{accountsweepid\}/retrieve)
-- [POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/Initiate](#post-/corporatecurrentaccount/\{corporatecurrentaccountid\}/depositsandwithdrawals/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/update)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/execute)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/retrieve)
-- [POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/Initiate](#post-/corporatecurrentaccount/\{corporatecurrentaccountid\}/payments/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/payments/\{paymentsid\}/update)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Exchange](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/payments/\{paymentsid\}/exchange)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Execute](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/payments/\{paymentsid\}/execute)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/payments/\{paymentsid\}/retrieve)
-- [POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/Initiate](#post-/corporatecurrentaccount/\{corporatecurrentaccountid\}/issueddevice/initiate)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/issueddevice/\{issueddeviceid\}/update)
-- [GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/corporatecurrentaccount/\{corporatecurrentaccountid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Update](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/corporatecurrentaccount/\{corporatecurrentaccountid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-
-
 **BIAN Documentation:** [CorporateCurrentAccount v12](https://app.swaggerhub.com/apis/BIAN-3/CorporateCurrentAccount/12.0.0)
 
-### POST: /CorporateCurrentAccount/Initiate
+## POST: /CorporateCurrentAccount/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. InCR Initiate A new Corporate Current Account
 
@@ -49,9 +20,13 @@ This API path \(/CorporateCurrentAccount/Initiate\) allows users to create a new
 
 POST: If the path '/CorporateCurrentAccount/Initiate' followed REST best practices\, it should be named using nouns that represent resources rather than actions\. One way to refactor it could be '/CorporateCurrentAccounts'\, where you could use standard HTTP methods like POST to initiate a new Corporate Current Account\.
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. UpCR Update details of a corporate current account
 
@@ -65,9 +40,13 @@ PUT: Based on REST best practices\, the path should be named using nouns and avo
 
 '/CorporateCurrentAccount/\{corporatecurrentaccountid\}'
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Control
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Control
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. CoCR Control the processing of a corporate current account
 
@@ -86,9 +65,13 @@ In this naming convention:
 
 This naming convention makes the path more readable and aligned with RESTful design principles\.
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReCR Retrieve information about a corporate current account \- either standard canned reports or selected instance attribute values
 
@@ -104,9 +87,13 @@ GET: The name of the path should be:
 
 In RESTful conventions\, path parameters should be in "snake\_case" format\, and the resource name should be in plural form\. The \`/Retrieve\` part should be omitted as it is not necessary in RESTful paths\.
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Interest/\{interestid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReBQ Retrieve details of an interest transaction applied internally to the account
 
@@ -120,9 +107,13 @@ GET: In accordance with REST best practices\, the name of the path '/CorporateCu
 
 GET /corporate\-current\-accounts/\{corporatecurrentaccountid\}/interests/\{interestid\}
 
-### POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/Initiate
+## POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. InBQ Initiate service fees against an account
 
@@ -140,9 +131,13 @@ POST: Based on RESTful best practices\, the path '/CorporateCurrentAccount/\{cor
 
 In this updated path\, the plural form 'CorporateCurrentAccounts' is used to represent the collection of corporate current accounts\. The 'ServiceFees' resource is directly referenced under the current account resource to maintain a clear and hierarchical structure\. The verb
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ExBQ Apply a service fee to the account
 
@@ -158,9 +153,13 @@ PUT /corporate\-current\-accounts/\{corporatecurrentaccountid\}/service\-fees/\{
 
 This name reflects the resource hierarchy and operation being performed in a clear and organized manner\, following the conventions of RESTful API design\.
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReBQ Retrieve information about a service fee applied to the account
 
@@ -172,9 +171,13 @@ This BIAN API path allows you to retrieve information about a specific service f
 
 GET: A more appropriate name for the path \`/CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve\` would be \`/corporate\-current\-accounts/\{corporatecurrentaccountid\}/service\-fees/\{servicefeesid\}\` following REST best practices\.
 
-### POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/Initiate
+## POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. InBQ Set up an account lien
 
@@ -192,9 +195,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 This path is more simplified\, consistent\, and follows the conventions of RESTful API design\.
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. UpBQ Update details of an existing account lien
 
@@ -208,9 +215,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-current\-accounts/\{corporateCurrentAccountId\}/account\-liens/\{accountLienId\}'
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Exchange
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. EcBQ Exchange \(i\.e\. confirm\, reject\) details of an account lien
 
@@ -224,9 +235,13 @@ PUT: The ideal name for this path following REST best practices would be:
 
 \`/corporate\-current\-accounts/\{corporatecurrentaccountid\}/account\-liens/\{accountlienid\}/exchanges\`
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountLien/\{accountlienid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReBQ Retrieve details about an account lien
 
@@ -239,9 +254,13 @@ This BIAN API path allows you to retrieve details about an account lien within a
 GET: Based on REST best practices\, the name of the path could be:
 '/corporate\-current\-accounts/\{corporatecurrentaccountid\}/account\-liens/\{accountlienid\}'
 
-### POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/Initiate
+## POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. InBQ Set up an account sweep
 
@@ -255,9 +274,13 @@ POST: Based on REST best practices\, the name of the path could be "/corporate\-
 
 In this format\, we use lowercase letters and hyphens to separate words in the path\. Additionally\, we use plural nouns for collections and singular nouns for resources\. The use of specific identifiers like "corporate\-current\-account\-id" helps to provide clarity and structure to the API path\.
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. UpBQ Update details of an existing account sweep
 
@@ -271,9 +294,13 @@ PUT: The name of the path should be as follows adhering to REST best practices \
 
 PUT /corporate\-current\-accounts/\{corporatecurrentaccountid\}/account\-sweeps/\{accountsweepid\}
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Execute
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ExBQ Trigger an account sweep transaction
 
@@ -291,9 +318,13 @@ PUT: The recommended path name following REST best practices for the given scena
 
 This path reflects the hierarchical structure of the resources\, uses plural nouns to represent collections\, and uses lowercase letters for consistency\.
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReBQ Retrieve details about a sweep facility or specific sweep transaction
 
@@ -309,9 +340,13 @@ GET: The name of the path should be:
 
 This path follows RESTful naming guidelines by using lowercase letters\, separating words with hyphens\, and using plural nouns to represent collections\.
 
-### POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/Initiate
+## POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. InBQ Initialize deposit or withdrawal transaction
 
@@ -325,9 +360,13 @@ POST: A more RESTful name for the path could be:
 
 '/corporate\-current\-accounts/\{corporate\_current\_account\_id\}/transactions/initiate'
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. UpBQ Update/correct a deposit or withdrawal transaction
 
@@ -341,9 +380,13 @@ PUT: The name of the path should be:
 
 '/corporate\-current\-accounts/\{corporatecurrentaccountid\}/deposits\-and\-withdrawals/\{depositsandwithdrawalsid\}'
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ExBQ Execute a deposit or withdrawal transaction
 
@@ -361,9 +404,13 @@ Here are some key points why this name is consistent with REST best practices:
 1\. Resource names should be in plural form \- 'CorporateCurrentAccounts' and 'DepositsAndWithdrawals' are in plural form\.
 2\. Resource names should be in camelCase \- 'corporatecurrent
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReBQ Retrieve details about a deposit or withdrawal transaction
 
@@ -377,9 +424,13 @@ GET: The REST best practice for naming resources in a path is to use nouns to de
 
 '/corporate\-current\-accounts/\{corporatecurrentaccountid\}/transactions/\{transactionid\}'
 
-### POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/Initiate
+## POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. InBQ Initialize a payment transaction
 
@@ -395,9 +446,13 @@ POST: Following REST best practices\, the name of the path could be:
 
 Key considerations for naming the path according to REST conventions include using lowercase letters\, using hyphens to separate words\, and being clear and descriptive about the resource being accessed\.
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. UpBQ Update a payment transaction configuration or specific transaction
 
@@ -413,9 +468,13 @@ PUT: A suitable name for the path would be:
 PUT /corporate\-current\-accounts/\{corporatecurrentaccountid\}/payments/\{paymentsid\}
 \`\`\`
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Exchange
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. EcBQ Verify/approve a scheduled repeating payment
 
@@ -431,9 +490,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /CorporateCurrentAccounts/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Exchange
 \`\`\`
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Execute
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ExBQ Trigger a payment for a repeating payment set up
 
@@ -449,9 +512,13 @@ PUT: A suitable name for the path following REST best practices could be:
 /CorporateCurrentAccounts/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Execute
 \`\`\`
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. ReBQ Retrieve details about a payment transaction or arrangement
 
@@ -465,9 +532,13 @@ GET: The path should be named as:
 
 '/corporate\-current\-accounts/\{corporatecurrentaccountid\}/payments/\{paymentsid\}'
 
-### POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/Initiate
+## POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. Initiate Provision of Issued Device
 
@@ -483,9 +554,13 @@ POST: The name of the path should be:
 /CorporateCurrentAccounts/\{corporatecurrentaccountid\}/IssuedDevices/Initiate
 \`\`\`
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. Update Details of Issued Device Allocated to This Account
 
@@ -499,9 +574,13 @@ PUT: The name of the path should be:
 
 PUT /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}
 
-### GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. Retrieve Details about Issued Device
 
@@ -515,9 +594,13 @@ GET: A possible naming convention following REST best practices for the path des
 
 '/corporate\-current\-accounts/\{corporatecurrentaccountid\}/issued\-devices/\{issueddeviceid\}'
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. Update details about an applied service fee
 
@@ -531,9 +614,13 @@ PUT: The name of the path should be:
 
 PUT /CorporateCurrentAccount/\{corporatecurrentaccountid\}/ServiceFees/\{servicefeesid\}
 
-### PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateCurrentAccount/\{corporatecurrentaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a corporate checking/demand deposit account\. The typical range of services and fees covers payments and deposits\, standing orders\, sweeps\, liens\, check and debit card access\. Execute Authorization of Booking
 

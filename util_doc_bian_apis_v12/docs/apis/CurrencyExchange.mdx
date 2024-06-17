@@ -1,31 +1,14 @@
 # CurrencyExchange
 
-## Table of Contents
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/Control](#put-/currencyexchange/\{currencyexchangeid\}/control)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/Exchange](#put-/currencyexchange/\{currencyexchangeid\}/exchange)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/Execute](#put-/currencyexchange/\{currencyexchangeid\}/execute)
-- [POST: /CurrencyExchange/Initiate](#post-/currencyexchange/initiate)
-- [GET: /CurrencyExchange/\{currencyexchangeid\}/Retrieve](#get-/currencyexchange/\{currencyexchangeid\}/retrieve)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/Request](#put-/currencyexchange/\{currencyexchangeid\}/request)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/Update](#put-/currencyexchange/\{currencyexchangeid\}/update)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Exchange](#put-/currencyexchange/\{currencyexchangeid\}/fxtransactioncapture/\{fxtransactioncaptureid\}/exchange)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Execute](#put-/currencyexchange/\{currencyexchangeid\}/documenthandling/\{documenthandlingid\}/execute)
-- [POST: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/Initiate](#post-/currencyexchange/\{currencyexchangeid\}/documenthandling/initiate)
-- [POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/Initiate](#post-/currencyexchange/\{currencyexchangeid\}/fxtransactioncapture/initiate)
-- [POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/Initiate](#post-/currencyexchange/\{currencyexchangeid\}/fxtransactionpricing/initiate)
-- [GET: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Retrieve](#get-/currencyexchange/\{currencyexchangeid\}/documenthandling/\{documenthandlingid\}/retrieve)
-- [GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Retrieve](#get-/currencyexchange/\{currencyexchangeid\}/fxtransactioncapture/\{fxtransactioncaptureid\}/retrieve)
-- [GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Retrieve](#get-/currencyexchange/\{currencyexchangeid\}/fxtransactionpricing/\{fxtransactionpricingid\}/retrieve)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Update](#put-/currencyexchange/\{currencyexchangeid\}/documenthandling/\{documenthandlingid\}/update)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Update](#put-/currencyexchange/\{currencyexchangeid\}/fxtransactioncapture/\{fxtransactioncaptureid\}/update)
-- [PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Update](#put-/currencyexchange/\{currencyexchangeid\}/fxtransactionpricing/\{fxtransactionpricingid\}/update)
-
-
 **BIAN Documentation:** [CurrencyExchange v12](https://app.swaggerhub.com/apis/BIAN-3/CurrencyExchange/12.0.0)
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/Control
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/Control
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/Control
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange CoCR Control the processing of Currency Exchange Transaction
 
@@ -39,9 +22,13 @@ PUT: The name of the path should be structured as following\, based on REST best
 
 "/currency\-exchanges/\{currencyExchangeId\}/control"
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/Exchange
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/Exchange
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange EcCR Accept\, verify\, etc\. aspects of Currency Exchange Transaction processing
 
@@ -57,9 +44,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This naming follows the convention of using plural nouns for resources in REST APIs\.
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/Execute
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/Execute
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange ExCR Execute an available automated action for Currency Exchange Transaction
 
@@ -75,9 +66,13 @@ PUT: The name of the path should be:
 
 following the REST best practices\.
 
-### POST: /CurrencyExchange/Initiate
+## POST: /CurrencyExchange/Initiate
 
-**Description**
+:::info Path
+POST: /CurrencyExchange/Initiate
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange InCR Instantiate a new Currency Exchange Transaction
 
@@ -89,9 +84,13 @@ This BIAN API path allows users to initiate a new currency exchange transaction 
 
 POST: If the path '/CurrencyExchange/Initiate' should follow REST best practices\, it would be more appropriate to name it based on the resource it represents\. A more RESTful naming convention would be '/currency\-exchanges'\, which represents a collection of currency exchange resources\. Each individual currency exchange initiation could then be represented as a sub\-resource or identified within the collection\, rather than a separate initiation endpoint\.
 
-### GET: /CurrencyExchange/\{currencyexchangeid\}/Retrieve
+## GET: /CurrencyExchange/\{currencyexchangeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CurrencyExchange/\{currencyexchangeid\}/Retrieve
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange ReCR Retrieve details about any aspect of Currency Exchange Transaction
 
@@ -107,9 +106,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, we generally use lowercase letters and separate words with hyphens in the path names\. Additionally\, we use plural nouns for resource names\.
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/Request
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/Request
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/Request
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange RqCR Request manual intervention or a decision with respect to Currency Exchange Transaction
 
@@ -121,9 +124,13 @@ This API path allows you to update an existing currency exchange request that re
 
 PUT: The name of the path should be \`/currency\-exchanges/\{currencyExchangeId\}/requests\` according to REST best practices\.
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/Update
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/Update
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/Update
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange UpCR Update details relating to Currency Exchange Transaction
 
@@ -137,9 +144,13 @@ PUT: The name of the path should be:
 
 '/currency\-exchange/\{currencyexchangeid\}'
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Exchange
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Exchange
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange EcBQ Accept\, verify\, etc\. aspects of FX Transaction Capture processing
 
@@ -153,9 +164,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /CurrencyExchanges/\{currencyexchangeid\}/FxCaptureTransactions/\{fxtransactioncaptureid\}/Exchanges
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Execute
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Execute
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange ExBQ Execute an available automated action for Document Handling
 
@@ -175,9 +190,13 @@ In this naming convention:
 \- Resource names are in plural form\.
 \- The IDs are provided in singular form \(e\.g\.\, currencyExchangeId instead of currencyExchangeIds
 
-### POST: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/Initiate
+## POST: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/Initiate
 
-**Description**
+:::info Path
+POST: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/Initiate
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange InBQ Instantiate a new Document Handling
 
@@ -196,9 +215,13 @@ In this name:
 \- 'currency\-exchanges' is in plural form to represent a collection of currency exchange resources\.
 \- '\{currencyexchangeid\}' is a placeholder for the specific identifier of the
 
-### POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/Initiate
+## POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/Initiate
 
-**Description**
+:::info Path
+POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/Initiate
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange InBQ Instantiate a new FX Transaction Capture
 
@@ -214,9 +237,13 @@ POST: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, focusing on resources rather than actions\, and using plural nouns for resource names where appropriate\.
 
-### POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/Initiate
+## POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/Initiate
 
-**Description**
+:::info Path
+POST: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/Initiate
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange InBQ Instantiate a new FX Transaction Pricing
 
@@ -233,9 +260,13 @@ Here's why this naming convention follows REST best practices:
 \- Use hyphens to separate words within a path segment: Hyphens are preferred over underscores or camel case for better readability and search engine optimization\.
 \- Use plural nouns for collection resources: The term 'currency\-exchanges
 
-### GET: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Retrieve
+## GET: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Retrieve
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange ReBQ Retrieve details about any aspect of Document Handling
 
@@ -249,9 +280,13 @@ GET: A suitable name for this endpoint following REST best practices could be:
 
 GET /currency\-exchanges/\{currencyexchangeid\}/document\-handling/\{documenthandlingid\}
 
-### GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Retrieve
+## GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange ReBQ Retrieve details about any aspect of FX Transaction Capture
 
@@ -265,9 +300,13 @@ GET: Based on REST best practices\, a possible name for the path could be:
 
 '/currency\-exchange/\{currencyExchangeId\}/fx\-transaction\-capture/\{fxTransactionCaptureId\}/retrieve'
 
-### GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Retrieve
+## GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Retrieve
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange ReBQ Retrieve details about any aspect of FX Transaction Pricing
 
@@ -281,9 +320,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/currency\-exchange/\{currencyexchangeid\}/fx\-transaction\-pricing/\{fxtransactionpricingid\}'
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Update
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/DocumentHandling/\{documenthandlingid\}/Update
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange UpBQ Update details relating to Document Handling
 
@@ -297,9 +340,13 @@ PUT: The appropriate name for the path would be:
 
 '/currency\-exchanges/\{currencyexchangeid\}/document\-handlings/\{documenthandlingid\}'
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Update
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionCapture/\{fxtransactioncaptureid\}/Update
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange UpBQ Update details relating to FX Transaction Capture
 
@@ -315,9 +362,13 @@ PUT: The name of the path should be:
 
 RESTful paths should be designed with lowercase letters and use hyphens to separate words\. The specific operation \(such as updating\) should not be included in the path if it can be represented by using the appropriate HTTP method \(such as PUT for updating resource\)\.
 
-### PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Update
+## PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CurrencyExchange/\{currencyexchangeid\}/FXTransactionPricing/\{fxtransactionpricingid\}/Update
+:::
+
+### Description
 
 Service Domain supports over the counter currency exchange UpBQ Update details relating to FX Transaction Pricing
 

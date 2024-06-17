@@ -1,23 +1,14 @@
 # BusinessDevelopment
 
-## Table of Contents
-- [POST: /BusinessDevelopment/Create](#post-/businessdevelopment/create)
-- [PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Update](#put-/businessdevelopment/\{businessdevelopmentid\}/update)
-- [PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Capture](#put-/businessdevelopment/\{businessdevelopmentid\}/capture)
-- [PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Request](#put-/businessdevelopment/\{businessdevelopmentid\}/request)
-- [GET: /BusinessDevelopment/\{businessdevelopmentid\}/Retrieve](#get-/businessdevelopment/\{businessdevelopmentid\}/retrieve)
-- [POST: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/Create](#post-/businessdevelopment/\{businessdevelopmentid\}/initiative/create)
-- [PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Update](#put-/businessdevelopment/\{businessdevelopmentid\}/initiative/\{initiativeid\}/update)
-- [PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Capture](#put-/businessdevelopment/\{businessdevelopmentid\}/initiative/\{initiativeid\}/capture)
-- [PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Request](#put-/businessdevelopment/\{businessdevelopmentid\}/initiative/\{initiativeid\}/request)
-- [GET: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Retrieve](#get-/businessdevelopment/\{businessdevelopmentid\}/initiative/\{initiativeid\}/retrieve)
-
-
 **BIAN Documentation:** [BusinessDevelopment v12](https://app.swaggerhub.com/apis/BIAN-3/BusinessDevelopment/12.0.0)
 
-### POST: /BusinessDevelopment/Create
+## POST: /BusinessDevelopment/Create
 
-**Description**
+:::info Path
+POST: /BusinessDevelopment/Create
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans CrCR Create a business development strategy for the enterprise or division
 
@@ -29,9 +20,13 @@ This API path is used to create a new business development strategy for an enter
 
 POST: If the path '/BusinessDevelopment/Create' followed REST best practices\, it should be named based on the HTTP method that should be used to create a new resource\. In the case of creating a new resource\, the appropriate HTTP method to use is POST\. Therefore\, the name of the path should be '/BusinessDevelopment' to indicate the collection of resources where new resources can be created using a POST request\.
 
-### PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Update
+## PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Update
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans UpCR Update details of the business development strategy
 
@@ -45,9 +40,13 @@ PUT: Based on REST best practices\, the appropriate name for the path '/Business
 
 PUT /BusinessDevelopment/\{businessdevelopmentid\}
 
-### PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Capture
+## PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Capture
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans CaCR Capture activity details related to implementation of the strategy
 
@@ -63,9 +62,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase letters and use hyphens to separate words in the URI\.
 
-### PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Request
+## PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Request
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans RqCR Request manual intervention
 
@@ -77,9 +80,13 @@ This API path allows you to update an existing business development plan by requ
 
 PUT: The name of the path could be "/business\-development/\{businessdevelopmentid\}/request" to follow REST best practices\. Each segment of the path should be a lowercase\, hyphen\-separated word that conveys the hierarchy and relationship within the resources\.
 
-### GET: /BusinessDevelopment/\{businessdevelopmentid\}/Retrieve
+## GET: /BusinessDevelopment/\{businessdevelopmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BusinessDevelopment/\{businessdevelopmentid\}/Retrieve
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans ReCR Retrieve details relating to the strategy and any supporting activities
 
@@ -93,9 +100,13 @@ GET: A suitable name for this endpoint following REST best practices could be so
 
 GET /business\-developments/\{businessdevelopmentid\}
 
-### POST: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/Create
+## POST: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/Create
 
-**Description**
+:::info Path
+POST: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/Create
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans CrBQ Create/instigate a supporting business development initiative
 
@@ -113,9 +124,13 @@ POST /businessdevelopments/\{businessdevelopmentid\}/initiatives
 
 This follows the REST best practice of using nouns to represent resources and using HTTP methods to perform CRUD operations on those resources\.
 
-### PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Update
+## PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Update
 
-**Description**
+:::info Path
+PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Update
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans UpBQ Update details for a business development initiative
 
@@ -129,9 +144,13 @@ PUT: The name of the path should be:
 
 /businesses/\{businessId\}/initiatives/\{initiativeId\}
 
-### PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Capture
+## PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Capture
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans CaBQ Capture activity details for a business development initiative
 
@@ -145,9 +164,13 @@ PUT: A more appropriate name for the path '/BusinessDevelopment/\{businessdevelo
 
 /business\-developments/\{businessdevelopmentid\}/initiatives/\{initiativeid\}/capture
 
-### PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Request
+## PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Request
 
-**Description**
+:::info Path
+PUT: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Request
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans RqBQ Request manual intervention into a business development initiative
 
@@ -159,9 +182,13 @@ This API path allows you to update an existing business development initiative b
 
 PUT: A more RESTful path for this endpoint could be '/business\-development/\{businessdevelopmentid\}/initiatives/\{initiativeid\}/requests'\.
 
-### GET: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Retrieve
+## GET: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BusinessDevelopment/\{businessdevelopmentid\}/Initiative/\{initiativeid\}/Retrieve
+:::
+
+### Description
 
 Define\, implement\, track and assess the new business development plans ReBQ Retrieve details about a business development initiative
 

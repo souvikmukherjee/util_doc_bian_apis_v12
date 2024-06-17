@@ -1,19 +1,14 @@
 # PaymentInitiation
 
-## Table of Contents
-- [POST: /PaymentInitiation/Initiate](#post-/paymentinitiation/initiate)
-- [PUT: /PaymentInitiation/\{paymentinitiationid\}/Update](#put-/paymentinitiation/\{paymentinitiationid\}/update)
-- [GET: /PaymentInitiation/\{paymentinitiationid\}/Retrieve](#get-/paymentinitiation/\{paymentinitiationid\}/retrieve)
-- [GET: /PaymentInitiation/\{paymentinitiationid\}/Compliance/\{complianceid\}/Retrieve](#get-/paymentinitiation/\{paymentinitiationid\}/compliance/\{complianceid\}/retrieve)
-- [GET: /PaymentInitiation/\{paymentinitiationid\}/FundingCheck/\{fundingcheckid\}/Retrieve](#get-/paymentinitiation/\{paymentinitiationid\}/fundingcheck/\{fundingcheckid\}/retrieve)
-- [GET: /PaymentInitiation/\{paymentinitiationid\}/OrderInitiation/\{orderinitiationid\}/Retrieve](#get-/paymentinitiation/\{paymentinitiationid\}/orderinitiation/\{orderinitiationid\}/retrieve)
-
-
 **BIAN Documentation:** [PaymentInitiation v12](https://app.swaggerhub.com/apis/BIAN-3/PaymentInitiation/12.0.0)
 
-### POST: /PaymentInitiation/Initiate
+## POST: /PaymentInitiation/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentInitiation/Initiate
+:::
+
+### Description
 
 This service domain provides a customer payment service\. It captures the payer and payee details and other key properties of the payment and orchestrates the transaction\. It provides support for repeating/scheduled payments InCR Initiate a payment transaction
 
@@ -25,9 +20,13 @@ This API path allows users to initiate a payment transaction by providing inform
 
 POST: If the path '/PaymentInitiation/Initiate' followed all REST best practices\, it should be named something more resource\-oriented and following the principle of using nouns for resources\. One possible name could be '/payments'\. This name is more concise\, focuses on the resource being manipulated \(payments\)\, and follows the convention of using plural nouns for collections\.
 
-### PUT: /PaymentInitiation/\{paymentinitiationid\}/Update
+## PUT: /PaymentInitiation/\{paymentinitiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentInitiation/\{paymentinitiationid\}/Update
+:::
+
+### Description
 
 This service domain provides a customer payment service\. It captures the payer and payee details and other key properties of the payment and orchestrates the transaction\. It provides support for repeating/scheduled payments UpCR Update details of a payment transaction instruction
 
@@ -41,9 +40,13 @@ PUT: The name of the path '/PaymentInitiation/\{paymentinitiationid\}/Update' fo
 
 PUT /PaymentInitiation/\{paymentinitiationid\}
 
-### GET: /PaymentInitiation/\{paymentinitiationid\}/Retrieve
+## GET: /PaymentInitiation/\{paymentinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInitiation/\{paymentinitiationid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer payment service\. It captures the payer and payee details and other key properties of the payment and orchestrates the transaction\. It provides support for repeating/scheduled payments ReCR Retrieve details about a payment transaction
 
@@ -55,9 +58,13 @@ This API path allows you to retrieve details about a specific payment transactio
 
 GET: The name of the path should be \`/payments/\{paymentId\}\`\.
 
-### GET: /PaymentInitiation/\{paymentinitiationid\}/Compliance/\{complianceid\}/Retrieve
+## GET: /PaymentInitiation/\{paymentinitiationid\}/Compliance/\{complianceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInitiation/\{paymentinitiationid\}/Compliance/\{complianceid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer payment service\. It captures the payer and payee details and other key properties of the payment and orchestrates the transaction\. It provides support for repeating/scheduled payments ReBQ Retrieve details about a payment transaction compliance check
 
@@ -70,9 +77,13 @@ This API path allows you to retrieve details about a payment transaction complia
 GET: The name of the path should be:
 '/payments/\{paymentId\}/compliance/\{complianceId\}'
 
-### GET: /PaymentInitiation/\{paymentinitiationid\}/FundingCheck/\{fundingcheckid\}/Retrieve
+## GET: /PaymentInitiation/\{paymentinitiationid\}/FundingCheck/\{fundingcheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInitiation/\{paymentinitiationid\}/FundingCheck/\{fundingcheckid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer payment service\. It captures the payer and payee details and other key properties of the payment and orchestrates the transaction\. It provides support for repeating/scheduled payments ReBQ Retrieve details about a payment transaction funds available
 
@@ -88,9 +99,13 @@ GET /payments/\{paymentinitiationid\}/funding\-checks/\{fundingcheckid\}
 
 This naming aligns with REST best practices by using lowercase letters\, plural nouns for collections\, and descriptive resource names\.
 
-### GET: /PaymentInitiation/\{paymentinitiationid\}/OrderInitiation/\{orderinitiationid\}/Retrieve
+## GET: /PaymentInitiation/\{paymentinitiationid\}/OrderInitiation/\{orderinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentInitiation/\{paymentinitiationid\}/OrderInitiation/\{orderinitiationid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer payment service\. It captures the payer and payee details and other key properties of the payment and orchestrates the transaction\. It provides support for repeating/scheduled payments ReBQ Retrieve details about the payment order initiation
 

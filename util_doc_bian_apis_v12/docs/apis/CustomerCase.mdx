@@ -1,22 +1,14 @@
 # CustomerCase
 
-## Table of Contents
-- [POST: /CustomerCase/Initiate](#post-/customercase/initiate)
-- [PUT: /CustomerCase/\{customercaseid\}/Update](#put-/customercase/\{customercaseid\}/update)
-- [GET: /CustomerCase/\{customercaseid\}/Retrieve](#get-/customercase/\{customercaseid\}/retrieve)
-- [PUT: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Update](#put-/customercase/\{customercaseid\}/analysis/\{analysisid\}/update)
-- [GET: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Retrieve](#get-/customercase/\{customercaseid\}/analysis/\{analysisid\}/retrieve)
-- [PUT: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Update](#put-/customercase/\{customercaseid\}/determination/\{determinationid\}/update)
-- [GET: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Retrieve](#get-/customercase/\{customercaseid\}/determination/\{determinationid\}/retrieve)
-- [PUT: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Update](#put-/customercase/\{customercaseid\}/resolution/\{resolutionid\}/update)
-- [GET: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Retrieve](#get-/customercase/\{customercaseid\}/resolution/\{resolutionid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerCase v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerCase/12.0.0)
 
-### POST: /CustomerCase/Initiate
+## POST: /CustomerCase/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerCase/Initiate
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) InCR Initiate a customer case procedure
 
@@ -30,9 +22,13 @@ POST: If the path '/CustomerCase/Initiate' is following REST best practices\, it
 
 A more appropriate path name based on the resource could be '/CustomerCases' where a POST request to this endpoint could be used to initiate a new customer case or create a new customer case resource\.
 
-### PUT: /CustomerCase/\{customercaseid\}/Update
+## PUT: /CustomerCase/\{customercaseid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCase/\{customercaseid\}/Update
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) UpCR Update details about a customer case
 
@@ -46,9 +42,13 @@ PUT: A suitable name for the path '/CustomerCase/\{customercaseid\}/Update' foll
 
 PATCH /CustomerCases/\{customercaseid\}
 
-### GET: /CustomerCase/\{customercaseid\}/Retrieve
+## GET: /CustomerCase/\{customercaseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCase/\{customercaseid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) ReCR Retrieve details about a customer case
 
@@ -62,9 +62,13 @@ GET: A suitable name for the given path\, following REST best practices\, would 
 
 '/customer\-cases/\{customercaseid\}'
 
-### PUT: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Update
+## PUT: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Update
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) UpBQ Update details of the analysis in a customer case
 
@@ -78,9 +82,13 @@ PUT: A suitable name for the path '/CustomerCase/\{customercaseid\}/Analysis/\{a
 
 PUT /customer\-cases/\{caseId\}/analyses/\{analysisId\}
 
-### GET: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Retrieve
+## GET: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCase/\{customercaseid\}/Analysis/\{analysisid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) ReBQ Retrieve details about the analysis of a customer case
 
@@ -96,9 +104,13 @@ GET: The RESTful path should be named based on its resource and action\. Followi
 
 This path reflects the hierarchy of resources and their relationship\. The HTTP method used to retrieve the resource will depend on the specific implementation\, typically GET is used for retrieving resources in RESTful APIs\.
 
-### PUT: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Update
+## PUT: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Update
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) UpBQ Update details of the determination in a customer case
 
@@ -110,9 +122,13 @@ This API path allows you to update the details of the determination made in a sp
 
 PUT: Based on REST best practices\, the name of the path could be \`/customer\-cases/\{customercaseid\}/determinations/\{determinationid\}\`\. This path follows the conventions of using lowercase letters\, separating words with hyphens instead of camel case\, and using plural nouns for resources\.
 
-### GET: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Retrieve
+## GET: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCase/\{customercaseid\}/Determination/\{determinationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) ReBQ Retrieve details about the determination of a customer case
 
@@ -126,9 +142,13 @@ GET: A suitable name for the path would be:
 
 '/customer\-cases/\{customercaseid\}/determinations/\{determinationid\}'
 
-### PUT: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Update
+## PUT: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Update
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) UpBQ Update details of the resolution tasks of a customer case
 
@@ -142,9 +162,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 '/customer\-cases/\{customercaseid\}/resolutions/\{resolutionid\}/updates'
 
-### GET: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Retrieve
+## GET: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCase/\{customercaseid\}/Resolution/\{resolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the initiation\, tracking\, resolution and reporting on customer cases \(issues that typically require corrective response to some financial transaction\) ReBQ Retrieve details about the resolution actions for a customer case
 

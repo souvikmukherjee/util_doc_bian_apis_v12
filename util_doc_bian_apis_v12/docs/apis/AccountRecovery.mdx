@@ -1,25 +1,14 @@
 # AccountRecovery
 
-## Table of Contents
-- [POST: /AccountRecovery/Initiate](#post-/accountrecovery/initiate)
-- [PUT: /AccountRecovery/\{accountrecoveryid\}/Update](#put-/accountrecovery/\{accountrecoveryid\}/update)
-- [GET: /AccountRecovery/\{accountrecoveryid\}/Retrieve](#get-/accountrecovery/\{accountrecoveryid\}/retrieve)
-- [PUT: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Update](#put-/accountrecovery/\{accountrecoveryid\}/assessment/\{assessmentid\}/update)
-- [GET: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Retrieve](#get-/accountrecovery/\{accountrecoveryid\}/assessment/\{assessmentid\}/retrieve)
-- [PUT: /AccountRecovery/\{accountrecoveryid\}/Writedown/\{writedownid\}/Update](#put-/accountrecovery/\{accountrecoveryid\}/writedown/\{writedownid\}/update)
-- [PUT: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Update](#put-/accountrecovery/\{accountrecoveryid\}/planning/\{planningid\}/update)
-- [GET: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Retrieve](#get-/accountrecovery/\{accountrecoveryid\}/planning/\{planningid\}/retrieve)
-- [PUT: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Update](#put-/accountrecovery/\{accountrecoveryid\}/negotiation/\{negotiationid\}/update)
-- [GET: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Retrieve](#get-/accountrecovery/\{accountrecoveryid\}/negotiation/\{negotiationid\}/retrieve)
-- [PUT: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Update](#put-/accountrecovery/\{accountrecoveryid\}/restructuring/\{restructuringid\}/update)
-- [GET: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Retrieve](#get-/accountrecovery/\{accountrecoveryid\}/restructuring/\{restructuringid\}/retrieve)
-
-
 **BIAN Documentation:** [AccountRecovery v12](https://app.swaggerhub.com/apis/BIAN-3/AccountRecovery/12.0.0)
 
-### POST: /AccountRecovery/Initiate
+## POST: /AccountRecovery/Initiate
 
-**Description**
+:::info Path
+POST: /AccountRecovery/Initiate
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted InCR Initiate the account recovery procedure
 
@@ -31,9 +20,13 @@ This API path "/AccountRecovery/Initiate" allows users to initiate the process o
 
 POST: A RESTful naming convention for the path '/AccountRecovery/Initiate' could be '/accounts/recovery/initiate'\. This naming convention follows the principle of using lowercase letters\, using plural nouns for resources\, and using hyphens to separate words\.
 
-### PUT: /AccountRecovery/\{accountrecoveryid\}/Update
+## PUT: /AccountRecovery/\{accountrecoveryid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountRecovery/\{accountrecoveryid\}/Update
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted UpCR Update details of an active account recovery case
 
@@ -47,9 +40,13 @@ PUT: The appropriate name for the path '/AccountRecovery/\{accountrecoveryid\}/U
 
 PATCH /AccountRecovery/\{accountrecoveryid\}
 
-### GET: /AccountRecovery/\{accountrecoveryid\}/Retrieve
+## GET: /AccountRecovery/\{accountrecoveryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountRecovery/\{accountrecoveryid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted ReCR Retrieve details about an active account recovery case
 
@@ -63,9 +60,13 @@ GET: The name of the path should be:
 
 '/accounts/\{accountId\}/recovery'
 
-### PUT: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Update
+## PUT: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Update
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted UpBQ Update details of an active case assessment
 
@@ -84,9 +85,13 @@ In this naming convention:
 \- \`account\-recoveries\` and \`assessments\` are in plural form to represent collections of resources\.
 \- \`\{account
 
-### GET: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Retrieve
+## GET: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountRecovery/\{accountrecoveryid\}/Assessment/\{assessmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted ReBQ Retrieve details of an active case assessment
 
@@ -102,9 +107,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path follows the pattern of using plural nouns for resources and using specific IDs to identify each resource\.
 
-### PUT: /AccountRecovery/\{accountrecoveryid\}/Writedown/\{writedownid\}/Update
+## PUT: /AccountRecovery/\{accountrecoveryid\}/Writedown/\{writedownid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountRecovery/\{accountrecoveryid\}/Writedown/\{writedownid\}/Update
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted UpBQ Update details of an active case write\-down
 
@@ -118,9 +127,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/accounts/\{accountId\}/recovery/\{recoveryId\}/writedowns/\{writedownId\}'
 
-### PUT: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Update
+## PUT: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Update
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted UpBQ Update details of an active case recovery plan
 
@@ -134,9 +147,13 @@ PUT: The name of the path should be:
 
 '/accounts/\{accountid\}/planning/\{planningid\}/update'
 
-### GET: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Retrieve
+## GET: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountRecovery/\{accountrecoveryid\}/Planning/\{planningid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted ReBQ Retrieve details of an active case recovery plan
 
@@ -150,9 +167,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /AccountRecoveries/\{accountrecoveryid\}/Plannings/\{planningid\}
 
-### PUT: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Update
+## PUT: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Update
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted UpBQ Update details of an active case negotiation
 
@@ -168,9 +189,13 @@ PUT /account\-recoveries/\{accountrecoveryid\}/negotiations/\{negotiationid\}
 
 This path communicates that a PUT request should be used to update a specific negotiation within an account recovery resource\, following the principles of RESTful design\.
 
-### GET: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Retrieve
+## GET: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountRecovery/\{accountrecoveryid\}/Negotiation/\{negotiationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted ReBQ Retrieve details of an active case negotiation
 
@@ -184,9 +209,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/accounts/\{accountId\}/recoveries/\{recoveryId\}/negotiations/\{negotiationId\}'
 
-### PUT: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Update
+## PUT: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Update
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted UpBQ Update details of case restructuring tasks
 
@@ -200,9 +229,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}
 
-### GET: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Retrieve
+## GET: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountRecovery/\{accountrecoveryid\}/Restructuring/\{restructuringid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the restructuring of a distressed account \(loan\) after standard recovery procedures have been exhausted ReBQ Retrieve details of case restructuring tasks
 

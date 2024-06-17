@@ -1,52 +1,14 @@
 # IssuedDeviceAdministration
 
-## Table of Contents
-- [POST: /IssuedDeviceAdministration/Initiate](#post-/issueddeviceadministration/initiate)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/update)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Exchange](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/exchange)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/retrieve)
-- [POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/Initiate](#post-/issueddeviceadministration/\{issueddeviceadministrationid\}/passwordassignment/initiate)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/passwordassignment/\{passwordassignmentid\}/update)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/passwordassignment/\{passwordassignmentid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Exchange](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/passwordassignment/\{passwordassignmentid\}/exchange)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Capture](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/passwordassignment/\{passwordassignmentid\}/capture)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/passwordassignment/\{passwordassignmentid\}/retrieve)
-- [POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/Initiate](#post-/issueddeviceadministration/\{issueddeviceadministrationid\}/questionassignment/initiate)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/questionassignment/\{questionassignmentid\}/update)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/questionassignment/\{questionassignmentid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Exchange](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/questionassignment/\{questionassignmentid\}/exchange)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Capture](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/questionassignment/\{questionassignmentid\}/capture)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/questionassignment/\{questionassignmentid\}/retrieve)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/deviceassignment/\{deviceassignmentid\}/update)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/deviceassignment/\{deviceassignmentid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Capture](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/deviceassignment/\{deviceassignmentid\}/capture)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/deviceassignment/\{deviceassignmentid\}/retrieve)
-- [POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/Initiate](#post-/issueddeviceadministration/\{issueddeviceadministrationid\}/biometricassignment/initiate)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/biometricassignment/\{biometricassignmentid\}/update)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/biometricassignment/\{biometricassignmentid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Exchange](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/biometricassignment/\{biometricassignmentid\}/exchange)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/biometricassignment/\{biometricassignmentid\}/retrieve)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/readerassignment/\{readerassignmentid\}/update)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/readerassignment/\{readerassignmentid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Capture](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/readerassignment/\{readerassignmentid\}/capture)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/readerassignment/\{readerassignmentid\}/retrieve)
-- [POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/Initiate](#post-/issueddeviceadministration/\{issueddeviceadministrationid\}/chequesassignment/initiate)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Control](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/chequesassignment/\{chequesassignmentid\}/control)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Exchange](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/chequesassignment/\{chequesassignmentid\}/exchange)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/chequesassignment/\{chequesassignmentid\}/retrieve)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Capture](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/tokenassignment/\{tokenassignmentid\}/capture)
-- [GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Retrieve](#get-/issueddeviceadministration/\{issueddeviceadministrationid\}/tokenassignment/\{tokenassignmentid\}/retrieve)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Update](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/tokenassignment/\{tokenassignmentid\}/update)
-- [POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/Provide](#post-/issueddeviceadministration/\{issueddeviceadministrationid\}/tokenassignment/provide)
-- [PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Execute](#put-/issueddeviceadministration/\{issueddeviceadministrationid\}/tokenassignment/\{tokenassignmentid\}/execute)
-
-
 **BIAN Documentation:** [IssuedDeviceAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/IssuedDeviceAdministration/12.0.0)
 
-### POST: /IssuedDeviceAdministration/Initiate
+## POST: /IssuedDeviceAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /IssuedDeviceAdministration/Initiate
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate PrCR Allocate an issued device \(selected type will internally invoke assignment type\)
 
@@ -58,9 +20,13 @@ This API path allows users to initiate the issuance of authentication tokens\, w
 
 POST: If the path '/IssuedDeviceAdministration/Initiate' followed all REST best practices\, it should be named based on the resource being acted upon rather than the action being taken\. It should reflect a noun that represents the resource\. For example\, it could be named as '/devices' if the resource being administered or initiated is a device\.
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate UpCR Update details of an allocation
 
@@ -74,9 +40,13 @@ PUT: The name of the path should be:
 
 '/issued\-device\-administrations/\{issueddeviceadministrationid\}'
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoCR Control an issued device allocation \(e\.g\. suspend\)
 
@@ -92,9 +62,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use all lowercase letters and separate words with hyphens in the path names\.
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Exchange
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Exchange
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate EcCR Accept\, verify\, etc aspects of an allocation
 
@@ -107,9 +81,13 @@ This API path allows you to update information related to the administration of 
 PUT: Based on REST best practices\, the name of the path should be:  
 '/issued\-device\-administrations/\{issueddeviceadministrationid\}/exchange'
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReCR Retrieve details about an allocation
 
@@ -127,9 +105,13 @@ GET: The name of the path should be:
 
 This naming convention adheres to REST best practices by using lowercase letters\, hyphens to separate words\, and only including the necessary information to uniquely identify the resource\.
 
-### POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/Initiate
+## POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/Initiate
 
-**Description**
+:::info Path
+POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/Initiate
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate PrBQ Provide a password assignment
 
@@ -152,9 +134,13 @@ Here are some key points to consider:
 3\. Use plural nouns for collections \(e\.g\.\, devices\) and singular nouns for specific resources \(e\.g\.\, device\)\.
 4\. Use descriptive and
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate UpBQ Update details of an assigned password
 
@@ -168,9 +154,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /issued\-devices/\{issueddeviceadministrationid\}/password\-assignments/\{passwordassignmentid\}
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoBQ Control an assigned password \(e\.g\. suspend\)
 
@@ -184,9 +174,13 @@ PUT: Based on REST best practices\, the path could be named as follows:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/password\-assignments/\{passwordassignmentid\}/control
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Exchange
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Exchange
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate EcBQ Accept\, verify\, reject etc\. an assigned password
 
@@ -202,9 +196,13 @@ PUT: A RESTful path should be descriptive and follow the resource\-oriented appr
 
 This naming convention follows the best practices of using lowercase letters\, hyphens to separate words\, and plural nouns for collections where applicable\.
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Capture
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Capture
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CaBQ Capture usage details of an assigned password
 
@@ -223,9 +221,13 @@ According to REST best practices:
 \- Separate words with hyphens instead of underscores
 \- Use plural nouns for collections \(e\.g\.\, \`issued\-device\-administrations\`\, \`password\-assignments\`\)
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/PasswordAssignment/\{passwordassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReBQ Retrieve details about an assigned password
 
@@ -241,9 +243,13 @@ GET: The name of the path should be:
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/password\-assignments/\{passwordassignmentid\}/retrieve
 \`\`\`
 
-### POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/Initiate
+## POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/Initiate
 
-**Description**
+:::info Path
+POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/Initiate
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate PrBQ Provide a secret question assignment
 
@@ -259,9 +265,13 @@ POST: The name of the path should be:
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/question\-assignments/initiate
 \`\`\`
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate UpBQ Update details of an assigned secret question
 
@@ -275,9 +285,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/question\-assignments/\{questionassignmentid\}
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoBQ Control an assigned secret question \(e\.g\. suspend\)
 
@@ -293,9 +307,13 @@ PUT: Based on REST best practices\, the name of the path should be structured li
 
 It is important to use lowercase letters\, separate words with hyphens \(\-\) instead of camel case or underscores\, and use plural nouns when naming resources in a RESTful API\.
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Exchange
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Exchange
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate EcBQ Accept\, verify\, reject etc\. an assigned secret question
 
@@ -309,9 +327,13 @@ PUT: The name of the path should be:
 
 '/issued\-device\-administrations/\{issueddeviceadministrationid\}/question\-assignments/\{questionassignmentid\}/exchange'
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Capture
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Capture
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CaBQ Capture usage details of an assigned secret question
 
@@ -325,9 +347,13 @@ PUT: The name of the path according to REST best practices could be:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/question\-assignments/\{questionassignmentid\}/capture
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/QuestionAssignment/\{questionassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReBQ Retrieve details about an assigned ser=AndAnd password
 
@@ -341,9 +367,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/question\-assignments/\{questionassignmentid\}/retrieve
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate UpBQ Update details of an assigned device
 
@@ -359,9 +389,13 @@ PUT: The name for the path should be:
 
 This path uses lowercase letters and hyphens to separate words\, which is a common practice in REST APIs\.
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoBQ Control an assigned device \(e\.g\. out of service\)
 
@@ -375,9 +409,13 @@ PUT: Based on REST best practices\, a possible naming convention for this path c
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/device\-assignments/\{deviceassignmentid\}/control
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Capture
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Capture
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CaBQ Capture usage details of an assigned device
 
@@ -391,9 +429,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 \`/issued\-device\-administrations/\{issueddeviceadministrationid\}/device\-assignments/\{deviceassignmentid\}/captures\`
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/DeviceAssignment/\{deviceassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReBQ Retrieve details about an assigned device
 
@@ -407,9 +449,13 @@ GET: Based on REST best practices\, a suitable name for the path '/IssuedDeviceA
 
 GET '/issued\-device\-administrations/\{issueddeviceadministrationid\}/device\-assignments/\{deviceassignmentid\}'
 
-### POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/Initiate
+## POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/Initiate
 
-**Description**
+:::info Path
+POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/Initiate
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate PrBQ Provide a biometric assignment
 
@@ -423,9 +469,13 @@ POST: Based on REST best practices\, the name of the path could be:
 
 /issued\-devices/\{issueddeviceadministrationid\}/biometric\-assignments/initiate
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate UpBQ Update details of an assigned biometric
 
@@ -438,9 +488,13 @@ This API path allows you to update the details of a biometric assignment that is
 PUT: The name of the path could be:  
 PUT /issued\-device\-administrations/\{issuedDeviceAdministrationId\}/biometric\-assignments/\{biometricAssignmentId\}
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoBQ Control an assigned biometric \(e\.g\. suspend\)
 
@@ -454,9 +508,13 @@ PUT: The name for the path \`/IssuedDeviceAdministration/\{issueddeviceadministr
 
 \`/issued\-device\-administrations/\{issueddeviceadministrationid\}/biometric\-assignments/\{biometricassignmentid\}/control\`
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Exchange
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Exchange
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate EcBQ Accept\, verify\, reject etc\. an assigned biometric
 
@@ -470,9 +528,13 @@ PUT: The name of the path should be:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/biometric\-assignments/\{biometricassignmentid\}/exchanges
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/BiometricAssignment/\{biometricassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReBQ Retrieve details about an assigned biometric
 
@@ -486,9 +548,13 @@ GET: The name of the path should be:
 
 \`/issued\-device\-administrations/\{issueddeviceadministrationid\}/biometric\-assignments/\{biometricassignmentid\}\`
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate UpBQ Update details of an assigned reader device
 
@@ -502,9 +568,13 @@ PUT: The name of the path should be:
 
 \`PUT /issued\-device\-administrations/\{issueddeviceadministrationid\}/reader\-assignments/\{readerassignmentid\}\`
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoBQ Control an assigned reader \(e\.g\. out of service\)
 
@@ -520,9 +590,13 @@ A more appropriate name for the path could be:
 
 /IssuedDevices/\{issueddeviceid\}/ReaderAssignments/\{readerassignmentid\}/Controls
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Capture
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Capture
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CaBQ Capture usage details of an assigned reader
 
@@ -535,9 +609,13 @@ This API path allows you to update the usage details of a specific reader that h
 PUT: The name of the path should be:
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/reader\-assignments/\{readerassignmentid\}/captures
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ReaderAssignment/\{readerassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReBQ Retrieve details about an assigned reader
 
@@ -551,9 +629,13 @@ GET: Based on REST best practices\, a potentially more descriptive and user\-fri
 
 GET '/issued\-devices/\{issueddeviceadministrationid\}/reader\-assignments/\{readerassignmentid\}'
 
-### POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/Initiate
+## POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/Initiate
 
-**Description**
+:::info Path
+POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/Initiate
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate PrBQ Provide cheques
 
@@ -567,9 +649,13 @@ POST: The name of the path should ideally be something that represents a resourc
 
 '/issued\-devices/\{issued\-device\-id\}/cheques\-assignment/initiate'
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Control
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Control
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate CoBQ Control issued cheques \(e\.g\. cancel\)
 
@@ -583,9 +669,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/cheques\-assignments/\{chequesassignmentid\}/control
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Exchange
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Exchange
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate EcBQ Accept\, verify receipt etc\. of issued cheques
 
@@ -599,9 +689,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/cheques\-assignments/\{chequesassignmentid\}/exchange
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/ChequesAssignment/\{chequesassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate ReBQ Retrieve details about issued cheques
 
@@ -617,9 +711,13 @@ GET /issued\-device\-administrations/\{issueddeviceadministrationid\}/cheques\-a
 
 This naming convention follows the best practice guidelines for REST APIs\, which typically use lowercase letters and hyphens to separate words in the endpoint path\.
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Capture
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Capture
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate Capture Assigned Token
 
@@ -635,9 +733,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with dashes\, and be descriptive of the resource it represents\.
 
-### GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Retrieve
+## GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate Retrieve Details about Assigned Token
 
@@ -651,9 +753,13 @@ GET: The name of the path should be:
 
 '/issued\-device\-administrations/\{issueddeviceadministrationid\}/token\-assignments/\{tokenassignmentid\}/retrieve'
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Update
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Update
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate Update Details of Assigned Token
 
@@ -667,9 +773,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PUT /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}
 
-### POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/Provide
+## POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/Provide
 
-**Description**
+:::info Path
+POST: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/Provide
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate Provide Details about Assigned Token
 
@@ -685,9 +795,13 @@ POST: Based on REST best practices\, the name of the path should be:
 /issued\-device\-administrations/\{issueddeviceadministrationid\}/token\-assignments/provide
 \`\`\`
 
-### PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Execute
+## PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceAdministration/\{issueddeviceadministrationid\}/TokenAssignment/\{tokenassignmentid\}/Execute
+:::
+
+### Description
 
 This service domain administers the issuance of authentication tokens to customers and third party service providers\. Tokens here include physical devices such as cards\, fobs\, readers and intangible 'devices' such as passwords and secret questions\. Administration includes version tracking\, replacement and duration/frequency limits\. Specific product/service access permissions may be associated with an issued token when appropriate Execute token assignment amend permission
 

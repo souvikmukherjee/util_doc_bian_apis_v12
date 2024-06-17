@@ -1,41 +1,14 @@
 # NotionalPooling
 
-## Table of Contents
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/Control](#put-/notionalpooling/\{notionalpoolingid\}/control)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/Exchange](#put-/notionalpooling/\{notionalpoolingid\}/exchange)
-- [POST: /NotionalPooling/Initiate](#post-/notionalpooling/initiate)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/Notify](#get-/notionalpooling/\{notionalpoolingid\}/notify)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/Request](#put-/notionalpooling/\{notionalpoolingid\}/request)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/Retrieve](#get-/notionalpooling/\{notionalpoolingid\}/retrieve)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/Update](#put-/notionalpooling/\{notionalpoolingid\}/update)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Exchange](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/\{notionalaccountarrangementid\}/exchange)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Exchange](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/\{notionalaccountconsolidatedpositionid\}/exchange)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Exchange](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/\{notionalaccountinterestallocationid\}/exchange)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Execute](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/\{notionalaccountarrangementid\}/execute)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Execute](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/\{notionalaccountconsolidatedpositionid\}/execute)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Execute](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/\{notionalaccountinterestallocationid\}/execute)
-- [POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/Initiate](#post-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/initiate)
-- [POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/Initiate](#post-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/initiate)
-- [POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/Initiate](#post-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/initiate)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Notify](#get-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/\{notionalaccountarrangementid\}/notify)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Notify](#get-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/\{notionalaccountconsolidatedpositionid\}/notify)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Notify](#get-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/\{notionalaccountinterestallocationid\}/notify)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Request](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/\{notionalaccountarrangementid\}/request)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Request](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/\{notionalaccountconsolidatedpositionid\}/request)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Request](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/\{notionalaccountinterestallocationid\}/request)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Retrieve](#get-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/\{notionalaccountarrangementid\}/retrieve)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Retrieve](#get-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/\{notionalaccountconsolidatedpositionid\}/retrieve)
-- [GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Retrieve](#get-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/\{notionalaccountinterestallocationid\}/retrieve)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Update](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountarrangement/\{notionalaccountarrangementid\}/update)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Update](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountconsolidatedposition/\{notionalaccountconsolidatedpositionid\}/update)
-- [PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Update](#put-/notionalpooling/\{notionalpoolingid\}/notionalaccountinterestallocation/\{notionalaccountinterestallocationid\}/update)
-
-
 **BIAN Documentation:** [NotionalPooling v12](https://app.swaggerhub.com/apis/BIAN-3/NotionalPooling/12.0.0)
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/Control
+## PUT: /NotionalPooling/\{notionalpoolingid\}/Control
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/Control
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Control Notional Pooling Facility
 
@@ -49,9 +22,13 @@ PUT: A possible name for the path could be '/notional\-pooling/\{notionalpooling
 
 Remember to use lowercase letters\, separate words with hyphens\, and use plural nouns for consistency with REST best practices\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/Exchange
+## PUT: /NotionalPooling/\{notionalpoolingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/Exchange
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Exchange Notional Pooling Facility
 
@@ -67,9 +44,13 @@ PUT: The name of the path should be:
 
 Make sure to use the plural "Exchanges" since it is recommended to use plural nouns for consistency in REST API naming conventions\.
 
-### POST: /NotionalPooling/Initiate
+## POST: /NotionalPooling/Initiate
 
-**Description**
+:::info Path
+POST: /NotionalPooling/Initiate
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Initiate Notional Pooling Facility
 
@@ -85,9 +66,13 @@ POST: Following REST best practices\, the name of the path should be:
 POST /notional\-pooling
 \`\`\`
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/Notify
+## GET: /NotionalPooling/\{notionalpoolingid\}/Notify
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/Notify
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Notify Notional Pooling Facility
 
@@ -103,9 +88,13 @@ GET: The name of the path should be:
 /NotionalPooling/\{notionalpoolingid\}/Notifications
 \`\`\`
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/Request
+## PUT: /NotionalPooling/\{notionalpoolingid\}/Request
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/Request
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Request Notional Pooling Facility
 
@@ -117,9 +106,13 @@ This API path allows a corporate customer to request a notional pooling facility
 
 PUT: The name of the path should follow RESTful guidelines and be descriptive of the resource it represents\. A possible name for this path could be "/notional\-pooling/\{notionalpoolingid\}/requests"\. This conveys that it is a sub\-resource of the notional pooling resource\, specifically representing requests related to a particular notional pooling ID\. By using lowercase letters\, dashes for readability\, and plural form for consistency with REST conventions\, this naming convention adheres to best practices\.
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/Retrieve
+## GET: /NotionalPooling/\{notionalpoolingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/Retrieve
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Retrieve Notional Pooling Facility
 
@@ -135,9 +128,13 @@ GET /NotionalPooling/\{notionalpoolingid\}
 
 This name follows the typical REST convention of using HTTP methods in the path name to indicate the action being performed\. The GET method is commonly used to retrieve a specific resource\, which aligns with the action being described in this path\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/Update
+## PUT: /NotionalPooling/\{notionalpoolingid\}/Update
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/Update
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Update Notional Pooling Facility
 
@@ -149,9 +146,13 @@ This BIAN API path allows you to update an existing notional pooling facility\. 
 
 PUT: The name of the path should be \`/notional\-pooling/\{notionalpoolingid\}\` following REST best practices\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Exchange
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Exchange
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Exchange Notional Account Arrangement Fulfillment
 
@@ -165,9 +166,13 @@ PUT: The name of the endpoint could be:
 
 GET /notional\-pooling/\{notionalpoolingid\}/notional\-account\-arrangements/\{notionalaccountarrangementid\}/exchanges
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Exchange
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Exchange
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Exchange Notional Account Consolidated Position Fulfillment
 
@@ -183,9 +188,13 @@ PUT: A possible name for the path could be:
 
 This name follows REST best practices by using lowercase letters and hyphens to separate words in the path\. It also includes relevant resource identifiers for clarity and consistency\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Exchange
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Exchange
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Exchange Notional Account Interest Allocation Fulfillment
 
@@ -199,9 +208,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Exchange
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Execute
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Execute
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Execute Notional Account Arrangement Fulfillment
 
@@ -217,9 +230,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In RESTful URLs\, it's recommended to use lowercase letters\, hyphens for word separation\, and avoid using camelCase or underscores\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Execute
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Execute
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Execute Notional Account Consolidated Position Fulfillment
 
@@ -231,9 +248,13 @@ This API path is used to update and execute the consolidated position fulfillmen
 
 PUT: The name of the path should be \`/notional\-pooling/\{notionalpoolingid\}/notional\-account\-consolidated\-position/\{notionalaccountconsolidatedpositionid\}/execute\` in accordance with REST best practices\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Execute
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Execute
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Execute Notional Account Interest Allocation Fulfillment
 
@@ -247,9 +268,13 @@ PUT: The name of the path should be:
 
 '/notional\-pooling/\{notionalpoolingid\}/notional\-account\-interest\-allocation/\{notionalaccountinterestallocationid\}/execute'
 
-### POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/Initiate
+## POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/Initiate
 
-**Description**
+:::info Path
+POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/Initiate
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Initiate Notional Account Arrangement Fulfillment
 
@@ -263,9 +288,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /notional\-pooling/\{notionalpoolingid\}/notional\-account\-arrangement/initiate
 
-### POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/Initiate
+## POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/Initiate
 
-**Description**
+:::info Path
+POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/Initiate
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Initiate Notional Account Consolidated Position Fulfillment
 
@@ -281,9 +310,13 @@ POST: Based on REST best practices\, the name of the path should be:
 /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/Initiate
 \`\`\`
 
-### POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/Initiate
+## POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/Initiate
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Initiate Notional Account Interest Allocation Fulfillment
 
@@ -297,9 +330,13 @@ POST: The name of the path could be:
 
 '/notional\-pooling/\{notionalpoolingid\}/notional\-account\-interest\-allocation/initiate'
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Notify
+## GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Notify
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Notify
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Notify Notional Account Arrangement Fulfillment
 
@@ -313,9 +350,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/notional\-pooling/\{notional\_pooling\_id\}/notional\-account\-arrangement/\{notional\_account\_arrangement\_id\}/notify'
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Notify
+## GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Notify
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Notify
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Notify Notional Account Consolidated Position Fulfillment
 
@@ -335,9 +376,13 @@ GET: Based on REST best practices\, the name for this path should be:
 /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Notifications
 \`\`\`
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Notify
+## GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Notify
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Notify
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Notify Notional Account Interest Allocation Fulfillment
 
@@ -355,9 +400,13 @@ GET: If we follow REST best practices\, the name of the path should be:
 
 This path indicates that it is a collection of notifications related to a specific notional account interest allocation within a notional pooling\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Request
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Request
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Request
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Request Notional Account Arrangement Fulfillment
 
@@ -373,9 +422,13 @@ PUT: A possible name for the path could be:
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and representing a collection of resources \(requests\) related to the specified notional pooling and notional account arrangement IDs\.
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Request
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Request
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Request
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Request Notional Account Consolidated Position Fulfillment
 
@@ -389,9 +442,13 @@ PUT: Following REST best practices\, the name of the path could be:
 
 /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Request
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Request
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Request
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Request
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Request Notional Account Interest Allocation Fulfillment
 
@@ -405,9 +462,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/notional\-pooling/\{notionalpoolingid\}/notional\-account\-interest\-allocation/\{notionalaccountinterestallocationid\}/request'
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Retrieve
+## GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Retrieve
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Retrieve Notional Account Arrangement Fulfillment
 
@@ -421,9 +482,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Notio
 
 GET /notional\-pooling/\{poolingId\}/notional\-account\-arrangement/\{arrangementId\}
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Retrieve
+## GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Retrieve
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Retrieve Notional Account Consolidated Position Fulfillment
 
@@ -437,9 +502,13 @@ GET: Following REST best practices\, the name of the path should ideally be:
 
 '/notional\-pooling/\{notionalpoolingid\}/notional\-account\-consolidated\-position/\{notionalaccountconsolidatedpositionid\}'
 
-### GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Retrieve
+## GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Retrieve
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Retrieve Notional Account Interest Allocation Fulfillment
 
@@ -453,9 +522,13 @@ GET: The name of the path could be formulated as follows if it followed REST bes
 
 '/notional\-pooling/\{notionalpoolingid\}/notional\-account\-interest\-allocations/\{notionalaccountinterestallocationid\}'
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Update
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Update
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountArrangement/\{notionalaccountarrangementid\}/Update
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Update Notional Account Arrangement Fulfillment
 
@@ -469,9 +542,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /notional\-pooling/\{notionalpoolingid\}/notional\-account\-arrangement/\{notionalaccountarrangementid\}
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Update
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Update
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountConsolidatedPosition/\{notionalaccountconsolidatedpositionid\}/Update
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Update Notional Account Consolidated Position Fulfillment
 
@@ -485,9 +562,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /notional\-pooling/\{notionalpoolingid\}/notional\-account\-consolidated\-position/\{notionalaccountconsolidatedpositionid\}
 
-### PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Update
+## PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /NotionalPooling/\{notionalpoolingid\}/NotionalAccountInterestAllocation/\{notionalaccountinterestallocationid\}/Update
+:::
+
+### Description
 
 Notional pooling allows corporate customer with multiple active accounts to pool credit and debit balances to provide a single centralized liquidity position and to minimize interest expense\, simplify cash management and retain a degree of local autonomy to the accounts Update Notional Account Interest Allocation Fulfillment
 

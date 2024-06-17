@@ -1,23 +1,14 @@
 # DirectDebitMandate
 
-## Table of Contents
-- [POST: /DirectDebitMandate/Register](#post-/directdebitmandate/register)
-- [PUT: /DirectDebitMandate/\{directdebitmandateid\}/Update](#put-/directdebitmandate/\{directdebitmandateid\}/update)
-- [PUT: /DirectDebitMandate/\{directdebitmandateid\}/Control](#put-/directdebitmandate/\{directdebitmandateid\}/control)
-- [GET: /DirectDebitMandate/\{directdebitmandateid\}/Retrieve](#get-/directdebitmandate/\{directdebitmandateid\}/retrieve)
-- [POST: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/Register](#post-/directdebitmandate/\{directdebitmandateid\}/mandateregistration/register)
-- [PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Update](#put-/directdebitmandate/\{directdebitmandateid\}/mandateregistration/\{mandateregistrationid\}/update)
-- [PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Exchange](#put-/directdebitmandate/\{directdebitmandateid\}/mandateregistration/\{mandateregistrationid\}/exchange)
-- [PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Execute](#put-/directdebitmandate/\{directdebitmandateid\}/mandateregistration/\{mandateregistrationid\}/execute)
-- [PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Request](#put-/directdebitmandate/\{directdebitmandateid\}/mandateregistration/\{mandateregistrationid\}/request)
-- [GET: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Retrieve](#get-/directdebitmandate/\{directdebitmandateid\}/mandateregistration/\{mandateregistrationid\}/retrieve)
-
-
 **BIAN Documentation:** [DirectDebitMandate v12](https://app.swaggerhub.com/apis/BIAN-3/DirectDebitMandate/12.0.0)
 
-### POST: /DirectDebitMandate/Register
+## POST: /DirectDebitMandate/Register
 
-**Description**
+:::info Path
+POST: /DirectDebitMandate/Register
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client InCR Register a new direct debit
 
@@ -29,9 +20,13 @@ This API path allows a corporate client to register a new direct debit mandate f
 
 POST: Based on REST best practices\, the name of the path '/DirectDebitMandate/Register' should be revised to use a noun that represents a resource rather than an action\. A more appropriate name for the path could be '/DirectDebitMandates' to represent the collection of Direct Debit mandates or '/DirectDebitMandate' to represent a single Direct Debit mandate\.
 
-### PUT: /DirectDebitMandate/\{directdebitmandateid\}/Update
+## PUT: /DirectDebitMandate/\{directdebitmandateid\}/Update
 
-**Description**
+:::info Path
+PUT: /DirectDebitMandate/\{directdebitmandateid\}/Update
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client UpCR Update details of an existing collection of DD mandates maintained for a corporate customer
 
@@ -43,9 +38,13 @@ This API path allows you to update the details of an existing direct debit manda
 
 PUT: Based on REST best practices\, the path '/DirectDebitMandates/\{directdebitmandateid\}' can be used to update a specific direct debit mandate resource\.
 
-### PUT: /DirectDebitMandate/\{directdebitmandateid\}/Control
+## PUT: /DirectDebitMandate/\{directdebitmandateid\}/Control
 
-**Description**
+:::info Path
+PUT: /DirectDebitMandate/\{directdebitmandateid\}/Control
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client CoCR Control a direct debit mandate collection \(e\.g\. suspend\)
 
@@ -59,9 +58,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /direct\-debit\-mandates/\{directdebitmandateid\}/controls
 
-### GET: /DirectDebitMandate/\{directdebitmandateid\}/Retrieve
+## GET: /DirectDebitMandate/\{directdebitmandateid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DirectDebitMandate/\{directdebitmandateid\}/Retrieve
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client ReCR Retrieve details about a collection of DD mandates
 
@@ -75,9 +78,13 @@ GET: The appropriate RESTful naming convention for this path would be:
 
 GET /direct\-debit\-mandates/\{directdebitmandateid\}
 
-### POST: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/Register
+## POST: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/Register
 
-**Description**
+:::info Path
+POST: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/Register
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client ReBQ Register a customer's DD mandate for a corporate customer
 
@@ -91,9 +98,13 @@ POST: The RESTful path for registering a direct debit mandate could be named as:
 
 '/direct\-debit\-mandates/\{directdebitmandateid\}/register\-mandate'
 
-### PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Update
+## PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Update
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client UpBQ Update details of the customer's DD mandate
 
@@ -107,9 +118,13 @@ PUT: The name of the path '/DirectDebitMandate/\{directdebitmandateid\}/MandateR
 
 PUT /directdebitmandates/\{directdebitmandateid\}/mandateregistrations/\{mandateregistrationid\}
 
-### PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Exchange
+## PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Exchange
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client EcBQ Accept\, verify etc\. a customer's DD mandate
 
@@ -123,9 +138,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/direct\-debit\-mandates/\{directdebitmandateid\}/mandate\-registrations/\{mandateregistrationid\}/exchange'
 
-### PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Execute
+## PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Execute
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client ExBQ Execute an automated action against the DD Mandate \(e\.g\. test proposed payment\)
 
@@ -141,9 +160,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /DirectDebitMandates/\{directdebitmandateid\}/MandateRegistrations/\{mandateregistrationid\}/Executions
 \`\`\`
 
-### PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Request
+## PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Request
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client ExBQ Request intervention with a customer's DD Mandate \(e\.g\. retrieve paperwork\)
 
@@ -159,9 +182,13 @@ PUT: Based on REST best practices\, the name of the path should be structured in
 2\. /directdebitmandates/\{directdebitmandateid\}/mandateregistrations/\{mandateregistrationid\}/requests
 3\. /direct\-debits
 
-### GET: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Retrieve
+## GET: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DirectDebitMandate/\{directdebitmandateid\}/MandateRegistration/\{mandateregistrationid\}/Retrieve
+:::
+
+### Description
 
 This service domains manages the customer mandates associated with direct debit processing for a corporate client ReBQ Retrieve details about a customer's DD mandate
 

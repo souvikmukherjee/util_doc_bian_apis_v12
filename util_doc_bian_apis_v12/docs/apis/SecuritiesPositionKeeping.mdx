@@ -1,19 +1,14 @@
 # SecuritiesPositionKeeping
 
-## Table of Contents
-- [POST: /SecuritiesPositionKeeping/Initiate](#post-/securitiespositionkeeping/initiate)
-- [PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Update](#put-/securitiespositionkeeping/\{securitiespositionkeepingid\}/update)
-- [GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Retrieve](#get-/securitiespositionkeeping/\{securitiespositionkeepingid\}/retrieve)
-- [PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Update](#put-/securitiespositionkeeping/\{securitiespositionkeepingid\}/securitiestransactioncapture/\{securitiestransactioncaptureid\}/update)
-- [PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Capture](#put-/securitiespositionkeeping/\{securitiespositionkeepingid\}/securitiestransactioncapture/\{securitiestransactioncaptureid\}/capture)
-- [GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Retrieve](#get-/securitiespositionkeeping/\{securitiespositionkeepingid\}/securitiestransactioncapture/\{securitiestransactioncaptureid\}/retrieve)
-
-
 **BIAN Documentation:** [SecuritiesPositionKeeping v12](https://app.swaggerhub.com/apis/BIAN-3/SecuritiesPositionKeeping/12.0.0)
 
-### POST: /SecuritiesPositionKeeping/Initiate
+## POST: /SecuritiesPositionKeeping/Initiate
 
-**Description**
+:::info Path
+POST: /SecuritiesPositionKeeping/Initiate
+:::
+
+### Description
 
 This service domain maintains a securities transaction log to support securities investment activity InCR Initiate a position keeping transaction log
 
@@ -25,9 +20,13 @@ This API path is used to create a new entry in the securities transaction log fo
 
 POST: The name of the path should be \`/securities\-position\-keeping/initiate\` considering REST best practices\, which include using lowercase letters\, separating words with hyphens\, and keeping the path descriptive but concise\.
 
-### PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Update
+## PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Update
 
-**Description**
+:::info Path
+PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Update
+:::
+
+### Description
 
 This service domain maintains a securities transaction log to support securities investment activity UpCR Update details for an active securities transaction log\, including reflecting an account block
 
@@ -41,9 +40,13 @@ PUT: The name of the path should be:
 
 PUT /securitiesPositionKeeping/\{securitiesPositionKeepingId\}
 
-### GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Retrieve
+## GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a securities transaction log to support securities investment activity ReCR Retrieve information about the log
 
@@ -55,9 +58,13 @@ This BIAN API path allows you to retrieve information about a securities transac
 
 GET: The name of the resource should ideally be a noun that describes the entity being retrieved\. In this case\, it could be named "/securitiesPositionKeeping/\{securitiesPositionKeepingId\}"\. Keeping the name concise and using camelCase is recommended in RESTful API design\.
 
-### PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Update
+## PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Update
+:::
+
+### Description
 
 This service domain maintains a securities transaction log to support securities investment activity UpBQ Update details of a captured securities transaction
 
@@ -71,9 +78,13 @@ PUT: The name of the path should be:
 
 PUT /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}
 
-### PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Capture
+## PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Capture
+:::
+
+### Description
 
 This service domain maintains a securities transaction log to support securities investment activity CaBQ Capture details of a securities transaction in the log
 
@@ -89,9 +100,13 @@ PUT: Based on REST best practices\, the name of the path should be structured to
 
 This path follows the convention of using nouns to represent resources and action\-related verbs to describe the operation being performed\.
 
-### GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Retrieve
+## GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SecuritiesPositionKeeping/\{securitiespositionkeepingid\}/SecuritiesTransactionCapture/\{securitiestransactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a securities transaction log to support securities investment activity ReBQ Retrieve details of securities transactions captured in the log
 

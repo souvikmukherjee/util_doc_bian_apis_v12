@@ -1,24 +1,14 @@
 # StandingOrder
 
-## Table of Contents
-- [PUT: /StandingOrder/\{standingorderid\}/Control](#put-/standingorder/\{standingorderid\}/control)
-- [PUT: /StandingOrder/\{standingorderid\}/Exchange](#put-/standingorder/\{standingorderid\}/exchange)
-- [PUT: /StandingOrder/\{standingorderid\}/Execute](#put-/standingorder/\{standingorderid\}/execute)
-- [POST: /StandingOrder/Initiate](#post-/standingorder/initiate)
-- [GET: /StandingOrder/\{standingorderid\}/Retrieve](#get-/standingorder/\{standingorderid\}/retrieve)
-- [PUT: /StandingOrder/\{standingorderid\}/Request](#put-/standingorder/\{standingorderid\}/request)
-- [PUT: /StandingOrder/\{standingorderid\}/Update](#put-/standingorder/\{standingorderid\}/update)
-- [PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Exchange](#put-/standingorder/\{standingorderid\}/standingorderpayment/\{standingorderpaymentid\}/exchange)
-- [POST: /StandingOrder/\{standingorderid\}/StandingOrderPayment/Initiate](#post-/standingorder/\{standingorderid\}/standingorderpayment/initiate)
-- [GET: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Retrieve](#get-/standingorder/\{standingorderid\}/standingorderpayment/\{standingorderpaymentid\}/retrieve)
-- [PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Update](#put-/standingorder/\{standingorderid\}/standingorderpayment/\{standingorderpaymentid\}/update)
-
-
 **BIAN Documentation:** [StandingOrder v12](https://app.swaggerhub.com/apis/BIAN-3/StandingOrder/12.0.0)
 
-### PUT: /StandingOrder/\{standingorderid\}/Control
+## PUT: /StandingOrder/\{standingorderid\}/Control
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/Control
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  CoCR Control the processing of Standing Order Facility
 
@@ -33,9 +23,13 @@ PUT: The name of the path should be:
 
 Ensure that the path components are in lowercase letters and use kebab case for better readability and adherence to REST best practices\.
 
-### PUT: /StandingOrder/\{standingorderid\}/Exchange
+## PUT: /StandingOrder/\{standingorderid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/Exchange
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  EcCR Accept\, verify\, etc\. aspects of Standing Order Facility processing
 
@@ -51,9 +45,13 @@ PUT: The name of the path should be:
 
 In this naming convention\, the path uses lowercase letters\, separates words with hyphens\, and uses the plural form of the noun "exchange" since it typically represents a collection of resources\. Additionally\, the path parameter \`standingOrderId\` is written in camel case\.
 
-### PUT: /StandingOrder/\{standingorderid\}/Execute
+## PUT: /StandingOrder/\{standingorderid\}/Execute
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/Execute
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  ExCR Execute an available automated action for Standing Order Facility
 
@@ -65,9 +63,13 @@ This API path allows customers to trigger the execution of a pre\-defined action
 
 PUT: A more RESTful name for the path '/StandingOrder/\{standingorderid\}/Execute' could be '/StandingOrders/\{standingorderid\}/Execution'\. This name reflects the resource \(StandingOrder\) and the action being taken \(Execution\) in a clearer and more standardized manner\.
 
-### POST: /StandingOrder/Initiate
+## POST: /StandingOrder/Initiate
 
-**Description**
+:::info Path
+POST: /StandingOrder/Initiate
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  InCR Instantiate a new Standing Order Facility
 
@@ -79,9 +81,13 @@ This API path allows customers to create a new standing order with the bank\. A 
 
 POST: Following REST best practices\, the path '/StandingOrder/Initiate' could be improved by using nouns to represent resources and avoiding verbs\. A more RESTful path name could be '/standing\-orders' to represent a collection of standing orders\, or '/standing\-orders/initiate' to initiate a new standing order\.
 
-### GET: /StandingOrder/\{standingorderid\}/Retrieve
+## GET: /StandingOrder/\{standingorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /StandingOrder/\{standingorderid\}/Retrieve
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  ReCR Retrieve details about any aspect of Standing Order Facility
 
@@ -93,9 +99,13 @@ This BIAN API path allows you to retrieve information about a specific Standing 
 
 GET: Based on REST best practices\, the name of the path '/StandingOrder/\{standingorderid\}/Retrieve' should be '/standing\-orders/\{standingorderid\}'\. This is more user\-friendly and follows the convention of using lowercase letters and separating words with hyphens in RESTful URLs\.
 
-### PUT: /StandingOrder/\{standingorderid\}/Request
+## PUT: /StandingOrder/\{standingorderid\}/Request
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/Request
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  RqCR Request manual intervention or a decision with respect to Standing Order Facility
 
@@ -109,9 +119,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /standing\-orders/\{standingOrderId\}/requests
 
-### PUT: /StandingOrder/\{standingorderid\}/Update
+## PUT: /StandingOrder/\{standingorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/Update
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  UpCR Update details relating to Standing Order Facility
 
@@ -125,9 +139,13 @@ PUT: The name of the path should be:
 
 PATCH /StandingOrders/\{standingorderid\}
 
-### PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Exchange
+## PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Exchange
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  EcBQ Accept\, verify\, etc\. aspects of Standing Order Payment processing
 
@@ -141,9 +159,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /standing\-orders/\{standingorderid\}/standing\-order\-payments/\{standingorderpaymentid\}/exchange
 
-### POST: /StandingOrder/\{standingorderid\}/StandingOrderPayment/Initiate
+## POST: /StandingOrder/\{standingorderid\}/StandingOrderPayment/Initiate
 
-**Description**
+:::info Path
+POST: /StandingOrder/\{standingorderid\}/StandingOrderPayment/Initiate
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  InBQ Instantiate a new Standing Order Payment
 
@@ -158,9 +180,13 @@ POST: The name of the path should ideally be:
 /standing\-orders/\{standingorderid\}/payments
 \`\`\`
 
-### GET: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Retrieve
+## GET: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Retrieve
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  ReBQ Retrieve details about any aspect of Standing Order Payment
 
@@ -174,9 +200,13 @@ GET: The name of the path following REST best practices could be:
 
 /standing\-orders/\{standingorderid\}/payments/\{standingorderpaymentid\}
 
-### PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Update
+## PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /StandingOrder/\{standingorderid\}/StandingOrderPayment/\{standingorderpaymentid\}/Update
+:::
+
+### Description
 
 Customers can issue standing orders to the bank\. In most cases this is for the execution of a periodical payment\, but there are other standing instructions like\, sweeping balances at end of month\, topping off excess funds for a current account\, etc\.  UpBQ Update details relating to Standing Order Payment
 

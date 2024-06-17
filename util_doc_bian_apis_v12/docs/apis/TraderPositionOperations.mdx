@@ -1,56 +1,14 @@
 # TraderPositionOperations
 
-## Table of Contents
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Control](#put-/traderpositionoperations/\{traderpositionoperationsid\}/control)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Exchange](#put-/traderpositionoperations/\{traderpositionoperationsid\}/exchange)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Execute](#put-/traderpositionoperations/\{traderpositionoperationsid\}/execute)
-- [POST: /TraderPositionOperations/Initiate](#post-/traderpositionoperations/initiate)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Notify](#get-/traderpositionoperations/\{traderpositionoperationsid\}/notify)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Request](#put-/traderpositionoperations/\{traderpositionoperationsid\}/request)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Retrieve](#get-/traderpositionoperations/\{traderpositionoperationsid\}/retrieve)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Update](#put-/traderpositionoperations/\{traderpositionoperationsid\}/update)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Exchange](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/\{tradecaptureandreportingid\}/exchange)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Exchange](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/\{tradedealblotterid\}/exchange)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Exchange](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/\{tradequoteandpricingid\}/exchange)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Exchange](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/exchange)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Exchange](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/\{tradertradingpermissionsandlimitsid\}/exchange)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Execute](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/\{tradecaptureandreportingid\}/execute)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Execute](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/\{tradedealblotterid\}/execute)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Execute](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/\{tradequoteandpricingid\}/execute)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Execute](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/execute)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Execute](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/\{tradertradingpermissionsandlimitsid\}/execute)
-- [POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/Initiate](#post-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/initiate)
-- [POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/Initiate](#post-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/initiate)
-- [POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/Initiate](#post-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/initiate)
-- [POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/Initiate](#post-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/initiate)
-- [POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/Initiate](#post-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/initiate)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Notify](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/\{tradecaptureandreportingid\}/notify)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Notify](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/\{tradedealblotterid\}/notify)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Notify](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/\{tradequoteandpricingid\}/notify)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Notify](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/notify)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Notify](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/\{tradertradingpermissionsandlimitsid\}/notify)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Request](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/\{tradecaptureandreportingid\}/request)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Request](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/\{tradedealblotterid\}/request)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Request](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/\{tradequoteandpricingid\}/request)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Request](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/request)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Request](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/\{tradertradingpermissionsandlimitsid\}/request)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Retrieve](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/\{tradecaptureandreportingid\}/retrieve)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Retrieve](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/\{tradedealblotterid\}/retrieve)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Retrieve](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/\{tradequoteandpricingid\}/retrieve)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Retrieve](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/retrieve)
-- [GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Retrieve](#get-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/\{tradertradingpermissionsandlimitsid\}/retrieve)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Update](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradecaptureandreporting/\{tradecaptureandreportingid\}/update)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Update](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradedealblotter/\{tradedealblotterid\}/update)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Update](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradequoteandpricing/\{tradequoteandpricingid\}/update)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Update](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/update)
-- [PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Update](#put-/traderpositionoperations/\{traderpositionoperationsid\}/tradertradingpermissionsandlimits/\{tradertradingpermissionsandlimitsid\}/update)
-
-
 **BIAN Documentation:** [TraderPositionOperations v12](https://app.swaggerhub.com/apis/BIAN-3/TraderPositionOperations/12.0.0)
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Control
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Control
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Control
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Control Traded Position Operating Session
 
@@ -62,9 +20,13 @@ This BIAN API path allows you to update an existing resource related to trader p
 
 PUT: The name of the path should be \`/trader\-position\-operations/\{traderpositionoperationsid\}/control\` following REST best practices\. The path should be in lowercase\, use hyphens to separate words\, and include nouns to represent resources\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Exchange
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Exchange Traded Position Operating Session
 
@@ -78,9 +40,13 @@ PUT: The name of the path '/TraderPositionOperations/\{traderpositionoperationsi
 
 '/traderPositionOperations/\{traderPositionOperationsId\}/exchange'
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Execute
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Execute Traded Position Operating Session
 
@@ -92,9 +58,13 @@ This BIAN API path allows individual traders within a trading book group to exec
 
 PUT: The name of the path should be "/trader\-positions/\{traderpositionid\}/execute" following REST best practices\.
 
-### POST: /TraderPositionOperations/Initiate
+## POST: /TraderPositionOperations/Initiate
 
-**Description**
+:::info Path
+POST: /TraderPositionOperations/Initiate
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Initiate Traded Position Operating Session
 
@@ -112,9 +82,13 @@ POST /trader\-positions
 
 This naming convention is more clear\, concise and follows the RESTful principle of using nouns for resources and avoiding verbs in the endpoint path\.
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Notify
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Notify
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Notify Traded Position Operating Session
 
@@ -132,9 +106,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should be descriptive\, clearly indicating the resource "TraderPositionOperations" and the specific operation "Notify" to notify a trader position operation\. Including the specific ID parameter \{traderpositionoperationsid\} helps to identify the individual trader position operation being referred to\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Request
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Request
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Request Traded Position Operating Session
 
@@ -156,9 +134,13 @@ Key points to consider based on RESTful best practices:
 3\. Use descriptive names that indicate the nature of the operation being performed on the resource\.
 4\. Use singular nouns for resource names\.
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Retrieve
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Retrieve Traded Position Operating Session
 
@@ -170,9 +152,13 @@ This BIAN API path allows you to retrieve information about a Traded Position Op
 
 GET: The name of the path should be \`/trader\-position\-operations/\{trader\-position\-operations\-id\}\` for adhering to REST best practices\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Update
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Update Traded Position Operating Session
 
@@ -184,9 +170,13 @@ This API path enables traders to update information related to their traded posi
 
 PUT: Following REST best practices\, the name of the path should be structured in a way that represents a resource\. Therefore\, the name of the path '/TraderPositionOperations/\{traderpositionoperationsid\}/Update' could be simplified to '/TraderPositions/\{traderpositionsid\}' for updating a specific trader position resource\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Exchange
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Exchange Trade Capture and Reporting Function
 
@@ -200,9 +190,13 @@ PUT: The name of the path should be:
 
 /trader\-position\-operations/\{traderpositionoperationsid\}/trade\-capture\-and\-reporting/\{tradecaptureandreportingid\}/exchange
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Exchange
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Exchange Trade Deal Blotter Function
 
@@ -218,9 +212,13 @@ PUT: The name of the path should be:
 
 In RESTful design\, resource names should be singular nouns and should represent the entity being manipulated or accessed\. The term "Resource" at the end of the path indicates that it refers to the Exchange resource within the context of the TraderPositionOperations and TradeDealBlotter resources\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Exchange
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Exchange Trade Quote and Pricing Function
 
@@ -236,9 +234,13 @@ PUT: Based on REST best practices\, a suitable name for the path could be:
 
 '/trader\-position\-operations/\{traderpositionoperationsid\}/trade\-quote\-and\-pricing/\{tradequoteandpricingid\}/exchange'
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Exchange
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Exchange Trader Security Position Management and Analysis Function
 
@@ -252,9 +254,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/traderpositionoperations/\{traderpositionoperationsid\}/tradersecuritypositionmanagementandanalysis/\{tradersecuritypositionmanagementandanalysisid\}/exchange\`
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Exchange
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Exchange Trader Trading Permissions and Limits Function
 
@@ -268,9 +274,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/trader\-position\-operations/\{traderpositionoperationsid\}/trader\-trading\-permissions\-and\-limits/\{tradertradingpermissionsandlimitsid\}/exchange'
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Execute
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Execute Trade Capture and Reporting Function
 
@@ -282,9 +292,13 @@ This API path allows individual traders within a trading book group to update an
 
 PUT: The name of the path following REST best practices could be something like '/trader\-positions/\{traderpositionoperationsid\}/trade\-capture\-and\-reporting/\{tradecaptureandreportingid\}/execute'\. This naming convention uses lowercase letters\, dashes to separate words\, and describes the resource hierarchy clearly and concisely\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Execute
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Execute Trade Deal Blotter Function
 
@@ -303,9 +317,13 @@ POST /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\
 In this naming convention:
 \- We use the HTTP method \`POST\` to indicate that
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Execute
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Execute Trade Quote and Pricing Function
 
@@ -321,9 +339,13 @@ PUT: The name of the path should be something like:
 
 Following REST best practices\, the path should be all lowercase\, use hyphens to separate words\, and should be descriptive of the resource being accessed\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Execute
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Execute Trader Security Position Management and Analysis Function
 
@@ -340,9 +362,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows a hierarchical structure\, representing related resources\, and uses HTTP methods \(\`GET\`\, \`POST\`\, \`PUT\`\, \`DELETE\`\, etc\.\) for different operations on the resource\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Execute
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Execute Trader Trading Permissions and Limits Function
 
@@ -358,9 +384,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 Make sure to use all lowercase letters\, separate words with hyphens\, and use plural nouns for consistency\.
 
-### POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/Initiate
+## POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/Initiate
 
-**Description**
+:::info Path
+POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/Initiate
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Initiate Trade Capture and Reporting Function
 
@@ -376,9 +406,13 @@ POST: Following REST best practices\, the name of the path '/TraderPositionOpera
 
 In this revised path\, I've used all lowercase letters\, removed unnecessary words like "and\," and maintained a clear hierarchy by using singular nouns for the resource names\.
 
-### POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/Initiate
+## POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/Initiate
 
-**Description**
+:::info Path
+POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/Initiate
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Initiate Trade Deal Blotter Function
 
@@ -395,9 +429,13 @@ Here are the key considerations taken into account:
 2\. Use hyphens to separate words: Hyphens are preferred over underscores or camelCase for separating words in the path to improve readability\.
 3\. Use plural nouns for collections: The term "tr
 
-### POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/Initiate
+## POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/Initiate
 
-**Description**
+:::info Path
+POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/Initiate
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Initiate Trade Quote and Pricing Function
 
@@ -411,9 +449,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /trader\-position\-operations/\{id\}/trade\-quote\-and\-pricing/initiate
 
-### POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/Initiate
+## POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/Initiate
 
-**Description**
+:::info Path
+POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/Initiate
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Initiate Trader Security Position Management and Analysis Function
 
@@ -427,9 +469,13 @@ POST: The name of the path should be:
 
 /trader\-position\-operations/\{traderPositionOperationsId\}/security\-position\-management\-and\-analysis/initiate
 
-### POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/Initiate
+## POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/Initiate
 
-**Description**
+:::info Path
+POST: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/Initiate
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Initiate Trader Trading Permissions and Limits Function
 
@@ -443,9 +489,13 @@ POST: The name of the path based on REST best practices could be:
 
 '/trader\-position\-operations/\{traderpositionoperationsid\}/trader\-trading\-permissions\-and\-limits/initiate'
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Notify
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Notify
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Notify Trade Capture and Reporting Function
 
@@ -461,9 +511,13 @@ GET: The name of the path should be:
 
 REST best practices suggest using lowercase letters\, separating words with hyphens\, and avoiding capital letters and special characters in path names\.
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Notify
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Notify
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Notify Trade Deal Blotter Function
 
@@ -479,9 +533,13 @@ GET: A potential name for the path '/TraderPositionOperations/\{traderpositionop
 
 This path follows REST naming conventions by using lowercase letters and hyphens to separate words\. It also uses plural nouns for resources \(e\.g\. 'trader\-positions'
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Notify
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Notify
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Notify Trade Quote and Pricing Function
 
@@ -495,9 +553,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 \`/trader\-positions/\{traderpositionoperationsid\}/trade\-quote\-and\-pricing/\{tradequoteandpricingid\}/notify\`
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Notify
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Notify
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Notify Trader Security Position Management and Analysis Function
 
@@ -513,9 +575,13 @@ GET: A suggested name for the path could be:
 
 This name uses lowercase letters\, separates words with dashes\, and uses plural nouns for paths following REST best practices\.
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Notify
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Notify
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Notify Trader Trading Permissions and Limits Function
 
@@ -533,9 +599,13 @@ GET: The RESTful URL naming convention typically involves using nouns to represe
 
 This name is more suitable for a resource that represents notifications related to trader trading permissions and limits within the context of a specific trader position
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Request
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Request Trade Capture and Reporting Function
 
@@ -549,9 +619,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureAndReporting/\{tradecaptureandreportingid\}/Request
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Request
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Request
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Request Trade Deal Blotter Function
 
@@ -567,9 +641,13 @@ PUT: The name of the path should be:
 
 This follows REST best practices by utilizing meaningful resource names that accurately represent the hierarchy and relationships between the resources\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Request
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Request
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Request Trade Quote and Pricing Function
 
@@ -582,9 +660,13 @@ This BIAN API path allows individual traders in a trading book group to update a
 PUT: Based on REST best practices\, the name of the path could be:
 '/trader\-position\-operations/\{traderpositionoperationsid\}/trade\-quote\-and\-pricing/\{tradequoteandpricingid\}/request'
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Request
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Request Trader Security Position Management and Analysis Function
 
@@ -599,9 +681,13 @@ PUT: The name of the path should be:
 
 This follows REST best practices by using lowercase letters\, separating words with underscores\, and using resource names in plural form\.
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Request
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Request
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Request Trader Trading Permissions and Limits Function
 
@@ -617,9 +703,13 @@ PUT: Following REST best practices\, the name of the path should be something li
 
 This path uses lowercase letters\, dashes for separating words\, and represents a hierarchical structure\.
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Retrieve
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Retrieve Trade Capture and Reporting Function
 
@@ -635,9 +725,13 @@ GET: The name of the path should be:
 /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureAndReporting/\{tradecaptureandreportingid\}
 \`\`\`
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Retrieve
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Retrieve Trade Deal Blotter Function
 
@@ -651,9 +745,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 GET /trader\-position\-operations/\{traderpositionoperationsid\}/trade\-deal\-blotter/\{tradedealblotterid\}
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Retrieve
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Retrieve Trade Quote and Pricing Function
 
@@ -667,9 +765,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/trader\-position\-operations/\{traderPositionOperationsId\}/trade\-quote\-and\-pricing/\{tradeQuoteAndPricingId\}'
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Retrieve
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Retrieve Trader Security Position Management and Analysis Function
 
@@ -685,9 +787,13 @@ GET: The name of the path should be:
 
 In REST API design\, it is recommended to use hyphens to separate words in the path\, keep the path names lowercase\, avoid using verbs\, and make the path descriptive and concise\.
 
-### GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Retrieve
+## GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Retrieve Trader Trading Permissions and Limits Function
 
@@ -701,9 +807,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /trader\-position\-operations/\{trader\_position\_operations\_id\}/trader\-trading\-permissions\-and\-limits/\{trader\_trading\_permissions\_and\_limits\_id\}
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Update
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeCaptureandReporting/\{tradecaptureandreportingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Update Trade Capture and Reporting Function
 
@@ -717,9 +827,13 @@ PUT: Based on REST best practices\, the name of the path should focus on the res
 
 '/TraderPositions/\{traderpositionid\}/TradeCaptureReports/\{tradecaptureid\}'
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Update
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Update
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Update Trade Deal Blotter Function
 
@@ -733,9 +847,13 @@ PUT: The name for the path '/TraderPositionOperations/\{traderpositionoperations
 
 PUT /TraderPositionOperations/\{traderpositionoperationsid\}/TradeDealBlotter/\{tradedealblotterid\}
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Update
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Update
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TradeQuoteandPricing/\{tradequoteandpricingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Update Trade Quote and Pricing Function
 
@@ -749,9 +867,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/trader\-position\-operations/\{traderpositionoperationsid\}/trade\-quote\-and\-pricing/\{tradequoteandpricingid\}'
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Update
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderSecurityPositionManagementandAnalysis/\{tradersecuritypositionmanagementandanalysisid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Update Trader Security Position Management and Analysis Function
 
@@ -765,9 +887,13 @@ PUT: For naming the path following REST best practices\, it should be:
 
 /TraderPositionOperations/\{traderPositionOperationsId\}/TraderSecurityPositionManagementAndAnalysis/\{traderSecurityPositionManagementAndAnalysisId\}
 
-### PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Update
+## PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Update
 
-**Description**
+:::info Path
+PUT: /TraderPositionOperations/\{traderpositionoperationsid\}/TraderTradingPermissionsandLimits/\{tradertradingpermissionsandlimitsid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the activities of individual traders working within a trading book group Update Trader Trading Permissions and Limits Function
 

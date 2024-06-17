@@ -1,27 +1,14 @@
 # CommissionAgreement
 
-## Table of Contents
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/Control](#put-/commissionagreement/\{commissionagreementid\}/control)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/Exchange](#put-/commissionagreement/\{commissionagreementid\}/exchange)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/Grant](#put-/commissionagreement/\{commissionagreementid\}/grant)
-- [POST: /CommissionAgreement/Initiate](#post-/commissionagreement/initiate)
-- [GET: /CommissionAgreement/\{commissionagreementid\}/Retrieve](#get-/commissionagreement/\{commissionagreementid\}/retrieve)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/Request](#put-/commissionagreement/\{commissionagreementid\}/request)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/Update](#put-/commissionagreement/\{commissionagreementid\}/update)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Control](#put-/commissionagreement/\{commissionagreementid\}/commissionterms/\{commissiontermsid\}/control)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Exchange](#put-/commissionagreement/\{commissionagreementid\}/commissionterms/\{commissiontermsid\}/exchange)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Grant](#put-/commissionagreement/\{commissionagreementid\}/commissionterms/\{commissiontermsid\}/grant)
-- [POST: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/Initiate](#post-/commissionagreement/\{commissionagreementid\}/commissionterms/initiate)
-- [GET: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Retrieve](#get-/commissionagreement/\{commissionagreementid\}/commissionterms/\{commissiontermsid\}/retrieve)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Request](#put-/commissionagreement/\{commissionagreementid\}/commissionterms/\{commissiontermsid\}/request)
-- [PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Update](#put-/commissionagreement/\{commissionagreementid\}/commissionterms/\{commissiontermsid\}/update)
-
-
 **BIAN Documentation:** [CommissionAgreement v12](https://app.swaggerhub.com/apis/BIAN-3/CommissionAgreement/12.0.0)
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/Control
+## PUT: /CommissionAgreement/\{commissionagreementid\}/Control
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/Control
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions CoCR Control the processing of Employee Commission Agreement
 
@@ -35,9 +22,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /commissionagreements/\{commissionagreementid\}/control
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/Exchange
+## PUT: /CommissionAgreement/\{commissionagreementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/Exchange
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions EcCR Accept\, verify\, etc\. aspects of Employee Commission Agreement processing
 
@@ -55,9 +46,13 @@ PUT: The name of the path should be:
 
 Ensure to use plural nouns for consistency with REST conventions and to separate words with dashes for better readability\.
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/Grant
+## PUT: /CommissionAgreement/\{commissionagreementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/Grant
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions GrCR Obtain permission to act in relation to Employee Commission Agreement
 
@@ -76,9 +71,13 @@ In this name:
 \- '\{commissionagreementid\}' specifies a specific commission agreement identified by its unique ID\.
 \- 'Grants' indicates the action or resource related to granting within the context of a commission agreement\.
 
-### POST: /CommissionAgreement/Initiate
+## POST: /CommissionAgreement/Initiate
 
-**Description**
+:::info Path
+POST: /CommissionAgreement/Initiate
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions InCR Instantiate a new Employee Commission Agreement
 
@@ -90,9 +89,13 @@ This API path \`/CommissionAgreement/Initiate\` with the method POST is used to 
 
 POST: If the path '/CommissionAgreement/Initiate' followed all REST best practices\, it should ideally be named using nouns \(resources\) rather than verbs \(actions\)\. One possible name for the resource might be '/commission\-agreements'\, and to initiate a new commission agreement\, a POST request could be made to this endpoint\.
 
-### GET: /CommissionAgreement/\{commissionagreementid\}/Retrieve
+## GET: /CommissionAgreement/\{commissionagreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CommissionAgreement/\{commissionagreementid\}/Retrieve
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions ReCR Retrieve details about any aspect of Employee Commission Agreement
 
@@ -110,9 +113,13 @@ A potential name for this path could be:
 The 'Retrieve' operation is typically represented by the HTTP GET method\, so the full path could be:
 'GET /commission\-agreements/\{commissionagreementid\}'
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/Request
+## PUT: /CommissionAgreement/\{commissionagreementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/Request
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions RqCR Request manual intervention or a decision with respect to Employee Commission Agreement
 
@@ -132,9 +139,13 @@ Here are some key points and best practices followed in the path name:
 2\. Use plural nouns for collections to denote that the endpoint represents multiple resources\.
 3\. Use specific resource names in the URL to clearly indicate the purpose of the endpoint and the relationship to other resources\.
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/Update
+## PUT: /CommissionAgreement/\{commissionagreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/Update
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions UpCR Update details relating to Employee Commission Agreement
 
@@ -146,9 +157,13 @@ This BIAN API path allows you to update details related to an existing employee 
 
 PUT: The name of the path should be \`/commission\-agreements/\{commissionagreementid\}\` and the HTTP method used should be PUT to indicate an update operation on the resource identified by the \`commissionagreementid\`\. This follows RESTful best practices by using a descriptive resource name in plural form and specifying the action to be performed on that resource with the HTTP method\.
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Control
+## PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Control
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Control
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions CoBQ Control the processing of Commission Terms
 
@@ -162,9 +177,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 /commission\-agreements/\{commissionagreementid\}/commission\-terms/\{commissiontermsid\}/controls
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Exchange
+## PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Exchange
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions EcBQ Accept\, verify\, etc\. aspects of Commission Terms processing
 
@@ -180,9 +199,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use all lowercase letters\, use hyphens to separate words\, and use plural nouns to denote collections\.
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Grant
+## PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Grant
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions GrBQ Obtain permission to act in relation to Commission Terms
 
@@ -194,9 +217,13 @@ This API path is used to update existing commission terms within a commission ag
 
 PUT: The name of the path should be \`/commission\-agreements/\{commissionagreementid\}/commission\-terms/\{commissiontermsid\}/grant\`\.
 
-### POST: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/Initiate
+## POST: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/Initiate
 
-**Description**
+:::info Path
+POST: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/Initiate
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions InBQ Instantiate a new Commission Terms
 
@@ -210,9 +237,13 @@ POST: A suitable name for the path '/CommissionAgreement/\{commissionagreementid
 
 '/commission\-agreements/\{commissionagreementid\}/commission\-terms/initiate'
 
-### GET: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Retrieve
+## GET: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Retrieve
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions ReBQ Retrieve details about any aspect of Commission Terms
 
@@ -226,9 +257,13 @@ GET: The name of the path should be:
 
 '/commission\-agreements/\{commissionagreementid\}/commission\-terms/\{commissiontermsid\}'
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Request
+## PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Request
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions RqBQ Request manual intervention or a decision with respect to Commission Terms
 
@@ -244,9 +279,13 @@ PUT: The path should be named as follows according to REST best practices:
 
 Remember to use lowercase letters and hyphens to separate words in your path names to improve readability and adherence to REST conventions\.
 
-### PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Update
+## PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CommissionAgreement/\{commissionagreementid\}/CommissionTerms/\{commissiontermsid\}/Update
+:::
+
+### Description
 
 Maintain and administer the terms and transactions for employee and broker commissions UpBQ Update details relating to Commission Terms
 

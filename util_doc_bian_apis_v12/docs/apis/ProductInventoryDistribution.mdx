@@ -1,37 +1,14 @@
 # ProductInventoryDistribution
 
-## Table of Contents
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Capture](#put-/productinventorydistribution/\{productinventorydistributionid\}/capture)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Control](#put-/productinventorydistribution/\{productinventorydistributionid\}/control)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Exchange](#put-/productinventorydistribution/\{productinventorydistributionid\}/exchange)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Grant](#put-/productinventorydistribution/\{productinventorydistributionid\}/grant)
-- [POST: /ProductInventoryDistribution/Initiate](#post-/productinventorydistribution/initiate)
-- [GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Retrieve](#get-/productinventorydistribution/\{productinventorydistributionid\}/retrieve)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Request](#put-/productinventorydistribution/\{productinventorydistributionid\}/request)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Update](#put-/productinventorydistribution/\{productinventorydistributionid\}/update)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Capture](#put-/productinventorydistribution/\{productinventorydistributionid\}/distribution/\{distributionid\}/capture)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Capture](#put-/productinventorydistribution/\{productinventorydistributionid\}/mailing/\{mailingid\}/capture)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Capture](#put-/productinventorydistribution/\{productinventorydistributionid\}/oversight/\{oversightid\}/capture)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Capture](#put-/productinventorydistribution/\{productinventorydistributionid\}/provisioning/\{provisioningid\}/capture)
-- [POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/Initiate](#post-/productinventorydistribution/\{productinventorydistributionid\}/distribution/initiate)
-- [POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/Initiate](#post-/productinventorydistribution/\{productinventorydistributionid\}/mailing/initiate)
-- [POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/Initiate](#post-/productinventorydistribution/\{productinventorydistributionid\}/oversight/initiate)
-- [POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/Initiate](#post-/productinventorydistribution/\{productinventorydistributionid\}/provisioning/initiate)
-- [GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Retrieve](#get-/productinventorydistribution/\{productinventorydistributionid\}/distribution/\{distributionid\}/retrieve)
-- [GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Retrieve](#get-/productinventorydistribution/\{productinventorydistributionid\}/mailing/\{mailingid\}/retrieve)
-- [GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Retrieve](#get-/productinventorydistribution/\{productinventorydistributionid\}/oversight/\{oversightid\}/retrieve)
-- [GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Retrieve](#get-/productinventorydistribution/\{productinventorydistributionid\}/provisioning/\{provisioningid\}/retrieve)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Update](#put-/productinventorydistribution/\{productinventorydistributionid\}/distribution/\{distributionid\}/update)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Update](#put-/productinventorydistribution/\{productinventorydistributionid\}/mailing/\{mailingid\}/update)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Update](#put-/productinventorydistribution/\{productinventorydistributionid\}/oversight/\{oversightid\}/update)
-- [PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Update](#put-/productinventorydistribution/\{productinventorydistributionid\}/provisioning/\{provisioningid\}/update)
-
-
 **BIAN Documentation:** [ProductInventoryDistribution v12](https://app.swaggerhub.com/apis/BIAN-3/ProductInventoryDistribution/12.0.0)
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Capture
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Capture
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate CaCR Capture Product Inventory Distribution Administrative Plan activity or event related information
 
@@ -50,9 +27,13 @@ In this name:
 \- '\{id\}' is used to represent the ID of the specific product inventory distribution\.
 \- 'capture' clearly indicates the action being performed on the resource\.
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Control
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Control
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Control
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate CoCR Control the processing of Product Inventory Distribution Administrative Plan
 
@@ -66,9 +47,13 @@ PUT: The name should be:
 
 \`/product\-inventory\-distribution/\{productinventorydistributionid\}/control\`
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Exchange
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Exchange
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate EcCR Accept\, verify\, etc\. aspects of Product Inventory Distribution Administrative Plan processing
 
@@ -84,9 +69,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens to separate words in the path\. Additionally\, using singular nouns is preferred over plural nouns for resource names\.
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Grant
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Grant
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Grant
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate GrCR Obtain permission to act in relation to Product Inventory Distribution Administrative Plan
 
@@ -106,9 +95,13 @@ In RESTful naming conventions:
 
 So\, in this case\, the resource is "ProductInventoryDistributions" \(plural noun\) and the path parameter is "productinventorydistributionid" \(singular noun\)\.
 
-### POST: /ProductInventoryDistribution/Initiate
+## POST: /ProductInventoryDistribution/Initiate
 
-**Description**
+:::info Path
+POST: /ProductInventoryDistribution/Initiate
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate InCR Instantiate a new Product Inventory Distribution Administrative Plan
 
@@ -120,9 +113,13 @@ This API path allows you to create a new administrative plan for managing the di
 
 POST: Following REST best practices\, the path '/ProductInventoryDistribution/Initiate' could be renamed as '/product\-inventory\-distribution'\. REST encourages the use of lowercase letters and hyphens instead of camel case or underscores in URLs for better readability and consistency\.
 
-### GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Retrieve
+## GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Retrieve
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate ReCR Retrieve details about any aspect of Product Inventory Distribution Administrative Plan
 
@@ -136,9 +133,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 GET /product\-inventory\-distribution/\{productinventorydistributionid\}
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Request
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Request
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate RqCR Request manual intervention or a decision with respect to Product Inventory Distribution Administrative Plan
 
@@ -154,9 +155,13 @@ GET /product\-inventory\-distribution/\{productinventorydistributionid\}/request
 
 This name follows the convention of using lowercase letters\, separating words with hyphens\, and specifying the HTTP method to indicate the action to be performed on the resource\.
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Update
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Update
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate UpCR Update details relating to Product Inventory Distribution Administrative Plan
 
@@ -172,9 +177,13 @@ PUT: The name of the path following REST best practices should be:
 PUT /product\-inventory\-distribution/\{productinventorydistributionid\}
 \`\`\`
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Capture
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Capture
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate CaBQ Capture Distribution activity or event related information
 
@@ -190,9 +199,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters with hyphens to separate words in the path names\.
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Capture
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Capture
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate CaBQ Capture Mailing activity or event related information
 
@@ -206,9 +219,13 @@ PUT: The name of the path should ideally be:
 
 '/product\-inventory\-distribution/\{productinventorydistributionid\}/mailing/\{mailingid\}/capture'
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Capture
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Capture
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate CaBQ Capture Oversight activity or event related information
 
@@ -222,9 +239,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Capture
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Capture
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Capture
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate CaBQ Capture Provisioning activity or event related information
 
@@ -238,9 +259,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /product\-inventory\-distribution/\{productinventorydistributionid\}/provisioning/\{provisioningid\}/capture
 
-### POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/Initiate
+## POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/Initiate
 
-**Description**
+:::info Path
+POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/Initiate
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate InBQ Instantiate a new Distribution
 
@@ -262,9 +287,13 @@ In the path name:
 \- "Distribution" can be used as a sub\-resource to further specify the action being performed\.
 \- "Initiate" can
 
-### POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/Initiate
+## POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/Initiate
 
-**Description**
+:::info Path
+POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/Initiate
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate InBQ Instantiate a new Mailing
 
@@ -286,9 +315,13 @@ Make sure to follow the following REST best practices:
 \- Use plural nouns for collections in the path
 \- Use camelCase for path variables
 
-### POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/Initiate
+## POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/Initiate
 
-**Description**
+:::info Path
+POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/Initiate
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate InBQ Instantiate a new Oversight
 
@@ -309,9 +342,13 @@ Key points to note in the naming convention:
 \- Separate words with hyphens\.
 \- Avoid using capital letters or underscores in the path\.
 
-### POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/Initiate
+## POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/Initiate
 
-**Description**
+:::info Path
+POST: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/Initiate
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate InBQ Instantiate a new Provisioning
 
@@ -327,9 +364,13 @@ A suitable name for the path '/ProductInventoryDistribution/\{productinventorydi
 
 '/product\-inventories/\{productinventoryid\}/provisioning/initiate'
 
-### GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Retrieve
+## GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Retrieve
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate ReBQ Retrieve details about any aspect of Distribution
 
@@ -343,9 +384,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 '/product\-inventory\-distribution/\{productinventorydistributionid\}/distribution/\{distributionid\}'
 
-### GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Retrieve
+## GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Retrieve
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate ReBQ Retrieve details about any aspect of Mailing
 
@@ -359,9 +404,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`GET /product\-inventory\-distribution/\{productinventorydistributionid\}/mailing/\{mailingid\}\`
 
-### GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Retrieve
+## GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Retrieve
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate ReBQ Retrieve details about any aspect of Oversight
 
@@ -375,9 +424,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/product\-inventory\-distribution/\{productinventorydistributionid\}/oversight/\{oversightid\}/retrieve'
 
-### GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Retrieve
+## GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Retrieve
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate ReBQ Retrieve details about any aspect of Provisioning
 
@@ -391,9 +444,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/product\-inventory\-distribution/\{productinventorydistributionid\}/provisioning/\{provisioningid\}/retrieve'
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Update
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Distribution/\{distributionid\}/Update
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate UpBQ Update details relating to Distribution
 
@@ -407,9 +464,13 @@ PUT: The name of the path according to REST best practices could be:
 
 PUT /product\-inventory\-distribution/\{productinventorydistributionid\}/distribution/\{distributionid\}
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Update
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Mailing/\{mailingid\}/Update
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate UpBQ Update details relating to Mailing
 
@@ -423,9 +484,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 "/product\-inventory\-distribution/\{productinventorydistributionid\}/mailing/\{mailingid\}"
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Update
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Oversight/\{oversightid\}/Update
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate UpBQ Update details relating to Oversight
 
@@ -439,9 +504,13 @@ PUT: The RESTful path should be named according to the resource it represents\. 
 
 '/productinventorydistributions/\{productinventorydistributionid\}/oversights/\{oversightid\}'
 
-### PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Update
+## PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryDistribution/\{productinventorydistributionid\}/Provisioning/\{provisioningid\}/Update
+:::
+
+### Description
 
 Administer the provisioning and distribution of product inventory across the branch network and/or distribute direct to customers \(e\.g\. mail\) where appropriate UpBQ Update details relating to Provisioning
 

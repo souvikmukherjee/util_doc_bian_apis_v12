@@ -1,70 +1,14 @@
 # CorporateTrustServices
 
-## Table of Contents
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Control](#put-/corporatetrustservices/\{corporatetrustservicesid\}/control)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/execute)
-- [POST: /CorporateTrustServices/Initiate](#post-/corporatetrustservices/initiate)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/notify)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/request)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/retrieve)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/\{corporatedebtissueoversightid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/\{debttrusteeid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/\{escrowaccountid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/exchange)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/\{corporatedebtissueoversightid\}/execute)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/\{debttrusteeid\}/execute)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/\{escrowaccountid\}/execute)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/execute)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/execute)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/execute)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/execute)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/initiate)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/initiate)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/initiate)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/initiate)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/initiate)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/initiate)
-- [POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/Initiate](#post-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/initiate)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/\{corporatedebtissueoversightid\}/notify)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/\{debttrusteeid\}/notify)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/\{escrowaccountid\}/notify)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/notify)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/notify)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/notify)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/notify)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/\{corporatedebtissueoversightid\}/request)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/\{debttrusteeid\}/request)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/\{escrowaccountid\}/request)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/request)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/request)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/request)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/request)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/\{corporatedebtissueoversightid\}/retrieve)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/\{debttrusteeid\}/retrieve)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/\{escrowaccountid\}/retrieve)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/retrieve)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/retrieve)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/retrieve)
-- [GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve](#get-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/retrieve)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/corporatedebtissueoversight/\{corporatedebtissueoversightid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/debttrustee/\{debttrusteeid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/escrowaccount/\{escrowaccountid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/update)
-- [PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update](#put-/corporatetrustservices/\{corporatetrustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/update)
-
-
 **BIAN Documentation:** [CorporateTrustServices v12](https://app.swaggerhub.com/apis/BIAN-3/CorporateTrustServices/12.0.0)
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Control
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Control
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Control Corporate Trust Services Facility
 
@@ -76,9 +20,13 @@ This BIAN API path allows you to update an existing corporate trust services fac
 
 PUT: The name of the path should be '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/controls' to follow REST best practices\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Corporate Trust Services Facility
 
@@ -94,9 +42,13 @@ PUT: The name of the path should be:
 /CorporateTrustServices/\{corporatetrustservicesid\}/Exchanges
 \`\`\`
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Corporate Trust Services Facility
 
@@ -110,9 +62,13 @@ PUT: A more appropriate name for the path '/CorporateTrustServices/\{corporatetr
 
 In general\, following REST naming conventions\, paths should be in all lowercase\, use hyphens for readability\, and avoid unnecessary repetition or verbosity in the names\.
 
-### POST: /CorporateTrustServices/Initiate
+## POST: /CorporateTrustServices/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Corporate Trust Services Facility
 
@@ -124,9 +80,13 @@ This API path allows users to initiate a new corporate trust services facility w
 
 POST: If the path '/CorporateTrustServices/Initiate' followed all REST best practices\, it would ideally be named as '/corporate\-trust\-services/initiate' using lowercase letters and hyphens to separate words\. This path naming convention is more in line with RESTful standards for URLs\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Corporate Trust Services Facility
 
@@ -138,9 +98,13 @@ This BIAN API path\, /CorporateTrustServices/\{corporatetrustservicesid\}/Notify
 
 GET: The name of the path should be \`/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/notify\` in kebab case format following REST best practices\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Corporate Trust Services Facility
 
@@ -152,9 +116,13 @@ This API path allows you to update an existing corporate trust services facility
 
 PUT: A possible name for the path could be '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/requests'\, following REST best practices of using lowercase letters and using plural nouns for resource collections\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Corporate Trust Services Facility
 
@@ -170,9 +138,13 @@ GET /CorporateTrustServices/\{corporatetrustservicesid\}
 
 This follows the REST best practice of using HTTP methods to perform operations on resources\. The "Retrieve" operation is typically represented by the HTTP GET method\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Corporate Trust Services Facility
 
@@ -184,9 +156,13 @@ This API path allows users to update a specific corporate trust service facility
 
 PUT: The path '/CorporateTrustServices/\{corporatetrustservicesid\}' can be considered the resource endpoint for a specific corporate trust service\. Therefore\, considering REST best practices\, the name of the path for updating this resource could be '/CorporateTrustServices/\{corporatetrustservicesid\}'\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Corporate Debt Issue Oversight Fulfillment
 
@@ -202,9 +178,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 This path is using a hierarchical structure to represent resources and their relationships\, which is a commonly used pattern in RESTful APIs\. The path is clear\, descriptive\, and follows a consistent naming convention\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Debt Trustee Fulfillment
 
@@ -218,9 +198,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/corporate\-trust\-services/\{corporatetrustservicesid\}/debt\-trustee/\{debttrusteeid\}/exchange'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Escrow Account Fulfillment
 
@@ -236,9 +220,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path names should be in lowercase and words should be separated by dashes for readability and consistency\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Trust Asset Maintenance and Management Fulfillment
 
@@ -252,9 +240,13 @@ PUT: The name of the path should be \`/corporate\-trust\-services/\{corporateTru
 
 In general\, RESTful path names should be in lowercase\, separated by hyphens\, and should reflect the resource hierarchy clearly\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Trust Court Administration Fulfillment
 
@@ -266,9 +258,13 @@ This BIAN API path allows you to update an existing resource related to corporat
 
 PUT: The name of the path '/CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange' should be '/corporate\-trust\-services/\{corporatetrustservicesid\}/trust\-court\-administration/\{trustcourtadministrationid\}/exchange' following REST best practices\. The path should be in lowercase letters\, separated by hyphens for better readability and consistency\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -282,9 +278,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/trust\-estate\-inheritance\-and\-income\-tax/\{trust\-estate\-inheritance\-and\-income\-tax\-id\}/exchange'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Exchange Trust Tax and Expense Fulfillment
 
@@ -298,9 +298,13 @@ PUT: The name of the path should be: /corporate\-trust\-services/\{corporate\-tr
 
 This name follows REST best practices by using lowercase letters\, hyphens to separate words\, and using resource names rather than actions in the path\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Corporate Debt Issue Oversight Fulfillment
 
@@ -314,9 +318,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/debt\-issues/\{debt\-issue\-id\}/execute'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Debt Trustee Fulfillment
 
@@ -331,9 +339,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and hyphens to separate words\. Additionally\, resource identifiers should be singular and in lowercase\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Escrow Account Fulfillment
 
@@ -347,9 +359,13 @@ PUT: Based on REST best practices\, the name for the path '/CorporateTrustServic
 
 A more appropriate name for the path could be '/corporate\-trust\-services/\{corporatetrustservicesid\}/escrow\-accounts/\{escrowaccountid\}/execute'\. This name uses lowercase and hyphens for better readability and follows the convention of
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Trust Asset Maintenance and Management Fulfillment
 
@@ -365,9 +381,13 @@ PUT: The name of the path should be:
 /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execution
 \`\`\`
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Trust Court Administration Fulfillment
 
@@ -381,9 +401,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/corporate\-trust\-services/\{corporatetrustservicesid\}/trust\-court\-administration/\{trustcourtadministrationid\}/execute'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -397,9 +421,13 @@ PUT: Based on REST best practices\, a better name for this path could be somethi
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/trust\-estate\-inheritance\-and\-income\-tax/\{trust\-estate\-inheritance\-and\-income\-tax\-id\}/execute'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Execute Trust Tax and Expense Fulfillment
 
@@ -415,9 +443,13 @@ PUT: A good RESTful path name for this endpoint could be:
 /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execution
 \`\`\`
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Corporate Debt Issue Oversight Fulfillment
 
@@ -432,9 +464,13 @@ POST: A possible name for the path could be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and include resource names instead of actions in the path\.
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Debt Trustee Fulfillment
 
@@ -448,9 +484,13 @@ POST: The name of the path could be '/corporate\-trust\-services/\{corporate\-tr
 
 Following REST best practices\, we should use lowercase letters\, separate words with hyphens\, and focus on resource naming rather than specific actions like 'initiate'\.
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Escrow Account Fulfillment
 
@@ -464,9 +504,13 @@ POST: The name of the path following REST best practices could be:
 
 '/corporate\-trust\-services/\{corporateTrustServicesId\}/escrow\-account/initiate'
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Trust Asset Maintenance and Management Fulfillment
 
@@ -480,9 +524,13 @@ POST: The name of the path should be:
 
 \`/corporate\-trust\-services/\{corporatetrustservicesid\}/trust\-asset\-maintenance\-and\-management/initiate\`
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Trust Court Administration Fulfillment
 
@@ -500,9 +548,13 @@ POST: For a RESTful path following best practices\, it should be named in a way 
 
 This name is descriptive and indicates the action of initiating trust court administrations within the context of corporate trust services
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -516,9 +568,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/trust\-estate\-inheritance\-and\-income\-tax/initiate'
 
-### POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/Initiate
+## POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/Initiate
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Initiate Trust Tax and Expense Fulfillment
 
@@ -536,9 +592,13 @@ POST: The name of the path should be:
 
 This path follows REST best practices by using resource names \(CorporateTrustServices and TrustTaxandExpense\) in the URI to represent the hierarchical structure of the API resources\. It also includes the specific identifier \(\{trusttaxandexpenseid\}\) in the path to uniquely identify the TrustTaxandExpense resource being operated on
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Corporate Debt Issue Oversight Fulfillment
 
@@ -552,9 +612,13 @@ GET: A suitable name for the path would be:
 
 \`/corporate\-trust\-services/\{corporatetrustservicesid\}/corporate\-debt\-issue\-oversight/\{corporatedebtissueoversightid\}/notify\`
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Debt Trustee Fulfillment
 
@@ -570,9 +634,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 RESTful design typically uses nouns to represent resources\, and in this case\, the path represents a notification being sent from a Debt Trustee within Corporate Trust Services\. To be more specific\, the path could be improved by providing a clearer definition of the notification action such as '/CorporateTrustServices/\{corporat
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Escrow Account Fulfillment
 
@@ -588,9 +656,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 This naming convention uses lowercase letters\, separates words with hyphens\, and includes resource identifiers in the path to clearly indicate the hierarchy and relationships between resources\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Trust Asset Maintenance and Management Fulfillment
 
@@ -606,9 +678,13 @@ GET: Following REST best practices\, the name of the path should ideally reflect
 
 This path name focuses on the resource being notified\, which is more in line with RESTful design principles\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Trust Court Administration Fulfillment
 
@@ -624,9 +700,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, path segments should be in lowercase and use hyphens for readability\. Additionally\, resource identifiers should be in singular form\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -640,9 +720,13 @@ GET: The RESTful endpoint name should be:
 
 '/CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate/\{trustestateid\}/InheritanceAndIncomeTax/\{inheritanceandincometaxid\}/Notify'
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Notify Trust Tax and Expense Fulfillment
 
@@ -654,9 +738,13 @@ This API path allows you to retrieve information about notifying the Trust Tax a
 
 GET: The name of the path should be \`/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/trust\-tax\-and\-expense/\{trust\-tax\-and\-expense\-id\}/notify\` following REST best practices\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Corporate Debt Issue Oversight Fulfillment
 
@@ -668,9 +756,13 @@ This BIAN API path allows you to update an existing request for corporate debt i
 
 PUT: The name of the path could be \`/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/corporate\-debt\-issue\-oversight/\{corporate\-debt\-issue\-oversight\-id\}/requests\` to better adhere to REST best practices of using lowercase letters\, hyphens for readability\, and using plural nouns for collections\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Debt Trustee Fulfillment
 
@@ -686,9 +778,13 @@ PUT: A suitable name for the path would be:
 
 It is important to use hyphens to separate words in the path name and to keep the names in lowercase letters for consistency and readability according to REST best practices\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Escrow Account Fulfillment
 
@@ -704,9 +800,13 @@ PUT: The name of the path should be:
 
 This path is using lowercase letters and hyphens to separate the words\, following the best practices for RESTful URIs\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Trust Asset Maintenance and Management Fulfillment
 
@@ -722,9 +822,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, we use all lowercase letters in the path name\, use hyphens to separate words\, and include relevant resource identifiers like \`corporate\-trust\-services\-id\` and \`trust\-asset\-maintenance\-and\-management\-id\`\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Trust Court Administration Fulfillment
 
@@ -740,9 +844,13 @@ PUT: The name of the path should be:
 
 following REST best practices\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -758,9 +866,13 @@ PUT: Based on REST best practices\, the name of the path should be structured in
 
 This naming convention follows the RESTful principles by using lowercase letters\, hyphens for readability\, and plural nouns for collections\. Additionally\, it includes the
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Request Trust Tax and Expense Fulfillment
 
@@ -776,9 +888,13 @@ PUT: A possible name following REST best practices for this path could be:
 
 This follows the convention of using lowercase letters\, separating words with hyphens\, and making the path descriptive and easy to understand\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Corporate Debt Issue Oversight Fulfillment
 
@@ -792,9 +908,13 @@ GET: A possible name for the path considering REST best practices could be:
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/debt\-oversight/\{debt\-oversight\-id\}'
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Debt Trustee Fulfillment
 
@@ -808,9 +928,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/debt\-trustee/\{debt\-trustee\-id\}'
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Escrow Account Fulfillment
 
@@ -824,9 +948,13 @@ GET: Based on REST best practices\, a more appropriate name for the path would b
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/escrow\-account/\{escrow\-account\-id\}'
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Trust Asset Maintenance and Management Fulfillment
 
@@ -840,9 +968,13 @@ GET: Based on REST best practices\, the name of the path should be as follows:
 
 '/corporate\-trust\-services/\{corporateTrustServicesId\}/trust\-asset\-maintenance\-and\-management/\{trustAssetMaintenanceAndManagementId\}'
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Trust Court Administration Fulfillment
 
@@ -858,9 +990,13 @@ GET: The name of the path following REST best practices would be:
 
 Additionally\, the 'Retrieve' operation should use the appropriate HTTP method \(GET\) to indicate retrieving data rather than explicitly mentioning it in the path\.
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -874,9 +1010,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/corporate\-trust\-services/\{corporate\-trust\-services\-id\}/trust\-estate\-inheritance\-and\-income\-tax/\{trust\-estate\-inheritance\-and\-income\-tax\-id\}/retrieve'
 
-### GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve
+## GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Retrieve Trust Tax and Expense Fulfillment
 
@@ -890,9 +1030,13 @@ GET: A suitable name for the path could be:
 
 GET /corporate\-trust\-services/\{corporatetrustservicesid\}/trust\-tax\-and\-expense/\{trusttaxandexpenseid\}
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/CorporateDebtIssueOversight/\{corporatedebtissueoversightid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Corporate Debt Issue Oversight Fulfillment
 
@@ -906,9 +1050,13 @@ PUT: The name of the path should be:
 
 '/corporate\-trust\-services/\{corporatetrustservicesid\}/corporate\-debt\-issue\-oversight/\{corporatedebtissueoversightid\}'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/DebtTrustee/\{debttrusteeid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Debt Trustee Fulfillment
 
@@ -922,9 +1070,13 @@ PUT: The name of the path should be:
 
 PATCH /corporate\-trust\-services/\{corporate\-trust\-services\-id\}/debt\-trustee/\{debt\-trustee\-id\}
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/EscrowAccount/\{escrowaccountid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Escrow Account Fulfillment
 
@@ -936,9 +1088,13 @@ This API path is used to update an existing escrow account fulfillment within th
 
 PUT: The name of the path should be \`/corporate\-trust\-services/\{corporatetrustservicesid\}/escrow\-accounts/\{escrowaccountid\}\`\.
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Trust Asset Maintenance and Management Fulfillment
 
@@ -952,9 +1108,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 \`PATCH /CorporateTrustServices/\{corporatetrustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}\`
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Trust Court Administration Fulfillment
 
@@ -968,9 +1128,13 @@ PUT: The name of the path should be:
 
 '/corporate\-trust\-services/\{corporatetrustservicesid\}/trust\-court\-administration/\{trustcourtadministrationid\}'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -984,9 +1148,13 @@ PUT: The name of the path should be:
 
 '/corporate\-trust\-services/\{corporatetrustservicesid\}/trust\-estate\-inheritance\-and\-income\-tax/\{trustestate\_inheritanceandincometaxid\}/update'
 
-### PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update
+## PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateTrustServices/\{corporatetrustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update
+:::
+
+### Description
 
 This Service Domain provides corporate trust services centered on the handling of debt instruments and escrow account support Update Trust Tax and Expense Fulfillment
 

@@ -1,23 +1,14 @@
 # RegulatoryReporting
 
-## Table of Contents
-- [PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Update](#put-/regulatoryreporting/\{regulatoryreportingid\}/update)
-- [GET: /RegulatoryReporting/\{regulatoryreportingid\}/Retrieve](#get-/regulatoryreporting/\{regulatoryreportingid\}/retrieve)
-- [POST: /RegulatoryReporting/Create](#post-/regulatoryreporting/create)
-- [PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Capture](#put-/regulatoryreporting/\{regulatoryreportingid\}/authoring/\{authoringid\}/capture)
-- [GET: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Retrieve](#get-/regulatoryreporting/\{regulatoryreportingid\}/consolidation/\{consolidationid\}/retrieve)
-- [PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Update](#put-/regulatoryreporting/\{regulatoryreportingid\}/consolidation/\{consolidationid\}/update)
-- [GET: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Retrieve](#get-/regulatoryreporting/\{regulatoryreportingid\}/authoring/\{authoringid\}/retrieve)
-- [PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Update](#put-/regulatoryreporting/\{regulatoryreportingid\}/enquiries/\{enquiriesid\}/update)
-- [PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Capture](#put-/regulatoryreporting/\{regulatoryreportingid\}/enquiries/\{enquiriesid\}/capture)
-- [GET: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Retrieve](#get-/regulatoryreporting/\{regulatoryreportingid\}/enquiries/\{enquiriesid\}/retrieve)
-
-
 **BIAN Documentation:** [RegulatoryReporting v12](https://app.swaggerhub.com/apis/BIAN-3/RegulatoryReporting/12.0.0)
 
-### PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Update
+## PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations UpCR Update the regulatory reporting set up or schedule
 
@@ -31,9 +22,13 @@ PUT: The name of the path should be:
 
 '/RegulatoryReporting/\{regulatoryreportingid\}'
 
-### GET: /RegulatoryReporting/\{regulatoryreportingid\}/Retrieve
+## GET: /RegulatoryReporting/\{regulatoryreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RegulatoryReporting/\{regulatoryreportingid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations ReCR Retrieve any details of the regulatory reporting administration
 
@@ -45,9 +40,13 @@ This BIAN API path allows you to retrieve details related to regulatory reportin
 
 GET: The name of the path '/RegulatoryReporting/\{regulatoryreportingid\}/Retrieve' could follow REST best practices by using the HTTP method GET to indicate retrieving a resource\. Therefore\, a more appropriate name for the path could be '/RegulatoryReporting/\{regulatoryreportingid\}' to indicate retrieving a specific regulatory reporting resource based on its ID\.
 
-### POST: /RegulatoryReporting/Create
+## POST: /RegulatoryReporting/Create
 
-**Description**
+:::info Path
+POST: /RegulatoryReporting/Create
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations CrBQ Initiate the handling of a regulatory reporting enquiry
 
@@ -59,9 +58,13 @@ This BIAN API path\, /RegulatoryReporting/Create\, facilitates the process of in
 
 POST: In accordance with REST best practices\, the name of the path '/RegulatoryReporting/Create' should be updated to '/regulatory\-reporting' using HTTP POST method to create a new regulatory report\.
 
-### PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Capture
+## PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Capture
 
-**Description**
+:::info Path
+PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Capture
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations CaBQ Provide transaction records as required to support regulatory reporting
 
@@ -77,9 +80,13 @@ PUT: Based on REST best practices\, the path should be named to represent a hier
 
 Remember to use lowercase letters\, hyphens to separate words\, and avoid using underscores to create a meaningful and readable path that adheres to REST conventions\.
 
-### GET: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Retrieve
+## GET: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations ReBQ Retrieve consolidated information for review
 
@@ -91,9 +98,13 @@ This API path retrieves consolidated information for review related to regulator
 
 GET: A more appropriate and RESTful name for the path '/RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Retrieve' could be '/regulatory\-reports/\{regulatoryreportingid\}/consolidations/\{consolidationid\}'\. This name is more concise\, uses lowercase letters\, and employs plural nouns to represent collections of resources\.
 
-### PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Update
+## PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Consolidation/\{consolidationid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations UpBQ Update or augment consolidated information to support report generation
 
@@ -107,9 +118,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/RegulatoryReportings/\{regulatoryreportingid\}/Consolidations/\{consolidationid\}'
 
-### GET: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Retrieve
+## GET: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RegulatoryReporting/\{regulatoryreportingid\}/Authoring/\{authoringid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations ReBQ Retrieve regulatory reporting detail and reports for review
 
@@ -125,9 +140,13 @@ GET: Based on REST best practices\, the name of the path could be:
 If the endpoint is specifically for retrieving a resource\, you could consider simply using:
 \`GET /regulatory\-reporting/\{regulatory\-reporting\-id\}/authoring/\{authoring\-id\}\`
 
-### PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Update
+## PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Update
 
-**Description**
+:::info Path
+PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations UpBQ Update or augment consolidated information to support enquiry handling
 
@@ -143,9 +162,13 @@ PUT: Following REST best practices\, the name of the path would be:
 
 The 'Update' operation in REST is typically indicated by using the HTTP PUT method on the specific resource\, so to update the 'Enquiries' resource identified by the \{enquiriesid\}\, you would use a PUT request to the above path\.
 
-### PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Capture
+## PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Capture
 
-**Description**
+:::info Path
+PUT: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Capture
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations CaBQ Provide transaction records as required to support regulatory enquiry
 
@@ -165,9 +188,13 @@ In this revised path name:
 \- "RegulatoryReports" is a more common term used instead of "RegulatoryReporting\."
 \- "\{reportId\}" and "\{enquiryId\}" are specific identifiers for the regulatory report and enquiry\,
 
-### GET: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Retrieve
+## GET: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RegulatoryReporting/\{regulatoryreportingid\}/Enquiries/\{enquiriesid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to meet the bank's regulatory reporting obligations ReBQ Retrieve regulatory enquiry detail and response for review
 

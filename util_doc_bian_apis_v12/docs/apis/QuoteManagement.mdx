@@ -1,35 +1,14 @@
 # QuoteManagement
 
-## Table of Contents
-- [PUT: /QuoteManagement/\{quotemanagementid\}/Control](#put-/quotemanagement/\{quotemanagementid\}/control)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/Exchange](#put-/quotemanagement/\{quotemanagementid\}/exchange)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/Execute](#put-/quotemanagement/\{quotemanagementid\}/execute)
-- [POST: /QuoteManagement/Initiate](#post-/quotemanagement/initiate)
-- [GET: /QuoteManagement/\{quotemanagementid\}/Notify](#get-/quotemanagement/\{quotemanagementid\}/notify)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/Request](#put-/quotemanagement/\{quotemanagementid\}/request)
-- [GET: /QuoteManagement/\{quotemanagementid\}/Retrieve](#get-/quotemanagement/\{quotemanagementid\}/retrieve)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/Update](#put-/quotemanagement/\{quotemanagementid\}/update)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Exchange](#put-/quotemanagement/\{quotemanagementid\}/marketquoterequest/\{marketquoterequestid\}/exchange)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Exchange](#put-/quotemanagement/\{quotemanagementid\}/marketquoteselection/\{marketquoteselectionid\}/exchange)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Execute](#put-/quotemanagement/\{quotemanagementid\}/marketquoterequest/\{marketquoterequestid\}/execute)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Execute](#put-/quotemanagement/\{quotemanagementid\}/marketquoteselection/\{marketquoteselectionid\}/execute)
-- [POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/Initiate](#post-/quotemanagement/\{quotemanagementid\}/marketquoterequest/initiate)
-- [POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/Initiate](#post-/quotemanagement/\{quotemanagementid\}/marketquoteselection/initiate)
-- [GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Notify](#get-/quotemanagement/\{quotemanagementid\}/marketquoterequest/\{marketquoterequestid\}/notify)
-- [GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Notify](#get-/quotemanagement/\{quotemanagementid\}/marketquoteselection/\{marketquoteselectionid\}/notify)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Request](#put-/quotemanagement/\{quotemanagementid\}/marketquoterequest/\{marketquoterequestid\}/request)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Request](#put-/quotemanagement/\{quotemanagementid\}/marketquoteselection/\{marketquoteselectionid\}/request)
-- [GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Retrieve](#get-/quotemanagement/\{quotemanagementid\}/marketquoterequest/\{marketquoterequestid\}/retrieve)
-- [GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Retrieve](#get-/quotemanagement/\{quotemanagementid\}/marketquoteselection/\{marketquoteselectionid\}/retrieve)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Update](#put-/quotemanagement/\{quotemanagementid\}/marketquoterequest/\{marketquoterequestid\}/update)
-- [PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Update](#put-/quotemanagement/\{quotemanagementid\}/marketquoteselection/\{marketquoteselectionid\}/update)
-
-
 **BIAN Documentation:** [QuoteManagement v12](https://app.swaggerhub.com/apis/BIAN-3/QuoteManagement/12.0.0)
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/Control
+## PUT: /QuoteManagement/\{quotemanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/Control
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Control Quotation Procedure
 
@@ -41,9 +20,13 @@ This BIAN API path allows traders to update and control the quotation procedure 
 
 PUT: The path should be named \`/quoteManagement/\{quoteManagementId\}/control\` following REST best practices\. REST recommends using lowercase letters for paths and hyphens are not recommended\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/Exchange
+## PUT: /QuoteManagement/\{quotemanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Exchange Quotation Procedure
 
@@ -63,9 +46,13 @@ In this naming convention:
 \- Path segments should be lowercase and words should be separated by hyphens\.
 \- Path parameters should be enclosed in curly braces and clearly describe the resource they represent\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/Execute
+## PUT: /QuoteManagement/\{quotemanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/Execute
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Execute Quotation Procedure
 
@@ -85,9 +72,13 @@ In following REST best practices:
 \- Use camelCase for multi\-word path segments\.
 \- Use specific names that accurately represent the resource and action being performed\.
 
-### POST: /QuoteManagement/Initiate
+## POST: /QuoteManagement/Initiate
 
-**Description**
+:::info Path
+POST: /QuoteManagement/Initiate
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Initiate Quotation Procedure
 
@@ -99,9 +90,13 @@ This API path allows traders to start the process of obtaining and selecting quo
 
 POST: If the path '/QuoteManagement/Initiate' followed all REST best practices\, a more appropriate name might be '/quotes'\. This path should use a noun that represents the resource being accessed and should be in lowercase letters to adhere to RESTful naming conventions\.
 
-### GET: /QuoteManagement/\{quotemanagementid\}/Notify
+## GET: /QuoteManagement/\{quotemanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /QuoteManagement/\{quotemanagementid\}/Notify
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Notify Quotation Procedure
 
@@ -113,9 +108,13 @@ This API path\, "/QuoteManagement/\{quotemanagementid\}/Notify"\, is used to ret
 
 GET: The name of the path should be \`/quote\-management/\{quote\-management\-id\}/notify\` as per REST best practices\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/Request
+## PUT: /QuoteManagement/\{quotemanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/Request
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Request Quotation Procedure
 
@@ -131,9 +130,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In RESTful API design\, it is recommended to use lowercase letters and hyphens to separate words in the URI path rather than camelCase or underscores\. Additionally\, resource names should be pluralized for collections \(e\.g\.\, "quote\-management" instead of "quotemanagement"\) and use descriptive names that represent the resource it is associated with\.
 
-### GET: /QuoteManagement/\{quotemanagementid\}/Retrieve
+## GET: /QuoteManagement/\{quotemanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /QuoteManagement/\{quotemanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Retrieve Quotation Procedure
 
@@ -149,9 +152,13 @@ GET /quoteManagements/\{quoteManagementId\}
 
 This path uses lowercase letters and plural form for the resource name \('quoteManagements'\)\, with the specific quote management ID included as a parameter\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/Update
+## PUT: /QuoteManagement/\{quotemanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/Update
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Update Quotation Procedure
 
@@ -163,9 +170,13 @@ This BIAN API path\, specifically the Update Quotation Procedure endpoint\, allo
 
 PUT: The name of the path should be '/quote\-management/\{quote\-management\-id\}'\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Exchange
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Exchange Market Quote Request Workstep
 
@@ -177,9 +188,13 @@ This API path allows traders to update an existing exchange market quote request
 
 PUT: The name of the path should be: '/quotemanagements/\{quotemanagementid\}/marketquoterequests/\{marketquoterequestid\}/exchange'
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Exchange
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Exchange Market Quote Selection Workstep
 
@@ -195,9 +210,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and hyphens to separate words for better readability and consistency\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Execute
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Execute
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Execute
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Execute Market Quote Request Workstep
 
@@ -213,9 +232,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In RESTful APIs\, it is common to use lowercase letters and hyphens for readability in URL paths\. Always remember to keep the path segments relevant and organized based on the resource hierarchy\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Execute
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Execute
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Execute Market Quote Selection Workstep
 
@@ -234,9 +257,13 @@ In this name:
 \- The path parameters like \{quotemanagementid\} and \{marketquoteselectionid\} are in camelCase\.
 \- The action 'Execute'
 
-### POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/Initiate
+## POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/Initiate
 
-**Description**
+:::info Path
+POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/Initiate
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Initiate Market Quote Request Workstep
 
@@ -250,9 +277,13 @@ POST: The name of the path '/QuoteManagement/\{quotemanagementid\}/MarketQuoteRe
 
 '/quote\-management/\{quoteManagementId\}/market\-quote\-request/initiate'
 
-### POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/Initiate
+## POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/Initiate
 
-**Description**
+:::info Path
+POST: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/Initiate
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Initiate Market Quote Selection Workstep
 
@@ -266,9 +297,13 @@ POST: The name of the path following REST best practices could be:
 
 /quotemanagements/\{quotemanagementid\}/marketquotes/initiate
 
-### GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Notify
+## GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Notify
 
-**Description**
+:::info Path
+GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Notify
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Notify Market Quote Request Workstep
 
@@ -280,9 +315,13 @@ This BIAN API path \("/QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/
 
 GET: The name of the path should ideally be something like '/quote\-management/\{quoteManagementId\}/market\-quote\-request/\{marketQuoteRequestId\}/notify' to follow REST best practices\.
 
-### GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Notify
+## GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Notify
 
-**Description**
+:::info Path
+GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Notify
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Notify Market Quote Selection Workstep
 
@@ -298,9 +337,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 Make sure to use all lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Request
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Request
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Request
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Request Market Quote Request Workstep
 
@@ -314,9 +357,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /quote\-management/\{quote\-management\-id\}/market\-quote\-request/\{market\-quote\-request\-id\}/request
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Request
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Request
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Request
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Request Market Quote Selection Workstep
 
@@ -338,9 +385,13 @@ In this naming convention:
 
 Remember that consistency in naming conventions is key for
 
-### GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Retrieve
+## GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Retrieve Market Quote Request Workstep
 
@@ -354,9 +405,13 @@ GET: The name of the path could be something like '/quotes/\{quoteId\}/requests/
 
 Taking into account REST best practices\, it is preferable to use plural nouns for resources \(such as quotes and requests\) and to avoid including unnecessary details or parameters in the URI path \(such as 'QuoteManagement' and 'MarketQuoteRequest'\)\. Instead\, specific identifiers like 'quoteId' and 'requestId' can be used to uniquely identify resources\.
 
-### GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Retrieve
+## GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Retrieve Market Quote Selection Workstep
 
@@ -372,9 +427,13 @@ GET: Based on REST best practices\, the path should aim to be intuitive and desc
 
 This path follows standard conventions by using lowercase letters\, hyphens to separate words\, and focuses on the logical structure of the resource hierarchy\.
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Update
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Update
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteRequest/\{marketquoterequestid\}/Update
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Update Market Quote Request Workstep
 
@@ -388,9 +447,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /quote\-management/\{quote\-management\-id\}/market\-quote\-request/\{market\-quote\-request\-id\}/update
 
-### PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Update
+## PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /QuoteManagement/\{quotemanagementid\}/MarketQuoteSelection/\{marketquoteselectionid\}/Update
+:::
+
+### Description
 
 This service domain handles the procedure used by traders to obtain and selecting quotes from market makers  Update Market Quote Selection Workstep
 

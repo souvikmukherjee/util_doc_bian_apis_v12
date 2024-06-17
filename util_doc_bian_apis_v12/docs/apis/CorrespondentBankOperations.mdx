@@ -1,45 +1,14 @@
 # CorrespondentBankOperations
 
-## Table of Contents
-- [POST: /CorrespondentBankOperations/Initiate](#post-/correspondentbankoperations/initiate)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Update](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/update)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Control](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/control)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Retrieve](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/retrieve)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Exchange](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/exchange)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Execute](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/execute)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Notify](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/notify)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Request](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/request)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Update](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/\{inboundpaymentsid\}/update)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Execute](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/\{inboundpaymentsid\}/execute)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Retrieve](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/\{inboundpaymentsid\}/retrieve)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Update](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/\{outboundpaymentsid\}/update)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Execute](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/\{outboundpaymentsid\}/execute)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Retrieve](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/\{outboundpaymentsid\}/retrieve)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/clearingandsettlement/\{clearingandsettlementid\}/update)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Exchange](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/clearingandsettlement/\{clearingandsettlementid\}/exchange)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Request](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/clearingandsettlement/\{clearingandsettlementid\}/request)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/clearingandsettlement/\{clearingandsettlementid\}/retrieve)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Update](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/update)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Exchange](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/exchange)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Request](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/request)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/retrieve)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Exchange](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/\{inboundpaymentsid\}/exchange)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Exchange](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/\{outboundpaymentsid\}/exchange)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Execute](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/execute)
-- [POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/Initiate](#post-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/initiate)
-- [POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/Initiate](#post-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/initiate)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Notify](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/\{inboundpaymentsid\}/notify)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Notify](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/\{outboundpaymentsid\}/notify)
-- [GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Notify](#get-/correspondentbankoperations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/notify)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Request](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/inboundpayments/\{inboundpaymentsid\}/request)
-- [PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Request](#put-/correspondentbankoperations/\{correspondentbankoperationsid\}/outboundpayments/\{outboundpaymentsid\}/request)
-
-
 **BIAN Documentation:** [CorrespondentBankOperations v12](https://app.swaggerhub.com/apis/BIAN-3/CorrespondentBankOperations/12.0.0)
 
-### POST: /CorrespondentBankOperations/Initiate
+## POST: /CorrespondentBankOperations/Initiate
 
-**Description**
+:::info Path
+POST: /CorrespondentBankOperations/Initiate
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Initiate a correspondent fulfillment arrangement
 
@@ -51,9 +20,13 @@ This BIAN API path\, /CorrespondentBankOperations/Initiate\, allows you to creat
 
 POST: The name of the path should ideally be '/correspondent\-bank\-operations/initiate' following REST best practices\. It is recommended to use lowercase letters and hyphens to separate words in the path names for better readability and consistency\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Update
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Update
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Update correspondent fulfillment arrangement
 
@@ -65,9 +38,13 @@ This API path allows you to update an existing correspondent banking arrangement
 
 PUT: The name of the path /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Update should be \`/correspondentBankOperations/\{correspondentBankOperationsId\}\` following REST best practices\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Control
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Control
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Control the handling of an arrangement
 
@@ -79,9 +56,13 @@ This BIAN API path allows you to update and control the handling of corresponden
 
 PUT: The path name should be \`/correspondent\-bank\-operations/\{correspondentbankoperationsid\}/control\` for following REST best practices\.
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Retrieve
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Retrieve a correspondent fulfillment arrangement
 
@@ -97,9 +78,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and should specify the resource being retrieved \(in this case\, \`correspondent\-bank\-operations\`\) without including the action such as "Retrieve"\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Exchange
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Exchange
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Exchange Correspondent Bank Operating Session
 
@@ -115,9 +100,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and use descriptive names that accurately reflect the resource being accessed\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Execute
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Execute
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Execute Correspondent Bank Operating Session
 
@@ -131,9 +120,13 @@ PUT: The path '/CorrespondentBankOperations/\{correspondentbankoperationsid\}/Ex
 
 Given that the resource seems to be related to correspondent bank operations\, a more appropriate name for the path could be '/CorrespondentBankOperationExecutions/\{correspondentbankoperationsid\}'\. This name reflects the idea of executing operations related to correspondent
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Notify
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Notify
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Notify Correspondent Bank Operating Session
 
@@ -149,9 +142,13 @@ GET: The name of the path should ideally be:
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens for readability\, and using plural nouns for collections\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Request
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Request
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Request Correspondent Bank Operating Session
 
@@ -165,9 +162,13 @@ PUT: A possible name for the path based on REST best practices could be:
 
 '/correspondent\-bank\-operations/\{correspondentbankoperationsid\}/request'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Update
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Update
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Update inbound payment transactions
 
@@ -180,9 +181,13 @@ This API path allows you to update inbound payment transactions in the correspon
 PUT: The name of the path should be:
 '/correspondent\-bank\-operations/\{correspondentbankoperationsid\}/inbound\-payments/\{inboundpaymentsid\}'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Execute
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Execute
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Execute inbound payment transactions from a correspondent
 
@@ -196,9 +201,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/correspondent\-bank\-operations/\{correspondent\-bank\-operations\-id\}/inbound\-payments/\{inbound\-payments\-id\}/execute'
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Retrieve
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Retrieve inbound payments
 
@@ -214,9 +223,13 @@ GET /correspondent\-bank\-operations/\{correspondentbankoperationsid\}/inbound\-
 
 Following REST conventions\, it is recommended to use lowercase letters\, hyphens for better readability\, and avoid using verbs in the path\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Update
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Update
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Update outbound payment transactions
 
@@ -232,9 +245,13 @@ PUT: Based on REST best practices\, the name of the path should focus on the res
 
 You can adjust the naming convention based on your specific requirements and naming conventions\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Execute
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Execute
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Execute outbound payment transactions to a correspondent
 
@@ -249,9 +266,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}
 \`\`\`
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Retrieve
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Retrieve outbound payments
 
@@ -267,9 +288,13 @@ GET: Based on REST best practices\, the path should be named based on the resour
 
 This path clearly identifies the resources involved \(Correspondent Banks and Outbound Payments
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Update a clearing and settlement transaction
 
@@ -282,9 +307,13 @@ This BIAN API path allows you to update a specific clearing and settlement trans
 PUT: Based on REST best practices\, the name of the path should be:
 '/correspondent\-bank\-operations/\{correspondentbankoperationsid\}/clearing\-and\-settlement/\{clearingandsettlementid\}'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Exchange
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Exchange
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Exchange a clearing and settlement task
 
@@ -297,9 +326,13 @@ This API path allows you to update an existing clearing and settlement task rela
 PUT: A suitable name for this path following REST best practices could be:  
 '/correspondent\-bank\-operations/\{correspondentbankoperationsid\}/clearing\-and\-settlement/\{clearingandsettlementid\}/exchange'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Request
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Request
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Request clearing and settlement processing for a correspondent
 
@@ -315,9 +348,13 @@ A possible name for the path could be:
 
 '/correspondent\-bank\-operations/\{correspondent\-bank\-operation\-id\}/clearing\-and\-settlement/\{clearing\-and\-settlement\-id\}/request'
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Retrieve clearing and settlement activity with a correspondent
 
@@ -331,9 +368,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/correspondent\-bank\-operations/\{correspondent\-bank\-operations\-id\}/clearing\-and\-settlement/\{clearing\-and\-settlement\-id\}'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Update
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Update
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Update a reconciliation task
 
@@ -347,9 +388,13 @@ PUT: Based on REST best practices\, the name of the path should be structured as
 '/correspondent\-bank\-operations/\{correspondent\_bank\_operations\_id\}/reconciliation/\{reconciliation\_id\}'
 This naming convention uses lowercase letters\, separates words with hyphens\, and uses descriptive terms that represent the resources in the path\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Exchange
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Exchange
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Exchange  a reconciliation task
 
@@ -363,9 +408,13 @@ PUT: Based on REST best practices\, the name of the path should be something tha
 
 '/correspondent\-bank\-operations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}/exchange'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Request
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Request
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Request reconciliation processing for a correspondent
 
@@ -385,9 +434,13 @@ In this naming convention:
 \- A dash \(\-\) is used for separating words in URIs for better readability\.
 \- Variables are enclosed in curly braces \(e\.g\.\, \{correspondent\-bank\-id
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Retrieve reconciliation activity with a correspondent
 
@@ -401,9 +454,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /correspondent\-bank\-operations/\{correspondentbankoperationsid\}/reconciliation/\{reconciliationid\}
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Exchange
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Exchange
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Exchange Inbound Payments
 
@@ -419,9 +476,13 @@ PUT: The name of the path should be:
 
 I have made the path more user\-friendly and easier to read by using all lowercase letters\, separating words with hyphens\, and using singular nouns for resource names\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Exchange
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Exchange
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Exchange Outbound Payments
 
@@ -435,9 +496,13 @@ PUT: The name of the path should be:
 
 '/correspondent\-bank\-operations/\{correspondentBankOperationsId\}/outbound\-payments/\{outboundPaymentsId\}/exchange'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Execute
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Execute
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Execute Reconciliation
 
@@ -449,9 +514,13 @@ This API path allows you to update and execute a reconciliation process for corr
 
 PUT: The name of the path should be '/correspondent\-bank\-operations/\{id\}/reconciliation/\{id\}/execute'\.
 
-### POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/Initiate
+## POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/Initiate
 
-**Description**
+:::info Path
+POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/Initiate
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Initiate Inbound Payments
 
@@ -467,9 +536,13 @@ POST: Based on REST best practices\, the name for the path '/CorrespondentBankOp
 
 In this revised version\, the path uses lowercase letters\, separates words with hyphens for readability\, and keeps the URL segments descriptive while also maintaining adherence to RESTful conventions\.
 
-### POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/Initiate
+## POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/Initiate
 
-**Description**
+:::info Path
+POST: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/Initiate
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Initiate Outbound Payments
 
@@ -485,9 +558,13 @@ POST /correspondent\-bank\-operations/\{correspondentbankoperationsid\}/outbound
 
 This path name specifies the action of initiating outbound payments belonging to a specific correspondent bank operation resource\.
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Notify
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Notify
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Notify Inbound Payments
 
@@ -499,9 +576,13 @@ This API path allows you to retrieve information about notifying inbound payment
 
 GET: The name of the path should be \`/correspondent\-bank\-operations/\{cboid\}/inbound\-payments/\{ipid\}/notify\` to adhere to REST best practices\.
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Notify
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Notify
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Notify Outbound Payments
 
@@ -513,9 +594,13 @@ This API path retrieves information about notifying outbound payments within the
 
 GET: The name of the path should simply be: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Notify
 
-### GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Notify
+## GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/Reconciliation/\{reconciliationid\}/Notify
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Notify Reconciliation
 
@@ -529,9 +614,13 @@ GET: Based on REST best practices\, the path should be named as follows:
 
 '/correspondent\-bank\-operations/\{correspondent\-bank\-operations\-id\}/reconciliation/\{reconciliation\-id\}/notify'
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Request
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/InboundPayments/\{inboundpaymentsid\}/Request
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Request Inbound Payments
 
@@ -547,9 +636,13 @@ PUT: Based on REST best practices\, the name of the path \`/CorrespondentBankOpe
 
 In this way\, hyphens are used to separate words for readability\, and curly braces indicating placeholders are omitted as it is implied in a RESTful URL structure\.
 
-### PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Request
+## PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankOperations/\{correspondentbankoperationsid\}/OutboundPayments/\{outboundpaymentsid\}/Request
+:::
+
+### Description
 
 This service domain fulfils correspondent banking arrangements between the bank and its correspondent banking partners\.  This includes handling the clearing and settlement of payments to/from the correspondent banks\, typically using the SWIFT payment network\. Request Outbound Payments
 

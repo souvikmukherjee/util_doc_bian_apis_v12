@@ -1,43 +1,14 @@
 # TermDeposit
 
-## Table of Contents
-- [POST: /TermDeposit/Initiate](#post-/termdeposit/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/Update](#put-/termdeposit/\{termdepositid\}/update)
-- [PUT: /TermDeposit/\{termdepositid\}/Control](#put-/termdeposit/\{termdepositid\}/control)
-- [GET: /TermDeposit/\{termdepositid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/retrieve)
-- [GET: /TermDeposit/\{termdepositid\}/Interest/\{interestid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/interest/\{interestid\}/retrieve)
-- [POST: /TermDeposit/\{termdepositid\}/ServiceFees/Initiate](#post-/termdeposit/\{termdepositid\}/servicefees/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/termdeposit/\{termdepositid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/servicefees/\{servicefeesid\}/retrieve)
-- [POST: /TermDeposit/\{termdepositid\}/AccountLien/Initiate](#post-/termdeposit/\{termdepositid\}/accountlien/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Update](#put-/termdeposit/\{termdepositid\}/accountlien/\{accountlienid\}/update)
-- [PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Exchange](#put-/termdeposit/\{termdepositid\}/accountlien/\{accountlienid\}/exchange)
-- [GET: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/accountlien/\{accountlienid\}/retrieve)
-- [POST: /TermDeposit/\{termdepositid\}/AccountSweep/Initiate](#post-/termdeposit/\{termdepositid\}/accountsweep/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Update](#put-/termdeposit/\{termdepositid\}/accountsweep/\{accountsweepid\}/update)
-- [PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Execute](#put-/termdeposit/\{termdepositid\}/accountsweep/\{accountsweepid\}/execute)
-- [GET: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/accountsweep/\{accountsweepid\}/retrieve)
-- [POST: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/Initiate](#post-/termdeposit/\{termdepositid\}/depositsandwithdrawals/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update](#put-/termdeposit/\{termdepositid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/update)
-- [PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute](#put-/termdeposit/\{termdepositid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/execute)
-- [GET: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/retrieve)
-- [POST: /TermDeposit/\{termdepositid\}/Payments/Initiate](#post-/termdeposit/\{termdepositid\}/payments/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Update](#put-/termdeposit/\{termdepositid\}/payments/\{paymentsid\}/update)
-- [PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Exchange](#put-/termdeposit/\{termdepositid\}/payments/\{paymentsid\}/exchange)
-- [PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Execute](#put-/termdeposit/\{termdepositid\}/payments/\{paymentsid\}/execute)
-- [GET: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/payments/\{paymentsid\}/retrieve)
-- [POST: /TermDeposit/\{termdepositid\}/IssuedDevice/Initiate](#post-/termdeposit/\{termdepositid\}/issueddevice/initiate)
-- [PUT: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/termdeposit/\{termdepositid\}/issueddevice/\{issueddeviceid\}/update)
-- [GET: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/termdeposit/\{termdepositid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Update](#put-/termdeposit/\{termdepositid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /TermDeposit/\{termdepositid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/termdeposit/\{termdepositid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-
-
 **BIAN Documentation:** [TermDeposit v12](https://app.swaggerhub.com/apis/BIAN-3/TermDeposit/12.0.0)
 
-### POST: /TermDeposit/Initiate
+## POST: /TermDeposit/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      InCR Initiate A new term deposit account
 
@@ -51,9 +22,13 @@ POST: Following REST best practices\, the name of the path '/TermDeposit/Initiat
 
 So\, the improved path could be '/term\-deposits/initiation' or '/term\-deposits/initiate' based on the specific action being taken\.
 
-### PUT: /TermDeposit/\{termdepositid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      UpCR Update details of a term deposit account
 
@@ -71,9 +46,13 @@ PUT: In RESTful naming conventions\, the path should represent a resource or a c
 
 This reflects the resource \(TermDeposit\) and the specific TermDeposit instance identified by the \{termdepositid\}\. Update operations in REST are typically represented by the HTTP PUT or PATCH methods on the existing resource URI\.
 
-### PUT: /TermDeposit/\{termdepositid\}/Control
+## PUT: /TermDeposit/\{termdepositid\}/Control
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/Control
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      CoCR Control the processing of a term deposit account
 
@@ -87,9 +66,13 @@ PUT: The REST best practice for naming paths involves using nouns to represent r
 
 In this case\, the path \`'/TermDeposit/\{termdepositid\}/Control'\` could be renamed to \`'/TermDeposits/\{termdepositid\}/Controls'\` to better align with REST conventions\. The path now uses the resource name "Controls" as a plural noun to represent a collection of control resources related to a specific term deposit identified by \`termdepositid
 
-### GET: /TermDeposit/\{termdepositid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReCR Retrieve information about a term deposit account \- either standard canned reports or selected instance attribute values
 
@@ -101,9 +84,13 @@ This BIAN API path allows you to retrieve information about a specific term depo
 
 GET: Based on REST best practices\, the path '/TermDeposits/\{termdepositid\}' could be a more appropriate name for the resource that retrieves a specific term deposit by its ID\.
 
-### GET: /TermDeposit/\{termdepositid\}/Interest/\{interestid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReBQ Retrieve details of an interest transaction applied internally to the account
 
@@ -122,9 +109,13 @@ Here are some key principles followed in this naming convention:
 4\. Use singular nouns for single resources
 5\. Use resource identifiers \(like termDepositId and interestId\) instead of action verbs
 
-### POST: /TermDeposit/\{termdepositid\}/ServiceFees/Initiate
+## POST: /TermDeposit/\{termdepositid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/\{termdepositid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      InBQ Initiate service fees against an account
 
@@ -147,9 +138,13 @@ Here's a breakdown of the path name:
 \- Specific resource identifiers like \{termdepositid\} are kept in lowercase with hyphens for readability\.
 \- Action or operation initiating a service
 
-### PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ExBQ Execute Apply Service Fee
 
@@ -167,9 +162,13 @@ PUT: Based on REST best practices\, the commonly recommended naming convention f
 
 If the endpoint is intended to trigger an action\, a common approach is to use HTTP methods to represent
 
-### GET: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReBQ Retrieve information about a service fee applied to the account
 
@@ -183,9 +182,13 @@ GET: The name of the path should be:
 
 GET '/term\-deposits/\{termdepositid\}/service\-fees/\{servicefeesid\}'
 
-### POST: /TermDeposit/\{termdepositid\}/AccountLien/Initiate
+## POST: /TermDeposit/\{termdepositid\}/AccountLien/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/\{termdepositid\}/AccountLien/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      InBQ Set up an account lien
 
@@ -208,9 +211,13 @@ Here's the breakdown of the changes made:
 \- Use singular nouns for individual resources \(e\.g\.\, termDepositId\) for consistency\.
 \- Avoid using camelCase or Pascal
 
-### PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      UpBQ Update details of an existing account lien
 
@@ -224,9 +231,13 @@ PUT: The path should be named as:
 
 PUT /term\-deposits/\{termdepositId\}/account\-liens/\{accountlienId\}
 
-### PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Exchange
+## PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Exchange
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      EcBQ Exchange \(i\.e\. confirm\, reject\) details of an account lien
 
@@ -242,9 +253,13 @@ PUT: If the path '/TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/E
 
 This name follows the convention of using lowercase letters\, using hyphens to separate words\, and using plural nouns for resources\.
 
-### GET: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/AccountLien/\{accountlienid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReBQ Retrieve details about an account lien
 
@@ -258,9 +273,13 @@ GET: The name of the path should be:
 
 '/termdeposits/\{termdepositid\}/account\-liens/\{accountlienid\}'
 
-### POST: /TermDeposit/\{termdepositid\}/AccountSweep/Initiate
+## POST: /TermDeposit/\{termdepositid\}/AccountSweep/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/\{termdepositid\}/AccountSweep/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      InBQ Set up an account sweep
 
@@ -282,9 +301,13 @@ where:
 \- accountSweeps: it is used in plural form for representing collections\.
 \- initiate: it describes the action that will be taken on that resource\.
 
-### PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      UpBQ Update details of an existing account sweep
 
@@ -298,9 +321,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /term\-deposits/\{termdepositid\}/account\-sweeps/\{accountsweepid\}
 
-### PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Execute
+## PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Execute
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ExBQ Trigger an account sweep transaction
 
@@ -313,9 +340,13 @@ This API path is used to trigger an account sweep transaction related to a speci
 PUT: Based on REST best practices\, the name of the path should be:
 '/term\-deposits/\{termdepositid\}/account\-sweeps/\{accountsweepid\}/execute'
 
-### GET: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/AccountSweep/\{accountsweepid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReBQ Retrieve details about a sweep facility or specific sweep transaction
 
@@ -329,9 +360,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`GET /term\-deposits/\{termdepositId\}/account\-sweeps/\{accountsweepId\}\`
 
-### POST: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/Initiate
+## POST: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      InBQ Initialize deposit or withdrawal transaction
 
@@ -343,9 +378,13 @@ This BIAN API path allows you to initiate a new deposit or withdrawal transactio
 
 POST: The name of the path should be \`/term\-deposits/\{termdepositid\}/transactions\`\.
 
-### PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      UpBQ Update/correct a deposit or withdrawal transaction
 
@@ -359,9 +398,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PUT '/TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}'
 
-### PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+## PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ExBQ Execute a deposit or withdrawal transaction
 
@@ -375,9 +418,13 @@ PUT: A suitable name for that path following REST best practices could be:
 
 \`/term\-deposits/\{termdepositid\}/transactions/\{depositsandwithdrawalsid\}/execute\`
 
-### GET: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReBQ Retrieve details about a deposit or withdrawal transaction
 
@@ -391,9 +438,13 @@ GET: The name of the path should be:
   
 \`GET /term\-deposits/\{termdepositid\}/transactions/\{transactionid\}\`
 
-### POST: /TermDeposit/\{termdepositid\}/Payments/Initiate
+## POST: /TermDeposit/\{termdepositid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/\{termdepositid\}/Payments/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      InBQ Initialize a payment transaction \(can be single or repeating\)
 
@@ -409,9 +460,13 @@ POST: Based on REST best practices\, the appropriate name for the path '/TermDep
 
 This naming convention follows RESTful principles by using lowercase letters\, using hyphens to separate words for better readability\, and clearly indicating the action being performed \(initiating a payment\) through the HTTP method \(\`POST\`\)\.
 
-### PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      UpBQ Update a payment transaction configuration or specific transaction
 
@@ -424,9 +479,13 @@ This BIAN API path allows you to update a specific payment transaction configura
 PUT: Following REST best practices\, the name of the path should be:
 PUT /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}
 
-### PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Exchange
+## PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Exchange
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      EcBQ Verify/approve a scheduled repeating payment
 
@@ -440,9 +499,13 @@ PUT: Based on REST best practices\, the path name should be as follows:
 
 '/term\-deposits/\{termdepositid\}/payments/\{paymentid\}/exchange'
 
-### PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Execute
+## PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Execute
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ExBQ Trigger a payment for a repeating payment set up
 
@@ -456,9 +519,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 \`POST /termdeposits/\{termdepositid\}/payments/\{paymentsid\}/execute\`
 
-### GET: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      ReBQ Retrieve details about a payment transaction or arrangement
 
@@ -470,9 +537,13 @@ This API path allows you to retrieve details about a payment transaction or arra
 
 GET: A more appropriate name for the path '/TermDeposit/\{termdepositid\}/Payments/\{paymentsid\}/Retrieve' following REST best practices could be '/term\-deposits/\{termdepositid\}/payments/\{paymentsid\}'\. It uses lowercase letters\, separates words with dashes\, and provides a clear and descriptive structure for the resource hierarchy\, making it more user\-friendly and aligned with REST conventions\.
 
-### POST: /TermDeposit/\{termdepositid\}/IssuedDevice/Initiate
+## POST: /TermDeposit/\{termdepositid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /TermDeposit/\{termdepositid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      Initiate Provision of Issued Device
 
@@ -486,9 +557,13 @@ POST: The name of the path could be "/termDeposits/\{termDepositId\}/issuedDevic
 
 It follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for resources \(\`termDeposits\`\, \`issuedDevices\`\)\. The path is also clear and descriptive of the action being performed\, which is initiating an issued device for a specific term deposit\.
 
-### PUT: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      Update Details of Issued Device Allocated to This Account
 
@@ -502,9 +577,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /term\-deposits/\{termdepositid\}/issued\-devices/\{issueddeviceid\}
 
-### GET: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TermDeposit/\{termdepositid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      Retrieve Details about Issued Device
 
@@ -518,9 +597,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /term\-deposits/\{termdepositid\}/issued\-devices/\{issueddeviceid\}
 
-### PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      Update details about an applied service fee
 
@@ -534,9 +617,13 @@ PUT: The name of the path following RESTful best practices could be:
 
 PUT /TermDeposits/\{termdepositid\}/ServiceFees/\{servicefeesid\}
 
-### PUT: /TermDeposit/\{termdepositid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /TermDeposit/\{termdepositid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TermDeposit/\{termdepositid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 A Term Deposit is an interest bearing account into which a customer can place a fixed amount of funds for a fixed amount of time\. The Service Domain handles the opening\, servicing and maturity processing of a Term Deposit\.      Execute Authorization of Booking
 

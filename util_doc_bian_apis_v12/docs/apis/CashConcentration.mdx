@@ -1,31 +1,14 @@
 # CashConcentration
 
-## Table of Contents
-- [PUT: /CashConcentration/\{cashconcentrationid\}/Control](#put-/cashconcentration/\{cashconcentrationid\}/control)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/Exchange](#put-/cashconcentration/\{cashconcentrationid\}/exchange)
-- [GET: /CashConcentration/\{cashconcentrationid\}/Notify](#get-/cashconcentration/\{cashconcentrationid\}/notify)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/Request](#put-/cashconcentration/\{cashconcentrationid\}/request)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Exchange](#put-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/\{cashconcentrationserviceconfigurationid\}/exchange)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Exchange](#put-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/\{cashpositionmonitoringandtransferid\}/exchange)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Execute](#put-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/\{cashconcentrationserviceconfigurationid\}/execute)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Execute](#put-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/\{cashpositionmonitoringandtransferid\}/execute)
-- [POST: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/Initiate](#post-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/initiate)
-- [POST: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/Initiate](#post-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/initiate)
-- [GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Notify](#get-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/\{cashconcentrationserviceconfigurationid\}/notify)
-- [GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Notify](#get-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/\{cashpositionmonitoringandtransferid\}/notify)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Request](#put-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/\{cashconcentrationserviceconfigurationid\}/request)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Request](#put-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/\{cashpositionmonitoringandtransferid\}/request)
-- [GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Retrieve](#get-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/\{cashconcentrationserviceconfigurationid\}/retrieve)
-- [GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Retrieve](#get-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/\{cashpositionmonitoringandtransferid\}/retrieve)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Update](#put-/cashconcentration/\{cashconcentrationid\}/cashconcentrationserviceconfiguration/\{cashconcentrationserviceconfigurationid\}/update)
-- [PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Update](#put-/cashconcentration/\{cashconcentrationid\}/cashpositionmonitoringandtransfer/\{cashpositionmonitoringandtransferid\}/update)
-
-
 **BIAN Documentation:** [CashConcentration v12](https://app.swaggerhub.com/apis/BIAN-3/CashConcentration/12.0.0)
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/Control
+## PUT: /CashConcentration/\{cashconcentrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/Control
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Control Account Balance Sweeping Facility
 
@@ -37,9 +20,13 @@ This API path is used to update an existing resource related to the Cash Concent
 
 PUT: The name of the path should be \`/cash\-concentration/\{cashconcentrationid\}/control\`\.
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/Exchange
+## PUT: /CashConcentration/\{cashconcentrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/Exchange
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Exchange Account Balance Sweeping Facility
 
@@ -53,9 +40,13 @@ PUT: The name of the path should be:
 
 /cash\-concentration/\{cashconcentrationid\}/exchange
 
-### GET: /CashConcentration/\{cashconcentrationid\}/Notify
+## GET: /CashConcentration/\{cashconcentrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /CashConcentration/\{cashconcentrationid\}/Notify
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Notify Account Balance Sweeping Facility
 
@@ -69,9 +60,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/cash\-concentration/\{cashConcentrationId\}/notify'
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/Request
+## PUT: /CashConcentration/\{cashconcentrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/Request
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Request Account Balance Sweeping Facility
 
@@ -83,9 +78,13 @@ This BIAN API path allows you to request a cash management service called Cash C
 
 PUT: The name of the path should be '/cash\-concentrations/\{cashconcentrationid\}/request'\, following REST best practices such as using lowercase letters and using hyphens to separate words in the path\.
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Exchange
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Exchange
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Exchange Cash Concentration Service Configuration Fulfillment
 
@@ -99,9 +98,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 '/cash\-concentration/\{cashConcentrationId\}/service\-configurations/\{cashConcentrationServiceConfigurationId\}/exchange'
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Exchange
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Exchange
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Exchange Cash Position Monitoring and Transfer Fulfillment
 
@@ -119,9 +122,13 @@ PUT: Based on REST best practices\, a suggested name for the path could be:
 
 This naming convention follows the guidelines of using plural nouns for collections and avoiding verbs in the URL path\.
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Execute
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Execute
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Execute Cash Concentration Service Configuration Fulfillment
 
@@ -137,9 +144,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 Keeping the path in lowercase letters\, using hyphens to separate words\, and using plural for resource collections are all common REST conventions\.
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Execute
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Execute
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Execute Cash Position Monitoring and Transfer Fulfillment
 
@@ -153,9 +164,13 @@ PUT: A possible RESTful name for the given path could be:
 
 '/cash\-concentration/\{cashconcentrationid\}/cash\-position\-monitoring\-and\-transfer/\{cashpositionmonitoringandtransferid\}/execute'
 
-### POST: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/Initiate
+## POST: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/Initiate
 
-**Description**
+:::info Path
+POST: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/Initiate
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Initiate Cash Concentration Service Configuration Fulfillment
 
@@ -169,9 +184,13 @@ POST: A good RESTful naming convention for this path following best practices wo
 
 '/cash\-concentration/\{cashConcentrationId\}/service\-configuration/initiate'
 
-### POST: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/Initiate
+## POST: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/Initiate
 
-**Description**
+:::info Path
+POST: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/Initiate
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Initiate Cash Position Monitoring and Transfer Fulfillment
 
@@ -187,9 +206,13 @@ POST: In following REST best practices\, the name of the path should be somethin
 
 Downsides to using upper\-case letters in URL paths include potential issues with case sensitivity and readability\. It's recommended to use lowercase letters and hyphens to separate words for better consistency and SEO\.
 
-### GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Notify
+## GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Notify
 
-**Description**
+:::info Path
+GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Notify
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Notify Cash Concentration Service Configuration Fulfillment
 
@@ -205,9 +228,13 @@ GET: Following REST best practices\, the naming should be descriptive and indica
 
 Ensure to use lowercase letters and separate words with hyphens for better readability\.
 
-### GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Notify
+## GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Notify
 
-**Description**
+:::info Path
+GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Notify
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Notify Cash Position Monitoring and Transfer Fulfillment
 
@@ -223,9 +250,13 @@ GET: Based on REST best practices\, the name for the path should be:
 /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfers/\{cashpositionmonitoringandtransferid\}/Notify
 \`\`\`
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Request
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Request
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Request Cash Concentration Service Configuration Fulfillment
 
@@ -239,9 +270,13 @@ PUT: A possible name for this path following RESTful best practices could be:
 
 '/cash\-concentration/\{cashconcentrationId\}/service\-configuration/\{cashconcentrationserviceconfigurationId\}/request'
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Request
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Request
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Request
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Request Cash Position Monitoring and Transfer Fulfillment
 
@@ -257,9 +292,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 /CashConcentration/\{cashConcentrationId\}/CashPositionMonitoringAndTransfer/\{cashPositionMonitoringAndTransferId\}/Request
 \`\`\`
 
-### GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Retrieve
+## GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Retrieve
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Retrieve Cash Concentration Service Configuration Fulfillment
 
@@ -275,9 +314,13 @@ GET: A possible name for this REST path could be:
 
 In this name\, the words are separated by hyphens and written in lowercase following REST API naming conventions\.
 
-### GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Retrieve
+## GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Retrieve
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Retrieve Cash Position Monitoring and Transfer Fulfillment
 
@@ -293,9 +336,13 @@ GET: Based on REST best practices\, the name of the path should typically be in 
 
 This name follows the convention of using lowercase letters and underscores for readability\.
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Update
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashConcentrationServiceConfiguration/\{cashconcentrationserviceconfigurationid\}/Update
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Update Cash Concentration Service Configuration Fulfillment
 
@@ -309,9 +356,13 @@ PUT: A suitable name for the path following RESTful best practices could be:
 
 PUT /cash\-concentration/\{cashconcentrationid\}/service\-configuration/\{cashconcentrationserviceconfigurationid\}
 
-### PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Update
+## PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashConcentration/\{cashconcentrationid\}/CashPositionMonitoringandTransfer/\{cashpositionmonitoringandtransferid\}/Update
+:::
+
+### Description
 
 Cash Concentration is a cash management service aimed at moving a balance\, or part of a balance of an account to a different account to meet various requirements\. Update Cash Position Monitoring and Transfer Fulfillment
 

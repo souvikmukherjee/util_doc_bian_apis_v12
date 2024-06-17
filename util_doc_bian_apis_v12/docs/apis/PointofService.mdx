@@ -1,32 +1,14 @@
 # PointofService
 
-## Table of Contents
-- [POST: /PointofService/Initiate](#post-/pointofservice/initiate)
-- [PUT: /PointofService/\{pointofserviceid\}/Update](#put-/pointofservice/\{pointofserviceid\}/update)
-- [PUT: /PointofService/\{pointofserviceid\}/Execute](#put-/pointofservice/\{pointofserviceid\}/execute)
-- [PUT: /PointofService/\{pointofserviceid\}/Request](#put-/pointofservice/\{pointofserviceid\}/request)
-- [GET: /PointofService/\{pointofserviceid\}/Retrieve](#get-/pointofservice/\{pointofserviceid\}/retrieve)
-- [POST: /PointofService/\{pointofserviceid\}/Assisted/Initiate](#post-/pointofservice/\{pointofserviceid\}/assisted/initiate)
-- [PUT: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Update](#put-/pointofservice/\{pointofserviceid\}/assisted/\{assistedid\}/update)
-- [GET: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Retrieve](#get-/pointofservice/\{pointofserviceid\}/assisted/\{assistedid\}/retrieve)
-- [POST: /PointofService/\{pointofserviceid\}/Automated/Initiate](#post-/pointofservice/\{pointofserviceid\}/automated/initiate)
-- [PUT: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Update](#put-/pointofservice/\{pointofserviceid\}/automated/\{automatedid\}/update)
-- [GET: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Retrieve](#get-/pointofservice/\{pointofserviceid\}/automated/\{automatedid\}/retrieve)
-- [PUT: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Update](#put-/pointofservice/\{pointofserviceid\}/interaction/\{interactionid\}/update)
-- [GET: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Retrieve](#get-/pointofservice/\{pointofserviceid\}/interaction/\{interactionid\}/retrieve)
-- [PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Update](#put-/pointofservice/\{pointofserviceid\}/inventory/\{inventoryid\}/update)
-- [PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Execute](#put-/pointofservice/\{pointofserviceid\}/inventory/\{inventoryid\}/execute)
-- [GET: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Retrieve](#get-/pointofservice/\{pointofserviceid\}/inventory/\{inventoryid\}/retrieve)
-- [PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Update](#put-/pointofservice/\{pointofserviceid\}/cashposition/\{cashpositionid\}/update)
-- [PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Execute](#put-/pointofservice/\{pointofserviceid\}/cashposition/\{cashpositionid\}/execute)
-- [GET: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Retrieve](#get-/pointofservice/\{pointofserviceid\}/cashposition/\{cashpositionid\}/retrieve)
-
-
 **BIAN Documentation:** [PointofService v12](https://app.swaggerhub.com/apis/BIAN-3/PointofService/12.0.0)
 
-### POST: /PointofService/Initiate
+## POST: /PointofService/Initiate
 
-**Description**
+:::info Path
+POST: /PointofService/Initiate
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated InCR Initiate a point of service session
 
@@ -38,9 +20,13 @@ This API path allows users to create a new session for servicing positions withi
 
 POST: Based on REST best practices\, the path '/PointofService/Initiate' should be named using nouns to represent resources rather than using verbs\. A more appropriate name for this path could be '/point\-of\-service/initiations' or '/point\-of\-service/initiate\-orders' to better reflect the resource that is being interacted with\.
 
-### PUT: /PointofService/\{pointofserviceid\}/Update
+## PUT: /PointofService/\{pointofserviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Update
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated UpCR Update details for a point of service session
 
@@ -54,9 +40,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PATCH /PointofServices/\{pointofserviceid\}
 
-### PUT: /PointofService/\{pointofserviceid\}/Execute
+## PUT: /PointofService/\{pointofserviceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Execute
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ExCR Execute an automated task \(e\.g\. assign a contact\)
 
@@ -70,9 +60,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 \`/point\-of\-service/\{pointofserviceid\}/execute\`
 
-### PUT: /PointofService/\{pointofserviceid\}/Request
+## PUT: /PointofService/\{pointofserviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Request
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated RqCR Request manual intervention \(e\.g\. book future time\)
 
@@ -88,9 +82,13 @@ PUT: The name of the path should be:
 /point\-of\-services/\{pointofserviceid\}/requests
 \`\`\`
 
-### GET: /PointofService/\{pointofserviceid\}/Retrieve
+## GET: /PointofService/\{pointofserviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PointofService/\{pointofserviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ReCR Retrieve details about a servicing position session
 
@@ -106,9 +104,13 @@ GET /PointofServices/\{pointofserviceid\}
 
 By using the plural form "PointofServices"\, it indicates that this endpoint is responsible for retrieving multiple instances of the "PointofService" resource\, with an optional identifier
 
-### POST: /PointofService/\{pointofserviceid\}/Assisted/Initiate
+## POST: /PointofService/\{pointofserviceid\}/Assisted/Initiate
 
-**Description**
+:::info Path
+POST: /PointofService/\{pointofserviceid\}/Assisted/Initiate
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated InBQ Initiate an assisted contact
 
@@ -122,9 +124,13 @@ POST: A suitable name for the path '/PointofService/\{pointofserviceid\}/Assiste
 
 '/point\-of\-services/\{pointofserviceid\}/assisted/initiate'
 
-### PUT: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Update
+## PUT: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Update
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Update
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated UpBQ Update details about an assisted contact
 
@@ -140,9 +146,13 @@ PUT: The name of the path should be:
 PATCH /point\-of\-service/\{pointofserviceid\}/assisted/\{assistedid\}
 \`\`\`
 
-### GET: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Retrieve
+## GET: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PointofService/\{pointofserviceid\}/Assisted/\{assistedid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ReBQ Retrieve details about an assisted contact
 
@@ -154,9 +164,13 @@ This BIAN API path allows you to retrieve information about a specific assisted 
 
 GET: The name of the path should be \`/point\-of\-service/\{pointofserviceid\}/assisted/\{assistedid\}\` based on REST best practices\.
 
-### POST: /PointofService/\{pointofserviceid\}/Automated/Initiate
+## POST: /PointofService/\{pointofserviceid\}/Automated/Initiate
 
-**Description**
+:::info Path
+POST: /PointofService/\{pointofserviceid\}/Automated/Initiate
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated InBQ Initiate an automated contact
 
@@ -168,9 +182,13 @@ This API endpoint allows a user to initiate an automated contact for a specific 
 
 POST: The path '/PointofServices/\{pointofserviceid\}/AutomatedInitiation' would be a more RESTful name that follows best practices\. This name follows the convention of using plural nouns for resource names and avoids unnecessary slashes and verb forms\.
 
-### PUT: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Update
+## PUT: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Update
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Update
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated UpBQ Update details about an automated contact
 
@@ -186,9 +204,13 @@ PUT: Following REST best practices\, the name of the path should be:
 PATCH /point\-of\-service/\{pointofserviceid\}/automated/\{automatedid\}
 \`\`\`
 
-### GET: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Retrieve
+## GET: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PointofService/\{pointofserviceid\}/Automated/\{automatedid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ReBQ Retrieve details about an automated contact
 
@@ -206,9 +228,13 @@ GET: Based on REST best practices\, a more suitable name for the path could be:
 
 This name incorporates the use of lowercase letters\, hyphens for readability\, and descriptive path segments that reflect the resource hierarchy\.
 
-### PUT: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Update
+## PUT: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Update
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated UpBQ Update details for a customer interaction session
 
@@ -222,9 +248,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/point\-of\-services/\{pointofserviceid\}/interactions/\{interactionid\}'
 
-### GET: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Retrieve
+## GET: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PointofService/\{pointofserviceid\}/Interaction/\{interactionid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ReBQ Retrieve details about a customer interaction session
 
@@ -236,9 +266,13 @@ This API path allows you to retrieve information about a specific customer inter
 
 GET: The name of the path could be '/point\-of\-services/\{pointofserviceid\}/interactions/\{interactionid\}'\. It uses lowercase letters\, uses hyphens to separate words\, and clearly indicates the resource hierarchy in a RESTful manner\.
 
-### PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Update
+## PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Update
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated UpBQ Update inventory details
 
@@ -250,9 +284,13 @@ This API path allows you to update inventory details for a specific servicing po
 
 PUT: The name of the path should be \`/pointofservices/\{pointofserviceid\}/inventory/\{inventoryid\}\` for updating a specific inventory item associated with a particular point of service\.
 
-### PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Execute
+## PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Execute
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ExBQ Execute transactions against the inventory position
 
@@ -268,9 +306,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 It's important to use all lowercase letters\, separate words with hyphens\, and use plural nouns for consistency and readability\.
 
-### GET: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Retrieve
+## GET: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PointofService/\{pointofserviceid\}/Inventory/\{inventoryid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ReBQ Retrieve details about inventory holdings and usage
 
@@ -284,9 +326,13 @@ GET: A suitable name for the path '/PointofService/\{pointofserviceid\}/Inventor
 
 GET /point\-of\-service/\{pointofserviceid\}/inventory/\{inventoryid\}
 
-### PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Update
+## PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Update
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated UpBQ Update the cash position
 
@@ -302,9 +348,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PATCH /point\-of\-service/\{pointofserviceid\}/cash\-positions/\{cashpositionid\}
 \`\`\`
 
-### PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Execute
+## PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Execute
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ExBQ Execute transactions against the cash position
 
@@ -320,9 +370,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 Note that the path should use lowercase letters and separate words with hyphens for readability\.
 
-### GET: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Retrieve
+## GET: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PointofService/\{pointofserviceid\}/CashPosition/\{cashpositionid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates servicing positions within the bank\. It administers all media connections\, inventory holdings \(e\.g\. cash\)\, provides access to support utilities and tracks servicing activity \-e\.g\. time spent\, activity logs\, capturing servicing events including commission and training related actions\. In cases servicing positions can be automated ReBQ Retrieve details about the cash inventory
 

@@ -1,42 +1,14 @@
 # ChequeLockBox
 
-## Table of Contents
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/Control](#put-/chequelockbox/\{chequelockboxid\}/control)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/Exchange](#put-/chequelockbox/\{chequelockboxid\}/exchange)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/Execute](#put-/chequelockbox/\{chequelockboxid\}/execute)
-- [POST: /ChequeLockBox/Initiate](#post-/chequelockbox/initiate)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/Notify](#get-/chequelockbox/\{chequelockboxid\}/notify)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/Request](#put-/chequelockbox/\{chequelockboxid\}/request)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/Retrieve](#get-/chequelockbox/\{chequelockboxid\}/retrieve)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/Update](#put-/chequelockbox/\{chequelockboxid\}/update)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Exchange](#put-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/\{checkclearingandsettlementid\}/exchange)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Exchange](#put-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/\{lockboxreportingandissueresolutionid\}/exchange)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Exchange](#put-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/\{papercheckprocessingid\}/exchange)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Execute](#put-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/\{checkclearingandsettlementid\}/execute)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Execute](#put-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/\{lockboxreportingandissueresolutionid\}/execute)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Execute](#put-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/\{papercheckprocessingid\}/execute)
-- [POST: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/Initiate](#post-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/initiate)
-- [POST: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/Initiate](#post-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/initiate)
-- [POST: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/Initiate](#post-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/initiate)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Notify](#get-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/\{checkclearingandsettlementid\}/notify)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Notify](#get-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/\{lockboxreportingandissueresolutionid\}/notify)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Notify](#get-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/\{papercheckprocessingid\}/notify)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Request](#put-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/\{checkclearingandsettlementid\}/request)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Request](#put-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/\{lockboxreportingandissueresolutionid\}/request)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Request](#put-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/\{papercheckprocessingid\}/request)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Retrieve](#get-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/\{checkclearingandsettlementid\}/retrieve)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Retrieve](#get-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/\{lockboxreportingandissueresolutionid\}/retrieve)
-- [GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Retrieve](#get-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/\{papercheckprocessingid\}/retrieve)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Update](#put-/chequelockbox/\{chequelockboxid\}/checkclearingandsettlement/\{checkclearingandsettlementid\}/update)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Update](#put-/chequelockbox/\{chequelockboxid\}/lockboxreportingandissueresolution/\{lockboxreportingandissueresolutionid\}/update)
-- [PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Update](#put-/chequelockbox/\{chequelockboxid\}/papercheckprocessing/\{papercheckprocessingid\}/update)
-
-
 **BIAN Documentation:** [ChequeLockBox v12](https://app.swaggerhub.com/apis/BIAN-3/ChequeLockBox/12.0.0)
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/Control
+## PUT: /ChequeLockBox/\{chequelockboxid\}/Control
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/Control
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Control Lock Box Facility
 
@@ -52,9 +24,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /ChequeLockBoxes/\{chequelockboxid\}/Controls
 \`\`\`
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/Exchange
+## PUT: /ChequeLockBox/\{chequelockboxid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Exchange Lock Box Facility
 
@@ -68,9 +44,13 @@ PUT: The name of the path should be:
 
 \`/cheque\-lock\-boxes/\{chequelockboxid\}/exchanges\`
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/Execute
+## PUT: /ChequeLockBox/\{chequelockboxid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/Execute
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Execute Lock Box Facility
 
@@ -86,9 +66,13 @@ PUT: Based on REST best practices\, a suitable name for the path '/ChequeLockBox
 
 This naming convention follows the best practice of using resource\-oriented URLs and keeping the endpoint names consistent and descriptive\.
 
-### POST: /ChequeLockBox/Initiate
+## POST: /ChequeLockBox/Initiate
 
-**Description**
+:::info Path
+POST: /ChequeLockBox/Initiate
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Initiate Lock Box Facility
 
@@ -100,9 +84,13 @@ This BIAN API path \`/ChequeLockBox/Initiate\` allows corporate customers to ini
 
 POST: A RESTful approach suggests naming resources using nouns rather than verbs\. Therefore\, a more appropriate name for the path '/ChequeLockBox/Initiate' might be '/cheque\-lockboxes'\.
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/Notify
+## GET: /ChequeLockBox/\{chequelockboxid\}/Notify
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/Notify
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Notify Lock Box Facility
 
@@ -114,9 +102,13 @@ This API path allows you to retrieve information about a specific "Cheque Lock B
 
 GET: The name of the path should be '/cheque\-lock\-box/\{chequelockboxid\}/notify'\. It follows REST best practices by using lowercase letters\, separating words with hyphens\, and including resource identifiers for clear path structuring\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/Request
+## PUT: /ChequeLockBox/\{chequelockboxid\}/Request
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/Request
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Request Lock Box Facility
 
@@ -129,9 +121,13 @@ This API path allows corporate customers to request a lock box facility for pape
 PUT: Based on REST best practices\, the name of the path should be:
 '/cheque\-lock\-boxes/\{chequeLockBoxId\}/requests'
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/Retrieve
+## GET: /ChequeLockBox/\{chequelockboxid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Retrieve Lock Box Facility
 
@@ -147,9 +143,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 For the endpoint to retrieve a ChequeLockBox resource with a specific ID\, you would typically use HTTP GET method along with the resource identifier in the URL\. In this case\, \`\{chequelockboxid\}\` represents the unique identifier of the specific ChequeLockBox resource that needs to be retrieved\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/Update
+## PUT: /ChequeLockBox/\{chequelockboxid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/Update
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Update Lock Box Facility
 
@@ -161,9 +161,13 @@ This BIAN API path allows you to update the lock box facility associated with a 
 
 PUT: Based on REST best practices\, the name of the path '/ChequeLockBox/\{chequelockboxid\}/Update' can be simplified to '/cheque\-lock\-boxes/\{chequelockboxid\}'\. This path follows the convention of using all lowercase letters\, separating words with hyphens\, and using the resource name in the plural form\. It is concise\, descriptive\, and adheres to RESTful URL naming standards\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Exchange
+## PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Exchange Check Clearing and Settlement Fulfillment
 
@@ -177,9 +181,13 @@ PUT: The name of the path should be:
 
 '/cheque\-lock\-box/\{chequelockboxid\}/check\-clearing\-and\-settlement/\{checkclearingandsettlementid\}/exchange'
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Exchange
+## PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Exchange Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -195,9 +203,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase\, use hyphens to separate words\, and utilize singular nouns for resource names\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Exchange
+## PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Exchange Paper Check Processing Fulfillment
 
@@ -211,9 +223,13 @@ PUT: The name of the path should be:
 
 '/cheque\-lock\-box/\{chequelockboxid\}/paper\-check\-processing/\{papercheckprocessingid\}/exchange'
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Execute
+## PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Execute
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Execute Check Clearing and Settlement Fulfillment
 
@@ -227,9 +243,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`POST /cheque\-lock\-box/\{chequeLockBoxId\}/check\-clearing\-and\-settlement/\{checkClearingAndSettlementId\}/execution\`
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Execute
+## PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Execute
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Execute Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -245,9 +265,13 @@ PUT: Based on REST best practices\, the name of the path following the hierarchy
 
 In RESTful naming conventions\, paths are typically written in lowercase and words are separated by hyphens for better readability\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Execute
+## PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Execute
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Execute Paper Check Processing Fulfillment
 
@@ -260,9 +284,13 @@ This BIAN API path allows you to update and execute the paper check processing f
 PUT: The name of the path should be:
 '/cheque\-lock\-box/\{chequelockboxid\}/paper\-check\-processing/\{papercheckprocessingid\}/execute'
 
-### POST: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/Initiate
+## POST: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/Initiate
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Initiate Check Clearing and Settlement Fulfillment
 
@@ -275,9 +303,13 @@ This API path is used to initiate the process of clearing and settling paper che
 POST: Based on REST best practices\, the name of the path should be:
 '/cheque\-lock\-box/\{chequelockboxid\}/check\-clearing\-and\-settlement/initiate'
 
-### POST: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/Initiate
+## POST: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/Initiate
 
-**Description**
+:::info Path
+POST: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/Initiate
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Initiate Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -295,9 +327,13 @@ POST /cheque\-lock\-boxes/\{chequelockboxid\}/lock\-box\-issues
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and clearly indicating the resource being accessed\.
 
-### POST: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/Initiate
+## POST: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/Initiate
 
-**Description**
+:::info Path
+POST: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/Initiate
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Initiate Paper Check Processing Fulfillment
 
@@ -313,9 +349,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and use nouns to represent resources\.
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Notify
+## GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Notify
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Notify
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Notify Check Clearing and Settlement Fulfillment
 
@@ -333,9 +373,13 @@ GET: The RESTful path for the endpoint should be structured as follows:
 
 Following REST best practices\, the path should use plural nouns to represent collections of resources and utilize CamelCase for multi\-word identifiers\.
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Notify
+## GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Notify
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Notify
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Notify Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -349,9 +393,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/cheque\-lock\-boxes/\{cheque\-lock\-box\-id\}/reporting\-and\-issue\-resolutions/\{reporting\-and\-issue\-resolution\-id\}/notify'
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Notify
+## GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Notify
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Notify Paper Check Processing Fulfillment
 
@@ -367,9 +415,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and use specific resource names that accurately describe the entities being accessed\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Request
+## PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Request
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Request Check Clearing and Settlement Fulfillment
 
@@ -385,9 +437,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 In REST API design\, it is common to use lowercase letters and hyphens to separate words in the URL path for better readability and consistency\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Request
+## PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Request
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Request
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Request Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -403,9 +459,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, hyphens to separate words\, and be descriptive of the resource it represents\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Request
+## PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Request
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Request Paper Check Processing Fulfillment
 
@@ -419,9 +479,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/cheque\-lock\-box/\{chequeLockBoxId\}/paper\-check\-processing/\{paperCheckProcessingId\}/request'
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Retrieve
+## GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Retrieve Check Clearing and Settlement Fulfillment
 
@@ -435,9 +499,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/cheque\-lock\-box/\{cheque\-lock\-box\-id\}/check\-clearing\-and\-settlement/\{check\-clearing\-and\-settlement\-id\}/retrieve'
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Retrieve
+## GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Retrieve Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -451,9 +519,13 @@ GET: The name of the path should be:
 
 GET /cheque\-lock\-box/\{chequelockboxid\}/lock\-box\-reporting\-and\-issue\-resolution/\{lockboxreportingandissueresolutionid\}
 
-### GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Retrieve
+## GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Retrieve Paper Check Processing Fulfillment
 
@@ -467,9 +539,13 @@ GET: Based on REST best practices\, a suitable name for the path '/ChequeLockBox
 
 GET '/cheque\-lock\-boxes/\{chequelockboxid\}/paper\-check\-processing/\{papercheckprocessingid\}'
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Update
+## PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/CheckClearingandSettlement/\{checkclearingandsettlementid\}/Update
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Update Check Clearing and Settlement Fulfillment
 
@@ -483,9 +559,13 @@ PUT: The name of the path should be:
 
 \`PUT /cheque\-lock\-box/\{chequelockboxid\}/check\-clearing\-and\-settlement/\{checkclearingandsettlementid\}\`
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Update
+## PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/LockBoxReportingandIssueResolution/\{lockboxreportingandissueresolutionid\}/Update
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Update Lock Box Reporting and Issue Resolution Fulfillment
 
@@ -501,9 +581,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 Note that the path should be in lowercase\, separate words using hyphens for readability\, and include resource identifiers in camelCase format\.
 
-### PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Update
+## PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChequeLockBox/\{chequelockboxid\}/PaperCheckProcessing/\{papercheckprocessingid\}/Update
+:::
+
+### Description
 
 This Service Domain support paper cheque processing services offered to corporate customers Update Paper Check Processing Fulfillment
 

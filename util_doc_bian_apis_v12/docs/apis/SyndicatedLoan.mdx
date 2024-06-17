@@ -1,37 +1,14 @@
 # SyndicatedLoan
 
-## Table of Contents
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Control](#put-/syndicatedloan/\{syndicatedloanid\}/control)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Exchange](#put-/syndicatedloan/\{syndicatedloanid\}/exchange)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Execute](#put-/syndicatedloan/\{syndicatedloanid\}/execute)
-- [POST: /SyndicatedLoan/Initiate](#post-/syndicatedloan/initiate)
-- [GET: /SyndicatedLoan/\{syndicatedloanid\}/Retrieve](#get-/syndicatedloan/\{syndicatedloanid\}/retrieve)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Request](#put-/syndicatedloan/\{syndicatedloanid\}/request)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Update](#put-/syndicatedloan/\{syndicatedloanid\}/update)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Exchange](#put-/syndicatedloan/\{syndicatedloanid\}/fulfillment/\{fulfillmentid\}/exchange)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Exchange](#put-/syndicatedloan/\{syndicatedloanid\}/origination/\{originationid\}/exchange)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Exchange](#put-/syndicatedloan/\{syndicatedloanid\}/structuring/\{structuringid\}/exchange)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Exchange](#put-/syndicatedloan/\{syndicatedloanid\}/syndicateassembly/\{syndicateassemblyid\}/exchange)
-- [POST: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/Initiate](#post-/syndicatedloan/\{syndicatedloanid\}/structuring/initiate)
-- [GET: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Retrieve](#get-/syndicatedloan/\{syndicatedloanid\}/fulfillment/\{fulfillmentid\}/retrieve)
-- [GET: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Retrieve](#get-/syndicatedloan/\{syndicatedloanid\}/origination/\{originationid\}/retrieve)
-- [GET: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Retrieve](#get-/syndicatedloan/\{syndicatedloanid\}/structuring/\{structuringid\}/retrieve)
-- [GET: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Retrieve](#get-/syndicatedloan/\{syndicatedloanid\}/syndicateassembly/\{syndicateassemblyid\}/retrieve)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Request](#put-/syndicatedloan/\{syndicatedloanid\}/fulfillment/\{fulfillmentid\}/request)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Request](#put-/syndicatedloan/\{syndicatedloanid\}/origination/\{originationid\}/request)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Request](#put-/syndicatedloan/\{syndicatedloanid\}/structuring/\{structuringid\}/request)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Request](#put-/syndicatedloan/\{syndicatedloanid\}/syndicateassembly/\{syndicateassemblyid\}/request)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Update](#put-/syndicatedloan/\{syndicatedloanid\}/fulfillment/\{fulfillmentid\}/update)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Update](#put-/syndicatedloan/\{syndicatedloanid\}/origination/\{originationid\}/update)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Update](#put-/syndicatedloan/\{syndicatedloanid\}/structuring/\{structuringid\}/update)
-- [PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Update](#put-/syndicatedloan/\{syndicatedloanid\}/syndicateassembly/\{syndicateassemblyid\}/update)
-
-
 **BIAN Documentation:** [SyndicatedLoan v12](https://app.swaggerhub.com/apis/BIAN-3/SyndicatedLoan/12.0.0)
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Control
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Control
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Control
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. CoCR Control the processing of Syndicated Loan Facility
 
@@ -43,9 +20,13 @@ This BIAN API path allows the bank to control the processing of a syndicated loa
 
 PUT: The name of the path should be '/syndicated\-loan/\{syndicatedLoanId\}/control'\. Following REST best practices\, path names should use lowercase letters\, separate words with hyphens\, and use singular nouns for resource names\.
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Exchange
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. EcCR Accept\, verify\, etc\. aspects of Syndicated Loan Facility processing
 
@@ -57,9 +38,13 @@ This BIAN API path allows for the updating of an existing syndicated loan facili
 
 PUT: The name of the path should be '/syndicated\-loans/\{syndicatedloanid\}/exchange' following REST best practices\.
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Execute
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Execute
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. ExCR Execute an available automated action for Syndicated Loan Facility
 
@@ -82,9 +67,13 @@ In this naming convention:
 
 This naming convention helps make APIs more intuitive\,
 
-### POST: /SyndicatedLoan/Initiate
+## POST: /SyndicatedLoan/Initiate
 
-**Description**
+:::info Path
+POST: /SyndicatedLoan/Initiate
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. InCR Instantiate a new Syndicated Loan Facility
 
@@ -96,9 +85,13 @@ This API path allows you to initiate a new Syndicated Loan Facility\. It handles
 
 POST: Based on REST best practices\, the path '/SyndicatedLoans' could be used to represent a collection of syndicated loans\. The action of initiating a syndicated loan could then be represented as a POST request to the '/SyndicatedLoans' path with appropriate request data\. So\, the name of the path for initiating a syndicated loan could be '/SyndicatedLoans'\.
 
-### GET: /SyndicatedLoan/\{syndicatedloanid\}/Retrieve
+## GET: /SyndicatedLoan/\{syndicatedloanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicatedLoan/\{syndicatedloanid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. ReCR Retrieve details about any aspect of Syndicated Loan Facility
 
@@ -110,9 +103,13 @@ This API path allows you to retrieve information about a specific Syndicated Loa
 
 GET: The name of the path should be \`/syndicated\-loans/\{syndicatedLoanId\}\`\.
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Request
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Request
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Request
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. RqCR Request manual intervention or a decision with respect to Syndicated Loan Facility
 
@@ -130,9 +127,13 @@ Here are some key points to follow REST best practices for naming paths:
 3\. Use plural nouns for collection resources \(e\.g\.\, \`syndicated\-loans\`\)\.
 4\. Use the actual resource name in singular form for a specific item within the collection \(e
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Update
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Update
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. UpCR Update details relating to Syndicated Loan Facility
 
@@ -146,9 +147,13 @@ PUT: The appropriate name for the path '/SyndicatedLoan/\{syndicatedloanid\}/Upd
 
 PATCH /SyndicatedLoan/\{syndicatedloanid\}
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Exchange
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. EcBQ Accept\, verify\, etc\. aspects of Fulfillment processing
 
@@ -161,9 +166,13 @@ This BIAN API path is used to update an existing resource related to the fulfill
 PUT: Following REST best practices\, the name of the path should be:
 '/syndicated\-loans/\{syndicatedloanid\}/fulfillments/\{fulfillmentid\}/exchanges'
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Exchange
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. EcBQ Accept\, verify\, etc\. aspects of Origination processing
 
@@ -177,9 +186,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /SyndicatedLoans/\{syndicatedloanid\}/Origination/\{originationid\}/Exchange
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Exchange
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. EcBQ Accept\, verify\, etc\. aspects of Structuring processing
 
@@ -193,9 +206,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /SyndicatedLoans/\{syndicatedloanid\}/Structurings/\{structuringid\}/Exchanges
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Exchange
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. EcBQ Accept\, verify\, etc\. aspects of Syndicate Assembly processing
 
@@ -209,9 +226,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 GET /syndicated\-loans/\{syndicatedloanid\}/syndicate\-assemblies/\{syndicateassemblyid\}/exchange
 
-### POST: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/Initiate
+## POST: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/Initiate
 
-**Description**
+:::info Path
+POST: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/Initiate
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. InBQ Instantiate a new Structuring
 
@@ -225,9 +246,13 @@ POST: The name of the path should be:
 
 /syndicated\-loans/\{syndicatedLoanId\}/structuring/initiate
 
-### GET: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Retrieve
+## GET: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. ReBQ Retrieve details about any aspect of Fulfillment
 
@@ -243,9 +268,13 @@ GET: The name of the path should be:
 GET /syndicated\-loans/\{syndicatedloanid\}/fulfillments/\{fulfillmentid\}
 \`\`\`
 
-### GET: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Retrieve
+## GET: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. ReBQ Retrieve details about any aspect of Origination
 
@@ -263,9 +292,13 @@ In this naming convention:
 \- We use lowercase letters and hyphens for readability\.
 \- We use the 'syndicated\-loans' and 'originations' as plural nouns to indicate that we are retrieving a specific
 
-### GET: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Retrieve
+## GET: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. ReBQ Retrieve details about any aspect of Structuring
 
@@ -281,9 +314,13 @@ GET: The name for the path '/SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{s
 
 This name includes the HTTP method \(GET\) and uses lowercase letters with hyphens to represent individual words in the path\.
 
-### GET: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Retrieve
+## GET: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. ReBQ Retrieve details about any aspect of Syndicate Assembly
 
@@ -296,9 +333,13 @@ This API path allows you to retrieve details about syndicate assemblies related 
 GET: Based on REST best practices\, the path should be something like this:
 '/syndicated\-loans/\{syndicatedLoanId\}/syndicate\-assemblies/\{syndicateAssemblyId\}'
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Request
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Request
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. RqBQ Request manual intervention or a decision with respect to Fulfillment
 
@@ -312,9 +353,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /SyndicatedLoans/\{syndicatedloanid\}/Fulfillments/\{fulfillmentid\}/Requests
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Request
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Request
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Request
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. RqBQ Request manual intervention or a decision with respect to Origination
 
@@ -328,9 +373,13 @@ PUT: Based on REST best practices\, the appropriate name for the path would be:
 
 \`/syndicated\-loans/\{syndicatedloanid\}/originations/\{originationid\}/requests\`
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Request
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Request
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Request
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. RqBQ Request manual intervention or a decision with respect to Structuring
 
@@ -344,9 +393,13 @@ PUT: A suitable name for the path '/SyndicatedLoan/\{syndicatedloanid\}/Structur
 
 /SyndicatedLoans/\{syndicatedloanid\}/Structurings/\{structuringid\}/Requests
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Request
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Request
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Request
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. RqBQ Request manual intervention or a decision with respect to Syndicate Assembly
 
@@ -361,9 +414,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /SyndicatedLoans/\{syndicatedLoanId\}/SyndicateAssemblies/\{syndicateAssemblyId\}/Requests
 \`\`\`
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Update
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Fulfillment/\{fulfillmentid\}/Update
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. UpBQ Update details relating to Fulfillment
 
@@ -377,9 +434,13 @@ PUT: A possible RESTful naming for the path could be:
 
 PUT /syndicated\-loans/\{syndicatedloanid\}/fulfillments/\{fulfillmentid\}
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Update
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Origination/\{originationid\}/Update
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. UpBQ Update details relating to Origination
 
@@ -393,9 +454,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /SyndicatedLoans/\{syndicatedloanid\}/Originations/\{originationid\}
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Update
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/Structuring/\{structuringid\}/Update
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. UpBQ Update details relating to Structuring
 
@@ -409,9 +474,13 @@ PUT: The name of the path should be:
 
 PUT /syndicated\-loans/\{syndicatedloanid\}/structuring/\{structuringid\}
 
-### PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Update
+## PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicatedLoan/\{syndicatedloanid\}/SyndicateAssembly/\{syndicateassemblyid\}/Update
+:::
+
+### Description
 
 Handle the processing of syndicated loans with the bank playing the lead coordination role with other syndicate bank members\. Note some initial preparation may have been made through prior customer offer processing\. UpBQ Update details relating to Syndicate Assembly
 

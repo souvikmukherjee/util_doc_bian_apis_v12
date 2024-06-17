@@ -1,35 +1,14 @@
 # SecuritiesFailsProcessing
 
-## Table of Contents
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Control](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/control)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Exchange](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/exchange)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Execute](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/execute)
-- [POST: /SecuritiesFailsProcessing/Initiate](#post-/securitiesfailsprocessing/initiate)
-- [GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Notify](#get-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/notify)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Request](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/request)
-- [GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Retrieve](#get-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/retrieve)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Update](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/update)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Exchange](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/\{securitiesfailanalysisid\}/exchange)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Exchange](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/\{securitiesfaildeterminationid\}/exchange)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Execute](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/\{securitiesfailanalysisid\}/execute)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Execute](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/\{securitiesfaildeterminationid\}/execute)
-- [POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/Initiate](#post-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/initiate)
-- [POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/Initiate](#post-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/initiate)
-- [GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Notify](#get-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/\{securitiesfailanalysisid\}/notify)
-- [GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Notify](#get-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/\{securitiesfaildeterminationid\}/notify)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Request](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/\{securitiesfailanalysisid\}/request)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Request](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/\{securitiesfaildeterminationid\}/request)
-- [GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Retrieve](#get-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/\{securitiesfailanalysisid\}/retrieve)
-- [GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Retrieve](#get-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/\{securitiesfaildeterminationid\}/retrieve)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Update](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfailanalysis/\{securitiesfailanalysisid\}/update)
-- [PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Update](#put-/securitiesfailsprocessing/\{securitiesfailsprocessingid\}/securitiesfaildetermination/\{securitiesfaildeterminationid\}/update)
-
-
 **BIAN Documentation:** [SecuritiesFailsProcessing v12](https://app.swaggerhub.com/apis/BIAN-3/SecuritiesFailsProcessing/12.0.0)
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Control
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Control
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Control Security Trading Fails Procedure
 
@@ -43,9 +22,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/securities\-fails\-processings/\{securitiesfailsprocessingid\}/control'
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Exchange
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Exchange Security Trading Fails Procedure
 
@@ -59,9 +42,13 @@ PUT: The name of the path should be:
 
 GET /securities\-fails\-processing/\{securitiesfailsprocessingid\}/exchange
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Execute
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Execute Security Trading Fails Procedure
 
@@ -73,9 +60,13 @@ This API path allows you to update and execute a procedure that resolves clerica
 
 PUT: The name of the path '/SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Execute' should ideally follow REST best practices by being a noun that represents a resource\. Since this path seems to be executing a specific action related to securities fails processing identified by securitiesfailsprocessingid\, a more appropriate name could be '/SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Execution'\. This name reflects the resource being acted upon \(SecuritiesFailsProcessing\) and the action being performed on that
 
-### POST: /SecuritiesFailsProcessing/Initiate
+## POST: /SecuritiesFailsProcessing/Initiate
 
-**Description**
+:::info Path
+POST: /SecuritiesFailsProcessing/Initiate
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Initiate Security Trading Fails Procedure
 
@@ -89,9 +80,13 @@ POST: Based on REST best practices\, the name of the path should be structured i
 
 In this case\, the path '/SecuritiesFailsProcessing/Initiate' could be renamed following REST conventions as '/securities\-fails\-processes' to represent a collection of securities fails processing resources\.
 
-### GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Notify
+## GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Notify
 
-**Description**
+:::info Path
+GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Notify Security Trading Fails Procedure
 
@@ -105,9 +100,13 @@ GET: The name of the path should be \`/securities\-fails\-processing/\{securitie
 
 According to REST best practices\, the path should use lowercase letters and hyphens to separate words for better readability\. The path should also be descriptive and use nouns to represent resources\.
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Request
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Request
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Request Security Trading Fails Procedure
 
@@ -120,9 +119,13 @@ This API path allows you to update an existing resource related to resolving err
 PUT: The name of the path should be:
 '/securities\-fails\-processing/\{securities\_fails\_processing\_id\}/request'
 
-### GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Retrieve
+## GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Retrieve Security Trading Fails Procedure
 
@@ -135,9 +138,13 @@ This API path allows you to retrieve information about the procedure for resolvi
 GET: The name of the path '/SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Retrieve' if it followed REST best practices can be simplified to:
 GET /securitiesfailsprocessing/\{securitiesfailsprocessingid\}
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Update
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Update
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Update Security Trading Fails Procedure
 
@@ -151,9 +158,13 @@ PUT: Following REST best practices\, the name of the path should be \`/securitie
 
 REST path names should use lowercase letters and hyphens to separate words for increased readability and consistency\. Avoid using verbs in the path names as REST paths should represent resources\, not actions\.
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Exchange
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Exchange Securities Fail Analysis Workstep
 
@@ -166,9 +177,13 @@ This BIAN API path allows you to update an existing resource related to the reso
 PUT: Based on REST best practices\, the name of the path should be: 
 '/securities\-fails\-processing/\{securitiesfailsprocessingid\}/securities\-fail\-analysis/\{securitiesfailanalysisid\}/exchange'
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Exchange
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Exchange Securities Fail Determination Workstep
 
@@ -182,9 +197,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Exchange
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Execute
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Execute Securities Fail Analysis Workstep
 
@@ -198,9 +217,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Execution
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Execute
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Execute Securities Fail Determination Workstep
 
@@ -216,9 +239,13 @@ PUT: Based on REST best practices\, a suitable name for the given path would be:
 /ProcessSecuritiesFails/\{securitiesfailsprocessingid\}/DetermineSecuritiesFail/\{securitiesfaildeterminationid\}/Execute
 \`\`\`
 
-### POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/Initiate
+## POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/Initiate
 
-**Description**
+:::info Path
+POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/Initiate
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Initiate Securities Fail Analysis Workstep
 
@@ -234,9 +261,13 @@ POST: Based on REST best practices\, a suitable name for the path '/SecuritiesFa
 
 This naming convention follows the guidelines for using lowercase letters\, using hyphens to separate words\, and using plural nouns for endpoints\.
 
-### POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/Initiate
+## POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/Initiate
 
-**Description**
+:::info Path
+POST: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/Initiate
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Initiate Securities Fail Determination Workstep
 
@@ -252,9 +283,13 @@ POST: Following REST best practices\, the name of the path should be structured 
 
 Remember to use lowercase letters\, separate words with hyphens\, and avoid using upper case letters and underscores in the path names\.
 
-### GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Notify
+## GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Notify
 
-**Description**
+:::info Path
+GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Notify Securities Fail Analysis Workstep
 
@@ -267,9 +302,13 @@ This API path retrieves information about the notification process that handles 
 GET: Based on REST best practices\, the name of the path should be:
 /securities\-fails\-processing/\{securitiesfailsprocessingid\}/securities\-fail\-analysis/\{securitiesfailanalysisid\}/notify
 
-### GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Notify
+## GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Notify
 
-**Description**
+:::info Path
+GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Notify Securities Fail Determination Workstep
 
@@ -285,9 +324,13 @@ GET: Based on REST best practices\, a more suitable name for this path could be:
 
 Using lowercase letters and dashes for separating words is a common convention in RESTful URL naming\.
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Request
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Request Securities Fail Analysis Workstep
 
@@ -307,9 +350,13 @@ In this naming convention:
 \- Path parameters are enclosed within curly braces \{\} to indicate that they are placeholders
 \- Path segments are descriptive and provide context for what each segment represents
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Request
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Request
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Request Securities Fail Determination Workstep
 
@@ -325,9 +372,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path '/Secur
 
 This naming convention follows the common practice of using lowercase letters and separating words with hyphens for improved readability and consistency\.
 
-### GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Retrieve
+## GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Retrieve Securities Fail Analysis Workstep
 
@@ -339,9 +390,13 @@ This API path allows you to retrieve information about a specific workstep relat
 
 GET: The name of the path should be \`/securities\-fails\-processing/\{securitiesfailsprocessingid\}/securities\-fail\-analysis/\{securitiesfailanalysisid\}\` for REST best practices\.
 
-### GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Retrieve
+## GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Retrieve Securities Fail Determination Workstep
 
@@ -357,9 +412,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path should be used to retrieve data related to securities fails processing and securities fail determination based on the provided IDs\.
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Update
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailAnalysis/\{securitiesfailanalysisid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Update Securities Fail Analysis Workstep
 
@@ -373,9 +432,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /securitiesFailsProcessing/\{securitiesfailsprocessingid\}/securitiesFailAnalysis/\{securitiesfailanalysisid\}
 
-### PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Update
+## PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Update
 
-**Description**
+:::info Path
+PUT: /SecuritiesFailsProcessing/\{securitiesfailsprocessingid\}/SecuritiesFailDetermination/\{securitiesfaildeterminationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the resolution of clerical and processing errors that lead to failures in the securities trade clearing and settlement processes Update Securities Fail Determination Workstep
 

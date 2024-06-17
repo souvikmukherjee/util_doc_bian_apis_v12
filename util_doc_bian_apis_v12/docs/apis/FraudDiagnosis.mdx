@@ -1,20 +1,14 @@
 # FraudDiagnosis
 
-## Table of Contents
-- [POST: /FraudDiagnosis/Evaluate](#post-/frauddiagnosis/evaluate)
-- [PUT: /FraudDiagnosis/\{frauddiagnosisid\}/Update](#put-/frauddiagnosis/\{frauddiagnosisid\}/update)
-- [GET: /FraudDiagnosis/\{frauddiagnosisid\}/Retrieve](#get-/frauddiagnosis/\{frauddiagnosisid\}/retrieve)
-- [GET: /FraudDiagnosis/\{frauddiagnosisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve](#get-/frauddiagnosis/\{frauddiagnosisid\}/customerbehavior/\{customerbehaviorid\}/retrieve)
-- [GET: /FraudDiagnosis/\{frauddiagnosisid\}/EconomicModel/\{economicmodelid\}/Retrieve](#get-/frauddiagnosis/\{frauddiagnosisid\}/economicmodel/\{economicmodelid\}/retrieve)
-- [PUT: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Request](#put-/frauddiagnosis/\{frauddiagnosisid\}/analystreview/\{analystreviewid\}/request)
-- [GET: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Retrieve](#get-/frauddiagnosis/\{frauddiagnosisid\}/analystreview/\{analystreviewid\}/retrieve)
-
-
 **BIAN Documentation:** [FraudDiagnosis v12](https://app.swaggerhub.com/apis/BIAN-3/FraudDiagnosis/12.0.0)
 
-### POST: /FraudDiagnosis/Evaluate
+## POST: /FraudDiagnosis/Evaluate
 
-**Description**
+:::info Path
+POST: /FraudDiagnosis/Evaluate
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure EvCR Start a fraud diagnosis evaluation on a transaction
 
@@ -26,9 +20,13 @@ This BIAN API path initiates a fraud diagnosis evaluation on a transaction\. It 
 
 POST: The path '/FraudDiagnosis/Evaluate' would be best named using a noun and not a verb based on RESTful best practices\. A more appropriate name for this path could be '/fraud\-diagnosis\-evaluations' to better align with REST conventions\.
 
-### PUT: /FraudDiagnosis/\{frauddiagnosisid\}/Update
+## PUT: /FraudDiagnosis/\{frauddiagnosisid\}/Update
 
-**Description**
+:::info Path
+PUT: /FraudDiagnosis/\{frauddiagnosisid\}/Update
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure UpCR Update details for an active fraud diagnosis
 
@@ -47,9 +45,13 @@ In the RESTful convention:
 
 Therefore\, the recommended RESTful path
 
-### GET: /FraudDiagnosis/\{frauddiagnosisid\}/Retrieve
+## GET: /FraudDiagnosis/\{frauddiagnosisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudDiagnosis/\{frauddiagnosisid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure ReCR Retrieve details about a fraud diagnosis
 
@@ -63,9 +65,13 @@ GET: The name of the path should be:
 
 GET /fraud\-diagnosis/\{fraud\-diagnosis\-id\}
 
-### GET: /FraudDiagnosis/\{frauddiagnosisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve
+## GET: /FraudDiagnosis/\{frauddiagnosisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudDiagnosis/\{frauddiagnosisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure ReBQ Retrieve details about a customer behavior analysis
 
@@ -78,9 +84,13 @@ This API path allows you to retrieve details about a customer behavior analysis 
 GET: A good RESTful name for this path would be: 
 '/fraud\-diagnosis/\{frauddiagnosisid\}/customer\-behavior/\{customerbehaviorid\}'
 
-### GET: /FraudDiagnosis/\{frauddiagnosisid\}/EconomicModel/\{economicmodelid\}/Retrieve
+## GET: /FraudDiagnosis/\{frauddiagnosisid\}/EconomicModel/\{economicmodelid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudDiagnosis/\{frauddiagnosisid\}/EconomicModel/\{economicmodelid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure ReBQ Retrieve details about an economic model analysis
 
@@ -96,9 +106,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 This path reflects the use of lowercase letters and hyphens to separate words in the endpoint\, making it more readable and consistent with RESTful conventions\. Additionally\, the action "Retrieve" is implied in a RESTful design when accessing a specific resource using its identifier in the path\.
 
-### PUT: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Request
+## PUT: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Request
 
-**Description**
+:::info Path
+PUT: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Request
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure RqBQ Request access to an analist for an active diagnosis
 
@@ -112,9 +126,13 @@ PUT: A suitable name for the path based on REST best practices could be:
 
 '/fraud\-diagnosis/\{fraud\-diagnosis\-id\}/analyst\-review/\{analyst\-review\-id\}/request'
 
-### GET: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Retrieve
+## GET: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudDiagnosis/\{frauddiagnosisid\}/AnalystReview/\{analystreviewid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the evaluation of detected possible fraud to support an appropriate response to contain the exposure ReBQ Retrieve details about a analyst review of a transaction
 

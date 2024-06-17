@@ -1,43 +1,14 @@
 # SessionDialogue
 
-## Table of Contents
-- [POST: /SessionDialogue/Initiate](#post-/sessiondialogue/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/update)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Execute](#put-/sessiondialogue/\{sessiondialogueid\}/execute)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Request](#put-/sessiondialogue/\{sessiondialogueid\}/request)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/Query/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/query/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/query/\{queryid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/query/\{queryid\}/retrieve)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/authentication/\{authenticationid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/authentication/\{authenticationid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/Sales/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/sales/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/sales/\{salesid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/sales/\{salesid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/Offer/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/offer/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/offer/\{offerid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/offer/\{offerid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/ProductorService/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/productorservice/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/productorservice/\{productorserviceid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/productorservice/\{productorserviceid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/Case/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/case/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/case/\{caseid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/case/\{caseid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/Order/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/order/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/order/\{orderid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/order/\{orderid\}/retrieve)
-- [POST: /SessionDialogue/\{sessiondialogueid\}/Intelligence/Initiate](#post-/sessiondialogue/\{sessiondialogueid\}/intelligence/initiate)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/intelligence/\{intelligenceid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/intelligence/\{intelligenceid\}/retrieve)
-- [PUT: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Update](#put-/sessiondialogue/\{sessiondialogueid\}/history/\{historyid\}/update)
-- [GET: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Retrieve](#get-/sessiondialogue/\{sessiondialogueid\}/history/\{historyid\}/retrieve)
-
-
 **BIAN Documentation:** [SessionDialogue v12](https://app.swaggerhub.com/apis/BIAN-3/SessionDialogue/12.0.0)
 
-### POST: /SessionDialogue/Initiate
+## POST: /SessionDialogue/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InCR Initiate a customer dialogue
 
@@ -49,9 +20,13 @@ This API path called /SessionDialogue/Initiate is used to start a customer conve
 
 POST: If the path '/SessionDialogue/Initiate' followed all REST best practices\, it could be named more descriptively and using lowercase letters with hyphens to separate words\. A more RESTful name for this path could be '/session\-dialogue/initiate'\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpCR Update details of a customer dialogue
 
@@ -67,9 +42,13 @@ PATCH /SessionDialogue/\{sessiondialogueid\}
 
 Using the PATCH method in RESTful architecture is commonly done to update resources partially\, which aligns well with the intention of updating a specific session dialogue identified by its ID in this case\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Execute
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Execute
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ExCR Execute an automated task \(e\.g\. self service offer process\)
 
@@ -83,9 +62,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/sessions/\{sessionid\}/dialogues/\{dialogueid\}/execute'
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Request
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Request
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Request
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. RqCR Request manual intervention \(e\.g\. request servicing support\)
 
@@ -103,9 +86,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in plural form to represent a collection of resources\. Additionally\, it is recommended to use camelCase naming convention for path segments\.
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReCR Retrieve details about a customer dialogue
 
@@ -117,9 +104,13 @@ This API path allows you to retrieve details about a customer dialogue session\.
 
 GET: A RESTful approach to naming this path could be '/session\-dialogues/\{sessiondialogueid\}'\. This naming convention follows best practices by using lowercase letters\, dashes for word separation\, and emphasizing resource\-oriented endpoints\.
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/Query/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/Query/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/Query/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer query handling
 
@@ -137,9 +128,13 @@ POST: The name of the path should be as follows\, following REST best practices:
 
 Remember to use plural nouns for the resource names\, and avoid using verbs in the path names\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for query handling
 
@@ -153,9 +148,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/session\-dialogues/\{sessiondialogueid\}/queries/\{queryid\}/update\`
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Query/\{queryid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about query handling
 
@@ -171,9 +170,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase\, use hyphens for readability between words\, and be descriptive of the resource it represents\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for authentication processing
 
@@ -189,9 +192,13 @@ PUT: Following RESTful best practices\, the name of the path could be:
 
 This path is simple\, hierarchical\, and uses lowercase letters\. It also accurately represents the resources and their relationships\.
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Authentication/\{authenticationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about authentication processing
 
@@ -207,9 +214,13 @@ GET: The name of the path should be:
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for resource names\.
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/Sales/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/Sales/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/Sales/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer sales handling
 
@@ -221,9 +232,13 @@ This API path allows you to create a new resource for handling and structuring c
 
 POST: A more RESTful and descriptive name for the path '/SessionDialogue/\{sessiondialogueid\}/Sales/Initiate' could be '/session\-dialogues/\{sessiondialogueid\}/sales'\. This name follows the convention of using lowercase letters\, separating words with hyphens\, and using plural nouns to indicate a collection of resources\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for sales handling
 
@@ -243,9 +258,13 @@ In RESTful conventions:
 \- Use lowercased words and separate them with a forward slash for nested resources\.
 \- Avoid using action verbs or specific operations in the URL path\.
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Sales/\{salesid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about sales handling
 
@@ -263,9 +282,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path clearly represents the resource hierarchy and the actions to be performed on those resources\.
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/Offer/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/Offer/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/Offer/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer offer handling
 
@@ -283,9 +306,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, we should use plural nouns for resources\, use lowercase letters\, and avoid verbs in the path names\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for offer handling
 
@@ -299,9 +326,13 @@ PUT: The name of the path could be:
 
 PUT /session\_dialogue/\{session\_dialogue\_id\}/offer/\{offer\_id\}
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Offer/\{offerid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about offer handling
 
@@ -315,9 +346,13 @@ GET: A more appropriate name for the path '/SessionDialogue/\{sessiondialogueid\
 
 GET /session\-dialogues/\{sessionDialogueId\}/offers/\{offerId\}
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/ProductorService/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/ProductorService/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/ProductorService/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer product/service handling
 
@@ -333,9 +368,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use all lowercase letters\, use plural nouns for the resource names \('sessions' and 'productsOrServices'\)\, and use hyphens to separate words within a resource name\. Also\, it's generally recommended to use nouns to represent resources in the path\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for product/service handling
 
@@ -353,9 +392,13 @@ PATCH /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorservice
 
 This endpoint uses the HTTP method \`PATCH\` to update a specific resource identified by \`\{sessiondialogueid\}\` and \`\{productorserviceid\}\` within the \`/SessionDialogue\` and \`/ProductorService\` paths\.
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/ProductorService/\{productorserviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about product/service handling
 
@@ -367,9 +410,13 @@ This API path allows you to retrieve details about how a product or service is h
 
 GET: The name of the path should be \`/sessions/\{session\_id\}/products/\{product\_id\}\` for better adherence to REST best practices\.
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/Case/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/Case/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/Case/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer case handling
 
@@ -387,9 +434,13 @@ POST /session\-dialogues/\{sessiondialogueid\}/cases/initiate
 
 This naming follows the guidelines of using lowercase letters\, using hyphens to separate words\, utilizing plural nouns for collection resources\, and specifying the action to be taken in the endpoint \(in this case\, initiating a case\)\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for case handling
 
@@ -403,9 +454,13 @@ PUT: A possible name for the path '/SessionDialogue/\{sessiondialogueid\}/Case/\
 
 PATCH /session\-dialogues/\{sessiondialogueid\}/cases/\{caseid\}
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Case/\{caseid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about case handling
 
@@ -419,9 +474,13 @@ GET: A more RESTful name for the path '/SessionDialogue/\{sessiondialogueid\}/Ca
 
 GET '/session\-dialogues/\{sessiondialogueid\}/cases/\{caseid\}'
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/Order/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/Order/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/Order/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer order handling
 
@@ -439,9 +498,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 This path reflects the resource hierarchy where orders are related to a specific session dialogue identified by its ID\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for order handling
 
@@ -457,9 +520,13 @@ PUT: The name of the path should be:
 /SessionDialogues/\{sessiondialogueid\}/Orders/\{orderid\}
 \`\`\`
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Order/\{orderid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about order handling
 
@@ -475,9 +542,13 @@ GET /sessions/\{sessionid\}/orders/\{orderid\}
 
 This path is clear\, concise\, and follows the convention of using lowercase letters and plural nouns in the path names\. It also uses the appropriate HTTP verb \(GET\) for retrieving resource representation\.
 
-### POST: /SessionDialogue/\{sessiondialogueid\}/Intelligence/Initiate
+## POST: /SessionDialogue/\{sessiondialogueid\}/Intelligence/Initiate
 
-**Description**
+:::info Path
+POST: /SessionDialogue/\{sessiondialogueid\}/Intelligence/Initiate
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. InBQ Initiate customer insight capture
 
@@ -489,9 +560,13 @@ This API path allows you to create a new resource within the Session Dialogue se
 
 POST: The name of the path should be \`/session\-dialogues/\{sessiondialogueid\}/intelligence/initiate\` following REST best practices\.
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for customer insight capture
 
@@ -505,9 +580,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/sessions/\{sessionid\}/dialogues/\{dialogueid\}/intelligence/\{intelligenceid\}'
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/Intelligence/\{intelligenceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about customer insight capture
 
@@ -521,9 +600,13 @@ GET: A suitable name for this path following REST best practices would be:
 
 GET '/sessions/\{sessionid\}/dialogues/\{dialogueid\}/intelligence/\{intelligenceid\}'
 
-### PUT: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Update
+## PUT: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Update
 
-**Description**
+:::info Path
+PUT: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Update
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. UpBQ Update details for customer history recording
 
@@ -539,9 +622,13 @@ For the path '/SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Updat
 
 '/sessionDialogues/\{sessiondialogueid\}/histories/\{historyid\}'
 
-### GET: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Retrieve
+## GET: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SessionDialogue/\{sessiondialogueid\}/History/\{historyid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles/structures the customer narrative during an interactive session\. It consolidates and presents pertinent customer information and provides servicing guidelines with standard dialogue/scripting as appropriate\. It can include the capability to provoke questions to capture key relationship and sales triggers\. It also ensures the correct sequencing\, dialogue content and actions are performed/initiated during the customer interaction\. It may further leverage the session by passing on customer notifications\, status updates and triggering sales/marketing efforts\. ReBQ Retrieve details about customer history recording
 

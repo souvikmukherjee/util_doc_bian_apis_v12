@@ -1,23 +1,14 @@
 # MarketOrderExecution
 
-## Table of Contents
-- [POST: /MarketOrderExecution/Initiate](#post-/marketorderexecution/initiate)
-- [PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Update](#put-/marketorderexecution/\{marketorderexecutionid\}/update)
-- [PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Request](#put-/marketorderexecution/\{marketorderexecutionid\}/request)
-- [GET: /MarketOrderExecution/\{marketorderexecutionid\}/Retrieve](#get-/marketorderexecution/\{marketorderexecutionid\}/retrieve)
-- [POST: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/Initiate](#post-/marketorderexecution/\{marketorderexecutionid\}/quote/initiate)
-- [GET: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/\{quoteid\}/Retrieve](#get-/marketorderexecution/\{marketorderexecutionid\}/quote/\{quoteid\}/retrieve)
-- [POST: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/Initiate](#post-/marketorderexecution/\{marketorderexecutionid\}/tradeinitiation/initiate)
-- [GET: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve](#get-/marketorderexecution/\{marketorderexecutionid\}/tradeinitiation/\{tradeinitiationid\}/retrieve)
-- [PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Request](#put-/marketorderexecution/\{marketorderexecutionid\}/position/\{positionid\}/request)
-- [GET: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Retrieve](#get-/marketorderexecution/\{marketorderexecutionid\}/position/\{positionid\}/retrieve)
-
-
 **BIAN Documentation:** [MarketOrderExecution v12](https://app.swaggerhub.com/apis/BIAN-3/MarketOrderExecution/12.0.0)
 
-### POST: /MarketOrderExecution/Initiate
+## POST: /MarketOrderExecution/Initiate
 
-**Description**
+:::info Path
+POST: /MarketOrderExecution/Initiate
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. InCR Initiate a market trade
 
@@ -29,9 +20,13 @@ This BIAN API path\, /MarketOrderExecution/Initiate\, allows users to initiate a
 
 POST: Based on REST best practices\, the name of the path '/MarketOrderExecution/Initiate' could be simplified to '/market\-order\-executions'\.RESTful URIs should be all lowercase\, use hyphens to separate words\, and represent resources \(nouns\) rather than actions \(verbs\)\.
 
-### PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Update
+## PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Update
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. UpCR Update details on an active market trade request
 
@@ -45,9 +40,13 @@ PUT: The appropriate name for the path '/MarketOrderExecution/\{marketorderexecu
 
 PUT /MarketOrderExecutions/\{marketorderexecutionid\}
 
-### PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Request
+## PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Request
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. RqCR Request manual intervention to an active market trade
 
@@ -59,9 +58,13 @@ This API path allows users to send a request for manual intervention to an exist
 
 PUT: Based on REST best practices\, a more suitable name for the path '/MarketOrderExecution/\{marketorderexecutionid\}/Request' could be '/market\-order\-executions/\{marketorderexecutionid\}/requests'\. This name reflects the use of lowercase letters\, hyphens for word separation\, and plural nouns for collections of resources\.
 
-### GET: /MarketOrderExecution/\{marketorderexecutionid\}/Retrieve
+## GET: /MarketOrderExecution/\{marketorderexecutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrderExecution/\{marketorderexecutionid\}/Retrieve
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. ReCR Retrieve details about a market trade
 
@@ -75,9 +78,13 @@ GET: If the path '/MarketOrderExecution/\{marketorderexecutionid\}/Retrieve' fol
 
 '/market\-order\-executions/\{marketorderexecutionid\}'
 
-### POST: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/Initiate
+## POST: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/Initiate
 
-**Description**
+:::info Path
+POST: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/Initiate
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. InBQ Obtain a trading quote for a proposed order
 
@@ -91,9 +98,13 @@ POST: The name for the path '/MarketOrderExecution/\{marketorderexecutionid\}/Qu
 
 '/market\-order\-executions/\{marketorderexecutionid\}/quotes/initiate'
 
-### GET: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/\{quoteid\}/Retrieve
+## GET: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/\{quoteid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrderExecution/\{marketorderexecutionid\}/Quote/\{quoteid\}/Retrieve
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. ReBQ Retrieve details about quotation activity
 
@@ -107,9 +118,13 @@ GET: A recommended name for this endpoint following REST best practices could be
 
 GET /market\-order\-executions/\{marketorderexecutionid\}/quotes/\{quoteid\}
 
-### POST: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/Initiate
+## POST: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/Initiate
 
-**Description**
+:::info Path
+POST: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/Initiate
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. InBQ Initiate a market trade
 
@@ -125,9 +140,13 @@ POST: Based on REST best practices\, the name of the path should be structured i
 /market\-order\-executions/\{marketorderexecutionid\}/trade\-initiation/initiate
 \`\`\`
 
-### GET: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
+## GET: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrderExecution/\{marketorderexecutionid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. ReBQ Retrieve details about a market trade
 
@@ -141,9 +160,13 @@ GET: Based on REST best practices\, the appropriate name for the path would be:
 
 '/market\-order\-executions/\{marketorderexecutionid\}/trade\-initiations/\{tradeinitiationid\}'
 
-### PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Request
+## PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Request
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. RqBQ Request manual intervention for position management
 
@@ -157,9 +180,13 @@ PUT: A RESTful path should be designed to be clear\, concise\, and descriptive\.
 
 '/market\-order\-executions/\{marketorderexecutionid\}/positions/\{positionid\}/requests'
 
-### GET: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Retrieve
+## GET: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrderExecution/\{marketorderexecutionid\}/Position/\{positionid\}/Retrieve
+:::
+
+### Description
 
 The Market Order Execution Service Domain is responsible for the booking of securities transactions \(e\.g\. resulting from market orders or some types of corporate actions\) on investment accounts\, so in terms of security name plus quantity\. ReBQ Retrieve details about position wholesale trading activity
 

@@ -1,57 +1,14 @@
 # UnitTrustAdministration
 
-## Table of Contents
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Control](#put-/unittrustadministration/\{unittrustadministrationid\}/control)
-- [POST: /UnitTrustAdministration/Create](#post-/unittrustadministration/create)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/grant)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/notify)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/request)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/retrieve)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/update)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/fundaccounting/\{fundaccountingid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/fundenrolment/\{fundenrolmentid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange](#put-/unittrustadministration/\{unittrustadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/exchange)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/fundaccounting/\{fundaccountingid\}/grant)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/fundenrolment/\{fundenrolmentid\}/grant)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/grant)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/grant)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/grant)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant](#put-/unittrustadministration/\{unittrustadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/grant)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/fundaccounting/\{fundaccountingid\}/notify)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/fundenrolment/\{fundenrolmentid\}/notify)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/notify)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/notify)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/notify)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify](#get-/unittrustadministration/\{unittrustadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/notify)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/fundaccounting/\{fundaccountingid\}/request)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/fundenrolment/\{fundenrolmentid\}/request)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/request)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/request)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/request)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request](#put-/unittrustadministration/\{unittrustadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/request)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/fundaccounting/\{fundaccountingid\}/retrieve)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/fundenrolment/\{fundenrolmentid\}/retrieve)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/retrieve)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/retrieve)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/retrieve)
-- [GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve](#get-/unittrustadministration/\{unittrustadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/retrieve)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/fundaccounting/\{fundaccountingid\}/update)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/fundenrolment/\{fundenrolmentid\}/update)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/update)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/update)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/update)
-- [PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update](#put-/unittrustadministration/\{unittrustadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/update)
-
-
 **BIAN Documentation:** [UnitTrustAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/UnitTrustAdministration/12.0.0)
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Control
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Control Unit Trust Administrative Plan
 
@@ -65,9 +22,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/unit\-trust\-administration/\{unittrustadministrationid\}/control\`
 
-### POST: /UnitTrustAdministration/Create
+## POST: /UnitTrustAdministration/Create
 
-**Description**
+:::info Path
+POST: /UnitTrustAdministration/Create
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Create Unit Trust Administrative Plan
 
@@ -79,9 +40,13 @@ This API path \`/UnitTrustAdministration/Create\` allows you to create a new adm
 
 POST: If the path '/UnitTrustAdministration/Create' followed REST best practices\, it could be named as '/unit\-trust\-administrations'\. This naming scheme is more aligned with the convention of using plural nouns in RESTful URLs to represent collections of resources\. The 'Create' action would typically be represented by a POST request to this URL to create a new UnitTrustAdministration resource\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Unit Trust Administrative Plan
 
@@ -93,9 +58,13 @@ This BIAN API path is used to update an existing resource related to unit invest
 
 PUT: The name of the path could simply be \`/unit\-trust\-administration/\{unittrustadministrationid\}/exchanges\`\, following REST best practices of using lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Unit Trust Administrative Plan
 
@@ -109,9 +78,13 @@ PUT: The name of the path should be:
 
 /UnitTrustAdministration/\{unittrustadministrationid\}/Grants
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Unit Trust Administrative Plan
 
@@ -127,9 +100,13 @@ GET: The name of the path should be:
 /UnitTrustAdministration/\{unittrustadministrationid\}/notifications
 \`\`\`
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Unit Trust Administrative Plan
 
@@ -141,9 +118,13 @@ This API path is used to update an existing unit trust administrative plan assoc
 
 PUT: The name of the path should be: /unit\-trust\-administration/\{unitTrustAdministrationId\}/requests
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Unit Trust Administrative Plan
 
@@ -155,9 +136,13 @@ This API path allows you to retrieve information about a specific unit trust adm
 
 GET: The name of the path should be '/unit\-trust\-administrations/\{unittrustadministrationid\}'\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Unit Trust Administrative Plan
 
@@ -171,9 +156,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/unit\-trust\-administration/\{unittrustadministrationid\}'
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Fund Accounting Routine
 
@@ -189,9 +178,13 @@ PUT: The name of the path should typically represent a resource or a collection 
 
 In this naming convention\, the words are separated by hyphens for better readability and the resource names are kept in lowercase to adhere to common REST conventions\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Fund Enrolment Routine
 
@@ -207,9 +200,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase and use hyphens to separate words\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Fund Financial Reporting Routine
 
@@ -223,9 +220,13 @@ PUT: The name of the path should be:
 
 /unit\-trust\-administration/\{unittrustadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}/exchange
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Fund Investor\, Middle and Back Office Service Routine
 
@@ -241,9 +242,13 @@ PUT: Following REST best practices\, the name of the path should describe the re
 
 This name follows the convention of using lowercase letters\, hyphens for readability\, and pluralized nouns for collections of resources\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Fund Management Fee Routine
 
@@ -262,9 +267,13 @@ In this naming convention:
 \- Words are hyphenated to improve readability and adherence to naming conventions\.
 \- Resource names are singular to represent individual instances of the
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Exchange Fund Tax Administration Routine
 
@@ -280,9 +289,13 @@ PUT: The name of the path should be:
 
 This naming convention follows REST best practices by using lowercase letters\, hyphens to separate words\, and descriptive resource names that represent the hierarchical structure of the API\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Fund Accounting Routine
 
@@ -298,9 +311,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using resource names \(e\.g\.\, UnitTrustAdministration\, FundAccounting\, Grant\) instead of verbs\. It also includes the IDs of the specific resources that the endpoint is dealing with\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Fund Enrolment Routine
 
@@ -316,9 +333,13 @@ PUT: For REST best practices\, the name of the path should be formulated using n
 
 This path represents a hierarchical structure where 'Unit Trust Administrations' contain 'Fund Enrolments'\, and a specific 'Grant' resource is associated with a particular 'Fund
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Fund Financial Reporting Routine
 
@@ -332,9 +353,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}/grant'
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Fund Investor\, Middle and Back Office Service Routine
 
@@ -350,9 +375,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This name follows the convention of using lowercase letters\, separating words with hyphens or using camel case for better readability\, and accurately represents the resource hierarchy and actions being performed\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Fund Management Fee Routine
 
@@ -370,9 +399,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using resource names that are descriptive and hierarchical\, and it includes relevant identifiers to represent the specific resources being operated on\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Grant Fund Tax Administration Routine
 
@@ -386,9 +419,13 @@ PUT: Based on REST best practices\, a suitable name for the path could be:
 
 '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-tax\-administration/\{fundtaxadministrationid\}/grant'
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Fund Accounting Routine
 
@@ -402,9 +439,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 /UnitTrustAdministrations/\{unitTrustAdministrationId\}/FundAccountings/\{fundAccountingId\}/Notify
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Fund Enrolment Routine
 
@@ -420,9 +461,13 @@ GET: The name of the path following REST best practices should be:
 /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
 \`\`\`
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Fund Financial Reporting Routine
 
@@ -435,9 +480,13 @@ This API path allows you to retrieve information related to the notification pro
 GET: The name of the path should be:
 '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}/notify'
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Fund Investor\, Middle and Back Office Service Routine
 
@@ -455,9 +504,13 @@ GET: Based on REST best practices\, a suitable name for the given path would be:
 
 This path conveys the resource hierarchy \(units and services\) and the action being taken \(notifications\)\, following RESTful conventions\.
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Fund Management Fee Routine
 
@@ -471,9 +524,13 @@ GET: The recommended name for the path '/UnitTrustAdministration/\{unittrustadmi
 
 /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/notifications
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Notify Fund Tax Administration Routine
 
@@ -489,9 +546,13 @@ GET: The name of the path should ideally be:
 /units/\{unittrustadministrationid\}/funds/\{fundtaxadministrationid\}/notify
 \`\`\`
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Fund Accounting Routine
 
@@ -507,9 +568,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Requests
 \`\`\`
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Fund Enrolment Routine
 
@@ -523,9 +588,13 @@ PUT: A suitable name for the path could be:
 
 '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-enrolment/\{fundenrolmentid\}/requests'
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Fund Financial Reporting Routine
 
@@ -541,9 +610,13 @@ PUT: Based on REST best practices\, a clearer and more structured naming convent
 
 This naming convention uses lowercase letters and hyphens to separate words for better readability and consistency with RESTful URI guidelines\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Fund Investor\, Middle and Back Office Service Routine
 
@@ -559,9 +632,13 @@ PUT: According to REST best practices\, the name of the path should be:
 
 The path should be in lowercase letters with hyphens separating words for better readability and consistency\. Additionally\, the noun should be pluralized when referring to a collection of resources as in the case of "/requests"\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Fund Management Fee Routine
 
@@ -577,9 +654,13 @@ A suitable name for the path could be:
 
 /unit\-trust\-administrations/\{unittrustadministrationid\}/fund\-management\-fees/\{fundmanagementfeeid\}/requests
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Request Fund Tax Administration Routine
 
@@ -595,9 +676,13 @@ PUT: A suitable name for the path would be:
 
 This name follows the REST best practice of using lowercase letters\, using hyphens as word separators\, and keeping the resource names in plural form\.
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Fund Accounting Routine
 
@@ -611,9 +696,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /unit\-trust\-administrations/\{unittrustadministrationid\}/fund\-accountings/\{fundaccountingid\}
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Fund Enrolment Routine
 
@@ -626,9 +715,13 @@ This API path retrieves information about fund enrolment for a specific unit inv
 GET: Based on REST best practices\, the name of the path should be:
 "/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-enrolment/\{fundenrolmentid\}"
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Fund Financial Reporting Routine
 
@@ -641,9 +734,13 @@ This API path allows you to retrieve information related to unit investment trus
 GET: Based on REST best practices\, a more appropriate name for the path would be:
 '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}'
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Fund Investor\, Middle and Back Office Service Routine
 
@@ -657,9 +754,13 @@ GET: Following REST best practices\, a suitable name for this path could be:
 
 GET /unit\-trust\-administration/\{unittrustadministrationid\}/fund\-investor\-middle\-back\-office\-service/\{fundinvestor\_middleandbackofficeserviceid\}
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Fund Management Fee Routine
 
@@ -673,9 +774,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 GET '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-management\-fee/\{fundmanagementfeeid\}'
 
-### GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
+## GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Retrieve Fund Tax Administration Routine
 
@@ -692,9 +797,13 @@ A suitable name for the path could be:
 
 This path represents the specific resource being retrieved and follows RESTful naming conventions by using lowercase words separated by hyphens\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Fund Accounting Routine
 
@@ -708,9 +817,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-accounting/\{fundaccountingid\}'
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Fund Enrolment Routine
 
@@ -724,9 +837,13 @@ PUT: The name for this RESTful path could be:
 
 PUT /unit\-trust\-administration/\{unittrustadministrationid\}/fund\-enrolment/\{fundenrolmentid\}
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Fund Financial Reporting Routine
 
@@ -740,9 +857,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 "/unit\-trust\-administration/\{unittrustadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}"
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Fund Investor\, Middle and Back Office Service Routine
 
@@ -758,9 +879,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 This naming convention uses all lowercase letters\, separates words with hyphens\, and expresses the intention of updating a specific resource within the URI path\.
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Fund Management Fee Routine
 
@@ -774,9 +899,13 @@ PUT: The name of the path should be as follows according to REST best practices:
 
 PUT /unit\-trust\-administration/\{unittrustadministrationid\}/fund\-management\-fee/\{fundmanagementfeeid\}
 
-### PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
+## PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /UnitTrustAdministration/\{unittrustadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the implementation and fulfillment of unit investment trusts Update Fund Tax Administration Routine
 

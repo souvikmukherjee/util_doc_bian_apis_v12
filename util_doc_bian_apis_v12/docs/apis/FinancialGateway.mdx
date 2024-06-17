@@ -1,21 +1,14 @@
 # FinancialGateway
 
-## Table of Contents
-- [POST: /FinancialGateway/Initiate](#post-/financialgateway/initiate)
-- [PUT: /FinancialGateway/\{financialgatewayid\}/Update](#put-/financialgateway/\{financialgatewayid\}/update)
-- [PUT: /FinancialGateway/\{financialgatewayid\}/Request](#put-/financialgateway/\{financialgatewayid\}/request)
-- [GET: /FinancialGateway/\{financialgatewayid\}/Retrieve](#get-/financialgateway/\{financialgatewayid\}/retrieve)
-- [POST: /FinancialGateway/\{financialgatewayid\}/Inbound/Initiate](#post-/financialgateway/\{financialgatewayid\}/inbound/initiate)
-- [GET: /FinancialGateway/\{financialgatewayid\}/Inbound/\{inboundid\}/Retrieve](#get-/financialgateway/\{financialgatewayid\}/inbound/\{inboundid\}/retrieve)
-- [POST: /FinancialGateway/\{financialgatewayid\}/Outbound/Initiate](#post-/financialgateway/\{financialgatewayid\}/outbound/initiate)
-- [GET: /FinancialGateway/\{financialgatewayid\}/Outbound/\{outboundid\}/Retrieve](#get-/financialgateway/\{financialgatewayid\}/outbound/\{outboundid\}/retrieve)
-
-
 **BIAN Documentation:** [FinancialGateway v12](https://app.swaggerhub.com/apis/BIAN-3/FinancialGateway/12.0.0)
 
-### POST: /FinancialGateway/Initiate
+## POST: /FinancialGateway/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialGateway/Initiate
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services InCR Initiate the financial gateway service session
 
@@ -27,9 +20,13 @@ This API path \`/FinancialGateway/Initiate\` allows you to create a new financia
 
 POST: If the path '/FinancialGateway/Initiate' followed REST best practices\, it should be named based on the action it performs rather than the implementation details\. An appropriate name could be something like '/transactions/initiate' or '/payments/initiate'\. This naming convention makes the API more clear\, consistent\, and easier to understand for clients\.
 
-### PUT: /FinancialGateway/\{financialgatewayid\}/Update
+## PUT: /FinancialGateway/\{financialgatewayid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialGateway/\{financialgatewayid\}/Update
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services UpCR Update the gateway service details
 
@@ -43,9 +40,13 @@ PUT: Based on REST best practices\, the name of the API endpoint should be:
 
 PATCH /FinancialGateway/\{financialgatewayid\}
 
-### PUT: /FinancialGateway/\{financialgatewayid\}/Request
+## PUT: /FinancialGateway/\{financialgatewayid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialGateway/\{financialgatewayid\}/Request
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services RqCR Report an issue with the production service
 
@@ -58,9 +59,13 @@ This API path allows you to update an existing resource within the Financial Gat
 PUT: The name of the path should be:  
 /FinancialGateways/\{financialgatewayid\}/Requests
 
-### GET: /FinancialGateway/\{financialgatewayid\}/Retrieve
+## GET: /FinancialGateway/\{financialgatewayid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialGateway/\{financialgatewayid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services ReCR Retrieve details and statistics relating to a session
 
@@ -72,9 +77,13 @@ This API path allows you to retrieve details and statistics relating to a sessio
 
 GET: The path name should be \`/financial\-gateways/\{financialgatewayid\}\` for retrieving a specific financial gateway resource\.
 
-### POST: /FinancialGateway/\{financialgatewayid\}/Inbound/Initiate
+## POST: /FinancialGateway/\{financialgatewayid\}/Inbound/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialGateway/\{financialgatewayid\}/Inbound/Initiate
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services InBQ Initiate inbound financial message handling
 
@@ -96,9 +105,13 @@ In this example:
 \- "inbound" specifies the direction of the action\.
 \- "init
 
-### GET: /FinancialGateway/\{financialgatewayid\}/Inbound/\{inboundid\}/Retrieve
+## GET: /FinancialGateway/\{financialgatewayid\}/Inbound/\{inboundid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialGateway/\{financialgatewayid\}/Inbound/\{inboundid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services ReBQ Retrieve details about an inbound financial message
 
@@ -112,9 +125,13 @@ GET: A potentially suitable name for this path following REST best practices cou
 
 GET /financialgateways/\{financialgatewayid\}/inbound/\{inboundid\}
 
-### POST: /FinancialGateway/\{financialgatewayid\}/Outbound/Initiate
+## POST: /FinancialGateway/\{financialgatewayid\}/Outbound/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialGateway/\{financialgatewayid\}/Outbound/Initiate
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services InBQ Initiate outbound financial message handling
 
@@ -135,9 +152,13 @@ Key points to consider for following REST best practices in the path naming:
 3\. Use plural nouns for resource collections \(e\.g\.\, financial\-gateways\)\.
 4\. Use specific resource identifiers for individual resources \(e\.g\.\, \{financialgatewayid\}\)\.
 
-### GET: /FinancialGateway/\{financialgatewayid\}/Outbound/\{outboundid\}/Retrieve
+## GET: /FinancialGateway/\{financialgatewayid\}/Outbound/\{outboundid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialGateway/\{financialgatewayid\}/Outbound/\{outboundid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates automated message interfaces to secure networks such as SWIFT\, TELEX\, ACH and Financial Market/Exchange reporting services ReBQ Retrieve details about an outbound financial message
 

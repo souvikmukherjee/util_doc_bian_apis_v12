@@ -1,18 +1,14 @@
 # MarketResearch
 
-## Table of Contents
-- [POST: /MarketResearch/Register](#post-/marketresearch/register)
-- [PUT: /MarketResearch/\{marketresearchid\}/Update](#put-/marketresearch/\{marketresearchid\}/update)
-- [PUT: /MarketResearch/\{marketresearchid\}/Execute](#put-/marketresearch/\{marketresearchid\}/execute)
-- [PUT: /MarketResearch/\{marketresearchid\}/Request](#put-/marketresearch/\{marketresearchid\}/request)
-- [GET: /MarketResearch/\{marketresearchid\}/Retrieve](#get-/marketresearch/\{marketresearchid\}/retrieve)
-
-
 **BIAN Documentation:** [MarketResearch v12](https://app.swaggerhub.com/apis/BIAN-3/MarketResearch/12.0.0)
 
-### POST: /MarketResearch/Register
+## POST: /MarketResearch/Register
 
-**Description**
+:::info Path
+POST: /MarketResearch/Register
+:::
+
+### Description
 
 This service domain handles the capture of market research from multiple external sources\. This can include live feeds\, analysis and reports in any form\. The information is classified/catalogued and stored for retrieval\. InCR Register or establish a market research viewpoint
 
@@ -24,9 +20,13 @@ This API path allows users to create and register new market research viewpoints
 
 POST: Based on REST best practices\, the name of the resource in the path '/MarketResearch/Register' should simply be 'MarketResearch'\. The HTTP method POST should be used to register a new resource within the 'MarketResearch' collection\.
 
-### PUT: /MarketResearch/\{marketresearchid\}/Update
+## PUT: /MarketResearch/\{marketresearchid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketResearch/\{marketresearchid\}/Update
+:::
+
+### Description
 
 This service domain handles the capture of market research from multiple external sources\. This can include live feeds\, analysis and reports in any form\. The information is classified/catalogued and stored for retrieval\. UpCR Update the details or make\-up of a market research viewpoint
 
@@ -42,9 +42,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PUT /MarketResearch/\{marketresearchid\}
 \`\`\`
 
-### PUT: /MarketResearch/\{marketresearchid\}/Execute
+## PUT: /MarketResearch/\{marketresearchid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketResearch/\{marketresearchid\}/Execute
+:::
+
+### Description
 
 This service domain handles the capture of market research from multiple external sources\. This can include live feeds\, analysis and reports in any form\. The information is classified/catalogued and stored for retrieval\. ExCR Automatically extract details of a maintained market research viewpoint
 
@@ -56,9 +60,13 @@ This API path is used to update an existing market research resource identified 
 
 PUT: The name of the path should be \`/market\-research/\{marketresearchid\}/execute\` in order to follow REST best practices\. This naming convention uses lowercase letters\, dashes to separate words\, and descriptive resource names\.
 
-### PUT: /MarketResearch/\{marketresearchid\}/Request
+## PUT: /MarketResearch/\{marketresearchid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketResearch/\{marketresearchid\}/Request
+:::
+
+### Description
 
 This service domain handles the capture of market research from multiple external sources\. This can include live feeds\, analysis and reports in any form\. The information is classified/catalogued and stored for retrieval\. RqCR Request a viewpoint is refreshed or adjusted in some manner
 
@@ -70,9 +78,13 @@ This BIAN API path allows you to update an existing market research request by r
 
 PUT: The name of the path should be \`/MarketResearch/\{marketresearchid\}/Requests\`\, following REST best practices for plural nouns in URIs\.
 
-### GET: /MarketResearch/\{marketresearchid\}/Retrieve
+## GET: /MarketResearch/\{marketresearchid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketResearch/\{marketresearchid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the capture of market research from multiple external sources\. This can include live feeds\, analysis and reports in any form\. The information is classified/catalogued and stored for retrieval\. ReCR Retrieve details about and the content of a maintained market research viewpoint
 

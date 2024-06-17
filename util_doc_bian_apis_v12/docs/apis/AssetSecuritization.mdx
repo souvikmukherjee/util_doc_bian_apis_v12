@@ -1,35 +1,14 @@
 # AssetSecuritization
 
-## Table of Contents
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Control](#put-/assetsecuritization/\{assetsecuritizationid\}/control)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Exchange](#put-/assetsecuritization/\{assetsecuritizationid\}/exchange)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Execute](#put-/assetsecuritization/\{assetsecuritizationid\}/execute)
-- [POST: /AssetSecuritization/Initiate](#post-/assetsecuritization/initiate)
-- [GET: /AssetSecuritization/\{assetsecuritizationid\}/Retrieve](#get-/assetsecuritization/\{assetsecuritizationid\}/retrieve)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Request](#put-/assetsecuritization/\{assetsecuritizationid\}/request)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Update](#put-/assetsecuritization/\{assetsecuritizationid\}/update)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Exchange](#put-/assetsecuritization/\{assetsecuritizationid\}/placement/\{placementid\}/exchange)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Exchange](#put-/assetsecuritization/\{assetsecuritizationid\}/securitization/\{securitizationid\}/exchange)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Exchange](#put-/assetsecuritization/\{assetsecuritizationid\}/selection/\{selectionid\}/exchange)
-- [POST: /AssetSecuritization/\{assetsecuritizationid\}/Placement/Initiate](#post-/assetsecuritization/\{assetsecuritizationid\}/placement/initiate)
-- [POST: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/Initiate](#post-/assetsecuritization/\{assetsecuritizationid\}/securitization/initiate)
-- [POST: /AssetSecuritization/\{assetsecuritizationid\}/Selection/Initiate](#post-/assetsecuritization/\{assetsecuritizationid\}/selection/initiate)
-- [GET: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Retrieve](#get-/assetsecuritization/\{assetsecuritizationid\}/placement/\{placementid\}/retrieve)
-- [GET: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Retrieve](#get-/assetsecuritization/\{assetsecuritizationid\}/securitization/\{securitizationid\}/retrieve)
-- [GET: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Retrieve](#get-/assetsecuritization/\{assetsecuritizationid\}/selection/\{selectionid\}/retrieve)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Request](#put-/assetsecuritization/\{assetsecuritizationid\}/placement/\{placementid\}/request)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Request](#put-/assetsecuritization/\{assetsecuritizationid\}/securitization/\{securitizationid\}/request)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Request](#put-/assetsecuritization/\{assetsecuritizationid\}/selection/\{selectionid\}/request)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Update](#put-/assetsecuritization/\{assetsecuritizationid\}/placement/\{placementid\}/update)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Update](#put-/assetsecuritization/\{assetsecuritizationid\}/securitization/\{securitizationid\}/update)
-- [PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Update](#put-/assetsecuritization/\{assetsecuritizationid\}/selection/\{selectionid\}/update)
-
-
 **BIAN Documentation:** [AssetSecuritization v12](https://app.swaggerhub.com/apis/BIAN-3/AssetSecuritization/12.0.0)
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Control
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Control
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Control
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process CoCR Control the processing of Asset Securitization Transaction
 
@@ -47,9 +26,13 @@ PUT: Following REST best practices\, the name of the path should be:
 \- Separate words with hyphens
 \- Use plural noun forms for collections \(such as asset\-securitization\)
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Exchange
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Exchange
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process EcCR Accept\, verify\, etc\. aspects of Asset Securitization Transaction processing
 
@@ -65,9 +48,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /asset\-securitizations/\{assetsecuritizationid\}/exchange
 \`\`\`
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Execute
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Execute
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process ExCR Execute an available automated action for Asset Securitization Transaction
 
@@ -83,9 +70,13 @@ PUT: The name of the path should be:
 /AssetSecuritizations/\{assetsecuritizationId\}/Execution
 \`\`\`
 
-### POST: /AssetSecuritization/Initiate
+## POST: /AssetSecuritization/Initiate
 
-**Description**
+:::info Path
+POST: /AssetSecuritization/Initiate
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process InCR Instantiate a new Asset Securitization Transaction
 
@@ -97,9 +88,13 @@ This BIAN API path allows users to initiate a new asset securitization transacti
 
 POST: A recommended name for the path "/AssetSecuritization/Initiate" following REST best practices would be something like "/asset\-securitization/initiate" to make it more clear and aligned with URL conventions\.
 
-### GET: /AssetSecuritization/\{assetsecuritizationid\}/Retrieve
+## GET: /AssetSecuritization/\{assetsecuritizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AssetSecuritization/\{assetsecuritizationid\}/Retrieve
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process ReCR Retrieve details about any aspect of Asset Securitization Transaction
 
@@ -117,9 +112,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, hyphens for readability\, and using a resource\-centric approach\.
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Request
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Request
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Request
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process RqCR Request manual intervention or a decision with respect to Asset Securitization Transaction
 
@@ -133,9 +132,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /asset\-securitizations/\{assetsecuritizationid\}/requests
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Update
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Update
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process UpCR Update details relating to Asset Securitization Transaction
 
@@ -147,9 +150,13 @@ This BIAN API path allows users to update details related to asset securitizatio
 
 PUT: The name of the path should be '/asset\-securitizations/\{assetsecuritizationid\}'\.
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Exchange
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Exchange
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process EcBQ Accept\, verify\, etc\. aspects of Placement processing
 
@@ -163,9 +170,13 @@ PUT: The name of the path following REST best practices would be:
 
 '/asset\-securitization/\{asset\-securitization\-id\}/placement/\{placement\-id\}/exchange'
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Exchange
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Exchange
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process EcBQ Accept\, verify\, etc\. aspects of Securitization processing
 
@@ -181,9 +192,13 @@ PUT: Based on REST best practices\, the name of the path should be structured in
 
 This naming convention follows
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Exchange
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Exchange
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process EcBQ Accept\, verify\, etc\. aspects of Selection processing
 
@@ -197,9 +212,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /asset\-securitization/\{asset\_securitization\_id\}/selection/\{selection\_id\}/exchange
 
-### POST: /AssetSecuritization/\{assetsecuritizationid\}/Placement/Initiate
+## POST: /AssetSecuritization/\{assetsecuritizationid\}/Placement/Initiate
 
-**Description**
+:::info Path
+POST: /AssetSecuritization/\{assetsecuritizationid\}/Placement/Initiate
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process InBQ Instantiate a new Placement
 
@@ -213,9 +232,13 @@ POST: Based on REST best practices\, the name of the path should be as follows:
 
 /asset\-securitizations/\{assetSecuritizationId\}/placement/initiate
 
-### POST: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/Initiate
+## POST: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/Initiate
 
-**Description**
+:::info Path
+POST: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/Initiate
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process InBQ Instantiate a new Securitization
 
@@ -229,9 +252,13 @@ POST: The name of the path should be:
 
 '/asset\-securitization/\{assetSecuritizationId\}/securitization/initiate'
 
-### POST: /AssetSecuritization/\{assetsecuritizationid\}/Selection/Initiate
+## POST: /AssetSecuritization/\{assetsecuritizationid\}/Selection/Initiate
 
-**Description**
+:::info Path
+POST: /AssetSecuritization/\{assetsecuritizationid\}/Selection/Initiate
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process InBQ Instantiate a new Selection
 
@@ -244,9 +271,13 @@ This API path is used to initiate the process of determining and selecting asset
 POST: The name of the path should be:
 /asset\-securitizations/\{assetSecuritizationId\}/selection/initiate
 
-### GET: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Retrieve
+## GET: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Retrieve
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process ReBQ Retrieve details about any aspect of Placement
 
@@ -260,9 +291,13 @@ GET: The name of the path following REST best practices could be:
 
 '/asset\-securitization/\{assetsecuritizationid\}/placement/\{placementid\}'
 
-### GET: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Retrieve
+## GET: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Retrieve
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process ReBQ Retrieve details about any aspect of Securitization
 
@@ -278,9 +313,13 @@ GET: Based on REST best practices\, the name of the path should be more resource
 /asset\-securitizations/\{assetsecuritizationid\}/securitizations/\{securitizationid\}/retrieve
 \`\`\`
 
-### GET: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Retrieve
+## GET: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Retrieve
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process ReBQ Retrieve details about any aspect of Selection
 
@@ -296,9 +335,13 @@ GET '/asset\-securitization/\{assetsecuritizationid\}/selections/\{selectionid\}
 
 It is recommended to use lowercase letters\, hyphens for readability\, and resource URIs in the plural form\.
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Request
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Request
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Request
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process RqBQ Request manual intervention or a decision with respect to Placement
 
@@ -312,9 +355,13 @@ PUT: Based on REST best practices\, a suitable name for the path '/AssetSecuriti
 
 /asset\-securitizations/\{assetsecuritizationid\}/placements/\{placementid\}/requests
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Request
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Request
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Request
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process RqBQ Request manual intervention or a decision with respect to Securitization
 
@@ -330,9 +377,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In this naming convention\, paths use lowercase letters\, words are separated by hyphens\, and parameters are identified by curly braces\.
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Request
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Request
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Request
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process RqBQ Request manual intervention or a decision with respect to Selection
 
@@ -348,9 +399,13 @@ PUT: Based on REST best practices\, the name of the path should follow a resourc
 
 This naming convention uses lowercase letters\, separates words with hyphens\, and represents a hierarchical structure in the URL path\.
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Update
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Update
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Placement/\{placementid\}/Update
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process UpBQ Update details relating to Placement
 
@@ -363,9 +418,13 @@ This BIAN API path is related to the Asset Securitization process\. Specifically
 PUT: The name of the path should be something like:  
 '/asset\-securitization/\{assetsecuritizationid\}/placement/\{placementid\}'
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Update
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Securitization/\{securitizationid\}/Update
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process UpBQ Update details relating to Securitization
 
@@ -377,9 +436,13 @@ This BIAN API path allows users to update details related to asset securitizatio
 
 PUT: The name of the path should be \`/asset\-securitizations/\{assetsecuritizationid\}/securitizations/\{securitizationid\}\` if it follows REST best practices\.
 
-### PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Update
+## PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /AssetSecuritization/\{assetsecuritizationid\}/Selection/\{selectionid\}/Update
+:::
+
+### Description
 
 Determine and select assets for securitization as needed to maintain and optimize the Bank's portfolio\. Administer the securitization process UpBQ Update details relating to Selection
 

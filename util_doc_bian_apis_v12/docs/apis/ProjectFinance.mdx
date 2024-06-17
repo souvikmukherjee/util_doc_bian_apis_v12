@@ -1,49 +1,14 @@
 # ProjectFinance
 
-## Table of Contents
-- [PUT: /ProjectFinance/\{projectfinanceid\}/Control](#put-/projectfinance/\{projectfinanceid\}/control)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/Exchange](#put-/projectfinance/\{projectfinanceid\}/exchange)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/Execute](#put-/projectfinance/\{projectfinanceid\}/execute)
-- [POST: /ProjectFinance/Initiate](#post-/projectfinance/initiate)
-- [GET: /ProjectFinance/\{projectfinanceid\}/Notify](#get-/projectfinance/\{projectfinanceid\}/notify)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/Request](#put-/projectfinance/\{projectfinanceid\}/request)
-- [GET: /ProjectFinance/\{projectfinanceid\}/Retrieve](#get-/projectfinance/\{projectfinanceid\}/retrieve)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/Update](#put-/projectfinance/\{projectfinanceid\}/update)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Exchange](#put-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/\{projectfinancearrangementid\}/exchange)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Exchange](#put-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/\{projectfinanceplacementid\}/exchange)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Exchange](#put-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/\{projectfinancerepaymentid\}/exchange)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Exchange](#put-/projectfinance/\{projectfinanceid\}/projectfinancespv/\{projectfinancespvid\}/exchange)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Execute](#put-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/\{projectfinancearrangementid\}/execute)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Execute](#put-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/\{projectfinanceplacementid\}/execute)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Execute](#put-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/\{projectfinancerepaymentid\}/execute)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Execute](#put-/projectfinance/\{projectfinanceid\}/projectfinancespv/\{projectfinancespvid\}/execute)
-- [POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/Initiate](#post-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/initiate)
-- [POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/Initiate](#post-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/initiate)
-- [POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/Initiate](#post-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/initiate)
-- [POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/Initiate](#post-/projectfinance/\{projectfinanceid\}/projectfinancespv/initiate)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Notify](#get-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/\{projectfinancearrangementid\}/notify)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Notify](#get-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/\{projectfinanceplacementid\}/notify)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Notify](#get-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/\{projectfinancerepaymentid\}/notify)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Notify](#get-/projectfinance/\{projectfinanceid\}/projectfinancespv/\{projectfinancespvid\}/notify)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Request](#put-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/\{projectfinancearrangementid\}/request)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Request](#put-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/\{projectfinanceplacementid\}/request)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Request](#put-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/\{projectfinancerepaymentid\}/request)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Request](#put-/projectfinance/\{projectfinanceid\}/projectfinancespv/\{projectfinancespvid\}/request)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Retrieve](#get-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/\{projectfinancearrangementid\}/retrieve)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Retrieve](#get-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/\{projectfinanceplacementid\}/retrieve)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Retrieve](#get-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/\{projectfinancerepaymentid\}/retrieve)
-- [GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Retrieve](#get-/projectfinance/\{projectfinanceid\}/projectfinancespv/\{projectfinancespvid\}/retrieve)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Update](#put-/projectfinance/\{projectfinanceid\}/projectfinancearrangement/\{projectfinancearrangementid\}/update)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Update](#put-/projectfinance/\{projectfinanceid\}/projectfinanceplacement/\{projectfinanceplacementid\}/update)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Update](#put-/projectfinance/\{projectfinanceid\}/projectfinancerepayment/\{projectfinancerepaymentid\}/update)
-- [PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Update](#put-/projectfinance/\{projectfinanceid\}/projectfinancespv/\{projectfinancespvid\}/update)
-
-
 **BIAN Documentation:** [ProjectFinance v12](https://app.swaggerhub.com/apis/BIAN-3/ProjectFinance/12.0.0)
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/Control
+## PUT: /ProjectFinance/\{projectfinanceid\}/Control
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/Control
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Control Project Finance Facility
 
@@ -59,9 +24,13 @@ PUT: The name of the path should be:
 
 This naming convention follows REST best practices by using plural nouns for resources and including the parent resource in the URL\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/Exchange
+## PUT: /ProjectFinance/\{projectfinanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Exchange Project Finance Facility
 
@@ -80,9 +49,13 @@ I have made the following changes to ensure adherence to best practices:
 2\. Pluralized the resource name "exchange" to reflect that it is a collection of exchanges related to a project finance\.
 3\. Used hyphens to separate words for improved readability\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/Execute
+## PUT: /ProjectFinance/\{projectfinanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/Execute
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Execute Project Finance Facility
 
@@ -101,9 +74,13 @@ Here are some points to consider when renaming the path:
 3\. Use semantically meaningful names \('execute' is a good choice over 'execute'\)\.
 4\. Replace any identifiers with generic placeholders like '\{projectId\}' instead of '\{project
 
-### POST: /ProjectFinance/Initiate
+## POST: /ProjectFinance/Initiate
 
-**Description**
+:::info Path
+POST: /ProjectFinance/Initiate
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Initiate Project Finance Facility
 
@@ -115,9 +92,13 @@ This API path allows users to create a new resource for initiating project finan
 
 POST: In accordance with REST best practices\, the name of the path '/ProjectFinance/Initiate' could be simplified to something more resource\-oriented and representative of the action it performs\. A more suitable name for this path could be something like '/projects' representing a collection of projects\, followed by an HTTP POST method to initiate the creation of a new project\. Therefore\, a more RESTful approach would be to name the path as '/projects' with an HTTP POST method for initiating a new project creation\.
 
-### GET: /ProjectFinance/\{projectfinanceid\}/Notify
+## GET: /ProjectFinance/\{projectfinanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/Notify
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Notify Project Finance Facility
 
@@ -131,9 +112,13 @@ GET: The name of the path should be '/projects/\{project\_id\}/notifications'\.
 
 In this naming convention\, the resource 'projects' is in plural form\, and '\{project\_id\}' is the identifier for a specific project\. The 'notifications' endpoint indicates that this path is specifically for handling notifications related to a project\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/Request
+## PUT: /ProjectFinance/\{projectfinanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/Request
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Request Project Finance Facility
 
@@ -151,9 +136,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use plural nouns to represent collections of resources\.
 
-### GET: /ProjectFinance/\{projectfinanceid\}/Retrieve
+## GET: /ProjectFinance/\{projectfinanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Retrieve Project Finance Facility
 
@@ -165,9 +154,13 @@ This API path allows you to retrieve information about a specific project financ
 
 GET: The name of the path should be \`/projects/\{project\_id\}\` if it followed all REST best practices\. The path should be in lowercase and use plural nouns to represent collections of resources\. Also\, it is recommended to use resource names rather than action names in the URL path\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/Update
+## PUT: /ProjectFinance/\{projectfinanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/Update
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Update Project Finance Facility
 
@@ -183,9 +176,13 @@ PUT: The name of the path should be:
 
 In RESTful design\, the endpoints should use nouns to represent resources rather than actions\. The HTTP methods \(such as PUT or PATCH\) should then be used to indicate the action to be performed on that resource\. Therefore\, a PUT or PATCH request to /ProjectFinances/\{projectfinanceid\} would be the appropriate way to update the specific ProjectFinance resource identified by the projectfinanceid\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Exchange
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Exchange Project Finance Arrangement Fulfillment
 
@@ -203,9 +200,13 @@ A possible naming convention for the path could be:
 
 This path indicates that the 'Exchange' resource is nested under 'ProjectFinanceArrangement'\, which in turn is nested under 'ProjectFinance'\. This hierarchical structure and naming convention provide clarity and organization to the
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Exchange
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Exchange Project Finance Placement Fulfillment
 
@@ -222,9 +223,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with slashes\, and use the convention of using camelCase for variable names like \`projectfinanceId\` and \`projectfinancePlacementId\`\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Exchange
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Exchange Project Finance Repayment Fulfillment
 
@@ -237,9 +242,13 @@ This API path allows users to update an existing resource related to project fin
 PUT: The name of the path following REST best practices could be:
 '/projects/\{projectId\}/repayments/\{repaymentId\}/exchange'
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Exchange
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Exchange
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Exchange Project Finance SPV Fulfillment
 
@@ -255,9 +264,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the names in the path should be in camelCase\, with the first letter of the first word in lowercase and the first letter of subsequent words in uppercase\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Execute
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Execute
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Execute Project Finance Arrangement Fulfillment
 
@@ -271,9 +284,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /ProjectFinances/\{projectfinanceid\}/ProjectFinanceArrangements/\{projectfinancearrangementid\}/Executions
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Execute
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Execute
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Execute Project Finance Placement Fulfillment
 
@@ -289,9 +306,13 @@ PUT: Based on REST best practices\, a more suitable name for the path '/ProjectF
 
 This name is more concise and follows a more standardized RESTful naming convention by using lowercase letters and nouns instead of descriptors\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Execute
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Execute
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Execute Project Finance Repayment Fulfillment
 
@@ -309,9 +330,13 @@ Changes made:
 \- Changed "ProjectFinanceRepayment" to "ProjectFinanceRepayments" to follow the convention of using plural nouns for collections\.
 \- Corrected the spelling of "Repayment" to "Repayments" for consistency\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Execute
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Execute
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Execute Project Finance SPV Fulfillment
 
@@ -329,9 +354,13 @@ PUT: A RESTful name for this path could be:
 
 Here\, I have made the path plural\, used lowercase letters where appropriate\, and ensured that the path elements are descriptive and easy to understand\.
 
-### POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/Initiate
+## POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/Initiate
 
-**Description**
+:::info Path
+POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/Initiate
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Initiate Project Finance Arrangement Fulfillment
 
@@ -350,9 +379,13 @@ Here are a few considerations that are aligned with REST best practices:
 \- Path parameters such as IDs should be in camelCase format for readability and consistency\.
 \- The use of clear and descriptive action
 
-### POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/Initiate
+## POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/Initiate
 
-**Description**
+:::info Path
+POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/Initiate
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Initiate Project Finance Placement Fulfillment
 
@@ -368,9 +401,13 @@ POST: A suitable name for this path following REST best practices could be:
 /ProjectFinances/\{projectfinanceid\}/ProjectFinancePlacements/Initiate
 \`\`\`
 
-### POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/Initiate
+## POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/Initiate
 
-**Description**
+:::info Path
+POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/Initiate
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Initiate Project Finance Repayment Fulfillment
 
@@ -382,9 +419,13 @@ This API path allows users to initiate the repayment process for a project that 
 
 POST: Based on REST best practices\, the name of the path should reflect the resource that is being acted upon\. In this case\, the resource being acted upon is the Project Finance Repayment\. Therefore\, the name of the path could be \`/ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayments/\{repaymentid\}/Initiate\`\. This name clearly indicates the specific Project Finance Repayment that is being initiated\.
 
-### POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/Initiate
+## POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/Initiate
 
-**Description**
+:::info Path
+POST: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/Initiate
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Initiate Project Finance SPV Fulfillment
 
@@ -396,9 +437,13 @@ This API path allows users to create a new resource for initiating Project Finan
 
 POST: The name of the path should be: \`/project\-finances/\{projectFinanceId\}/project\-finance\-spv/initiate\`
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Notify
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Notify
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Notify
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Notify Project Finance Arrangement Fulfillment
 
@@ -412,9 +457,13 @@ GET: Following RESTful best practices\, the name of the path should be:
 
 /ProjectFinances/\{projectfinanceid\}/ProjectFinanceArrangements/\{projectfinancearrangementid\}/Notify
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Notify
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Notify
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Notify
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Notify Project Finance Placement Fulfillment
 
@@ -430,9 +479,13 @@ GET: A suitable name for the path following REST best practices could be:
 
 This naming convention follows the principle of using lowercase letters and underscores for better readability and consistency\.
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Notify
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Notify
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Notify
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Notify Project Finance Repayment Fulfillment
 
@@ -450,9 +503,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using plural nouns for resources \('Repayments' instead of 'ProjectFinanceRepayment'\)\, and keeping the path concise and easy to understand\.
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Notify
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Notify
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Notify
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Notify Project Finance SPV Fulfillment
 
@@ -468,9 +525,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /ProjectFinances/\{projectfinanceid\}/ProjectFinanceSPVs/\{projectfinancespvid\}/Notify
 \`\`\`
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Request
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Request
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Request Project Finance Arrangement Fulfillment
 
@@ -485,9 +546,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using plural nouns to represent resources and keeping the URIs readable and consistent\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Request
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Request
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Request Project Finance Placement Fulfillment
 
@@ -501,9 +566,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Requests
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Request
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Request
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Request Project Finance Repayment Fulfillment
 
@@ -521,9 +590,13 @@ PUT: The name of the path should be:
 
 Following REST best practices generally involves using meaningful resource names and keeping the path hierarchical and descriptive\. It's important to accurately represent the resources being accessed\, which seems to be captured well in the provided path\.
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Request
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Request
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Request Project Finance SPV Fulfillment
 
@@ -537,9 +610,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Request
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Retrieve
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Retrieve Project Finance Arrangement Fulfillment
 
@@ -555,9 +632,13 @@ GET: A possible name for this path following REST best practices could be:
 GET /projects/\{projectfinanceid\}/arrangements/\{projectfinancearrangementid\}
 \`\`\`
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Retrieve
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Retrieve Project Finance Placement Fulfillment
 
@@ -571,9 +652,13 @@ GET: The name of the path should be:
 
 '/projects/\{projectId\}/placements/\{placementId\}'
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Retrieve
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Retrieve Project Finance Repayment Fulfillment
 
@@ -591,9 +676,13 @@ GET: The name of the path should be:
 
 In RESTful design\, the URL path should represent a resource or a collection of resources\. Including the action "Retrieve" in the path is not necessary\, as the HTTP method used \(such as GET\) already implies retrieving a specific resource\.
 
-### GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Retrieve
+## GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Retrieve Project Finance SPV Fulfillment
 
@@ -607,9 +696,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 "/projects/\{projectId\}/spvs/\{spvId\}"
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Update
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceArrangement/\{projectfinancearrangementid\}/Update
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Update Project Finance Arrangement Fulfillment
 
@@ -625,9 +718,13 @@ PUT: Following REST best practices\, the name of the path should be:
 /ProjectFinances/\{projectfinanceid\}/ProjectFinanceArrangements/\{projectfinancearrangementid\}
 \`\`\`
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Update
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinancePlacement/\{projectfinanceplacementid\}/Update
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Update Project Finance Placement Fulfillment
 
@@ -641,9 +738,13 @@ PUT: The name of the path should be:
 
 '/projects/\{projectId\}/placements/\{placementId\}'
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Update
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceRepayment/\{projectfinancerepaymentid\}/Update
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Update Project Finance Repayment Fulfillment
 
@@ -659,9 +760,13 @@ PUT: The name of the path should be:
 /ProjectFinances/\{projectfinanceid\}/Repayments/\{projectfinancerepaymentid\}
 \`\`\`
 
-### PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Update
+## PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProjectFinance/\{projectfinanceid\}/ProjectFinanceSPV/\{projectfinancespvid\}/Update
+:::
+
+### Description
 
 This Service Domain fulfills project financing by which major \(government\) projects can attract privet sector financing Update Project Finance SPV Fulfillment
 

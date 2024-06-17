@@ -1,23 +1,14 @@
 # CardCollections
 
-## Table of Contents
-- [POST: /CardCollections/Initiate](#post-/cardcollections/initiate)
-- [PUT: /CardCollections/\{cardcollectionsid\}/Update](#put-/cardcollections/\{cardcollectionsid\}/update)
-- [GET: /CardCollections/\{cardcollectionsid\}/Retrieve](#get-/cardcollections/\{cardcollectionsid\}/retrieve)
-- [GET: /CardCollections/\{cardcollectionsid\}/Assignment/\{assignmentid\}/Retrieve](#get-/cardcollections/\{cardcollectionsid\}/assignment/\{assignmentid\}/retrieve)
-- [GET: /CardCollections/\{cardcollectionsid\}/PaymentTerms/\{paymenttermsid\}/Retrieve](#get-/cardcollections/\{cardcollectionsid\}/paymentterms/\{paymenttermsid\}/retrieve)
-- [POST: /CardCollections/\{cardcollectionsid\}/Payment/Initiate](#post-/cardcollections/\{cardcollectionsid\}/payment/initiate)
-- [PUT: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Update](#put-/cardcollections/\{cardcollectionsid\}/payment/\{paymentid\}/update)
-- [GET: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Retrieve](#get-/cardcollections/\{cardcollectionsid\}/payment/\{paymentid\}/retrieve)
-- [PUT: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Update](#put-/cardcollections/\{cardcollectionsid\}/resolution/\{resolutionid\}/update)
-- [GET: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Retrieve](#get-/cardcollections/\{cardcollectionsid\}/resolution/\{resolutionid\}/retrieve)
-
-
 **BIAN Documentation:** [CardCollections v12](https://app.swaggerhub.com/apis/BIAN-3/CardCollections/12.0.0)
 
-### POST: /CardCollections/Initiate
+## POST: /CardCollections/Initiate
 
-**Description**
+:::info Path
+POST: /CardCollections/Initiate
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. InCR Initiate card collections processing
 
@@ -33,9 +24,13 @@ POST /card\-collections
 
 This naming convention uses the HTTP method POST to indicate the initiation of a new card collection resource\. The endpoint path is simplified and follows RESTful naming conventions by using lowercase letters and separating words with hyphens for readability\.
 
-### PUT: /CardCollections/\{cardcollectionsid\}/Update
+## PUT: /CardCollections/\{cardcollectionsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCollections/\{cardcollectionsid\}/Update
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. UpCR Update details of card collections processing
 
@@ -47,9 +42,13 @@ This API path allows you to update information related to the recovery of outsta
 
 PUT: The name of the path '/CardCollections/\{cardcollectionsid\}/Update' can be modified to follow REST best practices by using the HTTP verb 'PUT' to indicate the action of updating a resource\. Therefore\, the name of the path could be '/CardCollections/\{cardcollectionsid\}' with the HTTP verb 'PUT' to update the specific card collection identified by \{cardcollectionsid\}\.
 
-### GET: /CardCollections/\{cardcollectionsid\}/Retrieve
+## GET: /CardCollections/\{cardcollectionsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCollections/\{cardcollectionsid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. ReCR Retrieve details about a card collections procedure
 
@@ -61,9 +60,13 @@ This API path allows you to retrieve information about a specific card collectio
 
 GET: The name of the path should be \`/card\-collections/\{card\_collection\_id\}\` if it followed REST best practices\.
 
-### GET: /CardCollections/\{cardcollectionsid\}/Assignment/\{assignmentid\}/Retrieve
+## GET: /CardCollections/\{cardcollectionsid\}/Assignment/\{assignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCollections/\{cardcollectionsid\}/Assignment/\{assignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. ReBQ Retrieve details about a card collections assignment
 
@@ -77,9 +80,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/card\-collections/\{cardCollectionsId\}/assignments/\{assignmentId\}/retrieve'
 
-### GET: /CardCollections/\{cardcollectionsid\}/PaymentTerms/\{paymenttermsid\}/Retrieve
+## GET: /CardCollections/\{cardcollectionsid\}/PaymentTerms/\{paymenttermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCollections/\{cardcollectionsid\}/PaymentTerms/\{paymenttermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. ReBQ Retrieve details about the payment terms for a card collections procedure
 
@@ -95,9 +102,13 @@ GET /cardcollections/\{cardcollectionsid\}/paymentterms/\{paymenttermsid\}
 
 REST paths are typically in all lowercase and should use nouns to represent the resources\, while using plural form for collection resources\. It is also a good practice to avoid using verbs in the path and to use hyphens to separate multiple words for readability\.
 
-### POST: /CardCollections/\{cardcollectionsid\}/Payment/Initiate
+## POST: /CardCollections/\{cardcollectionsid\}/Payment/Initiate
 
-**Description**
+:::info Path
+POST: /CardCollections/\{cardcollectionsid\}/Payment/Initiate
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. InBQ Initiate payment processing against the card collections account
 
@@ -111,9 +122,13 @@ POST: The name of the path should be:
 
 '/card\-collections/\{cardCollectionsId\}/payment/initiate'
 
-### PUT: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Update
+## PUT: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Update
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. UpBQ Update a payment transaction
 
@@ -127,9 +142,13 @@ PUT: The appropriate name for the path '/CardCollections/\{cardcollectionsid\}/P
 
 PATCH /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}
 
-### GET: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Retrieve
+## GET: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCollections/\{cardcollectionsid\}/Payment/\{paymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. ReBQ Retrieve details about a payment made against the delinquent account
 
@@ -143,9 +162,13 @@ GET: The name of the path should be structured using nouns and not verbs\. Follo
 
 '/card\-collections/\{cardcollectionsid\}/payments/\{paymentid\}'
 
-### PUT: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Update
+## PUT: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Update
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. UpBQ Update a resolution plan
 
@@ -159,9 +182,13 @@ PUT: The path could be named as follows according to REST best practices:
 
 '/card\-collections/\{cardCollectionId\}/resolutions/\{resolutionId\}'
 
-### GET: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Retrieve
+## GET: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCollections/\{cardcollectionsid\}/Resolution/\{resolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the recovery of outstanding amounts from cancelled card accounts through internal or external collection agencies\.  This may involve negotiating payment terms and/or interest write\-downs\. ReBQ Retrieve details about a card collections resolution plan
 

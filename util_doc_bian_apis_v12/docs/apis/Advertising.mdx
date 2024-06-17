@@ -1,30 +1,14 @@
 # Advertising
 
-## Table of Contents
-- [POST: /Advertising/Create](#post-/advertising/create)
-- [PUT: /Advertising/\{advertisingid\}/Update](#put-/advertising/\{advertisingid\}/update)
-- [PUT: /Advertising/\{advertisingid\}/Request](#put-/advertising/\{advertisingid\}/request)
-- [GET: /Advertising/\{advertisingid\}/Retrieve](#get-/advertising/\{advertisingid\}/retrieve)
-- [PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Update](#put-/advertising/\{advertisingid\}/markettracking/\{markettrackingid\}/update)
-- [PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Execute](#put-/advertising/\{advertisingid\}/markettracking/\{markettrackingid\}/execute)
-- [PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Request](#put-/advertising/\{advertisingid\}/markettracking/\{markettrackingid\}/request)
-- [GET: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Retrieve](#get-/advertising/\{advertisingid\}/markettracking/\{markettrackingid\}/retrieve)
-- [POST: /Advertising/\{advertisingid\}/PerformanceAssessment/Create](#post-/advertising/\{advertisingid\}/performanceassessment/create)
-- [PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Update](#put-/advertising/\{advertisingid\}/performanceassessment/\{performanceassessmentid\}/update)
-- [PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Execute](#put-/advertising/\{advertisingid\}/performanceassessment/\{performanceassessmentid\}/execute)
-- [PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Request](#put-/advertising/\{advertisingid\}/performanceassessment/\{performanceassessmentid\}/request)
-- [GET: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Retrieve](#get-/advertising/\{advertisingid\}/performanceassessment/\{performanceassessmentid\}/retrieve)
-- [POST: /Advertising/\{advertisingid\}/CampaignDirection/Create](#post-/advertising/\{advertisingid\}/campaigndirection/create)
-- [PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Update](#put-/advertising/\{advertisingid\}/campaigndirection/\{campaigndirectionid\}/update)
-- [PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Request](#put-/advertising/\{advertisingid\}/campaigndirection/\{campaigndirectionid\}/request)
-- [GET: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Retrieve](#get-/advertising/\{advertisingid\}/campaigndirection/\{campaigndirectionid\}/retrieve)
-
-
 **BIAN Documentation:** [Advertising v12](https://app.swaggerhub.com/apis/BIAN-3/Advertising/12.0.0)
 
-### POST: /Advertising/Create
+## POST: /Advertising/Create
 
-**Description**
+:::info Path
+POST: /Advertising/Create
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management CrCR Create and invoke the advertising campaign management plan
 
@@ -36,9 +20,13 @@ This API path allows you to create a new advertising campaign management plan\. 
 
 POST: If the path '/Advertising/Create' followed REST best practices\, its name should be changed to '/advertisements' using the POST method to create a new advertisement resource\.
 
-### PUT: /Advertising/\{advertisingid\}/Update
+## PUT: /Advertising/\{advertisingid\}/Update
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/Update
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management UpCR Update details of the advertising campaign management plan
 
@@ -50,9 +38,13 @@ This BIAN API path allows you to update the details of an advertising campaign m
 
 PUT: The name of the path '/Advertising/\{advertisingid\}/Update' following REST best practices would typically just be "PUT /Advertising/\{advertisingid\}"\. In REST\, a PUT request is commonly used to update a resource\.
 
-### PUT: /Advertising/\{advertisingid\}/Request
+## PUT: /Advertising/\{advertisingid\}/Request
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/Request
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management RqCR Request manual intervention in the campaign plan \(e\.g\. rework campaign priorities\)
 
@@ -66,9 +58,13 @@ PUT: A possible name for the path '/Advertising/\{advertisingid\}/Request' follo
 
 '/advertisings/\{advertisingid\}/requests'
 
-### GET: /Advertising/\{advertisingid\}/Retrieve
+## GET: /Advertising/\{advertisingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Advertising/\{advertisingid\}/Retrieve
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management ReCR Retrieve details about the advertising campaign management plan
 
@@ -82,9 +78,13 @@ GET: The path '/Advertising/\{advertisingid\}/Retrieve' should be named as follo
 
 GET /advertisings/\{advertisingid\}
 
-### PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Update
+## PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Update
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Update
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management UpBQ Update details of the market tracking activity \(e\.g\. change source\)
 
@@ -98,9 +98,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 PUT /advertisements/\{advertisingid\}/market\-tracking/\{markettrackingid\}
 
-### PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Execute
+## PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Execute
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management ExBQ Execute an automated task for the tracking activity \(e\.g\. upload new data\)
 
@@ -116,9 +120,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use all lowercase letters and hyphens to separate words\. Additionally\, it should be specific and describe the resources being accessed\.
 
-### PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Request
+## PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Request
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Request
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management RqBQ Request manual intervention in the market tracking \(e\.g\. request reworking of the analysis\)
 
@@ -132,9 +140,13 @@ PUT: The ideal name for this path following REST best practices would be:
 
 \`/advertisements/\{advertisingid\}/market\-trackings/\{markettrackingid\}/requests\`
 
-### GET: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Retrieve
+## GET: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Advertising/\{advertisingid\}/MarketTracking/\{markettrackingid\}/Retrieve
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management ReBQ Retrieve details about the market tracking activity
 
@@ -147,9 +159,13 @@ This BIAN API path allows you to retrieve information about the market tracking 
 GET: The name of the path should be:  
 \`/advertising/\{advertisingId\}/market\-tracking/\{marketTrackingId\}\`
 
-### POST: /Advertising/\{advertisingid\}/PerformanceAssessment/Create
+## POST: /Advertising/\{advertisingid\}/PerformanceAssessment/Create
 
-**Description**
+:::info Path
+POST: /Advertising/\{advertisingid\}/PerformanceAssessment/Create
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management CrBQ Create a performance assessment of the advertising campaign portfolio
 
@@ -165,9 +181,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 The URI should be in lowercase letters and use hyphens to separate words\. Additionally\, the endpoint should use the HTTP verb "POST" to create a new resource under the specified advertising ID\.
 
-### PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Update
+## PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Update
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management UpBQ Update details of a advertising campaign portfolio assessment
 
@@ -181,9 +201,13 @@ PUT: Based on REST best practices\, the name of the path '/Advertising/\{adverti
 
 In RESTful design\, it's recommended to use nouns in plural form to represent resources\, and to avoid verbs or action words in the endpoint paths\. This makes the API endpoints more clear and easy to understand\.
 
-### PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Execute
+## PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Execute
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management ExBQ Execute an automated action for a performance assessment \(e\.g\. trigger assessment report\)
 
@@ -199,9 +223,13 @@ PUT: Following REST best practices\, the path should be:
 '/advertisements/\{advertisingid\}/performance\-assessments/\{performanceassessmentid\}/execute'
 \`\`\`
 
-### PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Request
+## PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Request
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management RqBQ Request manual intervention to a performance assessment \(e\.g\. request specific analysis\)
 
@@ -215,9 +243,13 @@ PUT: A suitable name for the path based on REST best practices could be:
 
 /advertising/\{advertisingid\}/performance\-assessments/\{performanceassessmentid\}/requests
 
-### GET: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Retrieve
+## GET: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Advertising/\{advertisingid\}/PerformanceAssessment/\{performanceassessmentid\}/Retrieve
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management ReBQ Retrieve details about advertising campaign performance assessment activity
 
@@ -231,9 +263,13 @@ GET: The name of the path should be:
 
 '/advertising/\{advertisingId\}/performance\-assessments/\{performanceAssessmentId\}'
 
-### POST: /Advertising/\{advertisingid\}/CampaignDirection/Create
+## POST: /Advertising/\{advertisingid\}/CampaignDirection/Create
 
-**Description**
+:::info Path
+POST: /Advertising/\{advertisingid\}/CampaignDirection/Create
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management CrBQ Create advertising campaign direction schedules \(e\.g\. create the schedules for design or execution activity\)
 
@@ -249,9 +285,13 @@ POST: The name of the path should be:
 /Advertising/\{advertisingid\}/CampaignDirections
 \`\`\`
 
-### PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Update
+## PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Update
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management UpBQ Update the advertising campaign design and execution schedules
 
@@ -267,9 +307,13 @@ PUT /advertisings/\{advertisingid\}/campaigndirections/\{campaigndirectionid\}
 
 This name follows REST best practices by using the HTTP verb PUT to indicate an update operation on the specific advertising and campaign direction resource identified by their respective IDs\. The path segments are in lowercase and plural form\, following REST conventions\.
 
-### PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Request
+## PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Request
 
-**Description**
+:::info Path
+PUT: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Request
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management RqBQ Request manual intervention to the schedules \(e\.g\. rework priorities\)
 
@@ -283,9 +327,13 @@ PUT: A suitable name for the path '/Advertising/\{advertisingid\}/CampaignDirect
 
 \`/advertisements/\{advertisingid\}/campaign\-directions/\{campaigndirectionid\}/requests\`
 
-### GET: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Retrieve
+## GET: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Advertising/\{advertisingid\}/CampaignDirection/\{campaigndirectionid\}/Retrieve
+:::
+
+### Description
 
 Develop the plan for and oversee advertising campaign activity\, including budget and resource management ReBQ Retrieve details about advertising campaign design and execution direction and scheduling activities
 

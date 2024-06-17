@@ -1,39 +1,14 @@
 # MerchantRelations
 
-## Table of Contents
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/Control](#put-/merchantrelations/\{merchantrelationsid\}/control)
-- [POST: /MerchantRelations/Evaluate](#post-/merchantrelations/evaluate)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/Exchange](#put-/merchantrelations/\{merchantrelationsid\}/exchange)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/Grant](#put-/merchantrelations/\{merchantrelationsid\}/grant)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/Notify](#get-/merchantrelations/\{merchantrelationsid\}/notify)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/Request](#put-/merchantrelations/\{merchantrelationsid\}/request)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/Retrieve](#get-/merchantrelations/\{merchantrelationsid\}/retrieve)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/Update](#put-/merchantrelations/\{merchantrelationsid\}/update)
-- [POST: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/Evaluate](#post-/merchantrelations/\{merchantrelationsid\}/legalterm/evaluate)
-- [POST: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/Evaluate](#post-/merchantrelations/\{merchantrelationsid\}/operationalterm/evaluate)
-- [POST: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/Evaluate](#post-/merchantrelations/\{merchantrelationsid\}/regulatoryterm/evaluate)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Exchange](#put-/merchantrelations/\{merchantrelationsid\}/legalterm/\{legaltermid\}/exchange)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Exchange](#put-/merchantrelations/\{merchantrelationsid\}/operationalterm/\{operationaltermid\}/exchange)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange](#put-/merchantrelations/\{merchantrelationsid\}/regulatoryterm/\{regulatorytermid\}/exchange)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Notify](#get-/merchantrelations/\{merchantrelationsid\}/legalterm/\{legaltermid\}/notify)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Notify](#get-/merchantrelations/\{merchantrelationsid\}/operationalterm/\{operationaltermid\}/notify)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Notify](#get-/merchantrelations/\{merchantrelationsid\}/regulatoryterm/\{regulatorytermid\}/notify)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Request](#put-/merchantrelations/\{merchantrelationsid\}/legalterm/\{legaltermid\}/request)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Request](#put-/merchantrelations/\{merchantrelationsid\}/operationalterm/\{operationaltermid\}/request)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Request](#put-/merchantrelations/\{merchantrelationsid\}/regulatoryterm/\{regulatorytermid\}/request)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Retrieve](#get-/merchantrelations/\{merchantrelationsid\}/legalterm/\{legaltermid\}/retrieve)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Retrieve](#get-/merchantrelations/\{merchantrelationsid\}/operationalterm/\{operationaltermid\}/retrieve)
-- [GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve](#get-/merchantrelations/\{merchantrelationsid\}/regulatoryterm/\{regulatorytermid\}/retrieve)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Update](#put-/merchantrelations/\{merchantrelationsid\}/legalterm/\{legaltermid\}/update)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Update](#put-/merchantrelations/\{merchantrelationsid\}/operationalterm/\{operationaltermid\}/update)
-- [PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Update](#put-/merchantrelations/\{merchantrelationsid\}/regulatoryterm/\{regulatorytermid\}/update)
-
-
 **BIAN Documentation:** [MerchantRelations v12](https://app.swaggerhub.com/apis/BIAN-3/MerchantRelations/12.0.0)
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/Control
+## PUT: /MerchantRelations/\{merchantrelationsid\}/Control
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/Control
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Control Merchant Relationship Agreement
 
@@ -49,9 +24,13 @@ PUT: A suitable name for the path '/MerchantRelations/\{merchantrelationsid\}/Co
 
 This name is more consistent with the resource being accessed \('Controls'\) and uses a singular noun to represent a single control entity related to a specific 'MerchantRelations' resource identified by its '\{id\}'\.
 
-### POST: /MerchantRelations/Evaluate
+## POST: /MerchantRelations/Evaluate
 
-**Description**
+:::info Path
+POST: /MerchantRelations/Evaluate
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Evaluate Merchant Relationship Agreement
 
@@ -63,9 +42,13 @@ This API path \`/MerchantRelations/Evaluate\` allows users to create a new resou
 
 POST: If the path '/MerchantRelations/Evaluate' were to follow REST best practices\, it would ideally be named based on the resource it represents rather than the action being performed\. A more suitable name for this path could be something like '/merchants' or '/evaluations'\. Choose a name that clearly represents the resource being accessed or manipulated in the context of merchant evaluations\.
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/Exchange
+## PUT: /MerchantRelations/\{merchantrelationsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Exchange Merchant Relationship Agreement
 
@@ -79,9 +62,13 @@ PUT: The name of the path should be:
 
 '/merchants/\{merchantId\}/exchanges'
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/Grant
+## PUT: /MerchantRelations/\{merchantrelationsid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/Grant
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Grant Merchant Relationship Agreement
 
@@ -93,9 +80,13 @@ This API path allows you to update an existing resource related to merchant rela
 
 PUT: The name of the path should ideally align with the resource it represents\. In this case\, the path could be named as '/MerchantRelations/\{merchantrelationsid\}/GrantAccess'\, as it clearly conveys that it is used for granting access related to merchant relations\.
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/Notify
+## GET: /MerchantRelations/\{merchantrelationsid\}/Notify
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/Notify
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Notify Merchant Relationship Agreement
 
@@ -107,9 +98,13 @@ This BIAN API path allows you to retrieve information about a specific merchant 
 
 GET: The name for the path should be '/merchant\-relations/\{merchantrelationsid\}/notifications'\. This follows REST best practices by using lowercase letters\, using hyphens to separate words\, and using a plural noun for consistency\.
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/Request
+## PUT: /MerchantRelations/\{merchantrelationsid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/Request
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Request Merchant Relationship Agreement
 
@@ -121,9 +116,13 @@ This API path is used to update an existing resource related to merchant relatio
 
 PUT: The name of the path should ideally be "/merchant\-relations/\{merchantrelationsid\}/requests" following the REST best practices\.
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/Retrieve
+## GET: /MerchantRelations/\{merchantrelationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Retrieve Merchant Relationship Agreement
 
@@ -135,9 +134,13 @@ This API path allows a user to retrieve the Merchant Relationship Agreement asso
 
 GET: The name of the path should be \`/merchant\-relations/\{merchantrelationsid\}\` according to REST best practices\.
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/Update
+## PUT: /MerchantRelations/\{merchantrelationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/Update
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Update Merchant Relationship Agreement
 
@@ -151,9 +154,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/merchant\-relations/\{merchantrelationsid\}'
 
-### POST: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/Evaluate
+## POST: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/Evaluate
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Evaluate Legal Term
 
@@ -165,9 +172,13 @@ This BIAN API path is used to create a new resource for evaluating the legal ter
 
 POST: The name of the path '/MerchantRelations/\{merchantrelationsid\}/LegalTerm/Evaluate' following REST best practices should be 'POST /merchant\-relations/\{merchantrelationsid\}/legal\-terms/evaluation'\.
 
-### POST: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/Evaluate
+## POST: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/Evaluate
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Evaluate Operational Term
 
@@ -181,9 +192,13 @@ POST: The name of the path should be:
 
 '/merchant\-relations/\{merchantRelationsId\}/operational\-term/evaluate'
 
-### POST: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/Evaluate
+## POST: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/Evaluate
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Evaluate Regulatory Term
 
@@ -197,9 +212,13 @@ POST: The name of the path should follow REST best practices by using nouns to r
 
 '/merchant\-relations/\{merchantrelationsid\}/regulatory\-terms/evaluation'
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Exchange
+## PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Exchange Legal Term
 
@@ -221,9 +240,13 @@ Here are some key points to consider:
 3\. Resource names should be lowercase and separated by hyphens if necessary\.
 4\. Use clear and concise names that
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Exchange
+## PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Exchange Operational Term
 
@@ -241,9 +264,13 @@ PUT: The name of the path should be:
 
 This path name adheres to REST best practices by using plural nouns for resource names and avoiding overly specific path naming conventions\.
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
+## PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Exchange Regulatory Term
 
@@ -257,9 +284,13 @@ PUT: The name of the path following REST best practices should be:
 
 '/merchant\-relations/\{merchantrelationsid\}/regulatory\-terms/\{regulatorytermid\}/exchange'
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Notify
+## GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Notify
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Notify
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Notify Legal Term
 
@@ -273,9 +304,13 @@ GET: The name of the path should be:
 
 '/merchant\-relations/\{merchantrelationsid\}/legal\-terms/\{legaltermid\}/notify'
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Notify
+## GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Notify
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Notify
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Notify Operational Term
 
@@ -289,9 +324,13 @@ GET: The name of the path should be:
 
 '/merchant\-relations/\{merchantrelationsid\}/operational\-term/\{operationaltermid\}/notify'
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
+## GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Notify Regulatory Term
 
@@ -305,9 +344,13 @@ GET: A good name for the path in accordance with REST best practices could be:
 
 /merchant\-relations/\{merchantrelationsid\}/regulatory\-terms/\{regulatorytermid\}/notify
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Request
+## PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Request
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Request Legal Term
 
@@ -321,9 +364,13 @@ PUT: Based on REST best practices\, the name of the path should be in plural for
 
 '/merchant\-relations/\{merchantrelationsid\}/legal\-terms/\{legaltermid\}/requests'
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Request
+## PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Request
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Request Operational Term
 
@@ -337,9 +384,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/merchants/\{merchantId\}/operational\-terms/\{operationalTermId\}/requests'
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Request
+## PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Request
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Request Regulatory Term
 
@@ -353,9 +404,13 @@ PUT: The name of the path should be structured as follows to comply with REST be
 
 \`/merchant\-relations/\{merchantrelationsid\}/regulatory\-terms/\{regulatorytermid\}/requests\`
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Retrieve
+## GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Retrieve Legal Term
 
@@ -373,9 +428,13 @@ GET /merchants/\{merchantId\}/legal\-terms/\{legalTermId\}
 
 This path clearly identifies the resources being accessed \(merchants and legal terms\) and follows the convention of using lowercase letters and hyphens to separate words in the path components\.
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Retrieve
+## GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Retrieve Operational Term
 
@@ -391,9 +450,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 Following REST conventions\, the path uses lowercase letters\, separates words with hyphens\, and uses descriptive resource names\.
 
-### GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
+## GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Retrieve Regulatory Term
 
@@ -406,9 +469,13 @@ This API path allows you to retrieve regulatory terms associated with a specific
 GET: A possible name for this path following REST best practices could be:
 '/merchants/\{merchantId\}/regulatory\-terms/\{regulatoryTermId\}'
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Update
+## PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/LegalTerm/\{legaltermid\}/Update
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Update Legal Term
 
@@ -420,9 +487,13 @@ This API path allows you to update the legal terms and conditions that have been
 
 PUT: The name of the path should be: \`/merchants/\{merchantId\}/legal\-terms/\{legalTermId\}\`\.
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Update
+## PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/OperationalTerm/\{operationaltermid\}/Update
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Update Operational Term
 
@@ -436,9 +507,13 @@ PUT: Based on REST best practices\, a more appropriate path name could be:
 
 '/merchants/\{merchantId\}/terms/\{termId\}'
 
-### PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Update
+## PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchantRelations/\{merchantrelationsid\}/RegulatoryTerm/\{regulatorytermid\}/Update
+:::
+
+### Description
 
 This service domain maintains the terms and conditions agreed with merchants for cards related activity Update Regulatory Term
 

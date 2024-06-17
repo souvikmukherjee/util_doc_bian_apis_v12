@@ -1,49 +1,14 @@
 # TrustServices
 
-## Table of Contents
-- [PUT: /TrustServices/\{trustservicesid\}/Control](#put-/trustservices/\{trustservicesid\}/control)
-- [PUT: /TrustServices/\{trustservicesid\}/Exchange](#put-/trustservices/\{trustservicesid\}/exchange)
-- [PUT: /TrustServices/\{trustservicesid\}/Execute](#put-/trustservices/\{trustservicesid\}/execute)
-- [POST: /TrustServices/Initiate](#post-/trustservices/initiate)
-- [GET: /TrustServices/\{trustservicesid\}/Notify](#get-/trustservices/\{trustservicesid\}/notify)
-- [PUT: /TrustServices/\{trustservicesid\}/Request](#put-/trustservices/\{trustservicesid\}/request)
-- [GET: /TrustServices/\{trustservicesid\}/Retrieve](#get-/trustservices/\{trustservicesid\}/retrieve)
-- [PUT: /TrustServices/\{trustservicesid\}/Update](#put-/trustservices/\{trustservicesid\}/update)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange](#put-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/exchange)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange](#put-/trustservices/\{trustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/exchange)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange](#put-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/exchange)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange](#put-/trustservices/\{trustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/exchange)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute](#put-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/execute)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute](#put-/trustservices/\{trustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/execute)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute](#put-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/execute)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute](#put-/trustservices/\{trustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/execute)
-- [POST: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/Initiate](#post-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/initiate)
-- [POST: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/Initiate](#post-/trustservices/\{trustservicesid\}/trustcourtadministration/initiate)
-- [POST: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate](#post-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/initiate)
-- [POST: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/Initiate](#post-/trustservices/\{trustservicesid\}/trusttaxandexpense/initiate)
-- [GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify](#get-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/notify)
-- [GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify](#get-/trustservices/\{trustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/notify)
-- [GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify](#get-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/notify)
-- [GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify](#get-/trustservices/\{trustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/notify)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request](#put-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/request)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request](#put-/trustservices/\{trustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/request)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request](#put-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/request)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request](#put-/trustservices/\{trustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/request)
-- [GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve](#get-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/retrieve)
-- [GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve](#get-/trustservices/\{trustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/retrieve)
-- [GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve](#get-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/retrieve)
-- [GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve](#get-/trustservices/\{trustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/retrieve)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update](#put-/trustservices/\{trustservicesid\}/trustassetmaintenanceandmanagement/\{trustassetmaintenanceandmanagementid\}/update)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update](#put-/trustservices/\{trustservicesid\}/trustcourtadministration/\{trustcourtadministrationid\}/update)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update](#put-/trustservices/\{trustservicesid\}/trustestate\_inheritanceandincometax/\{trustestate\_inheritanceandincometaxid\}/update)
-- [PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update](#put-/trustservices/\{trustservicesid\}/trusttaxandexpense/\{trusttaxandexpenseid\}/update)
-
-
 **BIAN Documentation:** [TrustServices v12](https://app.swaggerhub.com/apis/BIAN-3/TrustServices/12.0.0)
 
-### PUT: /TrustServices/\{trustservicesid\}/Control
+## PUT: /TrustServices/\{trustservicesid\}/Control
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/Control
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Control Corporate Trust Services Facility
 
@@ -59,9 +24,13 @@ PUT: The name of the path should be as follows to align with REST best practices
 
 In this naming convention\, we use lowercase letters\, separate words with dashes\, and use plural nouns to represent collections of resources\.
 
-### PUT: /TrustServices/\{trustservicesid\}/Exchange
+## PUT: /TrustServices/\{trustservicesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Exchange Corporate Trust Services Facility
 
@@ -75,9 +44,13 @@ PUT: The name of the path '/TrustServices/\{trustservicesid\}/Exchange' followin
 
 '/TrustServices/\{trustservicesid\}/Exchanges'
 
-### PUT: /TrustServices/\{trustservicesid\}/Execute
+## PUT: /TrustServices/\{trustservicesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/Execute
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Execute Corporate Trust Services Facility
 
@@ -89,9 +62,13 @@ This API path allows you to update an existing resource related to trust service
 
 PUT: The name of the path should be \`/trust\-services/\{trustservicesid\}/execute\` following REST best practices\.
 
-### POST: /TrustServices/Initiate
+## POST: /TrustServices/Initiate
 
-**Description**
+:::info Path
+POST: /TrustServices/Initiate
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Initiate Corporate Trust Services Facility
 
@@ -103,9 +80,13 @@ This API path \`/TrustServices/Initiate\` allows the user to create a new corpor
 
 POST: If the path follows REST best practices\, it should be named something that represents a resource or action that the API is performing\. A more appropriate name for \`/TrustServices/Initiate\` could be \`/trust\-services/initiations\`\. This name is more descriptive and uses plural nouns to represent a collection of resources related to trust services initiation\. Remember\, RESTful API URLs should be meaningful\, consistent\, and reflect the resources they are interacting with\.
 
-### GET: /TrustServices/\{trustservicesid\}/Notify
+## GET: /TrustServices/\{trustservicesid\}/Notify
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/Notify
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Notify Corporate Trust Services Facility
 
@@ -117,9 +98,13 @@ This BIAN API path allows you to retrieve information about a specific trust ser
 
 GET: The name of the path should be \`/trust\-services/\{trustservicesid\}/notify\` following REST best practices\. Paths should be in all lowercase letters with hyphens separating words for better readability and consistency\.
 
-### PUT: /TrustServices/\{trustservicesid\}/Request
+## PUT: /TrustServices/\{trustservicesid\}/Request
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/Request
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Request Corporate Trust Services Facility
 
@@ -137,9 +122,13 @@ PUT: The name of the path should be:
 \- "\{trustservicesid\}" is a path parameter representing a specific Trust Service entity\.
 \- "Requests" is in plural form to indicate that it is a collection of resources related to the Trust Service identified by \{trustservicesid\}\.
 
-### GET: /TrustServices/\{trustservicesid\}/Retrieve
+## GET: /TrustServices/\{trustservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Retrieve Corporate Trust Services Facility
 
@@ -153,9 +142,13 @@ GET: The name of the path should be '/trust\-services/\{trustservicesid\}'\.
 
 In RESTful API design\, paths should be in lowercase and separate words should be connected using hyphens or underscores for better readability and consistency\. Additionally\, resource names should be in plural form\, hence 'trust\-services' instead of 'trustservices'\.
 
-### PUT: /TrustServices/\{trustservicesid\}/Update
+## PUT: /TrustServices/\{trustservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/Update
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Update Corporate Trust Services Facility
 
@@ -169,9 +162,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PUT /TrustServices/\{trustservicesid\}
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
+## PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Exchange Trust Asset Maintenance and Management Fulfillment
 
@@ -185,9 +182,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceAndManagement/\{trustassetmaintenanceandmanagementid\}/Exchange
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange
+## PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Exchange Trust Court Administration Fulfillment
 
@@ -200,9 +201,13 @@ This API path allows you to update information related to trust court administra
 PUT: Based on REST best practices\, the name of the path should be:
 '/trust\-services/\{trustservicesid\}/court\-administration/\{trustcourtadministrationid\}/exchange'
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange
+## PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Exchange Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -216,9 +221,13 @@ PUT: The RESTful name for this path could be:
 
 '/trust\-services/\{trustservicesid\}/trust\-estate\-inheritance\-income\-tax/\{trustestate\_inheritanceandincometaxid\}/exchange'
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange
+## PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Exchange Trust Tax and Expense Fulfillment
 
@@ -232,9 +241,13 @@ PUT: Based on REST best practices\, a suitable name for the path '/TrustServices
 
 '/trust\-services/\{trustservicesid\}/tax\-and\-expenses/\{trusttaxandexpenseid\}/exchange'
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute
+## PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Execute
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Execute Trust Asset Maintenance and Management Fulfillment
 
@@ -248,9 +261,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/trust\-services/\{trustservicesid\}/asset\-maintenance\-management/\{trustassetmaintenanceandmanagementid\}/execute\`
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute
+## PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Execute
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Execute Trust Court Administration Fulfillment
 
@@ -266,9 +283,13 @@ PUT: The name of the path should be:
 
 Follows REST best practices by using nouns to represent resources and avoiding verbs in the URL\.
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute
+## PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Execute
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Execute Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -284,9 +305,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 / trust\-services/\{trustservicesid\}/trust\-estate\-inheritance\-and\-income\-tax/\{trustestate\_inheritanceandincometaxid\}/execute
 \`\`\`
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute
+## PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Execute
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Execute Trust Tax and Expense Fulfillment
 
@@ -300,9 +325,13 @@ PUT: The name of the path should be:
 
 '/trust\-services/\{trustservicesid\}/trust\-tax\-and\-expense/\{trusttaxandexpenseid\}/execute'
 
-### POST: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/Initiate
+## POST: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/Initiate
 
-**Description**
+:::info Path
+POST: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/Initiate
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Initiate Trust Asset Maintenance and Management Fulfillment
 
@@ -324,9 +353,13 @@ In this name:
 \- Dashes are used to separate words in the URI for better readability and consistency\.
 \- The operation describes initiating maintenance
 
-### POST: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/Initiate
+## POST: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/Initiate
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Initiate Trust Court Administration Fulfillment
 
@@ -340,9 +373,13 @@ POST: A suitable name for the path '/TrustServices/\{trustservicesid\}/TrustCour
 
 POST /trust\-services/\{trustservicesid\}/court\-administration/initiate
 
-### POST: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate
+## POST: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate
 
-**Description**
+:::info Path
+POST: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/Initiate
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Initiate Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -358,9 +395,13 @@ POST: Following REST best practices\, the name of the path should be:
 /TrustServices/\{trustservicesid\}/TrustEstate/InheritanceAndIncomeTax/Initiate
 \`\`\`
 
-### POST: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/Initiate
+## POST: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/Initiate
 
-**Description**
+:::info Path
+POST: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/Initiate
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Initiate Trust Tax and Expense Fulfillment
 
@@ -376,9 +417,13 @@ POST: The name of the path should be:
 /TrustServices/\{trustservicesid\}/TrustTaxandExpense
 \`\`\`
 
-### GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify
+## GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Notify
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Notify Trust Asset Maintenance and Management Fulfillment
 
@@ -396,9 +441,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, path names should use camelCase for better readability and consistency\.
 
-### GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
+## GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Notify Trust Court Administration Fulfillment
 
@@ -414,9 +463,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Notify
 \`\`\`
 
-### GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify
+## GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Notify
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Notify Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -432,9 +485,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and avoid using underscores\.
 
-### GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify
+## GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Notify
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Notify Trust Tax and Expense Fulfillment
 
@@ -448,9 +505,13 @@ GET: The name of the path following REST best practices would be:
 
 '/trust\-services/\{trustservicesid\}/trust\-tax\-and\-expense/\{trusttaxandexpenseid\}/notify'
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request
+## PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Request
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Request Trust Asset Maintenance and Management Fulfillment
 
@@ -464,9 +525,13 @@ PUT: The name of the path that follows REST best practices could be:
 
 \`/trust\-services/\{trustservicesid\}/maintenance\-and\-management/\{trustassetmaintenanceandmanagementid\}/requests\`
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request
+## PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Request
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Request Trust Court Administration Fulfillment
 
@@ -480,9 +545,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 \`/trust\-services/\{trustservicesid\}/trust\-court\-administration/\{trustcourtadministrationid\}/requests\`
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request
+## PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Request
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Request Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -496,9 +565,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/trust\-services/\{trustservicesid\}/inheritance\-and\-income\-tax/\{trustestate\_inheritanceandincometaxid\}/request\`
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request
+## PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Request
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Request Trust Tax and Expense Fulfillment
 
@@ -512,9 +585,13 @@ PUT: A suitable name for the path '/TrustServices/\{trustservicesid\}/TrustTaxan
 
 GET /trust\-services/\{trustservicesid\}/tax\-expenses/\{trusttaxandexpenseid\}/requests
 
-### GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve
+## GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Retrieve Trust Asset Maintenance and Management Fulfillment
 
@@ -528,9 +605,13 @@ GET: A more appropriate name for this path while following RESTful best practice
 
 '/trust\-services/\{trustservicesid\}/trust\-asset\-maintenance\-and\-management/\{trustassetmaintenanceandmanagementid\}/retrieve'
 
-### GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve
+## GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Retrieve Trust Court Administration Fulfillment
 
@@ -546,9 +627,13 @@ GET /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadmi
 
 This naming convention reflects the hierarchy of the resources with appropriate pluralization and follows the RESTful best practices\.
 
-### GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve
+## GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Retrieve Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -562,9 +647,13 @@ GET: The name of the path should be:
 
 GET /trust\-services/\{trustservicesid\}/trust\-estate\-inheritance\-and\-income\-tax/\{trustestate\_inheritanceandincometaxid\}
 
-### GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve
+## GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Retrieve Trust Tax and Expense Fulfillment
 
@@ -577,9 +666,13 @@ This API path allows you to retrieve information related to Trust Tax and Expens
 GET: The name of the path in adherence to REST best practices could be as follows:
 '/trust\-services/\{trustservicesid\}/trust\-tax\-and\-expense/\{trusttaxandexpenseid\}'
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update
+## PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}/Update
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Update Trust Asset Maintenance and Management Fulfillment
 
@@ -593,9 +686,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /TrustServices/\{trustservicesid\}/TrustAssetMaintenanceandManagement/\{trustassetmaintenanceandmanagementid\}
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update
+## PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustCourtAdministration/\{trustcourtadministrationid\}/Update
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Update Trust Court Administration Fulfillment
 
@@ -609,9 +706,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/trust\-services/\{trustservicesid\}/court\-administration/\{trustcourtadministrationid\}'
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update
+## PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustEstate\_InheritanceandIncomeTax/\{trustestate\_inheritanceandincometaxid\}/Update
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Update Trust Estate\, Inheritance and Income Tax Fulfillment
 
@@ -625,9 +726,13 @@ PUT: The name of the path should be:
 
 PUT /trust\-services/\{trustservicesid\}/inheritance\-tax/\{trustestate\_inheritanceandincometaxid\}
 
-### PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update
+## PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update
 
-**Description**
+:::info Path
+PUT: /TrustServices/\{trustservicesid\}/TrustTaxandExpense/\{trusttaxandexpenseid\}/Update
+:::
+
+### Description
 
 This Service Domain support a range of trust management services offered to high value customers Update Trust Tax and Expense Fulfillment
 

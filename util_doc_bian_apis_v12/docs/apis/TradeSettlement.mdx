@@ -1,42 +1,14 @@
 # TradeSettlement
 
-## Table of Contents
-- [PUT: /TradeSettlement/\{tradesettlementid\}/Control](#put-/tradesettlement/\{tradesettlementid\}/control)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/Exchange](#put-/tradesettlement/\{tradesettlementid\}/exchange)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/Execute](#put-/tradesettlement/\{tradesettlementid\}/execute)
-- [POST: /TradeSettlement/Initiate](#post-/tradesettlement/initiate)
-- [GET: /TradeSettlement/\{tradesettlementid\}/Notify](#get-/tradesettlement/\{tradesettlementid\}/notify)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/Request](#put-/tradesettlement/\{tradesettlementid\}/request)
-- [GET: /TradeSettlement/\{tradesettlementid\}/Retrieve](#get-/tradesettlement/\{tradesettlementid\}/retrieve)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/Update](#put-/tradesettlement/\{tradesettlementid\}/update)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Exchange](#put-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/\{markettradecashsettlementid\}/exchange)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Exchange](#put-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/\{markettradesecuritiessettlementid\}/exchange)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Exchange](#put-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/\{markettradesettlementconfirmationid\}/exchange)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Execute](#put-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/\{markettradecashsettlementid\}/execute)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Execute](#put-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/\{markettradesecuritiessettlementid\}/execute)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Execute](#put-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/\{markettradesettlementconfirmationid\}/execute)
-- [POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/Initiate](#post-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/initiate)
-- [POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/Initiate](#post-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/initiate)
-- [POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/Initiate](#post-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/initiate)
-- [GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Notify](#get-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/\{markettradecashsettlementid\}/notify)
-- [GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Notify](#get-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/\{markettradesecuritiessettlementid\}/notify)
-- [GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Notify](#get-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/\{markettradesettlementconfirmationid\}/notify)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Request](#put-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/\{markettradecashsettlementid\}/request)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Request](#put-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/\{markettradesecuritiessettlementid\}/request)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Request](#put-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/\{markettradesettlementconfirmationid\}/request)
-- [GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Retrieve](#get-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/\{markettradecashsettlementid\}/retrieve)
-- [GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Retrieve](#get-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/\{markettradesecuritiessettlementid\}/retrieve)
-- [GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Retrieve](#get-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/\{markettradesettlementconfirmationid\}/retrieve)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Update](#put-/tradesettlement/\{tradesettlementid\}/markettradecashsettlement/\{markettradecashsettlementid\}/update)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Update](#put-/tradesettlement/\{tradesettlementid\}/markettradesecuritiessettlement/\{markettradesecuritiessettlementid\}/update)
-- [PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Update](#put-/tradesettlement/\{tradesettlementid\}/markettradesettlementconfirmation/\{markettradesettlementconfirmationid\}/update)
-
-
 **BIAN Documentation:** [TradeSettlement v12](https://app.swaggerhub.com/apis/BIAN-3/TradeSettlement/12.0.0)
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/Control
+## PUT: /TradeSettlement/\{tradesettlementid\}/Control
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Control Trade Settlement Procedure
 
@@ -48,9 +20,13 @@ This API path allows you to update an existing trade settlement by controlling a
 
 PUT: The name of the path should be \`/trade\-settlements/\{tradeSettlementId\}/control\` in kebab case to follow REST best practices\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/Exchange
+## PUT: /TradeSettlement/\{tradesettlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Exchange Trade Settlement Procedure
 
@@ -62,9 +38,13 @@ This API path is used to update an existing trade settlement process in the fina
 
 PUT: The name of the path should be \`/trade\-settlements/\{tradeSettlementId\}/exchange\`\, following REST best practices\. This naming convention uses lowercase letters\, separates words with hyphens\, and uses plural nouns for collections\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/Execute
+## PUT: /TradeSettlement/\{tradesettlementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Execute Trade Settlement Procedure
 
@@ -82,9 +62,13 @@ PUT: The name of the path should ideally be:
 
 It follows the REST best practice of using lowercase letters\, separating words with hyphens\, and using nouns to represent resources\.
 
-### POST: /TradeSettlement/Initiate
+## POST: /TradeSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /TradeSettlement/Initiate
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Initiate Trade Settlement Procedure
 
@@ -96,9 +80,13 @@ This API path allows users to initiate the process of settling a market trade by
 
 POST: The name of the path should be something that represents a resource which can be acted upon\. Based on the given path '/TradeSettlement/Initiate'\, a more RESTful name for the resource could be '/trade\-settlements' if it represents a collection of trade settlements\, and a possible action could be 'POST' to initiate the trade settlement process\. So\, a more appropriate RESTful path name could be '/trade\-settlements' with a 'POST' request to initiate a new trade
 
-### GET: /TradeSettlement/\{tradesettlementid\}/Notify
+## GET: /TradeSettlement/\{tradesettlementid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Notify Trade Settlement Procedure
 
@@ -110,9 +98,13 @@ This API path '/TradeSettlement/\{tradesettlementid\}/Notify' is used to retriev
 
 GET: The name of the path should be \`/trade\-settlement/\{tradeSettlementId\}/notify\` for following REST best practices\. The path should be in lowercase letters and words should be separated by hyphens for better readability and consistency\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/Request
+## PUT: /TradeSettlement/\{tradesettlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Request Trade Settlement Procedure
 
@@ -126,9 +118,13 @@ PUT: The appropriate name for the path would be:
 
 '/trade\-settlements/\{tradesettlementid\}/request'
 
-### GET: /TradeSettlement/\{tradesettlementid\}/Retrieve
+## GET: /TradeSettlement/\{tradesettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Retrieve Trade Settlement Procedure
 
@@ -142,9 +138,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/trade\-settlements/\{tradeSettlementId\}/retrieve'
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/Update
+## PUT: /TradeSettlement/\{tradesettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Update Trade Settlement Procedure
 
@@ -160,9 +160,13 @@ PUT: The name of the path should be:
 
 In RESTful best practices\, the HTTP method PUT is typically used to update a resource at a specific URL\. So\, in this case\, the request to update a trade settlement with a specific ID would be handled by sending a PUT request to the endpoint /TradeSettlement/\{tradesettlementid\}\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Exchange
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Exchange Market Trade Cash Settlement Workstep
 
@@ -175,9 +179,13 @@ This API path is used to update an existing market trade cash settlement process
 PUT: The name of the path should be:
 '/trade\-settlements/\{tradeSettlementId\}/market\-trade\-cash\-settlements/\{marketTradeCashSettlementId\}/exchange'
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Exchange
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Exchange Market Trade Securities Settlement Workstep
 
@@ -191,9 +199,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/trade\-settlement/\{tradesettlementid\}/market\-trade\-securities\-settlement/\{markettradesecuritiessettlementid\}/exchange'
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Exchange
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Exchange Market Trade Settlement Confirmation Workstep
 
@@ -207,9 +219,13 @@ PUT: The name of the path should be:
 
 "/trade\-settlements/\{tradeSettlementId\}/market\-trade\-settlement\-confirmations/\{marketTradeSettlementConfirmationId\}/exchange"
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Execute
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Execute Market Trade Cash Settlement Workstep
 
@@ -230,9 +246,13 @@ Here are the key recommendations followed:
 2\. Use lowercase letters for path segments\.
 3\. Use hyphens to separate words in a path segment when necessary
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Execute
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Execute Market Trade Securities Settlement Workstep
 
@@ -246,9 +266,13 @@ PUT: Following REST best practices\, the name of the path should ideally be a no
 
 '/TradeSettlements/\{tradesettlementid\}/MarketTradeSecuritiesSettlements/\{markettradesecuritiessettlementid\}/Execution'
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Execute
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Execute Market Trade Settlement Confirmation Workstep
 
@@ -262,9 +286,13 @@ PUT: Based on the REST best practices\, the name of the path should be:
 
 /TradeSettlements/\{tradesettlementid\}/MarketTradeSettlementConfirmations/\{markettradesettlementconfirmationid\}/Execute
 
-### POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/Initiate
+## POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/Initiate
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Initiate Market Trade Cash Settlement Workstep
 
@@ -280,9 +308,13 @@ POST: A potential RESTful name for the given path could be:
 
 This naming convention follows the REST best practices of using lowercase letters\, using plural nouns for collections\, and using specific resource identifiers\.
 
-### POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/Initiate
+## POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/Initiate
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Initiate Market Trade Securities Settlement Workstep
 
@@ -298,9 +330,13 @@ POST: The name of the path should be:
 /TradeSettlements/\{tradesettlementid\}/MarketTradeSecuritiesSettlements/Initiate
 \`\`\`
 
-### POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/Initiate
+## POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/Initiate
 
-**Description**
+:::info Path
+POST: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Initiate Market Trade Settlement Confirmation Workstep
 
@@ -316,9 +352,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 Make sure to use lowercase letters and hyphens to separate words for improved readability and consistency\.
 
-### GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Notify
+## GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Notify Market Trade Cash Settlement Workstep
 
@@ -332,9 +372,13 @@ GET: Based on REST best practices\, a cleaner and more descriptive naming conven
 
 '/trade\-settlements/\{tradeSettlementId\}/market\-trade\-cash\-settlements/\{marketTradeCashSettlementId\}/notify'
 
-### GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Notify
+## GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Notify Market Trade Securities Settlement Workstep
 
@@ -356,9 +400,13 @@ Here are some key points to consider:
 \- Use camelCase for multi\-word resource names\.
 \- Use unique identifiers like tradeSettlementId and marketTradeSecuritiesSettlementId instead of
 
-### GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Notify
+## GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Notify Market Trade Settlement Confirmation Workstep
 
@@ -372,9 +420,13 @@ GET: Based on REST best practices\, the name of the path could be something like
 
 '/tradesettlements/\{tradesettlementid\}/markettradesettlementconfirmations/\{markettradesettlementconfirmationid\}/notify'
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Request
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Request Market Trade Cash Settlement Workstep
 
@@ -388,9 +440,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/trade\-settlements/\{tradesettlementid\}/market\-trade\-cash\-settlements/\{markettradecashsettlementid\}/requests'
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Request
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Request Market Trade Securities Settlement Workstep
 
@@ -406,9 +462,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path '/Trade
 
 This path follows the convention of using lowercase letters\, using plural nouns for collections\, and using '\-' to separate words for better readability\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Request
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Request Market Trade Settlement Confirmation Workstep
 
@@ -422,9 +482,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /TradeSettlements/\{tradesettlementid\}/MarketTradeSettlementConfirmations/\{markettradesettlementconfirmationid\}/Requests
 
-### GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Retrieve
+## GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Retrieve Market Trade Cash Settlement Workstep
 
@@ -438,9 +502,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 '/tradesettlements/\{tradesettlementid\}/markettradecashsettlements/\{markettradecashsettlementid\}'
 
-### GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Retrieve
+## GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Retrieve Market Trade Securities Settlement Workstep
 
@@ -454,9 +522,13 @@ GET: The name of the path should be:
 
 GET /tradesettlements/\{tradesettlementid\}/markettradesecurities/\{markettradesecuritiessettlementid\}
 
-### GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Retrieve
+## GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Retrieve Market Trade Settlement Confirmation Workstep
 
@@ -470,9 +542,13 @@ GET: A potential name for the path could be: \`/trade\-settlements/\{tradeSettle
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using resource identifiers in the path\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Update
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeCashSettlement/\{markettradecashsettlementid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Update Market Trade Cash Settlement Workstep
 
@@ -488,9 +564,13 @@ PUT: Following REST best practices\, the naming of the path should be as follows
 
 Here\, '\{id\}' would represent the trade settlement ID and market trade cash settlement ID\, respectively\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Update
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Update Market Trade Securities Settlement Workstep
 
@@ -502,9 +582,13 @@ This BIAN API path allows you to update the details of a specific market trade s
 
 PUT: The name of the path '/TradeSettlement/\{tradesettlementid\}/MarketTradeSecuritiesSettlement/\{markettradesecuritiessettlementid\}/Update' should be updated to '/trade\-settlements/\{tradesettlementid\}/market\-trade\-securities\-settlements/\{markettradesecuritiessettlementid\}' while following REST best practices\. This new path provides a more standardized naming convention using lowercase letters with hyphens as separators between words\.
 
-### PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Update
+## PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeSettlement/\{tradesettlementid\}/MarketTradeSettlementConfirmation/\{markettradesettlementconfirmationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the final movement of cash and securities between depositories as previously confirmed in the clearing process\, in order to settle a market trade Update Market Trade Settlement Confirmation Workstep
 

@@ -1,19 +1,14 @@
 # FinancialAccounting
 
-## Table of Contents
-- [POST: /FinancialAccounting/Initiate](#post-/financialaccounting/initiate)
-- [PUT: /FinancialAccounting/\{financialaccountingid\}/Update](#put-/financialaccounting/\{financialaccountingid\}/update)
-- [GET: /FinancialAccounting/\{financialaccountingid\}/Retrieve](#get-/financialaccounting/\{financialaccountingid\}/retrieve)
-- [PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Update](#put-/financialaccounting/\{financialaccountingid\}/ledgerposting/\{ledgerpostingid\}/update)
-- [PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Capture](#put-/financialaccounting/\{financialaccountingid\}/ledgerposting/\{ledgerpostingid\}/capture)
-- [GET: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Retrieve](#get-/financialaccounting/\{financialaccountingid\}/ledgerposting/\{ledgerpostingid\}/retrieve)
-
-
 **BIAN Documentation:** [FinancialAccounting v12](https://app.swaggerhub.com/apis/BIAN-3/FinancialAccounting/12.0.0)
 
-### POST: /FinancialAccounting/Initiate
+## POST: /FinancialAccounting/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialAccounting/Initiate
+:::
+
+### Description
 
 The Financial Accounting Service Domain takes in financial facts and based on these\, creates accounting instructions that will update the general ledger and sub ledger accounts InCR Initiate a financial accounting log \(account\)
 
@@ -25,9 +20,13 @@ This API path is used to create a new financial accounting log or account\. It t
 
 POST: Following REST best practices\, the name of the path should be \`/financial\-accounting/initiate\`\, using lowercase letters and dashes to separate words\. This convention improves readability and consistency in the URL structure\.
 
-### PUT: /FinancialAccounting/\{financialaccountingid\}/Update
+## PUT: /FinancialAccounting/\{financialaccountingid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialAccounting/\{financialaccountingid\}/Update
+:::
+
+### Description
 
 The Financial Accounting Service Domain takes in financial facts and based on these\, creates accounting instructions that will update the general ledger and sub ledger accounts UpCR Update details for an active financial account
 
@@ -39,9 +38,13 @@ This API path allows you to update the details for an active financial account w
 
 PUT: The name of the path should be \`/financial\-accounting/\{financialAccountId\}\` instead of \`/FinancialAccounting/\{financialaccountId\}/Update\` to follow REST best practices\.
 
-### GET: /FinancialAccounting/\{financialaccountingid\}/Retrieve
+## GET: /FinancialAccounting/\{financialaccountingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialAccounting/\{financialaccountingid\}/Retrieve
+:::
+
+### Description
 
 The Financial Accounting Service Domain takes in financial facts and based on these\, creates accounting instructions that will update the general ledger and sub ledger accounts ReCR Retrieve information about the log
 
@@ -55,9 +58,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 /financial\-accounting/\{financialaccountingid\}
 
-### PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Update
+## PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Update
+:::
+
+### Description
 
 The Financial Accounting Service Domain takes in financial facts and based on these\, creates accounting instructions that will update the general ledger and sub ledger accounts UpBQ Update details of a posting \(repair\)
 
@@ -71,9 +78,13 @@ PUT: The name of the path should be:
 
 '/FinancialAccounts/\{financialaccountid\}/LedgerPostings/\{ledgerpostingid\}'
 
-### PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Capture
+## PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Capture
+:::
+
+### Description
 
 The Financial Accounting Service Domain takes in financial facts and based on these\, creates accounting instructions that will update the general ledger and sub ledger accounts CaBQ Post to the financial account
 
@@ -89,9 +100,13 @@ PUT: The name of the path should be structured in a RESTful manner by using noun
 
 This path name emphasizes the hierarchy and relationships between the resources while maintaining a clear and descriptive format\.
 
-### GET: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Retrieve
+## GET: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialAccounting/\{financialaccountingid\}/LedgerPosting/\{ledgerpostingid\}/Retrieve
+:::
+
+### Description
 
 The Financial Accounting Service Domain takes in financial facts and based on these\, creates accounting instructions that will update the general ledger and sub ledger accounts ReBQ Retrieve details of postings from the account
 

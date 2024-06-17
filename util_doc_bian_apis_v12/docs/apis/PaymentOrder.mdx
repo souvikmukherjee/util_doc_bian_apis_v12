@@ -1,19 +1,14 @@
 # PaymentOrder
 
-## Table of Contents
-- [POST: /PaymentOrder/Initiate](#post-/paymentorder/initiate)
-- [PUT: /PaymentOrder/\{paymentorderid\}/Update](#put-/paymentorder/\{paymentorderid\}/update)
-- [GET: /PaymentOrder/\{paymentorderid\}/Retrieve](#get-/paymentorder/\{paymentorderid\}/retrieve)
-- [GET: /PaymentOrder/\{paymentorderid\}/OrderConfirmation/\{orderconfirmationid\}/Retrieve](#get-/paymentorder/\{paymentorderid\}/orderconfirmation/\{orderconfirmationid\}/retrieve)
-- [PUT: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Control](#put-/paymentorder/\{paymentorderid\}/executioninitiation/\{executioninitiationid\}/control)
-- [GET: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Retrieve](#get-/paymentorder/\{paymentorderid\}/executioninitiation/\{executioninitiationid\}/retrieve)
-
-
 **BIAN Documentation:** [PaymentOrder v12](https://app.swaggerhub.com/apis/BIAN-3/PaymentOrder/12.0.0)
 
-### POST: /PaymentOrder/Initiate
+## POST: /PaymentOrder/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentOrder/Initiate
+:::
+
+### Description
 
 This service domain handles the bank\-side processing of funds transfers\, making the necessary bank and regulatory checks on the involved parties and applying their payment preferences where appropriate InCR Initiate a payment order procedure
 
@@ -25,9 +20,13 @@ This API path is used to initiate a payment order within a bank's system\. It in
 
 POST: Following REST best practices\, the name of the path should ideally be something more resource\-oriented and descriptive\. One suggestion could be '/payment\-orders/initiate'\, which clearly indicates that a payment order resource is being initiated\. Remember to use lowercase letters\, hyphens for multi\-word URLs\, and plural nouns for consistency in RESTful API design\.
 
-### PUT: /PaymentOrder/\{paymentorderid\}/Update
+## PUT: /PaymentOrder/\{paymentorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentOrder/\{paymentorderid\}/Update
+:::
+
+### Description
 
 This service domain handles the bank\-side processing of funds transfers\, making the necessary bank and regulatory checks on the involved parties and applying their payment preferences where appropriate UpCR Update details of a payment order instruction
 
@@ -43,9 +42,13 @@ PUT /PaymentOrder/\{paymentorderid\}
 
 This follows the REST convention of using HTTP methods to perform actions on resources\. In this case\, the PUT method is used to update an existing payment order identified by its paymentorderid\.
 
-### GET: /PaymentOrder/\{paymentorderid\}/Retrieve
+## GET: /PaymentOrder/\{paymentorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentOrder/\{paymentorderid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the bank\-side processing of funds transfers\, making the necessary bank and regulatory checks on the involved parties and applying their payment preferences where appropriate ReCR Retrieve details about a payment order instruction
 
@@ -61,9 +64,13 @@ GET /PaymentOrders/\{paymentorderid\}
 
 This name follows the convention of using nouns for resource paths and using HTTP methods to clearly indicate the action to retrieve a specific payment order\.
 
-### GET: /PaymentOrder/\{paymentorderid\}/OrderConfirmation/\{orderconfirmationid\}/Retrieve
+## GET: /PaymentOrder/\{paymentorderid\}/OrderConfirmation/\{orderconfirmationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentOrder/\{paymentorderid\}/OrderConfirmation/\{orderconfirmationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the bank\-side processing of funds transfers\, making the necessary bank and regulatory checks on the involved parties and applying their payment preferences where appropriate ReBQ Retrieve details about a payment order confirmation process
 
@@ -77,9 +84,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/payment\-orders/\{paymentOrderId\}/order\-confirmations/\{orderConfirmationId\}/retrieve'
 
-### PUT: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Control
+## PUT: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Control
 
-**Description**
+:::info Path
+PUT: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Control
+:::
+
+### Description
 
 This service domain handles the bank\-side processing of funds transfers\, making the necessary bank and regulatory checks on the involved parties and applying their payment preferences where appropriate CoBQ Control the payment execution processing
 
@@ -95,9 +106,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens for readability and consistency\.
 
-### GET: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Retrieve
+## GET: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentOrder/\{paymentorderid\}/ExecutionInitiation/\{executioninitiationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the bank\-side processing of funds transfers\, making the necessary bank and regulatory checks on the involved parties and applying their payment preferences where appropriate ReBQ Retrieve details about the payment execution processing
 

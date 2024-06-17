@@ -1,21 +1,14 @@
 # ProductionRelease
 
-## Table of Contents
-- [POST: /ProductionRelease/Evaluate](#post-/productionrelease/evaluate)
-- [PUT: /ProductionRelease/\{productionreleaseid\}/Update](#put-/productionrelease/\{productionreleaseid\}/update)
-- [PUT: /ProductionRelease/\{productionreleaseid\}/Request](#put-/productionrelease/\{productionreleaseid\}/request)
-- [GET: /ProductionRelease/\{productionreleaseid\}/Retrieve](#get-/productionrelease/\{productionreleaseid\}/retrieve)
-- [GET: /ProductionRelease/\{productionreleaseid\}/FunctionalRisk/\{functionalriskid\}/Retrieve](#get-/productionrelease/\{productionreleaseid\}/functionalrisk/\{functionalriskid\}/retrieve)
-- [GET: /ProductionRelease/\{productionreleaseid\}/ProductionRisk/\{productionriskid\}/Retrieve](#get-/productionrelease/\{productionreleaseid\}/productionrisk/\{productionriskid\}/retrieve)
-- [GET: /ProductionRelease/\{productionreleaseid\}/BusinessRisk/\{businessriskid\}/Retrieve](#get-/productionrelease/\{productionreleaseid\}/businessrisk/\{businessriskid\}/retrieve)
-- [GET: /ProductionRelease/\{productionreleaseid\}/OperationalRisk/\{operationalriskid\}/Retrieve](#get-/productionrelease/\{productionreleaseid\}/operationalrisk/\{operationalriskid\}/retrieve)
-
-
 **BIAN Documentation:** [ProductionRelease v12](https://app.swaggerhub.com/apis/BIAN-3/ProductionRelease/12.0.0)
 
-### POST: /ProductionRelease/Evaluate
+## POST: /ProductionRelease/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductionRelease/Evaluate
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems EvCR Evaluate various risk exposures for a production release
 
@@ -27,9 +20,13 @@ This BIAN API path allows you to create and apply production release tests for n
 
 POST: In RESTful design\, the path '/ProductionRelease/Evaluate' should be named in a resource\-oriented manner\. A common convention is to use plural nouns to represent resources\. So\, a possible more RESTful name for this path could be '/production\-releases/evaluations'\. This naming convention helps make the API more intuitive and easier to understand for developers\.
 
-### PUT: /ProductionRelease/\{productionreleaseid\}/Update
+## PUT: /ProductionRelease/\{productionreleaseid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductionRelease/\{productionreleaseid\}/Update
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems UpCR Update aspects of an active production release evaluation
 
@@ -47,9 +44,13 @@ PUT /production\-releases/\{productionreleaseid\}
 
 This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, and includes the action in the HTTP method \(PUT\) rather than the path itself\.
 
-### PUT: /ProductionRelease/\{productionreleaseid\}/Request
+## PUT: /ProductionRelease/\{productionreleaseid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductionRelease/\{productionreleaseid\}/Request
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems RqCR Request manual intervention in an evaluation
 
@@ -68,9 +69,13 @@ In this format:
 \- Use plural nouns for collections\, such as 'production\-releases' and 'requests'
 \- Use hyphens to separate words in a path rather than underscores to improve readability
 
-### GET: /ProductionRelease/\{productionreleaseid\}/Retrieve
+## GET: /ProductionRelease/\{productionreleaseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductionRelease/\{productionreleaseid\}/Retrieve
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems ReCR Retrieve details about a production release evaluation
 
@@ -86,9 +91,13 @@ GET /production\-releases/\{productionReleaseId\}
 
 This naming convention follows REST best practices by using lowercase letters\, hyphens to separate words\, and using singular nouns for resources\.
 
-### GET: /ProductionRelease/\{productionreleaseid\}/FunctionalRisk/\{functionalriskid\}/Retrieve
+## GET: /ProductionRelease/\{productionreleaseid\}/FunctionalRisk/\{functionalriskid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductionRelease/\{productionreleaseid\}/FunctionalRisk/\{functionalriskid\}/Retrieve
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems ReBQ Retrieve details about a functional risk assessment
 
@@ -102,9 +111,13 @@ GET: A suggested RESTful name for this path would be:
 
 GET '/production\-releases/\{productionreleaseid\}/functional\-risks/\{functionalriskid\}'
 
-### GET: /ProductionRelease/\{productionreleaseid\}/ProductionRisk/\{productionriskid\}/Retrieve
+## GET: /ProductionRelease/\{productionreleaseid\}/ProductionRisk/\{productionriskid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductionRelease/\{productionreleaseid\}/ProductionRisk/\{productionriskid\}/Retrieve
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems ReBQ Retrieve details about a production risk assessment
 
@@ -118,9 +131,13 @@ GET: A good naming convention for this path following REST best practices would 
 
 GET '/production\-releases/\{productionreleaseid\}/production\-risks/\{productionriskid\}'
 
-### GET: /ProductionRelease/\{productionreleaseid\}/BusinessRisk/\{businessriskid\}/Retrieve
+## GET: /ProductionRelease/\{productionreleaseid\}/BusinessRisk/\{businessriskid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductionRelease/\{productionreleaseid\}/BusinessRisk/\{businessriskid\}/Retrieve
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems ReBQ Retrieve details about a business risk assessment
 
@@ -134,9 +151,13 @@ GET: The name of the path following REST best practices could be something like:
 
 GET '/production\-releases/\{productionreleaseId\}/business\-risks/\{businessRiskId\}'
 
-### GET: /ProductionRelease/\{productionreleaseid\}/OperationalRisk/\{operationalriskid\}/Retrieve
+## GET: /ProductionRelease/\{productionreleaseid\}/OperationalRisk/\{operationalriskid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductionRelease/\{productionreleaseid\}/OperationalRisk/\{operationalriskid\}/Retrieve
+:::
+
+### Description
 
 Maintain and apply production release tests for new and updated systems ReBQ Retrieve details about a operational risk assessment
 

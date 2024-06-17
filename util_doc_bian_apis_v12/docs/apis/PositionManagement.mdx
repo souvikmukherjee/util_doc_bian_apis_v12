@@ -1,22 +1,14 @@
 # PositionManagement
 
-## Table of Contents
-- [POST: /PositionManagement/Initiate](#post-/positionmanagement/initiate)
-- [PUT: /PositionManagement/\{positionmanagementid\}/Update](#put-/positionmanagement/\{positionmanagementid\}/update)
-- [PUT: /PositionManagement/\{positionmanagementid\}/Request](#put-/positionmanagement/\{positionmanagementid\}/request)
-- [POST: /PositionManagement/\{positionmanagementid\}/TrialTransaction/Initiate](#post-/positionmanagement/\{positionmanagementid\}/trialtransaction/initiate)
-- [PUT: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Update](#put-/positionmanagement/\{positionmanagementid\}/trialtransaction/\{trialtransactionid\}/update)
-- [GET: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Retrieve](#get-/positionmanagement/\{positionmanagementid\}/trialtransaction/\{trialtransactionid\}/retrieve)
-- [POST: /PositionManagement/\{positionmanagementid\}/TransactionApplication/Initiate](#post-/positionmanagement/\{positionmanagementid\}/transactionapplication/initiate)
-- [PUT: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Update](#put-/positionmanagement/\{positionmanagementid\}/transactionapplication/\{transactionapplicationid\}/update)
-- [GET: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Retrieve](#get-/positionmanagement/\{positionmanagementid\}/transactionapplication/\{transactionapplicationid\}/retrieve)
-
-
 **BIAN Documentation:** [PositionManagement v12](https://app.swaggerhub.com/apis/BIAN-3/PositionManagement/12.0.0)
 
-### POST: /PositionManagement/Initiate
+## POST: /PositionManagement/Initiate
 
-**Description**
+:::info Path
+POST: /PositionManagement/Initiate
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions InCR Initialize a monitored financial position
 
@@ -28,9 +20,13 @@ This API path\, /PositionManagement/Initiate\, allows users to create a new moni
 
 POST: Based on REST best practices\, the path '/PositionManagement/Initiate' should ideally be named as '/position\-management'\. RESTful URLs should generally use lowercase letters and hyphens to separate words for better readability and consistency\.
 
-### PUT: /PositionManagement/\{positionmanagementid\}/Update
+## PUT: /PositionManagement/\{positionmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /PositionManagement/\{positionmanagementid\}/Update
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions UpCR Update the settings and notification arrangements for a position
 
@@ -43,9 +39,13 @@ This API path allows you to update the settings and notification arrangements fo
 PUT: The name of the path should be:
 '/positions/\{positionId\}/update'
 
-### PUT: /PositionManagement/\{positionmanagementid\}/Request
+## PUT: /PositionManagement/\{positionmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /PositionManagement/\{positionmanagementid\}/Request
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions ReCR Get details and the current value of a monitored position
 
@@ -59,9 +59,13 @@ PUT: The name of the path "/PositionManagement/\{positionmanagementid\}/Request"
 
 For example\, if the endpoint represents a specific request related to position management\, a more appropriate name for the path could be "/PositionManagement/\{positionmanagementid\}/Requests/\{requestid\}"\. This naming convention helps to clearly identify the resource being accessed and maintains consistency and clarity
 
-### POST: /PositionManagement/\{positionmanagementid\}/TrialTransaction/Initiate
+## POST: /PositionManagement/\{positionmanagementid\}/TrialTransaction/Initiate
 
-**Description**
+:::info Path
+POST: /PositionManagement/\{positionmanagementid\}/TrialTransaction/Initiate
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions InBQ Initiate the evaluation impact of a trial transaction
 
@@ -81,9 +85,13 @@ Here's the breakdown of each part of the path based on REST best practices:
 
 By
 
-### PUT: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Update
+## PUT: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Update
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions UpBQ Update details of a trial transaction
 
@@ -95,9 +103,13 @@ This API path allows for updating specific details of a trial transaction within
 
 PUT: The name of the path following REST best practices could be: '/position\-management/\{positionmanagementid\}/trial\-transaction/\{trialtransactionid\}'\.
 
-### GET: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Retrieve
+## GET: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PositionManagement/\{positionmanagementid\}/TrialTransaction/\{trialtransactionid\}/Retrieve
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions ReBQ Retrieve details about a trial transaction and its position impact
 
@@ -113,9 +125,13 @@ GET: The appropriate RESTful naming convention for this path would be:
 
 This format uses lowercase words separated by slashes to represent the hierarchical relationships between resources\, following the convention of using plural nouns for resources\.
 
-### POST: /PositionManagement/\{positionmanagementid\}/TransactionApplication/Initiate
+## POST: /PositionManagement/\{positionmanagementid\}/TransactionApplication/Initiate
 
-**Description**
+:::info Path
+POST: /PositionManagement/\{positionmanagementid\}/TransactionApplication/Initiate
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions InBQ Initiate the registering of a transaction against the position
 
@@ -129,9 +145,13 @@ POST: The name of the path should be:
 
 /positions/\{positionId\}/transactions/initiate
 
-### PUT: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Update
+## PUT: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Update
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions UpBQ Update details of a registered transaction
 
@@ -149,9 +169,13 @@ PUT: The name of the path should be:
 
 In RESTful design\, we should use plural nouns for resource names in the URL\. It's recommended to keep the resource names clear and concise to improve the readability and maintainability of the API\.
 
-### GET: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Retrieve
+## GET: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PositionManagement/\{positionmanagementid\}/TransactionApplication/\{transactionapplicationid\}/Retrieve
+:::
+
+### Description
 
 The Service Domain tracks the bank's consolidated financial positions for major customers and complex market conditions ReBQ Retrieve details about a registered transaction and its position impact
 

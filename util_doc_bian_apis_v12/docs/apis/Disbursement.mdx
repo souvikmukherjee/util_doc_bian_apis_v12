@@ -1,18 +1,14 @@
 # Disbursement
 
-## Table of Contents
-- [POST: /Disbursement/Initiate](#post-/disbursement/initiate)
-- [PUT: /Disbursement/\{disbursementid\}/Update](#put-/disbursement/\{disbursementid\}/update)
-- [PUT: /Disbursement/\{disbursementid\}/Execute](#put-/disbursement/\{disbursementid\}/execute)
-- [PUT: /Disbursement/\{disbursementid\}/Request](#put-/disbursement/\{disbursementid\}/request)
-- [GET: /Disbursement/\{disbursementid\}/Retrieve](#get-/disbursement/\{disbursementid\}/retrieve)
-
-
 **BIAN Documentation:** [Disbursement v12](https://app.swaggerhub.com/apis/BIAN-3/Disbursement/12.0.0)
 
-### POST: /Disbursement/Initiate
+## POST: /Disbursement/Initiate
 
-**Description**
+:::info Path
+POST: /Disbursement/Initiate
+:::
+
+### Description
 
 This service domain handles the disbursement of funds to newly established loans/facilities as necessary InCR Initiate a disbursement
 
@@ -24,9 +20,13 @@ This API path allows you to initiate the disbursement of funds for new loans or 
 
 POST: Based on REST best practices\, the path '/Disbursements' would be more appropriate as it would refer to the collection of disbursements instead of the specific action of initiating a single disbursement\.
 
-### PUT: /Disbursement/\{disbursementid\}/Update
+## PUT: /Disbursement/\{disbursementid\}/Update
 
-**Description**
+:::info Path
+PUT: /Disbursement/\{disbursementid\}/Update
+:::
+
+### Description
 
 This service domain handles the disbursement of funds to newly established loans/facilities as necessary UpCR Update details of a disbursement
 
@@ -38,9 +38,13 @@ This API path allows you to update the details of a disbursement identified by i
 
 PUT: The path '/Disbursements/\{disbursementid\}' would likely be more aligned with REST best practices as it represents a specific resource \(a single disbursement\) and allows for operations such as updating to be performed on that resource\.
 
-### PUT: /Disbursement/\{disbursementid\}/Execute
+## PUT: /Disbursement/\{disbursementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Disbursement/\{disbursementid\}/Execute
+:::
+
+### Description
 
 This service domain handles the disbursement of funds to newly established loans/facilities as necessary ExCR Execute an automated task against an active disbursement
 
@@ -54,9 +58,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/disbursements/\{disbursementid\}/execute'
 
-### PUT: /Disbursement/\{disbursementid\}/Request
+## PUT: /Disbursement/\{disbursementid\}/Request
 
-**Description**
+:::info Path
+PUT: /Disbursement/\{disbursementid\}/Request
+:::
+
+### Description
 
 This service domain handles the disbursement of funds to newly established loans/facilities as necessary RqCR Request manual intervention with a disbursement transaction
 
@@ -74,9 +82,13 @@ PUT: The name of the path should be:
 
 Ensure that the resource name is in plural form \(\`Disbursements\` and \`Requests\`\) and the path parameters are specified within curly braces\.
 
-### GET: /Disbursement/\{disbursementid\}/Retrieve
+## GET: /Disbursement/\{disbursementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Disbursement/\{disbursementid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the disbursement of funds to newly established loans/facilities as necessary ReCR Retrieve details about a disbursement transaction
 

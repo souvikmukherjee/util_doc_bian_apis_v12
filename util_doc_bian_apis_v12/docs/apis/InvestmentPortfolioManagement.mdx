@@ -1,25 +1,14 @@
 # InvestmentPortfolioManagement
 
-## Table of Contents
-- [POST: /InvestmentPortfolioManagement/Initiate](#post-/investmentportfoliomanagement/initiate)
-- [PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Update](#put-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/update)
-- [PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Execute](#put-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/execute)
-- [PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Request](#put-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/request)
-- [GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Retrieve](#get-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/retrieve)
-- [GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Track/\{trackid\}/Retrieve](#get-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/track/\{trackid\}/retrieve)
-- [GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/MarketOpportunities/\{marketopportunitiesid\}/Retrieve](#get-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/marketopportunities/\{marketopportunitiesid\}/retrieve)
-- [POST: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/Initiate](#post-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/tradeinitiation/initiate)
-- [PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Update](#put-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/tradeinitiation/\{tradeinitiationid\}/update)
-- [PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Exchange](#put-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/tradeinitiation/\{tradeinitiationid\}/exchange)
-- [PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Request](#put-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/tradeinitiation/\{tradeinitiationid\}/request)
-- [GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve](#get-/investmentportfoliomanagement/\{investmentportfoliomanagementid\}/tradeinitiation/\{tradeinitiationid\}/retrieve)
-
-
 **BIAN Documentation:** [InvestmentPortfolioManagement v12](https://app.swaggerhub.com/apis/BIAN-3/InvestmentPortfolioManagement/12.0.0)
 
-### POST: /InvestmentPortfolioManagement/Initiate
+## POST: /InvestmentPortfolioManagement/Initiate
 
-**Description**
+:::info Path
+POST: /InvestmentPortfolioManagement/Initiate
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies InCR Initiate investment portfolio management activity for a customer
 
@@ -33,9 +22,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /investment\-portfolio\-management/initiate
 
-### PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Update
+## PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Update
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies UpCR Update details of an active investment portfolio management arrangement
 
@@ -49,9 +42,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /InvestmentPortfolios/\{investmentportfoliomanagementid\}
 
-### PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Execute
+## PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Execute
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies ExCR Execute an automated service
 
@@ -67,9 +64,13 @@ PUT: The path \`/InvestmentPortfolioManagement/\{investmentportfoliomanagementid
 
 This naming follows REST best practices by using HTTP POST method for actions that trigger an execution in the investment portfolio management resource\.
 
-### PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Request
+## PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Request
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies RqCR Request manual intervention
 
@@ -81,9 +82,13 @@ This API path allows you to update an existing investment portfolio management r
 
 PUT: The name of the path should be "/investment\-portfolio\-management/\{investmentportfolio\-management\-id\}/requests" to follow REST best practices\. It should be in lowercase letters and use hyphens to separate words for better readability and consistency\. Additionally\, it is important to use plural nouns for collections\, such as "requests" in this case\.
 
-### GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Retrieve
+## GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Retrieve
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies ReCR Retrieve details about a managed investment portfolio
 
@@ -97,9 +102,13 @@ GET: The name of the path should be:
 
 GET /investment\-portfolio\-management/\{investmentPortfolioManagementId\}
 
-### GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Track/\{trackid\}/Retrieve
+## GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Track/\{trackid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/Track/\{trackid\}/Retrieve
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies ReBQ Retrieve details about tracking insights for the portfolio
 
@@ -113,9 +122,13 @@ GET: A recommended name for this path following REST best practices could be:
 
 GET /investment\-portfolios/\{investmentPortfolioId\}/tracks/\{trackId\}
 
-### GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/MarketOpportunities/\{marketopportunitiesid\}/Retrieve
+## GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/MarketOpportunities/\{marketopportunitiesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/MarketOpportunities/\{marketopportunitiesid\}/Retrieve
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies ReBQ Retrieve details about a related market opportunity
 
@@ -129,9 +142,13 @@ GET: The name of the path should be:
 
 GET /investment\-portfolio\-management/\{investment\_portfolio\_management\_id\}/market\-opportunities/\{market\_opportunities\_id\}
 
-### POST: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/Initiate
+## POST: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/Initiate
 
-**Description**
+:::info Path
+POST: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/Initiate
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies InBQ Initiate a trade against the investment portfolio holdings
 
@@ -147,9 +164,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 Replacing the placeholder values with the actual resource names in lowercase and using hyphens for readability is a common convention in RESTful API naming\.
 
-### PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Update
+## PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Update
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies UpBQ Update a market trade request
 
@@ -163,9 +184,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /investment\-portfolio\-management/\{investmentportfoliomanagementid\}/trade\-initiation/\{tradeinitiationid\}
 
-### PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Exchange
+## PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Exchange
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies EcBQ Accept\, reject etc\. a market trade proposed for the portfolio
 
@@ -181,9 +206,13 @@ PUT: Based on REST best practices\, a suitable name for the path '/InvestmentPor
 
 In this naming convention\, the path uses plural nouns to represent collections\, and each resource in the path is represented by a separate noun\.
 
-### PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Request
+## PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Request
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies ReBQ Request manual intervention to a related market trade
 
@@ -197,9 +226,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /InvestmentPortfolios/\{investmentPortfolioId\}/TradeInitiations/\{tradeInitiationId\}/Requests
 
-### GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
+## GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioManagement/\{investmentportfoliomanagementid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
+:::
+
+### Description
 
 Manage an investment portfolio\, initiating trading to leverage market opportunities\, remaining within portfolio trading policies ReBQ Retrieve details about a related market trade request
 

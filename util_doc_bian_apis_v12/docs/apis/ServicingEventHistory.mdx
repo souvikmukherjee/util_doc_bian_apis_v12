@@ -1,28 +1,14 @@
 # ServicingEventHistory
 
-## Table of Contents
-- [POST: /ServicingEventHistory/Initiate](#post-/servicingeventhistory/initiate)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Update](#put-/servicingeventhistory/\{servicingeventhistoryid\}/update)
-- [GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Retrieve](#get-/servicingeventhistory/\{servicingeventhistoryid\}/retrieve)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Update](#put-/servicingeventhistory/\{servicingeventhistoryid\}/assignment/\{assignmentid\}/update)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Capture](#put-/servicingeventhistory/\{servicingeventhistoryid\}/assignment/\{assignmentid\}/capture)
-- [GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Retrieve](#get-/servicingeventhistory/\{servicingeventhistoryid\}/assignment/\{assignmentid\}/retrieve)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Update](#put-/servicingeventhistory/\{servicingeventhistoryid\}/session/\{sessionid\}/update)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Capture](#put-/servicingeventhistory/\{servicingeventhistoryid\}/session/\{sessionid\}/capture)
-- [GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Retrieve](#get-/servicingeventhistory/\{servicingeventhistoryid\}/session/\{sessionid\}/retrieve)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Update](#put-/servicingeventhistory/\{servicingeventhistoryid\}/issue/\{issueid\}/update)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Capture](#put-/servicingeventhistory/\{servicingeventhistoryid\}/issue/\{issueid\}/capture)
-- [GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Retrieve](#get-/servicingeventhistory/\{servicingeventhistoryid\}/issue/\{issueid\}/retrieve)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Update](#put-/servicingeventhistory/\{servicingeventhistoryid\}/servicingfacility/\{servicingfacilityid\}/update)
-- [PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Capture](#put-/servicingeventhistory/\{servicingeventhistoryid\}/servicingfacility/\{servicingfacilityid\}/capture)
-- [GET: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Retrieve](#get-/servicingeventhistory/\{servicingeventhistoryid\}/servicingfacility/\{servicingfacilityid\}/retrieve)
-
-
 **BIAN Documentation:** [ServicingEventHistory v12](https://app.swaggerhub.com/apis/BIAN-3/ServicingEventHistory/12.0.0)
 
-### POST: /ServicingEventHistory/Initiate
+## POST: /ServicingEventHistory/Initiate
 
-**Description**
+:::info Path
+POST: /ServicingEventHistory/Initiate
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis InCR Initiate servicing event history tracking for a servicing resource
 
@@ -34,9 +20,13 @@ This API path is used to initiate tracking of servicing event history for a spec
 
 POST: The name of the path '/ServicingEventHistory/Initiate' in accordance with REST best practices should ideally be structured as a noun representing a resource\. Since it seems like this path might be related to servicing event history\, you could consider renaming it to something like '/servicing\-events' to better align with RESTful naming conventions\.
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Update
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis UpCR Update details about the log
 
@@ -51,9 +41,13 @@ PUT: The name of the path should be:
 PUT /servicing\-event\-history/\{servicingeventhistoryid\}
 \`\`\`
 
-### GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Retrieve
+## GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis ReCR Retrieve details about the servicing event log
 
@@ -65,9 +59,13 @@ This API path allows you to retrieve detailed information about a specific servi
 
 GET: A suitable name for the path could be '/servicing\-events/\{servicingEventHistoryId\}'\. This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for resource names\.
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Update
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis UpBQ Update captured assignment event details
 
@@ -85,9 +83,13 @@ PUT: Following REST best practices\, the name of the path should focus on the re
 
 Ultimately\, the path name should be descriptive and convey the purpose of the resource being updated in a clear and
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Capture
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis CaBQ Capture servicing position assignment event details
 
@@ -101,9 +103,13 @@ PUT: A suitable name for this path following REST best practices would be:
 
 /servicing\-events/\{servicingEventHistoryId\}/assignments/\{assignmentId\}/capture
 
-### GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Retrieve
+## GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Assignment/\{assignmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis ReBQ Retrieve servicing position assignment event details
 
@@ -121,9 +127,13 @@ GET /servicing\-events/\{servicing\_event\_id\}/assignments/\{assignment\_id\}
 
 In this name\, we have used lowercase letters and hyphens to separate words for better readability and consistency\. The path includes the necessary resource identifiers \(servicing\_event\_id and assignment\_id\) to target specific resources for retrieval\.
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Update
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis UpBQ Update captured customer servicing session event details
 
@@ -139,9 +149,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This naming convention uses lowercase letters and hyphens to separate words in the path\, making it more readable and consistent with REST naming conventions\.
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Capture
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis CaBQ Capture customer servicing session event details
 
@@ -157,9 +171,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using descriptive resource names\, hierarchical structures\, and the use of HTTP verbs\.
 
-### GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Retrieve
+## GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Session/\{sessionid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis ReBQ Retrieve customer servicing event details
 
@@ -173,9 +191,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 GET /servicing\-events/\{servicingEventId\}/sessions/\{sessionId\}
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Update
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis UpBQ Update captured servicing issue event details
 
@@ -187,9 +209,13 @@ This API path allows you to update specific details related to a servicing issue
 
 PUT: The name of the path should ideally be \`/servicingEventHistories/\{servicingEventHistoryId\}/issues/\{issueId\}\` for a more RESTful structure\.
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Capture
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis CaBQ Capture servicing issue event details
 
@@ -209,9 +235,13 @@ Key points to consider:
 
 These practices improve readability and consistency in your
 
-### GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Retrieve
+## GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingEventHistory/\{servicingeventhistoryid\}/Issue/\{issueid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis ReBQ Retrieve servicing issue event details
 
@@ -225,9 +255,13 @@ GET: A suitable name for the path '/ServicingEventHistory/\{servicingeventhistor
 
 GET /servicing\-events/\{servicingeventhistoryid\}/issues/\{issueid\}
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Update
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis UpBQ Update captured facility utilization event details
 
@@ -245,9 +279,13 @@ Based on the path you provided\, a more RESTful and clear naming convention coul
 
 This new path follows the RESTful convention by using nouns to represent resources \(ServicingEvents and ServicingFacilities\) and maintaining a clear and understandable structure that represents the relationship
 
-### PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Capture
+## PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis CaBQ Capture  facility utilization event details
 
@@ -266,9 +304,13 @@ In this naming convention:
 \- Hyphens separate words to make the URL more readable\.
 \- Parameter names are in curly braces to indicate the dynamic parts of the URL\.
 
-### GET: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Retrieve
+## GET: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingEventHistory/\{servicingeventhistoryid\}/ServicingFacility/\{servicingfacilityid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores servicing activity and events to support root cause analysis ReBQ Retrieve  facility utilization event details
 

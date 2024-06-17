@@ -1,47 +1,14 @@
 # CustomerOffer
 
-## Table of Contents
-- [POST: /CustomerOffer/Initiate](#post-/customeroffer/initiate)
-- [PUT: /CustomerOffer/\{customerofferid\}/Update](#put-/customeroffer/\{customerofferid\}/update)
-- [PUT: /CustomerOffer/\{customerofferid\}/Control](#put-/customeroffer/\{customerofferid\}/control)
-- [PUT: /CustomerOffer/\{customerofferid\}/Exchange](#put-/customeroffer/\{customerofferid\}/exchange)
-- [PUT: /CustomerOffer/\{customerofferid\}/Execute](#put-/customeroffer/\{customerofferid\}/execute)
-- [PUT: /CustomerOffer/\{customerofferid\}/Request](#put-/customeroffer/\{customerofferid\}/request)
-- [GET: /CustomerOffer/\{customerofferid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Update](#put-/customeroffer/\{customerofferid\}/facilityapplication/\{facilityapplicationid\}/update)
-- [PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Exchange](#put-/customeroffer/\{customerofferid\}/facilityapplication/\{facilityapplicationid\}/exchange)
-- [GET: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/facilityapplication/\{facilityapplicationid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Update](#put-/customeroffer/\{customerofferid\}/disclosures/\{disclosuresid\}/update)
-- [PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Exchange](#put-/customeroffer/\{customerofferid\}/disclosures/\{disclosuresid\}/exchange)
-- [GET: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/disclosures/\{disclosuresid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Update](#put-/customeroffer/\{customerofferid\}/credit/\{creditid\}/update)
-- [GET: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/credit/\{creditid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Update](#put-/customeroffer/\{customerofferid\}/underwriting/\{underwritingid\}/update)
-- [GET: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/underwriting/\{underwritingid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Update](#put-/customeroffer/\{customerofferid\}/compliance/\{complianceid\}/update)
-- [GET: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/compliance/\{complianceid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Update](#put-/customeroffer/\{customerofferid\}/audit/\{auditid\}/update)
-- [GET: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/audit/\{auditid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Update](#put-/customeroffer/\{customerofferid\}/collateral/\{collateralid\}/update)
-- [PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Exchange](#put-/customeroffer/\{customerofferid\}/collateral/\{collateralid\}/exchange)
-- [GET: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/collateral/\{collateralid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Update](#put-/customeroffer/\{customerofferid\}/booking/\{bookingid\}/update)
-- [GET: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/booking/\{bookingid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Update](#put-/customeroffer/\{customerofferid\}/correspondenceanddocuments/\{correspondenceanddocumentsid\}/update)
-- [PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Exchange](#put-/customeroffer/\{customerofferid\}/correspondenceanddocuments/\{correspondenceanddocumentsid\}/exchange)
-- [GET: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/correspondenceanddocuments/\{correspondenceanddocumentsid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Update](#put-/customeroffer/\{customerofferid\}/agreement/\{agreementid\}/update)
-- [PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Exchange](#put-/customeroffer/\{customerofferid\}/agreement/\{agreementid\}/exchange)
-- [GET: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/agreement/\{agreementid\}/retrieve)
-- [PUT: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Update](#put-/customeroffer/\{customerofferid\}/productinitialization/\{productinitializationid\}/update)
-- [GET: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Retrieve](#get-/customeroffer/\{customerofferid\}/productinitialization/\{productinitializationid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerOffer v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerOffer/12.0.0)
 
-### POST: /CustomerOffer/Initiate
+## POST: /CustomerOffer/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerOffer/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. InCR Initiate the offer procedure
 
@@ -55,9 +22,13 @@ POST: The name of the path '/CustomerOffer/Initiate' can be improved to better f
 
 A more RESTful naming convention for this path could be '/customer\-offers'\, which would represent a collection of customer offers\. The initiation action could then be represented by a POST request to this resource\, creating a new customer offer\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpCR Update details of an offer procedure
 
@@ -69,9 +40,13 @@ This API path allows you to update the details of a customer offer procedure\. I
 
 PUT: The name of the path '/CustomerOffer/\{customerofferid\}/Update' should follow REST best practices by using the PUT HTTP method to update a specific resource\. Therefore\, a suitable name for the path could be '/CustomerOffer/\{customerofferid\}' since the update operation can be achieved by sending a PUT request to this endpoint with the customer offer ID to be updated\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Control
+## PUT: /CustomerOffer/\{customerofferid\}/Control
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Control
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. CoCR Control the processing of an offer \(e\.g\. terminate\)
 
@@ -90,9 +65,13 @@ Here are the reasons for the changes:
 
 This naming convention adher
 
-### PUT: /CustomerOffer/\{customerofferid\}/Exchange
+## PUT: /CustomerOffer/\{customerofferid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. EcCR Accept\, reject\, verify\, etc an offer procedure
 
@@ -108,9 +87,13 @@ PUT: The name of the path should be:
 
 According to REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and use singular nouns\. Additionally\, the path should represent a resource \(in this case\, customer offer\) with a specific identifier \(customer offer ID\) and an action \(exchange\)\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Execute
+## PUT: /CustomerOffer/\{customerofferid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ExCR Execute an automated task against an offer \(e\.g\. submit data\)
 
@@ -124,9 +107,13 @@ PUT: Based on REST best practices\, the path should be named in a clear and desc
 
 '/customer\-offer/\{customerofferid\}/execute'
 
-### PUT: /CustomerOffer/\{customerofferid\}/Request
+## PUT: /CustomerOffer/\{customerofferid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Request
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. RqCR Request manual intervention in an offer \(e\.g\. request specialist support\)
 
@@ -140,9 +127,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/customer\-offers/\{customer\_offer\_id\}/requests'
 
-### GET: /CustomerOffer/\{customerofferid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReCR Retrieve details about a customer offer
 
@@ -154,9 +145,13 @@ This BIAN API path allows you to retrieve details about a customer offer based o
 
 GET: The name of the path could be '/customer\-offers/\{customerofferid\}'\. This naming convention follows REST best practices by using lowercase letters\, using hyphens for readability\, and using plural nouns for resources\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update product options and pricing terms
 
@@ -175,9 +170,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path is clearer\, more descriptive\, and uses plural nouns for better readability\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Exchange
+## PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. EcBQ Accept\, reject etc product options and pricing terms
 
@@ -191,9 +190,13 @@ PUT: The name of the path should be:
 
 \`/customer\-offers/\{customerofferid\}/facility\-applications/\{facilityapplicationid\}/exchange\`
 
-### GET: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/FacilityApplication/\{facilityapplicationid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about product options and pricing terms
 
@@ -207,9 +210,13 @@ GET: A suitable name for the path '/CustomerOffer/\{customerofferid\}/FacilityAp
 
 GET /customer\-offers/\{customerofferid\}/facility\-applications/\{facilityapplicationid\}
 
-### PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update disclosure submission
 
@@ -225,9 +232,13 @@ PUT: The name of the path should be:
 PUT /customeroffers/\{customerofferid\}/disclosures/\{disclosuresid\}
 \`\`\`
 
-### PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Exchange
+## PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. EcBQ Accept\, reject etc\. disclosures
 
@@ -241,9 +252,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/customer\-offers/\{customerofferid\}/disclosures/\{disclosuresid\}/exchange'
 
-### GET: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Disclosures/\{disclosuresid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about disclosure submissions
 
@@ -259,9 +274,13 @@ GET: Following REST best practices\, a more appropriate name for the path '/Cust
 GET /customer\-offers/\{customerofferid\}/disclosures/\{disclosuresid\}
 \`\`\`
 
-### PUT: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update credit submission details
 
@@ -273,9 +292,13 @@ This BIAN API path allows you to update credit submission details related to a s
 
 PUT: The name of the path should be '/customer\-offers/\{customerofferid\}/credits/\{creditid\}'\.
 
-### GET: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Credit/\{creditid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about the credit submission
 
@@ -291,9 +314,13 @@ GET /customer\-offers/\{customerofferid\}/credits/\{creditid\}
 
 This name is descriptive\, follows a consistent naming convention\, uses lowercase letters with hyphens\, and clearly indicates the resources being retrieved\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update submitted materials for the underwriting decision
 
@@ -306,9 +333,13 @@ This API path allows you to update submitted materials for the underwriting deci
 PUT: Based on REST best practices\, the path should be named as follows:
 '/customer\-offers/\{customerofferid\}/underwriting/\{underwritingid\}'
 
-### GET: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Underwriting/\{underwritingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about the underwriting decision
 
@@ -320,9 +351,13 @@ This API path allows you to retrieve information about the underwriting decision
 
 GET: The name of the path should be \`/customer\-offers/\{customerofferid\}/underwriting/\{underwritingid\}\` as per REST best practices\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details submitted for compliance checks
 
@@ -336,9 +371,13 @@ PUT: The recommended name for the path '/CustomerOffer/\{customerofferid\}/Compl
 
 PUT /customer\-offers/\{customerofferid\}/compliance/\{complianceid\}
 
-### GET: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Compliance/\{complianceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details of the regulatory compliance assessment
 
@@ -352,9 +391,13 @@ GET: A suitable name for the path '/CustomerOffer/\{customerofferid\}/Compliance
 
 GET '/customer\-offers/\{customerofferid\}/compliances/\{complianceid\}'
 
-### PUT: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details of submitted materials for audit checks
 
@@ -366,9 +409,13 @@ This API path is used to update the details of submitted materials for audit che
 
 PUT: The name of the path should be '/customeroffers/\{customerOfferId\}/audits/\{auditId\}'\.
 
-### GET: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Audit/\{auditid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details of the compliance assessment
 
@@ -384,9 +431,13 @@ GET /customer\-offers/\{customerofferid\}/audits/\{auditid\}
 
 It is recommended to use lowercase letters and hyphens for better readability\, and to use plural nouns to represent collections of resources\. Additionally\, it is important to use HTTP methods like GET\, POST\, PUT\, DELETE to clearly indicate the actions being taken on the resources\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details of the collateral allocation
 
@@ -400,9 +451,13 @@ PUT: The name of the path should be in lowercase letters and use kebab\-case to 
 
 '/customer\-offer/\{customerofferid\}/collateral/\{collateralid\}/update'
 
-### PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Exchange
+## PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. EcBQ Accept\, reject etc\. the collateral allocation
 
@@ -423,9 +478,13 @@ Make sure to follow REST naming conventions:
 \- Use CamelCase for compound words\.
 \- Use descriptive and meaningful names for resources\.
 
-### GET: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Collateral/\{collateralid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about the collateral allocation
 
@@ -441,9 +500,13 @@ GET /customer\-offers/\{customerofferid\}/collaterals/\{collateralid\}
 
 Following REST best practices\, this path uses lowercase letters and dashes for readability\, includes the action 'Retrieve' as part of the HTTP method instead of in the URL\, and makes use of plural nouns for resources\.
 
-### PUT: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details of the offer asset and liability booking
 
@@ -456,9 +519,13 @@ This API path allows you to update specific details related to the booking of an
 PUT: A possible name for the path '/CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Update' that follows REST best practices could be:
 \- PATCH /customer\-offers/\{customerofferid\}/bookings/\{bookingid\}
 
-### GET: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Booking/\{bookingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about the booking
 
@@ -472,9 +539,13 @@ GET: Based on REST best practices\, the path should be named as:
 
 '/customer\-offers/\{customerofferid\}/bookings/\{bookingid\}'
 
-### PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details about the correspondence and documents accessed and created by the offer
 
@@ -490,9 +561,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PUT /customer\-offers/\{customerofferid\}/correspondence\-documents/\{correspondenceanddocumentsid\}
 \`\`\`
 
-### PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Exchange
+## PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. EcBQ Accept\, verify\, etc\. correspondence and documents
 
@@ -511,9 +586,13 @@ In the path naming convention above:
 \- 'offers' is a plural noun representing the collection of offers belonging to a specific customer\.
 \- 'correspondence\-documents' is a hyphenated term representing the collection of correspondence documents related to a
 
-### GET: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/CorrespondenceandDocuments/\{correspondenceanddocumentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about correspondence and documents from the customer offer procedure
 
@@ -527,9 +606,13 @@ GET: The name of the path should ideally be:
 
 GET /customer\-offers/\{customerOfferId\}/correspondence\-and\-documents/\{correspondenceAndDocumentsId\}
 
-### PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details of the customer agreement
 
@@ -542,9 +625,13 @@ This API path allows you to update the details of a customer agreement within th
 PUT: The path should be named as follows following REST best practices:
 '/customer\-offers/\{customerofferId\}/agreements/\{agreementId\}'
 
-### PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Exchange
+## PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. EcBQ Accept\, verify\, etc\. actions against the customer and product agreements
 
@@ -558,9 +645,13 @@ PUT: A suitable name for the path '/CustomerOffer/\{customerofferid\}/Agreement/
 
 '/customer\-offers/\{customerofferid\}/agreements/\{agreementid\}/exchanges'
 
-### GET: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/Agreement/\{agreementid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about the agreements impacted and created as part of the offer
 
@@ -574,9 +665,13 @@ GET: Based on REST best practices\, the name of the path should focus on the res
 
 \`/CustomerOffers/\{customerofferid\}/Agreements/\{agreementid\}\`
 
-### PUT: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Update
+## PUT: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. UpBQ Update details of the product initiation request
 
@@ -589,9 +684,13 @@ This API path allows you to update the details of a product initiation request w
 PUT: Based on REST best practices\, the name of the path should be:
 \`PUT /customer\-offers/\{customerofferid\}/product\-initializations/\{productinitializationid\}\`
 
-### GET: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Retrieve
+## GET: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerOffer/\{customerofferid\}/ProductInitialization/\{productinitializationid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of a product offer for a new or established  customer\. The offer process is defined specifically for the product or service being considered and can include actions such as document checks\, collateral allocation\, credit assessments\, underwriting decisions\, regulatory and procedural checks\, eligibility checks\, the use of internal and external specialist services \(such as evaluations and legal advice\)\. ReBQ Retrieve details about the product initiation request
 

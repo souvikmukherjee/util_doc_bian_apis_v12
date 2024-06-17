@@ -1,33 +1,14 @@
 # LeasingItemAdministration
 
-## Table of Contents
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Capture](#put-/leasingitemadministration/\{leasingitemadministrationid\}/capture)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Control](#put-/leasingitemadministration/\{leasingitemadministrationid\}/control)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Exchange](#put-/leasingitemadministration/\{leasingitemadministrationid\}/exchange)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Grant](#put-/leasingitemadministration/\{leasingitemadministrationid\}/grant)
-- [POST: /LeasingItemAdministration/Initiate](#post-/leasingitemadministration/initiate)
-- [GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Retrieve](#get-/leasingitemadministration/\{leasingitemadministrationid\}/retrieve)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Request](#put-/leasingitemadministration/\{leasingitemadministrationid\}/request)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Update](#put-/leasingitemadministration/\{leasingitemadministrationid\}/update)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Capture](#put-/leasingitemadministration/\{leasingitemadministrationid\}/assurance/\{assuranceid\}/capture)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Capture](#put-/leasingitemadministration/\{leasingitemadministrationid\}/registration/\{registrationid\}/capture)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Capture](#put-/leasingitemadministration/\{leasingitemadministrationid\}/valuation/\{valuationid\}/capture)
-- [POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/Initiate](#post-/leasingitemadministration/\{leasingitemadministrationid\}/assurance/initiate)
-- [POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/Initiate](#post-/leasingitemadministration/\{leasingitemadministrationid\}/registration/initiate)
-- [POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/Initiate](#post-/leasingitemadministration/\{leasingitemadministrationid\}/valuation/initiate)
-- [GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Retrieve](#get-/leasingitemadministration/\{leasingitemadministrationid\}/assurance/\{assuranceid\}/retrieve)
-- [GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Retrieve](#get-/leasingitemadministration/\{leasingitemadministrationid\}/registration/\{registrationid\}/retrieve)
-- [GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Retrieve](#get-/leasingitemadministration/\{leasingitemadministrationid\}/valuation/\{valuationid\}/retrieve)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Update](#put-/leasingitemadministration/\{leasingitemadministrationid\}/assurance/\{assuranceid\}/update)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Update](#put-/leasingitemadministration/\{leasingitemadministrationid\}/registration/\{registrationid\}/update)
-- [PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Update](#put-/leasingitemadministration/\{leasingitemadministrationid\}/valuation/\{valuationid\}/update)
-
-
 **BIAN Documentation:** [LeasingItemAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/LeasingItemAdministration/12.0.0)
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Capture
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Capture
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery CaCR Capture Leasing Item Administrative Plan activity or event related information
 
@@ -48,9 +29,13 @@ In this naming convention:
 
 This naming convention helps to ensure consistency and readability in your API design\, which are important aspects of adhering to REST
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Control
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Control
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery CoCR Control the processing of Leasing Item Administrative Plan
 
@@ -64,9 +49,13 @@ PUT: A RESTful path should represent a resource and its relationships in a clear
 
 A suitable name for the resource in this case could be '/LeasingItemControl/\{leasingitemcontrolid\}'\. This path indicates that it relates to the control aspects of a specific leasing item within the administration context\. It
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Exchange
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Exchange
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery EcCR Accept\, verify\, etc\. aspects of Leasing Item Administrative Plan processing
 
@@ -80,9 +69,13 @@ PUT: The name of the path should be:
 
 /leasing\-items/\{leasingitemadministrationid\}/exchange
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Grant
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Grant
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery GrCR Obtain permission to act in relation to Leasing Item Administrative Plan
 
@@ -96,9 +89,13 @@ PUT: The name of the path should be:
 
 /leasing\-items/\{leasingItemId\}/grant
 
-### POST: /LeasingItemAdministration/Initiate
+## POST: /LeasingItemAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /LeasingItemAdministration/Initiate
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery InCR Instantiate a new Leasing Item Administrative Plan
 
@@ -110,9 +107,13 @@ This BIAN API path allows you to create a new Leasing Item Administrative Plan\.
 
 POST: If the path '/LeasingItemAdministration/Initiate' followed REST best practices\, a more appropriate name for it could be '/leasing\-items/initiate'\. This naming convention follows the RESTful approach of using lowercase letters and hyphens to separate words in the URL paths\, making them more readable and consistent\.
 
-### GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Retrieve
+## GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Retrieve
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery ReCR Retrieve details about any aspect of Leasing Item Administrative Plan
 
@@ -126,9 +127,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /leasing\-items/\{leasingItemAdministrationId\}
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Request
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Request
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery RqCR Request manual intervention or a decision with respect to Leasing Item Administrative Plan
 
@@ -142,9 +147,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/leasing\-items/\{leasingitemadministrationid\}/requests'
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Update
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Update
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery UpCR Update details relating to Leasing Item Administrative Plan
 
@@ -162,9 +171,13 @@ PUT: The RESTful path should be named according to the resource it is addressing
 
 This path is more generic\, easy to understand\, and follows the RESTful naming conventions by using lowercase letters\, hyphens to separate words\, and including the specific resource identifier in the path \(\`leasingItemId\`\)\.
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Capture
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Capture
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Capture
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery CaBQ Capture Assurance activity or event related information
 
@@ -178,9 +191,13 @@ PUT: The name of the path should be:
 
 /leasing\-item\-administration/\{leasingitemadministrationid\}/assurance/\{assuranceid\}/capture
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Capture
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Capture
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery CaBQ Capture Registration activity or event related information
 
@@ -198,9 +215,13 @@ For the given path\, a more RESTful naming convention could be:
 
 This path clearly indicates the relationship between leasing items\, registrations\, and the capture action\, while using lowercase letters and hyphens for word separation
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Capture
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Capture
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery CaBQ Capture Valuation activity or event related information
 
@@ -216,9 +237,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and use plural nouns for resource names where applicable\.
 
-### POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/Initiate
+## POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/Initiate
 
-**Description**
+:::info Path
+POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/Initiate
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery InBQ Instantiate a new Assurance
 
@@ -234,9 +259,13 @@ POST: The name of the path should be:
 POST /leasingitemadministration/\{leasingitemadministrationid\}/assurance
 \`\`\`
 
-### POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/Initiate
+## POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/Initiate
 
-**Description**
+:::info Path
+POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/Initiate
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery InBQ Instantiate a new Registration
 
@@ -256,9 +285,13 @@ In this naming convention:
 \- "registrations" indicates the action being performed on the resource
 \- "initiate" describes
 
-### POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/Initiate
+## POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/Initiate
 
-**Description**
+:::info Path
+POST: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/Initiate
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery InBQ Instantiate a new Valuation
 
@@ -276,9 +309,13 @@ POST /leasing\-item\-administrations/\{leasingItemAdministrationId\}/valuation/i
 
 This name follows the RESTful convention of using lowercase letters\, hyphens for multi\-word endpoints\, and using plural nouns for collections\. It also specifies the HTTP method \`POST\` to indicate the action of initiating a valuation\.
 
-### GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Retrieve
+## GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Retrieve
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery ReBQ Retrieve details about any aspect of Assurance
 
@@ -292,9 +329,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /leasingitems/\{leasingItemId\}/assurances/\{assuranceId\}/retrieve
 
-### GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Retrieve
+## GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Retrieve
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery ReBQ Retrieve details about any aspect of Registration
 
@@ -316,9 +357,13 @@ Here are some key points to consider:
 4\. Avoid using unnecessary words or abbreviations\.
 5\. Express
 
-### GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Retrieve
+## GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Retrieve
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery ReBQ Retrieve details about any aspect of Valuation
 
@@ -332,9 +377,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 GET /leasing\-items/\{leasingItemId\}/valuations/\{valuationId\}
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Update
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Update
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Assurance/\{assuranceid\}/Update
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery UpBQ Update details relating to Assurance
 
@@ -346,9 +395,13 @@ This API path allows users to update details related to Assurance for a specific
 
 PUT: Based on REST best practices\, the name of the path should be something more aligned with the resource it represents rather than its actions\. How about something like '/leasing\-items/\{leasingItemId\}/assurances/\{assuranceId\}' for this path?
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Update
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Registration/\{registrationid\}/Update
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery UpBQ Update details relating to Registration
 
@@ -360,9 +413,13 @@ This BIAN API path allows you to update details related to the registration of a
 
 PUT: The name of the path could be \`/leasing\-item\-administration/\{leasingitemadministrationid\}/registration/\{registrationid\}\` for updating a registration within a leasing item administration resource\.
 
-### PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Update
+## PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Update
 
-**Description**
+:::info Path
+PUT: /LeasingItemAdministration/\{leasingitemadministrationid\}/Valuation/\{valuationid\}/Update
+:::
+
+### Description
 
 Track the status of the assets underlying leasing agreements as they represent collateral items that could be accessed in the event of account recovery UpBQ Update details relating to Valuation
 

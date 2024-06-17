@@ -1,49 +1,14 @@
 # Factoring
 
-## Table of Contents
-- [PUT: /Factoring/\{factoringid\}/Control](#put-/factoring/\{factoringid\}/control)
-- [PUT: /Factoring/\{factoringid\}/Exchange](#put-/factoring/\{factoringid\}/exchange)
-- [PUT: /Factoring/\{factoringid\}/Execute](#put-/factoring/\{factoringid\}/execute)
-- [POST: /Factoring/Initiate](#post-/factoring/initiate)
-- [GET: /Factoring/\{factoringid\}/Notify](#get-/factoring/\{factoringid\}/notify)
-- [PUT: /Factoring/\{factoringid\}/Request](#put-/factoring/\{factoringid\}/request)
-- [GET: /Factoring/\{factoringid\}/Retrieve](#get-/factoring/\{factoringid\}/retrieve)
-- [PUT: /Factoring/\{factoringid\}/Update](#put-/factoring/\{factoringid\}/update)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Exchange](#put-/factoring/\{factoringid\}/accountreceivablefactoring/\{accountreceivablefactoringid\}/exchange)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Exchange](#put-/factoring/\{factoringid\}/accountreceivableprocessing/\{accountreceivableprocessingid\}/exchange)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Exchange](#put-/factoring/\{factoringid\}/accountsreceivableevaluation/\{accountsreceivableevaluationid\}/exchange)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Exchange](#put-/factoring/\{factoringid\}/accountsreceivablepurchase/\{accountsreceivablepurchaseid\}/exchange)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Execute](#put-/factoring/\{factoringid\}/accountreceivablefactoring/\{accountreceivablefactoringid\}/execute)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Execute](#put-/factoring/\{factoringid\}/accountreceivableprocessing/\{accountreceivableprocessingid\}/execute)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Execute](#put-/factoring/\{factoringid\}/accountsreceivableevaluation/\{accountsreceivableevaluationid\}/execute)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Execute](#put-/factoring/\{factoringid\}/accountsreceivablepurchase/\{accountsreceivablepurchaseid\}/execute)
-- [POST: /Factoring/\{factoringid\}/AccountReceivableFactoring/Initiate](#post-/factoring/\{factoringid\}/accountreceivablefactoring/initiate)
-- [POST: /Factoring/\{factoringid\}/AccountReceivableProcessing/Initiate](#post-/factoring/\{factoringid\}/accountreceivableprocessing/initiate)
-- [POST: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/Initiate](#post-/factoring/\{factoringid\}/accountsreceivableevaluation/initiate)
-- [POST: /Factoring/\{factoringid\}/AccountsReceivablePurchase/Initiate](#post-/factoring/\{factoringid\}/accountsreceivablepurchase/initiate)
-- [GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Notify](#get-/factoring/\{factoringid\}/accountreceivablefactoring/\{accountreceivablefactoringid\}/notify)
-- [GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Notify](#get-/factoring/\{factoringid\}/accountreceivableprocessing/\{accountreceivableprocessingid\}/notify)
-- [GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Notify](#get-/factoring/\{factoringid\}/accountsreceivableevaluation/\{accountsreceivableevaluationid\}/notify)
-- [GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Notify](#get-/factoring/\{factoringid\}/accountsreceivablepurchase/\{accountsreceivablepurchaseid\}/notify)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Request](#put-/factoring/\{factoringid\}/accountreceivablefactoring/\{accountreceivablefactoringid\}/request)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Request](#put-/factoring/\{factoringid\}/accountreceivableprocessing/\{accountreceivableprocessingid\}/request)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Request](#put-/factoring/\{factoringid\}/accountsreceivableevaluation/\{accountsreceivableevaluationid\}/request)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Request](#put-/factoring/\{factoringid\}/accountsreceivablepurchase/\{accountsreceivablepurchaseid\}/request)
-- [GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Retrieve](#get-/factoring/\{factoringid\}/accountreceivablefactoring/\{accountreceivablefactoringid\}/retrieve)
-- [GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Retrieve](#get-/factoring/\{factoringid\}/accountreceivableprocessing/\{accountreceivableprocessingid\}/retrieve)
-- [GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Retrieve](#get-/factoring/\{factoringid\}/accountsreceivableevaluation/\{accountsreceivableevaluationid\}/retrieve)
-- [GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Retrieve](#get-/factoring/\{factoringid\}/accountsreceivablepurchase/\{accountsreceivablepurchaseid\}/retrieve)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Update](#put-/factoring/\{factoringid\}/accountreceivablefactoring/\{accountreceivablefactoringid\}/update)
-- [PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Update](#put-/factoring/\{factoringid\}/accountreceivableprocessing/\{accountreceivableprocessingid\}/update)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Update](#put-/factoring/\{factoringid\}/accountsreceivableevaluation/\{accountsreceivableevaluationid\}/update)
-- [PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Update](#put-/factoring/\{factoringid\}/accountsreceivablepurchase/\{accountsreceivablepurchaseid\}/update)
-
-
 **BIAN Documentation:** [Factoring v12](https://app.swaggerhub.com/apis/BIAN-3/Factoring/12.0.0)
 
-### PUT: /Factoring/\{factoringid\}/Control
+## PUT: /Factoring/\{factoringid\}/Control
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/Control
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Control Factoring Facility
 
@@ -62,9 +27,13 @@ According to REST best practices:
 
 So\, 'controls' should be in plural form\, and the entire path should be in lowercase letters\.
 
-### PUT: /Factoring/\{factoringid\}/Exchange
+## PUT: /Factoring/\{factoringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Exchange Factoring Facility
 
@@ -78,9 +47,13 @@ PUT: The name of the path should be:
 
 '/factoring/\{factoringId\}/exchanges'
 
-### PUT: /Factoring/\{factoringid\}/Execute
+## PUT: /Factoring/\{factoringid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Execute Factoring Facility
 
@@ -92,9 +65,13 @@ This API path \`/Factoring/\{factoringid\}/Execute\` allows corporate customers 
 
 PUT: Based on REST best practices\, the name of the path '/Factoring/\{factoringid\}/Execute' can be simplified to '/factoring/\{factoringid\}/actions/execute' by using lowercase letters and introducing a clear verb \('execute'\) to indicate an action being performed on a specific resource \('factoring'\)\.
 
-### POST: /Factoring/Initiate
+## POST: /Factoring/Initiate
 
-**Description**
+:::info Path
+POST: /Factoring/Initiate
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Initiate Factoring Facility
 
@@ -106,9 +83,13 @@ This API path allows corporate customers to initiate a factoring facility\, whic
 
 POST: If the path '/Factoring/Initiate' followed all REST best practices\, it could be named using a resource\-centric approach\. A suitable name for the path could be '/factoringRequests' or '/factoringOrders' to better reflect the resource being acted upon\.
 
-### GET: /Factoring/\{factoringid\}/Notify
+## GET: /Factoring/\{factoringid\}/Notify
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Notify Factoring Facility
 
@@ -120,9 +101,13 @@ This API path is used to retrieve information about notifying a factoring facili
 
 GET: The name of the path should be: /factoring/\{factoringid\}/notify
 
-### PUT: /Factoring/\{factoringid\}/Request
+## PUT: /Factoring/\{factoringid\}/Request
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Request Factoring Facility
 
@@ -138,9 +123,13 @@ Here are the reasons for this choice:
 \- It is recommended to use plural nouns for endpoints to indicate that the endpoint represents a collection of resources\.
 \- The use of lowercase letters with words separated by dashes is a common convention for naming paths in a RESTful API\.
 
-### GET: /Factoring/\{factoringid\}/Retrieve
+## GET: /Factoring/\{factoringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Retrieve Factoring Facility
 
@@ -152,9 +141,13 @@ This API path allows users to retrieve information about a factoring facility by
 
 GET: The name of the path should be \`/factoring/\{factoringid\}\` according to REST best practices\. The endpoint is focused on retrieving a specific factoring resource identified by the \`factoringid\` parameter\, and the resource's representation can be retrieved by making a GET request to this endpoint\.
 
-### PUT: /Factoring/\{factoringid\}/Update
+## PUT: /Factoring/\{factoringid\}/Update
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Update Factoring Facility
 
@@ -166,9 +159,13 @@ This BIAN API path allows users to update an existing factoring facility for cor
 
 PUT: The name of the path should be \`/factoring/\{factoringid\}\` to adhere to REST best practices\, as it represents the resource being updated \(the factoring resource identified by factoringid\)\.
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Exchange
+## PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Exchange Account Receivable Factoring Fulfillment
 
@@ -184,9 +181,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase letters and use hyphens to separate words for readability\. Also\, the path should describe the resources in a clear and consistent manner\.
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Exchange
+## PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Exchange Account Receivable Processing Fulfillment
 
@@ -202,9 +203,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters and using hyphens for readability where necessary to separate words\. Additionally\, it uses the plural form for resource names when appropriate\.
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Exchange
+## PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Exchange Accounts Receivable Evaluation Fulfillment
 
@@ -220,9 +225,13 @@ PUT: The name of the path should be:
 
 It follows REST best practices by using plural nouns for resource names and lowercase letters for consistency\.
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Exchange
+## PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Exchange Accounts Receivable Purchase Fulfillment
 
@@ -235,9 +244,13 @@ This API path allows corporate customers to update the exchange details for a sp
 PUT: Following REST best practices\, the name of the path should be:
 '/factoring/\{factoringid\}/accounts\-receivable\-purchases/\{accountsreceivablepurchaseid\}/exchange'
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Execute
+## PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Execute Account Receivable Factoring Fulfillment
 
@@ -253,9 +266,13 @@ PUT: Based on REST best practices\, a suitable name for the path '/Factoring/\{f
 
 This name uses lowercase letters and hyphens to make the URL more readable and user\-friendly\.
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Execute
+## PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Execute Account Receivable Processing Fulfillment
 
@@ -269,9 +286,13 @@ PUT: A suitable name for the given path following REST best practices could be:
 
 '/factoring/\{factoringid\}/account\-receivable\-processing/\{accountreceivableprocessingid\}/execute'
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Execute
+## PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Execute Accounts Receivable Evaluation Fulfillment
 
@@ -287,9 +308,13 @@ PUT: The name of the path should be:
 
 It follows REST best practices by using lowercase letters\, separating words with hyphens\, and including resource identifiers in the path\.
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Execute
+## PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Execute Accounts Receivable Purchase Fulfillment
 
@@ -303,9 +328,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 \`/factoring/\{factoringid\}/accounts\-receivable\-purchases/\{accountsreceivablepurchaseid\}/execute\`
 
-### POST: /Factoring/\{factoringid\}/AccountReceivableFactoring/Initiate
+## POST: /Factoring/\{factoringid\}/AccountReceivableFactoring/Initiate
 
-**Description**
+:::info Path
+POST: /Factoring/\{factoringid\}/AccountReceivableFactoring/Initiate
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Initiate Account Receivable Factoring Fulfillment
 
@@ -319,9 +348,13 @@ POST: The name of the path should be:
 
 /factoring/\{factoringid\}/account\-receivable\-factoring/initiate
 
-### POST: /Factoring/\{factoringid\}/AccountReceivableProcessing/Initiate
+## POST: /Factoring/\{factoringid\}/AccountReceivableProcessing/Initiate
 
-**Description**
+:::info Path
+POST: /Factoring/\{factoringid\}/AccountReceivableProcessing/Initiate
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Initiate Account Receivable Processing Fulfillment
 
@@ -335,9 +368,13 @@ POST: Based on REST best practices\, the path can be named as follows:
 
 \`/factoring/\{factoringId\}/accountReceivableProcessing/initiate\`
 
-### POST: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/Initiate
+## POST: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/Initiate
 
-**Description**
+:::info Path
+POST: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/Initiate
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Initiate Accounts Receivable Evaluation Fulfillment
 
@@ -351,9 +388,13 @@ POST: The name of the path should be:
 
 '/factoring/\{factoringid\}/accounts\-receivable\-evaluation'
 
-### POST: /Factoring/\{factoringid\}/AccountsReceivablePurchase/Initiate
+## POST: /Factoring/\{factoringid\}/AccountsReceivablePurchase/Initiate
 
-**Description**
+:::info Path
+POST: /Factoring/\{factoringid\}/AccountsReceivablePurchase/Initiate
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Initiate Accounts Receivable Purchase Fulfillment
 
@@ -367,9 +408,13 @@ POST: The name of the path following REST best practices for the given scenario 
 
 '/factoring/\{factoringid\}/accounts\-receivable\-purchase/initiate'
 
-### GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Notify
+## GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Notify
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Notify Account Receivable Factoring Fulfillment
 
@@ -385,9 +430,13 @@ GET: Following REST best practices\, the name of the path should be structured a
 
 This path includes resource names in plural form \('/Factoring'\, '/AccountReceivableFactoring'\)\, the use of specific resource identifiers \('\{factoringid\}'\, '\{accountrecereceivablefactoringid\}'\) to uniquely identify resources\, and a descriptive endpoint \('/Notify'\) to indicate the action being performed
 
-### GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Notify
+## GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Notify
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Notify Account Receivable Processing Fulfillment
 
@@ -403,9 +452,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 This path is well\-structured with hierarchical resource endpoints and uses descriptive naming conventions without any verbs to indicate actions\, which aligns with RESTful principles\.
 
-### GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Notify
+## GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Notify
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Notify Accounts Receivable Evaluation Fulfillment
 
@@ -418,9 +471,13 @@ This API path allows you to retrieve information related to a factoring service 
 GET: Following REST best practices\, the name of the path could be:
 '/factoring/\{factoringId\}/accountsReceivableEvaluation/\{accountsReceivableEvaluationId\}/notify'
 
-### GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Notify
+## GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Notify
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Notify Accounts Receivable Purchase Fulfillment
 
@@ -434,9 +491,13 @@ GET: The name of this path following REST best practices could be:
 
 '/factoring/\{factoringId\}/accounts\-receivable\-purchase/\{accountsReceivablePurchaseId\}/notify'
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Request
+## PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Request
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Request Account Receivable Factoring Fulfillment
 
@@ -450,9 +511,13 @@ PUT: A good RESTful name for this path could be:
 
 /factoring/\{factoringId\}/account\-receivable\-factoring/\{accountReceivableFactoringId\}/requests
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Request
+## PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Request
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Request Account Receivable Processing Fulfillment
 
@@ -468,9 +533,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and using singular nouns for resource identifiers\.
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Request
+## PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Request
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Request Accounts Receivable Evaluation Fulfillment
 
@@ -486,9 +555,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 In RESTful routing\, paths should be in lowercase letters\, use hyphens to separate words\, and be pluralized when referring to collections of resources\.
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Request
+## PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Request
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Request Accounts Receivable Purchase Fulfillment
 
@@ -502,9 +575,13 @@ PUT: Based on RESTful best practices\, a more appropriate naming for this path c
 
 '/factoring/\{factoringid\}/accounts\-receivable\-purchases/\{accountsreceivablepurchaseid\}/requests'
 
-### GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Retrieve
+## GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Retrieve Account Receivable Factoring Fulfillment
 
@@ -517,9 +594,13 @@ This API path allows you to retrieve information about a specific account receiv
 GET: The name of the path should be:
 '/factoring/\{factoringid\}/account\-receivable\-factoring/\{accountreceivablefactoringid\}'
 
-### GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Retrieve
+## GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Retrieve Account Receivable Processing Fulfillment
 
@@ -537,9 +618,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 This path follows the convention of using plural nouns for resource names and uses camelCase for parameter names\.
 
-### GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Retrieve
+## GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Retrieve Accounts Receivable Evaluation Fulfillment
 
@@ -553,9 +638,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Facto
 
 GET /factoring/\{factoringid\}/accountsreceivableevaluations/\{accountsreceivableevaluationid\}
 
-### GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Retrieve
+## GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Retrieve Accounts Receivable Purchase Fulfillment
 
@@ -569,9 +658,13 @@ GET: The name of the path should be:
 
 '/factoring/\{factoringid\}/accounts\-receivable\-purchases/\{accountsreceivablepurchaseid\}'
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Update
+## PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Update
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableFactoring/\{accountreceivablefactoringid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Update Account Receivable Factoring Fulfillment
 
@@ -583,9 +676,13 @@ This API path allows you to update information related to a specific account rec
 
 PUT: The name of the path should be \`/factoring/\{factoringId\}/accountReceivableFactoring/\{accountReceivableFactoringId\}\`\. It's recommended to keep resource names in lowercase and use hyphens between words for better readability and to adhere to REST best practices\.
 
-### PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Update
+## PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Update
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountReceivableProcessing/\{accountreceivableprocessingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Update Account Receivable Processing Fulfillment
 
@@ -599,9 +696,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/factoring/\{factoringId\}/accountReceivableProcessing/\{accountReceivableProcessingId\}'
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Update
+## PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Update
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivableEvaluation/\{accountsreceivableevaluationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Update Accounts Receivable Evaluation Fulfillment
 
@@ -614,9 +715,13 @@ This API path allows for updating the evaluation of accounts receivable within a
 PUT: The name of the path should be:
 '/factoring/\{factoringId\}/accountsReceivableEvaluation/\{accountsReceivableEvaluationId\}'
 
-### PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Update
+## PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Update
 
-**Description**
+:::info Path
+PUT: /Factoring/\{factoringid\}/AccountsReceivablePurchase/\{accountsreceivablepurchaseid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a factoring service for corporate customers enabling them to convert accounts receivable into immediate funds at a discount Update Accounts Receivable Purchase Fulfillment
 

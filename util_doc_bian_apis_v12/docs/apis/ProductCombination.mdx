@@ -1,34 +1,14 @@
 # ProductCombination
 
-## Table of Contents
-- [PUT: /ProductCombination/\{productcombinationid\}/Control](#put-/productcombination/\{productcombinationid\}/control)
-- [PUT: /ProductCombination/\{productcombinationid\}/Exchange](#put-/productcombination/\{productcombinationid\}/exchange)
-- [PUT: /ProductCombination/\{productcombinationid\}/Execute](#put-/productcombination/\{productcombinationid\}/execute)
-- [POST: /ProductCombination/Initiate](#post-/productcombination/initiate)
-- [GET: /ProductCombination/\{productcombinationid\}/Retrieve](#get-/productcombination/\{productcombinationid\}/retrieve)
-- [PUT: /ProductCombination/\{productcombinationid\}/Request](#put-/productcombination/\{productcombinationid\}/request)
-- [PUT: /ProductCombination/\{productcombinationid\}/Update](#put-/productcombination/\{productcombinationid\}/update)
-- [PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Control](#put-/productcombination/\{productcombinationid\}/fulfillment/\{fulfillmentid\}/control)
-- [PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Exchange](#put-/productcombination/\{productcombinationid\}/fulfillment/\{fulfillmentid\}/exchange)
-- [PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Exchange](#put-/productcombination/\{productcombinationid\}/transferpricing/\{transferpricingid\}/exchange)
-- [PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Execute](#put-/productcombination/\{productcombinationid\}/fulfillment/\{fulfillmentid\}/execute)
-- [POST: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/Initiate](#post-/productcombination/\{productcombinationid\}/embeddedproductcontrol/initiate)
-- [POST: /ProductCombination/\{productcombinationid\}/Fulfillment/Initiate](#post-/productcombination/\{productcombinationid\}/fulfillment/initiate)
-- [GET: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Retrieve](#get-/productcombination/\{productcombinationid\}/embeddedproductcontrol/\{embeddedproductcontrolid\}/retrieve)
-- [GET: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Retrieve](#get-/productcombination/\{productcombinationid\}/fulfillment/\{fulfillmentid\}/retrieve)
-- [GET: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Retrieve](#get-/productcombination/\{productcombinationid\}/transferpricing/\{transferpricingid\}/retrieve)
-- [PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Request](#put-/productcombination/\{productcombinationid\}/fulfillment/\{fulfillmentid\}/request)
-- [PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Request](#put-/productcombination/\{productcombinationid\}/transferpricing/\{transferpricingid\}/request)
-- [PUT: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Update](#put-/productcombination/\{productcombinationid\}/embeddedproductcontrol/\{embeddedproductcontrolid\}/update)
-- [PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Update](#put-/productcombination/\{productcombinationid\}/fulfillment/\{fulfillmentid\}/update)
-- [PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Update](#put-/productcombination/\{productcombinationid\}/transferpricing/\{transferpricingid\}/update)
-
-
 **BIAN Documentation:** [ProductCombination v12](https://app.swaggerhub.com/apis/BIAN-3/ProductCombination/12.0.0)
 
-### PUT: /ProductCombination/\{productcombinationid\}/Control
+## PUT: /ProductCombination/\{productcombinationid\}/Control
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Control
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution CoCR Control the processing of Product Combination Facility
 
@@ -42,9 +22,13 @@ PUT: The name of the path '/ProductCombination/\{productcombinationid\}/Control'
 
 '/product\-combinations/\{productcombinationid\}/control'
 
-### PUT: /ProductCombination/\{productcombinationid\}/Exchange
+## PUT: /ProductCombination/\{productcombinationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Exchange
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution EcCR Accept\, verify\, etc\. aspects of Product Combination Facility processing
 
@@ -65,9 +49,13 @@ Key points to note for following REST best practices:
 2\. Use camel case for variable names within the path \('productCombinationId' instead of 'productcombinationid'\)\.
 3\. Use nouns for resource names and verbs for actions \('Exchanges' instead of
 
-### PUT: /ProductCombination/\{productcombinationid\}/Execute
+## PUT: /ProductCombination/\{productcombinationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Execute
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution ExCR Execute an available automated action for Product Combination Facility
 
@@ -79,9 +67,13 @@ This API allows you to execute an available automated action for a specific prod
 
 PUT: The name of the path should be \`/product\-combinations/\{productCombinationId\}/execute\` in accordance with REST best practices\. This naming convention uses lowercase letters\, hyphens for readability\, and plural nouns for collection resources\.
 
-### POST: /ProductCombination/Initiate
+## POST: /ProductCombination/Initiate
 
-**Description**
+:::info Path
+POST: /ProductCombination/Initiate
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution InCR Instantiate a new Product Combination Facility
 
@@ -93,9 +85,13 @@ This API path\, \`/ProductCombination/Initiate\`\, allows you to create a new fa
 
 POST: In RESTful best practices\, the path should use nouns to represent resources rather than verbs\. With that in mind\, a more appropriate name for the path '/ProductCombination/Initiate' could be '/product\-combinations'\. This follows the convention of using plural nouns to represent collections of resources\.
 
-### GET: /ProductCombination/\{productcombinationid\}/Retrieve
+## GET: /ProductCombination/\{productcombinationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductCombination/\{productcombinationid\}/Retrieve
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution ReCR Retrieve details about any aspect of Product Combination Facility
 
@@ -109,9 +105,13 @@ GET: The name of the path should be "/product\-combinations/\{productCombination
 
 According to REST best practices\, resource names should be in lowercase and separated by hyphens to improve readability and consistency\. Additionally\, using plural nouns for resource names is recommended\.
 
-### PUT: /ProductCombination/\{productcombinationid\}/Request
+## PUT: /ProductCombination/\{productcombinationid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Request
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution RqCR Request manual intervention or a decision with respect to Product Combination Facility
 
@@ -127,9 +127,13 @@ PUT: The name of the path '/ProductCombination/\{productcombinationid\}/Request'
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens for better readability and consistency\.
 
-### PUT: /ProductCombination/\{productcombinationid\}/Update
+## PUT: /ProductCombination/\{productcombinationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Update
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution UpCR Update details relating to Product Combination Facility
 
@@ -143,9 +147,13 @@ PUT: The name of the path '/ProductCombination/\{productcombinationid\}/Update' 
 
 PUT /ProductCombinations/\{productcombinationid\}
 
-### PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Control
+## PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Control
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Control
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution CoBQ Control the processing of Fulfillment
 
@@ -160,9 +168,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /ProductCombinations/\{productcombinationid\}/Fulfillments/\{fulfillmentid\}/Control
 \`\`\`
 
-### PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Exchange
+## PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Exchange
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution EcBQ Accept\, verify\, etc\. aspects of Fulfillment processing
 
@@ -178,9 +190,13 @@ PUT: The corresponding RESTful path addresses should be named in a resource\-ori
 
 This naming convention indicates hierarchical relationships between resources and follows standard RESTful design principles\.
 
-### PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Exchange
+## PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Exchange
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution EcBQ Accept\, verify\, etc\. aspects of Transfer Pricing processing
 
@@ -196,9 +212,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /ProductCombinations/\{productcombinationId\}/TransferPricings/\{transferpricingId\}/Exchanges
 \`\`\`
 
-### PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Execute
+## PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Execute
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution ExBQ Execute an available automated action for Fulfillment
 
@@ -214,9 +234,13 @@ PUT: A possible name for the path could be:
 /combined\-products/\{productcombinationid\}/fulfillments/\{fulfillmentid\}/execute
 \`\`\`
 
-### POST: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/Initiate
+## POST: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/Initiate
 
-**Description**
+:::info Path
+POST: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/Initiate
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution InBQ Instantiate a new Embedded Product Control
 
@@ -232,9 +256,13 @@ POST: The name of the path should ideally be:
 
 This follows REST best practices by using lowercase letters\, hyphens to separate words in the resource names\, and using plural nouns for resource collections\.
 
-### POST: /ProductCombination/\{productcombinationid\}/Fulfillment/Initiate
+## POST: /ProductCombination/\{productcombinationid\}/Fulfillment/Initiate
 
-**Description**
+:::info Path
+POST: /ProductCombination/\{productcombinationid\}/Fulfillment/Initiate
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution InBQ Instantiate a new Fulfillment
 
@@ -250,9 +278,13 @@ POST: Based on REST best practices\, the path '/ProductCombination/\{productcomb
 
 This naming convention follows the guidelines for RESTful endpoints where HTTP methods like PUT are used to initiate actions on resources \(in this case 'fulfillment'\)\. The path segments are all in lowercase and separated by hyphens
 
-### GET: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Retrieve
+## GET: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Retrieve
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution ReBQ Retrieve details about any aspect of Embedded Product Control
 
@@ -266,9 +298,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /productcombinations/\{productcombinationid\}/embeddedproductcontrols/\{embeddedproductcontrolid\}/retrieve
 
-### GET: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Retrieve
+## GET: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Retrieve
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution ReBQ Retrieve details about any aspect of Fulfillment
 
@@ -282,9 +318,13 @@ GET: Based on REST best practices\, the name of the path should focus on the res
 
 '/product\-combinations/\{productcombinationid\}/fulfillments/\{fulfillmentid\}'
 
-### GET: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Retrieve
+## GET: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Retrieve
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution ReBQ Retrieve details about any aspect of Transfer Pricing
 
@@ -298,9 +338,13 @@ GET: The name of the path should be:
 
 '/product\-combinations/\{productcombinationid\}/transfer\-pricing/\{transferpricingid\}'
 
-### PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Request
+## PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Request
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution RqBQ Request manual intervention or a decision with respect to Fulfillment
 
@@ -314,9 +358,13 @@ PUT: For RESTful API naming\, the path should be descriptive and reflect the res
 
 '/product\-combinations/\{productCombinationId\}/fulfillments/\{fulfillmentId\}/requests'
 
-### PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Request
+## PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Request
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution RqBQ Request manual intervention or a decision with respect to Transfer Pricing
 
@@ -330,9 +378,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 GET /product\-combinations/\{productcombinationid\}/transfer\-pricing/\{transferpricingid\}/requests
 
-### PUT: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Update
+## PUT: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/EmbeddedProductControl/\{embeddedproductcontrolid\}/Update
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution UpBQ Update details relating to Embedded Product Control
 
@@ -346,9 +398,13 @@ PUT: The name of the path should be as follows based on REST best practices:
 
 '/product\-combinations/\{productCombinationId\}/embedded\-product\-controls/\{embeddedProductControlId\}'
 
-### PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Update
+## PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/Fulfillment/\{fulfillmentid\}/Update
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution UpBQ Update details relating to Fulfillment
 
@@ -362,9 +418,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/product\-combinations/\{productCombinationId\}/fulfillments/\{fulfillmentId\}'
 
-### PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Update
+## PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductCombination/\{productcombinationid\}/TransferPricing/\{transferpricingid\}/Update
+:::
+
+### Description
 
 Product Combination supports bundled products applying necessary constraints on embedded product fulfillment and ensuring product performance analysis takes correct account of embedded products' contribution UpBQ Update details relating to Transfer Pricing
 

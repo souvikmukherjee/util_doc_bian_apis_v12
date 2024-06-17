@@ -1,50 +1,14 @@
 # FinancialInstrumentReferenceDataManagement
 
-## Table of Contents
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Control](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/control)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Execute](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/execute)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Notify](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/notify)
-- [POST: /FinancialInstrumentReferenceDataManagement/Register](#post-/financialinstrumentreferencedatamanagement/register)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Request](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/request)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Retrieve](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/retrieve)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Update](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/update)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Execute](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/debtinstrument/\{debtinstrumentid\}/execute)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Execute](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/equityinstrument/\{equityinstrumentid\}/execute)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Execute](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/futuresinstrument/\{futuresinstrumentid\}/execute)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Execute](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/optioninstrument/\{optioninstrumentid\}/execute)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Execute](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/warrantinstrument/\{warrantinstrumentid\}/execute)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Notify](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/debtinstrument/\{debtinstrumentid\}/notify)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Notify](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/equityinstrument/\{equityinstrumentid\}/notify)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Notify](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/futuresinstrument/\{futuresinstrumentid\}/notify)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Notify](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/optioninstrument/\{optioninstrumentid\}/notify)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Notify](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/warrantinstrument/\{warrantinstrumentid\}/notify)
-- [POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/Register](#post-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/debtinstrument/register)
-- [POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/Register](#post-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/equityinstrument/register)
-- [POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/Register](#post-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/futuresinstrument/register)
-- [POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/Register](#post-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/optioninstrument/register)
-- [POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/Register](#post-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/warrantinstrument/register)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Request](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/debtinstrument/\{debtinstrumentid\}/request)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Request](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/equityinstrument/\{equityinstrumentid\}/request)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Request](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/futuresinstrument/\{futuresinstrumentid\}/request)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Request](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/optioninstrument/\{optioninstrumentid\}/request)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Request](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/warrantinstrument/\{warrantinstrumentid\}/request)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Retrieve](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/debtinstrument/\{debtinstrumentid\}/retrieve)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Retrieve](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/equityinstrument/\{equityinstrumentid\}/retrieve)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Retrieve](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/futuresinstrument/\{futuresinstrumentid\}/retrieve)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Retrieve](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/optioninstrument/\{optioninstrumentid\}/retrieve)
-- [GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Retrieve](#get-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/warrantinstrument/\{warrantinstrumentid\}/retrieve)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Update](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/debtinstrument/\{debtinstrumentid\}/update)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Update](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/equityinstrument/\{equityinstrumentid\}/update)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Update](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/futuresinstrument/\{futuresinstrumentid\}/update)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Update](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/optioninstrument/\{optioninstrumentid\}/update)
-- [PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Update](#put-/financialinstrumentreferencedatamanagement/\{financialinstrumentreferencedatamanagementid\}/warrantinstrument/\{warrantinstrumentid\}/update)
-
-
 **BIAN Documentation:** [FinancialInstrumentReferenceDataManagement v12](https://app.swaggerhub.com/apis/BIAN-3/FinancialInstrumentReferenceDataManagement/12.0.0)
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Control
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Control
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Control Financial Instrument Directory Entry
 
@@ -61,9 +25,13 @@ According to REST best practices:
 \- Use hyphens to separate words
 \- Avoid using abbreviations if possible
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Execute
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Execute Financial Instrument Directory Entry
 
@@ -77,9 +45,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /financial\-instrument\-reference\-data\-management/\{financial\-instrument\-reference\-data\-management\-id\}/execute
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Notify
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Notify Financial Instrument Directory Entry
 
@@ -91,9 +63,13 @@ This API path allows you to retrieve information about a specific financial inst
 
 GET: Based on REST best practices\, the name of the path should not include verbs like "Notify" as it indicates an action\. The path should focus on the resource being accessed\, in this case\, the Financial Instrument Reference Data Management\. Therefore\, a more appropriate path name could be '/financial\-instrument\-reference\-data\-management/\{financialinstrumentreferencedatamanagementid\}'\.
 
-### POST: /FinancialInstrumentReferenceDataManagement/Register
+## POST: /FinancialInstrumentReferenceDataManagement/Register
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentReferenceDataManagement/Register
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Register Financial Instrument Directory Entry
 
@@ -105,9 +81,13 @@ This API path \`/FinancialInstrumentReferenceDataManagement/Register\` allows us
 
 POST: Based on REST best practices\, the name of the path should be '/financial\-instrument\-reference\-data\-management/register'\. It should be in lowercase letters and use hyphens to separate words for improved readability and consistency\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Request
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Request Financial Instrument Directory Entry
 
@@ -123,9 +103,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and including only nouns to represent resources\.
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Retrieve
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Retrieve Financial Instrument Directory Entry
 
@@ -141,9 +125,13 @@ GET: A more restful and descriptive name for this path could be:
 
 This path follows the RESTful convention of using lowercase letters and hyphens to separate words\. It also clearly indicates that this endpoint is for retrieving financial instrument reference data\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Update
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Update Financial Instrument Directory Entry
 
@@ -157,9 +145,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/financial\-instrument\-reference\-data\-management/\{financialinstrumentreferencedatamanagementid\}'
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Execute
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Execute Debt Instrument property
 
@@ -175,9 +167,13 @@ PUT: Based on REST best practices\, the name of the path should ideally be:
 
 This naming convention follows the guidelines for using lowercase letters\, using hyphens to separate words\, and using plural nouns for collections wherever applicable\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Execute
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Execute Equity Instrument property
 
@@ -191,9 +187,13 @@ PUT: Based on REST best practices\, the name of the path could be '/financial\-i
 
 This path follows the guidelines for using lowercase letters\, using hyphens to separate words\, and focusing on resource naming rather than actions\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Execute
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Execute Futures Instrument property
 
@@ -212,9 +212,13 @@ In this updated version of the path:
 \- Path parameters are represented within curly braces and in a more readable format\.
 \- The verb "Execute" has been removed
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Execute
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Execute Option Instrument property
 
@@ -230,9 +234,13 @@ PUT: Based on REST best practices\, the naming of the path should be as follows:
 
 In this format\, the path uses lowercase letters\, hyphens to separate words\, and parameter names in brackets to indicate dynamic elements\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Execute
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Execute Warrant Instrument property
 
@@ -245,9 +253,13 @@ This API path allows you to update the "Execute" property of a specific warrant 
 PUT: Based on REST best practices\, a more appropriate name for this path could be:
 '/financial\-instruments/\{financialinstrumentId\}/warrants/\{warrantId\}/execute'
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Notify
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Notify Debt Instrument property
 
@@ -269,9 +281,13 @@ In this format:
 
 This naming convention follows RESTful standards and improves the readability and consistency of the API endpoints\.
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Notify
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Notify Equity Instrument property
 
@@ -285,9 +301,13 @@ GET: A suitable name for the path '/FinancialInstrumentReferenceDataManagement/\
 
 '/reference\-data/\{financialinstrumentreferencedatamanagementid\}/equity\-instrument/\{equityinstrumentid\}/notify'
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Notify
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Notify Futures Instrument property
 
@@ -301,9 +321,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 /financial\-instrument\-reference\-data\-management/\{financial\_instrument\_reference\_data\_management\_id\}/futures\-instrument/\{futures\_instrument\_id\}/notify
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Notify
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Notify Option Instrument property
 
@@ -317,9 +341,13 @@ GET: The name of the path could be:
 
 /financial\-instruments/\{financialinstrumentreferencedatamanagementid\}/options/\{optioninstrumentid\}/notify
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Notify
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Notify Warrant Instrument property
 
@@ -333,9 +361,13 @@ GET: Based on REST best practices\, the name of the path should be as follows:
 
 /financial\-instrument\-reference\-data\-management/\{financialinstrumentreferencedatamanagementid\}/warrant\-instrument/\{warrantinstrumentid\}/notify
 
-### POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/Register
+## POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/Register
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/Register
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Register Debt Instrument property
 
@@ -349,9 +381,13 @@ POST: The name of the path should be:
 
 '/financial\-instrument\-reference\-data\-management/\{financial\-instrument\-reference\-data\-management\-id\}/debt\-instrument/register'
 
-### POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/Register
+## POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/Register
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/Register
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Register Equity Instrument property
 
@@ -365,9 +401,13 @@ POST: A suitable RESTful name for that path could be:
 
 '/financial\-instruments/\{financial\-instrument\-id\}/equity\-instruments/register'
 
-### POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/Register
+## POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/Register
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/Register
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Register Futures Instrument property
 
@@ -383,9 +423,13 @@ POST: The name of the path should be:
 /financial\-instrument\-reference\-data\-management/\{financial\-instrument\-reference\-data\-management\-id\}/futures\-instrument
 \`\`\`
 
-### POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/Register
+## POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/Register
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/Register
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Register Option Instrument property
 
@@ -401,9 +445,13 @@ POST: Following REST best practices\, the path could be named as:
 
 This naming convention ensures clarity\, consistency\, and readability in the API design\.
 
-### POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/Register
+## POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/Register
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/Register
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Register Warrant Instrument property
 
@@ -417,9 +465,13 @@ POST: The name of the path should be:
 
 /financial\-instrument\-reference\-data\-management/\{financial\-instrument\-reference\-data\-management\-id\}/warrant\-instrument/register
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Request
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Request Debt Instrument property
 
@@ -433,9 +485,13 @@ PUT: Based on REST best practices\, a more appropriate name for the given path c
 
 '/financial\-instrument\-reference\-data\-management/\{financialinstrumentreferencedatamanagementid\}/debt\-instrument/\{debtinstrumentid\}/request'
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Request
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Request Equity Instrument property
 
@@ -449,9 +505,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 /financial\-instruments/\{financial\-instrument\-id\}/equity\-instruments/\{equity\-instrument\-id\}/requests
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Request
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Request Futures Instrument property
 
@@ -467,9 +527,13 @@ PUT: A suitable name for the path could be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and using resource identifiers \(id\) instead of descriptive names\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Request
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Request Option Instrument property
 
@@ -487,9 +551,13 @@ Therefore\, a more suitable name for this path could be:
 
 In this updated version\, the path clearly defines the main resources involved \(financial instruments and options\) and follows a consistent naming convention with hyphens separating words for improved readability\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Request
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Request Warrant Instrument property
 
@@ -503,9 +571,13 @@ PUT: A suitable name for the path could be:
 
 /financial\-instrument\-reference\-data\-management/\{financial\-instrument\-reference\-data\-management\-id\}/warrant\-instrument/\{warrant\-instrument\-id\}/request
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Retrieve
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Retrieve Debt Instrument property
 
@@ -522,9 +594,13 @@ For the given path\, a better name could be:
 
 This name should reflect the hierarchy and structure of the resources being accessed in a clear and concise manner\.
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Retrieve
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Retrieve Equity Instrument property
 
@@ -538,9 +614,13 @@ GET: The name of the path should be:
 
 /financial\-instruments/\{financialInstrumentReferenceDataManagementId\}/equity\-instruments/\{equityInstrumentId\}/retrieve
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Retrieve
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Retrieve Futures Instrument property
 
@@ -556,9 +636,13 @@ GET: The name of the path should be something like:
 
 This path follows REST best practices by using lowercase letters\, separate words with hyphens\, and providing a clear indication of the resources being accessed\.
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Retrieve
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Retrieve Option Instrument property
 
@@ -572,9 +656,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /financial\-instrument\-reference\-data\-management/\{financialinstrumentreferencedatamanagementid\}/option\-instrument/\{optioninstrumentid\}/retrieve\.
 
-### GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Retrieve
+## GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Retrieve Warrant Instrument property
 
@@ -588,9 +676,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /financial\-instrument\-reference\-data\-management/\{financial\-instrument\-reference\-data\-management\-id\}/warrant\-instrument/\{warrant\-instrument\-id\}/retrieve
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Update
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/DebtInstrument/\{debtinstrumentid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Update Debt Instrument property
 
@@ -606,9 +698,13 @@ PUT: A possible name for this path could be:
 
 By using the HTTP method \`PUT\` and structuring the path to clearly represent the resources being updated\, this naming adheres to REST best practices\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Update
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/EquityInstrument/\{equityinstrumentid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Update Equity Instrument property
 
@@ -624,9 +720,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path represents a more resource\-oriented approach using all lowercase letters and hyphens to separate words\, as recommended in RESTful API design\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Update
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/FuturesInstrument/\{futuresinstrumentid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Update Futures Instrument property
 
@@ -647,9 +747,13 @@ In RESTful naming conventions:
 
 This naming convention follows best practices and makes the path more readable and standardized\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Update
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/OptionInstrument/\{optioninstrumentid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Update Option Instrument property
 
@@ -667,9 +771,13 @@ PUT: A suitable name for the path could be:
 
 This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, and clearly indicating the resource hierarchy and action being performed\.
 
-### PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Update
+## PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentReferenceDataManagement/\{financialinstrumentreferencedatamanagementid\}/WarrantInstrument/\{warrantinstrumentid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a directory of financial instrument reference data Update Warrant Instrument property
 

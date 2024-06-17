@@ -1,42 +1,14 @@
 # TradeConfirmationMatching
 
-## Table of Contents
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Control](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/control)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Exchange](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/exchange)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Execute](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/execute)
-- [POST: /TradeConfirmationMatching/Initiate](#post-/tradeconfirmationmatching/initiate)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Notify](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/notify)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Request](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/request)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Retrieve](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/retrieve)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Update](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/update)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Exchange](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/\{transactionconfirmationaffirmationid\}/exchange)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Exchange](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/\{transactionreportingid\}/exchange)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Exchange](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/\{unmatchedmarkettradeescalationid\}/exchange)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Execute](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/\{transactionconfirmationaffirmationid\}/execute)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Execute](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/\{transactionreportingid\}/execute)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Execute](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/\{unmatchedmarkettradeescalationid\}/execute)
-- [POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/Initiate](#post-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/initiate)
-- [POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/Initiate](#post-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/initiate)
-- [POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/Initiate](#post-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/initiate)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Notify](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/\{transactionconfirmationaffirmationid\}/notify)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Notify](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/\{transactionreportingid\}/notify)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Notify](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/\{unmatchedmarkettradeescalationid\}/notify)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Request](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/\{transactionconfirmationaffirmationid\}/request)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Request](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/\{transactionreportingid\}/request)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Request](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/\{unmatchedmarkettradeescalationid\}/request)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Retrieve](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/\{transactionconfirmationaffirmationid\}/retrieve)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Retrieve](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/\{transactionreportingid\}/retrieve)
-- [GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Retrieve](#get-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/\{unmatchedmarkettradeescalationid\}/retrieve)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Update](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionconfirmationaffirmation/\{transactionconfirmationaffirmationid\}/update)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Update](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/transactionreporting/\{transactionreportingid\}/update)
-- [PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Update](#put-/tradeconfirmationmatching/\{tradeconfirmationmatchingid\}/unmatchedmarkettradeescalation/\{unmatchedmarkettradeescalationid\}/update)
-
-
 **BIAN Documentation:** [TradeConfirmationMatching v12](https://app.swaggerhub.com/apis/BIAN-3/TradeConfirmationMatching/12.0.0)
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Control
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Control
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Control
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Control Trade Matching Operating Session
 
@@ -48,9 +20,13 @@ This API path allows the bank to update an existing resource related to the trad
 
 PUT: The name of the path should be \`/trade\-confirmations/\{tradeconfirmationId\}/controls\` based on REST best practices\. The path segments should be lowercase\, use hyphens to separate words\, and resources should be represented in plural form\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Exchange
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Exchange Trade Matching Operating Session
 
@@ -64,9 +40,13 @@ PUT: The path could be named as follows:
 
 '/trade\-confirmations/\{tradeConfirmationId\}/exchange'
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Execute
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Execute Trade Matching Operating Session
 
@@ -80,9 +60,13 @@ PUT: Following REST best practices\, a more suitable name for the path '/TradeCo
 
 This name indicates the resource being accessed \('trade confirmations'\)\, the specific resource ID \('id' in place of 'tradeconfirmationmatchingid'\)\, and the action being taken \('execute'\)\.
 
-### POST: /TradeConfirmationMatching/Initiate
+## POST: /TradeConfirmationMatching/Initiate
 
-**Description**
+:::info Path
+POST: /TradeConfirmationMatching/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Initiate Trade Matching Operating Session
 
@@ -96,9 +80,13 @@ POST: The name of the path '/TradeConfirmationMatching/Initiate' following REST 
 
 A better path name could be '/trade\-confirmations' to represent the collection of trade confirmations or '/trade\-confirmations/matching' to specifically indicate the matching process for trade confirmations\.
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Notify
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Notify Trade Matching Operating Session
 
@@ -114,9 +102,13 @@ GET: Based on REST best practices\, the path should be named in a resource\-orie
 /TradeConfirmations/\{tradeconfirmationId\}/Matching/Notify
 \`\`\`
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Request
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Request Trade Matching Operating Session
 
@@ -130,9 +122,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Requests
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Retrieve
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Retrieve Trade Matching Operating Session
 
@@ -144,9 +140,13 @@ This API path allows the bank to retrieve information about a specific Trade Mat
 
 GET: Based on REST best practices\, the name of the path '/TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Retrieve' could be simplified to '/trade\-confirmation\-matching/\{id\}'\. This follows the convention of using lowercase letters\, separating words with hyphens\, and using a generic term such as 'id' for the identifier placeholder\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Update
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Update Trade Matching Operating Session
 
@@ -162,9 +162,13 @@ PUT '/TradeConfirmationMatching/\{tradeconfirmationmatchingid\}'
 
 This naming convention follows the RESTful practice of using the HTTP verb PUT to update a specific resource identified by its unique identifier within the URL path\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Exchange
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Exchange Transaction Confirmation/Affirmation Function
 
@@ -180,9 +184,13 @@ PUT: A possible name for the path could be:
 
 This path name follows REST best practices by using all lowercase letters\, separating words with hyphens\, and using plural nouns to represent collections of resources\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Exchange
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Exchange Transaction Reporting Function
 
@@ -196,9 +204,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/trade\-confirmations/\{tradeconfirmationmatchingid\}/transaction\-reports/\{transactionreportingid\}/exchange'
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Exchange
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Exchange Unmatched Market Trade Escalation Function
 
@@ -212,9 +224,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/trade\-confirmations/\{tradeconfirmationmatchingid\}/unmatched\-market\-trades\-escalations/\{unmatchedmarkettradeescalationid\}/exchanges\`
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Execute
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Execute Transaction Confirmation/Affirmation Function
 
@@ -230,9 +246,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path '/Trade
 
 This name is more standardized and follows common REST conventions such as using lowercase letters\, separating words with hyphens\, and using resource\-centric naming\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Execute
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Execute Transaction Reporting Function
 
@@ -246,9 +266,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 '/trade\-confirmations/\{tradeconfirmationmatchingid\}/transaction\-reporting/\{transactionreportingid\}/execute'
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Execute
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Execute Unmatched Market Trade Escalation Function
 
@@ -266,9 +290,13 @@ A suitable name for the path could be:
 
 This path adheres to RESTful naming conventions by using lowercase letters\, hyphens to separate words\, and properly indicating the hierarchy of resources\.
 
-### POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/Initiate
+## POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/Initiate
 
-**Description**
+:::info Path
+POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Initiate Transaction Confirmation/Affirmation Function
 
@@ -282,9 +310,13 @@ POST: Following REST best practices\, the name of the path could be:
 
 '/trade\-confirmations/\{tradeconfirmationmatchingid\}/transaction\-confirmation\-affirmations/initiate'
 
-### POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/Initiate
+## POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/Initiate
 
-**Description**
+:::info Path
+POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Initiate Transaction Reporting Function
 
@@ -298,9 +330,13 @@ POST: In following REST best practices\, a more appropriate name for the path '/
 
 '/trade\-confirmations/\{tradeconfirmationid\}/reporting/transactions/initiate'
 
-### POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/Initiate
+## POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/Initiate
 
-**Description**
+:::info Path
+POST: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Initiate Unmatched Market Trade Escalation Function
 
@@ -314,9 +350,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 '/trade\-confirmation\-matching/\{trade\-confirmation\-matching\-id\}/unmatched\-market\-trade\-escalation/initiate'
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Notify
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Notify Transaction Confirmation/Affirmation Function
 
@@ -330,9 +370,13 @@ GET: Based on RESTful naming conventions\, the recommended name for the path wou
 
 /TradeConfirmationMatchings/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmations/\{transactionconfirmationaffirmationid\}/Notifications
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Notify
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Notify Transaction Reporting Function
 
@@ -348,9 +392,13 @@ GET: A potential name for the path could be:
 
 This name is descriptive\, follows the RESTful convention of using lowercase letters and dashes instead of underscores for readability\, and specifies the resource hierarchy in a clear manner\.
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Notify
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Notify Unmatched Market Trade Escalation Function
 
@@ -364,9 +412,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/trade\-confirmations/\{tradeconfirmationmatchingid\}/unmatched\-market\-trades/\{unmatchedmarkettradeescalationid\}/notify'
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Request
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Request Transaction Confirmation/Affirmation Function
 
@@ -382,9 +434,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 REST paths should be noun\-centric and resource\-oriented\, using nouns to represent resources and sub\-resources\. The path should also be descriptive and reflect the hierarchy of resources\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Request
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Request Transaction Reporting Function
 
@@ -398,9 +454,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /TradeConfirmations/\{tradeconfirmationId\}/TransactionReports/\{transactionreportId\}/Requests
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Request
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Request Unmatched Market Trade Escalation Function
 
@@ -416,9 +476,13 @@ PUT: Based on REST best practices\, the name for this path could be:
 
 This path is more clear and descriptive\, following the resource naming conventions of a RESTful API\.
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Retrieve
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Retrieve Transaction Confirmation/Affirmation Function
 
@@ -432,9 +496,13 @@ GET: Based on REST best practices\, the name for this path should be:
 
 '/trade\-confirmations/\{tradeconfirmationId\}/transaction\-confirmations/\{transactionconfirmationId\}/retrieve'
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Retrieve
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Retrieve Transaction Reporting Function
 
@@ -450,9 +518,13 @@ GET /trade\-confirmations/\{tradeConfirmationId\}/transactions/\{transactionId\}
 
 This name follows the REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for resources\. It also includes the necessary actions in the path to convey the purpose of retrieving trade transaction reporting data\.
 
-### GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Retrieve
+## GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Retrieve Unmatched Market Trade Escalation Function
 
@@ -466,9 +538,13 @@ GET: Based on RESTful best practices\, the name of the path should be something 
 
 GET /trade\-confirmations/\{trade\_confirmation\_id\}/unmatched\-market\-trades/\{unmatched\_market\_trade\_id\}/escalations/\{escalation\_id\}
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Update
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionConfirmationAffirmation/\{transactionconfirmationaffirmationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Update Transaction Confirmation/Affirmation Function
 
@@ -482,9 +558,13 @@ PUT: The name of the path should be:
 
 \`PATCH /trade\-confirmations/\{tradeconfirmationmatchingid\}/transaction\-confirmations/\{transactionconfirmationaffirmationid\}\`
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Update
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/TransactionReporting/\{transactionreportingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Update Transaction Reporting Function
 
@@ -500,9 +580,13 @@ PUT /trade\-confirmations/\{tradeconfirmationId\}/transaction\-reporting/\{trans
 
 In this naming convention\, we use all lowercase letters\, separate words with hyphens for readability\, and rename the path parameters to reflect the resource they represent\.
 
-### PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Update
+## PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeConfirmationMatching/\{tradeconfirmationmatchingid\}/UnmatchedMarketTradeEscalation/\{unmatchedmarkettradeescalationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank's interface to a central market matching and confirmation service whether the bank acts as broker dealer or institutional investor Update Unmatched Market Trade Escalation Function
 

@@ -1,60 +1,14 @@
 # Leasing
 
-## Table of Contents
-- [PUT: /Leasing/\{leasingid\}/Control](#put-/leasing/\{leasingid\}/control)
-- [PUT: /Leasing/\{leasingid\}/Exchange](#put-/leasing/\{leasingid\}/exchange)
-- [PUT: /Leasing/\{leasingid\}/Execute](#put-/leasing/\{leasingid\}/execute)
-- [POST: /Leasing/Initiate](#post-/leasing/initiate)
-- [GET: /Leasing/\{leasingid\}/Retrieve](#get-/leasing/\{leasingid\}/retrieve)
-- [PUT: /Leasing/\{leasingid\}/Request](#put-/leasing/\{leasingid\}/request)
-- [PUT: /Leasing/\{leasingid\}/Update](#put-/leasing/\{leasingid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Exchange](#put-/leasing/\{leasingid\}/fees/\{feesid\}/exchange)
-- [PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Exchange](#put-/leasing/\{leasingid\}/lien/\{lienid\}/exchange)
-- [PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Exchange](#put-/leasing/\{leasingid\}/payments/\{paymentsid\}/exchange)
-- [PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Exchange](#put-/leasing/\{leasingid\}/sweep/\{sweepid\}/exchange)
-- [POST: /Leasing/\{leasingid\}/Collateral/Initiate](#post-/leasing/\{leasingid\}/collateral/initiate)
-- [POST: /Leasing/\{leasingid\}/CorporateAction/Initiate](#post-/leasing/\{leasingid\}/corporateaction/initiate)
-- [POST: /Leasing/\{leasingid\}/Deposits/Initiate](#post-/leasing/\{leasingid\}/deposits/initiate)
-- [POST: /Leasing/\{leasingid\}/Fees/Initiate](#post-/leasing/\{leasingid\}/fees/initiate)
-- [POST: /Leasing/\{leasingid\}/FinancialInstrument/Initiate](#post-/leasing/\{leasingid\}/financialinstrument/initiate)
-- [POST: /Leasing/\{leasingid\}/IssuedDevice/Initiate](#post-/leasing/\{leasingid\}/issueddevice/initiate)
-- [POST: /Leasing/\{leasingid\}/Lien/Initiate](#post-/leasing/\{leasingid\}/lien/initiate)
-- [POST: /Leasing/\{leasingid\}/Payments/Initiate](#post-/leasing/\{leasingid\}/payments/initiate)
-- [POST: /Leasing/\{leasingid\}/Sweep/Initiate](#post-/leasing/\{leasingid\}/sweep/initiate)
-- [POST: /Leasing/\{leasingid\}/Withdrawals/Initiate](#post-/leasing/\{leasingid\}/withdrawals/initiate)
-- [GET: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve](#get-/leasing/\{leasingid\}/clearingandsettlement/\{clearingandsettlementid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Retrieve](#get-/leasing/\{leasingid\}/collateral/\{collateralid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Retrieve](#get-/leasing/\{leasingid\}/corporateaction/\{corporateactionid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Retrieve](#get-/leasing/\{leasingid\}/deposits/\{depositsid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Fees/\{feesid\}/Retrieve](#get-/leasing/\{leasingid\}/fees/\{feesid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve](#get-/leasing/\{leasingid\}/financialinstrument/\{financialinstrumentid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Interest/\{interestid\}/Retrieve](#get-/leasing/\{leasingid\}/interest/\{interestid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/leasing/\{leasingid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Lien/\{lienid\}/Retrieve](#get-/leasing/\{leasingid\}/lien/\{lienid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Retrieve](#get-/leasing/\{leasingid\}/payments/\{paymentsid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Retrieve](#get-/leasing/\{leasingid\}/sweep/\{sweepid\}/retrieve)
-- [GET: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Retrieve](#get-/leasing/\{leasingid\}/withdrawals/\{withdrawalsid\}/retrieve)
-- [PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Request](#put-/leasing/\{leasingid\}/collateral/\{collateralid\}/request)
-- [PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Request](#put-/leasing/\{leasingid\}/fees/\{feesid\}/request)
-- [PUT: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update](#put-/leasing/\{leasingid\}/clearingandsettlement/\{clearingandsettlementid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Update](#put-/leasing/\{leasingid\}/collateral/\{collateralid\}/update)
-- [PUT: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Update](#put-/leasing/\{leasingid\}/corporateaction/\{corporateactionid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Update](#put-/leasing/\{leasingid\}/deposits/\{depositsid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Update](#put-/leasing/\{leasingid\}/fees/\{feesid\}/update)
-- [PUT: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Update](#put-/leasing/\{leasingid\}/financialinstrument/\{financialinstrumentid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Interest/\{interestid\}/Update](#put-/leasing/\{leasingid\}/interest/\{interestid\}/update)
-- [PUT: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/leasing/\{leasingid\}/issueddevice/\{issueddeviceid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Update](#put-/leasing/\{leasingid\}/lien/\{lienid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Update](#put-/leasing/\{leasingid\}/payments/\{paymentsid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Update](#put-/leasing/\{leasingid\}/sweep/\{sweepid\}/update)
-- [PUT: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Update](#put-/leasing/\{leasingid\}/withdrawals/\{withdrawalsid\}/update)
-
-
 **BIAN Documentation:** [Leasing v12](https://app.swaggerhub.com/apis/BIAN-3/Leasing/12.0.0)
 
-### PUT: /Leasing/\{leasingid\}/Control
+## PUT: /Leasing/\{leasingid\}/Control
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Control
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary CoCR Control the processing of Leasing Facility
 
@@ -70,9 +24,13 @@ PUT: The name of the path could be:
 /leasing/\{leasingid\}/control
 \`\`\`
 
-### PUT: /Leasing/\{leasingid\}/Exchange
+## PUT: /Leasing/\{leasingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Exchange
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary EcCR Accept\, verify\, etc\. aspects of Leasing Facility processing
 
@@ -88,9 +46,13 @@ A suitable name for this path could be '/Leasing/\{leasingid\}/ExchangeAsset'\, 
 
 It is important to use clear and meaningful names for paths in REST APIs to enhance usability and maintainability\.
 
-### PUT: /Leasing/\{leasingid\}/Execute
+## PUT: /Leasing/\{leasingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Execute
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ExCR Execute an available automated action for Leasing Facility
 
@@ -102,9 +64,13 @@ This API path allows you to update an existing leasing facility by executing an 
 
 PUT: The name of the path '/Leasing/\{leasingid\}/Execute' should be something like '/leasing/\{leasingid\}/execution'\. It's best to use words that represent resources and actions in a clear and consistent way according to RESTful design principles\.
 
-### POST: /Leasing/Initiate
+## POST: /Leasing/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InCR Instantiate a new Leasing Facility
 
@@ -116,9 +82,13 @@ This BIAN API path allows you to create a new Leasing Facility\. It enables cust
 
 POST: The name of the path '/Leasing/Initiate' should ideally be changed to '/leasing' following REST best practices\. RESTful URIs should be in all lowercase letters and use hyphens to separate words for improved readability and consistency\.
 
-### GET: /Leasing/\{leasingid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReCR Retrieve details about any aspect of Leasing Facility
 
@@ -134,9 +104,13 @@ GET /leasing/\{leasingid\}
 
 This path indicates that a GET request can be made to the "/leasing/\{leasingid\}" endpoint to retrieve a specific leasing resource identified by the leasingid parameter\.
 
-### PUT: /Leasing/\{leasingid\}/Request
+## PUT: /Leasing/\{leasingid\}/Request
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Request
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary RqCR Request manual intervention or a decision with respect to Leasing Facility
 
@@ -150,9 +124,13 @@ PUT: A more appropriate name for the path '/Leasing/\{leasingid\}/Request' follo
 
 In RESTful API design\, it is common to use plural nouns for resource names to denote collections\. Using lowercase letters and separating words with hyphens is also a good practice for better readability and consistency\.
 
-### PUT: /Leasing/\{leasingid\}/Update
+## PUT: /Leasing/\{leasingid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpCR Update details relating to Leasing Facility
 
@@ -166,9 +144,13 @@ PUT: The name of the path should be:
 
 PATCH /Leasing/\{leasingid\}
 
-### PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Exchange
+## PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Exchange
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary EcBQ Accept\, verify\, etc\. aspects of Fees processing
 
@@ -182,9 +164,13 @@ PUT: The name of the path '/Leasing/\{leasingid\}/Fees/\{feesid\}/Exchange' foll
 
 '/leasing/\{leasingid\}/fees/\{feesid\}/exchange'
 
-### PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Exchange
+## PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Exchange
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary EcBQ Accept\, verify\, etc\. aspects of Lien processing
 
@@ -204,9 +190,13 @@ In this naming convention:
 \- Use singular nouns for paths representing specific resources\.
 \- Use hierarchical path structures to represent relationships between resources\.
 
-### PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Exchange
+## PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Exchange
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary EcBQ Accept\, verify\, etc\. aspects of Payments processing
 
@@ -222,9 +212,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In RESTful APIs\, it is common practice to use lowercase letters and separate words with dashes in URLs for better readability and consistency\.
 
-### PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Exchange
+## PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Exchange
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary EcBQ Accept\, verify\, etc\. aspects of Sweep processing
 
@@ -238,9 +232,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 '/leasing/\{leasingid\}/sweeps/\{sweepid\}/exchange'
 
-### POST: /Leasing/\{leasingid\}/Collateral/Initiate
+## POST: /Leasing/\{leasingid\}/Collateral/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Collateral/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Collateral
 
@@ -256,9 +254,13 @@ POST /leasing/\{leasingid\}/collateral\-initiation
 
 This naming convention follows the HTTP method \(POST\) and uses a clear and concise description of the action being performed \('collateral\-initiation'\) while also maintaining the hierarchy within the URI path\.
 
-### POST: /Leasing/\{leasingid\}/CorporateAction/Initiate
+## POST: /Leasing/\{leasingid\}/CorporateAction/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/CorporateAction/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Corporate Action
 
@@ -276,9 +278,13 @@ POST /leasing/\{leasingId\}/corporate\-actions
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens for readability\. Also\, plural nouns should be used for endpoint names\.
 
-### POST: /Leasing/\{leasingid\}/Deposits/Initiate
+## POST: /Leasing/\{leasingid\}/Deposits/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Deposits/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Deposits
 
@@ -290,9 +296,13 @@ This BIAN API path allows users to initiate a new deposit for a specific leasing
 
 POST: The name of the path should be "/leasing/\{leasingid\}/deposits/initiate" to follow REST best practices\. The path should use lowercase letters and hyphens to separate words for better readability and consistency\.
 
-### POST: /Leasing/\{leasingid\}/Fees/Initiate
+## POST: /Leasing/\{leasingid\}/Fees/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Fees/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Fees
 
@@ -304,9 +314,13 @@ This API path allows a user to initiate new fees associated with a specific leas
 
 POST: The name of the path '/Leasing/\{leasingid\}/Fees/Initiate' should be something like '/leasings/\{leasingid\}/fees/initiate' following REST best practices\.
 
-### POST: /Leasing/\{leasingid\}/FinancialInstrument/Initiate
+## POST: /Leasing/\{leasingid\}/FinancialInstrument/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/FinancialInstrument/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Financial Instrument
 
@@ -324,9 +338,13 @@ POST /leasing/\{leasingid\}/financial\-instruments
 
 This path follows REST best practices by using lowercase letters\, dashes for readability\, and includes the appropriate HTTP method 'POST' to initiate a new financial instrument for a specific leasing account identified by \{leasingid\}\.
 
-### POST: /Leasing/\{leasingid\}/IssuedDevice/Initiate
+## POST: /Leasing/\{leasingid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Issued Device
 
@@ -342,9 +360,13 @@ POST: Based on REST best practices\, the name of the path should be:
 /leasing/\{leasingId\}/issued\-devices/initiate
 \`\`\`
 
-### POST: /Leasing/\{leasingid\}/Lien/Initiate
+## POST: /Leasing/\{leasingid\}/Lien/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Lien/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Lien
 
@@ -358,9 +380,13 @@ POST: A RESTful name for the path '/Leasing/\{leasingid\}/Lien/Initiate' could b
 
 POST /leasings/\{leasingid\}/liens
 
-### POST: /Leasing/\{leasingid\}/Payments/Initiate
+## POST: /Leasing/\{leasingid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Payments/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Payments
 
@@ -378,9 +404,13 @@ Following these guidelines\, a more suitable name for the described path could b
 
 This endpoint is focused on the "payments" resource within a specific "leasing" context\, and it allows for initiating
 
-### POST: /Leasing/\{leasingid\}/Sweep/Initiate
+## POST: /Leasing/\{leasingid\}/Sweep/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Sweep/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Sweep
 
@@ -398,9 +428,13 @@ POST /leasing/\{leasingid\}/sweep
 
 In this updated version\, the method is changed to POST \(as it is an operation to initiate a sweep\) and the resource name 'sweep' is kept in lowercase as per convention\. The action 'Initiate' is implied by the POST request to the 'sweep' resource
 
-### POST: /Leasing/\{leasingid\}/Withdrawals/Initiate
+## POST: /Leasing/\{leasingid\}/Withdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /Leasing/\{leasingid\}/Withdrawals/Initiate
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary InBQ Instantiate a new Withdrawals
 
@@ -416,9 +450,13 @@ POST: Based on REST best practices\, the name of the path should be:
 POST /leasing/\{leasingid\}/withdrawals
 \`\`\`
 
-### GET: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Clearing and Settlement
 
@@ -436,9 +474,13 @@ GET: Following REST best practices\, a more appropriate name for the path would 
 
 This path better reflects the resource hierarchy and uses lowercase letters with hyphens to separate words for better readability\.
 
-### GET: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Collateral
 
@@ -452,9 +494,13 @@ GET: In following REST best practices\, the name of the path should be:
 
 GET /leasing/\{leasingid\}/collateral/\{collateralid\}
 
-### GET: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Corporate Action
 
@@ -474,9 +520,13 @@ A more appropriate resource\-based path following REST best practices could be:
 
 This path indicates the hierarchy of the resources \(leasing and corporate action\) and specifies a specific corporate action under a particular leasing
 
-### GET: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Deposits
 
@@ -488,9 +538,13 @@ This API path allows you to retrieve details about a specific deposit associated
 
 GET: The name of the path should be: GET /leasing/\{leasingid\}/deposits/\{depositsid\}
 
-### GET: /Leasing/\{leasingid\}/Fees/\{feesid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Fees/\{feesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Fees/\{feesid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Fees
 
@@ -504,9 +558,13 @@ GET: A more appropriate name for the path '/Leasing/\{leasingid\}/Fees/\{feesid\
 
 GET /leases/\{leasingid\}/fees/\{feesid\}
 
-### GET: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Financial Instrument
 
@@ -520,9 +578,13 @@ GET: The name for this path should be:
 
 GET /leasing/\{leasingid\}/financial\-instrument/\{financialinstrumentid\}
 
-### GET: /Leasing/\{leasingid\}/Interest/\{interestid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Interest
 
@@ -538,9 +600,13 @@ GET: To follow REST best practices\, the name of the path should be:
 
 This path should represent a specific resource within the general collection of interests associated with a particular leasing contract\.
 
-### GET: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Issued Device
 
@@ -558,9 +624,13 @@ GET /leasing/\{leasingid\}/issuedDevices/\{issueddeviceid\}
 
 In RESTful conventions\, plural nouns are preferred for resources and individual resource identifiers should be in lowercase\.
 
-### GET: /Leasing/\{leasingid\}/Lien/\{lienid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Lien/\{lienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Lien/\{lienid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Lien
 
@@ -576,9 +646,13 @@ GET: The name of the path should be:
 GET /leasing/\{leasingid\}/lien/\{lienid\}
 \`\`\`
 
-### GET: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Payments
 
@@ -594,9 +668,13 @@ GET '/leasing/\{leasingid\}/payments/\{paymentsid\}'
 
 This URL structure clearly identifies the resources being accessed \(leasing and payments\) and the specific instance of each resource \(identified by \{leasingid\} and \{paymentsid\}\)\. The use of "Retrieve" in the path is redundant in RESTful design as the HTTP verb "GET
 
-### GET: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Sweep
 
@@ -609,9 +687,13 @@ This API path is used to retrieve details about any aspect of a sweep within a l
 GET: The name for this path\, following REST best practices\, should be:  
 GET /leasing/\{leasingid\}/sweep/\{sweepid\}
 
-### GET: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Retrieve
+## GET: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Retrieve
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary ReBQ Retrieve details about any aspect of Withdrawals
 
@@ -624,9 +706,13 @@ This API path is designed to retrieve details about a specific withdrawal associ
 GET: Based on REST best practices\, the name of the path should be:
 '/leasing/\{leasingid\}/withdrawals/\{withdrawalsid\}'
 
-### PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Request
+## PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Request
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Request
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary RqBQ Request manual intervention or a decision with respect to Collateral
 
@@ -640,9 +726,13 @@ PUT: A good name for the path '/Leasing/\{leasingid\}/Collateral/\{collateralid\
 
 '/leases/\{leasingid\}/collaterals/\{collateralid\}/requests'
 
-### PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Request
+## PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Request
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Request
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary RqBQ Request manual intervention or a decision with respect to Fees
 
@@ -658,9 +748,13 @@ PUT: The name of the path '/Leasing/\{leasingid\}/Fees/\{feesid\}/Request' shoul
 
 It is recommended to use lowercase letters\, separate words with hyphens\, and keep the path descriptive of the resources it represents\.
 
-### PUT: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
+## PUT: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Clearing and Settlement
 
@@ -674,9 +768,13 @@ PUT: The name of the path should be:
 
 /leasing/\{leasingId\}/clearing\-and\-settlement/\{clearingAndSettlementId\}
 
-### PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Update
+## PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Collateral/\{collateralid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Collateral
 
@@ -692,9 +790,13 @@ PUT: Based on REST best practices\, the name of the path should follow a resourc
 
 This naming convention focuses on the resources being manipulated \(leasing and collateral\) rather than the operation being performed \(update\)\. The HTTP method used \(e\.g\.\, PUT or PATCH\) on this path would indicate the intention to update the resource\.
 
-### PUT: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Update
+## PUT: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/CorporateAction/\{corporateactionid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Corporate Action
 
@@ -708,9 +810,13 @@ PUT: A possible name for that path following REST best practices could be:
 
 PATCH /leasing/\{leasingid\}/corporate\-action/\{corporateactionid\}
 
-### PUT: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Update
+## PUT: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Deposits/\{depositsid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Deposits
 
@@ -726,9 +832,13 @@ PUT /leasing/\{leasingid\}/deposits/\{depositsid\}
 
 This naming convention reflects the use of HTTP methods to perform CRUD operations \(in this case\, update\) on specific resources \(leasing and deposits\) identified by their unique identifiers \(leasingid and depositsid\)\.
 
-### PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Update
+## PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Fees/\{feesid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Fees
 
@@ -740,9 +850,13 @@ This API path allows you to update specific details related to fees for a leasin
 
 PUT: A suitable name for this path could be: PUT /leasing/\{leasingid\}/fees/\{feesid\}
 
-### PUT: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Update
+## PUT: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/FinancialInstrument/\{financialinstrumentid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Financial Instrument
 
@@ -757,9 +871,13 @@ PUT: The name of the path should be:
 PUT /leasing/\{leasingid\}/financial\-instrument/\{financialinstrumentid\}
 \`\`\`
 
-### PUT: /Leasing/\{leasingid\}/Interest/\{interestid\}/Update
+## PUT: /Leasing/\{leasingid\}/Interest/\{interestid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Interest/\{interestid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Interest
 
@@ -775,9 +893,13 @@ PUT /leasing/\{leasingid\}/interest/\{interestid\}
 
 This name indicates that a PUT request should be used to update the specific interest associated with the leasing ID\. It follows the convention of using the HTTP method to convey the action and resource being affected\.
 
-### PUT: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Issued Device
 
@@ -789,9 +911,13 @@ This API path allows you to update information related to an issued device withi
 
 PUT: The name of the path should be PUT /leasing/\{leasingid\}/issueddevices/\{issueddeviceid\}\.
 
-### PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Update
+## PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Lien/\{lienid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Lien
 
@@ -805,9 +931,13 @@ PUT: The name of the path should be:
 
 PUT /Leasing/\{leasingid\}/Lien/\{lienid\}
 
-### PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Update
+## PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Payments
 
@@ -821,9 +951,13 @@ PUT: The appropriate name for this path following REST best practices would be:
 
 PUT /leasing/\{leasingid\}/payments/\{paymentsid\}
 
-### PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Update
+## PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Sweep/\{sweepid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Sweep
 
@@ -839,9 +973,13 @@ PUT /leasing/\{leasingid\}/sweep/\{sweepid\}
 
 This path follows REST best practices by using the HTTP method PUT to update a specific resource identified by the leasingid and sweepid in the URI\. The path is in lower case\, uses plural nouns for resource names\, and uses hyphens to separate multiple words in a resource name\.
 
-### PUT: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Update
+## PUT: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /Leasing/\{leasingid\}/Withdrawals/\{withdrawalsid\}/Update
+:::
+
+### Description
 
 The leasing products enables customers to finance equipment purchases using the leased item as collateral when necessary UpBQ Update details relating to Withdrawals
 

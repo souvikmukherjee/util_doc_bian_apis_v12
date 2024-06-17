@@ -1,40 +1,14 @@
 # BranchLocationManagement
 
-## Table of Contents
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Capture](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/capture)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Control](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/control)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Exchange](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/exchange)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Grant](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/grant)
-- [POST: /BranchLocationManagement/Initiate](#post-/branchlocationmanagement/initiate)
-- [GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Retrieve](#get-/branchlocationmanagement/\{branchlocationmanagementid\}/retrieve)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Request](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/request)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Update](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/update)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Capture](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/customerliaison/\{customerliaisonid\}/capture)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Capture](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/productandserviceplanning/\{productandserviceplanningid\}/capture)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Capture](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/staffandlocationplanning/\{staffandlocationplanningid\}/capture)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Capture](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/troubleshooting/\{troubleshootingid\}/capture)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Control](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/productandserviceplanning/\{productandserviceplanningid\}/control)
-- [POST: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/Initiate](#post-/branchlocationmanagement/\{branchlocationmanagementid\}/customerliaison/initiate)
-- [POST: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/Initiate](#post-/branchlocationmanagement/\{branchlocationmanagementid\}/troubleshooting/initiate)
-- [GET: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Retrieve](#get-/branchlocationmanagement/\{branchlocationmanagementid\}/customerliaison/\{customerliaisonid\}/retrieve)
-- [GET: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Retrieve](#get-/branchlocationmanagement/\{branchlocationmanagementid\}/productandserviceplanning/\{productandserviceplanningid\}/retrieve)
-- [GET: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Retrieve](#get-/branchlocationmanagement/\{branchlocationmanagementid\}/staffandlocationplanning/\{staffandlocationplanningid\}/retrieve)
-- [GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve](#get-/branchlocationmanagement/\{branchlocationmanagementid\}/troubleshooting/\{troubleshootingid\}/retrieve)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Request](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/customerliaison/\{customerliaisonid\}/request)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Request](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/productandserviceplanning/\{productandserviceplanningid\}/request)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Request](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/staffandlocationplanning/\{staffandlocationplanningid\}/request)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/troubleshooting/\{troubleshootingid\}/request)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Update](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/customerliaison/\{customerliaisonid\}/update)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Update](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/productandserviceplanning/\{productandserviceplanningid\}/update)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Update](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/staffandlocationplanning/\{staffandlocationplanningid\}/update)
-- [PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update](#put-/branchlocationmanagement/\{branchlocationmanagementid\}/troubleshooting/\{troubleshootingid\}/update)
-
-
 **BIAN Documentation:** [BranchLocationManagement v12](https://app.swaggerhub.com/apis/BIAN-3/BranchLocationManagement/12.0.0)
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Capture
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Capture
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CaCR Capture Branch Location Management Plan activity or event related information
 
@@ -50,9 +24,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, plural nouns for collections \(e\.g\.\, branchlocations\)\, and utilizing the specific resource identifier \(e\.g\.\, branchlocationId\) instead of a generic term like 'branchlocationmanagementid'\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Control
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Control
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CoCR Control the processing of Branch Location Management Plan
 
@@ -64,9 +42,13 @@ This BIAN API path allows you to update an existing Branch Location Management P
 
 PUT: The name of the path should be \`/branch\-location\-management/\{branchLocationManagementId\}/control\` to follow REST best practices\, using lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Exchange
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Exchange
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance EcCR Accept\, verify\, etc\. aspects of Branch Location Management Plan processing
 
@@ -82,9 +64,13 @@ PUT: The name of the path should be:
 
 This follows REST best practices by using a plural noun for the resource 'Exchange' to indicate that it represents a collection of exchanges related to a specific branch location management entity\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Grant
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Grant
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance GrCR Obtain permission to act in relation to Branch Location Management Plan
 
@@ -96,9 +82,13 @@ This API path allows you to update an existing Branch Location Management Plan b
 
 PUT: The name of the path should be "/BranchLocationManagement/\{branchlocationmanagementid\}/Grant" if it follows REST best practices\.
 
-### POST: /BranchLocationManagement/Initiate
+## POST: /BranchLocationManagement/Initiate
 
-**Description**
+:::info Path
+POST: /BranchLocationManagement/Initiate
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance InCR Instantiate a new Branch Location Management Plan
 
@@ -110,9 +100,13 @@ This API path allows you to create a new Branch Location Management Plan\. This 
 
 POST: Based on REST best practices\, the name of the path should ideally use nouns to represent resources\. So\, '/BranchLocations' would be a more appropriate name for the resource representing branch locations\. The action of initiating a branch location could be represented using an HTTP POST method on this resource\.
 
-### GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Retrieve
+## GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Retrieve
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance ReCR Retrieve details about any aspect of Branch Location Management Plan
 
@@ -126,9 +120,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 GET /branch\-locations/\{branchLocationManagementId\}
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Request
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Request
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance RqCR Request manual intervention or a decision with respect to Branch Location Management Plan
 
@@ -142,9 +140,13 @@ PUT: Based on REST best practices\, the name of the path should be \`/branchLoca
 
 Key principles to follow in naming RESTful paths include using lowercase letters\, using plural nouns for collections\, and separating words with hyphens or underscores\. In this case\, we have made adjustments to the given path to align with these best practices\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Update
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Update
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance UpCR Update details relating to Branch Location Management Plan
 
@@ -159,9 +161,13 @@ PUT: The name of the path should be:
 
 This path follows RESTful best practices by using nouns to represent resources and using HTTP methods for actions\. The "Update" operation is typically handled with an HTTP PUT request to the resource identifier\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Capture
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Capture
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CaBQ Capture Customer Liaison activity or event related information
 
@@ -174,9 +180,13 @@ This BIAN API path allows you to update existing information related to customer
 PUT: Based on REST best practices\, the name of the path should be:
 '/branches/\{branchId\}/customerliaisons/\{liaisonId\}/capture'
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Capture
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Capture
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CaBQ Capture Product and Service Planning activity or event related information
 
@@ -190,9 +200,13 @@ PUT: The name of the path should be:
 
 /BranchLocations/\{branchLocationId\}/ProductsAndServices/\{productServiceId\}/Capture
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Capture
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Capture
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CaBQ Capture Staff and Location Planning activity or event related information
 
@@ -204,9 +218,13 @@ This API path allows you to update information related to staff and location pla
 
 PUT: The name of the path should be '/BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/CaptureDocument' as it should include a specific noun \(Document\) describing the resource being captured\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Capture
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Capture
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CaBQ Capture Troubleshooting activity or event related information
 
@@ -222,9 +240,13 @@ PUT: Based on REST best practices\, the name of the path '/BranchLocationManagem
 '/locations/\{locationId\}/troubleshoot/\{troubleshootingId\}/capture'
 '/branch\-managements/\{managementId\}/trouble\-captures/\{tr
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Control
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Control
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Control
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance CoBQ Control the processing of Product and Service Planning
 
@@ -238,9 +260,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 /branch\-locations/\{branchLocationId\}/product\-services/\{productServiceId\}/control
 
-### POST: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/Initiate
+## POST: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/Initiate
 
-**Description**
+:::info Path
+POST: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/Initiate
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance InBQ Instantiate a new Customer Liaison
 
@@ -254,9 +280,13 @@ POST: The name of the path should be:
 
 /branch\-locations/\{branchLocationId\}/customer\-liaisons/initiate
 
-### POST: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/Initiate
+## POST: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/Initiate
 
-**Description**
+:::info Path
+POST: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/Initiate
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance InBQ Instantiate a new Troubleshooting
 
@@ -270,9 +300,13 @@ POST: A potential name for this path following REST best practices could be:
 
 '/branches/\{branchId\}/troubleshooting/initiate'
 
-### GET: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Retrieve
+## GET: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Retrieve
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance ReBQ Retrieve details about any aspect of Customer Liaison
 
@@ -286,9 +320,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}
 
-### GET: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Retrieve
+## GET: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Retrieve
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance ReBQ Retrieve details about any aspect of Product and Service Planning
 
@@ -300,9 +338,13 @@ This API path allows you to retrieve specific details about Product and Service 
 
 GET: The name of the path should be: '/branches/\{branchId\}/product\-service\-plans/\{planId\}/fetch'
 
-### GET: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Retrieve
+## GET: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Retrieve
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance ReBQ Retrieve details about any aspect of Staff and Location Planning
 
@@ -315,9 +357,13 @@ This API path allows you to retrieve details about any aspect of staff and locat
 GET: Based on REST best practices\, the name of the path should be designed to be resource\-focused and follow a hierarchical structure\. Here is a suggested path name for the given URL:
 '/branch\-locations/\{branchlocationmanagementid\}/staff\-and\-location\-planning/\{staffandlocationplanningid\}/retrieve'
 
-### GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+## GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance ReBQ Retrieve details about any aspect of Troubleshooting
 
@@ -331,9 +377,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /branches/\{branchId\}/troubleshootings/\{troubleshootingId\}
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Request
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Request
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance RqBQ Request manual intervention or a decision with respect to Customer Liaison
 
@@ -349,9 +399,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 In RESTful design\, resource names are usually pluralized to indicate a collection of resources\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Request
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Request
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance RqBQ Request manual intervention or a decision with respect to Product and Service Planning
 
@@ -365,9 +419,13 @@ PUT: The name of the path following REST best practices could be:
 
 /branch\-locations/\{branchId\}/product\-service\-plans/\{planId\}/requests
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Request
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Request
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance RqBQ Request manual intervention or a decision with respect to Staff and Location Planning
 
@@ -380,9 +438,13 @@ This API path allows users to update a specific request related to staff and loc
 PUT: Based on REST best practices\, the name of the path should be:
 '/branch\-locations/\{branchLocationId\}/staff\-location\-plans/\{staffLocationPlanId\}/requests'
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance RqBQ Request manual intervention or a decision with respect to Troubleshooting
 
@@ -396,9 +458,13 @@ PUT: The name of the path should be:
 
 /branches/\{branchId\}/troubleshootings/\{troubleshootingId\}/requests
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Update
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/CustomerLiaison/\{customerliaisonid\}/Update
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance UpBQ Update details relating to Customer Liaison
 
@@ -414,9 +480,13 @@ PUT: The RESTful path should be named in a way that is intuitive and describes t
 
 This path includes the main entities involved \(branches and customer liaisons\) and the specific action being performed \(updating\)\.
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Update
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/ProductandServicePlanning/\{productandserviceplanningid\}/Update
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance UpBQ Update details relating to Product and Service Planning
 
@@ -430,9 +500,13 @@ PUT: The name of the path should be:
 
 PUT /branch\-locations/\{branchLocationId\}/product\-service\-plans/\{productServicePlanId\}
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Update
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/StaffandLocationPlanning/\{staffandlocationplanningid\}/Update
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance UpBQ Update details relating to Staff and Location Planning
 
@@ -446,9 +520,13 @@ PUT: Based on REST best practices\, the name of the path '/BranchLocationManagem
 
 '/branches/\{branchId\}/staff\-location\-plans/\{planId\}'
 
-### PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+## PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchLocationManagement/\{branchlocationmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+:::
+
+### Description
 
 Manage and oversee branch activity\, assign resources to optimize branch performance UpBQ Update details relating to Troubleshooting
 

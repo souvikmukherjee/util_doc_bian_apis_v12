@@ -1,56 +1,14 @@
 # TradeClearing
 
-## Table of Contents
-- [PUT: /TradeClearing/\{tradeclearingid\}/Control](#put-/tradeclearing/\{tradeclearingid\}/control)
-- [PUT: /TradeClearing/\{tradeclearingid\}/Exchange](#put-/tradeclearing/\{tradeclearingid\}/exchange)
-- [PUT: /TradeClearing/\{tradeclearingid\}/Execute](#put-/tradeclearing/\{tradeclearingid\}/execute)
-- [POST: /TradeClearing/Initiate](#post-/tradeclearing/initiate)
-- [GET: /TradeClearing/\{tradeclearingid\}/Notify](#get-/tradeclearing/\{tradeclearingid\}/notify)
-- [PUT: /TradeClearing/\{tradeclearingid\}/Request](#put-/tradeclearing/\{tradeclearingid\}/request)
-- [GET: /TradeClearing/\{tradeclearingid\}/Retrieve](#get-/tradeclearing/\{tradeclearingid\}/retrieve)
-- [PUT: /TradeClearing/\{tradeclearingid\}/Update](#put-/tradeclearing/\{tradeclearingid\}/update)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Exchange](#put-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}/exchange)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Exchange](#put-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/exchange)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Exchange](#put-/tradeclearing/\{tradeclearingid\}/markettradematching/\{markettradematchingid\}/exchange)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Exchange](#put-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/\{markettradeouttraderesolutionid\}/exchange)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Exchange](#put-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/\{markettradesettlementinitiationid\}/exchange)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Execute](#put-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}/execute)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Execute](#put-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/execute)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Execute](#put-/tradeclearing/\{tradeclearingid\}/markettradematching/\{markettradematchingid\}/execute)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Execute](#put-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/\{markettradeouttraderesolutionid\}/execute)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Execute](#put-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/\{markettradesettlementinitiationid\}/execute)
-- [POST: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/Initiate](#post-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/initiate)
-- [POST: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/Initiate](#post-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/initiate)
-- [POST: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/Initiate](#post-/tradeclearing/\{tradeclearingid\}/markettradematching/initiate)
-- [POST: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/Initiate](#post-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/initiate)
-- [POST: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/Initiate](#post-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/initiate)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Notify](#get-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}/notify)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Notify](#get-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/notify)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Notify](#get-/tradeclearing/\{tradeclearingid\}/markettradematching/\{markettradematchingid\}/notify)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Notify](#get-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/\{markettradeouttraderesolutionid\}/notify)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Notify](#get-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/\{markettradesettlementinitiationid\}/notify)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Request](#put-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}/request)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Request](#put-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/request)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Request](#put-/tradeclearing/\{tradeclearingid\}/markettradematching/\{markettradematchingid\}/request)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Request](#put-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/\{markettradeouttraderesolutionid\}/request)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Request](#put-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/\{markettradesettlementinitiationid\}/request)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Retrieve](#get-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}/retrieve)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Retrieve](#get-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/retrieve)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Retrieve](#get-/tradeclearing/\{tradeclearingid\}/markettradematching/\{markettradematchingid\}/retrieve)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Retrieve](#get-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/\{markettradeouttraderesolutionid\}/retrieve)
-- [GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Retrieve](#get-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/\{markettradesettlementinitiationid\}/retrieve)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Update](#put-/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}/update)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Update](#put-/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/update)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Update](#put-/tradeclearing/\{tradeclearingid\}/markettradematching/\{markettradematchingid\}/update)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Update](#put-/tradeclearing/\{tradeclearingid\}/markettradeouttraderesolution/\{markettradeouttraderesolutionid\}/update)
-- [PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Update](#put-/tradeclearing/\{tradeclearingid\}/markettradesettlementinitiation/\{markettradesettlementinitiationid\}/update)
-
-
 **BIAN Documentation:** [TradeClearing v12](https://app.swaggerhub.com/apis/BIAN-3/TradeClearing/12.0.0)
 
-### PUT: /TradeClearing/\{tradeclearingid\}/Control
+## PUT: /TradeClearing/\{tradeclearingid\}/Control
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Control Trade Clearing Procedure
 
@@ -64,9 +22,13 @@ PUT: The name of the path should be:
 
 /TradeClearing/\{tradeclearingid\}/Controls
 
-### PUT: /TradeClearing/\{tradeclearingid\}/Exchange
+## PUT: /TradeClearing/\{tradeclearingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Exchange Trade Clearing Procedure
 
@@ -84,9 +46,13 @@ Here are a few reasons to follow this naming convention:
 \- The resource identifier 'tradeclearingid' should be in singular form\.
 \- Each segment should be descriptive and represent a resource or a sub\-resource\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/Execute
+## PUT: /TradeClearing/\{tradeclearingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Execute Trade Clearing Procedure
 
@@ -100,9 +66,13 @@ PUT: Based on REST best practices\, the path '/TradeClearing/\{tradeclearingid\}
 
 '/trade\-clearings/\{tradeclearingid\}/actions/execute'
 
-### POST: /TradeClearing/Initiate
+## POST: /TradeClearing/Initiate
 
-**Description**
+:::info Path
+POST: /TradeClearing/Initiate
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Initiate Trade Clearing Procedure
 
@@ -119,9 +89,13 @@ A more appropriate name for this path could be:
 
 By following this naming convention\, the endpoint better reflects the resource being manipulated \(trade clearing\) and the action being taken \(initiating\)\.
 
-### GET: /TradeClearing/\{tradeclearingid\}/Notify
+## GET: /TradeClearing/\{tradeclearingid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Notify Trade Clearing Procedure
 
@@ -137,9 +111,13 @@ GET: A suitable name for this path following REST best practices could be:
 /transactions/\{transactionId\}/notifications
 \`\`\`
 
-### PUT: /TradeClearing/\{tradeclearingid\}/Request
+## PUT: /TradeClearing/\{tradeclearingid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Request Trade Clearing Procedure
 
@@ -151,9 +129,13 @@ This API path allows you to update an existing trade clearance request by provid
 
 PUT: The name of the path should be "/trade\-clearing/\{trade\-clearing\-id\}/requests" in kebab\-case format\, following REST best practices\.
 
-### GET: /TradeClearing/\{tradeclearingid\}/Retrieve
+## GET: /TradeClearing/\{tradeclearingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Retrieve Trade Clearing Procedure
 
@@ -169,9 +151,13 @@ GET: Based on REST best practices\, the name of the path would typically be:
 
 This path conveys the resource \(\`trade\-clearings\`\) and the specific trade clearing ID that is being retrieved\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/Update
+## PUT: /TradeClearing/\{tradeclearingid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Update Trade Clearing Procedure
 
@@ -183,9 +169,13 @@ This API path allows you to update an existing Trade Clearing procedure by provi
 
 PUT: The name of the path '/TradeClearing/\{tradeclearingid\}/Update' should ideally be structured in a RESTful way by utilizing HTTP verbs for appropriate operations\. Following REST best practices\, the path can be named as '/TradeClearing/\{tradeclearingid\}' with the PUT HTTP method for updating a specific 'tradeclearing' resource\. This aligns with the standard convention where HTTP methods represent the actions to be performed on a resource\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Exchange
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Exchange Market Trade Confirmation Workstep
 
@@ -201,9 +191,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using a hierarchical structure to organize resources and identify relationships between them\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Exchange
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Exchange Market Trade Funds and Security Availability Assurance Workstep
 
@@ -217,9 +211,13 @@ PUT: The name of the path should be:
 
 /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurances/\{markettradefundsandsecurityavailabilityassuranceid\}/Exchanges
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Exchange
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Exchange Market Trade Matching Workstep
 
@@ -233,9 +231,13 @@ PUT: A recommended name for the path '/TradeClearing/\{tradeclearingid\}/MarketT
 
 '/trade\-clearing/\{tradeclearingid\}/market\-trade\-matching/\{markettradematchingid\}/exchange'
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Exchange
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Exchange Market Trade Out Trade Resolution Workstep
 
@@ -249,9 +251,13 @@ PUT: The name of the path following REST best practices could be:
 
 \`/tradeclearing/\{tradeclearingId\}/markettradeouttraderesolution/\{markettradeouttraderesolutionId\}/exchange\`
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Exchange
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Exchange Market Trade Settlement Initiation Workstep
 
@@ -270,9 +276,13 @@ In this naming convention:
 \- Each path segment is separated by hyphens for improved clarity\.
 \- Path parameters like \`tradeclearingid\`
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Execute
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Execute Market Trade Confirmation Workstep
 
@@ -293,9 +303,13 @@ In this suggested path name:
 \- The path parameters \(tradeclearingId\, markettradeconfirmationId\) are in camelCase format for readability\.
 \- The path uses
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Execute
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Execute Market Trade Funds and Security Availability Assurance Workstep
 
@@ -313,9 +327,13 @@ A suggested name for the path could be:
 
 In this naming convention\, the path is in lowercase letters\, and words are separated by hyphens for clarity\. The path structure indicates the various resources involved
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Execute
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Execute Market Trade Matching Workstep
 
@@ -329,9 +347,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/trade\-clearings/\{tradeclearingid\}/market\-trade\-matchings/\{markettradematchingid\}/execute'
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Execute
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Execute Market Trade Out Trade Resolution Workstep
 
@@ -349,9 +371,13 @@ A possible name for this path could be:
 
 This name follows the common convention of using lowercase letters and separating words with dashes for better readability\. Additionally\, it reflects the structure of the resource hierarchy within the path\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Execute
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Execute Market Trade Settlement Initiation Workstep
 
@@ -363,9 +389,13 @@ This API path is used to update the execution of a specific workstep related to 
 
 PUT: The name of the path could be simplified to \`/trades/\{tradeId\}/settlements/\{settlementId\}/execute\`\. This follows RESTful best practices by using lowercase letters\, using nouns to represent resources\, and using plural nouns for collections where applicable\. It also maintains a clear and concise structure that represents the hierarchical relationship between the resources\.
 
-### POST: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/Initiate
+## POST: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/Initiate
 
-**Description**
+:::info Path
+POST: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Initiate Market Trade Confirmation Workstep
 
@@ -383,9 +413,13 @@ In this modified path:
 \- Resource names are in lowercase for consistency\.
 \- Hyphens are used as separators in multi
 
-### POST: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/Initiate
+## POST: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/Initiate
 
-**Description**
+:::info Path
+POST: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/Initiate
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Initiate Market Trade Funds and Security Availability Assurance Workstep
 
@@ -401,9 +435,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens \(\-\)\, and use specific\, descriptive terms\.
 
-### POST: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/Initiate
+## POST: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/Initiate
 
-**Description**
+:::info Path
+POST: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/Initiate
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Initiate Market Trade Matching Workstep
 
@@ -419,9 +457,13 @@ POST: A suitable name for the path '/TradeClearing/\{tradeclearingid\}/MarketTra
 
 Remember to use lowercase letters and hyphens to separate words in the path to follow common REST URI style conventions\.
 
-### POST: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/Initiate
+## POST: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/Initiate
 
-**Description**
+:::info Path
+POST: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/Initiate
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Initiate Market Trade Out Trade Resolution Workstep
 
@@ -437,9 +479,13 @@ POST: Following REST best practices\, the name of the path should be:
 /TradeClearings/\{tradeclearingid\}/MarketTradeOutTradeResolutions/Initiate
 \`\`\`
 
-### POST: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/Initiate
+## POST: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/Initiate
 
-**Description**
+:::info Path
+POST: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Initiate Market Trade Settlement Initiation Workstep
 
@@ -453,9 +499,13 @@ POST: The name of the path should be:
 
 '/tradeclearings/\{tradeclearingid\}/markettradesettlements/initiation'
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Notify
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Notify Market Trade Confirmation Workstep
 
@@ -469,9 +519,13 @@ GET: A potential name following REST best practices for this path could be:
 
 '/trade\-clearing/\{tradeclearingid\}/market\-trade\-confirmation/\{markettradeconfirmationid\}/notify'
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Notify
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Notify Market Trade Funds and Security Availability Assurance Workstep
 
@@ -485,9 +539,13 @@ GET: Based on REST best practices\, a suitable name for the path could be:
 
 PUT /trade\-clearing/\{trade\-clearing\-id\}/market\-trade\-funds\-security\-availability\-assurance/\{market\-trade\-funds\-availability\-id\}/notify
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Notify
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Notify Market Trade Matching Workstep
 
@@ -507,9 +565,13 @@ In this suggestion:
 \- Path parameters are represented within curly braces to denote dynamic values\.
 \- The path segments are short and descriptive
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Notify
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Notify Market Trade Out Trade Resolution Workstep
 
@@ -525,9 +587,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, hyphens or underscores for separating words\, and plural nouns for collections\.
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Notify
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Notify
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Notify Market Trade Settlement Initiation Workstep
 
@@ -540,9 +606,13 @@ This API path is used to retrieve information about the process of Trade Clearin
 GET: Based on REST best practices\, the name of the path should be:
 \`/trade\-clearing/\{tradeclearingid\}/market\-trade\-settlement\-initiation/\{markettradesettlementinitiationid\}/notify\`
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Request
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Request Market Trade Confirmation Workstep
 
@@ -556,9 +626,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmations/\{markettradeconfirmationid\}/Requests
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Request
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Request Market Trade Funds and Security Availability Assurance Workstep
 
@@ -572,9 +646,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/tradeclearing/\{tradeclearingid\}/markettradefundsandsecurityavailabilityassurance/\{markettradefundsandsecurityavailabilityassuranceid\}/request'
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Request
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Request Market Trade Matching Workstep
 
@@ -590,9 +668,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path would b
 
 This naming convention follows the guideline of using lowercase letters and hyphens to separate words in the URL path while making it more readable and consistent\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Request
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Request Market Trade Out Trade Resolution Workstep
 
@@ -606,9 +688,13 @@ PUT: The most suitable name for this path following REST best practices would be
 
 '/trade\-clearings/\{tradeclearingid\}/market\-trade\-out\-trade\-resolutions/\{markettradeouttraderesolutionid\}/requests'
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Request
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Request Market Trade Settlement Initiation Workstep
 
@@ -624,9 +710,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In RESTful API design\, it is common to use lowercase letters and hyphens to separate words in the path names\. Additionally\, resource names are usually made plural to represent a collection of resources\.
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Retrieve
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Retrieve Market Trade Confirmation Workstep
 
@@ -639,9 +729,13 @@ This API path allows you to retrieve information about a specific market trade c
 GET: Based on REST best practices\, the name of the path should be:  
 \`/tradeclearing/\{tradeclearingid\}/markettradeconfirmation/\{markettradeconfirmationid\}\`
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Retrieve
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Retrieve Market Trade Funds and Security Availability Assurance Workstep
 
@@ -655,9 +749,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/trade\-clearing/\{tradeclearingid\}/market\-trade\-funds\-and\-security\-availability\-assurance/\{markettradefundsandsecurityavailabilityassuranceid\}'
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Retrieve
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Retrieve Market Trade Matching Workstep
 
@@ -669,9 +767,13 @@ This API path allows you to retrieve information about a specific Market Trade M
 
 GET: Based on REST best practices\, the name of the path '/TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Retrieve' could be simplified to '/trade\-clearing/\{tradeclearingid\}/market\-trade\-matching/\{markettradematchingid\}'\. This naming convention follows the principles of using lowercase letters\, separating words with hyphens\, and using plural nouns where appropriate\.
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Retrieve
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Retrieve Market Trade Out Trade Resolution Workstep
 
@@ -691,9 +793,13 @@ Here are some key considerations for naming the path:
 3\. Use nouns to represent resources in a RESTful manner\.
 4\. Use the HTTP method \(GET
 
-### GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Retrieve
+## GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Retrieve Market Trade Settlement Initiation Workstep
 
@@ -711,9 +817,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 The operation to retrieve the resource should typically be performed using an HTTP GET request on the resource itself rather than including "Retrieve" in the path\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Update
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Update Market Trade Confirmation Workstep
 
@@ -727,9 +837,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PUT /TradeClearing/\{tradeclearingid\}/MarketTradeConfirmation/\{markettradeconfirmationid\}
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Update
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeFundsandSecurityAvailabilityAssurance/\{markettradefundsandsecurityavailabilityassuranceid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Update Market Trade Funds and Security Availability Assurance Workstep
 
@@ -745,9 +859,13 @@ PUT /tradeclearing/\{tradeclearingId\}/markettradefundsandsecurityavailabilityas
 
 This naming convention follows the RESTful guidelines of using lowercase letters\, using plural nouns for collections\, and using specific resource identifiers in the path\. The use of the HTTP method PUT indicates that the operation is used to update an existing resource\.
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Update
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeMatching/\{markettradematchingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Update Market Trade Matching Workstep
 
@@ -761,9 +879,13 @@ PUT: The name of the path should be:
 
 /TradeClearings/\{tradeclearingid\}/MarketTradeMatchings/\{markettradematchingid\}
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Update
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeOutTradeResolution/\{markettradeouttraderesolutionid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Update Market Trade Out Trade Resolution Workstep
 
@@ -777,9 +899,13 @@ PUT: The name of the path should be:
 
 '/trade\-clearings/\{tradeclearingid\}/market\-trades/\{markettradeouttraderesolutionid\}/update'
 
-### PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Update
+## PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TradeClearing/\{tradeclearingid\}/MarketTradeSettlementInitiation/\{markettradesettlementinitiationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the back office processes that confirm and notify interested parties that securities and funds are available as traded in anticipation of settlement processing Update Market Trade Settlement Initiation Workstep
 

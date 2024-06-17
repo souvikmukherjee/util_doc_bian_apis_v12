@@ -1,56 +1,14 @@
 # ServiceDirectory
 
-## Table of Contents
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/Control](#put-/servicedirectory/\{servicedirectoryid\}/control)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/execute)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/notify)
-- [POST: /ServiceDirectory/Register](#post-/servicedirectory/register)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/request)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/retrieve)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/update)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/accesscontrolservicing/\{accesscontrolservicingid\}/execute)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/arrangementservicing/\{arrangementservicingid\}/execute)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/productaccessservicing/\{productaccessservicingid\}/execute)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/relationshipservicing/\{relationshipservicingid\}/execute)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/salesservicing/\{salesservicingid\}/execute)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Execute](#put-/servicedirectory/\{servicedirectoryid\}/servicedeliveryservicing/\{servicedeliveryservicingid\}/execute)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/accesscontrolservicing/\{accesscontrolservicingid\}/notify)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/arrangementservicing/\{arrangementservicingid\}/notify)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/productaccessservicing/\{productaccessservicingid\}/notify)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/relationshipservicing/\{relationshipservicingid\}/notify)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/salesservicing/\{salesservicingid\}/notify)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Notify](#get-/servicedirectory/\{servicedirectoryid\}/servicedeliveryservicing/\{servicedeliveryservicingid\}/notify)
-- [POST: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/Register](#post-/servicedirectory/\{servicedirectoryid\}/accesscontrolservicing/register)
-- [POST: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/Register](#post-/servicedirectory/\{servicedirectoryid\}/arrangementservicing/register)
-- [POST: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/Register](#post-/servicedirectory/\{servicedirectoryid\}/productaccessservicing/register)
-- [POST: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/Register](#post-/servicedirectory/\{servicedirectoryid\}/relationshipservicing/register)
-- [POST: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/Register](#post-/servicedirectory/\{servicedirectoryid\}/salesservicing/register)
-- [POST: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/Register](#post-/servicedirectory/\{servicedirectoryid\}/servicedeliveryservicing/register)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/accesscontrolservicing/\{accesscontrolservicingid\}/request)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/arrangementservicing/\{arrangementservicingid\}/request)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/productaccessservicing/\{productaccessservicingid\}/request)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/relationshipservicing/\{relationshipservicingid\}/request)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/salesservicing/\{salesservicingid\}/request)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Request](#put-/servicedirectory/\{servicedirectoryid\}/servicedeliveryservicing/\{servicedeliveryservicingid\}/request)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/accesscontrolservicing/\{accesscontrolservicingid\}/retrieve)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/arrangementservicing/\{arrangementservicingid\}/retrieve)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/productaccessservicing/\{productaccessservicingid\}/retrieve)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/relationshipservicing/\{relationshipservicingid\}/retrieve)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/salesservicing/\{salesservicingid\}/retrieve)
-- [GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Retrieve](#get-/servicedirectory/\{servicedirectoryid\}/servicedeliveryservicing/\{servicedeliveryservicingid\}/retrieve)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/accesscontrolservicing/\{accesscontrolservicingid\}/update)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/arrangementservicing/\{arrangementservicingid\}/update)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/productaccessservicing/\{productaccessservicingid\}/update)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/relationshipservicing/\{relationshipservicingid\}/update)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/salesservicing/\{salesservicingid\}/update)
-- [PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Update](#put-/servicedirectory/\{servicedirectoryid\}/servicedeliveryservicing/\{servicedeliveryservicingid\}/update)
-
-
 **BIAN Documentation:** [ServiceDirectory v12](https://app.swaggerhub.com/apis/BIAN-3/ServiceDirectory/12.0.0)
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/Control
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/Control
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/Control
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Control Service Directory Entry
 
@@ -64,9 +22,13 @@ PUT: A suggested name for the path '/ServiceDirectory/\{servicedirectoryid\}/Con
 
 '/ServiceDirectory/\{servicedirectoryid\}/Actions'
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Service Directory Entry
 
@@ -82,9 +44,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 This name is more descriptive and follows the convention of using plural nouns to represent collections of resources\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Service Directory Entry
 
@@ -102,9 +68,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This naming convention uses a plural noun to represent a collection of resources\.
 
-### POST: /ServiceDirectory/Register
+## POST: /ServiceDirectory/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Service Directory Entry
 
@@ -116,9 +86,13 @@ This BIAN API path \`/ServiceDirectory/Register\` allows users to create a new e
 
 POST: The RESTful naming convention for creating a new resource is typically done using a POST request to the collection resource\. Based on this convention\, the name for the path should be \`/ServiceDirectory\` since it represents the collection of services\, and you would use a POST request to this path to register a new service\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Service Directory Entry
 
@@ -132,9 +106,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 GET /ServiceDirectory/\{servicedirectoryid\}/Requests
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Service Directory Entry
 
@@ -148,9 +126,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /ServiceDirectory/\{servicedirectoryid\}
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Service Directory Entry
 
@@ -164,9 +146,13 @@ PUT: The name of the path '/ServiceDirectory/\{servicedirectoryid\}/Update' foll
 
 PATCH /ServiceDirectory/\{servicedirectoryid\}
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Access Control Servicing Properties
 
@@ -180,9 +166,13 @@ PUT: A descriptive and RESTful name for the path '/ServiceDirectory/\{servicedir
 
 '/service\-directories/\{servicedirectoryid\}/access\-control\-servicing/\{accesscontrolservicingid\}/execute'
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Arrangement Servicing Properties
 
@@ -196,9 +186,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /ServiceDirectories/\{servicedirectoryid\}/ArrangementServicings/\{arrangementservicingid\}/Execution
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Product Access Servicing Properties
 
@@ -215,9 +209,13 @@ A suggested RESTful naming for the path could be:
 
 This naming convention focuses on the resource hierarchy\, separating different resources and actions by using descriptive words\. It is important to
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Relationship Servicing Properties
 
@@ -233,9 +231,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This naming convention indicates that the operation is being performed as an action within the context of the relationship servicing resource\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Sales Servicing Properties
 
@@ -249,9 +251,13 @@ PUT: A potential RESTful name for the path '/ServiceDirectory/\{servicedirectory
 
 '/service\-directories/\{serviceDirectoryId\}/sales\-servicings/\{salesServicingId\}/execute'
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Execute
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Execute
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Execute Service Delivery Servicing Properties
 
@@ -269,9 +275,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 Ensure that the path is in lowercase\, uses nouns to represent resources\, and includes the HTTP method \(in this case\, 'execution'\) instead of 'execute' for readability and consistency\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Access Control Servicing Properties
 
@@ -283,9 +293,13 @@ This API path allows users to retrieve information about a specific service dire
 
 GET: The name of the path could be \`/service\-directory/\{service\_directory\_id\}/access\-control\-servicing/\{access\_control\_servicing\_id\}/notify\` if it followed REST best practices\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Arrangement Servicing Properties
 
@@ -301,9 +315,13 @@ GET: A good name for the path would be:
 /ServiceDirectories/\{servicedirectoryid\}/ArrangementServicings/\{arrangementservicingid\}/Notify
 \`\`\`
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Product Access Servicing Properties
 
@@ -319,9 +337,13 @@ GET: A suitable name for this path following REST best practices could be:
 /ServiceDirectories/\{servicedirectoryid\}/ProductAccessServicings/\{productaccessservicingid\}/Notifications
 \`\`\`
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Relationship Servicing Properties
 
@@ -337,9 +359,13 @@ GET: The name of the path following REST best practices could be:
 /ServiceDirectories/\{serviceDirectoryId\}/RelationshipServicings/\{relationshipServicingId\}/Notify
 \`\`\`
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Sales Servicing Properties
 
@@ -355,9 +381,13 @@ GET: The name of the path should ideally be:
 /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Notify
 \`\`\`
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Notify
+## GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Notify
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Notify Service Delivery Servicing Properties
 
@@ -375,9 +405,13 @@ GET: A suitable name for the path '/ServiceDirectory/\{servicedirectoryid\}/Serv
 
 In this name\, I made sure to use the plural form of the resource names \('ServiceDirectories' and 'ServiceDeliveryServicings'\) to represent collections of those resources\. This
 
-### POST: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/Register
+## POST: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Access Control Servicing Properties
 
@@ -393,9 +427,13 @@ POST: A suitable name for this path following RESTful best practices could be:
 
 Some key considerations for RESTful path naming include using all lowercase letters\, separating words with hyphens\, using plurals for collection resources\, and indicating resource hierarchy through the URL structure\.
 
-### POST: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/Register
+## POST: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Arrangement Servicing Properties
 
@@ -413,9 +451,13 @@ This name provides a more standardized and clear approach by using lowercase let
 
 Is there anything else you would like help with?
 
-### POST: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/Register
+## POST: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Product Access Servicing Properties
 
@@ -429,9 +471,13 @@ POST: A more appropriate RESTful path for '/ServiceDirectory/\{servicedirectoryi
 
 '/service\-directories/\{serviceDirectoryId\}/product\-access\-servicing/register'
 
-### POST: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/Register
+## POST: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Relationship Servicing Properties
 
@@ -450,9 +496,13 @@ Here are some reasons for this change:
 2\. The path parameter 'serviceDirectoryId' should be in camelCase for consistency and readability\.
 3\. 'Relationships' better represents the
 
-### POST: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/Register
+## POST: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Sales Servicing Properties
 
@@ -465,9 +515,13 @@ This API path allows the user to register and create a new resource for sales se
 POST: Following RESTful best practices\, the name of the path should be:
 '/service\-directory/\{service\-directory\-id\}/sales\-servicing/register'
 
-### POST: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/Register
+## POST: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/Register
 
-**Description**
+:::info Path
+POST: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/Register
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Register Service Delivery Servicing Properties
 
@@ -481,9 +535,13 @@ POST: Based on REST best practices\, the name of the path '/ServiceDirectory/\{s
 
 '/service\-directories/\{service\-directory\-id\}/service\-delivery\-servicing/register'
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Access Control Servicing Properties
 
@@ -497,9 +555,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/service\-directory/\{service\-directory\-id\}/access\-control\-servicing/\{access\-control\-servicing\-id\}/requests\`
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Arrangement Servicing Properties
 
@@ -513,9 +575,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 \`/service\-directories/\{service\-directory\-id\}/arrangement\-servicings/\{arrangement\-servicing\-id\}/requests\`
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Product Access Servicing Properties
 
@@ -529,9 +595,13 @@ PUT: Based on REST best practices\, the name of the path could be something like
 
 "/service\-directories/\{service\-directory\-id\}/product\-access\-servicings/\{product\-access\-servicing\-id\}/requests"
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Relationship Servicing Properties
 
@@ -549,9 +619,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 This naming convention reflects the resource hierarchy in a clear and intuitive manner\, making it easy to understand the relationships between different resources\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Sales Servicing Properties
 
@@ -567,9 +641,13 @@ PUT: A possible name for this path following REST best practices could be:
 /ServiceDirectories/\{servicedirectoryid\}/SalesServicings/\{salesservicingid\}/Requests
 \`\`\`
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Request
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Request
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Request Service Delivery Servicing Properties
 
@@ -581,9 +659,13 @@ This BIAN API path allows you to update an existing resource in the Service Dire
 
 PUT: The name of the path can be \`/service\-directory/\{service\-directory\-id\}/service\-delivery\-servicing/\{service\-delivery\-servicing\-id\}/request\` in kebab case\, following REST best practices\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Access Control Servicing Properties
 
@@ -599,9 +681,13 @@ GET /service\-directory/\{servicedirectoryid\}/access\-control\-servicing/\{acce
 
 This naming convention uses lowercase letters\, separates words with hyphens for better readability\, and specifies the operation using the HTTP method \(GET\)\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Arrangement Servicing Properties
 
@@ -613,9 +699,13 @@ This API path allows you to retrieve information about the arrangement servicing
 
 GET: The path '/ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Retrieve' should be named using the GET method\, making it '/ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}' following REST best practices\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Product Access Servicing Properties
 
@@ -629,9 +719,13 @@ GET: The name of the path '/ServiceDirectory/\{servicedirectoryid\}/ProductAcces
 
 This follows the RESTful best practices of using lowercase letters\, separating words with hyphens\, and using plural nouns for resource names\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Relationship Servicing Properties
 
@@ -649,9 +743,13 @@ GET: The appropriate name for the path you provided\, following REST best practi
 
 This path should be designed to be a resource\-oriented URL structure that conveys the hierarchy and relations between different resources\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Sales Servicing Properties
 
@@ -667,9 +765,13 @@ GET: Following REST best practices\, the name of the path should be something th
 
 This path represents a specific 'SalesServicing' resource nested under 'ServiceDirectory'\. The URI should accurately and concisely describe the resource represented\, making it clear and meaningful\.
 
-### GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Retrieve
+## GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Retrieve Service Delivery Servicing Properties
 
@@ -685,9 +787,13 @@ GET /services/\{servicedirectoryid\}/servicing/\{servicedeliveryservicingid\}
 
 This path follows the principles of using nouns for resources and using meaningful names to represent the hierarchy of resources\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscontrolservicingid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Access Control Servicing Properties
 
@@ -705,9 +811,13 @@ PUT /ServiceDirectory/\{servicedirectoryid\}/AccessControlServicing/\{accesscont
 
 This path includes the HTTP method PUT\, which is used for updating a resource\, and includes identifiers for the service directory and access control servicing entities\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Arrangement Servicing Properties
 
@@ -721,9 +831,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 PUT /ServiceDirectory/\{servicedirectoryid\}/ArrangementServicing/\{arrangementservicingid\}
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ProductAccessServicing/\{productaccessservicingid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Product Access Servicing Properties
 
@@ -737,9 +851,13 @@ PUT: The name of the path should be as follows according to REST best practices:
 
 '/ServiceDirectories/\{servicedirectoryid\}/ProductAccessServicings/\{productaccessservicingid\}'
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/RelationshipServicing/\{relationshipservicingid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Relationship Servicing Properties
 
@@ -755,9 +873,13 @@ PUT: Based on REST best practices\, the name of the path '/ServiceDirectory/\{se
 
 This naming convention follows the guidelines of using lowercase letters\, using hyphens to separate words\, and making the path descriptive and easy to understand\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Sales Servicing Properties
 
@@ -773,9 +895,13 @@ PUT /ServiceDirectory/\{servicedirectoryid\}/SalesServicing/\{salesservicingid\}
 
 This path follows REST conventions by using the HTTP method PUT to update an existing resource identified by the \{servicedirectoryid\} and \{salesservicingid\}\. The '/ServiceDirectory' and '/SalesServicing' segments represent the resource hierarchy\, and the use of the PUT method signals the intent to update the resource\.
 
-### PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Update
+## PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServiceDirectory/\{servicedirectoryid\}/ServiceDeliveryServicing/\{servicedeliveryservicingid\}/Update
+:::
+
+### Description
 
 This Service Domain presents a structured set of services that the customer can select from  Update Service Delivery Servicing Properties
 

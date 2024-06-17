@@ -1,42 +1,14 @@
 # CorporatePayrollServices
 
-## Table of Contents
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Control](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/control)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Exchange](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/exchange)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Execute](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/execute)
-- [POST: /CorporatePayrollServices/Initiate](#post-/corporatepayrollservices/initiate)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Notify](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/notify)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Request](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/request)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Retrieve](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/retrieve)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Update](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/update)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Exchange](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/\{corporatepayrollpaymentsid\}/exchange)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Exchange](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/\{employeepayrolldetailsmaintenanceid\}/exchange)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Exchange](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/\{productionservicereportingid\}/exchange)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Execute](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/\{corporatepayrollpaymentsid\}/execute)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Execute](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/\{employeepayrolldetailsmaintenanceid\}/execute)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Execute](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/\{productionservicereportingid\}/execute)
-- [POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/Initiate](#post-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/initiate)
-- [POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/Initiate](#post-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/initiate)
-- [POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/Initiate](#post-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/initiate)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Notify](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/\{corporatepayrollpaymentsid\}/notify)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Notify](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/\{employeepayrolldetailsmaintenanceid\}/notify)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Notify](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/\{productionservicereportingid\}/notify)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Request](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/\{corporatepayrollpaymentsid\}/request)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Request](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/\{employeepayrolldetailsmaintenanceid\}/request)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Request](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/\{productionservicereportingid\}/request)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Retrieve](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/\{corporatepayrollpaymentsid\}/retrieve)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Retrieve](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/\{employeepayrolldetailsmaintenanceid\}/retrieve)
-- [GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Retrieve](#get-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/\{productionservicereportingid\}/retrieve)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Update](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/corporatepayrollpayments/\{corporatepayrollpaymentsid\}/update)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Update](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/employeepayrolldetailsmaintenance/\{employeepayrolldetailsmaintenanceid\}/update)
-- [PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Update](#put-/corporatepayrollservices/\{corporatepayrollservicesid\}/productionservicereporting/\{productionservicereportingid\}/update)
-
-
 **BIAN Documentation:** [CorporatePayrollServices v12](https://app.swaggerhub.com/apis/BIAN-3/CorporatePayrollServices/12.0.0)
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Control
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Control
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Control Employee Payment Services Facility
 
@@ -50,9 +22,13 @@ PUT: The name of the path should be: \`/CorporatePayrollServices/\{corporatepayr
 
 Following REST best practices\, it's important to use resource names in the path that represent the entities being manipulated\. In this case\, 'Control' likely represents a specific action or operation related to the Corporate Payroll Services resource identified by \{corporatepayrollservicesid\}\. By including this action in the path\, it communicates the intent of the request more clearly and maintains a hierarchical structure
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Exchange
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Exchange
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Exchange Employee Payment Services Facility
 
@@ -66,9 +42,13 @@ PUT: The name of the path should be:
 
 /CorporatePayrollServices/\{corporatepayrollservicesid\}/Exchanges
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Execute
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Execute
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Execute Employee Payment Services Facility
 
@@ -82,9 +62,13 @@ PUT: Following REST best practices\, the appropriate name for the path \`/Corpor
 
 It is recommended to use lowercase letters and separate words with hyphens for better readability and maintainability\.
 
-### POST: /CorporatePayrollServices/Initiate
+## POST: /CorporatePayrollServices/Initiate
 
-**Description**
+:::info Path
+POST: /CorporatePayrollServices/Initiate
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Initiate Employee Payment Services Facility
 
@@ -96,9 +80,13 @@ This BIAN API path\, /CorporatePayrollServices/Initiate\, allows a corporate cus
 
 POST: The path name should be: /corporate\-payroll\-services/initiate
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Notify
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Notify
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Notify Employee Payment Services Facility
 
@@ -112,9 +100,13 @@ GET: A suitable name for the path '/CorporatePayrollServices/\{corporatepayrolls
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/notify'
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Request
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Request
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Request Employee Payment Services Facility
 
@@ -126,9 +118,13 @@ This API path allows you to update an existing request for employee payment serv
 
 PUT: The name of the path should be '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/requests' following REST best practices where the path uses lowercase letters and uses plural nouns to represent collections\.
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Retrieve
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Retrieve Employee Payment Services Facility
 
@@ -144,9 +140,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens for readability\. The specific operation of "Retrieve" does not have to be included in the path name\, as the HTTP method \(such as GET\) should indicate the specific action to be taken on the resource identified by the path\.
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Update
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/Update
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Update Employee Payment Services Facility
 
@@ -160,9 +160,13 @@ PUT: If the path '/CorporatePayrollServices/\{corporatepayrollservicesid\}/Updat
 
 PUT /corporate\-payroll\-services/\{corporatepayrollservicesid\}
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Exchange
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Exchange
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Exchange Corporate Payroll Payments Fulfillment
 
@@ -175,9 +179,13 @@ This BIAN API path allows you to update an existing corporate payroll payment fu
 PUT: The name of the path should be:
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/corporate\-payroll\-payments/\{corporatepayrollpaymentsid\}/exchange'
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Exchange
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Exchange
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Exchange Employee Payroll Details Maintenance Fulfillment
 
@@ -191,9 +199,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/employee\-payroll\-details\-maintenance/\{employeepayrolldetailsmaintenanceid\}/exchange'
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Exchange
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Exchange
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Exchange Production Service Reporting Fulfillment
 
@@ -207,9 +219,13 @@ PUT: The name of the path should ideally be: \`/corporate\-payroll\-services/\{c
 
 It follows REST best practices by using lowercase letters\, separating words with hyphens\, and providing a clear and descriptive path structure\.
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Execute
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Execute
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Execute Corporate Payroll Payments Fulfillment
 
@@ -223,9 +239,13 @@ PUT: A more appropriate RESTful name for the path could be:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/corporate\-payroll\-payments/\{corporatepayrollpaymentsid\}/execute'
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Execute
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Execute
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Execute Employee Payroll Details Maintenance Fulfillment
 
@@ -239,9 +259,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/employee\-payroll\-details\-maintenance/\{employeepayrolldetailsmaintenanceid\}/execute'
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Execute
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Execute
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Execute Production Service Reporting Fulfillment
 
@@ -255,9 +279,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/production\-service\-reporting/\{productionservicereportingid\}/execute'
 
-### POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/Initiate
+## POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/Initiate
 
-**Description**
+:::info Path
+POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/Initiate
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Initiate Corporate Payroll Payments Fulfillment
 
@@ -271,9 +299,13 @@ POST: The name of the path following REST best practices should be:
 
 \`/corporate\-payroll\-services/\{corporatepayrollservicesid\}/corporate\-payroll\-payments/initiate\`
 
-### POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/Initiate
+## POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/Initiate
 
-**Description**
+:::info Path
+POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/Initiate
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Initiate Employee Payroll Details Maintenance Fulfillment
 
@@ -286,9 +318,13 @@ This BIAN API path "/CorporatePayrollServices/\{corporatepayrollservicesid\}/Emp
 POST: According to REST best practices\, the name of the path should be:
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/employee\-payroll\-details\-maintenance/initiate'
 
-### POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/Initiate
+## POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/Initiate
 
-**Description**
+:::info Path
+POST: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/Initiate
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Initiate Production Service Reporting Fulfillment
 
@@ -302,9 +338,13 @@ POST: Based on REST best practices\, the name of the path should be as follows:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/production\-service\-reporting/initiate'
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Notify
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Notify
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Notify Corporate Payroll Payments Fulfillment
 
@@ -318,9 +358,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/payments/\{corporatepayrollpaymentsid\}/notify'
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Notify
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Notify
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Notify Employee Payroll Details Maintenance Fulfillment
 
@@ -334,9 +378,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/employee\-payroll\-details\-maintenance/\{employeepayrolldetailsmaintenanceid\}/notify'
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Notify
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Notify
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Notify Production Service Reporting Fulfillment
 
@@ -350,9 +398,13 @@ GET: The name of the path following REST best practices could be:
 
 \`/corporate\-payroll\-services/\{corporatepayrollservicesid\}/production\-service\-reporting/\{productionservicereportingid\}/notify\`
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Request
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Request
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Request Corporate Payroll Payments Fulfillment
 
@@ -366,9 +418,13 @@ PUT: Following REST best practices\, the path should be named as:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/corporate\-payroll\-payments/\{corporatepayrollpaymentsid\}/request'
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Request
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Request
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Request Employee Payroll Details Maintenance Fulfillment
 
@@ -384,9 +440,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 It is recommended to use hyphens to separate words in the path and also keep all letters in lowercase to enhance readability and maintain consistency\.
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Request
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Request
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Request Production Service Reporting Fulfillment
 
@@ -407,9 +467,13 @@ In this naming convention:
 
 This naming convention follows RESTful principles for creating clean\, understandable\, and consistent resource paths\.
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Retrieve
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Retrieve Corporate Payroll Payments Fulfillment
 
@@ -425,9 +489,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 The "Retrieve" action is implied by making a \`GET\` request to the specific resource identified by \`\{corporatepayrollpaymentsid\}\` within the context of the selected \`CorporatePayrollServices\`\.
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Retrieve
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Retrieve Employee Payroll Details Maintenance Fulfillment
 
@@ -441,9 +509,13 @@ GET: A more appropriate name for the path based on REST best practices would be:
 
 '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/employee\-payroll\-details\-maintenance/\{employeepayrolldetailsmaintenanceid\}/retrieve'
 
-### GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Retrieve
+## GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Retrieve Production Service Reporting Fulfillment
 
@@ -461,9 +533,13 @@ One possible suggestion for the name of the path could be:
 
 This naming convention follows the standard RESTful practice of using lowercase letters and hyphens to separate words in URI paths\. It also provides a clear and structured
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Update
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Update
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Update Corporate Payroll Payments Fulfillment
 
@@ -475,9 +551,13 @@ This API path allows you to update information related to corporate payroll paym
 
 PUT: A RESTful name for the path '/CorporatePayrollServices/\{corporatepayrollservicesid\}/CorporatePayrollPayments/\{corporatepayrollpaymentsid\}/Update' could be '/corporate\-payroll\-services/\{corporatepayrollservicesid\}/corporate\-payroll\-payments/\{corporatepayrollpaymentsid\}'\.
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Update
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Update
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Update Employee Payroll Details Maintenance Fulfillment
 
@@ -489,9 +569,13 @@ This API path allows updating the details of an employee's payroll maintenance w
 
 PUT: Based on REST best practices\, the path '/CorporatePayrollServices/\{corporatepayrollservicesid\}/EmployeePayrollDetailsMaintenance/\{employeepayrolldetailsmaintenanceid\}/Update' could be renamed to simply '/CorporatePayrollServices/\{corporatepayrollservicesid\}/Employees/\{employeepayrolldetailsmaintenanceid\}' with an HTTP PUT method to update the employee payroll details\.
 
-### PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Update
+## PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporatePayrollServices/\{corporatepayrollservicesid\}/ProductionServiceReporting/\{productionservicereportingid\}/Update
+:::
+
+### Description
 
 The Corporate Payroll Services Service Domain handles payroll payment processing for the employees of a corporate customer\. Update Production Service Reporting Fulfillment
 

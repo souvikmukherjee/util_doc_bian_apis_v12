@@ -13,7 +13,7 @@ export default function Home() {
           <div className="buttons">
             <a
               className="button button--primary button--lg"
-              href="/util_doc_bian_apis_v12/docs/apis/index">
+              href="/util_doc_bian_apis_v12/docs/apis/">
               Explore APIs
             </a>
           </div>

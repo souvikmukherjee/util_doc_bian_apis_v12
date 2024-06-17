@@ -1,30 +1,14 @@
 # PartyAuthentication
 
-## Table of Contents
-- [POST: /PartyAuthentication/Evaluate](#post-/partyauthentication/evaluate)
-- [PUT: /PartyAuthentication/\{partyauthenticationid\}/Update](#put-/partyauthentication/\{partyauthenticationid\}/update)
-- [PUT: /PartyAuthentication/\{partyauthenticationid\}/Execute](#put-/partyauthentication/\{partyauthenticationid\}/execute)
-- [PUT: /PartyAuthentication/\{partyauthenticationid\}/Request](#put-/partyauthentication/\{partyauthenticationid\}/request)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/retrieve)
-- [POST: /PartyAuthentication/\{partyauthenticationid\}/Password/Evaluate](#post-/partyauthentication/\{partyauthenticationid\}/password/evaluate)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Password/\{passwordid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/password/\{passwordid\}/retrieve)
-- [POST: /PartyAuthentication/\{partyauthenticationid\}/Question/Evaluate](#post-/partyauthentication/\{partyauthenticationid\}/question/evaluate)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Question/\{questionid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/question/\{questionid\}/retrieve)
-- [POST: /PartyAuthentication/\{partyauthenticationid\}/Document/Evaluate](#post-/partyauthentication/\{partyauthenticationid\}/document/evaluate)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Document/\{documentid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/document/\{documentid\}/retrieve)
-- [POST: /PartyAuthentication/\{partyauthenticationid\}/Device/Evaluate](#post-/partyauthentication/\{partyauthenticationid\}/device/evaluate)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Device/\{deviceid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/device/\{deviceid\}/retrieve)
-- [POST: /PartyAuthentication/\{partyauthenticationid\}/Biometric/Evaluate](#post-/partyauthentication/\{partyauthenticationid\}/biometric/evaluate)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Biometric/\{biometricid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/biometric/\{biometricid\}/retrieve)
-- [POST: /PartyAuthentication/\{partyauthenticationid\}/Behavior/Evaluate](#post-/partyauthentication/\{partyauthenticationid\}/behavior/evaluate)
-- [GET: /PartyAuthentication/\{partyauthenticationid\}/Behavior/\{behaviorid\}/Retrieve](#get-/partyauthentication/\{partyauthenticationid\}/behavior/\{behaviorid\}/retrieve)
-
-
 **BIAN Documentation:** [PartyAuthentication v12](https://app.swaggerhub.com/apis/BIAN-3/PartyAuthentication/12.0.0)
 
-### POST: /PartyAuthentication/Evaluate
+## POST: /PartyAuthentication/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvCR Evaluate a customer's authenticity
 
@@ -36,9 +20,13 @@ This API path allows you to evaluate a customer's authenticity for accessing the
 
 POST: The path '/PartyAuthentication/Evaluate' should be renamed using nouns rather than verbs following REST best practices\. A better name for the path could be '/party\-authentications'\.
 
-### PUT: /PartyAuthentication/\{partyauthenticationid\}/Update
+## PUT: /PartyAuthentication/\{partyauthenticationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyAuthentication/\{partyauthenticationid\}/Update
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services UpCR Update details of a customer authentication assessment
 
@@ -50,9 +38,13 @@ This API path allows updating specific details related to a customer's identity 
 
 PUT: The name of the path '/PartyAuthentication/\{partyauthenticationid\}/Update' following REST best practices could be simply: PATCH /PartyAuthentication/\{partyauthenticationid\}
 
-### PUT: /PartyAuthentication/\{partyauthenticationid\}/Execute
+## PUT: /PartyAuthentication/\{partyauthenticationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PartyAuthentication/\{partyauthenticationid\}/Execute
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ExCR Execute an automated action for an assessment \(e\.g\. submit data\)
 
@@ -68,9 +60,13 @@ PUT: A suitable name for the path '/PartyAuthentication/\{partyauthenticationid\
 /PartyAuthentication/\{partyauthenticationid\}/Invoke
 \`\`\`
 
-### PUT: /PartyAuthentication/\{partyauthenticationid\}/Request
+## PUT: /PartyAuthentication/\{partyauthenticationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PartyAuthentication/\{partyauthenticationid\}/Request
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services RqCR Request manual interventions in an assessment \(e\.g\. engage specialist\)
 
@@ -82,9 +78,13 @@ This API path allows for updating a specific customer's identify authentication 
 
 PUT: A possible RESTful name for the path could be: GET /party\-authentications/\{partyauthenticationid\}/requests
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReCR Retrieve details about an authentication assessment
 
@@ -98,9 +98,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /partyAuthentications/\{partyauthenticationid\}
 
-### POST: /PartyAuthentication/\{partyauthenticationid\}/Password/Evaluate
+## POST: /PartyAuthentication/\{partyauthenticationid\}/Password/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/\{partyauthenticationid\}/Password/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvBQ Evaluate customer authenticity using passwords
 
@@ -116,9 +120,13 @@ POST: The name of the path should be:
 /PartyAuthentication/\{partyauthenticationid\}/PasswordEvaluation
 \`\`\`
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Password/\{passwordid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Password/\{passwordid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Password/\{passwordid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReBQ Retrieve details about a password evaluation
 
@@ -134,9 +142,13 @@ GET: A good name for this path\, following REST best practices\, could be:
 
 This path is more succinct and adheres to RESTful conventions by using lowercase letters and avoiding unnecessary words like "Authentication" and "Retrieve\."
 
-### POST: /PartyAuthentication/\{partyauthenticationid\}/Question/Evaluate
+## POST: /PartyAuthentication/\{partyauthenticationid\}/Question/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/\{partyauthenticationid\}/Question/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvBQ Evaluate customer authenticity using secret questions
 
@@ -150,9 +162,13 @@ POST: The name of the path should be:
 
 \`/party\-authentications/\{partyauthenticationid\}/questions/evaluations\`
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Question/\{questionid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Question/\{questionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Question/\{questionid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReBQ Retrieve details about a secret question evaluation
 
@@ -168,9 +184,13 @@ GET: A more appropriate name for the path following REST best practices could be
 GET /parties/\{partyId\}/authentications/\{authenticationId\}/questions/\{questionId\}
 \`\`\`
 
-### POST: /PartyAuthentication/\{partyauthenticationid\}/Document/Evaluate
+## POST: /PartyAuthentication/\{partyauthenticationid\}/Document/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/\{partyauthenticationid\}/Document/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvBQ Evaluate customer authenticity using documents
 
@@ -182,9 +202,13 @@ This API path is used for evaluating the authenticity of a customer's identity u
 
 POST: The name of the path should be \`/party\-authentications/\{partyauthenticationid\}/documents/evaluate\` to follow REST best practices\.
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Document/\{documentid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Document/\{documentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Document/\{documentid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReBQ Retrieve details about a document evaluation
 
@@ -198,9 +222,13 @@ GET: A possible name for this path\, following REST best practices\, could be:
 
 GET /parties/\{partyId\}/authentications/\{authenticationId\}/documents/\{documentId\}
 
-### POST: /PartyAuthentication/\{partyauthenticationid\}/Device/Evaluate
+## POST: /PartyAuthentication/\{partyauthenticationid\}/Device/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/\{partyauthenticationid\}/Device/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvBQ Evaluate customer authenticity using a device
 
@@ -214,9 +242,13 @@ POST: A more appropriate name for the path '/PartyAuthentication/\{partyauthenti
 
 '/party\-authentications/\{partyauthenticationid\}/devices/evaluation'
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Device/\{deviceid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Device/\{deviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Device/\{deviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReBQ Retrieve details about a device evaluation
 
@@ -230,9 +262,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 GET /party\-authentications/\{partyauthenticationid\}/devices/\{deviceid\}
 
-### POST: /PartyAuthentication/\{partyauthenticationid\}/Biometric/Evaluate
+## POST: /PartyAuthentication/\{partyauthenticationid\}/Biometric/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/\{partyauthenticationid\}/Biometric/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvBQ Evaluate customer authenticity using biometrics
 
@@ -252,9 +288,13 @@ or
 
 following REST best practices\.
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Biometric/\{biometricid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Biometric/\{biometricid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Biometric/\{biometricid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReBQ Retrieve details about a biometric evaluation
 
@@ -268,9 +308,13 @@ GET: A suitable name for the given path that follows REST best practices could b
 
 GET /parties/\{partyId\}/biometrics/\{biometricId\}
 
-### POST: /PartyAuthentication/\{partyauthenticationid\}/Behavior/Evaluate
+## POST: /PartyAuthentication/\{partyauthenticationid\}/Behavior/Evaluate
 
-**Description**
+:::info Path
+POST: /PartyAuthentication/\{partyauthenticationid\}/Behavior/Evaluate
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services EvBQ Evaluate customer authenticity using behaviors
 
@@ -291,9 +335,13 @@ Here are the reasons behind this suggestion:
 2\. 'Evaluation' should be in plural form 'Evaluations' to indicate that the endpoint deals with multiple evaluations\.
 3\. 'PartyAuthentications' should be in camel case with the first letter in
 
-### GET: /PartyAuthentication/\{partyauthenticationid\}/Behavior/\{behaviorid\}/Retrieve
+## GET: /PartyAuthentication/\{partyauthenticationid\}/Behavior/\{behaviorid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyAuthentication/\{partyauthenticationid\}/Behavior/\{behaviorid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a customer identify authentication service covering all channels and devices to support access to the banks products and services ReBQ Retrieve details about a behavior evaluation
 

@@ -1,49 +1,14 @@
 # BankDrafts
 
-## Table of Contents
-- [PUT: /BankDrafts/\{bankdraftsid\}/Control](#put-/bankdrafts/\{bankdraftsid\}/control)
-- [PUT: /BankDrafts/\{bankdraftsid\}/Exchange](#put-/bankdrafts/\{bankdraftsid\}/exchange)
-- [PUT: /BankDrafts/\{bankdraftsid\}/Execute](#put-/bankdrafts/\{bankdraftsid\}/execute)
-- [POST: /BankDrafts/Initiate](#post-/bankdrafts/initiate)
-- [GET: /BankDrafts/\{bankdraftsid\}/Notify](#get-/bankdrafts/\{bankdraftsid\}/notify)
-- [PUT: /BankDrafts/\{bankdraftsid\}/Request](#put-/bankdrafts/\{bankdraftsid\}/request)
-- [GET: /BankDrafts/\{bankdraftsid\}/Retrieve](#get-/bankdrafts/\{bankdraftsid\}/retrieve)
-- [PUT: /BankDrafts/\{bankdraftsid\}/Update](#put-/bankdrafts/\{bankdraftsid\}/update)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Exchange](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/\{bankguaranteedpaymentremittanceid\}/exchange)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Exchange](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/\{bankguaranteedpaymentspecificationid\}/exchange)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Exchange](#put-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/\{bearerdocumentcreationandregistrationid\}/exchange)
-- [PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Exchange](#put-/bankdrafts/\{bankdraftsid\}/customerpayment/\{customerpaymentid\}/exchange)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Execute](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/\{bankguaranteedpaymentremittanceid\}/execute)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Execute](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/\{bankguaranteedpaymentspecificationid\}/execute)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Execute](#put-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/\{bearerdocumentcreationandregistrationid\}/execute)
-- [PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Execute](#put-/bankdrafts/\{bankdraftsid\}/customerpayment/\{customerpaymentid\}/execute)
-- [POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/Initiate](#post-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/initiate)
-- [POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/Initiate](#post-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/initiate)
-- [POST: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/Initiate](#post-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/initiate)
-- [POST: /BankDrafts/\{bankdraftsid\}/CustomerPayment/Initiate](#post-/bankdrafts/\{bankdraftsid\}/customerpayment/initiate)
-- [GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Notify](#get-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/\{bankguaranteedpaymentremittanceid\}/notify)
-- [GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Notify](#get-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/\{bankguaranteedpaymentspecificationid\}/notify)
-- [GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Notify](#get-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/\{bearerdocumentcreationandregistrationid\}/notify)
-- [GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Notify](#get-/bankdrafts/\{bankdraftsid\}/customerpayment/\{customerpaymentid\}/notify)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Request](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/\{bankguaranteedpaymentremittanceid\}/request)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Request](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/\{bankguaranteedpaymentspecificationid\}/request)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Request](#put-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/\{bearerdocumentcreationandregistrationid\}/request)
-- [PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Request](#put-/bankdrafts/\{bankdraftsid\}/customerpayment/\{customerpaymentid\}/request)
-- [GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Retrieve](#get-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/\{bankguaranteedpaymentremittanceid\}/retrieve)
-- [GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Retrieve](#get-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/\{bankguaranteedpaymentspecificationid\}/retrieve)
-- [GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Retrieve](#get-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/\{bearerdocumentcreationandregistrationid\}/retrieve)
-- [GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Retrieve](#get-/bankdrafts/\{bankdraftsid\}/customerpayment/\{customerpaymentid\}/retrieve)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Update](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentremittance/\{bankguaranteedpaymentremittanceid\}/update)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Update](#put-/bankdrafts/\{bankdraftsid\}/bankguaranteedpaymentspecification/\{bankguaranteedpaymentspecificationid\}/update)
-- [PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Update](#put-/bankdrafts/\{bankdraftsid\}/bearerdocumentcreationandregistration/\{bearerdocumentcreationandregistrationid\}/update)
-- [PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Update](#put-/bankdrafts/\{bankdraftsid\}/customerpayment/\{customerpaymentid\}/update)
-
-
 **BIAN Documentation:** [BankDrafts v12](https://app.swaggerhub.com/apis/BIAN-3/BankDrafts/12.0.0)
 
-### PUT: /BankDrafts/\{bankdraftsid\}/Control
+## PUT: /BankDrafts/\{bankdraftsid\}/Control
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/Control
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Control Bearer Document Transaction
 
@@ -57,9 +22,13 @@ PUT: A suitable name for the path '/BankDrafts/\{bankdraftsid\}/Control' followi
 
 PATCH /bankdrafts/\{bankdraftsid\}/control
 
-### PUT: /BankDrafts/\{bankdraftsid\}/Exchange
+## PUT: /BankDrafts/\{bankdraftsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Exchange Bearer Document Transaction
 
@@ -72,9 +41,13 @@ This BIAN API path is used to update an existing bank draft in a bank guaranteed
 PUT: The name of the path should be structured as follows\, following REST best practices:
 '/bankdrafts/\{bankdraftsid\}/exchange'
 
-### PUT: /BankDrafts/\{bankdraftsid\}/Execute
+## PUT: /BankDrafts/\{bankdraftsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/Execute
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Execute Bearer Document Transaction
 
@@ -90,9 +63,13 @@ PUT: The name of the path according to RESTful best practices should be:
 
 This naming convention follows the use of lowercase letters\, hyphens to separate words\, and using nouns to represent resources in a RESTful API\.
 
-### POST: /BankDrafts/Initiate
+## POST: /BankDrafts/Initiate
 
-**Description**
+:::info Path
+POST: /BankDrafts/Initiate
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Initiate Bearer Document Transaction
 
@@ -104,9 +81,13 @@ This API endpoint allows you to create a new bank draft transaction for a guaran
 
 POST: Based on REST best practices\, the path "/BankDrafts/Initiate" should be named according to the specific action being performed\. A more appropriate name for this path could be "/bank\-drafts" if it is intended to retrieve a collection of bank drafts\, and "/bank\-drafts/initiate" if it is specifically for initiating a new bank draft\. Would you like more information on REST best practices or help with something else?
 
-### GET: /BankDrafts/\{bankdraftsid\}/Notify
+## GET: /BankDrafts/\{bankdraftsid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/Notify
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Notify Bearer Document Transaction
 
@@ -127,9 +108,13 @@ In this naming convention:
 
 Overall\, this naming convention helps in creating a clean and easily understandable URL structure for the API\.
 
-### PUT: /BankDrafts/\{bankdraftsid\}/Request
+## PUT: /BankDrafts/\{bankdraftsid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/Request
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Request Bearer Document Transaction
 
@@ -141,9 +126,13 @@ This BIAN API path allows you to update an existing bank draft transaction reque
 
 PUT: The name of the path should be "/bank\-drafts/\{bankdraftsid\}/request" to follow REST best practices\. This path uses lowercase letters\, separates words with hyphens\, and includes the specific resource identifier "bankdraftsid" for the bank draft resource\.
 
-### GET: /BankDrafts/\{bankdraftsid\}/Retrieve
+## GET: /BankDrafts/\{bankdraftsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Retrieve Bearer Document Transaction
 
@@ -155,9 +144,13 @@ This API path allows you to retrieve information about a bank draft transaction 
 
 GET: The name of the path '/BankDrafts/\{bankdraftsid\}/Retrieve' following REST best practices could be named as '/bankdrafts/\{bankdraftsid\}'\.
 
-### PUT: /BankDrafts/\{bankdraftsid\}/Update
+## PUT: /BankDrafts/\{bankdraftsid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/Update
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Update Bearer Document Transaction
 
@@ -173,9 +166,13 @@ PUT: The name of the path following REST best practices for updating a resource 
 PUT /BankDrafts/\{bankdraftsid\}
 \`\`\`
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Exchange
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Exchange Bank Guaranteed Payment Remittance Task
 
@@ -188,9 +185,13 @@ This BIAN API path allows you to update an existing bank guaranteed payment remi
 PUT: Based on REST best practices\, the name of the path should be:
 '/bank\-drafts/\{bankdraftsid\}/bank\-guaranteed\-payment\-remittance/\{bankguaranteedpaymentremittanceid\}/exchange'
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Exchange
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Exchange Bank Guaranteed Payment Specification Task
 
@@ -206,9 +207,13 @@ PUT: The name of the path should be:
 
 In RESTful API design\, it is recommended to use lowercase letters\, separate words with dashes\, and include relevant resource identifiers in the path to make it more readable and intuitive\.
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Exchange
+## PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Exchange Bearer Document Creation and Registration Task
 
@@ -222,9 +227,13 @@ PUT: Based on REST best practices\, the name of the path could be simplified and
 
 '/bank\-drafts/\{bankDraftsId\}/bearer\-documents/\{bearerDocumentId\}/exchange'
 
-### PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Exchange
+## PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Exchange Customer Payment Task
 
@@ -238,9 +247,13 @@ PUT: Based on REST best practices\, the path should be named:
 
 '/bank\-drafts/\{bankdraftsid\}/customer\-payments/\{customerpaymentid\}/exchange'
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Execute
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Execute
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Execute Bank Guaranteed Payment Remittance Task
 
@@ -259,9 +272,13 @@ Here are the changes made to adhere to REST best practices:
 \- Plural nouns are used for resource names when applicable\.
 \- The path itself is all in lowercase for consistency\.
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Execute
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Execute
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Execute Bank Guaranteed Payment Specification Task
 
@@ -275,9 +292,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /bank\-drafts/\{bankdraftsid\}/bank\-guaranteed\-payment\-specifications/\{bankguaranteedpaymentspecificationid\}/execute
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Execute
+## PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Execute
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Execute Bearer Document Creation and Registration Task
 
@@ -293,9 +314,13 @@ PUT: A fitting name based on REST best practices for the endpoint path you provi
 /BankDrafts/\{bankdraftsid\}/BearerDocumentCreations/\{bearerdocumentcreationid\}/Register
 \`\`\`
 
-### PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Execute
+## PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Execute
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Execute Customer Payment Task
 
@@ -316,9 +341,13 @@ In this naming convention:
 \- Use nouns to identify resources\.
 \- Use HTTP methods to indicate the action performed on the resource\.
 
-### POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/Initiate
+## POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/Initiate
 
-**Description**
+:::info Path
+POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/Initiate
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Initiate Bank Guaranteed Payment Remittance Task
 
@@ -334,9 +363,13 @@ POST: A suitable name for this path in adherence to REST best practices could be
 POST /bank\-drafts/\{bankdraftsId\}/bank\-guaranteed\-payment\-remittance
 \`\`\`
 
-### POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/Initiate
+## POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/Initiate
 
-**Description**
+:::info Path
+POST: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/Initiate
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Initiate Bank Guaranteed Payment Specification Task
 
@@ -350,9 +383,13 @@ POST: A suitable name for the mentioned path\, following REST best practices\, c
 
 \`POST /bank\-drafts/\{bankdraftsid\}/bank\-guaranteed\-payment\-specification/initiate\`
 
-### POST: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/Initiate
+## POST: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/Initiate
 
-**Description**
+:::info Path
+POST: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/Initiate
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Initiate Bearer Document Creation and Registration Task
 
@@ -366,9 +403,13 @@ POST: The name of the path '/BankDrafts/\{bankdraftsid\}/BearerDocumentCreationa
 
 /BankDrafts/\{bankdraftsid\}/BearerDocuments
 
-### POST: /BankDrafts/\{bankdraftsid\}/CustomerPayment/Initiate
+## POST: /BankDrafts/\{bankdraftsid\}/CustomerPayment/Initiate
 
-**Description**
+:::info Path
+POST: /BankDrafts/\{bankdraftsid\}/CustomerPayment/Initiate
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Initiate Customer Payment Task
 
@@ -381,9 +422,13 @@ This API path allows you to initiate a new customer payment task related to bank
 POST: Based on REST best practices\, the name of the path should be:
 \- /bank\-drafts/\{bankdraftsid\}/customer\-payment/initiate
 
-### GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Notify
+## GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Notify
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Notify Bank Guaranteed Payment Remittance Task
 
@@ -399,9 +444,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by being clear\, descriptive\, and hierarchical\. It includes resource names\, identifiers\, and actions\, making it easily understandable and intuitive for users to navigate the API\.
 
-### GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Notify
+## GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Notify
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Notify Bank Guaranteed Payment Specification Task
 
@@ -417,9 +466,13 @@ GET: A possible name for the path could be:
 
 This name follows the REST best practices of using lowercase letters\, using hyphens for word separation\, and using plural nouns for collections\.
 
-### GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Notify
+## GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Notify
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Notify Bearer Document Creation and Registration Task
 
@@ -432,9 +485,13 @@ This API path is used to retrieve information about a specific action related to
 GET: The name of the path following REST best practices could be:  
 '/bank\-drafts/\{bankdraftsid\}/bearer\-document\-creation\-and\-registration/\{bearerdocumentcreationandregistrationid\}/notify'
 
-### GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Notify
+## GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Notify
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Notify Customer Payment Task
 
@@ -450,9 +507,13 @@ GET: A suitable name for the path \`/BankDrafts/\{bankdraftsid\}/CustomerPayment
 
 Using lowercase letters\, separating words with dashes\, and using resource names in plural form can help maintain consistency and readability in RESTful APIs\.
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Request
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Request
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Request Bank Guaranteed Payment Remittance Task
 
@@ -466,9 +527,13 @@ PUT: The name of the path should be:
 
 '/bank\-drafts/\{bankDraftsId\}/bank\-guaranteed\-payment\-remittances/\{bankGuaranteedPaymentRemittanceId\}/request'
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Request
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Request
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Request Bank Guaranteed Payment Specification Task
 
@@ -482,9 +547,13 @@ PUT: The path should be named as follows\, following REST best practices:
 
 /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecifications/\{bankguaranteedpaymentspecificationid\}/Requests
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Request
+## PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Request
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Request Bearer Document Creation and Registration Task
 
@@ -502,9 +571,13 @@ A suggestion for the path name could be:
 
 This path name is clear\, descriptive\, and follows the convention of using lowercase letters and hyphens to separate words in the URL\.
 
-### PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Request
+## PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Request
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Request Customer Payment Task
 
@@ -518,9 +591,13 @@ PUT: The name of the path following REST best practices should be:
 
 /BankDrafts/\{bankdraftsid\}/CustomerPayments/\{customerpaymentid\}/Requests
 
-### GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Retrieve
+## GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Retrieve Bank Guaranteed Payment Remittance Task
 
@@ -534,9 +611,13 @@ GET: A possible name for this path following REST best practices could be:
 
 GET /bank\-drafts/\{bankDraftsId\}/bank\-guaranteed\-payment\-remittance/\{bankGuaranteedPaymentRemittanceId\}
 
-### GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Retrieve
+## GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Retrieve Bank Guaranteed Payment Specification Task
 
@@ -552,9 +633,13 @@ GET: The path could be named:
 
 Following REST best practices\, the path should be in lowercase\, use hyphens as separators\, and should accurately reflect the hierarchy and relationships between the resources\.
 
-### GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Retrieve
+## GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Retrieve Bearer Document Creation and Registration Task
 
@@ -576,9 +661,13 @@ Here are the key principles followed in the suggested path name:
 2\. Use hyphens for word separation: Hyphens are preferred over underscores in path names\.
 3\. Use plural nouns for collections: The \`
 
-### GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
+## GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Retrieve Customer Payment Task
 
@@ -592,9 +681,13 @@ GET: A suitable name for the path '/BankDrafts/\{bankdraftsid\}/CustomerPayment/
 
 GET /bankDrafts/\{bankdraftsid\}/customerPayments/\{customerpaymentid\}
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Update
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentRemittance/\{bankguaranteedpaymentremittanceid\}/Update
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Update Bank Guaranteed Payment Remittance Task
 
@@ -608,9 +701,13 @@ PUT: The name of the path should be:
 
 PUT /bank\-drafts/\{bankdraftsid\}/bank\-guaranteed\-payment\-remittance/\{bankguaranteedpaymentremittanceid\}
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Update
+## PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BankGuaranteedPaymentSpecification/\{bankguaranteedpaymentspecificationid\}/Update
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Update Bank Guaranteed Payment Specification Task
 
@@ -624,9 +721,13 @@ PUT: The most appropriate name for this path\, following REST best practices\, w
 
 '/bank\-drafts/\{bankDraftsId\}/bank\-guaranteed\-payment\-specifications/\{bankGuaranteedPaymentSpecificationId\}/update'
 
-### PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Update
+## PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationandRegistration/\{bearerdocumentcreationandregistrationid\}/Update
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Update Bearer Document Creation and Registration Task
 
@@ -642,9 +743,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PATCH /BankDrafts/\{bankdraftsid\}/BearerDocumentCreationAndRegistration/\{bearerdocumentcreationandregistrationid\}
 \`\`\`
 
-### PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Update
+## PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankDrafts/\{bankdraftsid\}/CustomerPayment/\{customerpaymentid\}/Update
+:::
+
+### Description
 
 This Service Domain support bank guaranteed payment transactions such as bank drafts Update Customer Payment Task
 

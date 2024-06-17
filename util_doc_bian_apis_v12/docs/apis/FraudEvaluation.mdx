@@ -1,17 +1,14 @@
 # FraudEvaluation
 
-## Table of Contents
-- [POST: /FraudEvaluation/Evaluate](#post-/fraudevaluation/evaluate)
-- [GET: /FraudEvaluation/\{fraudevaluationid\}/Retrieve](#get-/fraudevaluation/\{fraudevaluationid\}/retrieve)
-- [GET: /FraudEvaluation/\{fraudevaluationid\}/RuleSetsandDecisionTrees/\{rulesetsanddecisiontreesid\}/Retrieve](#get-/fraudevaluation/\{fraudevaluationid\}/rulesetsanddecisiontrees/\{rulesetsanddecisiontreesid\}/retrieve)
-- [GET: /FraudEvaluation/\{fraudevaluationid\}/Models/\{modelsid\}/Retrieve](#get-/fraudevaluation/\{fraudevaluationid\}/models/\{modelsid\}/retrieve)
-
-
 **BIAN Documentation:** [FraudEvaluation v12](https://app.swaggerhub.com/apis/BIAN-3/FraudEvaluation/12.0.0)
 
-### POST: /FraudEvaluation/Evaluate
+## POST: /FraudEvaluation/Evaluate
 
-**Description**
+:::info Path
+POST: /FraudEvaluation/Evaluate
+:::
+
+### Description
 
 The service domain executes fraud behavioral pattern tests to detect possible fraudulent transactions/activity EvCR Start a fraud evaluation for a production transaction set
 
@@ -23,9 +20,13 @@ This API path allows you to initiate a fraud evaluation process for a set of act
 
 POST: The name of the path '/FraudEvaluation/Evaluate' following REST best practices would generally be simpler and focused on the resource itself\. A more appropriate name for the path could be '/evaluations'\. This named path is more concise and aligns better with RESTful conventions by emphasizing the resource \(evaluations\) rather than the specific action \(evaluate\)\.
 
-### GET: /FraudEvaluation/\{fraudevaluationid\}/Retrieve
+## GET: /FraudEvaluation/\{fraudevaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudEvaluation/\{fraudevaluationid\}/Retrieve
+:::
+
+### Description
 
 The service domain executes fraud behavioral pattern tests to detect possible fraudulent transactions/activity ReCr Retrieve details about a fraud evaluation assessment
 
@@ -39,9 +40,13 @@ GET: Based on REST best practices\, the name of the path should be as follows:
 
 GET /fraud\-evaluations/\{fraud\-evaluation\-id\}
 
-### GET: /FraudEvaluation/\{fraudevaluationid\}/RuleSetsandDecisionTrees/\{rulesetsanddecisiontreesid\}/Retrieve
+## GET: /FraudEvaluation/\{fraudevaluationid\}/RuleSetsandDecisionTrees/\{rulesetsanddecisiontreesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudEvaluation/\{fraudevaluationid\}/RuleSetsandDecisionTrees/\{rulesetsanddecisiontreesid\}/Retrieve
+:::
+
+### Description
 
 The service domain executes fraud behavioral pattern tests to detect possible fraudulent transactions/activity ReBQ Retrieve details about rule set or decision tree based tests applied
 
@@ -57,9 +62,13 @@ GET: The name of the path should be:
 /FraudEvaluations/\{fraudEvaluationId\}/RuleSetsAndDecisionTrees/\{ruleSetsAndDecisionTreesId\}
 \`\`\`
 
-### GET: /FraudEvaluation/\{fraudevaluationid\}/Models/\{modelsid\}/Retrieve
+## GET: /FraudEvaluation/\{fraudevaluationid\}/Models/\{modelsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudEvaluation/\{fraudevaluationid\}/Models/\{modelsid\}/Retrieve
+:::
+
+### Description
 
 The service domain executes fraud behavioral pattern tests to detect possible fraudulent transactions/activity ReBQ Retrieve details about model based tests applied
 

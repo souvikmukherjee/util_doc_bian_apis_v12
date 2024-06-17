@@ -1,44 +1,14 @@
 # ConsumerLoan
 
-## Table of Contents
-- [POST: /ConsumerLoan/Initiate](#post-/consumerloan/initiate)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Update](#put-/consumerloan/\{consumerloanid\}/update)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Control](#put-/consumerloan/\{consumerloanid\}/control)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/retrieve)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Interest/\{interestid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/interest/\{interestid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/consumerloan/\{consumerloanid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/servicefees/\{servicefeesid\}/retrieve)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Disbursement/\{disbursementid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/disbursement/\{disbursementid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Request](#put-/consumerloan/\{consumerloanid\}/maintenance/\{maintenanceid\}/request)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/maintenance/\{maintenanceid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Update](#put-/consumerloan/\{consumerloanid\}/withdrawal/\{withdrawalid\}/update)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Execute](#put-/consumerloan/\{consumerloanid\}/withdrawal/\{withdrawalid\}/execute)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Request](#put-/consumerloan/\{consumerloanid\}/withdrawal/\{withdrawalid\}/request)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/withdrawal/\{withdrawalid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Update](#put-/consumerloan/\{consumerloanid\}/repayment/\{repaymentid\}/update)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Execute](#put-/consumerloan/\{consumerloanid\}/repayment/\{repaymentid\}/execute)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Request](#put-/consumerloan/\{consumerloanid\}/repayment/\{repaymentid\}/request)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/repayment/\{repaymentid\}/retrieve)
-- [POST: /ConsumerLoan/\{consumerloanid\}/Restructuring/Initiate](#post-/consumerloan/\{consumerloanid\}/restructuring/initiate)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Update](#put-/consumerloan/\{consumerloanid\}/restructuring/\{restructuringid\}/update)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Exchange](#put-/consumerloan/\{consumerloanid\}/restructuring/\{restructuringid\}/exchange)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Request](#put-/consumerloan/\{consumerloanid\}/restructuring/\{restructuringid\}/request)
-- [GET: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/restructuring/\{restructuringid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Update](#put-/consumerloan/\{consumerloanid\}/servicefees/\{servicefeesid\}/update)
-- [POST: /ConsumerLoan/\{consumerloanid\}/AmountBlock/Initiate](#post-/consumerloan/\{consumerloanid\}/amountblock/initiate)
-- [GET: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/amountblock/\{amountblockid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Update](#put-/consumerloan/\{consumerloanid\}/amountblock/\{amountblockid\}/update)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/consumerloan/\{consumerloanid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-- [POST: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/Initiate](#post-/consumerloan/\{consumerloanid\}/issueddevice/initiate)
-- [GET: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/consumerloan/\{consumerloanid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/consumerloan/\{consumerloanid\}/issueddevice/\{issueddeviceid\}/update)
-
-
 **BIAN Documentation:** [ConsumerLoan v12](https://app.swaggerhub.com/apis/BIAN-3/ConsumerLoan/12.0.0)
 
-### POST: /ConsumerLoan/Initiate
+## POST: /ConsumerLoan/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerLoan/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks InCR Initiate a consumer loan
 
@@ -50,9 +20,13 @@ This API path \`/ConsumerLoan/Initiate\` allows you to create a new consumer loa
 
 POST: In RESTful API design\, the path should represent a resource or collection of resources\. So\, if the path '/ConsumerLoan/Initiate' were following REST best practices\, it might be named more descriptively based on the resource it represents\. For example\, if the endpoint is used to initiate a new consumer loan application\, a more appropriate path could be '/consumer\-loans' to represent the collection of consumer loan resources or '/consumer\-loans/\{loanId\}/initiate' to represent initiating
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpCR Update details for an existing consumer loan
 
@@ -65,9 +39,13 @@ This API path allows you to update the details of an existing consumer loan iden
 PUT: Based on REST best practices\, the name of the path should be:  
 /consumer\-loans/\{consumerloanid\}
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Control
+## PUT: /ConsumerLoan/\{consumerloanid\}/Control
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Control
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks CoCR Control a consumer loan \(e\.g\. suspend\, terminate\)
 
@@ -81,9 +59,13 @@ PUT: The name of the path should be '/ConsumerLoans/\{consumerloanid\}/Controls'
 
 In RESTful API design\, it is recommended to use plural nouns for resource names to represent collections of resources\. Additionally\, using appropriate and descriptive names for resources can improve the readability and understandability of the API\.
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReCR Retrieve details about a consumer loan
 
@@ -97,9 +79,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /consumer\-loans/\{consumerloanid\}
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Interest/\{interestid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about interest applied to a consumer loan
 
@@ -113,9 +99,13 @@ GET: A more appropriate name for the path '/ConsumerLoan/\{consumerloanid\}/Inte
 
 GET '/consumerloans/\{consumerloanid\}/interests/\{interestid\}'
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute Apply Service Fee
 
@@ -134,9 +124,13 @@ Here are some reasons for following REST best practices with this naming convent
 3\. Parameters like consumerLoanId and serviceFeesId are enclosed in curly braces to indicate variables\.
 4\. The endpoint name '
 
-### GET: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a consumer loan fees
 
@@ -150,9 +144,13 @@ GET: A more appropriate name for the path '/ConsumerLoan/\{consumerloanid\}/Serv
 
 GET /consumer\-loans/\{consumerloanid\}/service\-fees/\{servicefeesid\}
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Disbursement/\{disbursementid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Disbursement/\{disbursementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Disbursement/\{disbursementid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a disbursement paid against a consumer loan
 
@@ -166,9 +164,13 @@ GET: The name of the path should be:
 
 GET /consumer\-loans/\{consumerloanid\}/disbursements/\{disbursementid\}
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Request
+## PUT: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request a maintenance activity for a consumer load \(e\.g\. obtain a fee statement\)
 
@@ -182,9 +184,13 @@ PUT: Based on REST best practices\, the name of the path should convey the resou
 
 '/consumer\-loans/\{consumerloanid\}/maintenance\-requests/\{maintenanceid\}'\.
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about maintenance processing for a consumer loan
 
@@ -196,9 +202,13 @@ This API path allows you to retrieve details about maintenance processing for a 
 
 GET: Based on REST best practices\, the name of the path '/ConsumerLoan/\{consumerloanid\}/Maintenance/\{maintenanceid\}/Retrieve' could be simplified to '/consumer\-loans/\{consumerloanid\}/maintenance/\{maintenanceid\}'\.
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update details of a withdrawal from a consumer loan
 
@@ -214,9 +224,13 @@ PUT: Based on REST best practices\, the path should be named in a concise and de
 
 This naming convention follows the guidelines for using lowercase letters\, separating words with hyphens\, and using plural nouns where appropriate\.
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Execute
+## PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute an automated withdrawal against a consumer loan
 
@@ -230,9 +244,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path '/Consu
 
 PUT /consumer\-loans/\{consumerloanid\}/withdrawals/\{withdrawalid\}/execute
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Request
+## PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Request
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request handling of a withdrawal \(e\.g\. negotiate an exception\)
 
@@ -246,9 +264,13 @@ PUT: The name of the path should be:
 
 '/consumer\-loans/\{consumerLoanId\}/withdrawals/\{withdrawalId\}/requests'
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a consumer loan withdrawal
 
@@ -260,9 +282,13 @@ This API path allows you to retrieve details about a specific withdrawal from a 
 
 GET: Based on REST best practices\, the name of the path '/ConsumerLoan/\{consumerloanid\}/Withdrawal/\{withdrawalid\}/Retrieve' could be simplified to '/consumer\-loans/\{consumerloanid\}/withdrawals/\{withdrawalid\}' for better readability and consistency\.
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update a repayment transaction made to the consumer loan
 
@@ -274,9 +300,13 @@ This API path allows you to update a repayment transaction made to a consumer lo
 
 PUT: The name of the path based on REST best practices could be: PUT /consumer\-loans/\{consumerloanid\}/repayments/\{repaymentid\}
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Execute
+## PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute an automated repayment transaction
 
@@ -290,9 +320,13 @@ PUT: A suitable name for the path '/ConsumerLoan/\{consumerloanid\}/Repayment/\{
 
 POST /consumer\-loans/\{consumerloanid\}/repayments/\{repaymentid\}/execute
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Request
+## PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request handling of an exceptional repayment
 
@@ -311,9 +345,13 @@ In this convention:
 \- Use singular nouns for resource names\.
 \- Use hyphens to separate words in a resource name\, improving readability\.
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Repayment/\{repaymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a consumer loan repayment
 
@@ -327,9 +365,13 @@ GET: The name of the path following REST best practices could be:
 
 GET /consumer\-loans/\{consumerloanid\}/repayments/\{repaymentid\}
 
-### POST: /ConsumerLoan/\{consumerloanid\}/Restructuring/Initiate
+## POST: /ConsumerLoan/\{consumerloanid\}/Restructuring/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerLoan/\{consumerloanid\}/Restructuring/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks InBQ Initiate consumer loan account restructuring
 
@@ -343,9 +385,13 @@ POST: The name of the path '/ConsumerLoan/\{consumerloanid\}/Restructuring/Initi
 
 '/consumer\-loans/\{consumerloanid\}/restructuring/initiate'
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update details of a consumer loan or restructuring activities
 
@@ -359,9 +405,13 @@ PUT: Based on REST best practices\, a possible name for the path could be:
 
 PUT /consumer\-loans/\{consumerloanid\}/restructurings/\{restructuringid\}
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Exchange
+## PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks EcBQ Accept\, reject etc a consumer loan restructuring proposal
 
@@ -375,9 +425,13 @@ PUT: The name of the path should be:
 
 /consumer\-loans/\{consumerloanid\}/restructurings/\{restructuringid\}/exchanges
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Request
+## PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Request
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request activity associated with a restructuring effort \(e\.g\. negotiate\)
 
@@ -396,9 +450,13 @@ PUT: The name of the path should follow these REST best practices principles:
 Based on these principles\, the name of the path could be:  
 /consumerloans/\{consumerloanid\}/restructurings/\{restructuringid\}/requests
 
-### GET: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/Restructuring/\{restructuringid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a consumer loan restructuring task
 
@@ -410,9 +468,13 @@ This API path is used to retrieve details about a consumer loan restructuring ta
 
 GET: The name of the path should be \`/consumer\-loans/\{consumerloanId\}/restructurings/\{restructuringId\}\`\.
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Update details about an applied service fee
 
@@ -426,9 +488,13 @@ PUT: The name of the path should be:
 
 PUT /consumer\-loans/\{consumerloanid\}/service\-fees/\{servicefeesid\}
 
-### POST: /ConsumerLoan/\{consumerloanid\}/AmountBlock/Initiate
+## POST: /ConsumerLoan/\{consumerloanid\}/AmountBlock/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerLoan/\{consumerloanid\}/AmountBlock/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Initiate an amount block
 
@@ -444,9 +510,13 @@ POST: The name of the path should be:
 
 In REST best practices\, it is recommended to use lowercase letters and separate words with hyphens in URIs for better readability and consistency\.
 
-### GET: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Retrieve details about an amount block
 
@@ -462,9 +532,13 @@ GET /consumer\-loans/\{consumerloanid\}/amount\-blocks/\{amountblockid\}
 
 This naming convention follows the guidelines of using lowercase letters and hyphens to separate words in the path\, making it more readable and consistent\.
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/AmountBlock/\{amountblockid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Update details of an amount block
 
@@ -480,9 +554,13 @@ PUT: The name of the path should be:
 
 This follows the REST best practices by using plural nouns to represent the resources and using a descriptive path that clearly identifies the hierarchy of resources\.
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /ConsumerLoan/\{consumerloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Execute Authorization of Booking
 
@@ -498,9 +576,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in all lowercase letters\, use hyphens to separate words\, and use plural nouns for resources where applicable\.
 
-### POST: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/Initiate
+## POST: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Initiate Provision of Issued Device
 
@@ -519,9 +601,13 @@ I have made the following adjustments based on REST best practices:
 \- "\{consumerloanid\}" is singular and in camelCase format to represent a specific consumer loan identifier\.
 \- "IssuedDevices" is in plural form to indicate that it represents a collection of issued devices associated with
 
-### GET: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Retrieve Details about Issued Device
 
@@ -535,9 +621,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`GET /consumer\-loans/\{consumerloanid\}/issued\-devices/\{issueddeviceid\}\`
 
-### PUT: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerLoan/\{consumerloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a consumer loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Update Details of Issued Device Allocated to This Account
 

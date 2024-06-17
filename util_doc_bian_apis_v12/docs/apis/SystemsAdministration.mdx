@@ -1,37 +1,14 @@
 # SystemsAdministration
 
-## Table of Contents
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Capture](#put-/systemsadministration/\{systemsadministrationid\}/capture)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Control](#put-/systemsadministration/\{systemsadministrationid\}/control)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Exchange](#put-/systemsadministration/\{systemsadministrationid\}/exchange)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Grant](#put-/systemsadministration/\{systemsadministrationid\}/grant)
-- [POST: /SystemsAdministration/Initiate](#post-/systemsadministration/initiate)
-- [GET: /SystemsAdministration/\{systemsadministrationid\}/Retrieve](#get-/systemsadministration/\{systemsadministrationid\}/retrieve)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Request](#put-/systemsadministration/\{systemsadministrationid\}/request)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Update](#put-/systemsadministration/\{systemsadministrationid\}/update)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Capture](#put-/systemsadministration/\{systemsadministrationid\}/assurance/\{assuranceid\}/capture)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Capture](#put-/systemsadministration/\{systemsadministrationid\}/capacityplanningandresilience/\{capacityplanningandresilienceid\}/capture)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Capture](#put-/systemsadministration/\{systemsadministrationid\}/configuration/\{configurationid\}/capture)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Capture](#put-/systemsadministration/\{systemsadministrationid\}/inventory/\{inventoryid\}/capture)
-- [GET: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Retrieve](#get-/systemsadministration/\{systemsadministrationid\}/assurance/\{assuranceid\}/retrieve)
-- [GET: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Retrieve](#get-/systemsadministration/\{systemsadministrationid\}/capacityplanningandresilience/\{capacityplanningandresilienceid\}/retrieve)
-- [GET: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Retrieve](#get-/systemsadministration/\{systemsadministrationid\}/configuration/\{configurationid\}/retrieve)
-- [GET: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Retrieve](#get-/systemsadministration/\{systemsadministrationid\}/inventory/\{inventoryid\}/retrieve)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Request](#put-/systemsadministration/\{systemsadministrationid\}/assurance/\{assuranceid\}/request)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Request](#put-/systemsadministration/\{systemsadministrationid\}/capacityplanningandresilience/\{capacityplanningandresilienceid\}/request)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Request](#put-/systemsadministration/\{systemsadministrationid\}/configuration/\{configurationid\}/request)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Request](#put-/systemsadministration/\{systemsadministrationid\}/inventory/\{inventoryid\}/request)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Update](#put-/systemsadministration/\{systemsadministrationid\}/assurance/\{assuranceid\}/update)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Update](#put-/systemsadministration/\{systemsadministrationid\}/capacityplanningandresilience/\{capacityplanningandresilienceid\}/update)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Update](#put-/systemsadministration/\{systemsadministrationid\}/configuration/\{configurationid\}/update)
-- [PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Update](#put-/systemsadministration/\{systemsadministrationid\}/inventory/\{inventoryid\}/update)
-
-
 **BIAN Documentation:** [SystemsAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/SystemsAdministration/12.0.0)
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Capture
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Capture
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise CaCR Capture IT System Administrative Plan activity or event related information
 
@@ -47,9 +24,13 @@ PUT: The name of the path should be:
 
 In RESTful API design\, it is recommended to use lowercase letters\, hyphens for readability\, and plural nouns for consistency\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Control
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Control
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise CoCR Control the processing of IT System Administrative Plan
 
@@ -62,9 +43,13 @@ This API path allows users to update and manage the configuration\, maintenance\
 PUT: Based on REST best practices\, the path should be named as follows:
 '/systems\-administration/\{systemsadministrationid\}/control'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Exchange
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Exchange
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise EcCR Accept\, verify\, etc\. aspects of IT System Administrative Plan processing
 
@@ -78,9 +63,13 @@ PUT: The name of the path should be: '/systems\-administration/\{systemsadminist
 
 This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, and using plural nouns for resource names\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Grant
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Grant
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise GrCR Obtain permission to act in relation to IT System Administrative Plan
 
@@ -96,9 +85,13 @@ PUT: The name of the path should be something like:
 
 Following REST best practices\, the path should be in lowercase letters\, use hyphens to separate words for readability\, and should describe the resource that is being accessed in a clear and intuitive way\.
 
-### POST: /SystemsAdministration/Initiate
+## POST: /SystemsAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /SystemsAdministration/Initiate
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise InCR Instantiate a new IT System Administrative Plan
 
@@ -110,9 +103,13 @@ This API path allows you to create a new IT System Administrative Plan for manag
 
 POST: In order to follow REST best practices\, the name of the path should be standardized by using a noun that represents a resource\. In this case\, '/SystemsAdministration/Initiate' could be named as '/system\-administrations'\.
 
-### GET: /SystemsAdministration/\{systemsadministrationid\}/Retrieve
+## GET: /SystemsAdministration/\{systemsadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SystemsAdministration/\{systemsadministrationid\}/Retrieve
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise ReCR Retrieve details about any aspect of IT System Administrative Plan
 
@@ -128,9 +125,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 RESTful URLs typically use lowercase letters and hyphens to separate words in the path\. Additionally\, the path should be structured in a way that reflects the resource hierarchy\, with the specific resource identifier \(\`systemsadministrationid\`\) included in the path\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Request
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Request
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise RqCR Request manual intervention or a decision with respect to IT System Administrative Plan
 
@@ -144,9 +145,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /systems\-administration/\{systemsadministrationid\}/requests
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Update
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Update
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise UpCR Update details relating to IT System Administrative Plan
 
@@ -160,9 +165,13 @@ PUT: The name of the path should be:
 
 '/systems\-administration/\{systemsadministrationid\}'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Capture
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Capture
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise CaBQ Capture Assurance activity or event related information
 
@@ -174,9 +183,13 @@ This API path allows you to update information related to the administration of 
 
 PUT: The name of the path should be \`/systems\-administration/\{systemsadministrationid\}/assurance/\{assuranceid\}/capture\` if it followed REST best practices\. This name follows the convention of using lowercase letters\, separating words with hyphens\, and including specific resource identifiers for the dynamic parts of the path\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Capture
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Capture
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise CaBQ Capture Capacity Planning and Resilience activity or event related information
 
@@ -190,9 +203,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/systems\-administration/\{systemsadministrationid\}/capacity\-planning\-and\-resilience/\{capacityplanningandresilienceid\}/capture'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Capture
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Capture
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise CaBQ Capture Configuration activity or event related information
 
@@ -215,9 +232,13 @@ Following REST best practices:
 \- Avoid unnecessary words like "of" and "with"\.
 \- Use specific resource names that clearly define the target endpoint\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Capture
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Capture
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise CaBQ Capture Inventory activity or event related information
 
@@ -233,9 +254,13 @@ PUT: The name of the path should ideally be:
 
 Following REST best practices\, all path components should be in lowercase and use hyphens for multi\-word identifiers\.
 
-### GET: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Retrieve
+## GET: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Retrieve
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise ReBQ Retrieve details about any aspect of Assurance
 
@@ -251,9 +276,13 @@ GET: Based on REST best practices\, the name of the endpoint would ideally follo
 GET /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}
 \`\`\`
 
-### GET: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Retrieve
+## GET: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Retrieve
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise ReBQ Retrieve details about any aspect of Capacity Planning and Resilience
 
@@ -269,9 +298,13 @@ GET: Based on REST best practices\, the name of the path should ideally be:
 
 In RESTful URLs\, it is recommended to use lowercase letters\, hyphens to separate words\, and avoid using camel case or underscores\. This naming convention helps improve readability and maintain consistency in the URL structure\.
 
-### GET: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Retrieve
+## GET: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Retrieve
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise ReBQ Retrieve details about any aspect of Configuration
 
@@ -287,9 +320,13 @@ GET: The name of the path should be:
 /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}
 \`\`\`
 
-### GET: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Retrieve
+## GET: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Retrieve
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise ReBQ Retrieve details about any aspect of Inventory
 
@@ -305,9 +342,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 This path follows the convention of using lowercase letters and hyphens to separate words\, which is the recommended practice for URL paths in RESTful APIs\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Request
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Request
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Request
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise RqBQ Request manual intervention or a decision with respect to Assurance
 
@@ -321,9 +362,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/systems\-administration/\{systemsadministrationid\}/assurance/\{assuranceid\}/requests'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Request
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Request
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Request
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise RqBQ Request manual intervention or a decision with respect to Capacity Planning and Resilience
 
@@ -337,9 +382,13 @@ PUT: Based on RESTful best practices\, a suitable name for the path could be:
 
 '/systems\-administration/\{systemsadministrationid\}/capacity\-planning\-and\-resilience/\{capacityplanningandresilienceid\}/requests'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Request
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Request
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Request
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise RqBQ Request manual intervention or a decision with respect to Configuration
 
@@ -353,9 +402,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/systems\-administration/\{systemsadministrationid\}/configurations/\{configurationid\}/requests'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Request
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Request
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Request
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise RqBQ Request manual intervention or a decision with respect to Inventory
 
@@ -369,9 +422,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/systems\-administration/\{systemsadministrationid\}/inventory/\{inventoryid\}/requests'
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Update
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Update
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Assurance/\{assuranceid\}/Update
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise UpBQ Update details relating to Assurance
 
@@ -385,9 +442,13 @@ PUT: Following REST best practices\, the name for the specified path should be:
 
 PATCH /systems\-administration/\{systemsadministrationid\}/assurance/\{assuranceid\}
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Update
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Update
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/CapacityPlanningandResilience/\{capacityplanningandresilienceid\}/Update
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise UpBQ Update details relating to Capacity Planning and Resilience
 
@@ -403,9 +464,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 And the HTTP verb PUT should be used to update the resource at this path\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Update
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Update
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Configuration/\{configurationid\}/Update
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise UpBQ Update details relating to Configuration
 
@@ -417,9 +482,13 @@ This API path allows you to update details related to the configuration of IT as
 
 PUT: A possible name for the path could be: \`/systems\-administration/\{systemsadministrationid\}/configurations/\{configurationid\}\`\.
 
-### PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Update
+## PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /SystemsAdministration/\{systemsadministrationid\}/Inventory/\{inventoryid\}/Update
+:::
+
+### Description
 
 Administer the configuration\, maintenance\, assignment and track usage and status of all IT assets deployed in development and production across the enterprise UpBQ Update details relating to Inventory
 

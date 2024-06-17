@@ -1,69 +1,14 @@
 # MutualFundAdministration
 
-## Table of Contents
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Control](#put-/mutualfundadministration/\{mutualfundadministrationid\}/control)
-- [POST: /MutualFundAdministration/Create](#post-/mutualfundadministration/create)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/grant)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/notify)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/request)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/retrieve)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundaccounting/\{fundaccountingid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/funddevelopment/\{funddevelopmentid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundenrolment/\{fundenrolmentid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/exchange)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundaccounting/\{fundaccountingid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/funddevelopment/\{funddevelopmentid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundenrolment/\{fundenrolmentid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/grant)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/grant)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundaccounting/\{fundaccountingid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/funddevelopment/\{funddevelopmentid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundenrolment/\{fundenrolmentid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/notify)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/notify)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundaccounting/\{fundaccountingid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/funddevelopment/\{funddevelopmentid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundenrolment/\{fundenrolmentid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/request)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/request)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundaccounting/\{fundaccountingid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/funddevelopment/\{funddevelopmentid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundenrolment/\{fundenrolmentid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/retrieve)
-- [GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve](#get-/mutualfundadministration/\{mutualfundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/retrieve)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundaccounting/\{fundaccountingid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/funddevelopment/\{funddevelopmentid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundenrolment/\{fundenrolmentid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundmanagementfee/\{fundmanagementfeeid\}/update)
-- [PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update](#put-/mutualfundadministration/\{mutualfundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/update)
-
-
 **BIAN Documentation:** [MutualFundAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/MutualFundAdministration/12.0.0)
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Control
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Control
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Control Mutual Fund Administrative Plan
 
@@ -79,9 +24,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path names should be in lowercase and use hyphens to separate words to improve readability and maintain consistency\.
 
-### POST: /MutualFundAdministration/Create
+## POST: /MutualFundAdministration/Create
 
-**Description**
+:::info Path
+POST: /MutualFundAdministration/Create
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Create Mutual Fund Administrative Plan
 
@@ -93,9 +42,13 @@ This API path \`/MutualFundAdministration/Create\` allows users to create a new 
 
 POST: Based on REST best practices\, the path '/MutualFundAdministration/Create' should be renamed to '/mutual\-funds' following a more resource\-centric approach\. The new path should represent the collection of mutual funds\, and a POST request to this endpoint can be used to create a new mutual fund resource\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Mutual Fund Administrative Plan
 
@@ -109,9 +62,13 @@ PUT: The RESTful path for this endpoint could be named as follows:
 
 /mutual\-funds/\{mutualFundId\}/exchanges
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Mutual Fund Administrative Plan
 
@@ -123,9 +80,13 @@ This API path allows you to update an existing resource related to the Mutual Fu
 
 PUT: The name of the path should be \`/mutual\-fund\-administration/\{mutualfundadministrationid\}/grant\` according to REST best practices\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Mutual Fund Administrative Plan
 
@@ -141,9 +102,13 @@ GET: A suitable name for the path '/MutualFundAdministration/\{mutualfundadminis
 
 This naming convention follows RESTful principles by using lowercase letters\, using hyphens to separate words\, and specifying the action being performed \(in this case\, notifications are being created\)\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Mutual Fund Administrative Plan
 
@@ -157,9 +122,13 @@ PUT: Following RESTful best practices\, the name of the path should be:
 
 /mutual\-fund\-administration/\{mutualfundadministrationid\}/request
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Mutual Fund Administrative Plan
 
@@ -175,9 +144,13 @@ GET /mutual\-fund\-administration/\{mutualfundadministrationid\}
 
 Using all lowercase letters and separating words with hyphens helps improve readability and consistency in RESTful API design\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Mutual Fund Administrative Plan
 
@@ -191,9 +164,13 @@ PUT: Based on REST best practices\, the path could be named as follows:
 
 '/mutual\-funds/\{mutualfundadministrationid\}/update'
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Accounting Routine
 
@@ -207,9 +184,13 @@ PUT: Based on REST best practices\, the name of the path should be \`/mutual\-fu
 
 It is recommended to use lowercase letters\, separate words with hyphens for better readability\, and maintain a consistent and descriptive naming convention to represent the resource hierarchy in a clear and organized manner\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Development Routine
 
@@ -223,9 +204,13 @@ PUT: A potential name for the path could be:
 
 /mutual\-funds/\{mutualfundid\}/fund\-developments/\{funddevelopmentid\}/exchanges
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Enrolment Routine
 
@@ -239,9 +224,13 @@ PUT: The name of the path should be:
 
 /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Exchange
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Financial Reporting Routine
 
@@ -255,9 +244,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 GET /mutual\-funds/\{mutualfundadministrationid\}/financial\-reports/\{fundfinancialreportingid\}/exchange
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Inflows and Outflow Routine
 
@@ -274,9 +267,13 @@ I have made the following adjustments to adhere to the best practices:
 2\. Using hyphens to separate words in path segments\.
 3\. Using singular nouns for resource names\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Investor\, Middle and Back Office Service Routine
 
@@ -290,9 +287,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /mutual\-fund\-administration/\{mutualfundadministrationid\}/middle\-and\-back\-office\-services/\{fundinvestor\_middleandbackofficeserviceid\}/exchange
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Management Fee Routine
 
@@ -306,9 +307,13 @@ PUT: The name of the path should be:
 
 /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-management\-fee/\{fundmanagementfeeid\}/exchange
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Exchange Fund Tax Administration Routine
 
@@ -322,9 +327,13 @@ PUT: The appropriate name for the path would be:
 
 /MutualFunds/\{mutualfundadministrationid\}/FundTaxes/\{fundtaxadministrationid\}/Exchanges
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Accounting Routine
 
@@ -338,9 +347,13 @@ PUT: A possible name for the path could be:
 
 /mutual\-fund\-administration/\{mutualFundAdministrationId\}/fund\-accounting/\{fundAccountingId\}/grant
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Development Routine
 
@@ -354,9 +367,13 @@ PUT: The name of the path should be:
 
 /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grants
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Enrolment Routine
 
@@ -372,9 +389,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 This path structure incorporates resource naming conventions and hierarchy to provide a clear and meaningful representation of the endpoint's functionality\. Each segment of the path represents a specific resource or relationship\, making it more intuitive and easier to understand for clients and developers\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Financial Reporting Routine
 
@@ -389,9 +410,13 @@ A suggestion for the name of the path could be:
 
 '/mutual\-funds/\{mutualfundadministrationid\}/financial\-reports/\{fundfinancialreportingid\}/grant'
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Inflows and Outflow Routine
 
@@ -405,9 +430,13 @@ PUT: The name of the path following REST best practices should be:
 
 '/mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-inflows\-and\-outflows/\{fundinflowsandoutflowid\}/grant'
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Investor\, Middle and Back Office Service Routine
 
@@ -425,9 +454,13 @@ A more appropriate name could be:
 
 This new naming convention follows RESTful design principles by using
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Management Fee Routine
 
@@ -442,9 +475,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and being descriptive yet concise\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Grant Fund Tax Administration Routine
 
@@ -460,9 +497,13 @@ PUT: A RESTful naming convention for the given path could be:
 
 This path follows the convention of including resource names \(plural nouns\) and the unique identifier for each resource in the path\. It clearly denotes the hierarchical relationship between the resources as they are navigated through the URI\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Accounting Routine
 
@@ -480,9 +521,13 @@ The key points to follow the best practices are:
 2\. Use meaningful resource names: Make sure the names reflect the resources they represent\.
 3\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Development Routine
 
@@ -498,9 +543,13 @@ GET: The name of the path should be:
 
 This path seems to follow RESTful naming conventions by using nouns to represent resources and avoiding verbs or actions in the URL\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Enrolment Routine
 
@@ -514,9 +563,13 @@ GET: The name for this path following REST best practices should be:
 
 \`/mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-enrolment/\{fundenrolmentid\}/notify\`
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Financial Reporting Routine
 
@@ -532,9 +585,13 @@ GET: The RESTful path should be named as follows:
 
 This path structure follows REST best practices by being descriptive\, resource\-oriented\, and properly organized in a hierarchical manner\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Inflows and Outflow Routine
 
@@ -550,9 +607,13 @@ GET: The name of the path should be:
 
 This path name adheres to REST best practices by using lowercase letters\, hyphens to separate words\, and clearly indicating the resource hierarchy\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Investor\, Middle and Back Office Service Routine
 
@@ -566,9 +627,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-investor\-middle\-back\-office\-service/\{fundinvestor\_middleandbackofficeserviceid\}/notify
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Management Fee Routine
 
@@ -581,9 +646,13 @@ This API path retrieves information related to notifying the fund management fee
 GET: Based on REST best practices\, the name of the path should be:
 '/mutual\-fund\-administrations/\{mutualfundadministrationid\}/fund\-management\-fees/\{fundmanagementfeeid\}/notify'
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Notify Fund Tax Administration Routine
 
@@ -599,9 +668,13 @@ GET: Based on REST best practices\, the path should be structured in a clear and
 2\. /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-tax\-administration/\{fundtaxadministrationid\}/notifications
 3\. /mutual\-fund\-administration/\{mutualfundadministration
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Accounting Routine
 
@@ -617,9 +690,13 @@ PUT: Following REST best practices\, the name of the path '/MutualFundAdministra
 
 This name is more concise\, uses lowercase letters\, uses hyphens to separate words\, and provides a clear hierarchy of resources in the URI\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Development Routine
 
@@ -633,9 +710,13 @@ PUT: The name of the path following REST best practices should be: /mutual\-fund
 
 This naming convention follows REST best practices by using lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Enrolment Routine
 
@@ -649,9 +730,13 @@ PUT: Following REST best practices\, the name of this path should be:
 
 /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-enrolment/\{fundenrolmentid\}/request
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Financial Reporting Routine
 
@@ -665,9 +750,13 @@ PUT: The name of the path should be:
 
 /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Requests
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Inflows and Outflow Routine
 
@@ -683,9 +772,13 @@ PUT: The name of the path should reflect the resource it represents\. Based on t
 
 This naming scheme follows the best practices of using plural nouns for resource names and using hyphens to separate words in the endpoint\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Investor\, Middle and Back Office Service Routine
 
@@ -701,9 +794,13 @@ PUT: Based on REST best practices\, the name of the path should be standardized 
 
 Please note that the path includes hyphens to separate words for better readability and clarity\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Management Fee Routine
 
@@ -717,9 +814,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Requests
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Request Fund Tax Administration Routine
 
@@ -735,9 +836,13 @@ PUT: The name of the resource path should ideally be something like:
 
 In this format\, we are using lowercase letters\, hyphens to separate words\, and plural nouns at the end to represent a collection of resources\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Accounting Routine
 
@@ -751,9 +856,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-accounting/\{fundaccountingid\}
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Development Routine
 
@@ -767,9 +876,13 @@ GET: Based on REST best practices\, the name of the path should ideally be somet
 
 /mutual\-funds/\{mutualfundadministrationid\}/fund\-development/\{funddevelopmentid\}
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Enrolment Routine
 
@@ -783,9 +896,13 @@ GET: Based on REST best practices\, the name of the path '/MutualFundAdministrat
 
 This naming convention follows the guidelines of using lowercase letters\, hyphens to separate words\, and descriptive resource names in the path\. Additionally\, It is concise\, descriptive\, and easy
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Financial Reporting Routine
 
@@ -801,9 +918,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 In RESTful API design\, it is recommended to use lowercase letters\, separate words with hyphens\, and include resource identifiers in the URL path to make the endpoints more readable and understandable\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Inflows and Outflow Routine
 
@@ -817,9 +938,13 @@ GET: A good name for the path based on REST best practices would be:
 
 /mutual\-funds/\{mutualfundadministrationid\}/fund\-transactions/\{fundinflowsandoutflowid\}/retrieve
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Investor\, Middle and Back Office Service Routine
 
@@ -834,9 +959,13 @@ GET: The name of the path should be:
 
 In general\, the path should be in lowercase letters\, use hyphens to separate words\, and should be descriptive of the resource or action it represents\.
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Management Fee Routine
 
@@ -850,9 +979,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 '/mutual\-funds/\{mutualfundid\}/fund\-management\-fees/\{fundmanagementfeeid\}'
 
-### GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
+## GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Retrieve Fund Tax Administration Routine
 
@@ -866,9 +999,13 @@ GET: The name of the path following REST best practices could be:
 
 GET /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-tax\-administration/\{fundtaxadministrationid\}
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Accounting Routine
 
@@ -882,9 +1019,13 @@ PUT: Based on REST best practices\, a more suitable name for the path '/MutualFu
 
 PUT /mutual\-fund\-administrations/\{mutualfundadministrationid\}/fund\-accounting/\{fundaccountingid\}
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Development Routine
 
@@ -900,9 +1041,13 @@ PUT: Based on REST best practices\, the name of the path can be cleaned up to ma
 
 This new path is clearer\, easier to understand\, and follows the standard convention of using lowercase letters and hyphens to separate words in the URL\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Enrolment Routine
 
@@ -916,9 +1061,13 @@ PUT: The name of the path should be:
 
 PUT /MutualFundAdministration/\{mutualfundadministrationid\}/FundEnrolment/\{fundenrolmentid\}
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Financial Reporting Routine
 
@@ -931,9 +1080,13 @@ This BIAN API path allows you to update the routine for financial reporting of a
 PUT: Based on REST best practices\, a possible name for the path could be:
 '/mutual\-fund\-administration/\{mutualFundAdministrationId\}/fund\-financial\-reporting/\{fundFinancialReportingId\}/update'
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Inflows and Outflow Routine
 
@@ -949,9 +1102,13 @@ PUT: In RESTful API design\, the path should be named in a way that reflects the
 
 This name is more descriptive\, uses lowercase letters\, separates words with hyphens for readability\, and indicates the resource hierarchy in a clear manner\.
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Investor\, Middle and Back Office Service Routine
 
@@ -965,9 +1122,13 @@ PUT: Based on REST best practices\, a more appropriate name for this path could 
 
 PUT /mutual\-fund\-administration/\{mutualfundadministrationid\}/fund\-investor\-middle\-and\-back\-office\-service/\{fundinvestor\_middleandbackofficeserviceid\}
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundManagementFee/\{fundmanagementfeeid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Management Fee Routine
 
@@ -981,9 +1142,13 @@ PUT: A suitable name for the path could be:
 
 PUT /mutual\-funds/\{mutualfundadministrationid\}/management\-fees/\{fundmanagementfeeid\}
 
-### PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
+## PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /MutualFundAdministration/\{mutualfundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
+:::
+
+### Description
 
 The Mutual Fund Administration Service Domain handles all aspects of the set\-up and operation of mutual funds that can be offered to the bank's general \(non\-accredited\) customers Update Fund Tax Administration Routine
 

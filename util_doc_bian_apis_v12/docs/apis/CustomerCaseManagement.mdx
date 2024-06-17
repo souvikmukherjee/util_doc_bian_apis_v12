@@ -1,23 +1,14 @@
 # CustomerCaseManagement
 
-## Table of Contents
-- [POST: /CustomerCaseManagement/Create](#post-/customercasemanagement/create)
-- [PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Update](#put-/customercasemanagement/\{customercasemanagementid\}/update)
-- [PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Request](#put-/customercasemanagement/\{customercasemanagementid\}/request)
-- [GET: /CustomerCaseManagement/\{customercasemanagementid\}/Retrieve](#get-/customercasemanagement/\{customercasemanagementid\}/retrieve)
-- [PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Update](#put-/customercasemanagement/\{customercasemanagementid\}/rules/\{rulesid\}/update)
-- [PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Request](#put-/customercasemanagement/\{customercasemanagementid\}/rules/\{rulesid\}/request)
-- [GET: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Retrieve](#get-/customercasemanagement/\{customercasemanagementid\}/rules/\{rulesid\}/retrieve)
-- [PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Update](#put-/customercasemanagement/\{customercasemanagementid\}/performance/\{performanceid\}/update)
-- [PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Request](#put-/customercasemanagement/\{customercasemanagementid\}/performance/\{performanceid\}/request)
-- [GET: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Retrieve](#get-/customercasemanagement/\{customercasemanagementid\}/performance/\{performanceid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerCaseManagement v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerCaseManagement/12.0.0)
 
-### POST: /CustomerCaseManagement/Create
+## POST: /CustomerCaseManagement/Create
 
-**Description**
+:::info Path
+POST: /CustomerCaseManagement/Create
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance CrCR Create the management plan for customer case handling
 
@@ -29,9 +20,13 @@ This API path \(/CustomerCaseManagement/Create\) allows users to create a new re
 
 POST: The name of the path should be \`/customers\` as per REST best practices\.
 
-### PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Update
+## PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Update
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance UpCR Update aspects of the customer case handling management plan
 
@@ -49,9 +44,13 @@ PUT /CustomerCaseManagements/\{customercasemanagementid\}
 
 This path effectively communicates that the HTTP method \`PUT\` is used to update a specific customer case management resource identified by its \`customercasemanagementid\`\.
 
-### PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Request
+## PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Request
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance RqCR Request manual intervention with the plan
 
@@ -65,9 +64,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/CustomerCaseManagement/\{customercasemanagementid\}/Requests'
 
-### GET: /CustomerCaseManagement/\{customercasemanagementid\}/Retrieve
+## GET: /CustomerCaseManagement/\{customercasemanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCaseManagement/\{customercasemanagementid\}/Retrieve
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance ReCR Retrieve details about the customer case handling management plan
 
@@ -86,9 +89,13 @@ Here are some key points to consider:
 3\. Use hyphens to separate words in URLs for better readability\.
 4\. Avoid using action words or verbs in the URLs
 
-### PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Update
+## PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Update
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance UpBQ Update details of the case resolution criterion
 
@@ -102,9 +109,13 @@ PUT: The name of the path should be:
 
 /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}
 
-### PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Request
+## PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Request
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance RqBQ Request manual intervention in the case resolution rules
 
@@ -118,9 +129,13 @@ PUT: The name of the path should be: \`/customer\-case\-management/\{customercas
 
 Following REST best practices\, the path should be all lowercase\, use hyphens for multi\-word identifiers\, and be descriptive of the resource it represents\.
 
-### GET: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Retrieve
+## GET: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCaseManagement/\{customercasemanagementid\}/Rules/\{rulesid\}/Retrieve
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance ReBQ Retrieve details about the customer case criterion
 
@@ -134,9 +149,13 @@ GET: The name of the path should be:
 
 '/customer\-case\-management/\{customercasemanagementid\}/rules/\{rulesid\}'
 
-### PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Update
+## PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Update
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance UpBQ Update performance analysis related information
 
@@ -150,9 +169,13 @@ PUT: The recommended naming for the path would be:
 
 '/customer\-case\-management/\{customercasemanagementid\}/performance/\{performanceid\}'
 
-### PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Request
+## PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Request
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance RqBQ Request manual intervention in unit performance analysis
 
@@ -166,9 +189,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/customer\-case\-management/\{customercasemanagementid\}/performances/\{performanceid\}/request'
 
-### GET: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Retrieve
+## GET: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCaseManagement/\{customercasemanagementid\}/Performance/\{performanceid\}/Retrieve
+:::
+
+### Description
 
 Track and assess case load and resolution activity \- allocate resources as necessary to optimize case resolution performance ReBQ Retrieve details about business unit performance assessment activity
 

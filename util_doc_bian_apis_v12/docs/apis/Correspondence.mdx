@@ -1,29 +1,14 @@
 # Correspondence
 
-## Table of Contents
-- [POST: /Correspondence/Initiate](#post-/correspondence/initiate)
-- [PUT: /Correspondence/\{correspondenceid\}/Update](#put-/correspondence/\{correspondenceid\}/update)
-- [PUT: /Correspondence/\{correspondenceid\}/Execute](#put-/correspondence/\{correspondenceid\}/execute)
-- [GET: /Correspondence/\{correspondenceid\}/Retrieve](#get-/correspondence/\{correspondenceid\}/retrieve)
-- [POST: /Correspondence/\{correspondenceid\}/Outbound/Initiate](#post-/correspondence/\{correspondenceid\}/outbound/initiate)
-- [PUT: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Update](#put-/correspondence/\{correspondenceid\}/outbound/\{outboundid\}/update)
-- [GET: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Retrieve](#get-/correspondence/\{correspondenceid\}/outbound/\{outboundid\}/retrieve)
-- [POST: /Correspondence/\{correspondenceid\}/OutboundWithResponse/Initiate](#post-/correspondence/\{correspondenceid\}/outboundwithresponse/initiate)
-- [PUT: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update](#put-/correspondence/\{correspondenceid\}/outboundwithresponse/\{outboundwithresponseid\}/update)
-- [GET: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve](#get-/correspondence/\{correspondenceid\}/outboundwithresponse/\{outboundwithresponseid\}/retrieve)
-- [POST: /Correspondence/\{correspondenceid\}/Inbound/Initiate](#post-/correspondence/\{correspondenceid\}/inbound/initiate)
-- [PUT: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Update](#put-/correspondence/\{correspondenceid\}/inbound/\{inboundid\}/update)
-- [GET: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Retrieve](#get-/correspondence/\{correspondenceid\}/inbound/\{inboundid\}/retrieve)
-- [POST: /Correspondence/\{correspondenceid\}/BlockMailing/Initiate](#post-/correspondence/\{correspondenceid\}/blockmailing/initiate)
-- [PUT: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Update](#put-/correspondence/\{correspondenceid\}/blockmailing/\{blockmailingid\}/update)
-- [GET: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Retrieve](#get-/correspondence/\{correspondenceid\}/blockmailing/\{blockmailingid\}/retrieve)
-
-
 **BIAN Documentation:** [Correspondence v12](https://app.swaggerhub.com/apis/BIAN-3/Correspondence/12.0.0)
 
-### POST: /Correspondence/Initiate
+## POST: /Correspondence/Initiate
 
-**Description**
+:::info Path
+POST: /Correspondence/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. InCR Initiate the correspondence operational facility
 
@@ -35,9 +20,13 @@ This BIAN API path \`/Correspondence/Initiate\` allows you to create and start t
 
 POST: A common convention in RESTful API design is to use plural nouns for resource names\. Following this convention\, the name of the path '/Correspondence/Initiate' might be revised to '/correspondences/initiate' to adhere closer to REST best practices\.
 
-### PUT: /Correspondence/\{correspondenceid\}/Update
+## PUT: /Correspondence/\{correspondenceid\}/Update
 
-**Description**
+:::info Path
+PUT: /Correspondence/\{correspondenceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. UpCR Update settings and details of the operating session \(e\.g\. change priorities\)
 
@@ -51,9 +40,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/correspondence/\{correspondenceId\}'
 
-### PUT: /Correspondence/\{correspondenceid\}/Execute
+## PUT: /Correspondence/\{correspondenceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Correspondence/\{correspondenceid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. ExCR Execute an automated task \(e\.g\. statistical analysis\)
 
@@ -71,9 +64,13 @@ POST /Correspondence/\{correspondenceid\}/Actions/Execute
 
 This name reflects the resource\-oriented approach of REST by indicating that an action \(in this case\, executing a correspondence\) is being performed on a specific correspondence identified by \{correspondenceid\}\. Using a more descriptive path can improve the clarity and maintainability of your
 
-### GET: /Correspondence/\{correspondenceid\}/Retrieve
+## GET: /Correspondence/\{correspondenceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Correspondence/\{correspondenceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. ReCR Retrieve details about the correspondence session
 
@@ -85,9 +82,13 @@ This API path allows you to retrieve details about a specific correspondence ses
 
 GET: Based on REST best practices\, the name of the path '/Correspondence/\{correspondenceid\}/Retrieve' can be simplified to '/correspondence/\{correspondenceid\}' for a more concise and clear representation\.
 
-### POST: /Correspondence/\{correspondenceid\}/Outbound/Initiate
+## POST: /Correspondence/\{correspondenceid\}/Outbound/Initiate
 
-**Description**
+:::info Path
+POST: /Correspondence/\{correspondenceid\}/Outbound/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. InBQ Initiate processing an outbound correspondence item
 
@@ -103,9 +104,13 @@ A more suitable name for the path '/Correspondence/\{correspondenceid\}/Outbound
 
 '/Correspondence/\{correspondenceid\}/OutboundInitiation'
 
-### PUT: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Update
+## PUT: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Update
 
-**Description**
+:::info Path
+PUT: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. UpBQ Update details of an outbound correspondence item
 
@@ -123,9 +128,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 This path provides a clear hierarchy and structure for the resources being accessed\. It clearly indicates the correspondence and outbound resources that are being targeted for updates\.
 
-### GET: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Retrieve
+## GET: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Correspondence/\{correspondenceid\}/Outbound/\{outboundid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. ReBQ Retrieve details about an outbound correspondence item
 
@@ -143,9 +152,13 @@ GET /correspondences/\{correspondenceid\}/outbounds/\{outboundid\}
 
 This name clearly indicates the action of retrieving a specific outbound correspondence belonging to a specific correspondence\, making it more intuitive and in line
 
-### POST: /Correspondence/\{correspondenceid\}/OutboundWithResponse/Initiate
+## POST: /Correspondence/\{correspondenceid\}/OutboundWithResponse/Initiate
 
-**Description**
+:::info Path
+POST: /Correspondence/\{correspondenceid\}/OutboundWithResponse/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. InBQ Initiate processing outbound correspondence with tracked response
 
@@ -159,9 +172,13 @@ POST: A more appropriate name for the path could be:
 
 '/correspondence/\{correspondenceid\}/outbound\-responses/initiate'
 
-### PUT: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update
+## PUT: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update
 
-**Description**
+:::info Path
+PUT: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. UpBQ Update details of an outbound correspondence with tracked response
 
@@ -175,9 +192,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}
 
-### GET: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve
+## GET: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Correspondence/\{correspondenceid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. ReBQ Retrieve details about an outbound correspondence with tracked response
 
@@ -190,9 +211,13 @@ This API path allows you to retrieve information about an outbound correspondenc
 GET: Based on REST best practices\, the name of the path should be:
 '/correspondence/\{correspondenceid\}/outbound\-with\-response/\{outboundwithresponseid\}/retrieve'
 
-### POST: /Correspondence/\{correspondenceid\}/Inbound/Initiate
+## POST: /Correspondence/\{correspondenceid\}/Inbound/Initiate
 
-**Description**
+:::info Path
+POST: /Correspondence/\{correspondenceid\}/Inbound/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. InBQ Initiate processing of an inbound correspondence item
 
@@ -208,9 +233,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 Following the convention of using lowercase letters and separating words with a forward slash\.
 
-### PUT: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Update
+## PUT: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Update
 
-**Description**
+:::info Path
+PUT: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. UpBQ Update details of an inbound correspondence item
 
@@ -224,9 +253,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}
 
-### GET: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Retrieve
+## GET: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Correspondence/\{correspondenceid\}/Inbound/\{inboundid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. ReBQ Retrieve details about an inbound correspondence item
 
@@ -242,9 +275,13 @@ GET: Based on REST best practices\, the name of the path could be:
 /Correspondences/\{correspondenceId\}/Inbound/\{inboundId\}
 \`\`\`
 
-### POST: /Correspondence/\{correspondenceid\}/BlockMailing/Initiate
+## POST: /Correspondence/\{correspondenceid\}/BlockMailing/Initiate
 
-**Description**
+:::info Path
+POST: /Correspondence/\{correspondenceid\}/BlockMailing/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. InBQ Initiate processing an outbound correspondence block
 
@@ -260,9 +297,13 @@ POST: Based on REST best practices\, the name of the path '/Correspondence/\{cor
 
 This name is more descriptive\, follows the common REST convention of using lowercase letters and plurals for resource names\, and represents the relationship between correspondences and mailing blocks\.
 
-### PUT: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Update
+## PUT: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Update
 
-**Description**
+:::info Path
+PUT: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. UpBQ Update details of an outbound correspondence block
 
@@ -278,9 +319,13 @@ PATCH /correspondences/\{correspondenceid\}/blockMailings/\{blockmailingid\}
 
 This naming convention follows REST best practices by using HTTP methods \(PATCH\) to perform partial updates on specific resources \(/correspondences/\{correspondenceid\}/blockMailings/\{blockmailingid\}\)\. The path is all lowercase\, uses plural
 
-### GET: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Retrieve
+## GET: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Correspondence/\{correspondenceid\}/BlockMailing/\{blockmailingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the production of pre\-formatted correspondence and batches of correspondence \(e\.g\. mail shots\)\. ReBQ Retrieve details about an outbound correspondence block
 

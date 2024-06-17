@@ -1,60 +1,14 @@
 # VirtualAccount
 
-## Table of Contents
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Capture](#put-/virtualaccount/\{virtualaccountid\}/capture)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Control](#put-/virtualaccount/\{virtualaccountid\}/control)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Exchange](#put-/virtualaccount/\{virtualaccountid\}/exchange)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Execute](#put-/virtualaccount/\{virtualaccountid\}/execute)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Grant](#put-/virtualaccount/\{virtualaccountid\}/grant)
-- [POST: /VirtualAccount/Initiate](#post-/virtualaccount/initiate)
-- [GET: /VirtualAccount/\{virtualaccountid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/retrieve)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Request](#put-/virtualaccount/\{virtualaccountid\}/request)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/update)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Capture](#put-/virtualaccount/\{virtualaccountid\}/directdebit/\{directdebitid\}/capture)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Capture](#put-/virtualaccount/\{virtualaccountid\}/standingorder/\{standingorderid\}/capture)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Control](#put-/virtualaccount/\{virtualaccountid\}/directdebit/\{directdebitid\}/control)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Exchange](#put-/virtualaccount/\{virtualaccountid\}/servicefees/\{servicefeesid\}/exchange)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Exchange](#put-/virtualaccount/\{virtualaccountid\}/interest/\{interestid\}/exchange)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Exchange](#put-/virtualaccount/\{virtualaccountid\}/statement/\{statementid\}/exchange)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/virtualaccount/\{virtualaccountid\}/servicefees/\{servicefeesid\}/execute)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Execute](#put-/virtualaccount/\{virtualaccountid\}/interest/\{interestid\}/execute)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Grant](#put-/virtualaccount/\{virtualaccountid\}/directdebit/\{directdebitid\}/grant)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Grant](#put-/virtualaccount/\{virtualaccountid\}/standingorder/\{standingorderid\}/grant)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Grant](#put-/virtualaccount/\{virtualaccountid\}/statement/\{statementid\}/grant)
-- [POST: /VirtualAccount/\{virtualaccountid\}/DirectDebit/Initiate](#post-/virtualaccount/\{virtualaccountid\}/directdebit/initiate)
-- [POST: /VirtualAccount/\{virtualaccountid\}/ServiceFees/Initiate](#post-/virtualaccount/\{virtualaccountid\}/servicefees/initiate)
-- [POST: /VirtualAccount/\{virtualaccountid\}/Interest/Initiate](#post-/virtualaccount/\{virtualaccountid\}/interest/initiate)
-- [POST: /VirtualAccount/\{virtualaccountid\}/StandingOrder/Initiate](#post-/virtualaccount/\{virtualaccountid\}/standingorder/initiate)
-- [POST: /VirtualAccount/\{virtualaccountid\}/Statement/Initiate](#post-/virtualaccount/\{virtualaccountid\}/statement/initiate)
-- [GET: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/directdebit/\{directdebitid\}/retrieve)
-- [GET: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/servicefees/\{servicefeesid\}/retrieve)
-- [GET: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/interest/\{interestid\}/retrieve)
-- [GET: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/standingorder/\{standingorderid\}/retrieve)
-- [GET: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/statement/\{statementid\}/retrieve)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Request](#put-/virtualaccount/\{virtualaccountid\}/directdebit/\{directdebitid\}/request)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Request](#put-/virtualaccount/\{virtualaccountid\}/servicefees/\{servicefeesid\}/request)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Request](#put-/virtualaccount/\{virtualaccountid\}/interest/\{interestid\}/request)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Request](#put-/virtualaccount/\{virtualaccountid\}/standingorder/\{standingorderid\}/request)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Request](#put-/virtualaccount/\{virtualaccountid\}/statement/\{statementid\}/request)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/directdebit/\{directdebitid\}/update)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/interest/\{interestid\}/update)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/standingorder/\{standingorderid\}/update)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/statement/\{statementid\}/update)
-- [POST: /VirtualAccount/\{virtualaccountid\}/AmountBlock/Initiate](#post-/virtualaccount/\{virtualaccountid\}/amountblock/initiate)
-- [GET: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/amountblock/\{amountblockid\}/retrieve)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/amountblock/\{amountblockid\}/update)
-- [POST: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/Initiate](#post-/virtualaccount/\{virtualaccountid\}/issueddevice/initiate)
-- [GET: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/virtualaccount/\{virtualaccountid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/virtualaccount/\{virtualaccountid\}/issueddevice/\{issueddeviceid\}/update)
-- [PUT: /VirtualAccount/\{virtualaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/virtualaccount/\{virtualaccountid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-
-
 **BIAN Documentation:** [VirtualAccount v12](https://app.swaggerhub.com/apis/BIAN-3/VirtualAccount/12.0.0)
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Capture
+## PUT: /VirtualAccount/\{virtualaccountid\}/Capture
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Capture
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  CaCR Capture Virtual Account Facility activity or event related information
 
@@ -68,9 +22,13 @@ PUT: Following REST best practices\, the name of the path '/VirtualAccount/\{vir
 
 \- POST /virtual\-accounts/\{virtualaccountid\}/captures
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Control
+## PUT: /VirtualAccount/\{virtualaccountid\}/Control
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Control
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  CoCR Control the processing of Virtual Account Facility
 
@@ -86,9 +44,13 @@ GET /virtual\-accounts/\{virtualaccountid\}/controls
 
 This naming convention is in lower case\, uses plural nouns\, and separates words with hyphens for better readability and consistency\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Exchange
+## PUT: /VirtualAccount/\{virtualaccountid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Exchange
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  EcCR Accept\, verify\, etc\. aspects of Virtual Account Facility processing
 
@@ -100,9 +62,13 @@ This API path allows you to update an existing Virtual Account by exchanging inf
 
 PUT: The name of the path should be "/virtual\-accounts/\{virtualaccountid\}/exchanges" following REST best practices\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Execute
+## PUT: /VirtualAccount/\{virtualaccountid\}/Execute
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Execute
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ExCR Execute an available automated action for Virtual Account Facility
 
@@ -116,9 +82,13 @@ PUT: The name for the path '/VirtualAccount/\{virtualaccountid\}/Execute' follow
 
 /virtual\-accounts/\{virtualaccountid\}/execute
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Grant
+## PUT: /VirtualAccount/\{virtualaccountid\}/Grant
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Grant
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  GrCR Obtain permission to act in relation to Virtual Account Facility
 
@@ -130,9 +100,13 @@ This API path allows you to update an existing Virtual Account by granting permi
 
 PUT: The name of the path should be "/virtual\-accounts/\{virtualaccountid\}/grants" to follow REST best practices\.
 
-### POST: /VirtualAccount/Initiate
+## POST: /VirtualAccount/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  InCR Instantiate a new Virtual Account Facility
 
@@ -144,9 +118,13 @@ This API path allows you to create a new Virtual Account facility\. A Virtual Ac
 
 POST: If the path '/VirtualAccount/Initiate' followed all REST best practices\, it could be something like '/virtual\-accounts' to represent a collection of virtual accounts\.
 
-### GET: /VirtualAccount/\{virtualaccountid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ReCR Retrieve details about any aspect of Virtual Account Facility
 
@@ -160,9 +138,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 GET /virtual\-accounts/\{virtualaccountid\}
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Request
+## PUT: /VirtualAccount/\{virtualaccountid\}/Request
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Request
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  RqCR Request manual intervention or a decision with respect to Virtual Account Facility
 
@@ -178,9 +160,13 @@ PUT: The name of the path \`/VirtualAccount/\{virtualaccountid\}/Request\` shoul
 
 This naming convention is more in line with standard RESTful URL structures\, where resources are often represented in plural form\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  UpCR Update details relating to Virtual Account Facility
 
@@ -192,9 +178,13 @@ This API path allows you to update the details of a Virtual Account by specifyin
 
 PUT: Based on REST best practices\, the path should be named \`/VirtualAccounts/\{virtualAccountId\}\`\. This path clearly represents the resource of updating a virtual account identified by its unique \`virtualAccountId\`\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Capture
+## PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Capture
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Capture
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  CaBQ Capture Direct Debit activity or event related information
 
@@ -208,9 +198,13 @@ PUT: A suitable name for this path following REST best practices would be:
 
 '/virtual\-accounts/\{virtualaccountid\}/direct\-debits/\{directdebitid\}/captures'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Capture
+## PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Capture
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Capture
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  CaBQ Capture Standing Order activity or event related information
 
@@ -228,9 +222,13 @@ PUT: Based on REST best practices\, the name of the path should reflect the reso
 
 These paths follow the convention of using lowercase letters
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Control
+## PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Control
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Control
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  CoBQ Control the processing of Direct Debit
 
@@ -244,9 +242,13 @@ PUT: Based on REST best practices\, the path should be named as follows:
 
 "/virtual\-accounts/\{virtualaccountid\}/direct\-debits/\{directdebitid\}/control"
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Exchange
+## PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Exchange
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  EcBQ Accept\, verify\, etc\. aspects of Fee processing
 
@@ -266,9 +268,13 @@ Here are a few key principles reflected in this naming convention:
 2\. Use hyphens to separate words: Hyphens are preferred over underscores to separate words in URLs\.
 3\. Use singular nouns for resource names: Resource names are usually singular to
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Exchange
+## PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Exchange
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  EcBQ Accept\, verify\, etc\. aspects of Interest processing
 
@@ -282,9 +288,13 @@ PUT: A suitable name for the path '/VirtualAccount/\{virtualaccountid\}/Interest
 
 '/virtual\-accounts/\{virtualaccountid\}/interests/\{interestid\}/exchanges'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Exchange
+## PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Exchange
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  EcBQ Accept\, verify\, etc\. aspects of Statement processing
 
@@ -298,9 +308,13 @@ PUT: The name of the path should be:
 
 '/virtual\-accounts/\{virtualAccountId\}/statements/\{statementId\}/exchange'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Execute Apply Service Fee
 
@@ -314,9 +328,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/virtual\-accounts/\{virtualaccountid\}/service\-fees/\{servicefeesid\}/execute'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Execute
+## PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Execute
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Execute
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ExBQ Execute Apply Interest
 
@@ -340,9 +358,13 @@ Here are some key points to consider while naming the path:
 
 3\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Grant
+## PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Grant
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Grant
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  GrBQ Obtain permission to act in relation to Direct Debit
 
@@ -359,9 +381,13 @@ A suitable name for the path could be:
 
 This naming convention uses lowercase letters and hyphens to separate words in the URI path\. It accurately describes the hierarchy and relationship between the Virtual Account\, Direct Debit\, and Grant resources\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Grant
+## PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Grant
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Grant
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  GrBQ Obtain permission to act in relation to Standing Order
 
@@ -377,9 +403,13 @@ PUT: The name of the path should be:
 
 This follows REST best practices by using lowercase letters\, hyphens for readability\, and using plural nouns for resource names\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Grant
+## PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Grant
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  GrBQ Obtain permission to act in relation to Statement
 
@@ -393,9 +423,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 GET /virtual\-accounts/\{virtualaccountid\}/statements/\{statementid\}/grant
 
-### POST: /VirtualAccount/\{virtualaccountid\}/DirectDebit/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/DirectDebit/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/DirectDebit/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  InBQ Instantiate a new Direct Debit
 
@@ -407,9 +441,13 @@ This API endpoint allows you to create a new Direct Debit initiation for a speci
 
 POST: The name of the path could be \`/virtual\-accounts/\{virtualAccountId\}/direct\-debits/initiate\`\, following REST best practices of using lowercase letters and hyphens to separate words in the URI path\.
 
-### POST: /VirtualAccount/\{virtualaccountid\}/ServiceFees/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  InBQ Instantiate a new Fee
 
@@ -425,9 +463,13 @@ POST: The REST path should be named as:
 
 Following REST best practices\, the path should be in lowercase letters with hyphens separating words\. Parameters should be enclosed in curly brackets and descriptive of the resource they represent\.
 
-### POST: /VirtualAccount/\{virtualaccountid\}/Interest/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/Interest/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/Interest/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  InBQ Instantiate a new Interest
 
@@ -441,9 +483,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 '/virtual\-accounts/\{virtualAccountId\}/interest/initiate'
 
-### POST: /VirtualAccount/\{virtualaccountid\}/StandingOrder/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/StandingOrder/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/StandingOrder/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  InBQ Instantiate a new Standing Order
 
@@ -457,9 +503,13 @@ POST: A suitable name for the path '/VirtualAccount/\{virtualaccountid\}/Standin
 
 POST /virtual\-accounts/\{virtualaccountid\}/standing\-orders
 
-### POST: /VirtualAccount/\{virtualaccountid\}/Statement/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/Statement/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/Statement/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  InBQ Instantiate a new Statement
 
@@ -473,9 +523,13 @@ POST: The name of the path '/VirtualAccount/\{virtualaccountid\}/Statement/Initi
 
 GET '/virtual\-accounts/\{virtualaccountid\}/statements/initiate'
 
-### GET: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ReBQ Retrieve details about any aspect of Direct Debit
 
@@ -489,9 +543,13 @@ GET: The name of the path should be:
 
 GET /virtual\-accounts/\{virtualAccountId\}/direct\-debits/\{directDebitId\}
 
-### GET: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ReBQ Retrieve details about any aspect of Fee
 
@@ -505,9 +563,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /virtual\-accounts/\{virtualaccountid\}/service\-fees/\{servicefeesid\}
 
-### GET: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ReBQ Retrieve details about any aspect of Interest
 
@@ -523,9 +585,13 @@ GET /virtual\-accounts/\{virtualaccountid\}/interests/\{interestid\}
 
 This naming convention follows the practice of using lowercase letters with hyphens to separate words in the URI\, making the endpoint more readable and aligned with REST principles\.
 
-### GET: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ReBQ Retrieve details about any aspect of Standing Order
 
@@ -539,9 +605,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /virtual\-accounts/\{virtualAccountId\}/standing\-orders/\{standingOrderId\}
 
-### GET: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  ReBQ Retrieve details about any aspect of Statement
 
@@ -553,9 +623,13 @@ This API path allows you to retrieve details about a statement related to a spec
 
 GET: The name of the path following REST best practices could be something like: GET /virtual\-accounts/\{virtualaccountid\}/statements/\{statementid\}
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Request
+## PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Request
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Request
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  RqBQ Request manual intervention or a decision with respect to Direct Debit
 
@@ -571,9 +645,13 @@ PUT: The name of the path should be:
 /VirtualAccounts/\{virtualaccountid\}/DirectDebits/\{directdebitid\}/Requests
 \`\`\`
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Request
+## PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Request
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Request
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  RqBQ Request manual intervention or a decision with respect to Fee
 
@@ -587,9 +665,13 @@ PUT: The name of the path should be:
 
 '/virtual\-accounts/\{virtualAccountId\}/service\-fees/\{serviceFeesId\}/request'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Request
+## PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Request
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Request
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  RqBQ Request manual intervention or a decision with respect to Interest
 
@@ -605,9 +687,13 @@ PUT: A good name for the path '/VirtualAccount/\{virtualaccountid\}/Interest/\{i
 /VirtualAccounts/\{virtualaccountid\}/Interests/\{interestid\}/Requests
 \`\`\`
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Request
+## PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Request
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Request
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  RqBQ Request manual intervention or a decision with respect to Standing Order
 
@@ -629,9 +715,13 @@ Here are some key points to consider in the naming of the path:
 3\. Utilize relevant resource names to provide a clear understanding of the path structure\.
 4\. Avoid the use of verbs in the
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Request
+## PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Request
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Request
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  RqBQ Request manual intervention or a decision with respect to Statement
 
@@ -644,9 +734,13 @@ This API path allows you to update a request related to a specific statement for
 PUT: Following REST best practices\, the name of the path should be:
 '/virtual\-accounts/\{virtualaccountid\}/statements/\{statementid\}/requests'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/DirectDebit/\{directdebitid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  UpBQ Update details relating to Direct Debit
 
@@ -660,9 +754,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/virtual\-accounts/\{virtualAccountId\}/direct\-debits/\{directDebitId\}'
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Update details about an applied service fee
 
@@ -676,9 +774,13 @@ PUT: The name of the path should be:
 
 PUT /VirtualAccount/\{virtualaccountid\}/ServiceFees/\{servicefeesid\}
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  UpBQ Update details relating to Interest
 
@@ -690,9 +792,13 @@ This BIAN API path allows you to update details related to interest for a specif
 
 PUT: The name of the path '/VirtualAccount/\{virtualaccountid\}/Interest/\{interestid\}/Update' following REST best practices could be: PUT /virtual\-accounts/\{virtualaccountid\}/interests/\{interestid\}
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/StandingOrder/\{standingorderid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  UpBQ Update details relating to Standing Order
 
@@ -708,9 +814,13 @@ PUT: Following REST best practices\, the name of the path could be:
 PUT /virtual\-accounts/\{virtualAccountId\}/standing\-orders/\{standingOrderId\}
 \`\`\`
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/Statement/\{statementid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  UpBQ Update details relating to Statement
 
@@ -724,9 +834,13 @@ PUT: A suitable name for the path '/VirtualAccount/\{virtualaccountid\}/Statemen
 
 PUT /virtual\-accounts/\{virtualaccountid\}/statements/\{statementid\}
 
-### POST: /VirtualAccount/\{virtualaccountid\}/AmountBlock/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/AmountBlock/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/AmountBlock/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Initiate an amount block
 
@@ -748,9 +862,13 @@ In this name:
 \- \`\{virtualAccountId\}\` is a placeholder for the specific identifier of the virtual account\.
 \- \`amount\-block\` describes the action being taken on the
 
-### GET: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Retrieve details about an amount block
 
@@ -764,9 +882,13 @@ GET: Based on REST best practices\, the name of the path should be something lik
 
 GET /virtual\-accounts/\{virtualaccountid\}/amount\-blocks/\{amountblockid\}
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/AmountBlock/\{amountblockid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Update details of an amount block
 
@@ -782,9 +904,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PATCH /virtual\-accounts/\{virtualaccountid\}/amount\-blocks/\{amountblockid\}
 \`\`\`
 
-### POST: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/Initiate
+## POST: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Initiate Provision of Issued Device
 
@@ -800,9 +926,13 @@ POST: The appropriate name for this path should be:
 
 Following REST best practices\, the path should use lowercase letters with hyphens to separate words and avoid using uppercase letters\, underscores\, or special characters\. Additionally\, the path should use nouns to represent resources and HTTP methods to indicate the action taken on the resource\.
 
-### GET: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Retrieve Details about Issued Device
 
@@ -818,9 +948,13 @@ GET: A possible name for this path following REST best practices could be:
 
 This naming convention follows the RESTful approach of using lowercase letters\, using hyphens to separate words\, and using plural nouns for collections\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Update Details of Issued Device Allocated to This Account
 
@@ -832,9 +966,13 @@ This API path allows you to update the details of a specific device that has bee
 
 PUT: A possible name for the path could be '/virtual\-accounts/\{virtualAccountId\}/issued\-devices/\{issuedDeviceId\}'\.
 
-### PUT: /VirtualAccount/\{virtualaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /VirtualAccount/\{virtualaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /VirtualAccount/\{virtualaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 A Virtual Account is a bank account that is defined on an underlying real account\. It can receive and send payments for the underlying account while behaving towards the outside as a separate account\.  Execute Authorization of Booking
 

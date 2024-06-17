@@ -1,26 +1,14 @@
 # ContactHandler
 
-## Table of Contents
-- [POST: /ContactHandler/Initiate](#post-/contacthandler/initiate)
-- [PUT: /ContactHandler/\{contacthandlerid\}/Update](#put-/contacthandler/\{contacthandlerid\}/update)
-- [PUT: /ContactHandler/\{contacthandlerid\}/Execute](#put-/contacthandler/\{contacthandlerid\}/execute)
-- [PUT: /ContactHandler/\{contacthandlerid\}/Request](#put-/contacthandler/\{contacthandlerid\}/request)
-- [GET: /ContactHandler/\{contacthandlerid\}/Retrieve](#get-/contacthandler/\{contacthandlerid\}/retrieve)
-- [GET: /ContactHandler/\{contacthandlerid\}/Authentication/\{authenticationid\}/Retrieve](#get-/contacthandler/\{contacthandlerid\}/authentication/\{authenticationid\}/retrieve)
-- [GET: /ContactHandler/\{contacthandlerid\}/Routing/\{routingid\}/Retrieve](#get-/contacthandler/\{contacthandlerid\}/routing/\{routingid\}/retrieve)
-- [POST: /ContactHandler/\{contacthandlerid\}/Session/Initiate](#post-/contacthandler/\{contacthandlerid\}/session/initiate)
-- [PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Update](#put-/contacthandler/\{contacthandlerid\}/session/\{sessionid\}/update)
-- [PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Execute](#put-/contacthandler/\{contacthandlerid\}/session/\{sessionid\}/execute)
-- [GET: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Retrieve](#get-/contacthandler/\{contacthandlerid\}/session/\{sessionid\}/retrieve)
-- [PUT: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Update](#put-/contacthandler/\{contacthandlerid\}/history/\{historyid\}/update)
-- [GET: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Retrieve](#get-/contacthandler/\{contacthandlerid\}/history/\{historyid\}/retrieve)
-
-
 **BIAN Documentation:** [ContactHandler v12](https://app.swaggerhub.com/apis/BIAN-3/ContactHandler/12.0.0)
 
-### POST: /ContactHandler/Initiate
+## POST: /ContactHandler/Initiate
 
-**Description**
+:::info Path
+POST: /ContactHandler/Initiate
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact InCR Initiate a contact
 
@@ -33,9 +21,13 @@ This API path \`/ContactHandler/Initiate\` is used to start an interactive conta
 POST: In keeping with REST best practices\, the name of the path should ideally be something that represents a resource or collection of resources on the server\. 
 For example\, it could be named something like '/contacts' or '/contact\-initiations' to better reflect the resource being interacted with\.
 
-### PUT: /ContactHandler/\{contacthandlerid\}/Update
+## PUT: /ContactHandler/\{contacthandlerid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactHandler/\{contacthandlerid\}/Update
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact UpCR Update details for a customer contact
 
@@ -53,9 +45,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use resource names in plural form and avoid using action verbs like "Update" in the path\. Instead\, the HTTP methods \(like PUT\, POST\, PATCH\) should be used to indicate the action to be taken on the resource\.
 
-### PUT: /ContactHandler/\{contacthandlerid\}/Execute
+## PUT: /ContactHandler/\{contacthandlerid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ContactHandler/\{contacthandlerid\}/Execute
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ExCR Execute an automated task for a contact \(e\.g\. route to specialist\)
 
@@ -69,9 +65,13 @@ PUT: The name of the path should be:
 
 /contact\-handlers/\{contacthandlerid\}/execute
 
-### PUT: /ContactHandler/\{contacthandlerid\}/Request
+## PUT: /ContactHandler/\{contacthandlerid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactHandler/\{contacthandlerid\}/Request
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact RqCR Request manual intervention in a contact \(e\.g\. override routing decision\)
 
@@ -83,9 +83,13 @@ This API path is a way to update an existing resource related to handling a cust
 
 PUT: A suitable name for the path could be '/contacts/\{contactId\}/requests'\. This path follows REST best practices by using plural nouns to represent resources \(contacts\, requests\) and using the specific identifier for the resource \(contactId\) instead of a generic term like 'contacthandlerid'\.
 
-### GET: /ContactHandler/\{contacthandlerid\}/Retrieve
+## GET: /ContactHandler/\{contacthandlerid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactHandler/\{contacthandlerid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ReCR Retrieve details about a customer contact
 
@@ -99,9 +103,13 @@ GET: The name of the path should be:
 
 /contact\-handlers/\{contacthandlerid\}
 
-### GET: /ContactHandler/\{contacthandlerid\}/Authentication/\{authenticationid\}/Retrieve
+## GET: /ContactHandler/\{contacthandlerid\}/Authentication/\{authenticationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactHandler/\{contacthandlerid\}/Authentication/\{authenticationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ReBQ Retrieve details about an authentication task
 
@@ -115,9 +123,13 @@ GET: A possible name for the path could be:
 
 /contact\-handlers/\{contacthandlerId\}/authentications/\{authenticationId\}/retrieve
 
-### GET: /ContactHandler/\{contacthandlerid\}/Routing/\{routingid\}/Retrieve
+## GET: /ContactHandler/\{contacthandlerid\}/Routing/\{routingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactHandler/\{contacthandlerid\}/Routing/\{routingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ReBQ Retrieve details about a routing task
 
@@ -129,9 +141,13 @@ This API path retrieves information about a routing task within the Contact Hand
 
 GET: A suitable name for the path could be: \`/contact\-handlers/\{contacthandlerId\}/routings/\{routingId\}\`\.
 
-### POST: /ContactHandler/\{contacthandlerid\}/Session/Initiate
+## POST: /ContactHandler/\{contacthandlerid\}/Session/Initiate
 
-**Description**
+:::info Path
+POST: /ContactHandler/\{contacthandlerid\}/Session/Initiate
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact InBQ Initiate a servicing session
 
@@ -147,9 +163,13 @@ POST /ContactHandlers/\{contacthandlerid\}/Sessions
 
 This path accurately conveys the intent of initiating a session within the context of a specific contact handler resource\.
 
-### PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Update
+## PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Update
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact UpBQ Update details about a servicing session
 
@@ -163,9 +183,13 @@ PUT: A good name for the path '/ContactHandler/\{contacthandlerid\}/Session/\{se
 
 PUT /contact\-handlers/\{contacthandlerid\}/sessions/\{sessionid\}
 
-### PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Execute
+## PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Execute
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ExBQ Execute an automated task in a session \(e\.g\. re\-authenticate\)
 
@@ -177,9 +201,13 @@ This BIAN API path allows you to update an existing resource related to handling
 
 PUT: Based on REST best practices\, the name of the path '/ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Execute' could be simplified to something more readable and descriptive\, such as '/contact\-handlers/\{contacthandlerid\}/sessions/\{sessionid\}/execute'\.
 
-### GET: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Retrieve
+## GET: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactHandler/\{contacthandlerid\}/Session/\{sessionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ReBQ Retrieve details about a customer servicing session
 
@@ -193,9 +221,13 @@ GET: The name of the path following REST best practices could be something like:
 
 /contact\-handlers/\{contacthandlerid\}/sessions/\{sessionid\}/retrieve
 
-### PUT: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Update
+## PUT: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Update
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact UpBQ Update a contact history record content
 
@@ -209,9 +241,13 @@ PUT: A suitable name for the path '/ContactHandler/\{contacthandlerid\}/History/
 
 PUT /contact\-handlers/\{contacthandlerid\}/histories/\{historyid\}
 
-### GET: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Retrieve
+## GET: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactHandler/\{contacthandlerid\}/History/\{historyid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles a customer's interactive contact with the bank\. This will typically involve launching of one or more channel/device specific dialogue sessions as necessary within the customer contact ReBQ Retrieve historical details about a contact event
 

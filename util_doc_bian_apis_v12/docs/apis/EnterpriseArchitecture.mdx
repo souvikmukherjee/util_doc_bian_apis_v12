@@ -1,40 +1,14 @@
 # EnterpriseArchitecture
 
-## Table of Contents
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Capture](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/capture)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Control](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/control)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Exchange](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/exchange)
-- [POST: /EnterpriseArchitecture/Initiate](#post-/enterprisearchitecture/initiate)
-- [GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Retrieve](#get-/enterprisearchitecture/\{enterprisearchitectureid\}/retrieve)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Request](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/request)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Update](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/update)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Capture](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/applicationarchitecture/\{applicationarchitectureid\}/capture)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Capture](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/businessarchitecture/\{businessarchitectureid\}/capture)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Capture](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/informationarchitecture/\{informationarchitectureid\}/capture)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Capture](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/organization/\{organizationid\}/capture)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Capture](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/technologyinfrastructure/\{technologyinfrastructureid\}/capture)
-- [GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Retrieve](#get-/enterprisearchitecture/\{enterprisearchitectureid\}/applicationarchitecture/\{applicationarchitectureid\}/retrieve)
-- [GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Retrieve](#get-/enterprisearchitecture/\{enterprisearchitectureid\}/businessarchitecture/\{businessarchitectureid\}/retrieve)
-- [GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Retrieve](#get-/enterprisearchitecture/\{enterprisearchitectureid\}/informationarchitecture/\{informationarchitectureid\}/retrieve)
-- [GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Retrieve](#get-/enterprisearchitecture/\{enterprisearchitectureid\}/organization/\{organizationid\}/retrieve)
-- [GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Retrieve](#get-/enterprisearchitecture/\{enterprisearchitectureid\}/technologyinfrastructure/\{technologyinfrastructureid\}/retrieve)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Request](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/applicationarchitecture/\{applicationarchitectureid\}/request)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Request](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/businessarchitecture/\{businessarchitectureid\}/request)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Request](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/informationarchitecture/\{informationarchitectureid\}/request)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Request](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/organization/\{organizationid\}/request)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Request](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/technologyinfrastructure/\{technologyinfrastructureid\}/request)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Update](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/applicationarchitecture/\{applicationarchitectureid\}/update)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Update](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/businessarchitecture/\{businessarchitectureid\}/update)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Update](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/informationarchitecture/\{informationarchitectureid\}/update)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Update](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/organization/\{organizationid\}/update)
-- [PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Update](#put-/enterprisearchitecture/\{enterprisearchitectureid\}/technologyinfrastructure/\{technologyinfrastructureid\}/update)
-
-
 **BIAN Documentation:** [EnterpriseArchitecture v12](https://app.swaggerhub.com/apis/BIAN-3/EnterpriseArchitecture/12.0.0)
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Capture
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Capture
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CaCR Capture Business Architecture Specification activity or event related information
 
@@ -50,9 +24,13 @@ GET /EnterpriseArchitecture/\{enterprisearchitectureid\}/Capture
 
 This name follows the convention of using the HTTP method such as GET to represent the action and the resource being operated on\, which in this case is capturing enterprise architecture information related to a specific ID\.
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Control
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Control
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Control
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CoCR Control the processing of Business Architecture Specification
 
@@ -64,9 +42,13 @@ This API path allows you to update and manage the comprehensive business archite
 
 PUT: The name of the path should be "/enterprises/\{enterpriseId\}/controls" in order to follow REST best practices\.
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Exchange
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Exchange
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business EcCR Accept\, verify\, etc\. aspects of Business Architecture Specification processing
 
@@ -80,9 +62,13 @@ PUT: A possible name for this path\, following REST best practices\, could be:
 
 \`/enterprises/\{enterpriseId\}/exchanges\`
 
-### POST: /EnterpriseArchitecture/Initiate
+## POST: /EnterpriseArchitecture/Initiate
 
-**Description**
+:::info Path
+POST: /EnterpriseArchitecture/Initiate
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business InCR Instantiate a new Business Architecture Specification
 
@@ -96,9 +82,13 @@ POST: If the path '/EnterpriseArchitecture/Initiate' is following REST best prac
 
 In RESTful naming conventions\, path segments should be in all lowercase letters with words separated by hyphens\. This makes the endpoint more readable and consistent with RESTful design principles\.
 
-### GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Retrieve
+## GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Retrieve
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business ReCR Retrieve details about any aspect of Enterprise Architecture Specification
 
@@ -112,9 +102,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/enterprises/\{enterpriseId\}/architecture'
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Request
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Request
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Request
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business RqCR Request manual intervention or a decision with respect to Enterprise Architecture Specification
 
@@ -128,9 +122,13 @@ PUT: A suitable name for this path following REST best practices would be:
 
 '/enterprise\-architecture/\{enterpriseArchitectureId\}/request'
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Update
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Update
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Update
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business UpCR Update details relating to Enterprise Architecture Specification
 
@@ -144,9 +142,13 @@ PUT: Based on REST best practices\, the name of the path '/EnterpriseArchitectur
 
 PUT /enterprise\-architectures/\{enterprisearchitectureid\}
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Capture
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Capture
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CaBQ Capture Application Architecture activity or event related information
 
@@ -158,9 +160,13 @@ This BIAN API path is used to update existing information related to enterprise 
 
 PUT: A possible REST\-compliant name for the path could be: \`/enterprises/\{enterpriseId\}/applications/\{applicationId\}/capture\`
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Capture
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Capture
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CaBQ Capture Business Architecture activity or event related information
 
@@ -174,9 +180,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/enterprises/\{enterpriseId\}/businesses/\{businessId\}/capture'
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Capture
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Capture
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CaBQ Capture Information Architecture activity or event related information
 
@@ -196,9 +206,13 @@ In this path:
 
 This path is simplified and follows REST best practices by using plural nouns for resources and keeping the URL hierarchies logical and descriptive\.
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Capture
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Capture
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CaBQ Capture Organization activity or event related information
 
@@ -212,9 +226,13 @@ PUT: A suitable name for this path\, following REST best practices\, could be:
 
 \`/enterprise\-architecture/\{enterprise\-architecture\-id\}/organization/\{organization\-id\}/capture\`
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Capture
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Capture
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business CaBQ Capture Technology Infrastructure activity or event related information
 
@@ -230,9 +248,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /enterprises/\{enterpriseId\}/technologies/\{technologyId\}/capture
 \`\`\`
 
-### GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Retrieve
+## GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Retrieve
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business ReBQ Retrieve details about any aspect of Application Architecture
 
@@ -246,9 +268,13 @@ GET: A suitable name for the path based on REST best practices could be:
 
 '/enterprises/\{enterpriseid\}/applications/\{applicationid\}'
 
-### GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Retrieve
+## GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Retrieve
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business ReBQ Retrieve details about any aspect of Business Architecture
 
@@ -264,9 +290,13 @@ GET: Based on REST best practices\, the URL path should be named using nouns to 
 
 This path follows the convention of using lowercase letters and separating words with hyphens to make it more readable and consistent with RESTful API design principles\.
 
-### GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Retrieve
+## GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Retrieve
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business ReBQ Retrieve details about any aspect of Information Architecture
 
@@ -280,9 +310,13 @@ GET: Following REST best practices\, the name of the path should be: \`/enterpri
 
 This path indicates a hierarchical relationship between Enterprise Architecture and Information Architecture\, with the ability to retrieve a specific resource related to the identified IDs\.
 
-### GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Retrieve
+## GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Retrieve
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business ReBQ Retrieve details about any aspect of Organization
 
@@ -298,9 +332,13 @@ GET: Based on REST best practices\, the name of the path should be in lowercase 
 2\. '/enterprise\-architectures/\{enterprisearchitectureid\}/organizations/\{organizationid\}/retrieval'
 3\. '/ea/\{enterprisearchitectureid\}/org/\{organizationid\}/get'
 
-### GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Retrieve
+## GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Retrieve
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business ReBQ Retrieve details about any aspect of Technology Infrastructure
 
@@ -314,9 +352,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/enterprises/\{enterpriseId\}/architectures/\{architectureId\}/infrastructures/\{infrastructureId\}'
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Request
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Request
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Request
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business RqBQ Request manual intervention or a decision with respect to Application Architecture
 
@@ -330,9 +372,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 /enterprises/\{enterpriseId\}/applications/\{applicationId\}/requests
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Request
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Request
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Request
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business RqBQ Request manual intervention or a decision with respect to Business Architecture
 
@@ -346,9 +392,13 @@ PUT: A good RESTful naming convention for the path you described could be:
 
 /enterprises/\{enterpriseId\}/businesses/\{businessId\}/requests
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Request
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Request
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Request
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business RqBQ Request manual intervention or a decision with respect to Information Architecture
 
@@ -362,9 +412,13 @@ PUT: The name of the path could be something like:
 
 /enterprises/\{enterpriseId\}/information\-architecture/\{informationArchitectureId\}/requests
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Request
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Request
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Request
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business RqBQ Request manual intervention or a decision with respect to Organization
 
@@ -378,9 +432,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /enterprises/\{enterpriseId\}/organizations/\{organizationId\}/requests
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Request
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Request
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Request
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business RqBQ Request manual intervention or a decision with respect to Technology Infrastructure
 
@@ -394,9 +452,13 @@ PUT: The name of the path should be as follows based on REST best practices:
 
 /enterprise\-architectures/\{enterprisearchitectureid\}/technology\-infrastructures/\{technologyinfrastructureid\}/requests
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Update
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Update
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/ApplicationArchitecture/\{applicationarchitectureid\}/Update
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business UpBQ Update details relating to Application Architecture
 
@@ -412,9 +474,13 @@ PUT: In accordance with REST best practices\, a suitable name for the path you m
 
 This naming convention follows the principle of using nouns to represent resources and using the HTTP verbs to indicate the actions performed on these resources\. The path structure also provides a clear hierarchy\, making it easier to understand the relationship between the resources\.
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Update
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Update
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/BusinessArchitecture/\{businessarchitectureid\}/Update
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business UpBQ Update details relating to Business Architecture
 
@@ -428,9 +494,13 @@ PUT: The name of the path should ideally be a noun or noun phrase that represent
 
 PUT /Enterprises/\{enterpriseId\}/Businesses/\{businessId\}
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Update
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Update
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/InformationArchitecture/\{informationarchitectureid\}/Update
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business UpBQ Update details relating to Information Architecture
 
@@ -444,9 +514,13 @@ PUT: Based on REST best practices\, the name of the path should ideally be:
 
 PUT /enterprises/\{enterpriseId\}/architectures/information/\{informationId\}
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Update
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/Organization/\{organizationid\}/Update
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business UpBQ Update details relating to Organization
 
@@ -462,9 +536,13 @@ PUT /enterprise\-architecture/\{enterprise\-architecture\-id\}/organization/\{or
 
 Ensure that the path follows a consistent naming convention\, uses lower case letters\, separates words with hyphens\, and uses plural nouns for collections where applicable\. Additionally\, it's better to use HTTP methods like PUT to indicate updating a resource\.
 
-### PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Update
+## PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Update
 
-**Description**
+:::info Path
+PUT: /EnterpriseArchitecture/\{enterprisearchitectureid\}/TechnologyInfrastructure/\{technologyinfrastructureid\}/Update
+:::
+
+### Description
 
 Define and maintain comprehensive business architectural definitions/blueprints to help organize/direct the business UpBQ Update details relating to Technology Infrastructure
 

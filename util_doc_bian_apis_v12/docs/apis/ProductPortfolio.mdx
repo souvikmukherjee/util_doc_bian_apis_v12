@@ -1,22 +1,14 @@
 # ProductPortfolio
 
-## Table of Contents
-- [POST: /ProductPortfolio/Evaluate](#post-/productportfolio/evaluate)
-- [PUT: /ProductPortfolio/\{productportfolioid\}/Update](#put-/productportfolio/\{productportfolioid\}/update)
-- [PUT: /ProductPortfolio/\{productportfolioid\}/Request](#put-/productportfolio/\{productportfolioid\}/request)
-- [GET: /ProductPortfolio/\{productportfolioid\}/Retrieve](#get-/productportfolio/\{productportfolioid\}/retrieve)
-- [POST: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/Evaluate](#post-/productportfolio/\{productportfolioid\}/performanceanalysis/evaluate)
-- [PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update](#put-/productportfolio/\{productportfolioid\}/performanceanalysis/\{performanceanalysisid\}/update)
-- [PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute](#put-/productportfolio/\{productportfolioid\}/performanceanalysis/\{performanceanalysisid\}/execute)
-- [PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request](#put-/productportfolio/\{productportfolioid\}/performanceanalysis/\{performanceanalysisid\}/request)
-- [GET: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve](#get-/productportfolio/\{productportfolioid\}/performanceanalysis/\{performanceanalysisid\}/retrieve)
-
-
 **BIAN Documentation:** [ProductPortfolio v12](https://app.swaggerhub.com/apis/BIAN-3/ProductPortfolio/12.0.0)
 
-### POST: /ProductPortfolio/Evaluate
+## POST: /ProductPortfolio/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductPortfolio/Evaluate
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis EvCR Evaluate product portfolio performance
 
@@ -28,9 +20,13 @@ This BIAN API path called "Product Portfolio \- Evaluate" allows users to create
 
 POST: The name of the path '/ProductPortfolio/Evaluate' following REST best practices should be something that represents a resource rather than an action\. This can help make the API more intuitive and easier to understand\. A more RESTful name for this path could be '/ProductPortfolio/Products' or '/ProductPortfolio/Items'\, depending on what the collection of resources represents in the context of your API\.
 
-### PUT: /ProductPortfolio/\{productportfolioid\}/Update
+## PUT: /ProductPortfolio/\{productportfolioid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductPortfolio/\{productportfolioid\}/Update
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis UpCR Update settings or content for product portfolio analysis activity
 
@@ -42,9 +38,13 @@ This BIAN API path allows you to update settings or content related to a specifi
 
 PUT: The name of the path should be \`/product\-portfolio/\{productportfolioId\}\`\.
 
-### PUT: /ProductPortfolio/\{productportfolioid\}/Request
+## PUT: /ProductPortfolio/\{productportfolioid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductPortfolio/\{productportfolioid\}/Request
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis RqCR Request manual intervention in the product portfolio analysis activity
 
@@ -56,9 +56,13 @@ This BIAN API path allows you to request manual intervention in the product port
 
 PUT: The name of the path should be \`/product\-portfolios/\{productPortfolioId\}/requests\` in kebab case to be more RESTful\.
 
-### GET: /ProductPortfolio/\{productportfolioid\}/Retrieve
+## GET: /ProductPortfolio/\{productportfolioid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductPortfolio/\{productportfolioid\}/Retrieve
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis ReCR Retrieve details about product portfolio analysis activity
 
@@ -74,9 +78,13 @@ GET /product\-portfolios/\{productportfolioid\}
 
 This path clearly indicates that it is a GET request for retrieving a specific product portfolio identified by its ID\. By using lowercase letters and hyphens to separate words\, it follows the convention of
 
-### POST: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/Evaluate
+## POST: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/Evaluate
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis EvBQ Evaluate product performance using a specific type of analysis
 
@@ -88,9 +96,13 @@ This API path allows users to create a new resource for evaluating the performan
 
 POST: The name of the path should be \`/product\-portfolios/\{productPortfolioId\}/performance\-analysis/evaluate\` for following REST best practices\.
 
-### PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update
+## PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis UpBQ Update details of a specific product performance analysis
 
@@ -104,9 +116,13 @@ PUT: The name of the path should be:
 
 '/product\-portfolios/\{productPortfolioId\}/performance\-analyses/\{performanceAnalysisId\}'
 
-### PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
+## PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis ExBQ Execute an automated action against on\-going analysis
 
@@ -120,9 +136,13 @@ PUT: The name of the path should be:
 
 /ProductPortfolios/\{productportfolioid\}/PerformanceAnalyses/\{performanceanalysisid\}/Execution
 
-### PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
+## PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis RqBQ Request manual intervention to on\-going analysis
 
@@ -135,9 +155,13 @@ This API path allows you to update an existing request for manual intervention o
 PUT: Based on REST best practices\, the name of the path should be:
 '/product\-portfolios/\{productPortfolioid\}/performance\-analyses/\{performanceAnalysisid\}/requests'
 
-### GET: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
+## GET: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductPortfolio/\{productportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the product portfolio to support product profitability and performance analysis ReBQ Retrieve details about a specific product performance analysis
 

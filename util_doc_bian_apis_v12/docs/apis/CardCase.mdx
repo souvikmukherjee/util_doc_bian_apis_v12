@@ -1,24 +1,14 @@
 # CardCase
 
-## Table of Contents
-- [POST: /CardCase/Initiate](#post-/cardcase/initiate)
-- [PUT: /CardCase/\{cardcaseid\}/Update](#put-/cardcase/\{cardcaseid\}/update)
-- [GET: /CardCase/\{cardcaseid\}/Retrieve](#get-/cardcase/\{cardcaseid\}/retrieve)
-- [PUT: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Update](#put-/cardcase/\{cardcaseid\}/consolidation/\{consolidationid\}/update)
-- [GET: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Retrieve](#get-/cardcase/\{cardcaseid\}/consolidation/\{consolidationid\}/retrieve)
-- [PUT: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Update](#put-/cardcase/\{cardcaseid\}/chargeback/\{chargebackid\}/update)
-- [GET: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Retrieve](#get-/cardcase/\{cardcaseid\}/chargeback/\{chargebackid\}/retrieve)
-- [PUT: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Update](#put-/cardcase/\{cardcaseid\}/arbitration/\{arbitrationid\}/update)
-- [GET: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Retrieve](#get-/cardcase/\{cardcaseid\}/arbitration/\{arbitrationid\}/retrieve)
-- [PUT: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Update](#put-/cardcase/\{cardcaseid\}/resolution/\{resolutionid\}/update)
-- [GET: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Retrieve](#get-/cardcase/\{cardcaseid\}/resolution/\{resolutionid\}/retrieve)
-
-
 **BIAN Documentation:** [CardCase v12](https://app.swaggerhub.com/apis/BIAN-3/CardCase/12.0.0)
 
-### POST: /CardCase/Initiate
+## POST: /CardCase/Initiate
 
-**Description**
+:::info Path
+POST: /CardCase/Initiate
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge InCR Initiate a card case procedure
 
@@ -30,9 +20,13 @@ This BIAN API path \(/CardCase/Initiate\) allows users to create a new card case
 
 POST: The path '/CardCase/Initiate' should be renamed to '/card\-cases/initiate' following REST best practices\. This naming convention uses lowercase letters and hyphens to separate words in the URL path\, making it more readable and consistent with RESTful conventions\.
 
-### PUT: /CardCase/\{cardcaseid\}/Update
+## PUT: /CardCase/\{cardcaseid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCase/\{cardcaseid\}/Update
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge UpCR Update details about a card case
 
@@ -44,9 +38,13 @@ This API path allows you to update details about a specific card case identified
 
 PUT: The name of the path should be \`/cardcases/\{cardcaseid\}\` following REST best practices\.
 
-### GET: /CardCase/\{cardcaseid\}/Retrieve
+## GET: /CardCase/\{cardcaseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCase/\{cardcaseid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge ReCR Retrieve details about a card case
 
@@ -62,9 +60,13 @@ GET /CardCases/\{cardcaseid\}
 
 This naming convention follows the principles of REST by using HTTP method "GET" to retrieve a specific resource \(in this case\, a card case identified by its ID\) and following a plural noun for the resource endpoint \('CardCases' instead of 'CardCase'\)\.
 
-### PUT: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Update
+## PUT: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Update
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge UpBQ Update details of the consolidation in a card case
 
@@ -78,9 +80,13 @@ PUT: Following REST best practices\, the path you described could be named as:
 
 PUT /cardcases/\{cardcaseid\}/consolidations/\{consolidationid\}
 
-### GET: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Retrieve
+## GET: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCase/\{cardcaseid\}/Consolidation/\{consolidationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge ReBQ Retrieve details about the consolidation analysis of a card case
 
@@ -96,9 +102,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 This path indicates the hierarchy and relationship between the resources\, uses lowercase letters\, and uses hyphens to separate words for better readability\.
 
-### PUT: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Update
+## PUT: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Update
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge UpBQ Update details of the chargeback in a card case
 
@@ -112,9 +122,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/cardcases/\{cardcaseid\}/chargebacks/\{chargebackid\}'
 
-### GET: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Retrieve
+## GET: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCase/\{cardcaseid\}/Chargeback/\{chargebackid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge ReBQ Retrieve details about the chargeback for a card case
 
@@ -126,9 +140,13 @@ This specific BIAN API path allows you to retrieve details about a chargeback re
 
 GET: The endpoint for this path could be named: GET /cardcases/\{cardcaseid\}/chargebacks/\{chargebackid\}
 
-### PUT: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Update
+## PUT: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Update
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge UpBQ Update details of the arbitration request of a card case
 
@@ -144,9 +162,13 @@ PUT: Following REST best practices\, the name of the path could be:
 
 Note that the path segments are all lowercase and nouns are generally used for naming resources\.
 
-### GET: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Retrieve
+## GET: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCase/\{cardcaseid\}/Arbitration/\{arbitrationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge ReBQ Retrieve details about the arbitration request for a card case
 
@@ -160,9 +182,13 @@ GET: The name of the path could follow the REST best practices by being:
 
 '/card\-cases/\{cardcaseid\}/arbitrations/\{arbitrationid\}'
 
-### PUT: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Update
+## PUT: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Update
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge UpBQ Update details of the resolution of a card case
 
@@ -174,9 +200,13 @@ This API path \`/CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Update\` is
 
 PUT: The name of the path should be \`/card\-cases/\{card\-case\-id\}/resolutions/\{resolution\-id\}\`\.
 
-### GET: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Retrieve
+## GET: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardCase/\{cardcaseid\}/Resolution/\{resolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the processing of a customer card case\, typically a disputed charge ReBQ Retrieve details about the resolution actions for a card case
 

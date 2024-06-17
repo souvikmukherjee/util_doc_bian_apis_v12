@@ -1,50 +1,14 @@
 # ITStandardsAndGuidelines
 
-## Table of Contents
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Capture](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/capture)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Control](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/control)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Exchange](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/exchange)
-- [POST: /ITStandardsAndGuidelines/Initiate](#post-/itstandardsandguidelines/initiate)
-- [GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Retrieve](#get-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/retrieve)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Request](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/request)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Update](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/update)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Capture](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/developmenttoolingandenvironment/\{developmenttoolingandenvironmentid\}/capture)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Capture](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/itpoliciesandguidelines/\{itpoliciesandguidelinesid\}/capture)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Capture](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/producttestinganddeploymentmechanisms/\{producttestinganddeploymentmechanismsid\}/capture)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Capture](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionenvironmentandsupportservices/\{productionenvironmentandsupportservicesid\}/capture)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Capture](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionplatformsandinfrastructure/\{productionplatformsandinfrastructureid\}/capture)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Exchange](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/developmenttoolingandenvironment/\{developmenttoolingandenvironmentid\}/exchange)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Exchange](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/itpoliciesandguidelines/\{itpoliciesandguidelinesid\}/exchange)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Exchange](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/producttestinganddeploymentmechanisms/\{producttestinganddeploymentmechanismsid\}/exchange)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Exchange](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionenvironmentandsupportservices/\{productionenvironmentandsupportservicesid\}/exchange)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Exchange](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionplatformsandinfrastructure/\{productionplatformsandinfrastructureid\}/exchange)
-- [POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/Initiate](#post-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/developmenttoolingandenvironment/initiate)
-- [POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/Initiate](#post-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/itpoliciesandguidelines/initiate)
-- [POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/Initiate](#post-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/producttestinganddeploymentmechanisms/initiate)
-- [POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/Initiate](#post-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionenvironmentandsupportservices/initiate)
-- [POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/Initiate](#post-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionplatformsandinfrastructure/initiate)
-- [GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Retrieve](#get-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/developmenttoolingandenvironment/\{developmenttoolingandenvironmentid\}/retrieve)
-- [GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Retrieve](#get-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/itpoliciesandguidelines/\{itpoliciesandguidelinesid\}/retrieve)
-- [GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Retrieve](#get-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/producttestinganddeploymentmechanisms/\{producttestinganddeploymentmechanismsid\}/retrieve)
-- [GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Retrieve](#get-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionenvironmentandsupportservices/\{productionenvironmentandsupportservicesid\}/retrieve)
-- [GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Retrieve](#get-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionplatformsandinfrastructure/\{productionplatformsandinfrastructureid\}/retrieve)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Request](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/developmenttoolingandenvironment/\{developmenttoolingandenvironmentid\}/request)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Request](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/itpoliciesandguidelines/\{itpoliciesandguidelinesid\}/request)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Request](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/producttestinganddeploymentmechanisms/\{producttestinganddeploymentmechanismsid\}/request)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Request](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionenvironmentandsupportservices/\{productionenvironmentandsupportservicesid\}/request)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Request](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionplatformsandinfrastructure/\{productionplatformsandinfrastructureid\}/request)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Update](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/developmenttoolingandenvironment/\{developmenttoolingandenvironmentid\}/update)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Update](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/itpoliciesandguidelines/\{itpoliciesandguidelinesid\}/update)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Update](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/producttestinganddeploymentmechanisms/\{producttestinganddeploymentmechanismsid\}/update)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Update](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionenvironmentandsupportservices/\{productionenvironmentandsupportservicesid\}/update)
-- [PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Update](#put-/itstandardsandguidelines/\{itstandardsandguidelinesid\}/productionplatformsandinfrastructure/\{productionplatformsandinfrastructureid\}/update)
-
-
 **BIAN Documentation:** [ITStandardsAndGuidelines v12](https://app.swaggerhub.com/apis/BIAN-3/ITStandardsAndGuidelines/12.0.0)
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Capture
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Capture
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CaCR Capture Technology Standards Specification activity or event related information
 
@@ -60,9 +24,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using clear and descriptive resource names\, following a hierarchical structure\, and using appropriate HTTP methods for CRUD operations\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Control
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Control
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Control
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CoCR Control the processing of Technology Standards Specification
 
@@ -80,9 +48,13 @@ PUT: The name of the path could be:
 
 This path adheres to REST best practices by using plural nouns for resource names and maintaining consistency in naming conventions\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Exchange
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Exchange
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise EcCR Accept\, verify\, etc\. aspects of Technology Standards Specification processing
 
@@ -94,9 +66,13 @@ This API path allows you to update an existing resource related to IT standards 
 
 PUT: The name of the path should be: '/it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/exchange'
 
-### POST: /ITStandardsAndGuidelines/Initiate
+## POST: /ITStandardsAndGuidelines/Initiate
 
-**Description**
+:::info Path
+POST: /ITStandardsAndGuidelines/Initiate
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise InCR Instantiate a new Technology Standards Specification
 
@@ -108,9 +84,13 @@ This BIAN API path allows you to create and establish IT standards and guideline
 
 POST: The name of the path should be '/it\-standards\-and\-guidelines/initiate' to follow REST best practices\. It is recommended to use lowercase letters and hyphens to improve readability and consistency in RESTful APIs\.
 
-### GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Retrieve
+## GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Retrieve
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise ReCR Retrieve details about any aspect of Technology Standards Specification
 
@@ -126,9 +106,13 @@ GET: The name of the path should be:
 /it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}
 \`\`\`
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Request
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Request
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Request
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise RqCR Request manual intervention or a decision with respect to Technology Standards Specification
 
@@ -142,9 +126,13 @@ PUT: The name of the path following REST best practices would be:
 
 /it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/requests
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Update
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/Update
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise UpCR Update details relating to Technology Standards Specification
 
@@ -156,9 +144,13 @@ This API path allows you to update details related to IT standards and guideline
 
 PUT: The name for the path should be \`/ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}\` using the HTTP PUT method to update the resource\. This follows REST best practices as it uses the appropriate HTTP method for updating a specific resource identified by its unique identifier\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Capture
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Capture
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CaBQ Capture Development Tooling and Environment activity or event related information
 
@@ -174,9 +166,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/development\-tooling\-and\-environment/\{developmenttoolingandenvironmentid\}/capture
 \`\`\`
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Capture
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Capture
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CaBQ Capture IT Policies and Guidelines activity or event related information
 
@@ -188,9 +184,13 @@ This API path allows you to update existing IT standards\, policies\, and guidel
 
 PUT: The name of the path should be '/it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/it\-policies\-and\-guidelines/\{it\-policies\-and\-guidelines\-id\}/capture' to follow REST best practices\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Capture
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Capture
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CaBQ Capture Product Testing and Deployment Mechanisms activity or event related information
 
@@ -204,9 +204,13 @@ PUT: The name of the path should be:
 
 '/it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/product\-testing\-and\-deployment\-mechanisms/\{producttestinganddeploymentmechanismsid\}/capture'
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Capture
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Capture
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CaBQ Capture Production Environment and Support Services activity or event related information
 
@@ -221,9 +225,13 @@ PUT: Following REST best practices\, the path should be named in a way that repr
 For the given path\, a more suitable name following REST best practices could be:
 '/ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/CaptureData'
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Capture
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Capture
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise CaBQ Capture Production Platforms and Infrastructure activity or event related information
 
@@ -237,9 +245,13 @@ PUT: The name of the path should be:
 
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/production\-platforms\-and\-infrastructure/\{production\-platforms\-and\-infrastructure\-id\}/capture
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Exchange
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Exchange
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise EcBQ Accept\, verify\, etc\. aspects of Development Tooling and Environment processing
 
@@ -253,9 +265,13 @@ PUT: The name of the path should be:
 
 '/it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/development\-tooling\-and\-environment/\{developmenttoolingandenvironmentid\}/exchange'
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Exchange
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Exchange
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise EcBQ Accept\, verify\, etc\. aspects of IT Policies and Guidelines processing
 
@@ -271,9 +287,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens to separate words in the path\, making it more readable and consistent\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Exchange
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Exchange
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise EcBQ Accept\, verify\, etc\. aspects of Product Testing and Deployment Mechanisms processing
 
@@ -289,9 +309,13 @@ PUT: The name of the path should be:
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/product\-testing\-and\-deployment\-mechanisms/\{product\-testing\-and\-deployment\-mechanisms\-id\}/exchange
 \`\`\`
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Exchange
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Exchange
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise EcBQ Accept\, verify\, etc\. aspects of Production Environment and Support Services processing
 
@@ -308,9 +332,13 @@ A possible name for the path could be:
 
 This naming convention follows the plural form for collections of resources\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Exchange
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Exchange
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise EcBQ Accept\, verify\, etc\. aspects of Production Platforms and Infrastructure processing
 
@@ -324,9 +352,13 @@ PUT: A more RESTful name for the path '/ITStandardsAndGuidelines/\{itstandardsan
 
 This naming follows the best practices of using lowercase letters\, separating words with hyphens\, and using specific resource names instead of generic terms like "ProductionPlatformsandInfrastructure
 
-### POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/Initiate
+## POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/Initiate
 
-**Description**
+:::info Path
+POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/Initiate
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise InBQ Instantiate a new Development Tooling and Environment
 
@@ -340,9 +372,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 '/it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/development\-tooling\-and\-environment/initiate'
 
-### POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/Initiate
+## POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/Initiate
 
-**Description**
+:::info Path
+POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/Initiate
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise InBQ Instantiate a new IT Policies and Guidelines
 
@@ -358,9 +394,13 @@ POST: The name of the path should be:
 
 This path follows the REST best practices by using lowercase letters\, separating words with hyphens\, and using descriptive names that reflect the resources and actions being performed\.
 
-### POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/Initiate
+## POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/Initiate
 
-**Description**
+:::info Path
+POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/Initiate
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise InBQ Instantiate a new Product Testing and Deployment Mechanisms
 
@@ -376,9 +416,13 @@ POST: Based on REST best practices\, the path name should focus on resources rat
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/product\-testing\-and\-deployment\-mechanisms/initiation
 \`\`\`
 
-### POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/Initiate
+## POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/Initiate
 
-**Description**
+:::info Path
+POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/Initiate
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise InBQ Instantiate a new Production Environment and Support Services
 
@@ -392,9 +436,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/production\-environment\-and\-support\-services/initiate
 
-### POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/Initiate
+## POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/Initiate
 
-**Description**
+:::info Path
+POST: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/Initiate
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise InBQ Instantiate a new Production Platforms and Infrastructure
 
@@ -410,9 +458,13 @@ POST: A suitable name for the path could be:
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/production\-platforms\-and\-infrastructure/initiate
 \`\`\`
 
-### GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Retrieve
+## GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Retrieve
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise ReBQ Retrieve details about any aspect of Development Tooling and Environment
 
@@ -426,9 +478,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}
 
-### GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Retrieve
+## GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Retrieve
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise ReBQ Retrieve details about any aspect of IT Policies and Guidelines
 
@@ -447,9 +503,13 @@ In this naming convention:
 \- There is no mention of verbs like "Retrieve" as the HTTP method \(GET\) already indicates the intent of retrieving the resource\.
 \- Parameters are placed in curly braces and are descriptive but concise\.
 
-### GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Retrieve
+## GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Retrieve
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise ReBQ Retrieve details about any aspect of Product Testing and Deployment Mechanisms
 
@@ -463,9 +523,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/product\-testing\-and\-deployment\-mechanisms/\{product\-testing\-and\-deployment\-mechanisms\-id\}/retrieve
 
-### GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Retrieve
+## GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Retrieve
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise ReBQ Retrieve details about any aspect of Production Environment and Support Services
 
@@ -479,9 +543,13 @@ GET: Based on the provided path and considering REST best practices\, the follow
 
 GET /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/production\-environment\-and\-support\-services/\{production\-environment\-and\-support\-services\-id\}
 
-### GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Retrieve
+## GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Retrieve
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise ReBQ Retrieve details about any aspect of Production Platforms and Infrastructure
 
@@ -495,9 +563,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Request
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Request
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise RqBQ Request manual intervention or a decision with respect to Development Tooling and Environment
 
@@ -515,9 +587,13 @@ PUT: Based on REST best practices\, a suitable name for this path could be:
 
 It is recommended to use lowercase letters and hyphens for better readability and consistency\.
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Request
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Request
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Request
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise RqBQ Request manual intervention or a decision with respect to IT Policies and Guidelines
 
@@ -531,9 +607,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/it\-policies\-and\-guidelines/\{itpoliciesandguidelinesid\}/request
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Request
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Request
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Request
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise RqBQ Request manual intervention or a decision with respect to Product Testing and Deployment Mechanisms
 
@@ -547,9 +627,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/product\-testing\-and\-deployment\-mechanisms/\{product\-testing\-and\-deployment\-mechanisms\-id\}/request\`
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Request
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Request
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Request
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise RqBQ Request manual intervention or a decision with respect to Production Environment and Support Services
 
@@ -565,9 +649,13 @@ PUT: The name of the path following REST best practices could be:
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/production\-environment\-and\-support\-services/\{production\-environment\-and\-support\-services\-id\}/requests
 \`\`\`
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Request
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Request
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Request
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise RqBQ Request manual intervention or a decision with respect to Production Platforms and Infrastructure
 
@@ -581,9 +669,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /it\-standards\-and\-guidelines/\{it\-standards\-and\-guidelines\-id\}/production\-platforms\-and\-infrastructure/\{production\-platforms\-and\-infrastructure\-id\}/requests
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Update
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/DevelopmentToolingandEnvironment/\{developmenttoolingandenvironmentid\}/Update
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise UpBQ Update details relating to Development Tooling and Environment
 
@@ -596,9 +688,13 @@ This BIAN API path allows you to update details related to development tooling a
 PUT: A possible name for the path could be:
 '/it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/development\-tooling\-and\-environment/\{developmenttoolingandenvironmentid\}/update'
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Update
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ITPoliciesandGuidelines/\{itpoliciesandguidelinesid\}/Update
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise UpBQ Update details relating to IT Policies and Guidelines
 
@@ -616,9 +712,13 @@ To make the path name more RESTful\, you can consider updating the path to somet
 
 This naming
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Update
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}/Update
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise UpBQ Update details relating to Product Testing and Deployment Mechanisms
 
@@ -632,9 +732,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductTestingandDeploymentMechanisms/\{producttestinganddeploymentmechanismsid\}
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Update
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionEnvironmentandSupportServices/\{productionenvironmentandsupportservicesid\}/Update
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise UpBQ Update details relating to Production Environment and Support Services
 
@@ -648,9 +752,13 @@ PUT: Based on RESTful best practices\, the name of the path should be structured
 
 '/it\-standards\-and\-guidelines/\{itstandardsandguidelinesid\}/production\-environment\-and\-support\-services/\{productionenvironmentandsupportservicesid\}/update'
 
-### PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Update
+## PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Update
 
-**Description**
+:::info Path
+PUT: /ITStandardsAndGuidelines/\{itstandardsandguidelinesid\}/ProductionPlatformsandInfrastructure/\{productionplatformsandinfrastructureid\}/Update
+:::
+
+### Description
 
 Define and apply comprehensive IT architectures\, policies and standards as appropriate\. Also define the IT usage guidelines and procedures governing systems use across the enterprise UpBQ Update details relating to Production Platforms and Infrastructure
 

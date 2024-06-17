@@ -1,26 +1,14 @@
 # SyndicateManagement
 
-## Table of Contents
-- [PUT: /SyndicateManagement/\{syndicatemanagementid\}/Control](#put-/syndicatemanagement/\{syndicatemanagementid\}/control)
-- [PUT: /SyndicateManagement/\{syndicatemanagementid\}/Grant](#put-/syndicatemanagement/\{syndicatemanagementid\}/grant)
-- [GET: /SyndicateManagement/\{syndicatemanagementid\}/Notify](#get-/syndicatemanagement/\{syndicatemanagementid\}/notify)
-- [POST: /SyndicateManagement/Register](#post-/syndicatemanagement/register)
-- [PUT: /SyndicateManagement/\{syndicatemanagementid\}/Request](#put-/syndicatemanagement/\{syndicatemanagementid\}/request)
-- [GET: /SyndicateManagement/\{syndicatemanagementid\}/Retrieve](#get-/syndicatemanagement/\{syndicatemanagementid\}/retrieve)
-- [PUT: /SyndicateManagement/\{syndicatemanagementid\}/Update](#put-/syndicatemanagement/\{syndicatemanagementid\}/update)
-- [GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Notify](#get-/syndicatemanagement/\{syndicatemanagementid\}/syndicatecomplianceclauses/\{syndicatecomplianceclausesid\}/notify)
-- [GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Notify](#get-/syndicatemanagement/\{syndicatemanagementid\}/syndicateeligibilityclauses/\{syndicateeligibilityclausesid\}/notify)
-- [GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Retrieve](#get-/syndicatemanagement/\{syndicatemanagementid\}/syndicatecomplianceclauses/\{syndicatecomplianceclausesid\}/retrieve)
-- [GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Retrieve](#get-/syndicatemanagement/\{syndicatemanagementid\}/syndicateeligibilityclauses/\{syndicateeligibilityclausesid\}/retrieve)
-- [PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Update](#put-/syndicatemanagement/\{syndicatemanagementid\}/syndicatecomplianceclauses/\{syndicatecomplianceclausesid\}/update)
-- [PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Update](#put-/syndicatemanagement/\{syndicatemanagementid\}/syndicateeligibilityclauses/\{syndicateeligibilityclausesid\}/update)
-
-
 **BIAN Documentation:** [SyndicateManagement v12](https://app.swaggerhub.com/apis/BIAN-3/SyndicateManagement/12.0.0)
 
-### PUT: /SyndicateManagement/\{syndicatemanagementid\}/Control
+## PUT: /SyndicateManagement/\{syndicatemanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /SyndicateManagement/\{syndicatemanagementid\}/Control
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Control Syndicate Membership
 
@@ -36,9 +24,13 @@ PUT: The name of the path should typically follow a resource\-centric naming con
 
 This naming convention is more clear\, descriptive\, and follows RESTful practices by using plural nouns and lowercase letters with hyphens to separate words in the path\.
 
-### PUT: /SyndicateManagement/\{syndicatemanagementid\}/Grant
+## PUT: /SyndicateManagement/\{syndicatemanagementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /SyndicateManagement/\{syndicatemanagementid\}/Grant
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Grant Syndicate Membership
 
@@ -54,9 +46,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be all lowercase\, use hyphens to separate words\, and use plural nouns to denote collections \(e\.g\. grants instead of grant\)\. It's also common practice to use the HTTP method in the path to clarify the intent of the operation\.
 
-### GET: /SyndicateManagement/\{syndicatemanagementid\}/Notify
+## GET: /SyndicateManagement/\{syndicatemanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /SyndicateManagement/\{syndicatemanagementid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Notify Syndicate Membership
 
@@ -72,9 +68,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 In RESTful conventions\, resource names should be in lowercase\, and words should be separated by hyphens \(\-\) for better readability and consistency\. Additionally\, resource names should be descriptive and use singular nouns\.
 
-### POST: /SyndicateManagement/Register
+## POST: /SyndicateManagement/Register
 
-**Description**
+:::info Path
+POST: /SyndicateManagement/Register
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Register Syndicate Membership
 
@@ -86,9 +86,13 @@ This BIAN API path allows users to register new syndicate memberships within the
 
 POST: Following REST best practices\, the path '/SyndicateManagement/Register' should be renamed to '/syndicates'\. The '/syndicates' path would represent a collection of syndicates\, and registering a new syndicate can be achieved using a POST request to this path\.
 
-### PUT: /SyndicateManagement/\{syndicatemanagementid\}/Request
+## PUT: /SyndicateManagement/\{syndicatemanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /SyndicateManagement/\{syndicatemanagementid\}/Request
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Request Syndicate Membership
 
@@ -104,9 +108,13 @@ PUT: Following REST best practices\, the path should be named as:
 GET /syndicate\-management/\{syndicate\-management\-id\}/request
 \`\`\`
 
-### GET: /SyndicateManagement/\{syndicatemanagementid\}/Retrieve
+## GET: /SyndicateManagement/\{syndicatemanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicateManagement/\{syndicatemanagementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Retrieve Syndicate Membership
 
@@ -128,9 +136,13 @@ In this naming convention:
 \- "GET" specifies the HTTP method used to retrieve data\.
 \- "/sy
 
-### PUT: /SyndicateManagement/\{syndicatemanagementid\}/Update
+## PUT: /SyndicateManagement/\{syndicatemanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicateManagement/\{syndicatemanagementid\}/Update
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Update Syndicate Membership
 
@@ -144,9 +156,13 @@ PUT: The name of the path should be:
 
 \`PUT /syndicate\-management/\{syndicate\-management\-id\}\`
 
-### GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Notify
+## GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Notify
 
-**Description**
+:::info Path
+GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Notify Syndicate Compliance Clauses
 
@@ -162,9 +178,13 @@ GET: Following REST best practices\, the name of the path should be:
 / syndicate\-management/\{syndicate\-management\-id\}/syndicate\-compliance\-clauses/\{syndicate\-compliance\-clauses\-id\}/notify
 \`\`\`
 
-### GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Notify
+## GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Notify
 
-**Description**
+:::info Path
+GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Notify Syndicate Eligibility Clauses
 
@@ -178,9 +198,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`/syndicate\-management/\{syndicateManagementId\}/syndicate\-eligibility\-clauses/\{syndicateEligibilityClausesId\}/notify\`
 
-### GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Retrieve
+## GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Retrieve Syndicate Compliance Clauses
 
@@ -196,9 +220,13 @@ GET: Based on REST best practices\, the name of the path should be:
 GET /syndicate\-management/\{syndicateManagementId\}/syndicate\-compliance\-clauses/\{syndicateComplianceClausesId\}
 \`\`\`
 
-### GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Retrieve
+## GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Retrieve Syndicate Eligibility Clauses
 
@@ -212,9 +240,13 @@ GET: A better name for this path following REST best practices would be:
 
 GET '/syndicate\-management/\{syndicate\-management\-id\}/syndicate\-eligibility\-clauses/\{syndicate\-eligibility\-clauses\-id\}'
 
-### PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Update
+## PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateComplianceClauses/\{syndicatecomplianceclausesid\}/Update
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Update Syndicate Compliance Clauses
 
@@ -228,9 +260,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /syndicate\-management/\{syndicateManagementId\}/syndicate\-compliance\-clauses/\{syndicateComplianceClausesId\}
 
-### PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Update
+## PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Update
 
-**Description**
+:::info Path
+PUT: /SyndicateManagement/\{syndicatemanagementid\}/SyndicateEligibilityClauses/\{syndicateeligibilityclausesid\}/Update
+:::
+
+### Description
 
 This Service Domain manages syndicate membership and compliance Update Syndicate Eligibility Clauses
 

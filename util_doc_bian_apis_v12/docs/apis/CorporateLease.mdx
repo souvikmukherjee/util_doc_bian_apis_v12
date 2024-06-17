@@ -1,31 +1,14 @@
 # CorporateLease
 
-## Table of Contents
-- [PUT: /CorporateLease/\{corporateleaseid\}/Control](#put-/corporatelease/\{corporateleaseid\}/control)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Exchange](#put-/corporatelease/\{corporateleaseid\}/exchange)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Execute](#put-/corporatelease/\{corporateleaseid\}/execute)
-- [POST: /CorporateLease/Initiate](#post-/corporatelease/initiate)
-- [GET: /CorporateLease/\{corporateleaseid\}/Retrieve](#get-/corporatelease/\{corporateleaseid\}/retrieve)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Request](#put-/corporatelease/\{corporateleaseid\}/request)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Update](#put-/corporatelease/\{corporateleaseid\}/update)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Control](#put-/corporatelease/\{corporateleaseid\}/administer/\{administerid\}/control)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Exchange](#put-/corporatelease/\{corporateleaseid\}/administer/\{administerid\}/exchange)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Exchange](#put-/corporatelease/\{corporateleaseid\}/fulfill/\{fulfillid\}/exchange)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Execute](#put-/corporatelease/\{corporateleaseid\}/fulfill/\{fulfillid\}/execute)
-- [POST: /CorporateLease/\{corporateleaseid\}/Fulfill/Initiate](#post-/corporatelease/\{corporateleaseid\}/fulfill/initiate)
-- [GET: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Retrieve](#get-/corporatelease/\{corporateleaseid\}/administer/\{administerid\}/retrieve)
-- [GET: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Retrieve](#get-/corporatelease/\{corporateleaseid\}/fulfill/\{fulfillid\}/retrieve)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Request](#put-/corporatelease/\{corporateleaseid\}/administer/\{administerid\}/request)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Request](#put-/corporatelease/\{corporateleaseid\}/fulfill/\{fulfillid\}/request)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Update](#put-/corporatelease/\{corporateleaseid\}/administer/\{administerid\}/update)
-- [PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Update](#put-/corporatelease/\{corporateleaseid\}/fulfill/\{fulfillid\}/update)
-
-
 **BIAN Documentation:** [CorporateLease v12](https://app.swaggerhub.com/apis/BIAN-3/CorporateLease/12.0.0)
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Control
+## PUT: /CorporateLease/\{corporateleaseid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Control
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement CoCR Control the processing of Corporate Lease Facility
 
@@ -39,9 +22,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/corporate\-leases/\{corporateleaseid\}/controls'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Exchange
+## PUT: /CorporateLease/\{corporateleaseid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Exchange
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement EcCR Accept\, verify\, etc\. aspects of Corporate Lease Facility processing
 
@@ -55,9 +42,13 @@ PUT: The name of the path should be:
 
 '/corporateleases/\{corporateleaseid\}/exchanges'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Execute
+## PUT: /CorporateLease/\{corporateleaseid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Execute
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement ExCR Execute an available automated action for Corporate Lease Facility
 
@@ -71,9 +62,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-leases/\{corporateleaseid\}/execute'
 
-### POST: /CorporateLease/Initiate
+## POST: /CorporateLease/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateLease/Initiate
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement InCR Instantiate a new Corporate Lease Facility
 
@@ -85,9 +80,13 @@ This API path \(/CorporateLease/Initiate\) is used to create a new Corporate Lea
 
 POST: A common naming convention in RESTful APIs is to use nouns for resources and verbs for actions\. Therefore\, a more appropriate name for the path '/CorporateLease/Initiate' following REST best practices could be '/corporate\-leases' for the collection resource and a POST request could initiate a new corporate lease\. This follows the convention of using the plural form of the resource name for collections and using specific HTTP verbs to perform actions on the resource\.
 
-### GET: /CorporateLease/\{corporateleaseid\}/Retrieve
+## GET: /CorporateLease/\{corporateleaseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLease/\{corporateleaseid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement ReCR Retrieve details about any aspect of Corporate Lease Facility
 
@@ -103,9 +102,13 @@ GET: The name of the path should be:
 GET /corporate\-leases/\{corporateleaseid\}
 \`\`\`
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Request
+## PUT: /CorporateLease/\{corporateleaseid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Request
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement RqCR Request manual intervention or a decision with respect to Corporate Lease Facility
 
@@ -119,9 +122,13 @@ PUT: The name for the path '/CorporateLease/\{corporateleaseid\}/Request' follow
 
 '/corporate\-leases/\{corporateleaseid\}/requests'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Update
+## PUT: /CorporateLease/\{corporateleaseid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Update
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement UpCR Update details relating to Corporate Lease Facility
 
@@ -133,9 +140,13 @@ This API path allows you to update details related to a Corporate Lease facility
 
 PUT: The name of the path should be: /corporate\-leases/\{corporateleaseid\}
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Control
+## PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Control
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement CoBQ Control the processing of Administer
 
@@ -156,9 +167,13 @@ In this revised path:
 \- "CorporateLeases" is pluralized to indicate that multiple corporate leases can be accessed through this resource\.
 \- "Administers" is pluralized to suggest that the resource represents a collection of
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Exchange
+## PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Exchange
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement EcBQ Accept\, verify\, etc\. aspects of Administer processing
 
@@ -172,9 +187,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/corporate\-leases/\{corporateleaseid\}/administers/\{administerid\}/exchanges'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Exchange
+## PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Exchange
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement EcBQ Accept\, verify\, etc\. aspects of Fulfill processing
 
@@ -188,9 +207,13 @@ PUT: A suitable name for the path '/CorporateLease/\{corporateleaseid\}/Fulfill/
 
 '/corporateleases/\{corporateleaseid\}/fulfills/\{fulfillid\}/exchanges'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Execute
+## PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Execute
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement ExBQ Execute an available automated action for Fulfill
 
@@ -204,9 +227,13 @@ PUT: A suitable name for the path could be:
 
 '/corporate\-leases/\{corporateleaseid\}/fulfills/\{fulfillid\}/execute'
 
-### POST: /CorporateLease/\{corporateleaseid\}/Fulfill/Initiate
+## POST: /CorporateLease/\{corporateleaseid\}/Fulfill/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateLease/\{corporateleaseid\}/Fulfill/Initiate
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement InBQ Instantiate a new Fulfill
 
@@ -220,9 +247,13 @@ POST: Following REST best practices\, the name of the path should identify the r
 
 '/Corporations/\{corporationid\}/Leases/\{corporateleaseid\}/Fulfillment/Initiate'
 
-### GET: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Retrieve
+## GET: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement ReBQ Retrieve details about any aspect of Administer
 
@@ -236,9 +267,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-leases/\{corporateleaseId\}/administer/\{administerId\}/retrieve'
 
-### GET: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Retrieve
+## GET: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Retrieve
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement ReBQ Retrieve details about any aspect of Fulfill
 
@@ -250,9 +285,13 @@ This API path allows you to retrieve details about a specific aspect of a Corpor
 
 GET: Based on REST best practices\, a suitable name for the path '/CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Retrieve' could be '/corporate\-leases/\{corporateleaseid\}/fulfills/\{fulfillid\}'\. This naming convention uses lowercase letters\, hyphens for separation\, and plural nouns to represent resources\.
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Request
+## PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Request
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement RqBQ Request manual intervention or a decision with respect to Administer
 
@@ -266,9 +305,13 @@ PUT: The name of the path following REST best practices should be:
 
 /CorporateLeases/\{corporateleaseid\}/Administers/\{administerid\}/Requests
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Request
+## PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Request
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement RqBQ Request manual intervention or a decision with respect to Fulfill
 
@@ -282,9 +325,13 @@ PUT: A suitable name for the path '/CorporateLease/\{corporateleaseid\}/Fulfill/
 
 '/corporate\-leases/\{corporateleaseid\}/fulfillments/\{fulfillid\}/requests'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Update
+## PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Administer/\{administerid\}/Update
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement UpBQ Update details relating to Administer
 
@@ -297,9 +344,13 @@ This API path allows you to update details related to administering a specific a
 PUT: The path should be named as follows according to REST best practices:
 '/corporate\-leases/\{corporateleaseid\}/administers/\{administerid\}'
 
-### PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Update
+## PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLease/\{corporateleaseid\}/Fulfill/\{fulfillid\}/Update
+:::
+
+### Description
 
 The Corporate Lease product provides corporate customers with loans to support leasing activity for property and equipment under an umbrella leasing arrangement UpBQ Update details relating to Fulfill
 

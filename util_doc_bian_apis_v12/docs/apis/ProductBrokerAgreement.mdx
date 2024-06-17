@@ -1,25 +1,14 @@
 # ProductBrokerAgreement
 
-## Table of Contents
-- [POST: /ProductBrokerAgreement/Evaluate](#post-/productbrokeragreement/evaluate)
-- [PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/Update](#put-/productbrokeragreement/\{productbrokeragreementid\}/update)
-- [GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/Retrieve](#get-/productbrokeragreement/\{productbrokeragreementid\}/retrieve)
-- [POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/Evaluate](#post-/productbrokeragreement/\{productbrokeragreementid\}/legalterms/evaluate)
-- [PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Update](#put-/productbrokeragreement/\{productbrokeragreementid\}/legalterms/\{legaltermsid\}/update)
-- [GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve](#get-/productbrokeragreement/\{productbrokeragreementid\}/legalterms/\{legaltermsid\}/retrieve)
-- [POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/Evaluate](#post-/productbrokeragreement/\{productbrokeragreementid\}/regulatoryterms/evaluate)
-- [PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update](#put-/productbrokeragreement/\{productbrokeragreementid\}/regulatoryterms/\{regulatorytermsid\}/update)
-- [GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve](#get-/productbrokeragreement/\{productbrokeragreementid\}/regulatoryterms/\{regulatorytermsid\}/retrieve)
-- [POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/Evaluate](#post-/productbrokeragreement/\{productbrokeragreementid\}/policyterms/evaluate)
-- [PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Update](#put-/productbrokeragreement/\{productbrokeragreementid\}/policyterms/\{policytermsid\}/update)
-- [GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve](#get-/productbrokeragreement/\{productbrokeragreementid\}/policyterms/\{policytermsid\}/retrieve)
-
-
 **BIAN Documentation:** [ProductBrokerAgreement v12](https://app.swaggerhub.com/apis/BIAN-3/ProductBrokerAgreement/12.0.0)
 
-### POST: /ProductBrokerAgreement/Evaluate
+## POST: /ProductBrokerAgreement/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductBrokerAgreement/Evaluate
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary EvCR Establish a product broker agreement \(evaluate applicable rules\)
 
@@ -31,9 +20,13 @@ This API path allows users to create a new product broker agreement by evaluatin
 
 POST: If we follow REST best practices\, the name of the path '/ProductBrokerAgreement/Evaluate' could be simplified to '/product\-broker\-agreements' for creating a resource to manage product broker agreements\. The specific action of evaluating a product broker agreement could be represented as a POST request to this path to create a new evaluation resource\.
 
-### PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/Update
+## PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/Update
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary UpCR Update details of an active product broker agreement
 
@@ -47,9 +40,13 @@ PUT: The name of the path should be:
 
 '/product\-broker\-agreements/\{productBrokerAgreementId\}'
 
-### GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/Retrieve
+## GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary ReCR Retrieve details about a broker agreement
 
@@ -63,9 +60,13 @@ GET: The path should be named as follows according to REST best practices:
 
 '/product\-broker\-agreements/\{productbrokeragreementid\}'
 
-### POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/Evaluate
+## POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/Evaluate
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary EvBQ Establish the legal terms for a broker agreement
 
@@ -79,9 +80,13 @@ POST: The name of the path following REST best practices could be:
 
 '/product\-broker\-agreements/\{productbrokeragreementid\}/legal\-terms/evaluate'
 
-### PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Update
+## PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Update
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary UpBQ Update the legal terms for a broker agreement
 
@@ -95,9 +100,13 @@ PUT: Based on REST best practices\, the name of the path for updating legal term
 
 PUT /product\-broker\-agreements/\{productbrokeragreementid\}/legal\-terms/\{legaltermsid\}
 
-### GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve
+## GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary ReBQ Retrieve details about the legal terms of an agreement
 
@@ -116,9 +125,13 @@ In REST conventions:
 \- Use plural nouns for collections and singular nouns for individual resources\.
 \- Use HTTP methods like GET to indicate
 
-### POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/Evaluate
+## POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/Evaluate
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary EvBQ Establish the regulatory terms for a broker agreement
 
@@ -139,9 +152,13 @@ In this naming convention:
 3\. Singular nouns are preferred\, and plurals are avoided\.
 4\.
 
-### PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update
+## PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary UpBQ Update the regulatory terms for a broker agreement
 
@@ -155,9 +172,13 @@ PUT: The name of the path '/ProductBrokerAgreement/\{productbrokeragreementid\}/
 
 PATCH /product\-broker\-agreements/\{productbrokeragreementid\}/regulatory\-terms/\{regulatorytermsid\}
 
-### GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve
+## GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary ReBQ Retrieve details about the regulatory terms of an agreement
 
@@ -179,9 +200,13 @@ Here are a few reasons:
 2\. The path specifies the action of retrieving regulatory terms linked to a specific product broker agreement using a GET request\.
 3\. The path segments are structured logically\, denoting the
 
-### POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/Evaluate
+## POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/Evaluate
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary EvBQ Establish the corporate policy terms for a broker agreement
 
@@ -202,9 +227,13 @@ In this naming convention:
 \- Path parameters are named using lowercase\, camel case
 \- The resource names are in plural form
 
-### PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Update
+## PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Update
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary UpBQ Update the corporate policy terms for a broker agreement
 
@@ -218,9 +247,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/product\-broker\-agreements/\{productbrokeragreementid\}/policy\-terms/\{policytermsid\}'
 
-### GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve
+## GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductBrokerAgreement/\{productbrokeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains product broker contractual and service level agreements and tracks and confirms compliance and service related activity/volume goals when necessary ReBQ Retrieve details about the corporate policy terms of an agreement
 

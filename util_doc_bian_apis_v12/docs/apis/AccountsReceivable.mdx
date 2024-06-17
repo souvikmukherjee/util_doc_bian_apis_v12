@@ -1,35 +1,14 @@
 # AccountsReceivable
 
-## Table of Contents
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Control](#put-/accountsreceivable/\{accountsreceivableid\}/control)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Exchange](#put-/accountsreceivable/\{accountsreceivableid\}/exchange)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Execute](#put-/accountsreceivable/\{accountsreceivableid\}/execute)
-- [POST: /AccountsReceivable/Initiate](#post-/accountsreceivable/initiate)
-- [GET: /AccountsReceivable/\{accountsreceivableid\}/Retrieve](#get-/accountsreceivable/\{accountsreceivableid\}/retrieve)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Request](#put-/accountsreceivable/\{accountsreceivableid\}/request)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Update](#put-/accountsreceivable/\{accountsreceivableid\}/update)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Exchange](#put-/accountsreceivable/\{accountsreceivableid\}/customernegotiation/\{customernegotiationid\}/exchange)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Exchange](#put-/accountsreceivable/\{accountsreceivableid\}/receivablesevaluation/\{receivablesevaluationid\}/exchange)
-- [POST: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/Initiate](#post-/accountsreceivable/\{accountsreceivableid\}/customernegotiation/initiate)
-- [POST: /AccountsReceivable/\{accountsreceivableid\}/Payment/Initiate](#post-/accountsreceivable/\{accountsreceivableid\}/payment/initiate)
-- [POST: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/Initiate](#post-/accountsreceivable/\{accountsreceivableid\}/receivablesevaluation/initiate)
-- [POST: /AccountsReceivable/\{accountsreceivableid\}/Resolution/Initiate](#post-/accountsreceivable/\{accountsreceivableid\}/resolution/initiate)
-- [GET: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Retrieve](#get-/accountsreceivable/\{accountsreceivableid\}/customernegotiation/\{customernegotiationid\}/retrieve)
-- [GET: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Retrieve](#get-/accountsreceivable/\{accountsreceivableid\}/payment/\{paymentid\}/retrieve)
-- [GET: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Retrieve](#get-/accountsreceivable/\{accountsreceivableid\}/receivablesevaluation/\{receivablesevaluationid\}/retrieve)
-- [GET: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Retrieve](#get-/accountsreceivable/\{accountsreceivableid\}/resolution/\{resolutionid\}/retrieve)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Request](#put-/accountsreceivable/\{accountsreceivableid\}/customernegotiation/\{customernegotiationid\}/request)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Update](#put-/accountsreceivable/\{accountsreceivableid\}/customernegotiation/\{customernegotiationid\}/update)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Update](#put-/accountsreceivable/\{accountsreceivableid\}/payment/\{paymentid\}/update)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Update](#put-/accountsreceivable/\{accountsreceivableid\}/receivablesevaluation/\{receivablesevaluationid\}/update)
-- [PUT: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Update](#put-/accountsreceivable/\{accountsreceivableid\}/resolution/\{resolutionid\}/update)
-
-
 **BIAN Documentation:** [AccountsReceivable v12](https://app.swaggerhub.com/apis/BIAN-3/AccountsReceivable/12.0.0)
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Control
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Control
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Control
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments CoCR Control the processing of Accounts Receivable Procedure
 
@@ -41,9 +20,13 @@ This API path allows you to update an existing resource related to accounts rece
 
 PUT: The name of the path should be '/accounts\-receivable/\{accountsreceivableid\}/control'\. Keeping the path in lowercase letters and using hyphens to separate words follows REST best practices for naming conventions\.
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Exchange
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Exchange
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments EcCR Accept\, verify\, etc\. aspects of Accounts Receivable Procedure processing
 
@@ -58,9 +41,13 @@ PUT: The name of the path could be:
 
 Remember that the path should be in lowercase\, use nouns instead of verbs\, and be descriptive of the resource it represents\. Also\, using plural nouns is more commonly used in REST naming conventions\.
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Execute
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Execute
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Execute
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments ExCR Execute an available automated action for Accounts Receivable Procedure
 
@@ -74,9 +61,13 @@ PUT: The name of the path /AccountsReceivable/\{accountsreceivableid\}/Execute s
 
 /accounts\-receivable/\{accountsreceivableid\}/actions/execute
 
-### POST: /AccountsReceivable/Initiate
+## POST: /AccountsReceivable/Initiate
 
-**Description**
+:::info Path
+POST: /AccountsReceivable/Initiate
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments InCR Instantiate a new Accounts Receivable Procedure
 
@@ -88,9 +79,13 @@ This API path allows you to create a new procedure related to managing accounts 
 
 POST: If the path '/AccountsReceivable/Initiate' followed REST best practices\, it should be named as a verb that represents the action being performed\. For example\, it could be named as '/accountsReceivable/initiatePayment'\, where 'initiatePayment' represents the action of initiating a payment in the accounts receivable context\. This naming convention helps make the API endpoints more descriptive and intuitive\.
 
-### GET: /AccountsReceivable/\{accountsreceivableid\}/Retrieve
+## GET: /AccountsReceivable/\{accountsreceivableid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountsReceivable/\{accountsreceivableid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments ReCR Retrieve details about any aspect of Accounts Receivable Procedure
 
@@ -108,9 +103,13 @@ GET: For a RESTful API path that retrieves a specific resource\, the path should
 
 This path clearly indicates that it is retrieving a specific accounts receivable resource identified by accountsreceivableid\.
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Request
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Request
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Request
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments RqCR Request manual intervention or a decision with respect to Accounts Receivable Procedure
 
@@ -126,9 +125,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, hyphens to separate words\, and plural nouns for better consistency and readability\.
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Update
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Update
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments UpCR Update details relating to Accounts Receivable Procedure
 
@@ -142,9 +145,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /accounts\_receivable/\{accountsreceivableid\} \(PUT\)
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Exchange
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Exchange
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments EcBQ Accept\, verify\, etc\. aspects of Customer Negotiation processing
 
@@ -157,9 +164,13 @@ This API path allows you to update an existing resource related to accounts rece
 PUT: Based on REST best practices\, the name of the path should be:
 "/accounts\-receivable/\{accountsreceivableid\}/customer\-negotiations/\{customernegotiationid\}/exchanges"
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Exchange
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Exchange
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments EcBQ Accept\, verify\, etc\. aspects of Receivables Evaluation processing
 
@@ -172,9 +183,13 @@ This BIAN API endpoint allows you to update an existing resource related to acco
 PUT: A suitable name for the path should be:
 /accounts\-receivable/\{accountsreceivableid\}/receivables\-evaluation/\{receivablesevaluationid\}/exchange
 
-### POST: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/Initiate
+## POST: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/Initiate
 
-**Description**
+:::info Path
+POST: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/Initiate
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments InBQ Instantiate a new Customer Negotiation
 
@@ -188,9 +203,13 @@ POST: The name of the path could be:
 
 /accounts\-receivable/\{accountsreceivableid\}/customer\-negotiation/initiate
 
-### POST: /AccountsReceivable/\{accountsreceivableid\}/Payment/Initiate
+## POST: /AccountsReceivable/\{accountsreceivableid\}/Payment/Initiate
 
-**Description**
+:::info Path
+POST: /AccountsReceivable/\{accountsreceivableid\}/Payment/Initiate
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments InBQ Instantiate a new Payment
 
@@ -204,9 +223,13 @@ POST: A suitable name for the path '/AccountsReceivable/\{accountsreceivableid\}
 
 POST /accounts\-receivable/\{accountsreceivableid\}/payments
 
-### POST: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/Initiate
+## POST: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/Initiate
 
-**Description**
+:::info Path
+POST: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/Initiate
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments InBQ Instantiate a new Receivables Evaluation
 
@@ -220,9 +243,13 @@ POST: The RESTful naming convention for this path could be something like '/acco
 
 In this format\, the resource names are all in lowercase\, separated by hyphens to improve readability\. This naming convention follows best practices for RESTful API design\.
 
-### POST: /AccountsReceivable/\{accountsreceivableid\}/Resolution/Initiate
+## POST: /AccountsReceivable/\{accountsreceivableid\}/Resolution/Initiate
 
-**Description**
+:::info Path
+POST: /AccountsReceivable/\{accountsreceivableid\}/Resolution/Initiate
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments InBQ Instantiate a new Resolution
 
@@ -236,9 +263,13 @@ POST: The recommended name for this path following REST best practices would be:
 
 /accounts\-receivable/\{accountsreceivableid\}/resolutions/\{resolutionid\}/initiate
 
-### GET: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Retrieve
+## GET: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments ReBQ Retrieve details about any aspect of Customer Negotiation
 
@@ -252,9 +283,13 @@ GET: The name of the path\, while following REST best practices\, should be:
 
 /accounts\-receivable/\{accountsreceivableid\}/customer\-negotiation/\{customernegotiationid\}
 
-### GET: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Retrieve
+## GET: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments ReBQ Retrieve details about any aspect of Payment
 
@@ -270,9 +305,13 @@ GET: Based on REST best practices\, the name of the path should be structured to
 
 This name follows REST conventions by using lowercase letters and hyphens to separate words in the path\. It clearly indicates that the resource being accessed is related to accounts receivable and payments\, with unique identifiers for accounts receivable and payment entities included in the path\.
 
-### GET: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Retrieve
+## GET: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments ReBQ Retrieve details about any aspect of Receivables Evaluation
 
@@ -285,9 +324,13 @@ This API endpoint allows you to retrieve details related to the evaluation of ac
 GET: Based on REST best practices\, the name of the path should be:  
 /accounts\-receivable/\{accountsreceivableid\}/receivables\-evaluation/\{receivablesevaluationid\}/retrieval
 
-### GET: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Retrieve
+## GET: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments ReBQ Retrieve details about any aspect of Resolution
 
@@ -299,9 +342,13 @@ This API path allows you to retrieve details related to the resolution of accoun
 
 GET: Based on REST best practices\, a more suitable name for this path might be \`/accounts\-receivable/\{accountsreceivableid\}/resolutions/\{resolutionid\}\` to represent a resource\-oriented naming convention\. This path is structured in a more readable and consistent manner\, using lowercase letters and hyphens to separate words for improved clarity and usability\.
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Request
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Request
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Request
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments RqBQ Request manual intervention or a decision with respect to Customer Negotiation
 
@@ -315,9 +362,13 @@ PUT: The name of the path should be:
 
 /accounts\-receivable/\{accountsreceivableid\}/customer\-negotiation/\{customernegotiationid\}/request
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Update
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/CustomerNegotiation/\{customernegotiationid\}/Update
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments UpBQ Update details relating to Customer Negotiation
 
@@ -331,9 +382,13 @@ PUT: The name of the path should be:
 
 '/accounts\-receivable/\{accountsreceivableid\}/customer\-negotiation/\{customernegotiationid\}'
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Update
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Payment/\{paymentid\}/Update
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments UpBQ Update details relating to Payment
 
@@ -347,9 +402,13 @@ PUT: The name of the path following REST best practices could be something like:
 
 '/accounts\-receivable/\{accountsreceivableid\}/payments/\{paymentid\}'
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Update
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/ReceivablesEvaluation/\{receivablesevaluationid\}/Update
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments UpBQ Update details relating to Receivables Evaluation
 
@@ -361,9 +420,13 @@ This API path allows you to update details related to the evaluation of accounts
 
 PUT: Based on REST best practices\, the name of the path could be \`/accounts\-receivable/\{accountsReceivableId\}/receivables\-evaluation/\{receivablesEvaluationId\}\`\.
 
-### PUT: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Update
+## PUT: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountsReceivable/\{accountsreceivableid\}/Resolution/\{resolutionid\}/Update
+:::
+
+### Description
 
 This service domain handles accounts receivable for invoices issue by the bank to customers and partners\. It includes follow\-up and resolution activity for delayed/missed payments UpBQ Update details relating to Resolution
 

@@ -1,30 +1,14 @@
 # ConsumerAdvisoryServices
 
-## Table of Contents
-- [POST: /ConsumerAdvisoryServices/Initiate](#post-/consumeradvisoryservices/initiate)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Update](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/update)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Request](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/request)
-- [GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Retrieve](#get-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/retrieve)
-- [POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/Initiate](#post-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/financialplanning/initiate)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Update](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/financialplanning/\{financialplanningid\}/update)
-- [GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Retrieve](#get-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/financialplanning/\{financialplanningid\}/retrieve)
-- [POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/Initiate](#post-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/taxoptimization/initiate)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Update](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/taxoptimization/\{taxoptimizationid\}/update)
-- [GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve](#get-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/taxoptimization/\{taxoptimizationid\}/retrieve)
-- [POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/Initiate](#post-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/productguidance/initiate)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Update](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/productguidance/\{productguidanceid\}/update)
-- [GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Retrieve](#get-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/productguidance/\{productguidanceid\}/retrieve)
-- [POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/Initiate](#post-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/servicefees/initiate)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Update](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/consumeradvisoryservices/\{consumeradvisoryservicesid\}/servicefees/\{servicefeesid\}/retrieve)
-
-
 **BIAN Documentation:** [ConsumerAdvisoryServices v12](https://app.swaggerhub.com/apis/BIAN-3/ConsumerAdvisoryServices/12.0.0)
 
-### POST: /ConsumerAdvisoryServices/Initiate
+## POST: /ConsumerAdvisoryServices/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerAdvisoryServices/Initiate
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee InCR Initiate a consumer advisory session
 
@@ -38,9 +22,13 @@ POST: The name of the path '/ConsumerAdvisoryServices/Initiate' should be conver
 
 A more RESTful path for initiating a consumer advisory service could be something like '/consumer\-advisories'\. The action of initiating could be represented by an HTTP POST request to this path\.
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Update
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Update
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee UpCR Update details for a consumer advisory session
 
@@ -54,9 +42,13 @@ PUT: The name of the path should be as follows:
 
 '/ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}'
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Request
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Request
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Request
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee RqCR Request manual intervention in a session
 
@@ -72,9 +64,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens for readability\.
 
-### GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Retrieve
+## GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/Retrieve
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee ReCR Retrieve details about a consumer advisory session
 
@@ -88,9 +84,13 @@ GET: The name of the path following REST best practices should be:
 
 '/consumer\-advisory\-services/\{consumer\-advisory\-services\-id\}'
 
-### POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/Initiate
+## POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/Initiate
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee InBQ Initiate financial planning advisory session
 
@@ -104,9 +104,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/Initiation
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Update
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Update
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee UpBQ Update details about a financial planning advisory session
 
@@ -118,9 +122,13 @@ This API path allows you to update details about a financial planning advisory s
 
 PUT: The name of the path could be \`/consumer\-advisory\-services/\{consumeradvisoryservicesid\}/financial\-planning/\{financialplanningid\}\` for following REST best practices\.
 
-### GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Retrieve
+## GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/FinancialPlanning/\{financialplanningid\}/Retrieve
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee ReBQ Retrieve details about a financial planning advisory session
 
@@ -139,9 +147,13 @@ In this updated path:
 \- The HTTP method \(GET\) is explicitly included to indicate the action to retrieve\.
 \- The path structure follows a more organized and descriptive pattern\.
 
-### POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/Initiate
+## POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/Initiate
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee InBQ Initiate tax optimization advisory session
 
@@ -157,9 +169,13 @@ POST: The name of the path should ideally be:
 
 This naming convention follows REST best practices by using all lowercase letters\, separated by dashes for better readability\, and using plural forms for resource names where appropriate\.
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Update
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Update
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee UpBQ Update details about a tax optimization advisory session
 
@@ -173,9 +189,13 @@ PUT: A possible name for the path following REST best practices could be:
 
 PUT /consumer\-advisory\-services/\{consumeradvisoryservicesid\}/tax\-optimization/\{taxoptimizationid\}
 
-### GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve
+## GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee ReBQ Retrieve details about a tax optimization advisory session
 
@@ -189,9 +209,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/TaxOptimizations/\{taxoptimizationid\}
 
-### POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/Initiate
+## POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/Initiate
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee InBQ Initiate product guidance advisory session
 
@@ -205,9 +229,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 '/consumer\-advisory\-services/\{consumer\-advisory\-services\-id\}/product\-guidance/initiate'
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Update
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Update
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee UpBQ Update details about a product guidance advisory session
 
@@ -219,9 +247,13 @@ This API path allows you to update the details of a product guidance advisory se
 
 PUT: The name of the path should be \`/consumer\-advisory\-services/\{consumer\-advisory\-services\-id\}/product\-guidance/\{product\-guidance\-id\}\` for following REST best practices\.
 
-### GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Retrieve
+## GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ProductGuidance/\{productguidanceid\}/Retrieve
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee ReBQ Retrieve details about a product guidance advisory session
 
@@ -235,9 +267,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /consumer\-advisory\-services/\{consumer\-advisory\-services\-id\}/product\-guidance/\{product\-guidance\-id\}
 
-### POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/Initiate
+## POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee InBQ Initialize service fee processing for an advisory session
 
@@ -251,9 +287,13 @@ POST: The name of the path should be:
 
 /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee UpBQ Update details of service fees for an advisory session
 
@@ -265,9 +305,13 @@ This API path allows you to update the details of service fees for an advisory s
 
 PUT: The name of the path should be \`/consumer\-advisory\-services/\{consumeradvisoryservicesid\}/service\-fees/\{servicefeesid\}\`\.
 
-### PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee ExBQ Execute/apply a fee for an advisory session
 
@@ -281,9 +325,13 @@ PUT: Based on REST best practices\, the path should be named:
 
 /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Execution
 
-### GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerAdvisoryServices/\{consumeradvisoryservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 Offer financial advisory services to consumer customers\, possibly for a fee ReBQ Retrieve details about service fees for an advisory session
 

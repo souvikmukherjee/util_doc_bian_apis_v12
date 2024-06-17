@@ -1,24 +1,14 @@
 # LegalEntityDirectory
 
-## Table of Contents
-- [POST: /LegalEntityDirectory/Register](#post-/legalentitydirectory/register)
-- [PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Update](#put-/legalentitydirectory/\{legalentitydirectoryid\}/update)
-- [PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Request](#put-/legalentitydirectory/\{legalentitydirectoryid\}/request)
-- [GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Retrieve](#get-/legalentitydirectory/\{legalentitydirectoryid\}/retrieve)
-- [PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Execute](#put-/legalentitydirectory/\{legalentitydirectoryid\}/execute)
-- [PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Update](#put-/legalentitydirectory/\{legalentitydirectoryid\}/reference/\{referenceid\}/update)
-- [GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Retrieve](#get-/legalentitydirectory/\{legalentitydirectoryid\}/reference/\{referenceid\}/retrieve)
-- [PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Update](#put-/legalentitydirectory/\{legalentitydirectoryid\}/profile/\{profileid\}/update)
-- [GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Retrieve](#get-/legalentitydirectory/\{legalentitydirectoryid\}/profile/\{profileid\}/retrieve)
-- [PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Update](#put-/legalentitydirectory/\{legalentitydirectoryid\}/associations/\{associationsid\}/update)
-- [GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Retrieve](#get-/legalentitydirectory/\{legalentitydirectoryid\}/associations/\{associationsid\}/retrieve)
-
-
 **BIAN Documentation:** [LegalEntityDirectory v12](https://app.swaggerhub.com/apis/BIAN-3/LegalEntityDirectory/12.0.0)
 
-### POST: /LegalEntityDirectory/Register
+## POST: /LegalEntityDirectory/Register
 
-**Description**
+:::info Path
+POST: /LegalEntityDirectory/Register
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities InCR Register a new legal entity in the catalog
 
@@ -30,9 +20,13 @@ This BIAN API path allows you to register a new legal entity in the Legal Entity
 
 POST: If the path '/LegalEntityDirectory/Register' followed REST best practices\, it would typically be named based on the resource it is representing\. A more RESTful name for this path could be '/legal\-entities'\, as it represents a collection of legal entities\. The registration process could then be implemented using standard HTTP verbs such as POST for creating a new legal entity resource\.
 
-### PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Update
+## PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Update
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities UpCR Update details about the legal entity directory entry
 
@@ -50,9 +44,13 @@ PUT /legal\-entity\-directory/\{legalentitydirectoryid\}
 
 This is following REST best practices by using lowercase letters\, using hyphens to separate words in the URL path\, and using the HTTP method PUT to update a specific resource identified by the legalentitydirectoryid\.
 
-### PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Request
+## PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Request
 
-**Description**
+:::info Path
+PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Request
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities RqCR Request manual intervention with an entry \(e\.g\. refresh content\)
 
@@ -68,9 +66,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and use plural nouns for resource names\.
 
-### GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Retrieve
+## GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities ReCR Retrieve details about a legal entity directory entry
 
@@ -82,9 +84,13 @@ This API path allows you to retrieve information about a specific legal entity d
 
 GET: According to REST best practices\, the name of the path should be "/legal\-entity\-directory/\{legalentitydirectoryid\}"\.
 
-### PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Execute
+## PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Execute
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities ExCR Execute an automated action against an entry
 
@@ -106,9 +112,13 @@ Some key points to consider in following REST best practices:
 4\. Include resource identifiers in the path \(e\.g\.\, legalentitydirectoryid\)\.
 5\. Use verbs that represent actions \(e\.g\.\, execute\) sparingly and if needed\, keep them at the end of
 
-### PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Update
+## PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Update
 
-**Description**
+:::info Path
+PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Update
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities UpBQ Update details about a reference entry for the legal entity
 
@@ -124,9 +134,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PATCH /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}
 \`\`\`
 
-### GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Retrieve
+## GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Reference/\{referenceid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities ReBQ Retrieve details about reference entries in the directory record
 
@@ -140,9 +154,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 GET '/legal\-entity\-directory/\{legalentitydirectoryid\}/references/\{referenceid\}'
 
-### PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Update
+## PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Update
 
-**Description**
+:::info Path
+PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Update
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities UpBQ Update details about a profile entry for the legal entity
 
@@ -156,9 +174,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /legal\-entity\-directory/\{legalentitydirectoryid\}/profiles/\{profileid\}
 
-### GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Retrieve
+## GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Profile/\{profileid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities ReBQ Retrieve details about profile entries in the directory record
 
@@ -172,9 +194,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /legal\-entity\-directory/\{legalentitydirectoryid\}/profiles/\{profileid\}
 
-### PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Update
+## PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Update
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities UpBQ Update details about an association entry for the legal entity
 
@@ -188,9 +214,13 @@ PUT: The name of the path should be:
 
 PUT /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}
 
-### GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Retrieve
+## GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LegalEntityDirectory/\{legalentitydirectoryid\}/Associations/\{associationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains details of the legal entity structure of the party including dependents and associations for individuals and ownership/subsidiary structures for corporations\. Some financial indicators and product coverage/activity details can be included where this defines the nature of the legal entity relationship in particular for corporate entities ReBQ Retrieve details about association entries in the directory record
 

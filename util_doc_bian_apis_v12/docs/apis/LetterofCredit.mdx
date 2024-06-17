@@ -1,63 +1,14 @@
 # LetterofCredit
 
-## Table of Contents
-- [PUT: /LetterofCredit/\{letterofcreditid\}/Control](#put-/letterofcredit/\{letterofcreditid\}/control)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/execute)
-- [POST: /LetterofCredit/Initiate](#post-/letterofcredit/initiate)
-- [GET: /LetterofCredit/\{letterofcreditid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/notify)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/request)
-- [GET: /LetterofCredit/\{letterofcreditid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/retrieve)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/update)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/\{customercollateralallocationid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/customerpayment/\{customerpaymentid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/\{letterofcreditdefinitionandpricingid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/\{letterofcreditissuanceid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/\{letterofcreditdemandpaymentid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Exchange](#put-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/\{sellerobligationconfirmationid\}/exchange)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/\{customercollateralallocationid\}/execute)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/customerpayment/\{customerpaymentid\}/execute)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/\{letterofcreditdefinitionandpricingid\}/execute)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/\{letterofcreditissuanceid\}/execute)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/\{letterofcreditdemandpaymentid\}/execute)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Execute](#put-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/\{sellerobligationconfirmationid\}/execute)
-- [POST: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/Initiate](#post-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/initiate)
-- [POST: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/Initiate](#post-/letterofcredit/\{letterofcreditid\}/customerpayment/initiate)
-- [POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/Initiate](#post-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/initiate)
-- [POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/Initiate](#post-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/initiate)
-- [POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/Initiate](#post-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/initiate)
-- [POST: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/Initiate](#post-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/initiate)
-- [GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/\{customercollateralallocationid\}/notify)
-- [GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/customerpayment/\{customerpaymentid\}/notify)
-- [GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/\{letterofcreditdefinitionandpricingid\}/notify)
-- [GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/\{letterofcreditissuanceid\}/notify)
-- [GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/\{letterofcreditdemandpaymentid\}/notify)
-- [GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Notify](#get-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/\{sellerobligationconfirmationid\}/notify)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/\{customercollateralallocationid\}/request)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/customerpayment/\{customerpaymentid\}/request)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/\{letterofcreditdefinitionandpricingid\}/request)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/\{letterofcreditissuanceid\}/request)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/\{letterofcreditdemandpaymentid\}/request)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Request](#put-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/\{sellerobligationconfirmationid\}/request)
-- [GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/\{customercollateralallocationid\}/retrieve)
-- [GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/customerpayment/\{customerpaymentid\}/retrieve)
-- [GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/\{letterofcreditdefinitionandpricingid\}/retrieve)
-- [GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/\{letterofcreditissuanceid\}/retrieve)
-- [GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/\{letterofcreditdemandpaymentid\}/retrieve)
-- [GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Retrieve](#get-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/\{sellerobligationconfirmationid\}/retrieve)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/customercollateralallocation/\{customercollateralallocationid\}/update)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/customerpayment/\{customerpaymentid\}/update)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdefinitionandpricing/\{letterofcreditdefinitionandpricingid\}/update)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditissuance/\{letterofcreditissuanceid\}/update)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/letterofcreditdemandpayment/\{letterofcreditdemandpaymentid\}/update)
-- [PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Update](#put-/letterofcredit/\{letterofcreditid\}/sellerobligationconfirmation/\{sellerobligationconfirmationid\}/update)
-
-
 **BIAN Documentation:** [LetterofCredit v12](https://app.swaggerhub.com/apis/BIAN-3/LetterofCredit/12.0.0)
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/Control
+## PUT: /LetterofCredit/\{letterofcreditid\}/Control
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Control Letter Of Credit Transaction
 
@@ -71,9 +22,13 @@ PUT: A suitable name for the path under REST best practices could be:
 
 \`/letter\-of\-credit/\{letterofcreditid\}/control\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Letter Of Credit Transaction
 
@@ -85,9 +40,13 @@ This API path allows you to update an existing letter of credit transaction by e
 
 PUT: The name of the path should be \`POST /letter\-of\-credit/\{letterofcreditid\}/exchange\` if it followed REST best practices\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Letter Of Credit Transaction
 
@@ -101,9 +60,13 @@ PUT: A possible name for the path could be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/execute'
 
-### POST: /LetterofCredit/Initiate
+## POST: /LetterofCredit/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Letter Of Credit Transaction
 
@@ -121,9 +84,13 @@ POST /letter\-of\-credit
 
 In RESTful design\, using lowercase letters and hyphens maintains readability and consistency\, while also following the convention of using nouns in the URI path\.
 
-### GET: /LetterofCredit/\{letterofcreditid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Letter Of Credit Transaction
 
@@ -137,9 +104,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/letter\-of\-credits/\{letterofcreditid\}/notifications'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Letter Of Credit Transaction
 
@@ -153,9 +124,13 @@ PUT: The name of the path following REST best practices would typically represen
 
 '/LetterofCreditRequests/\{letterofcreditid\}'
 
-### GET: /LetterofCredit/\{letterofcreditid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Letter Of Credit Transaction
 
@@ -169,9 +144,13 @@ GET: A possible name for the path '/LetterofCredit/\{letterofcreditid\}/Retrieve
 
 GET /letter\-of\-credit/\{letterofcreditid\}
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Letter Of Credit Transaction
 
@@ -185,9 +164,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/letter\-of\-credits/\{letterofcreditid\}/updates'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Customer Collateral Allocation Task
 
@@ -201,9 +184,13 @@ PUT: The name of the path should be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/customer\-collateral\-allocation/\{customercollateralallocationid\}/exchange'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Customer Payment Task
 
@@ -217,9 +204,13 @@ PUT: The name for this path following REST best practices should be:
 
 '/letter\-of\-credit/\{letter\_of\_credit\_id\}/customer\-payment/\{customer\_payment\_id\}/exchange'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Letter of Credit Definition and Pricing Task
 
@@ -235,9 +226,13 @@ PUT: Based on REST best practices\, the name of the path '/LetterofCredit/\{lett
 
 Using shorter\, more descriptive names in the path can make it easier to understand the resource structure and relationships between different elements\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Letter of Credit Issuance and Booking Task
 
@@ -250,9 +245,13 @@ This BIAN API path allows you to update an existing resource related to the exch
 PUT: Based on REST best practices\, the name of the path should be:
 \`/letter\-of\-credit/\{letterofcreditid\}/letter\-of\-credit\-issuance/\{letterofcreditissuanceid\}/exchange\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Letter of Credit Payout Task
 
@@ -266,9 +265,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/demand\-payment/\{letterofcreditdemandpaymentid\}/exchange'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Exchange
+## PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Exchange Seller Obligation Confirmation Task
 
@@ -281,9 +284,13 @@ This API path allows you to update an existing resource related to the letter of
 PUT: Following REST best practices\, the name for the path could be:  
 \`/letter\-of\-credit/\{letterofcreditid\}/seller\-obligation\-confirmation/\{sellerobligationconfirmationid\}/exchange\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Customer Collateral Allocation Task
 
@@ -297,9 +304,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/letter\-of\-credit/\{letterofcreditid\}/customer\-collateral\-allocation/\{customercollateralallocationid\}/execute\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Customer Payment Task
 
@@ -312,9 +323,13 @@ This API path is used to execute a customer payment task related to a specific l
 PUT: Based on REST best practices\, the name of the path could be:
 '/letter\-of\-credit/\{letterofcreditid\}/customer\-payment/\{customerpaymentid\}/execute'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Letter of Credit Definition and Pricing Task
 
@@ -328,9 +343,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/definitions\-and\-pricing/\{letterofcreditdefinitionandpricingid\}/execute'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Letter of Credit Issuance and Booking Task
 
@@ -344,9 +363,13 @@ PUT: The name of the path \`/LetterofCredit/\{letterofcreditid\}/LetterofCreditI
 
 \`POST /letters\-of\-credit/\{id\}/issuances/\{issuanceId\}/execute\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Letter of Credit Payout Task
 
@@ -361,9 +384,13 @@ PUT: The name of the path should be:
 
 This name follows REST best practices by using lowercase letters\, separating words with dashes\, and being descriptive of the resources being accessed\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Execute
+## PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Execute Seller Obligation Confirmation Task
 
@@ -377,9 +404,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 \`/letter\-of\-credit/\{letterofcreditId\}/seller\-obligation\-confirmation/\{sellerobligationconfirmationId\}/execute\`
 
-### POST: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/Initiate
+## POST: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Customer Collateral Allocation Task
 
@@ -395,9 +426,13 @@ POST: Based on REST API best practices\, the name of the path should be:
 
 This naming convention follows the RESTful guidelines of using lowercase letters and hyphens to separate words in the URL path\. Additionally\, it is important to use clear and descriptive names that accurately reflect the resource and action being performed\.
 
-### POST: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/Initiate
+## POST: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Customer Payment Task
 
@@ -412,9 +447,13 @@ POST: The name of the path should be:
 /letter\-of\-credit/\{letterofcreditid\}/customer\-payment/initiate
 \`\`\`
 
-### POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/Initiate
+## POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Letter of Credit Definition and Pricing Task
 
@@ -431,9 +470,13 @@ POST: Based on REST best practices\, the name of the path should be structured i
 
 Remember to use lowercase letters\, hyphens for word separation\, and keep the path reflective of the resource being accessed\.
 
-### POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/Initiate
+## POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Letter of Credit Issuance and Booking Task
 
@@ -449,9 +492,13 @@ POST /letter\-of\-credit/\{letterofcreditid\}/issuance/initiate
 
 This path adheres to REST conventions by using lowercase letters\, separating words with hyphens\, and using specific resource identifiers to denote the purpose of the operation\.
 
-### POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/Initiate
+## POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Letter of Credit Payout Task
 
@@ -465,9 +512,13 @@ POST: The name of the path should be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/demand\-payment/initiate'
 
-### POST: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/Initiate
+## POST: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/Initiate
 
-**Description**
+:::info Path
+POST: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Initiate Seller Obligation Confirmation Task
 
@@ -483,9 +534,13 @@ POST: A name that follows REST best practices for the path '/LetterofCredit/\{le
 POST /letter\-of\-credit/\{letterofcreditid\}/seller\-obligation\-confirmation
 \`\`\`
 
-### GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Customer Collateral Allocation Task
 
@@ -506,9 +561,13 @@ Following REST best practices:
 \- Use lowercase letters
 \- Maintain consistency in naming conventions
 
-### GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Customer Payment Task
 
@@ -527,9 +586,13 @@ In this naming convention:
 \- \*\*hyphens\*\* should be used to separate words within the path for improved readability
 \- \*\*resource identifiers\*\* should be kept
 
-### GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Letter of Credit Definition and Pricing Task
 
@@ -545,9 +608,13 @@ GET: The name of the path following REST best practices should be:
 /letter\-of\-credit/\{letterofcreditid\}/definitions\-and\-pricing/\{letterofcreditdefinitionandpricingid\}/notify
 \`\`\`
 
-### GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Letter of Credit Issuance and Booking Task
 
@@ -563,9 +630,13 @@ GET: The name of the path should be:
 POST /letter\-of\-credit/\{letterofcreditid\}/issue/\{letterofcreditissuanceid\}/notify
 \`\`\`
 
-### GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Letter of Credit Payout Task
 
@@ -581,9 +652,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, dashes for readability\, and plurals for collections\.
 
-### GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Notify
+## GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Notify
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Notify Seller Obligation Confirmation Task
 
@@ -597,9 +672,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 '/letter\-of\-credit/\{letterOfCreditId\}/seller\-obligation\-confirmation/\{sellerObligationConfirmationId\}/notify'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Customer Collateral Allocation Task
 
@@ -612,9 +691,13 @@ This API path allows you to update an existing request for customer collateral a
 PUT: Based on REST best practices\, the name of the path could be:
 '/letter\-of\-credit/\{letterofcreditid\}/customer\-collateral\-allocation/\{customercollateralallocationid\}/request'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Customer Payment Task
 
@@ -630,9 +713,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path segments should be in lowercase\, separated by hyphens\, and use singular nouns\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Letter of Credit Definition and Pricing Task
 
@@ -646,9 +733,13 @@ PUT: Based on REST best practices\, the name of the path could be \`/letter\-of\
 
 The path should use lowercase letters\, use hyphens to separate words\, and describe the resource it represents in a clear and concise manner\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Letter of Credit Issuance and Booking Task
 
@@ -664,9 +755,13 @@ PUT: To follow REST best practices\, the name of the path should be:
 /LetterofCredits/\{letterofcreditid\}/LetterofCreditIssuances/\{letterofcreditissuanceid\}/Requests
 \`\`\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Letter of Credit Payout Task
 
@@ -680,9 +775,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/letter\-of\-credit/\{letter\-of\-credit\-id\}/demand\-payment/\{letter\-of\-credit\-demand\-payment\-id\}/request\`
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Request
+## PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Request
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Request Seller Obligation Confirmation Task
 
@@ -696,9 +795,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/seller\-obligation\-confirmation/\{sellerobligationconfirmationid\}/request'
 
-### GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Customer Collateral Allocation Task
 
@@ -712,9 +815,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /letter\-of\-credit/\{letterofcreditid\}/customer\-collateral\-allocation/\{customercollateralallocationid\}
 
-### GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Customer Payment Task
 
@@ -728,9 +835,13 @@ GET: The name of the path following REST best practices should be:
 
 GET /letter\-of\-credit/\{letterofcreditid\}/customer\-payment/\{customerpaymentid\}
 
-### GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Letter of Credit Definition and Pricing Task
 
@@ -746,9 +857,13 @@ GET: Based on REST best practices\, a suitable name for the path could be:
 /letter\-of\-credit/\{letterofcreditid\}/definition\-and\-pricing/\{letterofcreditdefinitionandpricingid\}/retrieve
 \`\`\`
 
-### GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Letter of Credit Issuance and Booking Task
 
@@ -762,9 +877,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Lette
 
 GET '/letter\-of\-credits/\{letterofcreditid\}/issuances/\{letterofcreditissuanceid\}'
 
-### GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Letter of Credit Payout Task
 
@@ -778,9 +897,13 @@ GET: The name of the path should ideally be something like:
 
 '/letter\-of\-credit/\{letterOfCreditId\}/demand\-payment/\{letterOfCreditDemandPaymentId\}'
 
-### GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Retrieve
+## GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Retrieve Seller Obligation Confirmation Task
 
@@ -798,9 +921,13 @@ GET /letter\-of\-credit/\{letterofcreditid\}/seller\-obligation\-confirmation/\{
 
 This naming convention follows the guidelines of using lowercase letters\, separating words with hyphens\, and being descriptive of the resource being accessed\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Customer Collateral Allocation Task
 
@@ -816,9 +943,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, we should use lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/CustomerPayment/\{customerpaymentid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Customer Payment Task
 
@@ -832,9 +963,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 "/letter\-of\-credit/\{letterofcreditid\}/customer\-payment/\{customerpaymentid\}"
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDefinitionandPricing/\{letterofcreditdefinitionandpricingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Letter of Credit Definition and Pricing Task
 
@@ -850,9 +985,13 @@ PUT: Based on REST best practices\, the name of the path '/LetterofCredit/\{lett
 
 This simplified path follows RESTful conventions by using lowercase letters\, plural nouns for collections \(e\.g\.\, 'letterofcredits'\)\, and singular nouns for individual resources \(e\.g\.\, 'definitions'\)\. Additionally\, the HTTP
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditIssuance/\{letterofcreditissuanceid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Letter of Credit Issuance and Booking Task
 
@@ -865,9 +1004,13 @@ This API path allows you to update an existing letter of credit issuance and boo
 PUT: Following REST best practices\, the name of the path should be:
 '/letter\-of\-credit/\{letterofcreditid\}/letter\-of\-credit\-issuance/\{letterofcreditissuanceid\}'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/LetterofCreditDemandPayment/\{letterofcreditdemandpaymentid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Letter of Credit Payout Task
 
@@ -881,9 +1024,13 @@ PUT: The name of the path should be:
 
 '/letter\-of\-credit/\{letterofcreditid\}/demand\-payment/\{letterofcreditdemandpaymentid\}/update'
 
-### PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Update
+## PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Update
 
-**Description**
+:::info Path
+PUT: /LetterofCredit/\{letterofcreditid\}/SellerObligationConfirmation/\{sellerobligationconfirmationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of letters of credit to its corporate customers in support of their international trading requirements Update Seller Obligation Confirmation Task
 

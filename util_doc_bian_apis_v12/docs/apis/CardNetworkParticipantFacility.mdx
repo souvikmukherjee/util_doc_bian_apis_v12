@@ -1,23 +1,14 @@
 # CardNetworkParticipantFacility
 
-## Table of Contents
-- [POST: /CardNetworkParticipantFacility/Initiate](#post-/cardnetworkparticipantfacility/initiate)
-- [PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Update](#put-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/update)
-- [GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Retrieve](#get-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/retrieve)
-- [PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Update](#put-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantaccount/\{participantaccountid\}/update)
-- [PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Execute](#put-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantaccount/\{participantaccountid\}/execute)
-- [GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Retrieve](#get-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantaccount/\{participantaccountid\}/retrieve)
-- [PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Update](#put-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantservice/\{participantserviceid\}/update)
-- [PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Execute](#put-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantservice/\{participantserviceid\}/execute)
-- [PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Request](#put-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantservice/\{participantserviceid\}/request)
-- [GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Retrieve](#get-/cardnetworkparticipantfacility/\{cardnetworkparticipantfacilityid\}/participantservice/\{participantserviceid\}/retrieve)
-
-
 **BIAN Documentation:** [CardNetworkParticipantFacility v12](https://app.swaggerhub.com/apis/BIAN-3/CardNetworkParticipantFacility/12.0.0)
 
-### POST: /CardNetworkParticipantFacility/Initiate
+## POST: /CardNetworkParticipantFacility/Initiate
 
-**Description**
+:::info Path
+POST: /CardNetworkParticipantFacility/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. InCR Initiate a new network participant facility
 
@@ -31,9 +22,13 @@ POST: Following REST best practices\, the name of the path '/CardNetworkParticip
 
 A more appropriate name for this path could be something like '/card\-network\-participant\-facilities/initiations'\. This appropriately uses nouns to represent the resources in a more meaningful and consistent way according to REST principles\.
 
-### PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Update
+## PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. UpCR Update details for an active network participant facility
 
@@ -45,9 +40,13 @@ This API path allows you to update the details of an existing network participan
 
 PUT: The path '/CardNetworkParticipantFacilities/\{cardnetworkparticipantfacilityid\}' would likely be more in line with RESTful best practices\. This path represents a specific resource \(CardNetworkParticipantFacility\) and allows for retrieval\, updating\, or deleting of a specific instance based on the provided ID \(cardnetworkparticipantfacilityid\)\.
 
-### GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Retrieve
+## GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. ReCR Retrieve details about a network participant facility
 
@@ -60,9 +59,13 @@ This API path allows you to retrieve details about a specific Card Network Parti
 GET: Based on REST best practices\, the name of the path could be:  
 '/card\-network\-participant\-facilities/\{cardNetworkParticipantFacilityId\}'
 
-### PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Update
+## PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. UpBQ Update an account posting made to the network participant
 
@@ -80,9 +83,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This naming convention pluralizes the resource names \(CardNetworkParticipantFacilities and ParticipantAccounts\) to represent collections of resources\, and uses hyphens to separate words for better readability\. Additionally\, the 'Update' action should not be included in the path as RESTful URLs should focus on the resource itself rather than the
 
-### PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Execute
+## PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. ExBQ Execute a posting against the participant's account
 
@@ -96,9 +103,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 '/card\-network\-participant\-facilities/\{cardnetworkparticipantfacilityid\}/participant\-accounts/\{participantaccountid\}/execute'
 
-### GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Retrieve
+## GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantAccount/\{participantaccountid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. ReBQ Retrieve details about an account posting or account
 
@@ -114,9 +125,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /CardNetworkParticipantFacilities/\{cardnetworkparticipantfacilityid\}/ParticipantAccounts/\{participantaccountid\}
 \`\`\`
 
-### PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Update
+## PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. UpBQ Update details about a participant service request
 
@@ -130,9 +145,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/card\-network\-participant\-facilities/\{cardNetworkParticipantFacilityId\}/participant\-services/\{participantServiceId\}'
 
-### PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Execute
+## PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. ExBQ Execute an automated participant service request \(e\.g\. merchant alert\)
 
@@ -144,9 +163,13 @@ This API path allows you to update an existing participant service request withi
 
 PUT: A possible name for the path could be something like: '/card\-network\-participant\-facilities/\{cardnetworkparticipantfacilityid\}/participant\-services/\{participantserviceid\}/execute'\. This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and clearly indicating the hierarchy of resources\.
 
-### PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Request
+## PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Request
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. RqBQ Request manual intervention with a service request \(e\.g\. arbitration\)
 
@@ -162,9 +185,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /CardNetworkParticipantFacilities/\{cardnetworkparticipantfacilityid\}/ParticipantServices/\{participantserviceid\}/Requests
 \`\`\`
 
-### GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Retrieve
+## GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardNetworkParticipantFacility/\{cardnetworkparticipantfacilityid\}/ParticipantService/\{participantserviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the activities related to the inclusion of new Acquirers and Issuers in the Card Network\, their terms and conditions and their status\. ReBQ Retrieve details about participant service requests
 

@@ -1,35 +1,14 @@
 # CustomerRelationshipManagement
 
-## Table of Contents
-- [POST: /CustomerRelationshipManagement/Create](#post-/customerrelationshipmanagement/create)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Update](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/update)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Control](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/control)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Exchange](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/exchange)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Request](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/request)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Grant](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/grant)
-- [GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Retrieve](#get-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/retrieve)
-- [POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/Create](#post-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/development/create)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Update](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/development/\{developmentid\}/update)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Exchange](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/development/\{developmentid\}/exchange)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Request](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/development/\{developmentid\}/request)
-- [GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Retrieve](#get-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/development/\{developmentid\}/retrieve)
-- [POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/Create](#post-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/incident/create)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Update](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/incident/\{incidentid\}/update)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Control](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/incident/\{incidentid\}/control)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Exchange](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/incident/\{incidentid\}/exchange)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Capture](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/incident/\{incidentid\}/capture)
-- [GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Retrieve](#get-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/incident/\{incidentid\}/retrieve)
-- [POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/Create](#post-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/contact/create)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Update](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/contact/\{contactid\}/update)
-- [PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Request](#put-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/contact/\{contactid\}/request)
-- [GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve](#get-/customerrelationshipmanagement/\{customerrelationshipmanagementid\}/contact/\{contactid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerRelationshipManagement v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerRelationshipManagement/12.0.0)
 
-### POST: /CustomerRelationshipManagement/Create
+## POST: /CustomerRelationshipManagement/Create
 
-**Description**
+:::info Path
+POST: /CustomerRelationshipManagement/Create
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CrCR Create an initial relationship management plan
 
@@ -41,9 +20,13 @@ This API path \`/CustomerRelationshipManagement/Create\` allows users to create 
 
 POST: If the path '/CustomerRelationshipManagement/Create' followed REST best practices\, it should ideally be named as POST '/customers' because it follows the convention of using nouns \(customers\) to represent resources and using the HTTP method POST to create a new resource\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Update
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Update
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery UpCR Update details of an active relationship plan
 
@@ -55,9 +38,13 @@ This API path allows users to update details of an active customer relationship 
 
 PUT: The name of the path should be '/customers/\{customerId\}/relationships/\{relationshipId\}'\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Control
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Control
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CoCR Control the processing of a relationship plan \(e\.g\. suspend\)
 
@@ -76,9 +63,13 @@ Where:
 \- \{customerrelationshipmanagementid\} is a variable representing the specific id of the customer relationship management resource\.
 \- "control" is in lowercase to specify the specific action or resource related to control within the customer relationship management context\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Exchange
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Exchange
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery EcCR Accept\, verify\, reject aspects of the plan
 
@@ -92,9 +83,13 @@ PUT: The name of the path following REST best practices should be:
 
 '/customer\-relationship\-management/\{customerrelationshipmanagementid\}/exchange'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Request
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Request
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery RqCR Request intervention with a relationship plan \(e\.g\. arrange a customer meeting\)
 
@@ -108,9 +103,13 @@ PUT: A good name for the path '/CustomerRelationshipManagement/\{customerrelatio
 
 '/customer\-relationship\-managements/\{customerrelationshipmanagementid\}/requests'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Grant
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Grant
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery GrCR Grant authorization for actions that impact the plan \(e\.g\. qualify eligibility for a campaign\)
 
@@ -126,9 +125,13 @@ PUT: The name of the path should be:
 
 following REST best practices\.
 
-### GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Retrieve
+## GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery ReCR Retrieve details about a relationship plan
 
@@ -142,9 +145,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/customer\-relationship\-management/\{customerrelationshipmanagementid\}'
 
-### POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/Create
+## POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/Create
 
-**Description**
+:::info Path
+POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/Create
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CrBQ Create customer development capability  \(initialize the capability\)
 
@@ -158,9 +165,13 @@ POST: The name of the path should be:
 
 '/customer\-relationship\-managements/\{customer\-relationship\-management\-id\}/developments/create'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Update
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Update
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery UpBQ Update details about a relationship development task
 
@@ -174,9 +185,13 @@ PUT: The name of the path should be:
 
 '/customer\-relationship\-management/\{customerrelationshipmanagementid\}/development/\{developmentid\}'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Exchange
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Exchange
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery EcBQ Accept\, reject\, verify a development activity
 
@@ -190,9 +205,13 @@ PUT: A suitable name for the given path following REST best practices could be:
 
 '/customer\-relationship\-management/\{customerrelationshipmanagementid\}/development/\{developmentid\}/exchange'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Request
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Request
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery RqBQ Request a relationship development task
 
@@ -208,9 +227,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens to separate words in the path\. Additionally\, resource names should be plural nouns to indicate a collection of resources\.
 
-### GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Retrieve
+## GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Development/\{developmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery ReBQ Retrieve details about relationship development activity
 
@@ -224,9 +247,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/customers/\{customerid\}/developments/\{developmentid\}'
 
-### POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/Create
+## POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/Create
 
-**Description**
+:::info Path
+POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/Create
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CrBQ Create customer incident reporting capability \(initialize the capability\)
 
@@ -242,9 +269,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using plural nouns for resource names and maintains a clear hierarchy\. The use of plural nouns for the 'CustomerRelationshipManagements' and 'Incidents' resources helps to indicate that a collection of resources is being accessed\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Update
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Update
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery UpBQ Update details about a customer incident
 
@@ -257,9 +288,13 @@ This API path allows you to update details about a specific customer incident wi
 PUT: Based on REST best practices\, the following could be a good name for the path:
 '/customers/\{customerId\}/incidents/\{incidentId\}'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Control
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Control
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Control
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CoBQ Control the processing of a customer incident \(e\.g\. raise priority\)
 
@@ -275,9 +310,13 @@ PUT: The name of the REST resource should be based on the overarching concept it
 
 This path aligns with RESTful best practices by using plural nouns to represent collections and hierarchical structuring to convey the relationship between the resources\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Exchange
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Exchange
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery EcBQ Accept\, reject\, confirm details about a customer incident
 
@@ -290,9 +329,13 @@ This API path allows you to update details related to a customer incident within
 PUT: The name of the path should be:
 '/customers/\{customerId\}/incidents/\{incidentId\}/exchanges'
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Capture
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Capture
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CaBQ Capture details of a new customer incident
 
@@ -312,9 +355,13 @@ In this suggestion:
 \- 'incidents' represent a collection of incidents related to the customer relationship management entity\.
 \- '\{incident
 
-### GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Retrieve
+## GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Incident/\{incidentid\}/Retrieve
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery ReBQ Retrieve details about a customer incident
 
@@ -330,9 +377,13 @@ GET /customer\-relationship\-management/\{customer\_relationship\_management\_id
 
 In this path\, the resources are represented in a more user\-friendly format using hyphens\, and the IDs are in lowercase to improve readability and maintain consistency\.
 
-### POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/Create
+## POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/Create
 
-**Description**
+:::info Path
+POST: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/Create
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery CrBQ Create contact handling capability \(initialize and track\)
 
@@ -348,9 +399,13 @@ POST: The name of the path following REST best practices would be:
 
 RESTful paths should be in lowercase and use hyphens to separate words for better readability and consistency\. Also\, it is recommended to pluralize resource names in the path\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Update
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Update
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery UpCR Update details of a customer contact
 
@@ -366,9 +421,13 @@ PUT: The name of the path should be:
 
 In RESTful design\, it's best practice to use lowercase letters for path segments and use plural nouns for collections \(e\.g\.\, 'contacts' instead of 'contact'\)\. Also\, the 'update' action is typically represented by an HTTP method like PUT or PATCH on the resource identified by the URI above\, instead of including it in the URI itself\.
 
-### PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Request
+## PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Request
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery RqBQ Request a customer contact
 
@@ -381,9 +440,13 @@ This BIAN API path allows you to update a request for customer contact within th
 PUT: The name of the path should be:
 '/customer\-relationship\-management/\{customerrelationshipmanagementid\}/contacts/\{contactid\}/requests'
 
-### GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve
+## GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerRelationshipManagement/\{customerrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve
+:::
+
+### Description
 
 This service domain develops and executes a customer plan to maintain and build a customer relationship\. Activities include ongoing customer contact\, tracking internal and external events and activity of interest and relevance\, product and service matching and sales\, processing ad\-hoc queries\, trouble shooting and issue resolution including the initial phases of troubled account recovery ReBQ Retrieve details about customer contacts
 

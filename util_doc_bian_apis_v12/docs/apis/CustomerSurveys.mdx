@@ -1,32 +1,14 @@
 # CustomerSurveys
 
-## Table of Contents
-- [POST: /CustomerSurveys/Initiate](#post-/customersurveys/initiate)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Update](#put-/customersurveys/\{customersurveysid\}/update)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Request](#put-/customersurveys/\{customersurveysid\}/request)
-- [GET: /CustomerSurveys/\{customersurveysid\}/Retrieve](#get-/customersurveys/\{customersurveysid\}/retrieve)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Update](#put-/customersurveys/\{customersurveysid\}/definition/\{definitionid\}/update)
-- [GET: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Retrieve](#get-/customersurveys/\{customersurveysid\}/definition/\{definitionid\}/retrieve)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Update](#put-/customersurveys/\{customersurveysid\}/reviewerselection/\{reviewerselectionid\}/update)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Request](#put-/customersurveys/\{customersurveysid\}/reviewerselection/\{reviewerselectionid\}/request)
-- [GET: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Retrieve](#get-/customersurveys/\{customersurveysid\}/reviewerselection/\{reviewerselectionid\}/retrieve)
-- [POST: /CustomerSurveys/\{customersurveysid\}/Execution/Initiate](#post-/customersurveys/\{customersurveysid\}/execution/initiate)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Update](#put-/customersurveys/\{customersurveysid\}/execution/\{executionid\}/update)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Capture](#put-/customersurveys/\{customersurveysid\}/execution/\{executionid\}/capture)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Execute](#put-/customersurveys/\{customersurveysid\}/execution/\{executionid\}/execute)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Request](#put-/customersurveys/\{customersurveysid\}/execution/\{executionid\}/request)
-- [GET: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Retrieve](#get-/customersurveys/\{customersurveysid\}/execution/\{executionid\}/retrieve)
-- [POST: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/Initiate](#post-/customersurveys/\{customersurveysid\}/surveyanalysis/initiate)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Update](#put-/customersurveys/\{customersurveysid\}/surveyanalysis/\{surveyanalysisid\}/update)
-- [PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Request](#put-/customersurveys/\{customersurveysid\}/surveyanalysis/\{surveyanalysisid\}/request)
-- [GET: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Retrieve](#get-/customersurveys/\{customersurveysid\}/surveyanalysis/\{surveyanalysisid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerSurveys v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerSurveys/12.0.0)
 
-### POST: /CustomerSurveys/Initiate
+## POST: /CustomerSurveys/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerSurveys/Initiate
+:::
+
+### Description
 
 Define and execute and analyze customer surveys InCR Initiate customer survey processing
 
@@ -38,9 +20,13 @@ This BIAN API path allows you to create and initiate customer surveys\. It is us
 
 POST: Following REST best practices\, the path '/CustomerSurveys/Initiate' should be named using nouns to represent a resource\. A more appropriate name for this path based on REST conventions could be '/customer\-surveys'\.
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Update
+## PUT: /CustomerSurveys/\{customersurveysid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Update
+:::
+
+### Description
 
 Define and execute and analyze customer surveys UpCR Update details of an active customer survey process
 
@@ -52,9 +38,13 @@ This API path allows you to update details of an active customer survey process\
 
 PUT: Based on REST best practices\, the name of the path should be \`/CustomerSurveys/\{customersurveysid\}\` for updating a specific customer survey resource\.
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Request
+## PUT: /CustomerSurveys/\{customersurveysid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Request
+:::
+
+### Description
 
 Define and execute and analyze customer surveys RqCR Request manual intervention to the survey process
 
@@ -68,9 +58,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/CustomerSurveys/\{customersurveysid\}/Requests'
 
-### GET: /CustomerSurveys/\{customersurveysid\}/Retrieve
+## GET: /CustomerSurveys/\{customersurveysid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerSurveys/\{customersurveysid\}/Retrieve
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ReCR Retrieve details about a customer survey process
 
@@ -84,9 +78,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/customersurveys/\{customersurveysid\}'
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Update
+## PUT: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Update
+:::
+
+### Description
 
 Define and execute and analyze customer surveys UpBQ Update aspects of a customer survey definition/specification
 
@@ -100,9 +98,13 @@ PUT: A suitable name for the given path following REST best practices could be:
 
 '/customer\-surveys/\{customersurveysid\}/definition/\{definitionid\}/update'
 
-### GET: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Retrieve
+## GET: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerSurveys/\{customersurveysid\}/Definition/\{definitionid\}/Retrieve
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ReBQ Retrieve details about customer survey related activity
 
@@ -116,9 +118,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /customer\-surveys/\{customersurveysid\}/definitions/\{definitionid\}
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Update
+## PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Update
+:::
+
+### Description
 
 Define and execute and analyze customer surveys UpBQ Update reviewer selection details
 
@@ -136,9 +142,13 @@ A better name for the path could be:
 
 This path signifies the specific Resource/Entity being targeted and can convey the action of updating by using appropriate HTTP methods\, such as PUT/PATCH\.
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Request
+## PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Request
+:::
+
+### Description
 
 Define and execute and analyze customer surveys RqBQ Request manual intervention in survey reviewer selection
 
@@ -152,9 +162,13 @@ PUT: A suitable name for the path '/CustomerSurveys/\{customersurveysid\}/Review
 
 '/customer\-surveys/\{customersurveysid\}/reviewer\-selection/\{reviewerselectionid\}/request'
 
-### GET: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Retrieve
+## GET: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselectionid\}/Retrieve
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ReBQ Retrieve details about survey reviewer selection activity
 
@@ -172,9 +186,13 @@ GET /CustomerSurveys/\{customersurveysid\}/ReviewerSelection/\{reviewerselection
 
 This name follows the convention of using HTTP methods \(in this case\, GET\) to represent the action of retrieving a specific reviewer selection under a particular customer survey\.
 
-### POST: /CustomerSurveys/\{customersurveysid\}/Execution/Initiate
+## POST: /CustomerSurveys/\{customersurveysid\}/Execution/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerSurveys/\{customersurveysid\}/Execution/Initiate
+:::
+
+### Description
 
 Define and execute and analyze customer surveys InBQ Initiate customer survey execution task
 
@@ -188,9 +206,13 @@ POST: The name for the path '/CustomerSurveys/\{customersurveysid\}/Execution/In
 
 '/customer\-surveys/\{customersurveysid\}/executions'
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Update
+## PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Update
+:::
+
+### Description
 
 Define and execute and analyze customer surveys UpBQ Update details of a survey execution task
 
@@ -204,9 +226,13 @@ PUT: A suitable name for the path '/CustomerSurveys/\{customersurveysid\}/Execut
 
 PATCH /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Capture
+## PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Capture
+:::
+
+### Description
 
 Define and execute and analyze customer surveys CaBQ Capture input from a survey execution task
 
@@ -219,9 +245,13 @@ This API path is used to update or modify the data captured during the execution
 PUT: The name of the path should be:
 '/customer\-surveys/\{customer\-survey\-id\}/execution/\{execution\-id\}/capture'
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Execute
+## PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Execute
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ExBQ Execute an automated action for survey execution
 
@@ -235,9 +265,13 @@ PUT: A possible name for the path could be:
 \`/customer\-surveys/\{customerSurveyId\}/execution/\{executionId\}/execute\`  
 The key REST best practices followed in this naming convention include using lowercase letters\, using hyphens to separate words\, and using plural nouns for collections\.
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Request
+## PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Request
+:::
+
+### Description
 
 Define and execute and analyze customer surveys RqBQ Request manual intervention in survey execution
 
@@ -251,9 +285,13 @@ PUT: Based on REST best practices\, the name of the path for the endpoint should
 
 \`/customer\-surveys/\{customerSurveysId\}/execution/\{executionId\}/request\`
 
-### GET: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Retrieve
+## GET: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerSurveys/\{customersurveysid\}/Execution/\{executionid\}/Retrieve
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ReBQ Retrieve details about customer survey execution activity
 
@@ -269,9 +307,13 @@ GET: Based on REST best practices\, the name of the path should be as follows:
 
 This naming convention uses lowercase letters\, separates words with hyphens\, and uses plural forms for resource names where applicable\.
 
-### POST: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/Initiate
+## POST: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/Initiate
+:::
+
+### Description
 
 Define and execute and analyze customer surveys InBQ Initiate survey result consolidation and analysis
 
@@ -285,9 +327,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 '/customer\-surveys/\{customersurveysid\}/survey\-analysis/initiate'
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Update
+## PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Update
+:::
+
+### Description
 
 Define and execute and analyze customer surveys UpBQ Update details about customer survey analysis
 
@@ -303,9 +349,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, we use lowercase letters and hyphens to separate words in the URL path\. Additionally\, resource names should generally be in plural form\.
 
-### PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Request
+## PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Request
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ReBQ Request manual intervention in survey analysis
 
@@ -319,9 +369,13 @@ PUT: The name of the path should be:
 
 '/customer\-surveys/\{customerSurveysId\}/survey\-analysis/\{surveyAnalysisId\}/request'
 
-### GET: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Retrieve
+## GET: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerSurveys/\{customersurveysid\}/SurveyAnalysis/\{surveyanalysisid\}/Retrieve
+:::
+
+### Description
 
 Define and execute and analyze customer surveys ReBQ Retrieve details about a customer survey analysis
 

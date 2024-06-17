@@ -1,25 +1,14 @@
 # CustomerCampaignExecution
 
-## Table of Contents
-- [POST: /CustomerCampaignExecution/Initiate](#post-/customercampaignexecution/initiate)
-- [GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Retrieve](#get-/customercampaignexecution/\{customercampaignexecutionid\}/retrieve)
-- [PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update](#put-/customercampaignexecution/\{customercampaignexecutionid\}/candidateselection/\{candidateselectionid\}/update)
-- [GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve](#get-/customercampaignexecution/\{customercampaignexecutionid\}/candidateselection/\{candidateselectionid\}/retrieve)
-- [POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/Initiate](#post-/customercampaignexecution/\{customercampaignexecutionid\}/execution/initiate)
-- [PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Update](#put-/customercampaignexecution/\{customercampaignexecutionid\}/execution/\{executionid\}/update)
-- [PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Request](#put-/customercampaignexecution/\{customercampaignexecutionid\}/execution/\{executionid\}/request)
-- [GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Retrieve](#get-/customercampaignexecution/\{customercampaignexecutionid\}/execution/\{executionid\}/retrieve)
-- [POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/Initiate](#post-/customercampaignexecution/\{customercampaignexecutionid\}/analysisfeedback/initiate)
-- [PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update](#put-/customercampaignexecution/\{customercampaignexecutionid\}/analysisfeedback/\{analysisfeedbackid\}/update)
-- [PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request](#put-/customercampaignexecution/\{customercampaignexecutionid\}/analysisfeedback/\{analysisfeedbackid\}/request)
-- [GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve](#get-/customercampaignexecution/\{customercampaignexecutionid\}/analysisfeedback/\{analysisfeedbackid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerCampaignExecution v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerCampaignExecution/12.0.0)
 
-### POST: /CustomerCampaignExecution/Initiate
+## POST: /CustomerCampaignExecution/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerCampaignExecution/Initiate
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact InCR Initiate customer campaign processing
 
@@ -31,9 +20,13 @@ This BIAN API path allows users to initiate the execution of a customer campaign
 
 POST: The name of the path should be \`/campaigns\`\.
 
-### GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Retrieve
+## GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Retrieve
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact ReCR Retrieve details about an active customer campaign
 
@@ -49,9 +42,13 @@ GET /customer\-campaign\-executions/\{customercampaignexecutionid\}
 
 The path should be in lowercase and use hyphens to separate words for better readability and consistency\.
 
-### PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update
+## PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact UpBQ Update a campaign candidate list
 
@@ -65,9 +62,13 @@ PUT: Following REST best practices\, the path could be named as:
 
 '/customer\-campaign\-executions/\{customerCampaignExecutionId\}/candidate\-selections/\{candidateSelectionId\}'
 
-### GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve
+## GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact ReBQ Retrieve details about a campaign candidate list
 
@@ -80,9 +81,13 @@ This API path retrieves information about a specific campaign candidate list tha
 GET: Following REST best practices\, the name of the path should be:
 '/customer\-campaign\-executions/\{customer\_campaign\_execution\_id\}/candidate\-selections/\{candidate\_selection\_id\}/retrieval'
 
-### POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/Initiate
+## POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/Initiate
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact InBQ Initiate a campaign execution task
 
@@ -96,9 +101,13 @@ POST: A more RESTful name for the path '/CustomerCampaignExecution/\{customercam
 
 This naming convention follows REST best practices by using lowercase letters\, using hyphens to separate words\, and using plural nouns for resources\.
 
-### PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Update
+## PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Update
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact UpBQ Update details of a campaign execution task
 
@@ -112,9 +121,13 @@ PUT: The following path closely follows REST best practices:
 
 '/customer\-campaign\-executions/\{customerCampaignExecutionId\}/executions/\{executionId\}'
 
-### PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Request
+## PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Request
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact RqBQ Request manual intervention in a campaign execution task
 
@@ -127,9 +140,13 @@ This BIAN API path allows you to update an existing resource related to executin
 PUT: Following REST best practices\, the name of the path should be:
 '/customer\-campaign\-executions/\{customercampaignexecutionid\}/executions/\{executionid\}/request'
 
-### GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Retrieve
+## GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/Execution/\{executionid\}/Retrieve
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact ReBQ Retrieve details about a campaign execution task
 
@@ -145,9 +162,13 @@ GET: Based on REST best practices\, the name of the path should be:
 GET /customer\-campaign\-executions/\{customercampaignexecutionid\}/executions/\{executionid\}
 \`\`\`
 
-### POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/Initiate
+## POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/Initiate
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact InBQ Initiate campaign execution analysis
 
@@ -159,9 +180,13 @@ This BIAN API path is used to initiate the analysis feedback for executing a cus
 
 POST: The name of the path should be: '/customer\-campaign\-executions/\{customercampaignexecutionid\}/analysis\-feedback/initiate'
 
-### PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update
+## PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact UpBQ Update details of campaign execution activity/performance analysis
 
@@ -177,9 +202,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for resources \(customer\-campaign\-executions and analysis\-feedback\)\. The use of curly braces \{\} indicates variable parts of the path\.
 
-### PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request
+## PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact ReBQ Request manual intervention in campaign analysis
 
@@ -196,9 +225,13 @@ Here are the reasons for the chosen path name:
 2\. Plural nouns are used for the collection resources \(customer\-campaign\-executions and analysis\-feedbacks\)\.
 3\. The specific resource IDs \(customercampaignexecutionid and analysisfeedbackid\) are included in
 
-### GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve
+## GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCampaignExecution/\{customercampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve
+:::
+
+### Description
 
 Execute a customer campaign \(version\) and track and respond to impact ReBQ Retrieve details about customer campaign analysis activity
 

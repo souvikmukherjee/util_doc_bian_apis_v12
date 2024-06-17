@@ -1,20 +1,14 @@
 # InvestmentPortfolioAnalysis
 
-## Table of Contents
-- [POST: /InvestmentPortfolioAnalysis/Evaluate](#post-/investmentportfolioanalysis/evaluate)
-- [PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Execute](#put-/investmentportfolioanalysis/\{investmentportfolioanalysisid\}/execute)
-- [PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Request](#put-/investmentportfolioanalysis/\{investmentportfolioanalysisid\}/request)
-- [GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Retrieve](#get-/investmentportfolioanalysis/\{investmentportfolioanalysisid\}/retrieve)
-- [PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute](#put-/investmentportfolioanalysis/\{investmentportfolioanalysisid\}/performanceanalysis/\{performanceanalysisid\}/execute)
-- [PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request](#put-/investmentportfolioanalysis/\{investmentportfolioanalysisid\}/performanceanalysis/\{performanceanalysisid\}/request)
-- [GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve](#get-/investmentportfolioanalysis/\{investmentportfolioanalysisid\}/performanceanalysis/\{performanceanalysisid\}/retrieve)
-
-
 **BIAN Documentation:** [InvestmentPortfolioAnalysis v12](https://app.swaggerhub.com/apis/BIAN-3/InvestmentPortfolioAnalysis/12.0.0)
 
-### POST: /InvestmentPortfolioAnalysis/Evaluate
+## POST: /InvestmentPortfolioAnalysis/Evaluate
 
-**Description**
+:::info Path
+POST: /InvestmentPortfolioAnalysis/Evaluate
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance EvCR perform an evaluation of an investment portfolio
 
@@ -26,9 +20,13 @@ This API path allows you to create a new resource for assessing and reporting on
 
 POST: Following REST best practices\, the name of the path should be something that represents a resource\, rather than an action\. A more appropriate name for the path '/InvestmentPortfolioAnalysis/Evaluate' could be something like '/investment\-portfolios' to represent the collection of investment portfolios or '/evaluate' to represent the evaluation process as a resource\. Choose a name that describes the resource being accessed or manipulated rather than the action being performed\.
 
-### PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Execute
+## PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Execute
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance ExCR Execute an automated task for a evaluation
 
@@ -40,9 +38,13 @@ This BIAN API path allows you to update an existing resource for Investment Port
 
 PUT: A RESTful name for this path could be '/investment\-portfolios/\{investmentportfolioanalysisid\}/execute'\.
 
-### PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Request
+## PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Request
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance RqCR Request manual intervention for an evaluation
 
@@ -54,9 +56,13 @@ This API path allows you to update a specific investment portfolio analysis by r
 
 PUT: The name of the path should be \`/investment\-portfolio\-analyses/\{investmentportfolioanalysisid\}/requests\` in kebab case\. This path follows the REST best practices by using lowercase letters and hyphens to separate words in the URL\.
 
-### GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Retrieve
+## GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/Retrieve
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance ReCR Retrieve details about an investment portfolio analysis
 
@@ -70,9 +76,13 @@ GET: The name of the path should be:
 
 '/investment\-portfolio\-analysis/\{investmentportfolioanalysisid\}'
 
-### PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
+## PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance ExBQ Execute an automated task for a specific type of analysis
 
@@ -92,9 +102,13 @@ In this naming convention:
 \- Path parameters are in curly braces and use camelCase\.
 \- The path segments are named in a way that is consistent with the resource they represent\.
 
-### PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
+## PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance RqBQ Request manual intervention for a specific type of analysis
 
@@ -108,9 +122,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /InvestmentPortfolios/\{investmentportfolioanalysisid\}/PerformanceAnalyses/\{performanceanalysisid\}/Requests
 
-### GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
+## GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioAnalysis/\{investmentportfolioanalysisid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
+:::
+
+### Description
 
 Assess and report on investment portfolio make\-up\, valuation and performance ReBQ Retrieve details about a specific type of investment portfolio analysis
 

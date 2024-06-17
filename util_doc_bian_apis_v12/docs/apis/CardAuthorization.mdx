@@ -1,23 +1,14 @@
 # CardAuthorization
 
-## Table of Contents
-- [POST: /CardAuthorization/Evaluate](#post-/cardauthorization/evaluate)
-- [PUT: /CardAuthorization/\{cardauthorizationid\}/Update](#put-/cardauthorization/\{cardauthorizationid\}/update)
-- [GET: /CardAuthorization/\{cardauthorizationid\}/Retrieve](#get-/cardauthorization/\{cardauthorizationid\}/retrieve)
-- [PUT: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Update](#put-/cardauthorization/\{cardauthorizationid\}/devicecheck/\{devicecheckid\}/update)
-- [GET: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Retrieve](#get-/cardauthorization/\{cardauthorizationid\}/devicecheck/\{devicecheckid\}/retrieve)
-- [PUT: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Update](#put-/cardauthorization/\{cardauthorizationid\}/authentication/\{authenticationid\}/update)
-- [GET: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Retrieve](#get-/cardauthorization/\{cardauthorizationid\}/authentication/\{authenticationid\}/retrieve)
-- [GET: /CardAuthorization/\{cardauthorizationid\}/CreditCheck/\{creditcheckid\}/Retrieve](#get-/cardauthorization/\{cardauthorizationid\}/creditcheck/\{creditcheckid\}/retrieve)
-- [GET: /CardAuthorization/\{cardauthorizationid\}/FraudCheck/\{fraudcheckid\}/Retrieve](#get-/cardauthorization/\{cardauthorizationid\}/fraudcheck/\{fraudcheckid\}/retrieve)
-- [GET: /CardAuthorization/\{cardauthorizationid\}/StandIn/\{standinid\}/Retrieve](#get-/cardauthorization/\{cardauthorizationid\}/standin/\{standinid\}/retrieve)
-
-
 **BIAN Documentation:** [CardAuthorization v12](https://app.swaggerhub.com/apis/BIAN-3/CardAuthorization/12.0.0)
 
-### POST: /CardAuthorization/Evaluate
+## POST: /CardAuthorization/Evaluate
 
-**Description**
+:::info Path
+POST: /CardAuthorization/Evaluate
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. EvCR Evaluate a card transaction authorization assessment
 
@@ -31,9 +22,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 \`POST /card\-authorizations\`
 
-### PUT: /CardAuthorization/\{cardauthorizationid\}/Update
+## PUT: /CardAuthorization/\{cardauthorizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardAuthorization/\{cardauthorizationid\}/Update
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. UpCR Update details of a card transaction authorization assessment
 
@@ -51,9 +46,13 @@ PUT: The name of the path should be:
 
 In RESTful API design\, it is recommended to use plural nouns for resource names\. In this case\, "CardAuthorizations" is more appropriate than "CardAuthorization"\. The specific action of updating a card authorization resource can be indicated by using the HTTP verb \`PUT\` when making a request to this endpoint\.
 
-### GET: /CardAuthorization/\{cardauthorizationid\}/Retrieve
+## GET: /CardAuthorization/\{cardauthorizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardAuthorization/\{cardauthorizationid\}/Retrieve
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. ReCR Retrieve details about an active car transaction authorization task
 
@@ -65,9 +64,13 @@ This BIAN API path allows you to retrieve details about an active card transacti
 
 GET: Based on REST best practices\, the path '/CardAuthorization/\{cardauthorizationid\}/Retrieve' can be rephrased as '/card\-authorizations/\{cardauthorizationid\}'\. This naming convention uses lowercase letters\, separates words with hyphens\, and provides a clear and descriptive structure that follows RESTful principles\.
 
-### PUT: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Update
+## PUT: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Update
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. UpBQ Update details for the device check
 
@@ -89,9 +92,13 @@ Here's a breakdown of the naming conventions used:
 \- Use nouns to represent resources
 \- Avoid imperative verbs like "Update" since RESTful APIs use HTTP methods \(PUT\, PATCH\, etc
 
-### GET: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Retrieve
+## GET: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardAuthorization/\{cardauthorizationid\}/DeviceCheck/\{devicecheckid\}/Retrieve
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. ReBQ Retrieve details about the device check
 
@@ -105,9 +112,13 @@ GET: The name of the path should be:
 
 "/card\-authorizations/\{cardauthorizationid\}/device\-checks/\{devicecheckid\}"
 
-### PUT: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Update
+## PUT: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Update
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. UpBQ Update details for the card holder authentication check
 
@@ -121,9 +132,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/card\-authorizations/\{cardauthorizationid\}/authentications/\{authenticationid\}'
 
-### GET: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Retrieve
+## GET: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardAuthorization/\{cardauthorizationid\}/Authentication/\{authenticationid\}/Retrieve
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. ReBQ Retrieve details about the card holder authentication check
 
@@ -139,9 +154,13 @@ GET: Based on REST best practices\, the name of the path should reflect the reso
 
 This naming convention uses lowercase letters and hyphens to separate words in the path\, making it more readable and consistent with RESTful guidelines\.
 
-### GET: /CardAuthorization/\{cardauthorizationid\}/CreditCheck/\{creditcheckid\}/Retrieve
+## GET: /CardAuthorization/\{cardauthorizationid\}/CreditCheck/\{creditcheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardAuthorization/\{cardauthorizationid\}/CreditCheck/\{creditcheckid\}/Retrieve
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. ReBQ Retrieve details about the credit check
 
@@ -157,9 +176,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /CardAuthorizations/\{cardauthorizationid\}/CreditChecks/\{creditcheckid\}
 \`\`\`
 
-### GET: /CardAuthorization/\{cardauthorizationid\}/FraudCheck/\{fraudcheckid\}/Retrieve
+## GET: /CardAuthorization/\{cardauthorizationid\}/FraudCheck/\{fraudcheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardAuthorization/\{cardauthorizationid\}/FraudCheck/\{fraudcheckid\}/Retrieve
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. ReBQ Retrieve details about the fraud check
 
@@ -175,9 +198,13 @@ GET: Following REST best practices\, the name of the path should be:
 /CardAuthorizations/\{cardauthorizationid\}/FraudChecks/\{fraudcheckid\}
 \`\`\`
 
-### GET: /CardAuthorization/\{cardauthorizationid\}/StandIn/\{standinid\}/Retrieve
+## GET: /CardAuthorization/\{cardauthorizationid\}/StandIn/\{standinid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardAuthorization/\{cardauthorizationid\}/StandIn/\{standinid\}/Retrieve
+:::
+
+### Description
 
 This service domain is responsible for the real time card authorization decisions for credit/charge cards\. ReBQ Retrieve details about the stand in check
 

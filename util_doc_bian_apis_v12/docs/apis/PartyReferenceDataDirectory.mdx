@@ -1,30 +1,14 @@
 # PartyReferenceDataDirectory
 
-## Table of Contents
-- [POST: /PartyReferenceDataDirectory/Register](#post-/partyreferencedatadirectory/register)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Update](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/update)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Control](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/control)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Request](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/request)
-- [GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Retrieve](#get-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/retrieve)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Exchange](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/exchange)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Execute](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/execute)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Exchange](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/demographics/\{demographicsid\}/exchange)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Update](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/reference/\{referenceid\}/update)
-- [GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Retrieve](#get-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/reference/\{referenceid\}/retrieve)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Update](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/associations/\{associationsid\}/update)
-- [GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Retrieve](#get-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/associations/\{associationsid\}/retrieve)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Update](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/demographics/\{demographicsid\}/update)
-- [GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Retrieve](#get-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/demographics/\{demographicsid\}/retrieve)
-- [PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Update](#put-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/bankrelations/\{bankrelationsid\}/update)
-- [GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Retrieve](#get-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/bankrelations/\{bankrelationsid\}/retrieve)
-- [POST: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/Register](#post-/partyreferencedatadirectory/\{partyreferencedatadirectoryid\}/associations/register)
-
-
 **BIAN Documentation:** [PartyReferenceDataDirectory v12](https://app.swaggerhub.com/apis/BIAN-3/PartyReferenceDataDirectory/12.0.0)
 
-### POST: /PartyReferenceDataDirectory/Register
+## POST: /PartyReferenceDataDirectory/Register
 
-**Description**
+:::info Path
+POST: /PartyReferenceDataDirectory/Register
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information InCR Register a customer entity in the catalog
 
@@ -36,9 +20,13 @@ This BIAN API path allows you to create and register a new customer entity in th
 
 POST: If the path '/PartyReferenceDataDirectory/Register' were following REST best practices\, it would ideally be named in a more resource\-oriented manner\. A more appropriate naming convention for this path could be '/party\-reference\-data/register'\. This naming scheme uses lowercase letters and dash separators\, which is a common convention for RESTful API paths\.
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Update
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Update
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information UpCR Update details about the customer's directory entry
 
@@ -50,9 +38,13 @@ This BIAN API path allows you to update information about a specific party refer
 
 PUT: The path "/PartyReferenceDataDirectories/\{partyReferenceDataDirectoryId\}" would be more aligned with REST best practices\.
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Control
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Control
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Control
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information CoCR Control the handling of a customer entry \(e\.g\. terminate\)
 
@@ -66,9 +58,13 @@ PUT: Based on REST best practices\, a more suitable name for the path '/PartyRef
 
 '/PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Settings'
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Request
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Request
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Request
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information RqCR Request manual intervention with an entry \(e\.g\. refresh content\)
 
@@ -81,9 +77,13 @@ This BIAN API path allows you to update existing party reference data directory 
 PUT: Following REST best practices\, the name of the path should be:
 '/party\-reference\-data\-directory/\{partyreferencedatadirectoryid\}/request'
 
-### GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Retrieve
+## GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information ReCR Retrieve details about a customer directory entry
 
@@ -95,9 +95,13 @@ This BIAN API path allows you to retrieve specific details about a customer dire
 
 GET: The name of the path should be '/party\-reference\-data\-directory/\{partyreferencedatadirectoryid\}'\.
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Exchange
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information EcCR Accept\, verify\, reject a directory entry
 
@@ -110,9 +114,13 @@ This API path allows you to update an existing entry in the Party Reference Data
 PUT: The name of the path could be:
 '/party\-reference\-data\-directories/\{party\-reference\-data\-directory\-id\}/exchanges'
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Execute
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Execute
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information ExCR Execute an automated action against an entry
 
@@ -130,9 +138,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, use plural nouns for resource names\, include the specific resource identifier \(partyreferencedatadirectoryid\)\, and use the "actions" subpath to indicate an action to be performed\.
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Exchange
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information EcBQ Accept\, verify\, reject etc\. details of a customer directory entry
 
@@ -146,9 +158,13 @@ PUT: Following REST best practices\, the name of the path could be:
 
 /party\-reference\-data\-directory/\{partyReferenceDataDirectoryId\}/demographics/\{demographicsId\}/exchange
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Update
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Update
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information UpBQ Update details about a reference entry for the customer
 
@@ -160,9 +176,13 @@ This API path allows you to update specific details about a reference entry rela
 
 PUT: The name of the path can be \`/party\-reference\-data\-directories/\{partyreferencedatadirectoryid\}/references/\{referenceid\}\` based on REST best practices\.
 
-### GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Retrieve
+## GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Reference/\{referenceid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information ReBQ Retrieve details about reference entries in the directory
 
@@ -176,9 +196,13 @@ GET: Based on RESTful best practices\, a more appropriate name for the path woul
 
 '/party\-reference\-data\-directory/\{partyreferencedatadirectoryid\}/reference/\{referenceid\}'
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Update
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Update
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information UpBQ Update details about an association entry for the customer
 
@@ -196,9 +220,13 @@ PUT: The name of the path should be:
 
 Assuming that "Associations" is a sub\-resource of "PartyReferenceDataDirectories"\, "partyReferenceDataDirectoryId" is the identifier for a specific Party Reference Data Directory\, and "associationsId" is the identifier for a specific association within that directory\.
 
-### GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Retrieve
+## GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/\{associationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information ReBQ Retrieve details about association entries in the directory record
 
@@ -212,9 +240,13 @@ GET: The name of the path should be:
 
 GET /party\-reference\-data\-directory/\{partyreferencedatadirectoryid\}/associations/\{associationsid\}
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Update
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Update
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information UpBQ Update details about a customer's demographic entry
 
@@ -230,9 +262,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The verb "Update" is typically not included in the path as it represents the action to be performed on the resource\, which can be indicated using the appropriate HTTP method \(e\.g\.\, PUT or PATCH\) when making the request\.
 
-### GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Retrieve
+## GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Demographics/\{demographicsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information ReBQ Retrieve details about customer demographics entries in the directory
 
@@ -245,9 +281,13 @@ This BIAN API path allows you to retrieve information about a specific customer'
 GET: The name of the path according to REST best practices could be:  
 GET /party\-reference\-data\-directory/\{party\-reference\-data\-directory\-id\}/demographics/\{demographics\-id\}
 
-### PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Update
+## PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Update
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information UpBQ Update details about a customer's bank relations entry for the customer
 
@@ -263,9 +303,13 @@ PATCH /party\-reference\-data\-directory/\{partyreferencedatadirectoryid\}/bank\
 
 This path utilizes the PATCH method to update specific details of a bank relation within a party reference data directory\. The use of hyphens for multi\-word identifiers and lowercase letters for consistency with REST conventions is also included\.
 
-### GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Retrieve
+## GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information ReBQ Retrieve details about customer bank relations entries in the directory
 
@@ -281,9 +325,13 @@ GET: Based on REST best practices\, the name of the path should indicate the res
 /PartyReferenceDataDirectories/\{partyreferencedatadirectoryid\}/BankRelations/\{bankrelationsid\}/Retrieve
 \`\`\`
 
-### POST: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/Register
+## POST: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/Register
 
-**Description**
+:::info Path
+POST: /PartyReferenceDataDirectory/\{partyreferencedatadirectoryid\}/Associations/Register
+:::
+
+### Description
 
 This service domain maintains a range of party reference information covering aspects including general reference details\, contacts and associations and demographic information Capture Association Details
 

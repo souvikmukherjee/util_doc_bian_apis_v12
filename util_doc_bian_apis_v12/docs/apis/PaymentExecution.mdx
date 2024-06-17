@@ -1,19 +1,14 @@
 # PaymentExecution
 
-## Table of Contents
-- [POST: /PaymentExecution/Initiate](#post-/paymentexecution/initiate)
-- [PUT: /PaymentExecution/\{paymentexecutionid\}/Update](#put-/paymentexecution/\{paymentexecutionid\}/update)
-- [GET: /PaymentExecution/\{paymentexecutionid\}/Retrieve](#get-/paymentexecution/\{paymentexecutionid\}/retrieve)
-- [GET: /PaymentExecution/\{paymentexecutionid\}/PaymentMechanism/\{paymentmechanismid\}/Retrieve](#get-/paymentexecution/\{paymentexecutionid\}/paymentmechanism/\{paymentmechanismid\}/retrieve)
-- [PUT: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Control](#put-/paymentexecution/\{paymentexecutionid\}/paymentexecution/\{paymentexecutionid\}/control)
-- [GET: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Retrieve](#get-/paymentexecution/\{paymentexecutionid\}/paymentexecution/\{paymentexecutionid\}/retrieve)
-
-
 **BIAN Documentation:** [PaymentExecution v12](https://app.swaggerhub.com/apis/BIAN-3/PaymentExecution/12.0.0)
 
-### POST: /PaymentExecution/Initiate
+## POST: /PaymentExecution/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentExecution/Initiate
+:::
+
+### Description
 
 This service domains processes the movement of funds between accounts within the bank or to/from an account held with another bank\, selecting the appropriate payment mechanism InCR Initiate a payment execution procedure
 
@@ -25,9 +20,13 @@ This API path allows you to initiate a payment execution procedure within a bank
 
 POST: If the path '/PaymentExecution/Initiate' were following REST best practices\, it could be renamed to something like '/payments/initiate'\. This name reflects the resource being accessed \('payments'\) and the action being performed \('initiate'\)\, which is a more standard naming convention in RESTful APIs\.
 
-### PUT: /PaymentExecution/\{paymentexecutionid\}/Update
+## PUT: /PaymentExecution/\{paymentexecutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentExecution/\{paymentexecutionid\}/Update
+:::
+
+### Description
 
 This service domains processes the movement of funds between accounts within the bank or to/from an account held with another bank\, selecting the appropriate payment mechanism UpCR Update details of a payment execution instruction
 
@@ -45,9 +44,13 @@ PUT: Following REST best practices\, the name of the path should be something li
 
 This path indicates the resource type \(PaymentExecution\) and the specific instance identified by its unique identifier \(paymentexecutionid\)\. The "Update" operation can be achieved by using an appropriate HTTP method\, such as PUT or PATCH\, on this resource endpoint\.
 
-### GET: /PaymentExecution/\{paymentexecutionid\}/Retrieve
+## GET: /PaymentExecution/\{paymentexecutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentExecution/\{paymentexecutionid\}/Retrieve
+:::
+
+### Description
 
 This service domains processes the movement of funds between accounts within the bank or to/from an account held with another bank\, selecting the appropriate payment mechanism ReCR Retrieve details about a payment execution instruction
 
@@ -59,9 +62,13 @@ This BIAN API path\, /PaymentExecution/\{paymentexecutionid\}/Retrieve\, is used
 
 GET: Based on REST best practices\, the name of the path should describe the resource that will be retrieved rather than the action to be performed\. A suitable name for the path '/PaymentExecution/\{paymentexecutionid\}/Retrieve' could be '/PaymentExecutions/\{paymentexecutionid\}' or '/PaymentExecutions/\{id\}'\. This name aligns better with REST conventions and focuses on the resource being retrieved\, which is the PaymentExecution identified by its unique ID\.
 
-### GET: /PaymentExecution/\{paymentexecutionid\}/PaymentMechanism/\{paymentmechanismid\}/Retrieve
+## GET: /PaymentExecution/\{paymentexecutionid\}/PaymentMechanism/\{paymentmechanismid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentExecution/\{paymentexecutionid\}/PaymentMechanism/\{paymentmechanismid\}/Retrieve
+:::
+
+### Description
 
 This service domains processes the movement of funds between accounts within the bank or to/from an account held with another bank\, selecting the appropriate payment mechanism ReBQ Retrieve details about the payment mechanism selection
 
@@ -74,9 +81,13 @@ This API path allows you to retrieve details about the payment mechanism selecti
 GET: Following REST best practices\, the path name should be:
 '/payment\-executions/\{paymentexecutionid\}/payment\-mechanisms/\{paymentmechanismid\}/retrieve'
 
-### PUT: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Control
+## PUT: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Control
 
-**Description**
+:::info Path
+PUT: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Control
+:::
+
+### Description
 
 This service domains processes the movement of funds between accounts within the bank or to/from an account held with another bank\, selecting the appropriate payment mechanism CoBQ Control the execution of the gateway transaction
 
@@ -92,9 +103,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens to separate words in the path segments\. Additionally\, the path should use plural nouns for collections to denote a resource\.
 
-### GET: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Retrieve
+## GET: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentExecution/\{paymentexecutionid\}/PaymentExecution/\{paymentexecutionid\}/Retrieve
+:::
+
+### Description
 
 This service domains processes the movement of funds between accounts within the bank or to/from an account held with another bank\, selecting the appropriate payment mechanism ReBQ Retrieve details about the gateway transaction
 

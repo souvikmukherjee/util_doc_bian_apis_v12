@@ -1,21 +1,14 @@
 # ContactRouting
 
-## Table of Contents
-- [POST: /ContactRouting/Provide](#post-/contactrouting/provide)
-- [PUT: /ContactRouting/\{contactroutingid\}/Update](#put-/contactrouting/\{contactroutingid\}/update)
-- [PUT: /ContactRouting/\{contactroutingid\}/Capture](#put-/contactrouting/\{contactroutingid\}/capture)
-- [GET: /ContactRouting/\{contactroutingid\}/Retrieve](#get-/contactrouting/\{contactroutingid\}/retrieve)
-- [PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Request](#put-/contactrouting/\{contactroutingid\}/allocation/\{allocationid\}/request)
-- [PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Update](#put-/contactrouting/\{contactroutingid\}/allocation/\{allocationid\}/update)
-- [PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Capture](#put-/contactrouting/\{contactroutingid\}/allocation/\{allocationid\}/capture)
-- [GET: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Retrieve](#get-/contactrouting/\{contactroutingid\}/allocation/\{allocationid\}/retrieve)
-
-
 **BIAN Documentation:** [ContactRouting v12](https://app.swaggerhub.com/apis/BIAN-3/ContactRouting/12.0.0)
 
-### POST: /ContactRouting/Provide
+## POST: /ContactRouting/Provide
 
-**Description**
+:::info Path
+POST: /ContactRouting/Provide
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. PrCR Enable the service resource pool allocation
 
@@ -27,9 +20,13 @@ This API path\, "/ContactRouting/Provide"\, is used to create a new resource rel
 
 POST: If the path '/ContactRouting/Provide' were to follow RESTful best practices\, a more suitable name for the resource could be '/contact\-routes' or '/contact\-routes/provide'\. This naming convention makes the endpoint more descriptive\, standardized\, and aligned with RESTful principles\.
 
-### PUT: /ContactRouting/\{contactroutingid\}/Update
+## PUT: /ContactRouting/\{contactroutingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactRouting/\{contactroutingid\}/Update
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. UpCR Update details about the servicing resource pool
 
@@ -41,9 +38,13 @@ This API path allows you to update details about the servicing resource pool use
 
 PUT: The name of the path should be \`/contact\-routing/\{contactroutingid\}\` for updating a specific contact routing resource\.
 
-### PUT: /ContactRouting/\{contactroutingid\}/Capture
+## PUT: /ContactRouting/\{contactroutingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ContactRouting/\{contactroutingid\}/Capture
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. CaCR Capture servicing resource pool data \(e\.g\. resource status/availability\)
 
@@ -55,9 +56,13 @@ This API path allows you to update and capture data related to servicing resourc
 
 PUT: The path '/ContactRouting/\{contactroutingid\}/Capture' should ideally be named using a noun that represents the resource that is being acted upon\. Following REST best practices\, a suitable name for this path could be '/ContactRecordings/\{contactroutingid\}' where 'ContactRecordings' represents the resource being captured in this context\.
 
-### GET: /ContactRouting/\{contactroutingid\}/Retrieve
+## GET: /ContactRouting/\{contactroutingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactRouting/\{contactroutingid\}/Retrieve
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. ReCR Retrieve details about the servicing resource assignments
 
@@ -71,9 +76,13 @@ GET: The name of the path should be:
 
 /contact\-routing/\{contactRoutingId\}
 
-### PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Request
+## PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Request
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. PrBQ Request a servicing resource \(can be qualification and future booking\)
 
@@ -89,9 +98,13 @@ PUT: Following REST best practices\, the name of the path '/ContactRouting/\{con
 
 In RESTful URLs\, it is recommended to use lowercase letters\, separate words with hyphens\, and avoid using capital letters and underscores\. Additionally\, plural nouns are preferred for resource names\.
 
-### PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Update
+## PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Update
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. UpBQ Update details of a servicing resource allocation
 
@@ -107,9 +120,13 @@ PUT: Following REST best practices\, the name of the path could be:
 
 and the HTTP method used to trigger the update operation could be PUT or PATCH\.
 
-### PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Capture
+## PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Capture
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. CaBQ Capture data for an active allocation \(e\.g\. availability\)
 
@@ -123,9 +140,13 @@ PUT: A suitable name for the path '/ContactRouting/\{contactroutingid\}/Allocati
 
 /contact\-routings/\{contactroutingid\}/allocations/\{allocationid\}/captures
 
-### GET: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Retrieve
+## GET: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactRouting/\{contactroutingid\}/Allocation/\{allocationid\}/Retrieve
+:::
+
+### Description
 
 The Contact Routing service domain tracks servicing resource availability and uses any known details about the customer contact \(e\.g\. identity\, indicated purpose of call\, status of the relationship\) to make an optimal routing decision\. The routing selection may include matching the required product knowledge/skills to the available servicing resources\. ReBQ Retrieve details about a servicing resource allocation
 

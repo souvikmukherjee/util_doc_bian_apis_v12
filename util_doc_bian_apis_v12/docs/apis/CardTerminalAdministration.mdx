@@ -1,21 +1,14 @@
 # CardTerminalAdministration
 
-## Table of Contents
-- [POST: /CardTerminalAdministration/Provide](#post-/cardterminaladministration/provide)
-- [PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Update](#put-/cardterminaladministration/\{cardterminaladministrationid\}/update)
-- [GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Retrieve](#get-/cardterminaladministration/\{cardterminaladministrationid\}/retrieve)
-- [POST: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/Provide](#post-/cardterminaladministration/\{cardterminaladministrationid\}/allocation/provide)
-- [PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Update](#put-/cardterminaladministration/\{cardterminaladministrationid\}/allocation/\{allocationid\}/update)
-- [PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Capture](#put-/cardterminaladministration/\{cardterminaladministrationid\}/allocation/\{allocationid\}/capture)
-- [PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Grant](#put-/cardterminaladministration/\{cardterminaladministrationid\}/allocation/\{allocationid\}/grant)
-- [GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Retrieve](#get-/cardterminaladministration/\{cardterminaladministrationid\}/allocation/\{allocationid\}/retrieve)
-
-
 **BIAN Documentation:** [CardTerminalAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/CardTerminalAdministration/12.0.0)
 
-### POST: /CardTerminalAdministration/Provide
+## POST: /CardTerminalAdministration/Provide
 
-**Description**
+:::info Path
+POST: /CardTerminalAdministration/Provide
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. PrCR Initial provision and registering of a point of sale \(POS\) device
 
@@ -27,9 +20,13 @@ This API path \(/CardTerminalAdministration/Provide\) allows users to create a n
 
 POST: Based on REST best practices\, the path should ideally be named according to the resource or entity it represents\. Considering the path '/CardTerminalAdministration/Provide'\, it could potentially be named '/card\-terminals' or '/card\-terminal\-providers'\, depending on the specific context and functionality of the resource being accessed\.
 
-### PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Update
+## PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Update
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. UpCR Update details about the POS device
 
@@ -41,9 +38,13 @@ This API path allows you to update details about a specific Point of Sale \(POS\
 
 PUT: The name of the path should be \`/card\-terminals/\{cardTerminalId\}\` to follow REST best practices\.
 
-### GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Retrieve
+## GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. ReCR Retrieve details about the POS device
 
@@ -59,9 +60,13 @@ GET: The name of the path should be:
 
 In REST\, it's recommended to use lowercase letters and hyphens for better readability\. Also\, it's good practice to use nouns for resource names and avoid using verbs in your URL paths\.
 
-### POST: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/Provide
+## POST: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/Provide
 
-**Description**
+:::info Path
+POST: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/Provide
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. PrBQ Provide/allocate the device to a merchant
 
@@ -75,9 +80,13 @@ POST: The name of the path should be:
 
 /cards/\{cardterminaladministrationid\}/allocation/provide
 
-### PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Update
+## PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Update
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. UpBQ Update merchant allocation details
 
@@ -91,9 +100,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/card\-terminal\-administrations/\{card\_terminal\_administration\_id\}/allocations/\{allocation\_id\}'
 
-### PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Capture
+## PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Capture
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. CaBQ Capture details about the allocation \(e\.g\. report out of service state\)
 
@@ -107,9 +120,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/card\-terminals/\{card\-terminal\-id\}/allocations/\{allocation\-id\}/capture\`
 
-### PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Grant
+## PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Grant
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. GrBQ Obtain usage authorization grant for the device \(may restrict usage\)
 
@@ -122,9 +139,13 @@ This API path allows you to update an existing resource related to managing card
 PUT: Based on REST best practices\, the name of the path should be:
 \`/card\-terminals/\{card\_terminal\_id\}/allocations/\{allocation\_id\}/grant\`
 
-### GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Retrieve
+## GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTerminalAdministration/\{cardterminaladministrationid\}/Allocation/\{allocationid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers the POS Network including the inventory\, terminal characteristics\, deployment and status of the POS devices\. ReBQ Retrieve details about the POS device allocation
 

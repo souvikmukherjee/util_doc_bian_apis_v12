@@ -1,33 +1,14 @@
 # InvestmentAccount
 
-## Table of Contents
-- [POST: /InvestmentAccount/Initiate](#post-/investmentaccount/initiate)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/Update](#put-/investmentaccount/\{investmentaccountid\}/update)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/Control](#put-/investmentaccount/\{investmentaccountid\}/control)
-- [GET: /InvestmentAccount/\{investmentaccountid\}/Retrieve](#get-/investmentaccount/\{investmentaccountid\}/retrieve)
-- [POST: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/Initiate](#post-/investmentaccount/\{investmentaccountid\}/depositsandwithdrawals/initiate)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update](#put-/investmentaccount/\{investmentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/update)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Exchange](#put-/investmentaccount/\{investmentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/exchange)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute](#put-/investmentaccount/\{investmentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/execute)
-- [GET: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve](#get-/investmentaccount/\{investmentaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/retrieve)
-- [POST: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/Initiate](#post-/investmentaccount/\{investmentaccountid\}/corporateaction/initiate)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Update](#put-/investmentaccount/\{investmentaccountid\}/corporateaction/\{corporateactionid\}/update)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Exchange](#put-/investmentaccount/\{investmentaccountid\}/corporateaction/\{corporateactionid\}/exchange)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Execute](#put-/investmentaccount/\{investmentaccountid\}/corporateaction/\{corporateactionid\}/execute)
-- [GET: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Retrieve](#get-/investmentaccount/\{investmentaccountid\}/corporateaction/\{corporateactionid\}/retrieve)
-- [POST: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/Initiate](#post-/investmentaccount/\{investmentaccountid\}/servicefees/initiate)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Update](#put-/investmentaccount/\{investmentaccountid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Exchange](#put-/investmentaccount/\{investmentaccountid\}/servicefees/\{servicefeesid\}/exchange)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/investmentaccount/\{investmentaccountid\}/servicefees/\{servicefeesid\}/execute)
-- [PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Request](#put-/investmentaccount/\{investmentaccountid\}/servicefees/\{servicefeesid\}/request)
-- [GET: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/investmentaccount/\{investmentaccountid\}/servicefees/\{servicefeesid\}/retrieve)
-
-
 **BIAN Documentation:** [InvestmentAccount v12](https://app.swaggerhub.com/apis/BIAN-3/InvestmentAccount/12.0.0)
 
-### POST: /InvestmentAccount/Initiate
+## POST: /InvestmentAccount/Initiate
 
-**Description**
+:::info Path
+POST: /InvestmentAccount/Initiate
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary InCR Initiate a new securities investment account
 
@@ -39,9 +20,13 @@ This API path allows users to initiate a new securities investment account for a
 
 POST: The name of the path should be '/investment\-accounts'\.
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/Update
+## PUT: /InvestmentAccount/\{investmentaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/Update
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary UpCR Update details of an investment account
 
@@ -55,9 +40,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /investmentaccounts/\{investmentaccountid\}
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/Control
+## PUT: /InvestmentAccount/\{investmentaccountid\}/Control
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/Control
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary CoCR Control the processing of an investment account
 
@@ -73,9 +62,13 @@ PUT: The recommended name for the path '/InvestmentAccount/\{investmentaccountid
 
 This name is in plural form\, using lowercase letters and separated by hyphens to improve readability and maintain consistency with REST conventions\.
 
-### GET: /InvestmentAccount/\{investmentaccountid\}/Retrieve
+## GET: /InvestmentAccount/\{investmentaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentAccount/\{investmentaccountid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ReCR Retrieve information about an investment account \- either standard canned reports or selected instance attribute values
 
@@ -87,9 +80,13 @@ This API path retrieves information about an investment account for a customer\.
 
 GET: Based on REST best practices\, the name of the path '/InvestmentAccount/\{investmentaccountid\}/Retrieve' should be modified to better represent the resource being accessed\. A more appropriate name for the path could be something like '/investment\-accounts/\{investmentaccountid\}' to clearly indicate that the resource being retrieved is an individual investment account\. This follows the convention of using nouns in the path names to represent the resources being manipulated in a RESTful manner\.
 
-### POST: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/Initiate
+## POST: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/Initiate
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary InBQ Initiate/set\-up securities deposit and withdrawal processing for the account
 
@@ -103,9 +100,13 @@ POST: The name of the path '/InvestmentAccount/\{investmentaccountid\}/Depositsa
 
 '/investment\-accounts/\{investmentAccountId\}/transactions/deposit\-withdrawal/initiate'
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+## PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary UpBQ Update securities deposit and withdrawal settings or transactions
 
@@ -121,9 +122,13 @@ PUT: In RESTful API design\, the path naming should use nouns to represent resou
 
 This path represents the specific deposit or withdrawal associated with a particular investment account\. If you need to update this resource\, you typically use HTTP methods like PUT or PATCH on this resource URL\.
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Exchange
+## PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary EcBQ Accept\, reject\, etc a securities deposit or withdrawal action
 
@@ -137,9 +142,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /investment\-accounts/\{investmentAccountId\}/transactions/\{transactionId\}/exchange
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+## PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ExBQ Execute a securities deposit or withdrawal transaction
 
@@ -152,9 +161,13 @@ This API path allows you to update an existing deposit or withdrawal transaction
 PUT: The name of the path should be:
 /investment\-accounts/\{investmentaccountid\}/transactions/\{depositsandwithdrawalsid\}/execute
 
-### GET: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+## GET: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentAccount/\{investmentaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ReBQ Retrieve details about a securities deposit or withdrawal action
 
@@ -172,9 +185,13 @@ GET /investment\-accounts/\{investmentAccountId\}/transactions/\{transactionId\}
 
 This conveys the resource hierarchy with clear naming conventions\, identifying the investment account and the specific transaction being retrieved\.
 
-### POST: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/Initiate
+## POST: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/Initiate
 
-**Description**
+:::info Path
+POST: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/Initiate
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary InBQ Initiate/set\-up corporate action processing for the account
 
@@ -188,9 +205,13 @@ POST: Based on REST best practices\, a suitable name for the path '/InvestmentAc
 
 PUT /investment\-accounts/\{investmentaccountid\}/corporate\-actions/initiate
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Update
+## PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Update
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary UpBQ Update the settings or transaction details for a corporate action
 
@@ -206,9 +227,13 @@ PUT: The path could be named as:
 
 REST best practices recommend using lowercase letters\, separating words with hyphens\, and keeping the path segments descriptive and concise\.
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Exchange
+## PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary EcBQ Confirm\, accept\, reject etc\. a corporate action
 
@@ -222,9 +247,13 @@ PUT: The name of the path should be:
 
 '/investment\-accounts/\{investmentAccountId\}/corporate\-actions/\{corporateActionId\}/exchanges'
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Execute
+## PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Execute
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ExBQ Execute the processing of a corporate action
 
@@ -237,9 +266,13 @@ This API path allows for the updating of an existing corporate action within an 
 PUT: Following RESTful best practices\, the name of the path could be:
 \`/investment\-accounts/\{investmentaccountid\}/corporate\-actions/\{corporateactionid\}/execute\`
 
-### GET: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Retrieve
+## GET: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentAccount/\{investmentaccountid\}/CorporateAction/\{corporateactionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ReBQ Retrieve details about corporate action processing
 
@@ -253,9 +286,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /investment\-accounts/\{investmentAccountId\}/corporate\-actions/\{corporateActionId\}
 
-### POST: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/Initiate
+## POST: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary InBQ Initiate\, set\-up service fee processing for the account
 
@@ -276,9 +313,13 @@ In this naming convention:
 \- The parameter "investmentAccountId" is placed within curly braces to represent a specific instance of an investment account\.
 \- The action of initiating service fees is implied by the path construction\.
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary UpBQ Update service fee setting or service transaction details
 
@@ -292,9 +333,13 @@ PUT: Based on REST best practices\, the appropriate naming for the path would be
 
 PUT /investment\-accounts/\{investmentaccountid\}/service\-fees/\{servicefeesid\}
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Exchange
+## PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary EcBQ Accept\, reject\, etc a service fee transaction
 
@@ -315,9 +360,13 @@ It is important to note:
 2\. Use CamelCase for multi\-word resource names \('InvestmentAccounts' and 'ServiceFees'\)\.
 3\. Use the lowercase form of the first noun in case of compound nouns \('InvestmentAccounts' and 'Service
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ExBQ Execute Apply Service Fee
 
@@ -333,9 +382,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, use hyphens to separate words\, and use plural nouns for collections\.
 
-### PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Request
+## PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Request
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary RqBQ Request manual intervention for a service fee transaction
 
@@ -351,9 +404,13 @@ PUT: The name of the path could be:
 
 This naming convention is in line with REST best practices by using lowercase letters\, hyphens for readability\, and plural nouns for collections\.
 
-### GET: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentAccount/\{investmentaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the non\-cash holdings positions for a customer\, covering multiple instruments as necessary ReBQ Retrieve details about service fees for the investment account
 

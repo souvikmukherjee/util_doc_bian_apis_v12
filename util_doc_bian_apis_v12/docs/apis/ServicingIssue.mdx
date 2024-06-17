@@ -1,42 +1,14 @@
 # ServicingIssue
 
-## Table of Contents
-- [PUT: /ServicingIssue/\{servicingissueid\}/Control](#put-/servicingissue/\{servicingissueid\}/control)
-- [PUT: /ServicingIssue/\{servicingissueid\}/Exchange](#put-/servicingissue/\{servicingissueid\}/exchange)
-- [PUT: /ServicingIssue/\{servicingissueid\}/Execute](#put-/servicingissue/\{servicingissueid\}/execute)
-- [POST: /ServicingIssue/Initiate](#post-/servicingissue/initiate)
-- [GET: /ServicingIssue/\{servicingissueid\}/Notify](#get-/servicingissue/\{servicingissueid\}/notify)
-- [PUT: /ServicingIssue/\{servicingissueid\}/Request](#put-/servicingissue/\{servicingissueid\}/request)
-- [GET: /ServicingIssue/\{servicingissueid\}/Retrieve](#get-/servicingissue/\{servicingissueid\}/retrieve)
-- [PUT: /ServicingIssue/\{servicingissueid\}/Update](#put-/servicingissue/\{servicingissueid\}/update)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Exchange](#put-/servicingissue/\{servicingissueid\}/productionissueanalysis/\{productionissueanalysisid\}/exchange)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Exchange](#put-/servicingissue/\{servicingissueid\}/productionissuedetermination/\{productionissuedeterminationid\}/exchange)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Exchange](#put-/servicingissue/\{servicingissueid\}/productionissueresolution/\{productionissueresolutionid\}/exchange)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Execute](#put-/servicingissue/\{servicingissueid\}/productionissueanalysis/\{productionissueanalysisid\}/execute)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Execute](#put-/servicingissue/\{servicingissueid\}/productionissuedetermination/\{productionissuedeterminationid\}/execute)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Execute](#put-/servicingissue/\{servicingissueid\}/productionissueresolution/\{productionissueresolutionid\}/execute)
-- [POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/Initiate](#post-/servicingissue/\{servicingissueid\}/productionissueanalysis/initiate)
-- [POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/Initiate](#post-/servicingissue/\{servicingissueid\}/productionissuedetermination/initiate)
-- [POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/Initiate](#post-/servicingissue/\{servicingissueid\}/productionissueresolution/initiate)
-- [GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Notify](#get-/servicingissue/\{servicingissueid\}/productionissueanalysis/\{productionissueanalysisid\}/notify)
-- [GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Notify](#get-/servicingissue/\{servicingissueid\}/productionissuedetermination/\{productionissuedeterminationid\}/notify)
-- [GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Notify](#get-/servicingissue/\{servicingissueid\}/productionissueresolution/\{productionissueresolutionid\}/notify)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Request](#put-/servicingissue/\{servicingissueid\}/productionissueanalysis/\{productionissueanalysisid\}/request)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Request](#put-/servicingissue/\{servicingissueid\}/productionissuedetermination/\{productionissuedeterminationid\}/request)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Request](#put-/servicingissue/\{servicingissueid\}/productionissueresolution/\{productionissueresolutionid\}/request)
-- [GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Retrieve](#get-/servicingissue/\{servicingissueid\}/productionissueanalysis/\{productionissueanalysisid\}/retrieve)
-- [GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Retrieve](#get-/servicingissue/\{servicingissueid\}/productionissuedetermination/\{productionissuedeterminationid\}/retrieve)
-- [GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Retrieve](#get-/servicingissue/\{servicingissueid\}/productionissueresolution/\{productionissueresolutionid\}/retrieve)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Update](#put-/servicingissue/\{servicingissueid\}/productionissueanalysis/\{productionissueanalysisid\}/update)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Update](#put-/servicingissue/\{servicingissueid\}/productionissuedetermination/\{productionissuedeterminationid\}/update)
-- [PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Update](#put-/servicingissue/\{servicingissueid\}/productionissueresolution/\{productionissueresolutionid\}/update)
-
-
 **BIAN Documentation:** [ServicingIssue v12](https://app.swaggerhub.com/apis/BIAN-3/ServicingIssue/12.0.0)
 
-### PUT: /ServicingIssue/\{servicingissueid\}/Control
+## PUT: /ServicingIssue/\{servicingissueid\}/Control
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/Control
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Control Servicing Issue Procedure
 
@@ -50,9 +22,13 @@ PUT: A suitable name for the given path following REST best practices could be:
 
 "/servicing\-issues/\{servicingissueid\}/control"
 
-### PUT: /ServicingIssue/\{servicingissueid\}/Exchange
+## PUT: /ServicingIssue/\{servicingissueid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Exchange Servicing Issue Procedure
 
@@ -66,9 +42,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/servicing\-issues/\{servicingissueid\}/exchanges'
 
-### PUT: /ServicingIssue/\{servicingissueid\}/Execute
+## PUT: /ServicingIssue/\{servicingissueid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Execute Servicing Issue Procedure
 
@@ -84,9 +64,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase letters and use plural nouns for resource names\.
 
-### POST: /ServicingIssue/Initiate
+## POST: /ServicingIssue/Initiate
 
-**Description**
+:::info Path
+POST: /ServicingIssue/Initiate
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Initiate Servicing Issue Procedure
 
@@ -100,9 +84,13 @@ POST: The name of the path '/ServicingIssue/Initiate' should ideally be named fo
 
 In this case\, the path could be updated to something like '/servicing\-issues' to represent a collection of servicing issues\, with a POST request to add a new servicing issue\. You could then have a specific resource endpoint like '/servicing\-issues/\{id\}' for
 
-### GET: /ServicingIssue/\{servicingissueid\}/Notify
+## GET: /ServicingIssue/\{servicingissueid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Notify Servicing Issue Procedure
 
@@ -120,9 +108,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using plural nouns for resource names \(e\.g\.\, ServicingIssues instead of ServicingIssue\) and using lowercase letters for consistency\. The path includes the unique identifier servicingissueid as a path parameter to specify the resource being notified\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/Request
+## PUT: /ServicingIssue/\{servicingissueid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/Request
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Request Servicing Issue Procedure
 
@@ -138,9 +130,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, hyphens to separate words\, and plural nouns for collections\.
 
-### GET: /ServicingIssue/\{servicingissueid\}/Retrieve
+## GET: /ServicingIssue/\{servicingissueid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Retrieve Servicing Issue Procedure
 
@@ -152,9 +148,13 @@ This BIAN API path allows you to retrieve information about a specific customer 
 
 GET: Based on REST best practices\, the path should be \`/servicing\-issues/\{servicingissueid\}\` for retrieving a specific servicing issue resource\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/Update
+## PUT: /ServicingIssue/\{servicingissueid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/Update
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Update Servicing Issue Procedure
 
@@ -168,9 +168,13 @@ PUT: The name of the path should be:
 
 PATCH /servicingIssues/\{servicingIssueId\}
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Exchange
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Exchange Production Issue Analysis Workstep
 
@@ -184,9 +188,13 @@ PUT: Based on REST best practices\, the name of the path should reflect the reso
 
 A suggested name for the path could be: \`/servicing\-issues/\{servicingissueid\}/production\-issue\-analysis/\{productionissueanalysisid\}/exchanges\`\, which conveys the hierarchy of the resources being accessed and uses hyphens to separate words for better readability\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Exchange
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Exchange Production Issue Determination Workstep
 
@@ -200,9 +208,13 @@ PUT: The appropriate name for the path would be:
 
 /servicing\-issues/\{servicingissueid\}/production\-issue\-determinations/\{productionissuedeterminationid\}/exchanges
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Exchange
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Exchange Production Issue Resolution Workstep
 
@@ -214,9 +226,13 @@ This API path allows you to update an existing resource related to production cu
 
 PUT: The name of the path should be '/servicing\-issues/\{servicingissueid\}/production\-issue\-resolutions/\{productionissueresolutionid\}/exchange'\. This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for resource names\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Execute
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Execute Production Issue Analysis Workstep
 
@@ -230,9 +246,13 @@ PUT: A name that follows REST best practices for this path could be something li
 
 '/servicing\-issues/\{servicingissueid\}/production\-issue\-analyses/\{productionissueanalysisid\}/execute'
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Execute
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Execute Production Issue Determination Workstep
 
@@ -248,9 +268,13 @@ PUT: The path should be named in a way that reflects the resource being accessed
 
 In this updated path\, all components are converted to lower case letters and separated by hyphens to improve readability and adhere
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Execute
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Execute Production Issue Resolution Workstep
 
@@ -264,9 +288,13 @@ PUT: A possible RESTful naming convention for this path could be:
 
 '/servicing\-issues/\{servicingissueid\}/production\-issue\-resolutions/\{productionissueresolutionid\}/execute'
 
-### POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/Initiate
+## POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/Initiate
 
-**Description**
+:::info Path
+POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/Initiate
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Initiate Production Issue Analysis Workstep
 
@@ -282,9 +310,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase and use hyphens to separate words for better readability and consistency\.
 
-### POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/Initiate
+## POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/Initiate
 
-**Description**
+:::info Path
+POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/Initiate
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Initiate Production Issue Determination Workstep
 
@@ -302,9 +334,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 It's recommended to use plural nouns in the path rather than verbs\, and to avoid unnecessary details or actions in the path itself\.
 
-### POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/Initiate
+## POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/Initiate
 
-**Description**
+:::info Path
+POST: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/Initiate
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Initiate Production Issue Resolution Workstep
 
@@ -322,9 +358,13 @@ POST: Based on RESTful best practices\, the name of the path should be:
 
 This path reflects the plural form of the resource \("ServicingIssues" and "ProductionIssueResolutions"\)\, uses lowercase letters\, and includes only nouns to represent resources\.
 
-### GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Notify
+## GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Notify Production Issue Analysis Workstep
 
@@ -344,9 +384,13 @@ Here are the reasons for the naming:
 1\. Plural Nouns: The path segments "ServicingIssue" and "ProductionIssueAnalysis" have been changed to their plural forms "ServicingIssues" and "ProductionIssueAnalyses" respectively\. This follows the best practice of using plural nouns for collection resources\.
 2\. Lower
 
-### GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Notify
+## GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Notify Production Issue Determination Workstep
 
@@ -365,9 +409,13 @@ In this path:
 \- Each segment in the path should represent a resource\.
 \- The path is descriptive and follows the hierarchy of the resources involved\.
 
-### GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Notify
+## GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Notify
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Notify Production Issue Resolution Workstep
 
@@ -379,9 +427,13 @@ This API path is used to retrieve information about the process of notifying the
 
 GET: The name of the path can be \`/servicing\-issues/\{servicingissueid\}/production\-issue\-resolutions/\{productionissueresolutionid\}/notify\` as it uses lowercase letters\, hyphens to separate words\, and follows a clear hierarchical structure to represent resources and their relationships\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Request
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Request
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Request Production Issue Analysis Workstep
 
@@ -395,9 +447,13 @@ PUT: The appropriate name for the path could be \`/servicing\-issues/\{servicing
 
 This follows REST best practices by using lowercase letters\, separating words with hyphens for readability\, and clearly indicating the hierarchical relationship between the resources\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Request
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Request Production Issue Determination Workstep
 
@@ -413,9 +469,13 @@ GET /servicing\-issues/\{servicingissueid\}/production\-issue\-determinations/\{
 
 Remember to use lowercase letters\, hyphens to separate words\, and plurals for collection resources\.
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Request
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Request
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Request Production Issue Resolution Workstep
 
@@ -429,9 +489,13 @@ PUT: A good name for this path following REST best practices could be:
 
 '/servicing\-issues/\{servicingissueid\}/production\-issue\-resolutions/\{productionissueresolutionid\}/request'
 
-### GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Retrieve
+## GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Retrieve Production Issue Analysis Workstep
 
@@ -445,9 +509,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 GET '/servicing\-issues/\{servicingissueid\}/production\-issue\-analysis/\{productionissueanalysisid\}'
 
-### GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Retrieve
+## GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Retrieve Production Issue Determination Workstep
 
@@ -461,9 +529,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /servicing\-issues/\{servicingissueid\}/production\-issue\-determinations/\{productionissuedeterminationid\}
 
-### GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Retrieve
+## GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Retrieve Production Issue Resolution Workstep
 
@@ -477,9 +549,13 @@ GET: A good name for this path following REST best practices could be:
 
 GET '/servicing\-issues/\{servicingissueid\}/production\-resolutions/\{productionissueresolutionid\}'
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Update
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueAnalysis/\{productionissueanalysisid\}/Update
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Update Production Issue Analysis Workstep
 
@@ -495,9 +571,13 @@ PUT: The name of the path should typically be a noun or a resource that the endp
 
 This path reflects the hierarchy of resources and maintains clarity and consistency\, making it easier for developers to understand the
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Update
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueDetermination/\{productionissuedeterminationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Update Production Issue Determination Workstep
 
@@ -511,9 +591,13 @@ PUT: The RESTful naming convention for a path like '/ServicingIssue/\{servicingi
 
 '/servicing\-issues/\{servicingissueid\}/production\-issue\-determinations/\{productionissuedeterminationid\}'
 
-### PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Update
+## PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingIssue/\{servicingissueid\}/ProductionIssueResolution/\{productionissueresolutionid\}/Update
+:::
+
+### Description
 
 This Service Domain handles production customer servicing issues detected in the customer servicing environment Update Production Issue Resolution Workstep
 

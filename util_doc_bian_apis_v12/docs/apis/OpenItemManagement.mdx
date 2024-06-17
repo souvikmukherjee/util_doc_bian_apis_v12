@@ -1,22 +1,14 @@
 # OpenItemManagement
 
-## Table of Contents
-- [POST: /OpenItemManagement/Initiate](#post-/openitemmanagement/initiate)
-- [PUT: /OpenItemManagement/\{openitemmanagementid\}/Update](#put-/openitemmanagement/\{openitemmanagementid\}/update)
-- [PUT: /OpenItemManagement/\{openitemmanagementid\}/Request](#put-/openitemmanagement/\{openitemmanagementid\}/request)
-- [GET: /OpenItemManagement/\{openitemmanagementid\}/Retrieve](#get-/openitemmanagement/\{openitemmanagementid\}/retrieve)
-- [GET: /OpenItemManagement/\{openitemmanagementid\}/Tracking/\{trackingid\}/Retrieve](#get-/openitemmanagement/\{openitemmanagementid\}/tracking/\{trackingid\}/retrieve)
-- [POST: /OpenItemManagement/\{openitemmanagementid\}/Repayment/Initiate](#post-/openitemmanagement/\{openitemmanagementid\}/repayment/initiate)
-- [PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Update](#put-/openitemmanagement/\{openitemmanagementid\}/repayment/\{repaymentid\}/update)
-- [PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Execute](#put-/openitemmanagement/\{openitemmanagementid\}/repayment/\{repaymentid\}/execute)
-- [GET: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Retrieve](#get-/openitemmanagement/\{openitemmanagementid\}/repayment/\{repaymentid\}/retrieve)
-
-
 **BIAN Documentation:** [OpenItemManagement v12](https://app.swaggerhub.com/apis/BIAN-3/OpenItemManagement/12.0.0)
 
-### POST: /OpenItemManagement/Initiate
+## POST: /OpenItemManagement/Initiate
 
-**Description**
+:::info Path
+POST: /OpenItemManagement/Initiate
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) InCR Initiate an open item procedure
 
@@ -28,9 +20,13 @@ This API path "/OpenItemManagement/Initiate" allows you to initiate a process fo
 
 POST: Based on RESTful best practices\, the path '/OpenItemManagement/Initiate' could be renamed to something that is more resource\-focused and follows a noun\-based approach\. For example\, it could be renamed to '/item'\, '/items'\, '/open\-items'\, or '/item\-initiation'\. These suggestions represent a more resource\-oriented naming convention that aligns with REST standards\.
 
-### PUT: /OpenItemManagement/\{openitemmanagementid\}/Update
+## PUT: /OpenItemManagement/\{openitemmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /OpenItemManagement/\{openitemmanagementid\}/Update
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) UpCR Update details of an active open item procedure
 
@@ -46,9 +42,13 @@ PUT /OpenItemManagement/\{openitemmanagementid\}
 
 This name reflects the use of the HTTP method \(PUT\) for updating a specific resource \(OpenItemManagement\) identified by its unique identifier \(openitemmanagementid\)\.
 
-### PUT: /OpenItemManagement/\{openitemmanagementid\}/Request
+## PUT: /OpenItemManagement/\{openitemmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /OpenItemManagement/\{openitemmanagementid\}/Request
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) RqCR Request manual intervention with an active open item procedure
 
@@ -60,9 +60,13 @@ This API path allows you to update an existing open item management request by r
 
 PUT: The name of the path should be \`/open\-item\-management/\{openitemmanagementid\}/requests\` following REST best practices\. The path should use lowercase letters and kebab\-case for better readability and consistency\.
 
-### GET: /OpenItemManagement/\{openitemmanagementid\}/Retrieve
+## GET: /OpenItemManagement/\{openitemmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OpenItemManagement/\{openitemmanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) ReCR Retrieve details about an open item
 
@@ -75,9 +79,13 @@ This BIAN API path allows you to retrieve details about a specific open item in 
 GET: Following REST best practices\, the name of the path should be something that represents a resource\, not an action\. A suitable name for the path '/OpenItemManagement/\{openitemmanagementid\}/Retrieve' could be
 '/OpenItemManagements/\{openitemmanagementid\}'\. This path conveys that you are accessing a specific Open Item Management resource identified by its ID\.
 
-### GET: /OpenItemManagement/\{openitemmanagementid\}/Tracking/\{trackingid\}/Retrieve
+## GET: /OpenItemManagement/\{openitemmanagementid\}/Tracking/\{trackingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OpenItemManagement/\{openitemmanagementid\}/Tracking/\{trackingid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) ReBQ Retrieve tracking details about an open item
 
@@ -90,9 +98,13 @@ This API path allows you to retrieve tracking details about a specific open item
 GET: Based on RESTful API best practices\, the name of the path could be as follows:
 '/open\-item\-managements/\{openitemmanagementid\}/trackings/\{trackingid\}'
 
-### POST: /OpenItemManagement/\{openitemmanagementid\}/Repayment/Initiate
+## POST: /OpenItemManagement/\{openitemmanagementid\}/Repayment/Initiate
 
-**Description**
+:::info Path
+POST: /OpenItemManagement/\{openitemmanagementid\}/Repayment/Initiate
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) InBQ Initiate repayment transaction against an open item
 
@@ -106,9 +118,13 @@ POST: The name of the path should be:
 
 "/open\-item\-management/\{openitemmanagementid\}/repayments"
 
-### PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Update
+## PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Update
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) UpBQ Update repayment transaction details
 
@@ -122,9 +138,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/open\-item\-management/\{openitemmanagementid\}/repayment/\{repaymentid\}'
 
-### PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Execute
+## PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Execute
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) ExBQ Execute an automated repayment task \(e\.g\. trigger scheduled repayment\)
 
@@ -136,9 +156,13 @@ This API path allows the user to update an existing resource related to the repa
 
 PUT: Following REST best practices\, the name of the path should be structured in a way that is clear\, concise\, and adheres to standard naming conventions\. For the given path\, a name like '/open\-item\-management/\{openitemmanagementid\}/repayments/\{repaymentid\}/execute' would be more suitable\. This naming convention uses lowercase letters\, hyphens for word separation\, and singular nouns for resources\.
 
-### GET: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Retrieve
+## GET: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OpenItemManagement/\{openitemmanagementid\}/Repayment/\{repaymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a service for handling the resolution of open items against accounts \(such as overdue loan payments\) ReBQ retrieve details about a repayment transaction
 

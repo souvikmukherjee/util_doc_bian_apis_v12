@@ -1,27 +1,14 @@
 # CardTerminalOperation
 
-## Table of Contents
-- [POST: /CardTerminalOperation/Initiate](#post-/cardterminaloperation/initiate)
-- [PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Update](#put-/cardterminaloperation/\{cardterminaloperationid\}/update)
-- [GET: /CardTerminalOperation/\{cardterminaloperationid\}/Retrieve](#get-/cardterminaloperation/\{cardterminaloperationid\}/retrieve)
-- [POST: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/Initiate](#post-/cardterminaloperation/\{cardterminaloperationid\}/capture/initiate)
-- [PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Update](#put-/cardterminaloperation/\{cardterminaloperationid\}/capture/\{captureid\}/update)
-- [PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Request](#put-/cardterminaloperation/\{cardterminaloperationid\}/capture/\{captureid\}/request)
-- [GET: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Retrieve](#get-/cardterminaloperation/\{cardterminaloperationid\}/capture/\{captureid\}/retrieve)
-- [POST: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/Initiate](#post-/cardterminaloperation/\{cardterminaloperationid\}/authorization/initiate)
-- [PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Request](#put-/cardterminaloperation/\{cardterminaloperationid\}/authorization/\{authorizationid\}/request)
-- [GET: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Retrieve](#get-/cardterminaloperation/\{cardterminaloperationid\}/authorization/\{authorizationid\}/retrieve)
-- [POST: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/Initiate](#post-/cardterminaloperation/\{cardterminaloperationid\}/batch/initiate)
-- [PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Update](#put-/cardterminaloperation/\{cardterminaloperationid\}/batch/\{batchid\}/update)
-- [PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Request](#put-/cardterminaloperation/\{cardterminaloperationid\}/batch/\{batchid\}/request)
-- [GET: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Retrieve](#get-/cardterminaloperation/\{cardterminaloperationid\}/batch/\{batchid\}/retrieve)
-
-
 **BIAN Documentation:** [CardTerminalOperation v12](https://app.swaggerhub.com/apis/BIAN-3/CardTerminalOperation/12.0.0)
 
-### POST: /CardTerminalOperation/Initiate
+## POST: /CardTerminalOperation/Initiate
 
-**Description**
+:::info Path
+POST: /CardTerminalOperation/Initiate
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. InCR Initiate a card POS network operation session
 
@@ -39,9 +26,13 @@ POST /card\-terminals
 
 This new naming convention uses HTTP methods like POST to create a new resource\, in this case\, a card terminal operation\. The endpoint '/card\-terminals' is more resource\-focused and reiterates the
 
-### PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Update
+## PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Update
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. UpCR Update details of a card POS session
 
@@ -62,9 +53,13 @@ Here are some of the reasons for this naming convention:
 \- The method \`PATCH\` is typically used for partial updates to a resource\.
 \- The path parameter should follow a clear and consistent naming convention\.
 
-### GET: /CardTerminalOperation/\{cardterminaloperationid\}/Retrieve
+## GET: /CardTerminalOperation/\{cardterminaloperationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTerminalOperation/\{cardterminaloperationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. ReCR Retrieve details about the card POS session
 
@@ -80,9 +75,13 @@ A suitable name for the path '/CardTerminalOperation/\{cardterminaloperationid\}
 
 '/CardTerminalOperations/\{cardterminaloperationid\}'
 
-### POST: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/Initiate
+## POST: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/Initiate
 
-**Description**
+:::info Path
+POST: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/Initiate
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. InBQ Initiate transaction capture at the POS
 
@@ -95,9 +94,13 @@ This API path allows you to initiate a transaction capture at a Point of Sale \(
 POST: Following REST best practices\, the name of the path should be:
 '/card\-terminal\-operations/\{card\-terminal\-operation\-id\}/capture/initiate'
 
-### PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Update
+## PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Update
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. UpBQ Update details of the card capture transaction
 
@@ -113,9 +116,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}
 \`\`\`
 
-### PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Request
+## PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Request
 
-**Description**
+:::info Path
+PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Request
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. RqBQ Request manual intervention with a capture transaction
 
@@ -129,9 +136,13 @@ PUT: Following REST best practices\, the naming convention for the path should b
 
 '/card\-terminal\-operations/\{cardterminaloperationid\}/captures/\{captureid\}/request'
 
-### GET: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Retrieve
+## GET: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTerminalOperation/\{cardterminaloperationid\}/Capture/\{captureid\}/Retrieve
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. ReBQ Retrieve details about a card capture transaction
 
@@ -143,9 +154,13 @@ This API path allows you to retrieve details about a specific card capture trans
 
 GET: A suitable name for this path following REST best practices could be: '/card\-terminal\-operations/\{card\_terminal\_operation\_id\}/captures/\{capture\_id\}'
 
-### POST: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/Initiate
+## POST: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/Initiate
 
-**Description**
+:::info Path
+POST: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/Initiate
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. InBQ Initiate authorization for a card transaction
 
@@ -159,9 +174,13 @@ POST: A possible name for the path could be '/card\-terminal\-operations/\{cardt
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and clearly indicating the hierarchy of resources\.
 
-### PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Request
+## PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Request
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. RqBQ Request manual intervention for a card authorization \(e\.g\. engage specialist\)
 
@@ -175,9 +194,13 @@ PUT: The name of the path following REST best practices could be:
 
 \`/card\-terminal\-operations/\{card\_terminal\_operation\_id\}/authorizations/\{authorization\_id\}/requests\`
 
-### GET: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Retrieve
+## GET: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTerminalOperation/\{cardterminaloperationid\}/Authorization/\{authorizationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. ReBQ Retrieve details about a card authorization transaction
 
@@ -191,9 +214,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/card\-terminals/\{card\_terminal\_id\}/authorizations/\{authorization\_id\}'
 
-### POST: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/Initiate
+## POST: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/Initiate
 
-**Description**
+:::info Path
+POST: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/Initiate
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. InBQ Initiate a batch transaction POS capture
 
@@ -207,9 +234,13 @@ POST: Following REST best practices\, the path should use nouns to represent res
 
 '/batchInitiation/\{cardTerminalOperationId\}'
 
-### PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Update
+## PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Update
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. UpBQ Update details of a transaction batch
 
@@ -223,9 +254,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/card\-terminal\-operations/\{card\_terminal\_operation\_id\}/batches/\{batch\_id\}'
 
-### PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Request
+## PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Request
 
-**Description**
+:::info Path
+PUT: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Request
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. RqBQ Request manual intervention for a batch \(e\.g\. adjust scheduling\)
 
@@ -239,9 +274,13 @@ PUT: Following REST best practices\, the path should be named as '/card\-termina
 
 Path names should be all lowercase and hyphens should be used to separate words for better readability and consistency\.
 
-### GET: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Retrieve
+## GET: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTerminalOperation/\{cardterminaloperationid\}/Batch/\{batchid\}/Retrieve
+:::
+
+### Description
 
 This service domain handle POS operations including processing\, capture and tracking of the transactions originating at the Point of Sale devices\. ReBQ Retrieve details about a card capture batch
 

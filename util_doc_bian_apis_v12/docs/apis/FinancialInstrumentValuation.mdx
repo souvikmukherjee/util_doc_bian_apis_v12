@@ -1,42 +1,14 @@
 # FinancialInstrumentValuation
 
-## Table of Contents
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Control](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/control)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Exchange](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/exchange)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Execute](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/execute)
-- [POST: /FinancialInstrumentValuation/Initiate](#post-/financialinstrumentvaluation/initiate)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Notify](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/notify)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Request](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/request)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Retrieve](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/retrieve)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Update](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/update)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Exchange](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/\{assetvaluationapproachselectionid\}/exchange)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Exchange](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/\{assetvaluationinformationconsolidationid\}/exchange)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Exchange](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/\{assetvaluationid\}/exchange)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Execute](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/\{assetvaluationapproachselectionid\}/execute)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Execute](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/\{assetvaluationinformationconsolidationid\}/execute)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Execute](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/\{assetvaluationid\}/execute)
-- [POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/Initiate](#post-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/initiate)
-- [POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/Initiate](#post-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/initiate)
-- [POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/Initiate](#post-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/initiate)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Notify](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/\{assetvaluationapproachselectionid\}/notify)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Notify](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/\{assetvaluationinformationconsolidationid\}/notify)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Notify](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/\{assetvaluationid\}/notify)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Request](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/\{assetvaluationapproachselectionid\}/request)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Request](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/\{assetvaluationinformationconsolidationid\}/request)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Request](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/\{assetvaluationid\}/request)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Retrieve](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/\{assetvaluationapproachselectionid\}/retrieve)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Retrieve](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/\{assetvaluationinformationconsolidationid\}/retrieve)
-- [GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Retrieve](#get-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/\{assetvaluationid\}/retrieve)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Update](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationapproachselection/\{assetvaluationapproachselectionid\}/update)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Update](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidation/\{assetvaluationinformationconsolidationid\}/update)
-- [PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Update](#put-/financialinstrumentvaluation/\{financialinstrumentvaluationid\}/assetvaluation/\{assetvaluationid\}/update)
-
-
 **BIAN Documentation:** [FinancialInstrumentValuation v12](https://app.swaggerhub.com/apis/BIAN-3/FinancialInstrumentValuation/12.0.0)
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Control
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Control
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Control
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Control Market Asset Valuation Procedure
 
@@ -49,9 +21,13 @@ This API path allows you to update an existing financial instrument valuation by
 PUT: Based on REST best practices\, the name of the path should be:
 '/financial\-instruments/\{financialinstrumentvaluationid\}/controls'
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Exchange
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Exchange Market Asset Valuation Procedure
 
@@ -65,9 +41,13 @@ PUT: The name of the path should be:
 
 GET /financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/exchange
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Execute
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Execute Market Asset Valuation Procedure
 
@@ -85,9 +65,13 @@ A suggestion for the name of the path could be:
 
 This name is more readable and follows the convention of using lowercase letters and hyphens to separate words in the path\.
 
-### POST: /FinancialInstrumentValuation/Initiate
+## POST: /FinancialInstrumentValuation/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentValuation/Initiate
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Initiate Market Asset Valuation Procedure
 
@@ -99,9 +83,13 @@ This API path allows users to initiate a procedure for valuing financial assets 
 
 POST: The path should be named using a noun that represents the resource being acted upon\. For the given path '/FinancialInstrumentValuation/Initiate'\, a more appropriate name following REST best practices could be '/financial\-instruments'\, assuming 'FinancialInstrument' is the main resource being managed\, and the 'Initiate' action could be represented through appropriate HTTP methods like POST or PUT with adequate endpoint representation\.
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Notify
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Notify Market Asset Valuation Procedure
 
@@ -117,9 +105,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and use plural nouns for resources\.
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Request
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Request
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Request Market Asset Valuation Procedure
 
@@ -133,9 +125,13 @@ PUT: A suitable name for the path based on REST best practices could be:
 
 /financial\-instruments/\{financialinstrumentvaluationid\}/requests
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Retrieve
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Retrieve Market Asset Valuation Procedure
 
@@ -148,9 +144,13 @@ This API path allows you to retrieve information about a specific financial inst
 GET: Following REST best practices\, the name of the path should be something close to:
 '/financial\-instrument\-valuations/\{financialinstrumentvaluationid\}'
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Update
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/Update
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Update Market Asset Valuation Procedure
 
@@ -162,9 +162,13 @@ This API path allows users to update the valuation information of a specific fin
 
 PUT: Based on REST best practices\, the name of the path could be \`/financial\-instrument\-valuations/\{financialinstrumentvaluationid\}\`\.
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Exchange
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Exchange Asset Valuation Approach Selection Workstep
 
@@ -178,9 +182,13 @@ PUT: The name of the path should be:
 
 '/financial\-instrument\-valuation/\{financial\_instrument\_valuation\_id\}/asset\-valuation\-approach\-selection/\{asset\_valuation\_approach\_selection\_id\}/exchange'
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Exchange
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Exchange Asset Valuation Information Consolidation Workstep
 
@@ -194,9 +202,13 @@ PUT: Based on REST best practices\, the name of the path should focus on the res
 
 '/financial\-instruments/\{financialinstrumentId\}/asset\-valuations/\{assetvaluationId\}/exchanges'
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Exchange
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Exchange Asset Valuation Workstep
 
@@ -212,9 +224,13 @@ PUT: The name of the path could be:
 
 This path follows REST best practices by using lowercase letters\, separating words with dashes\, including resource identifiers in the path\, and using consistent naming conventions\.
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Execute
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Execute Asset Valuation Approach Selection Workstep
 
@@ -230,9 +246,13 @@ A suitable path name for the given scenario could be:
 
 /financial\-instrument\-valuation/\{financialinstrumentvaluationid\}/asset\-valuation\-approach\-selection/\{assetvaluationapproachselectionid\}/execute
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Execute
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Execute Asset Valuation Information Consolidation Workstep
 
@@ -246,9 +266,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 /financial\-instrument\-valuation/\{financial\-instrument\-valuation\-id\}/asset\-valuation\-information\-consolidation/\{asset\-valuation\-information\-consolidation\-id\}/execute
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Execute
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Execute
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Execute Asset Valuation Workstep
 
@@ -262,9 +286,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/asset\-valuations/\{assetvaluationid\}/execute
 
-### POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/Initiate
+## POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/Initiate
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Initiate Asset Valuation Approach Selection Workstep
 
@@ -278,9 +306,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/asset\-valuation\-approach\-selection/initiate
 
-### POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/Initiate
+## POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/Initiate
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Initiate Asset Valuation Information Consolidation Workstep
 
@@ -296,9 +328,13 @@ A suggested name for the path '/FinancialInstrumentValuation/\{financialinstrume
 
 '/financialinstrumentvaluations/\{financialinstrumentvaluationid\}/assetvaluationinformationconsolidations/initiate'
 
-### POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/Initiate
+## POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/Initiate
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Initiate Asset Valuation Workstep
 
@@ -312,9 +348,13 @@ POST: Based on REST best practices\, a possible name for the path '/FinancialIns
 
 '/financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/asset\-valuations/initiate'
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Notify
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Notify Asset Valuation Approach Selection Workstep
 
@@ -328,9 +368,13 @@ GET: The name of the path should be:
 
 /financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/asset\-valuation\-approach\-selections/\{assetvaluationapproachselectionid\}/notify
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Notify
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Notify Asset Valuation Information Consolidation Workstep
 
@@ -344,9 +388,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/financial\-instrument\-valuation/\{financialinstrumentvaluationid\}/asset\-valuation\-information\-consolidation/\{assetvaluationinformationconsolidationid\}/notify'
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Notify
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Notify
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Notify Asset Valuation Workstep
 
@@ -360,9 +408,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /financial\-instruments/\{financialinstrumentvaluationid\}/asset\-valuations/\{assetvaluationid\}/notify
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Request
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Request
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Request Asset Valuation Approach Selection Workstep
 
@@ -378,9 +430,13 @@ PUT: Based on REST best practices\, a more suitable and cleaner name for the pat
 /financial\-instruments/\{financialinstrumentId\}/asset\-valuation\-approach\-selections/\{assetValuationApproachId\}/request
 \`\`\`
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Request
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Request
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Request Asset Valuation Information Consolidation Workstep
 
@@ -398,9 +454,13 @@ PUT: Based on REST best practices\, the path should reflect the resource and act
 
 This naming convention uses lowercase letters and separates words with dashes for better readability and consistency\.
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Request
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Request
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Request Asset Valuation Workstep
 
@@ -414,9 +474,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /financial\-instruments/\{financialinstrumentvaluationid\}/asset\-valuations/\{assetvaluationid\}/requests
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Retrieve
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Retrieve Asset Valuation Approach Selection Workstep
 
@@ -430,9 +494,13 @@ GET: Based on REST best practices\, the name of the path could be simplified as:
 
 GET /financial\-instruments/\{financialinstrumentvaluationid\}/asset\-valuation\-approaches/\{assetvaluationapproachselectionid\}
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Retrieve
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Retrieve Asset Valuation Information Consolidation Workstep
 
@@ -455,9 +523,13 @@ Key points to consider in the naming:
 3\. Use plural nouns for collections \(e\.g\.\, financial\-instrument\-valuations\, asset\-valuation\-information\-consolidations\)\.
 4\. Use singular nouns
 
-### GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Retrieve
+## GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Retrieve Asset Valuation Workstep
 
@@ -475,9 +547,13 @@ And for the endpoint to retrieve the asset valuation:
 
 GET '/financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/asset\-valuations/\{assetvaluationid\}'
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Update
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationApproachSelection/\{assetvaluationapproachselectionid\}/Update
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Update Asset Valuation Approach Selection Workstep
 
@@ -491,9 +567,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /financialInstruments/\{financialInstrumentId\}/assetValuationApproachSelections/\{assetValuationApproachSelectionId\}
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Update
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuationInformationConsolidation/\{assetvaluationinformationconsolidationid\}/Update
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Update Asset Valuation Information Consolidation Workstep
 
@@ -507,9 +587,13 @@ PUT: A suitable name for the given path could be:
 
 PATCH /financial\-instrument\-valuations/\{financialinstrumentvaluationid\}/asset\-valuation\-information\-consolidations/\{assetvaluationinformationconsolidationid\}
 
-### PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Update
+## PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialInstrumentValuation/\{financialinstrumentvaluationid\}/AssetValuation/\{assetvaluationid\}/Update
+:::
+
+### Description
 
 This Service Domain provides a range of financial asset valuation services   Update Asset Valuation Workstep
 

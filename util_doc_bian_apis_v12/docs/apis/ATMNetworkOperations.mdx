@@ -1,41 +1,14 @@
 # ATMNetworkOperations
 
-## Table of Contents
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Control](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/control)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Exchange](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/exchange)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Execute](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/execute)
-- [POST: /ATMNetworkOperations/Initiate](#post-/atmnetworkoperations/initiate)
-- [GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Retrieve](#get-/atmnetworkoperations/\{atmnetworkoperationsid\}/retrieve)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Request](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/request)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Update](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/update)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Control](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/networkoperation/\{networkoperationid\}/control)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Exchange](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/cashdistribution/\{cashdistributionid\}/exchange)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Exchange](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/devicetracking/\{devicetrackingid\}/exchange)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Exchange](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialdocumenthandling/\{financialdocumenthandlingid\}/exchange)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Exchange](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/exchange)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Execute](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/devicetracking/\{devicetrackingid\}/execute)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Execute](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialdocumenthandling/\{financialdocumenthandlingid\}/execute)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Execute](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/execute)
-- [POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/Initiate](#post-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialdocumenthandling/initiate)
-- [POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/Initiate](#post-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialtransactioncapture/initiate)
-- [POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/Initiate](#post-/atmnetworkoperations/\{atmnetworkoperationsid\}/networkoperation/initiate)
-- [GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Retrieve](#get-/atmnetworkoperations/\{atmnetworkoperationsid\}/cashdistribution/\{cashdistributionid\}/retrieve)
-- [GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Retrieve](#get-/atmnetworkoperations/\{atmnetworkoperationsid\}/devicetracking/\{devicetrackingid\}/retrieve)
-- [GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Retrieve](#get-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialdocumenthandling/\{financialdocumenthandlingid\}/retrieve)
-- [GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve](#get-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/retrieve)
-- [GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Retrieve](#get-/atmnetworkoperations/\{atmnetworkoperationsid\}/networkoperation/\{networkoperationid\}/retrieve)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Request](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/cashdistribution/\{cashdistributionid\}/request)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Update](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/devicetracking/\{devicetrackingid\}/update)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Update](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialdocumenthandling/\{financialdocumenthandlingid\}/update)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/update)
-- [PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Update](#put-/atmnetworkoperations/\{atmnetworkoperationsid\}/networkoperation/\{networkoperationid\}/update)
-
-
 **BIAN Documentation:** [ATMNetworkOperations v12](https://app.swaggerhub.com/apis/BIAN-3/ATMNetworkOperations/12.0.0)
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Control
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Control
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Control
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements CoCR Control the processing of ATM Network Operating Session
 
@@ -51,9 +24,13 @@ PUT: The name of the path should be:
 
 Ensure the path uses lowercase letters for consistency and follows RESTful conventions\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Exchange
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Exchange
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements EcCR Accept\, verify\, etc\. aspects of ATM Network Operating Session processing
 
@@ -67,9 +44,13 @@ PUT: Based on REST best practices\, the name of the path '/ATMNetworkOperations/
 
 A more clear and concise name could be '/atm\-network\-operations/\{atmnetworkoperationsid\}/exchange'\. This naming incorporates lowercase letters\, dashes to separate words\, and utilizes plural nouns for consistency\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Execute
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Execute
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ExCR Execute an available automated action for ATM Network Operating Session
 
@@ -81,9 +62,13 @@ This API path allows you to update an existing resource related to ATM Network O
 
 PUT: The name of the path should ideally be \`/atm\-network\-operations/\{atm\-network\-operations\-id\}/execute\`\. This follows REST best practices by using lowercase letters\, hyphens instead of underscores\, and keeping the resource name in its plural form\.
 
-### POST: /ATMNetworkOperations/Initiate
+## POST: /ATMNetworkOperations/Initiate
 
-**Description**
+:::info Path
+POST: /ATMNetworkOperations/Initiate
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements InCR Instantiate a new ATM Network Operating Session
 
@@ -95,9 +80,13 @@ This API path allows you to initiate a new session for operating the ATM network
 
 POST: In adherence to REST best practices\, the name of the path '/ATMNetworkOperations/Initiate' could be renamed to '/atm\-network\-operations/initiate' for better readability and consistency\.
 
-### GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Retrieve
+## GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Retrieve
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ReCR Retrieve details about any aspect of ATM Network Operating Session
 
@@ -115,9 +104,13 @@ GET /atm\-network\-operations/\{atmnetworkoperationsid\}
 
 This path structure clearly indicates that you are performing a GET request to retrieve data related to a specific ATM Network Operation identified by the \{atmnetworkoperationsid\} parameter\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Request
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Request
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Request
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements RqCR Request manual intervention or a decision with respect to ATM Network Operating Session
 
@@ -129,9 +122,13 @@ This API path allows you to update an existing resource related to the automated
 
 PUT: The name for the path '/ATMNetworkOperations/\{atmnetworkoperationsid\}/Request' following REST best practices could be something more specific and clear for the action being performed\. For example\, it could be named '/ATMNetworkOperations/\{atmnetworkoperationsid\}/UpdateRequest' to indicate that the action is updating a request related to a specific ATM network operation ID\. This name provides clarity and describes the action being taken on the resource more explicitly\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Update
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/Update
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements UpCR Update details relating to ATM Network Operating Session
 
@@ -147,9 +144,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 This path is more readable and follows the convention of using hyphens to separate words in the path\. The 'Update' operation would be represented by using the appropriate HTTP method such as PUT or PATCH on this resource\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Control
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Control
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Control
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements CoBQ Control the processing of Network Operation
 
@@ -162,9 +163,13 @@ This BIAN API path allows you to update an existing resource related to controll
 PUT: A suitable name for the path following REST best practices could be:
 '/ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperations/\{networkoperationid\}/Controls'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Exchange
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Exchange
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements EcBQ Accept\, verify\, etc\. aspects of Cash Distribution processing
 
@@ -178,9 +183,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/ExchangeTransaction'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Exchange
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Exchange
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements EcBQ Accept\, verify\, etc\. aspects of Device Tracking processing
 
@@ -194,9 +203,13 @@ PUT: Based on REST best practices\, a suitable name for this path would be:
 
 \`/atm\-network\-operations/\{atmnetworkoperationsid\}/device\-tracking/\{devicetrackingid\}/exchange\`
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Exchange
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Exchange
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements EcBQ Accept\, verify\, etc\. aspects of Financial Document Handling processing
 
@@ -210,9 +223,13 @@ PUT: A possible RESTful naming convention for this path could be:
 
 '/atm\-network\-operations/\{atm\-network\-operations\-id\}/financial\-document\-handling/\{financial\-document\-handling\-id\}/exchange'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Exchange
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Exchange
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements EcBQ Accept\, verify\, etc\. aspects of Financial Transaction Capture processing
 
@@ -226,9 +243,13 @@ PUT: The name of the path should be as follows according to REST best practices:
 
 '/atm\-network\-operations/\{atmnetworkoperationsid\}/financial\-transaction\-capture/\{financialtransactioncaptureid\}/exchange'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Execute
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Execute
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ExBQ Execute an available automated action for Device Tracking
 
@@ -242,9 +263,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/atm\-network\-operations/\{atmnetworkoperationsid\}/device\-tracking/\{devicetrackingid\}/execute'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Execute
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Execute
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ExBQ Execute an available automated action for Financial Document Handling
 
@@ -258,9 +283,13 @@ PUT: The name of the path should be:
 
 '/atm\-network\-operations/\{atmnetworkoperationsid\}/financial\-document\-handling/\{financialdocumenthandlingid\}/execute'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Execute
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Execute
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ExBQ Execute an available automated action for Financial Transaction Capture
 
@@ -276,9 +305,13 @@ PUT: According to REST best practices\, the name of the path should be as follow
 
 Make sure to separate words with hyphens and use lowercase letters to improve readability and maintain consistency\.
 
-### POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/Initiate
+## POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/Initiate
 
-**Description**
+:::info Path
+POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/Initiate
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements InBQ Instantiate a new Financial Document Handling
 
@@ -292,9 +325,13 @@ POST: Based on REST best practices\, a more appropriate name for the path '/ATMN
 
 '/atm\-network\-operations/\{atmnetworkoperationsid\}/financial\-documents/initiate'
 
-### POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/Initiate
+## POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/Initiate
 
-**Description**
+:::info Path
+POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/Initiate
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements InBQ Instantiate a new Financial Transaction Capture
 
@@ -306,9 +343,13 @@ This API endpoint allows you to create a new Financial Transaction Capture withi
 
 POST: A suitable RESTful name for the given path could be '/atm\-network\-operations/\{atm\-network\-operations\-id\}/financial\-transactions/initiate'\. This name follows the convention of using lowercase letters\, hyphens to separate words\, and resource names in plural form\.
 
-### POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/Initiate
+## POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/Initiate
 
-**Description**
+:::info Path
+POST: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/Initiate
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements InBQ Instantiate a new Network Operation
 
@@ -326,9 +367,13 @@ POST: The name of the path should be:
 
 This path follows REST best practices by using plural nouns for resource names and including specific resource identifiers in the path\.
 
-### GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Retrieve
+## GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Retrieve
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ReBQ Retrieve details about any aspect of Cash Distribution
 
@@ -342,9 +387,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/atm\-network\-operations/\{atm\-network\-operations\-id\}/cash\-distribution/\{cash\-distribution\-id\}/retrieve'
 
-### GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Retrieve
+## GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Retrieve
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ReBQ Retrieve details about any aspect of Device Tracking
 
@@ -358,9 +407,13 @@ GET: The name of the path should be:
 
 \`/atm\-network\-operations/\{atm\-network\-operations\-id\}/device\-tracking/\{device\-tracking\-id\}\`
 
-### GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Retrieve
+## GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Retrieve
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ReBQ Retrieve details about any aspect of Financial Document Handling
 
@@ -374,9 +427,13 @@ GET: A possible RESTful name for this path could be:
 
 GET '/atm\-network\-operations/\{atmnetworkoperationsid\}/financial\-document\-handling/\{financialdocumenthandlingid\}'
 
-### GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve
+## GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ReBQ Retrieve details about any aspect of Financial Transaction Capture
 
@@ -390,9 +447,13 @@ GET: The name of the path could be:
 
 '/ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}'
 
-### GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Retrieve
+## GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Retrieve
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements ReBQ Retrieve details about any aspect of Network Operation
 
@@ -406,9 +467,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/atm\-network\-operations/\{atm\-network\-operations\-id\}/network\-operation/\{network\-operation\-id\}/retrieve'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Request
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Request
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/CashDistribution/\{cashdistributionid\}/Request
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements RqBQ Request manual intervention or a decision with respect to Cash Distribution
 
@@ -422,9 +487,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/atm\-network\-operations/\{atmnetworkoperationsid\}/cash\-distribution/\{cashdistributionid\}/request'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Update
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/DeviceTracking/\{devicetrackingid\}/Update
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements UpBQ Update details relating to Device Tracking
 
@@ -438,9 +507,13 @@ PUT: Following REST best practices\, a suitable name for the path would be:
 
 '/atm\-network\-operations/\{atm\_network\_operations\_id\}/device\-tracking/\{device\_tracking\_id\}'
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Update
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialDocumentHandling/\{financialdocumenthandlingid\}/Update
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements UpBQ Update details relating to Financial Document Handling
 
@@ -452,9 +525,13 @@ This BIAN API path allows you to update details related to financial document ha
 
 PUT: The name of the path could be \`/atm\-network\-operations/\{atmnetworkoperationsid\}/financial\-document\-handling/\{financialdocumenthandlingid\}\`\. REST best practices suggest using all lowercase letters\, separating words with hyphens\, and avoiding verbs in the URL path\. The specific update operation can be implied through the use of HTTP methods such as PUT or PATCH when sending a request to this resource\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements UpBQ Update details relating to Financial Transaction Capture
 
@@ -470,9 +547,13 @@ PUT: The name of the path should be:
 
 to conform to REST best practices\, and the HTTP method used for updating should be included in the request\, typically through a PUT or PATCH request method\.
 
-### PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Update
+## PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ATMNetworkOperations/\{atmnetworkoperationsid\}/NetworkOperation/\{networkoperationid\}/Update
+:::
+
+### Description
 
 Handling the automated operation of the ATM network and linked devices\, including tracing physical cash and document movements UpBQ Update details relating to Network Operation
 

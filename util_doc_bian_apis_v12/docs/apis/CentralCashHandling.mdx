@@ -1,31 +1,14 @@
 # CentralCashHandling
 
-## Table of Contents
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/Capture](#put-/centralcashhandling/\{centralcashhandlingid\}/capture)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/Control](#put-/centralcashhandling/\{centralcashhandlingid\}/control)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/Exchange](#put-/centralcashhandling/\{centralcashhandlingid\}/exchange)
-- [POST: /CentralCashHandling/Initiate](#post-/centralcashhandling/initiate)
-- [GET: /CentralCashHandling/\{centralcashhandlingid\}/Retrieve](#get-/centralcashhandling/\{centralcashhandlingid\}/retrieve)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/Update](#put-/centralcashhandling/\{centralcashhandlingid\}/update)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Capture](#put-/centralcashhandling/\{centralcashhandlingid\}/projectionandallocation/\{projectionandallocationid\}/capture)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Capture](#put-/centralcashhandling/\{centralcashhandlingid\}/trackingandallocation/\{trackingandallocationid\}/capture)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Control](#put-/centralcashhandling/\{centralcashhandlingid\}/projectionandallocation/\{projectionandallocationid\}/control)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Control](#put-/centralcashhandling/\{centralcashhandlingid\}/trackingandallocation/\{trackingandallocationid\}/control)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Exchange](#put-/centralcashhandling/\{centralcashhandlingid\}/projectionandallocation/\{projectionandallocationid\}/exchange)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Exchange](#put-/centralcashhandling/\{centralcashhandlingid\}/trackingandallocation/\{trackingandallocationid\}/exchange)
-- [POST: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/Initiate](#post-/centralcashhandling/\{centralcashhandlingid\}/projectionandallocation/initiate)
-- [POST: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/Initiate](#post-/centralcashhandling/\{centralcashhandlingid\}/trackingandallocation/initiate)
-- [GET: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Retrieve](#get-/centralcashhandling/\{centralcashhandlingid\}/projectionandallocation/\{projectionandallocationid\}/retrieve)
-- [GET: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Retrieve](#get-/centralcashhandling/\{centralcashhandlingid\}/trackingandallocation/\{trackingandallocationid\}/retrieve)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Update](#put-/centralcashhandling/\{centralcashhandlingid\}/projectionandallocation/\{projectionandallocationid\}/update)
-- [PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Update](#put-/centralcashhandling/\{centralcashhandlingid\}/trackingandallocation/\{trackingandallocationid\}/update)
-
-
 **BIAN Documentation:** [CentralCashHandling v12](https://app.swaggerhub.com/apis/BIAN-3/CentralCashHandling/12.0.0)
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/Capture
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/Capture
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network CaCR Capture Central Cash Allocation activity or event related information
 
@@ -43,9 +26,13 @@ PUT: The RESTful path for capturing data related to the central cash handling re
 
 This path follows RESTful best practices by using plural nouns for resources \`CentralCashHandling\`\, \`Capture\` as an action on the resource\, and \`\{centralcashhandlingid\}\` as a placeholder for a specific identifier\.
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/Control
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/Control
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/Control
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network CoCR Control the processing of Central Cash Allocation
 
@@ -59,9 +46,13 @@ PUT: The name of the path should be:
 
 '/central\-cash\-handling/\{centralcashhandlingid\}/controls'
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/Exchange
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/Exchange
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network EcCR Accept\, verify\, etc\. aspects of Central Cash Allocation processing
 
@@ -77,9 +68,13 @@ PUT: The name of the path should be:
 
 According to REST best practices\, the path should be in lowercase letter and the plural form of the resource name should be used\.
 
-### POST: /CentralCashHandling/Initiate
+## POST: /CentralCashHandling/Initiate
 
-**Description**
+:::info Path
+POST: /CentralCashHandling/Initiate
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network InCR Instantiate a new Central Cash Allocation
 
@@ -91,9 +86,13 @@ This API path allows users to create a new Central Cash Allocation within the Ce
 
 POST: If the path '/CentralCashHandling/Initiate' followed REST best practices\, it should be named using nouns that represent resources rather than actions\. A more appropriate name for this path could be '/cash\-handling'\, which better reflects the resource being accessed\.
 
-### GET: /CentralCashHandling/\{centralcashhandlingid\}/Retrieve
+## GET: /CentralCashHandling/\{centralcashhandlingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CentralCashHandling/\{centralcashhandlingid\}/Retrieve
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network ReCR Retrieve details about any aspect of Central Cash Allocation
 
@@ -105,9 +104,13 @@ This API path \(/CentralCashHandling/\{centralcashhandlingid\}/Retrieve\) allows
 
 GET: The name for this path should be \`/central\-cash\-handling/\{centralcashhandlingid\}\` following REST best practices\, which utilizes lowercase letters and hyphens to separate words in the URL path\.
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/Update
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/Update
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network UpCR Update details relating to Central Cash Allocation
 
@@ -125,9 +128,13 @@ PUT /central\-cash\-handling/\{centralcashhandlingid\}
 
 This name follows the convention of using HTTP method \(\`PUT\`\) to update a specific resource identified by \`\{centralcashhandlingid\}\` within the \`central\-cash\-handling\` collection\.
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Capture
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Capture
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network CaBQ Capture Projection and Allocation activity or event related information
 
@@ -141,9 +148,13 @@ PUT: In RESTful design\, the path should represent a resource rather than an act
 
 \`/central\-cash\-handling/\{centralcashhandlingid\}/projection\-and\-allocation/\{projectionandallocationid\}/captures\`
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Capture
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Capture
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network CaBQ Capture Tracking and Allocation activity or event related information
 
@@ -156,9 +167,13 @@ This BIAN API path allows you to update \(PUT\) information related to tracking 
 PUT: Based on REST best practices\, the name of the path should be:
 '/central\-cash\-handling/\{centralcashhandlingid\}/tracking\-and\-allocation/\{trackingandallocationid\}/capture'
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Control
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Control
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Control
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network CoBQ Control the processing of Projection and Allocation
 
@@ -173,9 +188,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /CentralCashHandling/\{centralcashhandlingid\}/ProjectionAndAllocation/\{projectionandallocationid\}/Control
 \`\`\`
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Control
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Control
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Control
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network CoBQ Control the processing of Tracking and Allocation
 
@@ -189,9 +208,13 @@ PUT: Based on REST best practices\, the name of the path '/CentralCashHandling/\
 
 This naming convention uses lowercase letters\, hyphens to separate words\, and describes the resources in a clear and structured manner\, which aligns with RESTful principles\.
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Exchange
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Exchange
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network EcBQ Accept\, verify\, etc\. aspects of Projection and Allocation processing
 
@@ -205,9 +228,13 @@ PUT: In following REST best practices\, the name of the path should be:
 
 \`/central\-cash\-handling/\{centralcashhandlingid\}/projection\-and\-allocation/\{projectionandallocationid\}/exchange\`
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Exchange
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Exchange
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network EcBQ Accept\, verify\, etc\. aspects of Tracking and Allocation processing
 
@@ -221,9 +248,13 @@ PUT: Based on REST best practices\, a possible name for the path could be:
 
 '/central\-cash\-handling/\{centralcashhandlingid\}/tracking\-and\-allocation/\{trackingandallocationid\}/exchange'
 
-### POST: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/Initiate
+## POST: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/Initiate
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network InBQ Instantiate a new Projection and Allocation
 
@@ -241,9 +272,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 This path should align with the resource naming conventions in REST\, where the URI should represent a resource and the individual words are separated by slashes\.
 
-### POST: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/Initiate
+## POST: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/Initiate
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network InBQ Instantiate a new Tracking and Allocation
 
@@ -263,9 +298,13 @@ In this naming convention:
 \- Resource identifiers are expressed as singular nouns\, in this case 'central\-cash\-handling' and 'tracking\-and\-allocation'
 \- Actions are represented as verbs\, such as 'initiate
 
-### GET: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Retrieve
+## GET: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Retrieve
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network ReBQ Retrieve details about any aspect of Projection and Allocation
 
@@ -279,9 +318,13 @@ GET: The name of the path should be:
 
 GET /central\-cash\-handling/\{centralcashhandlingid\}/projection\-and\-allocation/\{projectionandallocationid\}
 
-### GET: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Retrieve
+## GET: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Retrieve
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network ReBQ Retrieve details about any aspect of Tracking and Allocation
 
@@ -297,9 +340,13 @@ GET: Following REST best practices\, the name of the path should be:
 GET /central\-cash\-handling/\{centralcashhandlingid\}/tracking\-and\-allocation/\{trackingandallocationid\}
 \`\`\`
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Update
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/ProjectionandAllocation/\{projectionandallocationid\}/Update
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network UpBQ Update details relating to Projection and Allocation
 
@@ -313,9 +360,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 PATCH /central\-cash\-handlings/\{centralcashhandlingid\}/projections\-and\-allocations/\{projectionandallocationid\}
 
-### PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Update
+## PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CentralCashHandling/\{centralcashhandlingid\}/TrackingandAllocation/\{trackingandallocationid\}/Update
+:::
+
+### Description
 
 Track cash inventory\, project demand and allocate inventory across the branch/ATM network UpBQ Update details relating to Tracking and Allocation
 

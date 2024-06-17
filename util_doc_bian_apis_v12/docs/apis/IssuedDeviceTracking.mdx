@@ -1,22 +1,14 @@
 # IssuedDeviceTracking
 
-## Table of Contents
-- [POST: /IssuedDeviceTracking/Initiate](#post-/issueddevicetracking/initiate)
-- [PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Update](#put-/issueddevicetracking/\{issueddevicetrackingid\}/update)
-- [GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Retrieve](#get-/issueddevicetracking/\{issueddevicetrackingid\}/retrieve)
-- [PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Update](#put-/issueddevicetracking/\{issueddevicetrackingid\}/internalnotification/\{internalnotificationid\}/update)
-- [PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Capture](#put-/issueddevicetracking/\{issueddevicetrackingid\}/internalnotification/\{internalnotificationid\}/capture)
-- [GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Retrieve](#get-/issueddevicetracking/\{issueddevicetrackingid\}/internalnotification/\{internalnotificationid\}/retrieve)
-- [PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Update](#put-/issueddevicetracking/\{issueddevicetrackingid\}/externalreport/\{externalreportid\}/update)
-- [PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Capture](#put-/issueddevicetracking/\{issueddevicetrackingid\}/externalreport/\{externalreportid\}/capture)
-- [GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Retrieve](#get-/issueddevicetracking/\{issueddevicetrackingid\}/externalreport/\{externalreportid\}/retrieve)
-
-
 **BIAN Documentation:** [IssuedDeviceTracking v12](https://app.swaggerhub.com/apis/BIAN-3/IssuedDeviceTracking/12.0.0)
 
-### POST: /IssuedDeviceTracking/Initiate
+## POST: /IssuedDeviceTracking/Initiate
 
-**Description**
+:::info Path
+POST: /IssuedDeviceTracking/Initiate
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. InCR Initiate tracking for an allocated issued device
 
@@ -28,9 +20,13 @@ This API path\, /IssuedDeviceTracking/Initiate\, allows you to create a new reso
 
 POST: In RESTful API design\, the name of the path should be a noun that represents a resource\. Following this convention\, a suitable name for the path '/IssuedDeviceTracking/Initiate' could be '/issued\-devices' or '/device\-tracking'\.
 
-### PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Update
+## PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Update
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. UpCR Update details of a tracked issued device
 
@@ -42,9 +38,13 @@ This API path allows you to update the details of a tracked issued device\. For 
 
 PUT: The name of the path '/IssuedDeviceTracking/\{issueddevicetrackingid\}/Update' should be '/issued\-device\-tracking/\{issueddevicetrackingid\}' following REST best practices\.
 
-### GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Retrieve
+## GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. ReCR Retrieve details about a tracked device
 
@@ -60,9 +60,13 @@ GET: The name of the path should be:
 /issued\-device\-tracking/\{issueddevicetrackingid\}
 \`\`\`
 
-### PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Update
+## PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Update
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. UpBQ Update captured internal status details for an issued device
 
@@ -78,9 +82,13 @@ PUT: The name of the path should be:
 PUT /issued\-device\-tracking/\{issueddevicetrackingid\}/internal\-notification/\{internalnotificationid\}
 \`\`\`
 
-### PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Capture
+## PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Capture
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. CaBQ Capture status notification for an issued device
 
@@ -96,9 +104,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase letters and separated by hyphens to improve readability and consistency\.
 
-### GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Retrieve
+## GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. ReBQ Retrieve internal status notification details
 
@@ -110,9 +122,13 @@ This API path allows you to retrieve internal notification details related to a 
 
 GET: Based on REST best practices\, the path '/IssuedDeviceTracking/\{issueddevicetrackingid\}/InternalNotification/\{internalnotificationid\}/Retrieve' could be renamed to '/issued\-device\-tracking/\{issueddevicetrackingid\}/internal\-notification/\{internalnotificationid\}' for better readability and adherence to conventions\.
 
-### PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Update
+## PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Update
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Update
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. UpBQ Update captured externally reported status details for an issued device
 
@@ -125,9 +141,13 @@ This API path allows you to update the status details of an issued device that h
 PUT: Based on REST best practices\, the name of the path should be something like:
 '/issued\-device\-tracking/\{issueddevicetrackingid\}/external\-report/\{externalreportid\}/update'
 
-### PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Capture
+## PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Capture
 
-**Description**
+:::info Path
+PUT: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Capture
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. CaBQ Capture external notification status details for an issued device
 
@@ -143,9 +163,13 @@ PUT: Based on REST best practices\, the name of the path should provide a clear 
 
 This naming convention makes it clear that the endpoint is capturing data related to an external report for a specific issued device tracking entry\.
 
-### GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Retrieve
+## GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IssuedDeviceTracking/\{issueddevicetrackingid\}/ExternalReport/\{externalreportid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles operational access to issued device tracking services\. Services report on the status of devices such as cards\, fobs\, etc\. that have been issued to customers\. Service notifications include fraud warnings/alerts and device cancellation\. ReBQ Retrieve external status notification details
 

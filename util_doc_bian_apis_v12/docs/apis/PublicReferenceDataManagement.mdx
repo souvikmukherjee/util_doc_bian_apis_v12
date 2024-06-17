@@ -1,22 +1,14 @@
 # PublicReferenceDataManagement
 
-## Table of Contents
-- [PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Capture](#put-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/capture)
-- [PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Control](#put-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/control)
-- [PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Exchange](#put-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/exchange)
-- [POST: /PublicReferenceDataManagement/Initiate](#post-/publicreferencedatamanagement/initiate)
-- [GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Retrieve](#get-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/retrieve)
-- [PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Request](#put-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/request)
-- [PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Update](#put-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/update)
-- [POST: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/Initiate](#post-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/globalreferencedata/initiate)
-- [GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/\{globalreferencedataid\}/Retrieve](#get-/publicreferencedatamanagement/\{publicreferencedatamanagementid\}/globalreferencedata/\{globalreferencedataid\}/retrieve)
-
-
 **BIAN Documentation:** [PublicReferenceDataManagement v12](https://app.swaggerhub.com/apis/BIAN-3/PublicReferenceDataManagement/12.0.0)
 
-### PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Capture
+## PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Capture
 
-**Description**
+:::info Path
+PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Capture
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. CaCR Capture Global Standard Specification activity or event related information
 
@@ -34,9 +26,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows the best practice of using resource names in the plural form \('PublicReferenceDataManagement'\) and including identifiers in curly braces \('\{publicreferencedatamanagementid\}'\) to represent variables in the path\. The specific operation 'Capture' is also included to indicate what action is being performed on the resource identified by 'publicrefer
 
-### PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Control
+## PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Control
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. CoCR Control the processing of Global Standard Specification
 
@@ -52,9 +48,13 @@ PUT: In a RESTful API\, the path segments should be nouns rather than verbs\. Ba
 
 This name is more descriptive and follows the convention of using plural nouns for collections of resources\.
 
-### PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Exchange
+## PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Exchange
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. EcCR Accept\, verify\, etc\. aspects of Global Standard Specification processing
 
@@ -68,9 +68,13 @@ PUT: The recommended name for the path '/PublicReferenceDataManagement/\{publicr
 
 '/public\-reference\-data\-management/\{public\-reference\-data\-management\-id\}/exchange'
 
-### POST: /PublicReferenceDataManagement/Initiate
+## POST: /PublicReferenceDataManagement/Initiate
 
-**Description**
+:::info Path
+POST: /PublicReferenceDataManagement/Initiate
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. InCR Instantiate a new Global Standard Specification
 
@@ -82,9 +86,13 @@ This BIAN API path is used to create a new resource that provides access to stan
 
 POST: The path should be named using nouns that represent resources\, rather than verbs\. A better name for the path '/PublicReferenceDataManagement/Initiate' following REST best practices could be '/public\-reference\-data'\. This path represents the resource related to public reference data\, which is a more suitable and descriptive naming convention based on REST principles\.
 
-### GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Retrieve
+## GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Retrieve
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. ReCR Retrieve details about any aspect of Global Standard Specification
 
@@ -100,9 +108,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /PublicReferenceDataManagement/\{publicReferenceDataManagementId\}/Retrieve
 \`\`\`
 
-### PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Request
+## PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Request
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. RqCR Request manual intervention or a decision with respect to Global Standard Specification
 
@@ -114,9 +126,13 @@ This API path allows you to update existing public reference data associated wit
 
 PUT: The name of the path should be in plural form and should represent a collection of resources\. Following REST best practices\, the path could be named as '/public\-reference\-data\-management/\{publicreferencedatamanagementid\}/requests'\.
 
-### PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Update
+## PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/Update
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. UpCR Update details relating to Global Standard Specification
 
@@ -130,9 +146,13 @@ PUT: The name of the path should be:
 
 PUT /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}
 
-### POST: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/Initiate
+## POST: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/Initiate
 
-**Description**
+:::info Path
+POST: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/Initiate
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. InBQ Instantiate a new Global Reference Data
 
@@ -146,9 +166,13 @@ POST: A recommended name for the path '/PublicReferenceDataManagement/\{publicre
 
 '/public\-reference\-data\-management/\{publicreferencedatamanagementid\}/global\-reference\-data/initiate'
 
-### GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/\{globalreferencedataid\}/Retrieve
+## GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/\{globalreferencedataid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicReferenceDataManagement/\{publicreferencedatamanagementid\}/GlobalReferenceData/\{globalreferencedataid\}/Retrieve
+:::
+
+### Description
 
 Provide structured access to standard 'global' reference data and definitions associated with market activity such as currency\, country and segment identifiers\. ReBQ Retrieve details about any aspect of Global Reference Data
 

@@ -1,25 +1,14 @@
 # CardClearing
 
-## Table of Contents
-- [POST: /CardClearing/Initiate](#post-/cardclearing/initiate)
-- [PUT: /CardClearing/\{cardclearingid\}/Update](#put-/cardclearing/\{cardclearingid\}/update)
-- [GET: /CardClearing/\{cardclearingid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/retrieve)
-- [PUT: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Update](#put-/cardclearing/\{cardclearingid\}/capture/\{captureid\}/update)
-- [GET: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/capture/\{captureid\}/retrieve)
-- [GET: /CardClearing/\{cardclearingid\}/Addressing/\{addressingid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/addressing/\{addressingid\}/retrieve)
-- [GET: /CardClearing/\{cardclearingid\}/FXConversion/\{fxconversionid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/fxconversion/\{fxconversionid\}/retrieve)
-- [PUT: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Update](#put-/cardclearing/\{cardclearingid\}/fees/\{feesid\}/update)
-- [GET: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/fees/\{feesid\}/retrieve)
-- [GET: /CardClearing/\{cardclearingid\}/Matching/\{matchingid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/matching/\{matchingid\}/retrieve)
-- [GET: /CardClearing/\{cardclearingid\}/Reconciliation/\{reconciliationid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/reconciliation/\{reconciliationid\}/retrieve)
-- [GET: /CardClearing/\{cardclearingid\}/Routing/\{routingid\}/Retrieve](#get-/cardclearing/\{cardclearingid\}/routing/\{routingid\}/retrieve)
-
-
 **BIAN Documentation:** [CardClearing v12](https://app.swaggerhub.com/apis/BIAN-3/CardClearing/12.0.0)
 
-### POST: /CardClearing/Initiate
+## POST: /CardClearing/Initiate
 
-**Description**
+:::info Path
+POST: /CardClearing/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks InCR Initiate a card clearing process
 
@@ -31,9 +20,13 @@ This BIAN API path \`/CardClearing/Initiate\` allows users to create a new resou
 
 POST: If the path '/CardClearing/Initiate' followed all REST best practices\, it would likely be named based on the resource being acted upon\. A more RESTful name for this path could be '/card\-clearing' or '/card\-clearings'\.
 
-### PUT: /CardClearing/\{cardclearingid\}/Update
+## PUT: /CardClearing/\{cardclearingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardClearing/\{cardclearingid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks UpCR Update details of a card clearing processing batch
 
@@ -47,9 +40,13 @@ PUT: The name of the path should be:
 
 PATCH /CardClearing/\{cardclearingid\}
 
-### GET: /CardClearing/\{cardclearingid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReCR Retrieve details about a card clearing process
 
@@ -63,9 +60,13 @@ GET: The appropriate name for the path '/CardClearing/\{cardclearingid\}/Retriev
 
 '/cardclearings/\{cardclearingid\}'
 
-### PUT: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Update
+## PUT: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks UpBQ Update details of a captured card transaction \(for repair\)
 
@@ -77,9 +78,13 @@ This API path allows users to update the details of a captured card transaction 
 
 PUT: The name of the path should be \`/card\-clearing/\{card\_clearing\_id\}/capture/\{capture\_id\}\`\. Following REST best practices\, it is recommended to use lowercase letters and separate words with hyphens for better readability and consistency\. The "Update" action is implicit in a PUT or PATCH request to this endpoint to update the specified card clearing capture resource identified by the \`cardclearingid\` and \`captureid\`\.
 
-### GET: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Capture/\{captureid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about a captured card transaction
 
@@ -93,9 +98,13 @@ GET: The name of the path should be:
 
 \`/card\-clearings/\{cardClearingId\}/captures/\{captureId\}\`
 
-### GET: /CardClearing/\{cardclearingid\}/Addressing/\{addressingid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Addressing/\{addressingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Addressing/\{addressingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about card transaction addressing
 
@@ -111,9 +120,13 @@ A possible name for this path could be: \`/card\-clearings/\{cardclearingid\}/ad
 
 Remember\, the path should ideally represent the resource and the action being performed on it in a clear and concise manner\.
 
-### GET: /CardClearing/\{cardclearingid\}/FXConversion/\{fxconversionid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/FXConversion/\{fxconversionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/FXConversion/\{fxconversionid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about card transaction FX conversion|
 
@@ -127,9 +140,13 @@ GET: A suitable name for the path '/CardClearing/\{cardclearingid\}/FXConversion
 
 GET /card\-clearings/\{cardclearingid\}/fx\-conversions/\{fxconversionid\}
 
-### PUT: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Update
+## PUT: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks UpBQ Update details of applied fees
 
@@ -145,9 +162,13 @@ PUT: The name of the path should be:
 
 This path aligns with REST best practices by using lowercase letters and hyphens to separate words\, and it accurately represents the resource hierarchy with the card clearing ID and fees ID as path parameters\. It does not include the specific operation "Update" in the path as this operation can be inferred from the HTTP method used \(e\.g\.\, PUT or PATCH\) when performing
 
-### GET: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Fees/\{feesid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about card transaction intercharge fees
 
@@ -161,9 +182,13 @@ GET: Based on REST best practices\, a suitable name for the path \`/CardClearing
 
 \`GET /card\-clearings/\{cardclearingid\}/fees/\{feesid\}\`
 
-### GET: /CardClearing/\{cardclearingid\}/Matching/\{matchingid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Matching/\{matchingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Matching/\{matchingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about card transaction matching
 
@@ -177,9 +202,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`/card\-clearings/\{cardclearingid\}/matchings/\{matchingid\}\`
 
-### GET: /CardClearing/\{cardclearingid\}/Reconciliation/\{reconciliationid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Reconciliation/\{reconciliationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Reconciliation/\{reconciliationid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about card transaction reconciliation
 
@@ -193,9 +222,13 @@ GET: The name of the path should be:
 
 \`GET /card\-clearings/\{cardclearingid\}/reconciliations/\{reconciliationid\}\`
 
-### GET: /CardClearing/\{cardclearingid\}/Routing/\{routingid\}/Retrieve
+## GET: /CardClearing/\{cardclearingid\}/Routing/\{routingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardClearing/\{cardclearingid\}/Routing/\{routingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the capture and consolidation of card financial transactions originating from various sources\, such as POS Network\, E\-Commerce Gateway\, ATM Network\, or Card Case Management\. It also handles the clearing of the transactions from the Acquirers to the Issuers through the Card Networks ReBQ Retrieve details about card transaction routing
 

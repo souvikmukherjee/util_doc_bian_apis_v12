@@ -1,26 +1,14 @@
 # ECMAndDCM
 
-## Table of Contents
-- [POST: /ECMAndDCM/Initiate](#post-/ecmanddcm/initiate)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/Update](#put-/ecmanddcm/\{ecmanddcmid\}/update)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/Request](#put-/ecmanddcm/\{ecmanddcmid\}/request)
-- [GET: /ECMAndDCM/\{ecmanddcmid\}/Retrieve](#get-/ecmanddcm/\{ecmanddcmid\}/retrieve)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Update](#put-/ecmanddcm/\{ecmanddcmid\}/instrumentdefinition/\{instrumentdefinitionid\}/update)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Request](#put-/ecmanddcm/\{ecmanddcmid\}/instrumentdefinition/\{instrumentdefinitionid\}/request)
-- [GET: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Retrieve](#get-/ecmanddcm/\{ecmanddcmid\}/instrumentdefinition/\{instrumentdefinitionid\}/retrieve)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Update](#put-/ecmanddcm/\{ecmanddcmid\}/prospectus/\{prospectusid\}/update)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Request](#put-/ecmanddcm/\{ecmanddcmid\}/prospectus/\{prospectusid\}/request)
-- [GET: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Retrieve](#get-/ecmanddcm/\{ecmanddcmid\}/prospectus/\{prospectusid\}/retrieve)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Update](#put-/ecmanddcm/\{ecmanddcmid\}/placement/\{placementid\}/update)
-- [PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Request](#put-/ecmanddcm/\{ecmanddcmid\}/placement/\{placementid\}/request)
-- [GET: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Retrieve](#get-/ecmanddcm/\{ecmanddcmid\}/placement/\{placementid\}/retrieve)
-
-
 **BIAN Documentation:** [ECMAndDCM v12](https://app.swaggerhub.com/apis/BIAN-3/ECMAndDCM/12.0.0)
 
-### POST: /ECMAndDCM/Initiate
+## POST: /ECMAndDCM/Initiate
 
-**Description**
+:::info Path
+POST: /ECMAndDCM/Initiate
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services InCR initiate an ECM And DCM transaction for a corporate customer
 
@@ -32,9 +20,13 @@ This API path allows users to initiate a new ECM \(Equity Capital Market\) and D
 
 POST: A more appropriate name for the path '/ECMAndDCM/Initiate' that follows REST best practices could be '/ecm\-dcm/initiate'\. This name uses all lowercase letters\, separates words with hyphens\, and represents a clear and concise resource URI\.
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/Update
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/Update
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/Update
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services UpCR Update details of an active ECM And DCM transaction
 
@@ -50,9 +42,13 @@ PATCH /ECMAndDCM/\{ecmanddcmid\}
 
 This path reflects the intent of updating the resource identified by \{ecmanddcmid\} within the ECMAndDCM collection using the HTTP method PATCH\.
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/Request
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/Request
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/Request
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services RqCR Request manual intervention to an active ECM And DCM transaction
 
@@ -68,9 +64,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This follows the convention of using lowercase letters\, using hyphens to separate words in the path\, and using plural nouns for collections of resources\.
 
-### GET: /ECMAndDCM/\{ecmanddcmid\}/Retrieve
+## GET: /ECMAndDCM/\{ecmanddcmid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ECMAndDCM/\{ecmanddcmid\}/Retrieve
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services ReCR Retrieve details about an active ECM And DCM transaction
 
@@ -88,9 +88,13 @@ GET /ecm\-and\-dcm/\{ecmanddcmid\}
 
 This name avoids unnecessary capitalization\, uses lowercase letters\, and uses hyphens to separate words for better readability and consistency\.
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Update
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Update
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services UpBQ Update details of the ECM And DCM instrument specification
 
@@ -102,9 +106,13 @@ This API path allows you to update the details of a specific instrument definiti
 
 PUT: The name of the path should be \`/ecm\-and\-dcm/\{ecmanddcmid\}/instrument\-definition/\{instrumentdefinitionid\}/update\` in kebab case to follow REST best practices\.
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Request
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Request
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Request
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services RqBQ Request manual intervention to the instrument definition
 
@@ -118,9 +126,13 @@ PUT: A possible RESTful name for the path you mentioned could be:
 
 '/ecm\-and\-dcm/\{ecmanddcmid\}/instrument\-definition/\{instrumentdefinitionid\}/request'
 
-### GET: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Retrieve
+## GET: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ECMAndDCM/\{ecmanddcmid\}/InstrumentDefinition/\{instrumentdefinitionid\}/Retrieve
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services ReBQ Retrieve details about the ECM And DCM instrument definition
 
@@ -134,9 +146,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/ecm\-and\-dcm/\{ecmanddcmid\}/instrument\-definition/\{instrumentdefinitionid\}/retrieve'
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Update
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Update
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Update
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services UpBQ Update details of the ECM And DCM prospectus
 
@@ -152,9 +168,13 @@ PUT /ecm\-dcm/\{ecmanddcmid\}/prospectus/\{prospectusid\}
 
 This naming convention follows the recommended practices for RESTful APIs\, such as using HTTP methods like PUT to indicate updating resources and using lowercase letters for improved readability\.
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Request
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Request
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Request
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services RqBQ Request manual intervention with the prospectus development
 
@@ -168,9 +188,13 @@ PUT: A suitable name for the described path following REST best practices would 
 
 '/ecm\-and\-dcm/\{ecm\-and\-dcm\-id\}/prospectus/\{prospectus\-id\}/request'
 
-### GET: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Retrieve
+## GET: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ECMAndDCM/\{ecmanddcmid\}/Prospectus/\{prospectusid\}/Retrieve
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services ReBQ Retrieve details about the ECM And DCM prospectus development
 
@@ -184,9 +208,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 \`GET /ecm\-and\-dcm/\{ecmanddcmid\}/prospectus/\{prospectusid\}\`
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Update
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Update
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services UpBQ Update details of ECM And DCM placement activity
 
@@ -202,9 +230,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In this naming convention\, the path parameters are in lowercase and separated by hyphens for better readability and consistency\.
 
-### PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Request
+## PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Request
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services RqBQ Request manual intervention in the placement activity
 
@@ -218,9 +250,13 @@ PUT: The name of the path should be:
 
 GET /ecm\-and\-dcm/\{ecmanddcmid\}/placements/\{placementid\}/requests
 
-### GET: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Retrieve
+## GET: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ECMAndDCM/\{ecmanddcmid\}/Placement/\{placementid\}/Retrieve
+:::
+
+### Description
 
 Supports the specification\, pricing and issuance of equity and debt \(bond\) primary capital market products for corporate financing services ReBQ Retrieve details about the ECM And DCM placement actions
 

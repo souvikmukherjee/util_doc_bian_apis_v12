@@ -1,17 +1,14 @@
 # ServicingOrder
 
-## Table of Contents
-- [POST: /ServicingOrder/Initiate](#post-/servicingorder/initiate)
-- [PUT: /ServicingOrder/\{servicingorderid\}/Execute](#put-/servicingorder/\{servicingorderid\}/execute)
-- [PUT: /ServicingOrder/\{servicingorderid\}/Request](#put-/servicingorder/\{servicingorderid\}/request)
-- [GET: /ServicingOrder/\{servicingorderid\}/Retrieve](#get-/servicingorder/\{servicingorderid\}/retrieve)
-
-
 **BIAN Documentation:** [ServicingOrder v12](https://app.swaggerhub.com/apis/BIAN-3/ServicingOrder/12.0.0)
 
-### POST: /ServicingOrder/Initiate
+## POST: /ServicingOrder/Initiate
 
-**Description**
+:::info Path
+POST: /ServicingOrder/Initiate
+:::
+
+### Description
 
 This service domain handles the processing of a customer servicing request as a predefined procedure\. A range of standard servicing requests can be supported\. The process can include a check of permissions when the request is made by a third party/service provider InCR Initiate a servicing order
 
@@ -23,9 +20,13 @@ This BIAN API path \(/ServicingOrder/Initiate\) allows users to create a new cus
 
 POST: In RESTful design\, the name of the path should be a noun that represents a resource\. Based on the path '/ServicingOrder/Initiate'\, a more appropriate name following REST best practices would be '/servicing\-orders'\.
 
-### PUT: /ServicingOrder/\{servicingorderid\}/Execute
+## PUT: /ServicingOrder/\{servicingorderid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ServicingOrder/\{servicingorderid\}/Execute
+:::
+
+### Description
 
 This service domain handles the processing of a customer servicing request as a predefined procedure\. A range of standard servicing requests can be supported\. The process can include a check of permissions when the request is made by a third party/service provider ExCR Execute an automated task in a servicing order \(e\.g\. upload data\)
 
@@ -43,9 +44,13 @@ Following REST best practices:
 \- Use lowercase letters for path segments
 \- Use a descriptive verb \(e\.g\.\, execute\) to indicate the action being performed on the resource
 
-### PUT: /ServicingOrder/\{servicingorderid\}/Request
+## PUT: /ServicingOrder/\{servicingorderid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServicingOrder/\{servicingorderid\}/Request
+:::
+
+### Description
 
 This service domain handles the processing of a customer servicing request as a predefined procedure\. A range of standard servicing requests can be supported\. The process can include a check of permissions when the request is made by a third party/service provider RqCR Request manual intervention in a servicing order \(e\.g\. engage a servicing agent\)
 
@@ -57,9 +62,13 @@ This API path allows you to update an existing customer servicing order by makin
 
 PUT: The name of the path "/ServicingOrders/\{servicingorderId\}/Requests" follows REST best practices\. Each segment of the path should be in plural form and convey the resource hierarchy clearly\.
 
-### GET: /ServicingOrder/\{servicingorderid\}/Retrieve
+## GET: /ServicingOrder/\{servicingorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingOrder/\{servicingorderid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the processing of a customer servicing request as a predefined procedure\. A range of standard servicing requests can be supported\. The process can include a check of permissions when the request is made by a third party/service provider ReCR Retrieve details about a servicing order
 

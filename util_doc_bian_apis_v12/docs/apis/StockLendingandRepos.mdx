@@ -1,42 +1,14 @@
 # StockLendingandRepos
 
-## Table of Contents
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Control](#put-/stocklendingandrepos/\{stocklendingandreposid\}/control)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Exchange](#put-/stocklendingandrepos/\{stocklendingandreposid\}/exchange)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Execute](#put-/stocklendingandrepos/\{stocklendingandreposid\}/execute)
-- [POST: /StockLendingandRepos/Initiate](#post-/stocklendingandrepos/initiate)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/Notify](#get-/stocklendingandrepos/\{stocklendingandreposid\}/notify)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Request](#put-/stocklendingandrepos/\{stocklendingandreposid\}/request)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/Retrieve](#get-/stocklendingandrepos/\{stocklendingandreposid\}/retrieve)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Update](#put-/stocklendingandrepos/\{stocklendingandreposid\}/update)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Exchange](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/\{repotransactioncashtransferid\}/exchange)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Exchange](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/\{repotransactioninitiationid\}/exchange)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Exchange](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/\{repotransactionsecuritytransferid\}/exchange)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Execute](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/\{repotransactioncashtransferid\}/execute)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Execute](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/\{repotransactioninitiationid\}/execute)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Execute](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/\{repotransactionsecuritytransferid\}/execute)
-- [POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/Initiate](#post-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/initiate)
-- [POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/Initiate](#post-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/initiate)
-- [POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/Initiate](#post-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/initiate)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Notify](#get-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/\{repotransactioncashtransferid\}/notify)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Notify](#get-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/\{repotransactioninitiationid\}/notify)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Notify](#get-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/\{repotransactionsecuritytransferid\}/notify)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Request](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/\{repotransactioncashtransferid\}/request)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Request](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/\{repotransactioninitiationid\}/request)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Request](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/\{repotransactionsecuritytransferid\}/request)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Retrieve](#get-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/\{repotransactioncashtransferid\}/retrieve)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Retrieve](#get-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/\{repotransactioninitiationid\}/retrieve)
-- [GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Retrieve](#get-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/\{repotransactionsecuritytransferid\}/retrieve)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Update](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioncashtransfer/\{repotransactioncashtransferid\}/update)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Update](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactioninitiation/\{repotransactioninitiationid\}/update)
-- [PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Update](#put-/stocklendingandrepos/\{stocklendingandreposid\}/repotransactionsecuritytransfer/\{repotransactionsecuritytransferid\}/update)
-
-
 **BIAN Documentation:** [StockLendingandRepos v12](https://app.swaggerhub.com/apis/BIAN-3/StockLendingandRepos/12.0.0)
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Control
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Control
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Control
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Control Repo Transaction
 
@@ -52,9 +24,13 @@ PUT: A suitable name for the path '/StockLendingandRepos/\{stocklendingandreposi
 
 Using lowercase letters and separating words with hyphens in the resource names is a common practice in RESTful APIs to make the paths more readable and user\-friendly\.
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Exchange
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Exchange Repo Transaction
 
@@ -66,9 +42,13 @@ This API path allows the bank to update existing tri\-party repo transactions be
 
 PUT: The path '/StockLendingandRepos/\{stocklendingandreposid\}/Exchange' should be named as '/stock\-lending\-and\-repos/\{stocklendingandreposid\}/exchange' if it followed REST best practices\. This naming convention is in lowercase with hyphens separating words for better readability and consistency\.
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Execute
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Execute
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Execute Repo Transaction
 
@@ -82,9 +62,13 @@ PUT: The name of the path should be:
 
 /StockLendingRepos/\{stocklendingandreposid\}
 
-### POST: /StockLendingandRepos/Initiate
+## POST: /StockLendingandRepos/Initiate
 
-**Description**
+:::info Path
+POST: /StockLendingandRepos/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Initiate Repo Transaction
 
@@ -96,9 +80,13 @@ This API path allows users to initiate a new tri\-party repo transaction within 
 
 POST: A more appropriate name for the path '/StockLendingandRepos/Initiate' following REST best practices would be '/stock\-lending\-repos'\.
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/Notify
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/Notify
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Notify Repo Transaction
 
@@ -112,9 +100,13 @@ GET: A suitable name for this path following RESTful principles would be:
 
 /stock\-lending\-repos/\{stocklendingandreposid\}/notify
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Request
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Request
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Request Repo Transaction
 
@@ -127,9 +119,13 @@ This API path allows users to update an existing resource related to tri\-party 
 PUT: The name of the path should be:
 '/stock\-lending\-and\-repos/\{stocklendingandreposid\}/requests'
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/Retrieve
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Retrieve Repo Transaction
 
@@ -143,9 +139,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 /stock\-lending\-and\-repos/\{stocklendingandreposid\}/retrieve
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Update
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Update
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Update Repo Transaction
 
@@ -165,9 +165,13 @@ Here are some key points to consider in naming the path according to REST best p
 2\. Use hyphens to separate words: Hyphens are preferred for word separation in URIs as per REST conventions\.
 3\. Use plural nouns
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Exchange
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Exchange Repo Transaction Cash Transfer Task
 
@@ -181,9 +185,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-cash\-transfer/\{repotransactioncashtransferid\}/exchange'
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Exchange
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Exchange Repo Transaction Initiation Task
 
@@ -195,9 +203,13 @@ This BIAN API path allows you to update a specific task related to the initiatio
 
 PUT: The name of the path could be '/stock\-lending\-repos/\{stocklendingandreposid\}/repo\-transaction\-initiation/\{repotransactioninitiationid\}/exchange'\.
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Exchange
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Exchange Repo Transaction Security Transfer Task
 
@@ -211,9 +223,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-security\-transfer/\{repotransactionsecuritytransferid\}/exchange
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Execute
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Execute
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Execute Repo Transaction Cash Transfer Task
 
@@ -227,9 +243,13 @@ PUT: Based on REST best practices\, the name of the path should focus on the res
 
 /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfers/\{repotransactioncashtransferid\}
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Execute
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Execute Repo Transaction Initiation Task
 
@@ -245,9 +265,13 @@ PUT: Based on REST best practices\, the path could be named as:
 
 In RESTful API design\, it is recommended to use lowercase letters\, separate words with hyphens\, and use meaningful names that describe the resource and its actions\.
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Execute
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Execute
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Execute Repo Transaction Security Transfer Task
 
@@ -261,9 +285,13 @@ PUT: Based on REST best practices\, a suggested name for this path could be:
 
 PUT /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}
 
-### POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/Initiate
+## POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/Initiate
 
-**Description**
+:::info Path
+POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Initiate Repo Transaction Cash Transfer Task
 
@@ -276,9 +304,13 @@ This BIAN API path allows users to initiate a cash transfer task for a tri\-part
 POST: Based on REST best practices\, the name of the path could be:
 '/stock\-lending\-and\-repos/\{stock\_lending\_and\_repos\_id\}/repo\-transaction\-cash\-transfer/initiate'
 
-### POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/Initiate
+## POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/Initiate
 
-**Description**
+:::info Path
+POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Initiate Repo Transaction Initiation Task
 
@@ -292,9 +324,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-initiation/initiate
 
-### POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/Initiate
+## POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/Initiate
 
-**Description**
+:::info Path
+POST: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/Initiate
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Initiate Repo Transaction Security Transfer Task
 
@@ -310,9 +346,13 @@ A more suitable and concise name for this path could be:
 
 '/repos/\{reposId\}/transactions/initiateSecurityTransfer'
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Notify
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Notify
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Notify Repo Transaction Cash Transfer Task
 
@@ -324,9 +364,13 @@ This API path allows you to retrieve information about a specific task related t
 
 GET: The name of the path should be \`/stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-cash\-transfer/\{repotransactioncashtransferid\}/notify\` to follow REST best practices\. It is recommended to use lowercase letters and hyphens to separate words in the URL path\.
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Notify
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Notify
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Notify Repo Transaction Initiation Task
 
@@ -340,9 +384,13 @@ GET: Based on REST best practices\, a suitable name for the path you mentioned c
 
 /stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-initiation/\{repotransactioninitiationid\}/notify
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Notify
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Notify
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Notify Repo Transaction Security Transfer Task
 
@@ -358,9 +406,13 @@ GET: The name of the path should be:
 /stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-security\-transfer/\{repotransactionsecuritytransferid\}/notify
 \`\`\`
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Request
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Request
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Request Repo Transaction Cash Transfer Task
 
@@ -374,9 +426,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-cash\-transfer/\{repotransactioncashtransferid\}/request
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Request
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Request
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Request Repo Transaction Initiation Task
 
@@ -390,9 +446,13 @@ PUT: The name of the path should be:
 
 /StockLendingAndRepos/\{stockLendingAndReposId\}/RepoTransactionInitiation/\{repoTransactionInitiationId\}/Request
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Request
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Request
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Request Repo Transaction Security Transfer Task
 
@@ -408,9 +468,13 @@ PUT: A proper name for this path following REST best practices could be:
 /stock\-lending\-and\-repos/\{stock\-lending\-and\-repos\-id\}/repo\-transaction\-security\-transfer/\{repo\-transaction\-security\-transfer\-id\}/request
 \`\`\`
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Retrieve
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Retrieve Repo Transaction Cash Transfer Task
 
@@ -424,9 +488,13 @@ GET: Based on REST best practices\, a more suitable name for that path could be:
 
 GET /stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transactions/\{repotransactionid\}/cash\-transfers/\{cashtransferid\}
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Retrieve
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Retrieve Repo Transaction Initiation Task
 
@@ -440,9 +508,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Stock
 
 GET '/stock\-lending\-and\-repos/\{stocklendingandreposid\}/repo\-transaction\-initiation/\{repotransactioninitiationid\}'
 
-### GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Retrieve
+## GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Retrieve Repo Transaction Security Transfer Task
 
@@ -458,9 +530,13 @@ A suitable name for the path '/StockLendingandRepos/\{stocklendingandreposid\}/R
 
 GET /stock\-lending\-repos/\{stockLendingAndReposId\}/repo\-transaction\-security\-transfer/\{repoTransactionSecurityTransferId\}
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Update
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Update
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionCashTransfer/\{repotransactioncashtransferid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Update Repo Transaction Cash Transfer Task
 
@@ -476,9 +552,13 @@ PUT: A RESTful path should be descriptive and should represent a resource or col
 
 In this format\, we use lowercase letters and hyphens to separate words for readability\. It accurately describes the resource being accessed \- updating a specific repo transaction cash
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Update
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Update Repo Transaction Initiation Task
 
@@ -492,9 +572,13 @@ PUT: Based on REST best practices\, the suggested name for the path would be:
 
 PUT /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionInitiation/\{repotransactioninitiationid\}
 
-### PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Update
+## PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Update
 
-**Description**
+:::info Path
+PUT: /StockLendingandRepos/\{stocklendingandreposid\}/RepoTransactionSecurityTransfer/\{repotransactionsecuritytransferid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the bank offering tri\-party repo transactions made between its customers to support their short term capital management requirements Update Repo Transaction Security Transfer Task
 

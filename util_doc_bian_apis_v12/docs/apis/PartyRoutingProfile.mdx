@@ -1,27 +1,14 @@
 # PartyRoutingProfile
 
-## Table of Contents
-- [POST: /PartyRoutingProfile/Initiate](#post-/partyroutingprofile/initiate)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Update](#put-/partyroutingprofile/\{partyroutingprofileid\}/update)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Execute](#put-/partyroutingprofile/\{partyroutingprofileid\}/execute)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Request](#put-/partyroutingprofile/\{partyroutingprofileid\}/request)
-- [GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Retrieve](#get-/partyroutingprofile/\{partyroutingprofileid\}/retrieve)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Update](#put-/partyroutingprofile/\{partyroutingprofileid\}/status/\{statusid\}/update)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Capture](#put-/partyroutingprofile/\{partyroutingprofileid\}/status/\{statusid\}/capture)
-- [GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Retrieve](#get-/partyroutingprofile/\{partyroutingprofileid\}/status/\{statusid\}/retrieve)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Update](#put-/partyroutingprofile/\{partyroutingprofileid\}/rating/\{ratingid\}/update)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Capture](#put-/partyroutingprofile/\{partyroutingprofileid\}/rating/\{ratingid\}/capture)
-- [GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Retrieve](#get-/partyroutingprofile/\{partyroutingprofileid\}/rating/\{ratingid\}/retrieve)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Update](#put-/partyroutingprofile/\{partyroutingprofileid\}/alert/\{alertid\}/update)
-- [PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Capture](#put-/partyroutingprofile/\{partyroutingprofileid\}/alert/\{alertid\}/capture)
-- [GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Retrieve](#get-/partyroutingprofile/\{partyroutingprofileid\}/alert/\{alertid\}/retrieve)
-
-
 **BIAN Documentation:** [PartyRoutingProfile v12](https://app.swaggerhub.com/apis/BIAN-3/PartyRoutingProfile/12.0.0)
 
-### POST: /PartyRoutingProfile/Initiate
+## POST: /PartyRoutingProfile/Initiate
 
-**Description**
+:::info Path
+POST: /PartyRoutingProfile/Initiate
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) InCR Initiate profile state monitoring for a party
 
@@ -38,9 +25,13 @@ According to REST best practices:
 \- Separate words with hyphens \(\-\) rather than underscores \(\_\)
 \- Use plural nouns for collections of resources and singular nouns for specific resources
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Update
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Update
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) UpCR Update monitoring for a party
 
@@ -52,9 +43,13 @@ This API path allows for updating the profile of key indicators for a customer u
 
 PUT: If the path '/PartyRoutingProfile/\{partyroutingprofileid\}/Update' followed REST best practices\, it could be named simply as PUT /PartyRoutingProfile/\{partyroutingprofileid\}\, where PUT is the HTTP method used to update a resource\.
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Execute
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Execute
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) ExCR Execute an automated action for a monitored party \(e\.g\. refresh\)
 
@@ -71,9 +66,13 @@ PUT: The name of the path should be '/party\-routing\-profiles/\{partyRoutingPro
 \- Use hyphens to separate words in a path segment\.
 \- Avoid using verbs in path segments\, as they should represent resources\.
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Request
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Request
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Request
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) RqCR Request manual intervention for a monitored party \(e\.g\. review settings\)
 
@@ -87,9 +86,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /PartyRoutingProfiles/\{partyroutingprofileid\}/Requests
 
-### GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Retrieve
+## GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) ReCR Retrieve details about the monitored party state
 
@@ -107,9 +110,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 In RESTful API design\, the URL should represent a resource \(in this case\, a PartyRoutingProfile\) and its unique identifier \(partyroutingprofileid\)\. The method used to retrieve the resource \(such as GET\) would typically be specified in the HTTP request method and not in the URL itself\.
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Update
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Update
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) UpBQ Update status measures for a monitored party
 
@@ -123,9 +130,13 @@ PUT: A possible RESTful name for the path could be:
 
 \`PUT /party\-routing\-profiles/\{partyroutingprofileid\}/statuses/\{statusid\}\`
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Capture
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Capture
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Capture
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) CaBQ Capture status measures for a monitored party
 
@@ -141,9 +152,13 @@ PUT: Based on REST best practices\, the name of the path could be something like
 
 In this format\, each segment of the path is in lowercase and separated by hyphens for better readability and consistency\.
 
-### GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Retrieve
+## GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Status/\{statusid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) ReBQ Retrieve details about status measures for a party
 
@@ -157,9 +172,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /party\-routing\-profiles/\{partyroutingprofileid\}/statuses/\{statusid\}
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Update
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Update
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) UpBQ Update rating measures for a monitored party
 
@@ -173,9 +192,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PATCH /party\-routing\-profiles/\{partyroutingprofileid\}/ratings/\{ratingid\}
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Capture
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Capture
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) CaBQ Capture rating measures for a monitored party
 
@@ -191,9 +214,13 @@ PUT: The name of the path should be:
 
 Following the REST best practices\, the path should be in lower case and hyphens should be used to separate words for better readability\.
 
-### GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Retrieve
+## GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Rating/\{ratingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) ReBQ Retrieve details about rating measures for a party
 
@@ -209,9 +236,13 @@ GET: Following REST best practices\, the name of the path should be:
 /PartyRoutingProfiles/\{partyroutingprofileid\}/Rating/\{ratingid\}
 \`\`\`
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Update
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Update
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) UpBQ Update alerts for a monitored party
 
@@ -224,9 +255,13 @@ This API path allows you to update alerts for a monitored party within the Party
 PUT: The name of the path should be:
 /PartyRoutingProfiles/\{partyroutingprofileid\}/Alerts/\{alertid\}
 
-### PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Capture
+## PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Capture
 
-**Description**
+:::info Path
+PUT: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Capture
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) CaBQ Capture alerts for a monitored party
 
@@ -240,9 +275,13 @@ PUT: The recommended RESTful naming convention for the given path would be:
 
 '/party\-routing\-profiles/\{partyroutingprofileid\}/alerts/\{alertid\}/captures'
 
-### GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Retrieve
+## GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyRoutingProfile/\{partyroutingprofileid\}/Alert/\{alertid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a small profile of key indicators for a customer that is referenced during customer interactions to facilitate routing\, servicing and product/service fulfillment decisions\. This can include status \(such as account in arrears\)\, ratings \(such as high value customer\) and alerts \(such possible fraud activity detected\) ReBQ Retrieve details about alerts for a party
 

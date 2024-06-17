@@ -1,39 +1,14 @@
 # FinancialStatementAssessment
 
-## Table of Contents
-- [POST: /FinancialStatementAssessment/Evaluate](#post-/financialstatementassessment/evaluate)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Execute](#put-/financialstatementassessment/\{financialstatementassessmentid\}/execute)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Grant](#put-/financialstatementassessment/\{financialstatementassessmentid\}/grant)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Notify](#get-/financialstatementassessment/\{financialstatementassessmentid\}/notify)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Request](#put-/financialstatementassessment/\{financialstatementassessmentid\}/request)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Retrieve](#get-/financialstatementassessment/\{financialstatementassessmentid\}/retrieve)
-- [POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/Evaluate](#post-/financialstatementassessment/\{financialstatementassessmentid\}/assetandliabilityvaluationtest/evaluate)
-- [POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/Evaluate](#post-/financialstatementassessment/\{financialstatementassessmentid\}/liquidityandcashflowtest/evaluate)
-- [POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/Evaluate](#post-/financialstatementassessment/\{financialstatementassessmentid\}/risktest/evaluate)
-- [POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/Evaluate](#post-/financialstatementassessment/\{financialstatementassessmentid\}/sensitivitytest/evaluate)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Execute](#put-/financialstatementassessment/\{financialstatementassessmentid\}/assetandliabilityvaluationtest/\{assetandliabilityvaluationtestid\}/execute)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Execute](#put-/financialstatementassessment/\{financialstatementassessmentid\}/liquidityandcashflowtest/\{liquidityandcashflowtestid\}/execute)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Execute](#put-/financialstatementassessment/\{financialstatementassessmentid\}/risktest/\{risktestid\}/execute)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Execute](#put-/financialstatementassessment/\{financialstatementassessmentid\}/sensitivitytest/\{sensitivitytestid\}/execute)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Notify](#get-/financialstatementassessment/\{financialstatementassessmentid\}/assetandliabilityvaluationtest/\{assetandliabilityvaluationtestid\}/notify)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Notify](#get-/financialstatementassessment/\{financialstatementassessmentid\}/liquidityandcashflowtest/\{liquidityandcashflowtestid\}/notify)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Notify](#get-/financialstatementassessment/\{financialstatementassessmentid\}/risktest/\{risktestid\}/notify)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Notify](#get-/financialstatementassessment/\{financialstatementassessmentid\}/sensitivitytest/\{sensitivitytestid\}/notify)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Request](#put-/financialstatementassessment/\{financialstatementassessmentid\}/assetandliabilityvaluationtest/\{assetandliabilityvaluationtestid\}/request)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Request](#put-/financialstatementassessment/\{financialstatementassessmentid\}/liquidityandcashflowtest/\{liquidityandcashflowtestid\}/request)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Request](#put-/financialstatementassessment/\{financialstatementassessmentid\}/risktest/\{risktestid\}/request)
-- [PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Request](#put-/financialstatementassessment/\{financialstatementassessmentid\}/sensitivitytest/\{sensitivitytestid\}/request)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Retrieve](#get-/financialstatementassessment/\{financialstatementassessmentid\}/assetandliabilityvaluationtest/\{assetandliabilityvaluationtestid\}/retrieve)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Retrieve](#get-/financialstatementassessment/\{financialstatementassessmentid\}/liquidityandcashflowtest/\{liquidityandcashflowtestid\}/retrieve)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Retrieve](#get-/financialstatementassessment/\{financialstatementassessmentid\}/risktest/\{risktestid\}/retrieve)
-- [GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Retrieve](#get-/financialstatementassessment/\{financialstatementassessmentid\}/sensitivitytest/\{sensitivitytestid\}/retrieve)
-
-
 **BIAN Documentation:** [FinancialStatementAssessment v12](https://app.swaggerhub.com/apis/BIAN-3/FinancialStatementAssessment/12.0.0)
 
-### POST: /FinancialStatementAssessment/Evaluate
+## POST: /FinancialStatementAssessment/Evaluate
 
-**Description**
+:::info Path
+POST: /FinancialStatementAssessment/Evaluate
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Evaluate Financial Statement Assessment
 
@@ -45,9 +20,13 @@ This API path allows you to submit a request to evaluate a range of financial an
 
 POST: The name of the path '/FinancialStatementAssessment/Evaluate' should follow REST best practices by being descriptive and noun\-based rather than verb\-based\. A more suitable name for this path could be '/financial\-statement\-assessments'\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Execute
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Execute Financial Statement Assessment
 
@@ -63,9 +42,13 @@ PUT: Based on REST best practices\, the path should ideally be named in a way th
 
 This naming convention uses lowercase letters and dashes to separate words\, making the endpoint more readable and aligned with RESTful principles\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Grant
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Grant
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Grant Financial Statement Assessment
 
@@ -78,9 +61,13 @@ This API path allows you to update an existing financial statement assessment by
 PUT: The name of the path following REST best practices would typically be:
 '/financial\-statement\-assessments/\{financialstatementassessmentid\}/grant'
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Notify
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Notify Financial Statement Assessment
 
@@ -92,9 +79,13 @@ This API path allows you to retrieve information related to a financial statemen
 
 GET: The name of the path should be "/financial\-statement\-assessments/\{financialstatementassessmentid\}/notifications" in accordance with REST best practices\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Request
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Request Financial Statement Assessment
 
@@ -110,9 +101,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for collection resources\.
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Retrieve
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Retrieve Financial Statement Assessment
 
@@ -126,9 +121,13 @@ GET: The name of the path should be:
 
 '/financial\-statement\-assessments/\{financialStatementAssessmentId\}'
 
-### POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/Evaluate
+## POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/Evaluate
 
-**Description**
+:::info Path
+POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/Evaluate
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Evaluate Asset and Liability Valuation Test
 
@@ -142,9 +141,13 @@ POST: A more RESTful name for the path could be:
 
 '/financial\-statement\-assessments/\{financialstatementassessmentid\}/asset\-liability\-valuation\-tests/\{testid\}/evaluate'
 
-### POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/Evaluate
+## POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/Evaluate
 
-**Description**
+:::info Path
+POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/Evaluate
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Evaluate Liquidity and Cash Flow Test
 
@@ -158,9 +161,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /financial\-statement\-assessments/\{financialstatementassessmentid\}/liquidity\-and\-cash\-flow\-tests/\{testid\}/evaluate
 
-### POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/Evaluate
+## POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/Evaluate
 
-**Description**
+:::info Path
+POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/Evaluate
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Evaluate Risk Test
 
@@ -173,9 +180,13 @@ This API path allows users to evaluate the risk associated with a specific finan
 POST: Following REST best practices\, the name of the path should be:
 '/financial\-statement\-assessments/\{financialstatementassessmentid\}/risk\-tests/evaluate'
 
-### POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/Evaluate
+## POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/Evaluate
 
-**Description**
+:::info Path
+POST: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/Evaluate
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Evaluate Sensitivity Test
 
@@ -187,9 +198,13 @@ This BIAN API path allows users to create a new resource for evaluating sensitiv
 
 POST: A RESTful approach to naming this path would be '/financial\-statement\-assessments/\{financialStatementAssessmentId\}/sensitivity\-tests/evaluate'\. This format follows the convention of using lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Execute
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Execute Asset and Liability Valuation Test
 
@@ -203,9 +218,13 @@ PUT: Based on RESTful principles\, the name of the path should be:
 
 '/financial\-statements/\{financialstatementId\}/asset\-liability\-valuation\-tests/\{valuationTestId\}/execute'
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Execute
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Execute Liquidity and Cash Flow Test
 
@@ -219,9 +238,13 @@ PUT: A more RESTful name for the path could be:
 
 '/financial\-statement\-assessments/\{financialstatementassessmentid\}/liquidity\-cash\-flow\-tests/\{liquidityandcashflowtestid\}/execute'
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Execute
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Execute Risk Test
 
@@ -240,9 +263,13 @@ In this naming convention:
 \- Use lowercase letters and separate words with dashes to improve readability\.
 \- Use plural form for resource names when possible\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Execute
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Execute Sensitivity Test
 
@@ -256,9 +283,13 @@ PUT: The name of the path should be:
 
 '/financial\-statement\-assessments/\{financialstatementassessmentid\}/sensitivity\-tests/\{sensitivitytestid\}/execute'
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Notify
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Notify Asset and Liability Valuation Test
 
@@ -272,9 +303,13 @@ GET: The name of the path should be:
 
 /financial\-statement\-assessment/\{financial\-statement\-assessment\-id\}/asset\-liability\-valuation\-test/\{asset\-liability\-valuation\-test\-id\}/notify
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Notify
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Notify Liquidity and Cash Flow Test
 
@@ -288,9 +323,13 @@ GET: A possible RESTful name for this path could be:
 
 '/financial\-statements/\{financialstatementassessmentid\}/liquidity\-and\-cash\-flow\-tests/\{liquidityandcashflowtestid\}/notify'
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Notify
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Notify Risk Test
 
@@ -302,9 +341,13 @@ This API path allows you to retrieve information about notifying a risk test wit
 
 GET: Based on REST best practices\, the appropriate name for this path would be: \`/financial\-statement\-assessments/\{financialStatementAssessmentId\}/risk\-tests/\{riskTestId\}/notify\`
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Notify
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Notify
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Notify Sensitivity Test
 
@@ -320,9 +363,13 @@ GET: The appropriate name for the path \`/FinancialStatementAssessment/\{financi
 
 This naming convention uses lowercase letters\, separates words with hyphens\, and provides a clear and descriptive hierarchy for the resource endpoints\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Request
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Request Asset and Liability Valuation Test
 
@@ -338,9 +385,13 @@ PUT: Based on REST best practices\, a suitable name for the path could be:
 
 Ensure to use lowercase letters and hyphens to separate words in the path for better readability and consistency\.
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Request
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Request Liquidity and Cash Flow Test
 
@@ -354,9 +405,13 @@ PUT: A suitable name for the path '/FinancialStatementAssessment/\{financialstat
 
 '/financial\-statement\-assessments/\{financialstatementassessmentid\}/liquidity\-cashflow\-tests/\{liquidityandcashflowtestid\}/requests'
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Request
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Request Risk Test
 
@@ -370,9 +425,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /FinancialStatementAssessments/\{financialstatementassessmentid\}/RiskTests/\{risktestid\}/Requests
 
-### PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Request
+## PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Request Sensitivity Test
 
@@ -386,9 +445,13 @@ PUT: The name of the path based on REST best practices should be:
 
 /financial\-statements/\{financialstatementid\}/sensitivity\-tests/\{sensitivitytestid\}/request
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Retrieve
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/AssetandLiabilityValuationTest/\{assetandliabilityvaluationtestid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Retrieve Asset and Liability Valuation Test
 
@@ -402,9 +465,13 @@ GET: Based on RESTful best practices\, the name of the path could be something l
 
 '/financial\-statements/\{financialstatementId\}/valuation\-tests/\{valuationTestId\}/retrieve'
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Retrieve
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/LiquidityandCashFlowTest/\{liquidityandcashflowtestid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Retrieve Liquidity and Cash Flow Test
 
@@ -418,9 +485,13 @@ GET: Based on REST best practices\, a suitable name for the path would be:
 
 '/financial\-statement\-assessments/\{financialStatementAssessmentId\}/liquidity\-cash\-flow\-tests/\{liquidityAndCashFlowTestId\}'
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Retrieve
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/RiskTest/\{risktestid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Retrieve Risk Test
 
@@ -434,9 +505,13 @@ GET: A more appropriate name for this path following REST best practices could b
 
 '/financial\-statements/\{financialstatementId\}/risk\-tests/\{riskTestId\}'
 
-### GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Retrieve
+## GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialStatementAssessment/\{financialstatementassessmentid\}/SensitivityTest/\{sensitivitytestid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a range of financial analyses that can be used to extract specific insights \(e\.g\. valuations\, liquidity\, risk\, market sensitivities\) from an entity's financial statements Retrieve Sensitivity Test
 

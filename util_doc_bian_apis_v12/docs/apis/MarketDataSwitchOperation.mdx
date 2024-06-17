@@ -1,26 +1,14 @@
 # MarketDataSwitchOperation
 
-## Table of Contents
-- [POST: /MarketDataSwitchOperation/Initiate](#post-/marketdataswitchoperation/initiate)
-- [PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Update](#put-/marketdataswitchoperation/\{marketdataswitchoperationid\}/update)
-- [GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Retrieve](#get-/marketdataswitchoperation/\{marketdataswitchoperationid\}/retrieve)
-- [PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Update](#put-/marketdataswitchoperation/\{marketdataswitchoperationid\}/feedupload/\{feeduploadid\}/update)
-- [GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Retrieve](#get-/marketdataswitchoperation/\{marketdataswitchoperationid\}/feedupload/\{feeduploadid\}/retrieve)
-- [POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/Initiate](#post-/marketdataswitchoperation/\{marketdataswitchoperationid\}/internalpublication/initiate)
-- [PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Update](#put-/marketdataswitchoperation/\{marketdataswitchoperationid\}/internalpublication/\{internalpublicationid\}/update)
-- [GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Retrieve](#get-/marketdataswitchoperation/\{marketdataswitchoperationid\}/internalpublication/\{internalpublicationid\}/retrieve)
-- [POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/Initiate](#post-/marketdataswitchoperation/\{marketdataswitchoperationid\}/distribution/initiate)
-- [PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Update](#put-/marketdataswitchoperation/\{marketdataswitchoperationid\}/distribution/\{distributionid\}/update)
-- [PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Execute](#put-/marketdataswitchoperation/\{marketdataswitchoperationid\}/distribution/\{distributionid\}/execute)
-- [PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Request](#put-/marketdataswitchoperation/\{marketdataswitchoperationid\}/distribution/\{distributionid\}/request)
-- [GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Retrieve](#get-/marketdataswitchoperation/\{marketdataswitchoperationid\}/distribution/\{distributionid\}/retrieve)
-
-
 **BIAN Documentation:** [MarketDataSwitchOperation v12](https://app.swaggerhub.com/apis/BIAN-3/MarketDataSwitchOperation/12.0.0)
 
-### POST: /MarketDataSwitchOperation/Initiate
+## POST: /MarketDataSwitchOperation/Initiate
 
-**Description**
+:::info Path
+POST: /MarketDataSwitchOperation/Initiate
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. InCR Initiate a market data switch operating session
 
@@ -32,9 +20,13 @@ This API path allows users to start a new session for operating the internal inf
 
 POST: The name of the path should ideally be a noun representing a resource\, so a more RESTful name for the path '/MarketDataSwitchOperation/Initiate' could be '/MarketDataSwitchOperations' or '/MarketDataSwitch'\.
 
-### PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Update
+## PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Update
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. UpCR Update details for the market data switch operating session
 
@@ -48,9 +40,13 @@ PUT: The name of the path should be:
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}'
 
-### GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Retrieve
+## GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. ReCR Retrieve details about the market data switch operating session
 
@@ -64,9 +60,13 @@ GET: Based on REST best practices\, the recommended name for this path would be:
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}'
 
-### PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Update
+## PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Update
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. UpBQ Update details for the feed upload
 
@@ -86,9 +86,13 @@ In this path:
 \- "MarketDataSwitchOperations" represents the resource for market data switch operations\.
 \- "\{marketdataswitchoperationid\}" is a placeholder for the specific ID of a market data switch operation
 
-### GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Retrieve
+## GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/FeedUpload/\{feeduploadid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. ReBQ Retrieve details about the feed upload activity
 
@@ -102,9 +106,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}/feed\-uploads/\{feeduploadid\}/retrieve'
 
-### POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/Initiate
+## POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/Initiate
 
-**Description**
+:::info Path
+POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/Initiate
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. InBQ Initiate internal publication of information
 
@@ -122,9 +130,13 @@ POST /marketDataSwitchOperations/\{marketdataswitchoperationid\}/internalPublica
 
 In this naming convention\, the path uses lowercase letters and follows the guideline of using nouns for resource names and verbs for actions\.
 
-### PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Update
+## PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Update
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. UpBQ Update details of internal publication
 
@@ -138,9 +150,13 @@ PUT: The name of the path should be:
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}/internal\-publications/\{internalpublicationid\}'
 
-### GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Retrieve
+## GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/InternalPublication/\{internalpublicationid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. ReBQ Retrieve details about the internal publication task
 
@@ -154,9 +170,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}/internal\-publications/\{internalpublicationid\}'
 
-### POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/Initiate
+## POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/Initiate
 
-**Description**
+:::info Path
+POST: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/Initiate
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. InBQ User subscription to the switch
 
@@ -170,9 +190,13 @@ POST: If the path '/MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Di
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}/distribution/initiate'
 
-### PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Update
+## PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Update
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. UpBQ User subscription details
 
@@ -188,9 +212,13 @@ PUT: The name of the path should be something descriptive and indicative of the 
 
 This path indicates the resource being updated \(distribution\) within a specific market data switch operation\.
 
-### PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Execute
+## PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Execute
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. ExBQ Execute an automated action to the service \(e\.g\. select content\)
 
@@ -204,9 +232,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /operations/\{marketdataswitchoperationid\}/distributions/\{distributionid\}/execute
 
-### PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Request
+## PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Request
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. RqBQ Request manual intervention for  the service \(e\.g\. request a usage profile change\)
 
@@ -220,9 +252,13 @@ PUT: Based on REST best practices\, the suggested name for the path would be:
 
 '/market\-data\-switch\-operations/\{marketdataswitchoperationid\}/distributions/\{distributionid\}/requests'
 
-### GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Retrieve
+## GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketDataSwitchOperation/\{marketdataswitchoperationid\}/Distribution/\{distributionid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the internal information distribution facility/switch in compliance with administered external subscription information feed service access rights\. Note the content is retrieved by the Market Feed Operation service domain from the various external feed services\. Internal information can also be published over the switch from various bank sources \(such as bank rates provided by treasury\)\. ReBQ Retrieve details about the user switch session
 

@@ -1,34 +1,14 @@
 # BranchCurrencyDistribution
 
-## Table of Contents
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Control](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/control)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Exchange](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/exchange)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Execute](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/execute)
-- [POST: /BranchCurrencyDistribution/Initiate](#post-/branchcurrencydistribution/initiate)
-- [GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Retrieve](#get-/branchcurrencydistribution/\{branchcurrencydistributionid\}/retrieve)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Request](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/request)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Update](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/update)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Exchange](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionplanning/\{distributionplanningid\}/exchange)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Exchange](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventoryprovisioning/\{inventoryprovisioningid\}/exchange)
-- [GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Retrieve](#get-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionplanning/\{distributionplanningid\}/retrieve)
-- [GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Retrieve](#get-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionvehicleadministration/\{distributionvehicleadministrationid\}/retrieve)
-- [GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Retrieve](#get-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventorydistributionoversight/\{inventorydistributionoversightid\}/retrieve)
-- [GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Retrieve](#get-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventoryprovisioning/\{inventoryprovisioningid\}/retrieve)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Request](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionplanning/\{distributionplanningid\}/request)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Request](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionvehicleadministration/\{distributionvehicleadministrationid\}/request)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Request](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventorydistributionoversight/\{inventorydistributionoversightid\}/request)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Request](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventoryprovisioning/\{inventoryprovisioningid\}/request)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Update](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionplanning/\{distributionplanningid\}/update)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Update](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/distributionvehicleadministration/\{distributionvehicleadministrationid\}/update)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Update](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventorydistributionoversight/\{inventorydistributionoversightid\}/update)
-- [PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Update](#put-/branchcurrencydistribution/\{branchcurrencydistributionid\}/inventoryprovisioning/\{inventoryprovisioningid\}/update)
-
-
 **BIAN Documentation:** [BranchCurrencyDistribution v12](https://app.swaggerhub.com/apis/BIAN-3/BranchCurrencyDistribution/12.0.0)
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Control
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Control
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Control
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. CoCR Control the processing of Cash Distribution Procedure
 
@@ -42,9 +22,13 @@ PUT: The name of the path should be:
 
 /branch\-currency\-distributions/\{branchcurrencydistributionid\}/control
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Exchange
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Exchange
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. EcCR Accept\, verify\, etc\. aspects of Cash Distribution Procedure processing
 
@@ -58,9 +42,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /branches/\{branchId\}/currencyDistribution/\{currencyDistributionId\}/exchanges
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Execute
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Execute
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. ExCR Execute an available automated action for Cash Distribution Procedure
 
@@ -76,9 +64,13 @@ PUT: The naming convention typically followed in RESTful services suggests using
 
 This naming convention keeps the resource name plural \('BranchCurrencyDistributions' to represent a collection of resources\) and uses the HTTP verb \('Execution'\) to denote the action being performed on the resource identified
 
-### POST: /BranchCurrencyDistribution/Initiate
+## POST: /BranchCurrencyDistribution/Initiate
 
-**Description**
+:::info Path
+POST: /BranchCurrencyDistribution/Initiate
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. InCR Instantiate a new Cash Distribution Procedure
 
@@ -92,9 +84,13 @@ POST: Following REST best practices\, the name of the path should use nouns rath
 
 Based on the provided path '/BranchCurrencyDistribution/Initiate'\, a more RESTful path name could be '/branch\-currency\-distributions' to represent the collection of branch currency distributions\.
 
-### GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Retrieve
+## GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Retrieve
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. ReCR Retrieve details about any aspect of Cash Distribution Procedure
 
@@ -110,9 +106,13 @@ GET /branch\-currency\-distributions/\{branchcurrencydistributionid\}
 
 By adhering to REST principles\, the path is made more intuitive and clearly represents the action of retrieving a specific branch currency distribution resource\.
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Request
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Request
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. RqCR Request manual intervention or a decision with respect to Cash Distribution Procedure
 
@@ -133,9 +133,13 @@ In this naming convention:
 \- Short but descriptive names are used\.
 \- The path segments are clear and concise\.
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Update
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/Update
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. UpCR Update details relating to Cash Distribution Procedure
 
@@ -149,9 +153,13 @@ PUT: A better name for the path '/BranchCurrencyDistribution/\{branchcurrencydis
 
 PUT /BranchCurrencyDistribution/\{branchcurrencydistributionid\}
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Exchange
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Exchange
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. EcBQ Accept\, verify\, etc\. aspects of Distribution Planning processing
 
@@ -165,9 +173,13 @@ PUT: The recommended naming for the path would be:
 
 /BranchCurrencyDistributions/\{branchcurrencydistributionid\}/DistributionPlannings/\{distributionplanningid\}/Exchanges
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Exchange
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Exchange
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. EcBQ Accept\, verify\, etc\. aspects of Inventory Provisioning processing
 
@@ -181,9 +193,13 @@ PUT: The name of the path should be:
 
 /BranchCurrencyDistributions/\{branchcurrencydistributionid\}/InventoryProvisionings/\{inventoryprovisioningid\}/Exchange
 
-### GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Retrieve
+## GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Retrieve
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. ReBQ Retrieve details about any aspect of Distribution Planning
 
@@ -199,9 +215,13 @@ GET: Based on REST best practices\, the name of the path should be as follows:
 
 This path follows the convention of using lowercase letters and dashes to separate words\, using plural nouns for collections\, and including resource identifiers instead of action verbs\.
 
-### GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Retrieve
+## GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Retrieve
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. ReBQ Retrieve details about any aspect of Distribution Vehicle Administration
 
@@ -217,9 +237,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path follows a resource\-centric naming convention\, uses lowercase letters\, separates words with hyphens\, and represents the relationship between the resources clearly\.
 
-### GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Retrieve
+## GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Retrieve
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. ReBQ Retrieve details about any aspect of Inventory Distribution Oversight
 
@@ -233,9 +257,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /branch\-currency\-distribution/\{branchcurrencydistributionid\}/inventory\-distribution\-oversight/\{inventorydistributionoversightid\}/retrieve
 
-### GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Retrieve
+## GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Retrieve
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. ReBQ Retrieve details about any aspect of Inventory Provisioning
 
@@ -249,9 +277,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /branch\-currency\-distribution/\{branchcurrencydistributionid\}/inventory\-provisioning/\{inventoryprovisioningid\}/retrieve
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Request
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Request
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. RqBQ Request manual intervention or a decision with respect to Distribution Planning
 
@@ -263,9 +295,13 @@ This BIAN API path is used to update a specific distribution planning request as
 
 PUT: The name of the path should be '/branch\-currency\-distribution/\{branchcurrencydistributionid\}/distribution\-planning/\{distributionplanningid\}/request'\.
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Request
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Request
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. RqBQ Request manual intervention or a decision with respect to Distribution Vehicle Administration
 
@@ -279,9 +315,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /BranchCurrencyDistributions/\{branchcurrencydistributionid\}/DistributionVehicleAdministrations/\{distributionvehicleadministrationid\}/Requests
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Request
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Request
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. RqBQ Request manual intervention or a decision with respect to Inventory Distribution Oversight
 
@@ -295,9 +335,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /BranchCurrencyDistributions/\{branchcurrencydistributionid\}/InventoryDistributionOversights/\{inventorydistributionoversightid\}/Requests
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Request
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Request
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Request
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. RqBQ Request manual intervention or a decision with respect to Inventory Provisioning
 
@@ -311,9 +355,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /branches/\{branchId\}/currency\-distributions/\{currencyDistributionId\}/inventory\-provisionings/\{inventoryProvisioningId\}/requests
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Update
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionPlanning/\{distributionplanningid\}/Update
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. UpBQ Update details relating to Distribution Planning
 
@@ -336,9 +384,13 @@ Here's a breakdown of the updated path:
 \- Utilizing plural nouns for resources where applicable\.
 \- Keeping
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Update
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/DistributionVehicleAdministration/\{distributionvehicleadministrationid\}/Update
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. UpBQ Update details relating to Distribution Vehicle Administration
 
@@ -354,9 +406,13 @@ PUT: Based on REST best practices\, you could name the path as:
 PUT /branch\-currency\-distributions/\{branchCurrencyDistributionId\}/distribution\-vehicle\-administrations/\{distributionVehicleAdministrationId\}
 \`\`\`
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Update
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryDistributionOversight/\{inventorydistributionoversightid\}/Update
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. UpBQ Update details relating to Inventory Distribution Oversight
 
@@ -370,9 +426,13 @@ PUT: Using REST best practices\, the name of the path should be:
 
 PATCH '/branch\-currency\-distributions/\{branchcurrencydistributionid\}/inventory\-distribution\-oversights/\{inventorydistributionoversightid\}'
 
-### PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Update
+## PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyDistribution/\{branchcurrencydistributionid\}/InventoryProvisioning/\{inventoryprovisioningid\}/Update
+:::
+
+### Description
 
 Schedule and coordinate the secure distribution of cash inventory across the branch and ATM networks\. UpBQ Update details relating to Inventory Provisioning
 

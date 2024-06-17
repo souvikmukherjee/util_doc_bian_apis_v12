@@ -1,31 +1,14 @@
 # ComplianceReporting
 
-## Table of Contents
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Capture](#put-/compliancereporting/\{compliancereportingid\}/capture)
-- [POST: /ComplianceReporting/Initiate](#post-/compliancereporting/initiate)
-- [GET: /ComplianceReporting/\{compliancereportingid\}/Retrieve](#get-/compliancereporting/\{compliancereportingid\}/retrieve)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Request](#put-/compliancereporting/\{compliancereportingid\}/request)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Update](#put-/compliancereporting/\{compliancereportingid\}/update)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Capture](#put-/compliancereporting/\{compliancereportingid\}/complianceassessment/\{complianceassessmentid\}/capture)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Capture](#put-/compliancereporting/\{compliancereportingid\}/consolidation/\{consolidationid\}/capture)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Capture](#put-/compliancereporting/\{compliancereportingid\}/remediation/\{remediationid\}/capture)
-- [POST: /ComplianceReporting/\{compliancereportingid\}/Remediation/Initiate](#post-/compliancereporting/\{compliancereportingid\}/remediation/initiate)
-- [GET: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Retrieve](#get-/compliancereporting/\{compliancereportingid\}/complianceassessment/\{complianceassessmentid\}/retrieve)
-- [GET: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Retrieve](#get-/compliancereporting/\{compliancereportingid\}/consolidation/\{consolidationid\}/retrieve)
-- [GET: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Retrieve](#get-/compliancereporting/\{compliancereportingid\}/remediation/\{remediationid\}/retrieve)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Request](#put-/compliancereporting/\{compliancereportingid\}/complianceassessment/\{complianceassessmentid\}/request)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Request](#put-/compliancereporting/\{compliancereportingid\}/consolidation/\{consolidationid\}/request)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Request](#put-/compliancereporting/\{compliancereportingid\}/remediation/\{remediationid\}/request)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Update](#put-/compliancereporting/\{compliancereportingid\}/complianceassessment/\{complianceassessmentid\}/update)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Update](#put-/compliancereporting/\{compliancereportingid\}/consolidation/\{consolidationid\}/update)
-- [PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Update](#put-/compliancereporting/\{compliancereportingid\}/remediation/\{remediationid\}/update)
-
-
 **BIAN Documentation:** [ComplianceReporting v12](https://app.swaggerhub.com/apis/BIAN-3/ComplianceReporting/12.0.0)
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Capture
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Capture
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity CaCR Capture Compliance Reporting Administrative Plan activity or event related information
 
@@ -39,9 +22,13 @@ PUT: A suitable name for the path '/ComplianceReporting/\{compliancereportingid\
 
 POST /compliance\-reporting/\{compliance\-reporting\-id\}/captures
 
-### POST: /ComplianceReporting/Initiate
+## POST: /ComplianceReporting/Initiate
 
-**Description**
+:::info Path
+POST: /ComplianceReporting/Initiate
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity InCR Instantiate a new Compliance Reporting Administrative Plan
 
@@ -53,9 +40,13 @@ This BIAN API path \`/ComplianceReporting/Initiate\` allows users to create a ne
 
 POST: The name of the path should be "/compliance\-reports" as per REST best practices\.
 
-### GET: /ComplianceReporting/\{compliancereportingid\}/Retrieve
+## GET: /ComplianceReporting/\{compliancereportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ComplianceReporting/\{compliancereportingid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity ReCR Retrieve details about any aspect of Compliance Reporting Administrative Plan
 
@@ -69,9 +60,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 GET /ComplianceReports/\{compliancereportingid\} \(assuming 'compliancereportingid' is a placeholder for a specific compliance report ID\)
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Request
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Request
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity RqCR Request manual intervention or a decision with respect to Compliance Reporting Administrative Plan
 
@@ -83,9 +78,13 @@ This API path allows you to update an existing compliance reporting resource by 
 
 PUT: The name of the path should be \`/compliance\-reportings/\{compliance\-reporting\-id\}/requests\` to follow REST best practices\. The path segments should be in lowercase and separated by hyphens\, and resource names should be in plural form\. Additionally\, using snake case for variable names like \`compliance\_reporting\_id\` is also a good convention to follow\.
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Update
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity UpCR Update details relating to Compliance Reporting Administrative Plan
 
@@ -98,9 +97,13 @@ This API path allows you to update details related to a Compliance Reporting Adm
 PUT: Following REST best practices\, the name of the path should be:
 PUT /ComplianceReporting/\{compliancereportingid\}
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Capture
+## PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Capture
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity CaBQ Capture Compliance Assessment activity or event related information
 
@@ -112,9 +115,13 @@ This API path is used to update existing information related to compliance asses
 
 PUT: The path could be named as follows using REST best practices: /compliance\-reporting/\{compliance\-reporting\-id\}/compliance\-assessment/\{compliance\-assessment\-id\}/capture
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Capture
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Capture
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity CaBQ Capture Consolidation activity or event related information
 
@@ -128,9 +135,13 @@ PUT: Based on REST best practices\, the name of the path should focus on the res
 
 \`/ComplianceReports/\{compliancereportingid\}/Consolidations/\{consolidationid\}/Captures\`
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Capture
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Capture
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity CaBQ Capture Remediation activity or event related information
 
@@ -144,9 +155,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/compliance\-reporting/\{compliancereportingid\}/remediation/\{remediationid\}/capture'
 
-### POST: /ComplianceReporting/\{compliancereportingid\}/Remediation/Initiate
+## POST: /ComplianceReporting/\{compliancereportingid\}/Remediation/Initiate
 
-**Description**
+:::info Path
+POST: /ComplianceReporting/\{compliancereportingid\}/Remediation/Initiate
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity InBQ Instantiate a new Remediation
 
@@ -160,9 +175,13 @@ POST: The name of the path '/ComplianceReporting/\{compliancereportingid\}/Remed
 
 PUT /compliance\-reports/\{compliance\-report\-id\}/remediation/initiate
 
-### GET: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Retrieve
+## GET: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity ReBQ Retrieve details about any aspect of Compliance Assessment
 
@@ -178,9 +197,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Compl
 
 This naming convention makes the path more clear and concise\, conveying the hierarchy of the resources being accessed\.
 
-### GET: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Retrieve
+## GET: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity ReBQ Retrieve details about any aspect of Consolidation
 
@@ -192,9 +215,13 @@ This API path allows you to retrieve details about a specific aspect of consolid
 
 GET: Following REST best practices\, the name of the path should reflect the resource it is addressing rather than the action it performs\. A more appropriate name for this path could be '/ComplianceReports/\{compliancereportingid\}/Consolidations/\{consolidationid\}'\.
 
-### GET: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Retrieve
+## GET: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Retrieve
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity ReBQ Retrieve details about any aspect of Remediation
 
@@ -210,9 +237,13 @@ GET: To follow REST best practices\, the name of the path should be structured i
 
 For the action
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Request
+## PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Request
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity RqBQ Request manual intervention or a decision with respect to Compliance Assessment
 
@@ -226,9 +257,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 /ComplianceReports/\{complianceReportingId\}/ComplianceAssessments/\{complianceAssessmentId\}/Requests
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Request
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Request
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Request
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity RqBQ Request manual intervention or a decision with respect to Consolidation
 
@@ -244,9 +279,13 @@ PUT: Following REST best practices\, the path should be named as:
 
 This name is in lowercase letters\, separates words with hyphens\, and uses plural nouns to represent collections of resources\.
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Request
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Request
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Request
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity RqBQ Request manual intervention or a decision with respect to Remediation
 
@@ -260,9 +299,13 @@ PUT: A suitable name for the path following REST best practices would be:
 
 '/compliance\-reporting/\{compliancereportingid\}/remediation/\{remediationid\}/requests'
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Update
+## PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/ComplianceAssessment/\{complianceassessmentid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity UpBQ Update details relating to Compliance Assessment
 
@@ -276,9 +319,13 @@ PUT: A suitable name for the path could be:
 
 '/compliance\-reports/\{compliance\-report\-id\}/compliance\-assessments/\{compliance\-assessment\-id\}/update'
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Update
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Consolidation/\{consolidationid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity UpBQ Update details relating to Consolidation
 
@@ -292,9 +339,13 @@ PUT: The name of the path should be:
 
 '/compliance\-reporting/\{compliance\-reporting\-id\}/consolidation/\{consolidation\-id\}'
 
-### PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Update
+## PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ComplianceReporting/\{compliancereportingid\}/Remediation/\{remediationid\}/Update
+:::
+
+### Description
 
 This service domain administers and orchestrates the tasks required to apply and report on internal audit control and reporting activity UpBQ Update details relating to Remediation
 

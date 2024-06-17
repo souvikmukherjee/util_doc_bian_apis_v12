@@ -1,49 +1,14 @@
 # eTradingWorkbench
 
-## Table of Contents
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Control](#put-/etradingworkbench/\{etradingworkbenchid\}/control)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Exchange](#put-/etradingworkbench/\{etradingworkbenchid\}/exchange)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Execute](#put-/etradingworkbench/\{etradingworkbenchid\}/execute)
-- [POST: /eTradingWorkbench/Initiate](#post-/etradingworkbench/initiate)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/Notify](#get-/etradingworkbench/\{etradingworkbenchid\}/notify)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Request](#put-/etradingworkbench/\{etradingworkbenchid\}/request)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/Retrieve](#get-/etradingworkbench/\{etradingworkbenchid\}/retrieve)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Update](#put-/etradingworkbench/\{etradingworkbenchid\}/update)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Exchange](#put-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/\{investmentportfoliovaluationid\}/exchange)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Exchange](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/\{marketorderinitiationid\}/exchange)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Exchange](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/\{marketorderquotationid\}/exchange)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Exchange](#put-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/\{marketpriceanalysisid\}/exchange)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Execute](#put-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/\{investmentportfoliovaluationid\}/execute)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Execute](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/\{marketorderinitiationid\}/execute)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Execute](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/\{marketorderquotationid\}/execute)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Execute](#put-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/\{marketpriceanalysisid\}/execute)
-- [POST: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/Initiate](#post-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/initiate)
-- [POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/Initiate](#post-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/initiate)
-- [POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/Initiate](#post-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/initiate)
-- [POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/Initiate](#post-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/initiate)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Notify](#get-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/\{investmentportfoliovaluationid\}/notify)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Notify](#get-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/\{marketorderinitiationid\}/notify)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Notify](#get-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/\{marketorderquotationid\}/notify)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Notify](#get-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/\{marketpriceanalysisid\}/notify)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Request](#put-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/\{investmentportfoliovaluationid\}/request)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Request](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/\{marketorderinitiationid\}/request)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Request](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/\{marketorderquotationid\}/request)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Request](#put-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/\{marketpriceanalysisid\}/request)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Retrieve](#get-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/\{investmentportfoliovaluationid\}/retrieve)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Retrieve](#get-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/\{marketorderinitiationid\}/retrieve)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Retrieve](#get-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/\{marketorderquotationid\}/retrieve)
-- [GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Retrieve](#get-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/\{marketpriceanalysisid\}/retrieve)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Update](#put-/etradingworkbench/\{etradingworkbenchid\}/investmentportfoliovaluation/\{investmentportfoliovaluationid\}/update)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Update](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderinitiation/\{marketorderinitiationid\}/update)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Update](#put-/etradingworkbench/\{etradingworkbenchid\}/marketorderquotation/\{marketorderquotationid\}/update)
-- [PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Update](#put-/etradingworkbench/\{etradingworkbenchid\}/marketpriceanalysis/\{marketpriceanalysisid\}/update)
-
-
 **BIAN Documentation:** [eTradingWorkbench v12](https://app.swaggerhub.com/apis/BIAN-3/eTradingWorkbench/12.0.0)
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Control
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Control
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Control
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Control eTrading Workbench Operating Session
 
@@ -56,9 +21,13 @@ This BIAN API path allows users to update an existing eTrading Workbench session
 PUT: The name of the path should be:
 /eTradingWorkbenches/\{etradingworkbenchid\}/Control
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Exchange
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Exchange eTrading Workbench Operating Session
 
@@ -74,9 +43,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In general\, plural nouns are recommended for resource names in RESTful URLs\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Execute
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Execute
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Execute eTrading Workbench Operating Session
 
@@ -88,9 +61,13 @@ This API path allows consumers to update and execute an eTrading Workbench opera
 
 PUT: The name of the path would be "/eTradingWorkbenches/\{etradingworkbenchid\}/execute" in accordance with REST best practices\.
 
-### POST: /eTradingWorkbench/Initiate
+## POST: /eTradingWorkbench/Initiate
 
-**Description**
+:::info Path
+POST: /eTradingWorkbench/Initiate
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Initiate eTrading Workbench Operating Session
 
@@ -102,9 +79,13 @@ This BIAN API path is used to create a new resource for initiating an eTrading W
 
 POST: If the path '/eTradingWorkbench/Initiate' followed REST best practices\, it could be named something like '/trading/workbench/initiate'\. This name follows a more standardized format with lowercase letters and words separated by slashes for better readability and consistency\.
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/Notify
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/Notify
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Notify eTrading Workbench Operating Session
 
@@ -122,9 +103,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This naming convention follows the standard practice of using lowercase letters\, plural nouns for collection resources\, and using specific identifiers instead of generic identifiers like "etradingworkbenchid"\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Request
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Request
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Request
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Request eTrading Workbench Operating Session
 
@@ -136,9 +121,13 @@ This BIAN API path allows consumers to request an operating session for eTrading
 
 PUT: The name of the endpoint could be something like "/etrading\-workbenches/\{etradingworkbenchid\}/requests" following REST best practices\. This name is in a format that uses lowercase letters and hyphens for better readability and is in the plural form to represent a collection of requests associated with a specific eTrading workbench\.
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/Retrieve
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Retrieve eTrading Workbench Operating Session
 
@@ -152,9 +141,13 @@ GET: Based on RESTful best practices\, the name of the path should be:
 
 \`/eTradingWorkbenches/\{etradingworkbenchid\}/Retrieval\`
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Update
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Update
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/Update
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Update eTrading Workbench Operating Session
 
@@ -172,9 +165,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The path should represent a resource\, which is identified by the etradingworkbenchid\. The HTTP method used for updating the resource would be \`PUT\` or \`PATCH\` instead of including "Update" in the path\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Exchange
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Exchange Investment Portfolio Valuation Function
 
@@ -190,9 +187,13 @@ PUT: The name of the path should be:
 
 This path follows the REST best practices by using lowercase letters\, using hyphens to separate words\, and using nouns to represent resources\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Exchange
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Exchange Market Order Initiation Function
 
@@ -208,9 +209,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and using resource identifiers in singular form\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Exchange
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Exchange Market Order Quotation Function
 
@@ -226,9 +231,13 @@ PUT: Based on REST best practices\, the name of the path should accurately repre
 
 This name uses lowercase letters\, separates words with hyphens for readability\, and clearly indicates the hierarchy and relationships between the resources\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Exchange
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Exchange Market Price Analysis Function
 
@@ -242,9 +251,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 /eTradingWorkbenches/\{etradingworkbenchid\}/MarketPriceAnalyses/\{marketpriceanalysisid\}/Exchange
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Execute
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Execute Investment Portfolio Valuation Function
 
@@ -258,9 +271,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/e\-trading\-workbenches/\{etradingworkbenchid\}/investment\-portfolio\-valuations/\{investmentportfoliovaluationid\}/execute'
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Execute
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Execute Market Order Initiation Function
 
@@ -273,9 +290,13 @@ This API path \`/eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation
 PUT: The name of the path should be:
 /eTradingWorkbenches/\{etradingworkbenchId\}/MarketOrderInitiations/\{marketorderinitiationId\}/Executions
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Execute
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Execute Market Order Quotation Function
 
@@ -289,9 +310,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /eTradingWorkbenches/\{etradingworkbenchid\}/MarketOrderQuotations/\{marketorderquotationid\}/Execute
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Execute
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Execute Market Price Analysis Function
 
@@ -305,9 +330,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /eTradingWorkbenches/\{etradingworkbenchid\}/MarketPriceAnalyses/\{marketpriceanalysisid\}/Execution
 
-### POST: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/Initiate
+## POST: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/Initiate
 
-**Description**
+:::info Path
+POST: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/Initiate
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Initiate Investment Portfolio Valuation Function
 
@@ -320,9 +349,13 @@ This API path allows users to initiate a function that values their investment p
 POST: The name of the path should be:
 '/etrading\-workbenches/\{etrading\-workbench\-id\}/investment\-portfolio\-valuations/initiate'
 
-### POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/Initiate
+## POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/Initiate
 
-**Description**
+:::info Path
+POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/Initiate
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Initiate Market Order Initiation Function
 
@@ -344,9 +377,13 @@ And for the specific sub\-action of initiating a market order\, it could be:
 
 This path clearly indicates
 
-### POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/Initiate
+## POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/Initiate
 
-**Description**
+:::info Path
+POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/Initiate
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Initiate Market Order Quotation Function
 
@@ -362,9 +399,13 @@ POST: Based on REST best practices\, a suitable name for the path you mentioned 
 /etrading\-workbench/\{etradingworkbenchid\}/market\-order\-quotation/initiate
 \`\`\`
 
-### POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/Initiate
+## POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/Initiate
 
-**Description**
+:::info Path
+POST: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/Initiate
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Initiate Market Price Analysis Function
 
@@ -380,9 +421,13 @@ POST: Based on REST best practices\, the name of the path should follow a resour
 
 Using a plural noun "eTradingWorkbenches" for the collection of eTrading workbenches and "MarketPriceAnalysisInitiations" to represent the action of initiating market price analysis within a specific eTrading workbench\.
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Notify
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Notify
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Notify Investment Portfolio Valuation Function
 
@@ -398,9 +443,13 @@ GET: The name of the path should be:
 /eTradingWorkbenches/\{etradingworkbenchid\}/InvestmentPortfolioValuations/\{investmentportfoliovaluationid\}/Notifications
 \`\`\`
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Notify
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Notify
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Notify Market Order Initiation Function
 
@@ -414,9 +463,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 /e\-trading\-workbench/\{etradingworkbenchid\}/market\-order\-initiation/\{marketorderinitiationid\}/notify
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Notify
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Notify
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Notify Market Order Quotation Function
 
@@ -430,9 +483,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/etradingworkbenches/\{etradingworkbenchid\}/marketorderquotations/\{marketorderquotationid\}/notify'
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Notify
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Notify
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Notify Market Price Analysis Function
 
@@ -446,9 +503,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /eTradingWorkbenches/\{etradingworkbenchid\}/MarketPriceAnalyses/\{marketpriceanalysisid\}/Notify
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Request
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Request
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Request Investment Portfolio Valuation Function
 
@@ -464,9 +525,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /eTradingWorkbenches/\{etradingworkbenchid\}/InvestmentPortfolioValuations/\{investmentportfoliovaluationid\}/Requests
 \`\`\`
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Request
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Request
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Request Market Order Initiation Function
 
@@ -480,9 +545,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 /eTradingWorkbenches/\{etradingworkbenchid\}/MarketOrderInitiations/\{marketorderinitiationid\}/Requests
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Request
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Request
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Request Market Order Quotation Function
 
@@ -496,9 +565,13 @@ PUT: A possible RESTful name for this path could be:
 
 /eTradingWorkbenches/\{etradingworkbenchId\}/MarketOrderQuotations/\{marketorderquotationId\}/Requests
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Request
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Request
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Request Market Price Analysis Function
 
@@ -519,9 +592,13 @@ In this naming convention:
 \- Path segments are lower case with words separated by camel case
 \- Path segments are descriptive and represent the hierarchy of resources
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Retrieve
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Retrieve Investment Portfolio Valuation Function
 
@@ -537,9 +614,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /eTradingWorkbenches/\{etradingworkbenchid\}/InvestmentPortfolioValuations/\{investmentportfoliovaluationid\}
 \`\`\`
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Retrieve
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Retrieve Market Order Initiation Function
 
@@ -553,9 +634,13 @@ GET: If the path is following REST best practices\, a suitable name for it could
 
 GET /eTradingWorkbenches/\{etradingWorkbenchId\}/MarketOrderInitiations/\{marketOrderInitiationId\}
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Retrieve
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Retrieve Market Order Quotation Function
 
@@ -571,9 +656,13 @@ GET: Based on REST best practices\, the name of the path could be constructed as
 
 The endpoint operation "Retrieve" is usually implied in RESTful services\, so it does not typically appear in the path\.
 
-### GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Retrieve
+## GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Retrieve Market Price Analysis Function
 
@@ -587,9 +676,13 @@ GET: A good name for the path '/eTradingWorkbench/\{etradingworkbenchid\}/Market
 
 GET /eTradingWorkbenches/\{etradingworkbenchid\}/MarketPriceAnalyses/\{marketpriceanalysisid\}
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Update
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Update
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Update Investment Portfolio Valuation Function
 
@@ -601,9 +694,13 @@ This API path allows users to update the valuation of their investment portfolio
 
 PUT: Based on REST best practices\, the name of the path should focus on resources rather than actions or operations\. Given the path '/eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}/Update'\, we can simplify it to '/eTradingWorkbench/\{etradingworkbenchid\}/InvestmentPortfolioValuation/\{investmentportfoliovaluationid\}' as the resource identifier\. The update operation can be represented by using appropriate HTTP methods such as PUT or PATCH on this
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Update
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Update
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderInitiation/\{marketorderinitiationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Update Market Order Initiation Function
 
@@ -619,9 +716,13 @@ PUT: Following REST best practices\, the name of the path should be something li
 
 This path reflects the hierarchy of resources in a more clear and organized manner\.
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Update
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Update
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketOrderQuotation/\{marketorderquotationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Update Market Order Quotation Function
 
@@ -635,9 +736,13 @@ PUT: A more RESTful and cleaner path name for that endpoint could be:
 
 '/etrading\-workbenches/\{etradingWorkbenchId\}/market\-order\-quotations/\{marketOrderQuotationId\}'
 
-### PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Update
+## PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /eTradingWorkbench/\{etradingworkbenchid\}/MarketPriceAnalysis/\{marketpriceanalysisid\}/Update
+:::
+
+### Description
 
 This Service Domain supports consumer securities trading of their investment portfolio through the bank Update Market Price Analysis Function
 

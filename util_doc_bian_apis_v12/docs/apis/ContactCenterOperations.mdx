@@ -1,29 +1,14 @@
 # ContactCenterOperations
 
-## Table of Contents
-- [POST: /ContactCenterOperations/Create](#post-/contactcenteroperations/create)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Update](#put-/contactcenteroperations/\{contactcenteroperationsid\}/update)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Execute](#put-/contactcenteroperations/\{contactcenteroperationsid\}/execute)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Request](#put-/contactcenteroperations/\{contactcenteroperationsid\}/request)
-- [GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Retrieve](#get-/contactcenteroperations/\{contactcenteroperationsid\}/retrieve)
-- [POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/Create](#post-/contactcenteroperations/\{contactcenteroperationsid\}/assignment/create)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Update](#put-/contactcenteroperations/\{contactcenteroperationsid\}/assignment/\{assignmentid\}/update)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Request](#put-/contactcenteroperations/\{contactcenteroperationsid\}/assignment/\{assignmentid\}/request)
-- [GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Retrieve](#get-/contactcenteroperations/\{contactcenteroperationsid\}/assignment/\{assignmentid\}/retrieve)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Update](#put-/contactcenteroperations/\{contactcenteroperationsid\}/peakload/\{peakloadid\}/update)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Request](#put-/contactcenteroperations/\{contactcenteroperationsid\}/peakload/\{peakloadid\}/request)
-- [GET: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Retrieve](#get-/contactcenteroperations/\{contactcenteroperationsid\}/peakload/\{peakloadid\}/retrieve)
-- [POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/Create](#post-/contactcenteroperations/\{contactcenteroperationsid\}/troubleshooting/create)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Update](#put-/contactcenteroperations/\{contactcenteroperationsid\}/troubleshooting/\{troubleshootingid\}/update)
-- [PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Request](#put-/contactcenteroperations/\{contactcenteroperationsid\}/troubleshooting/\{troubleshootingid\}/request)
-- [GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Retrieve](#get-/contactcenteroperations/\{contactcenteroperationsid\}/troubleshooting/\{troubleshootingid\}/retrieve)
-
-
 **BIAN Documentation:** [ContactCenterOperations v12](https://app.swaggerhub.com/apis/BIAN-3/ContactCenterOperations/12.0.0)
 
-### POST: /ContactCenterOperations/Create
+## POST: /ContactCenterOperations/Create
 
-**Description**
+:::info Path
+POST: /ContactCenterOperations/Create
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance CrCR Create the administrative plan for the contact center
 
@@ -35,9 +20,13 @@ This API path \(/ContactCenterOperations/Create\) allows you to create a new res
 
 POST: The name of the path '/ContactCenterOperations/Create' following REST best practices should be '/contact\-center\-operations'\. The endpoint should use the HTTP POST method to create new resources\, so the full path would be '/contact\-center\-operations' with the HTTP method POST\.
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Update
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Update
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance UpCR Update aspects of the administrative plan
 
@@ -49,9 +38,13 @@ This API path allows you to update specific details related to the day\-to\-day 
 
 PUT: The name of the path can be "/contact\-centers/\{contactcenterId\}/operations/update" to follow REST best practices\. Remember to use lowercase letters\, hyphens to separate words\, and plurals for resource names\.
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Execute
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Execute
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance ExCR Execute an automated action against the plan
 
@@ -69,9 +62,13 @@ PUT: A good RESTful name for this path could be:
 
 This name reflects the resource being acted upon \("ContactCenterOperations"\)\, the specific operation being performed \("Execution"\)\, and includes the necessary identifier within the path\.
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Request
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Request
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance RqCR Request manual intervention to the plan
 
@@ -85,9 +82,13 @@ PUT: The recommended name for the path '/ContactCenterOperations/\{contactcenter
 
 '/contact\-center\-operations/\{contactcenteroperationsid\}/request'
 
-### GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Retrieve
+## GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Retrieve
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance ReCR Retrieve details about the execution of the administrative plan
 
@@ -99,9 +100,13 @@ This BIAN API path allows you to retrieve details about the execution of the adm
 
 GET: The name of the path following REST best practices would ideally use nouns instead of verbs to represent resources\, and use lowercase letters with dashes to separate words\. Therefore\, the path "/ContactCenterOperations/\{contactcenteroperationsid\}/Retrieve" should be renamed to "/contact\-center\-operations/\{contactcenteroperationsid\}"\.
 
-### POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/Create
+## POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/Create
 
-**Description**
+:::info Path
+POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/Create
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance CrBQ Create an assignment request
 
@@ -115,9 +120,13 @@ POST: A more RESTful name for the path '/ContactCenterOperations/\{contactcenter
 
 '/contact\-center\-operations/\{contactcenteroperationsid\}/assignments'
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Update
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Update
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance UpBQ Update details of a servicing representatives assignment
 
@@ -131,9 +140,13 @@ PUT: Based on REST best practices\, the path '/ContactCenterOperations/\{contact
 
 PATCH /contact\-center\-operations/\{contactcenteroperationsid\}/assignments/\{assignmentid\}
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Request
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Request
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance RqBQ Request changes to the servicing representative's assignment
 
@@ -149,9 +162,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in all lower case letters\, should use hyphens for better readability\, and should use plural nouns for resources\.
 
-### GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Retrieve
+## GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Assignment/\{assignmentid\}/Retrieve
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance ReBQ Retrieve details about a contact center assignment
 
@@ -165,9 +182,13 @@ GET: A suitable name for the path '/ContactCenterOperations/\{contactcenteropera
 
 GET '/contact\-center\-operations/\{contactcenteroperationsid\}/assignments/\{assignmentid\}'
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Update
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Update
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance UpBQ Update details or the response to a peak load situation
 
@@ -187,9 +208,13 @@ Here are some pointers on the suggested path name:
 2\. Prefer using lowercase characters to maintain uniformity and ease of handling\.
 3\. Use 'PATCH' method to demonstrate that the request is intended to update a specific resource identified by
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Request
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Request
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance RqBQ Request manual intervention due to peak loading
 
@@ -206,9 +231,13 @@ In this path:
 \- Plural nouns are used for collection resource names for scalability and simplicity\. 
 \- Resource identifiers are in lower case to maintain uniformity\.
 
-### GET: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Retrieve
+## GET: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterOperations/\{contactcenteroperationsid\}/PeakLoad/\{peakloadid\}/Retrieve
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance ReBQ Retrieve details about peak load response activity
 
@@ -222,9 +251,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 /contact\-center\-operations/\{contactcenteroperationsid\}/peak\-load/\{peakloadid\}
 
-### POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/Create
+## POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/Create
 
-**Description**
+:::info Path
+POST: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/Create
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance CrBQ Create a troubleshooting response task
 
@@ -242,9 +275,13 @@ POST /ContactCenters/\{contactCenterId\}/Operations/\{operationId\}/Troubleshoot
 
 This endpoint name follows a clear and concise structure indicating the resource being created and the hierarchy of the resources involved\. It uses nouns in plural form to indicate collections\, and it follows the convention of using HTTP methods like POST to create new resources\.
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Update
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Update
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance UpBQ Update aspects of a troubleshooting task
 
@@ -260,9 +297,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using lowercase letters\, hyphens to separate words\, and descriptive names that represent the resources being accessed\.
 
-### PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Request
+## PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Request
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance RqBQ request manual intervention in troubleshooting activity
 
@@ -276,9 +317,13 @@ PUT: A suitable name for the given path following REST best practices could be:
 
 "/contact\-center\-operations/\{contactcenteroperationsid\}/troubleshooting/\{troubleshootingid\}/request"
 
-### GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+## GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterOperations/\{contactcenteroperationsid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+:::
+
+### Description
 
 Administer the day to day activity in the contact center \- allocate positions and track staff availability and performance ReBQ Retrieve details about troubleshooting activity
 

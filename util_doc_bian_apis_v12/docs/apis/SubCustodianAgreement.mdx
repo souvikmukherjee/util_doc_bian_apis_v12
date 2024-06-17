@@ -1,39 +1,14 @@
 # SubCustodianAgreement
 
-## Table of Contents
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Control](#put-/subcustodianagreement/\{subcustodianagreementid\}/control)
-- [POST: /SubCustodianAgreement/Evaluate](#post-/subcustodianagreement/evaluate)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Exchange](#put-/subcustodianagreement/\{subcustodianagreementid\}/exchange)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Grant](#put-/subcustodianagreement/\{subcustodianagreementid\}/grant)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Notify](#get-/subcustodianagreement/\{subcustodianagreementid\}/notify)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Request](#put-/subcustodianagreement/\{subcustodianagreementid\}/request)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Retrieve](#get-/subcustodianagreement/\{subcustodianagreementid\}/retrieve)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Update](#put-/subcustodianagreement/\{subcustodianagreementid\}/update)
-- [POST: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/Evaluate](#post-/subcustodianagreement/\{subcustodianagreementid\}/legalterm/evaluate)
-- [POST: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/Evaluate](#post-/subcustodianagreement/\{subcustodianagreementid\}/policyterm/evaluate)
-- [POST: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/Evaluate](#post-/subcustodianagreement/\{subcustodianagreementid\}/regulatoryterm/evaluate)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Exchange](#put-/subcustodianagreement/\{subcustodianagreementid\}/legalterm/\{legaltermid\}/exchange)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Exchange](#put-/subcustodianagreement/\{subcustodianagreementid\}/policyterm/\{policytermid\}/exchange)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange](#put-/subcustodianagreement/\{subcustodianagreementid\}/regulatoryterm/\{regulatorytermid\}/exchange)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Notify](#get-/subcustodianagreement/\{subcustodianagreementid\}/legalterm/\{legaltermid\}/notify)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Notify](#get-/subcustodianagreement/\{subcustodianagreementid\}/policyterm/\{policytermid\}/notify)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify](#get-/subcustodianagreement/\{subcustodianagreementid\}/regulatoryterm/\{regulatorytermid\}/notify)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Request](#put-/subcustodianagreement/\{subcustodianagreementid\}/legalterm/\{legaltermid\}/request)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Request](#put-/subcustodianagreement/\{subcustodianagreementid\}/policyterm/\{policytermid\}/request)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request](#put-/subcustodianagreement/\{subcustodianagreementid\}/regulatoryterm/\{regulatorytermid\}/request)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Retrieve](#get-/subcustodianagreement/\{subcustodianagreementid\}/legalterm/\{legaltermid\}/retrieve)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Retrieve](#get-/subcustodianagreement/\{subcustodianagreementid\}/policyterm/\{policytermid\}/retrieve)
-- [GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve](#get-/subcustodianagreement/\{subcustodianagreementid\}/regulatoryterm/\{regulatorytermid\}/retrieve)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Update](#put-/subcustodianagreement/\{subcustodianagreementid\}/legalterm/\{legaltermid\}/update)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Update](#put-/subcustodianagreement/\{subcustodianagreementid\}/policyterm/\{policytermid\}/update)
-- [PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update](#put-/subcustodianagreement/\{subcustodianagreementid\}/regulatoryterm/\{regulatorytermid\}/update)
-
-
 **BIAN Documentation:** [SubCustodianAgreement v12](https://app.swaggerhub.com/apis/BIAN-3/SubCustodianAgreement/12.0.0)
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Control
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Control
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Control
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Control Sub Custodian Agreement
 
@@ -45,9 +20,13 @@ This BIAN API path is used to update an existing Sub Custodian Agreement by spec
 
 PUT: The name of the path should be '/sub\-custodian\-agreements/\{subcustodianagreementid\}/controls' following REST best practices\.
 
-### POST: /SubCustodianAgreement/Evaluate
+## POST: /SubCustodianAgreement/Evaluate
 
-**Description**
+:::info Path
+POST: /SubCustodianAgreement/Evaluate
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Evaluate Sub Custodian Agreement
 
@@ -65,9 +44,13 @@ POST: For following REST best practices\, the name of the path should ideally be
 
 This path should represent a collection of all sub\-custodian agreements\. Each specific agreement could then be retrieved or manipulated using appropriate HTTP methods like GET\, POST\, PUT\, DELETE etc\.
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Exchange
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Exchange Sub Custodian Agreement
 
@@ -81,9 +64,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/sub\-custodians/\{subcustodianagreementid\}/exchanges'
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Grant
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Grant
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Grant Sub Custodian Agreement
 
@@ -97,9 +84,13 @@ PUT: A good name for the path '/SubCustodianAgreement/\{subcustodianagreementid\
 
 '/sub\-custodian\-agreements/\{subcustodianagreementid\}/grants'
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Notify
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Notify
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Notify
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Notify Sub Custodian Agreement
 
@@ -113,9 +104,13 @@ GET: The name of the path "/SubCustodianAgreement/\{subcustodianagreementid\}/No
 
 "/SubCustodianAgreementNotifications/\{subcustodianagreementid\}"
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Request
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Request
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Request
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Request Sub Custodian Agreement
 
@@ -127,9 +122,13 @@ This API path allows you to update an existing sub custodian agreement by sendin
 
 PUT: The name of the path should be \`/sub\-custodian\-agreements/\{subcustodianagreementid\}/requests\` following REST best practices\.
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Retrieve
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Retrieve Sub Custodian Agreement
 
@@ -142,9 +141,13 @@ This BIAN API path allows you to retrieve information about a specific Sub Custo
 GET: Following REST best practices\, the name of the path should be:
 '/sub\-custodian\-agreements/\{subcustodianagreementid\}'
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Update
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/Update
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Update Sub Custodian Agreement
 
@@ -158,9 +161,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /subCustodianAgreements/\{subCustodianAgreementId\}
 
-### POST: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/Evaluate
+## POST: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/Evaluate
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Evaluate Legal Term
 
@@ -174,9 +181,13 @@ POST: The name of the path '/SubCustodianAgreement/\{subcustodianagreementid\}/L
 
 '/sub\-custodian\-agreements/\{subcustodianagreementid\}/legal\-terms/evaluate'
 
-### POST: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/Evaluate
+## POST: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/Evaluate
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Evaluate Policy Term
 
@@ -189,9 +200,13 @@ This API path allows you to create a new resource for evaluating the policy term
 POST: Based on REST best practices\, the name of the path should be:
 '/sub\-custodian\-agreements/\{subcustodianagreementid\}/policy\-terms/evaluate'
 
-### POST: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/Evaluate
+## POST: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/Evaluate
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Evaluate Regulatory Term
 
@@ -211,9 +226,13 @@ In this path:
 \- The resource names are in plural form\.
 \- The action “evaluate” is included as the last segment to indicate the specific action being performed\.
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Exchange
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Exchange
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Exchange Legal Term
 
@@ -227,9 +246,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/sub\-custodian\-agreements/\{sub\-custodian\-agreement\-id\}/legal\-terms/\{legal\-term\-id\}/exchange\`
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Exchange
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Exchange
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Exchange Policy Term
 
@@ -245,9 +268,13 @@ PUT: To follow REST best practices\, the name of the path should be:
 
 In this naming convention\, all path segments are in lowercase\, words are separated by hyphens\, and resources are represented in their plural form where appropriate\. This naming style improves readability and consistency\, which are important aspects of RESTful design\.
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Exchange Regulatory Term
 
@@ -261,9 +288,13 @@ PUT: The name of the path should be:
 
 '/sub\-custodian\-agreements/\{sub\_custodian\_agreement\_id\}/regulatory\-terms/\{regulatory\_term\_id\}/exchange'
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Notify
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Notify
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Notify
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Notify Legal Term
 
@@ -279,9 +310,13 @@ GET: The path should be named as:
 
 Following REST best practices\, the path should use lowercase letters\, hyphens to separate words\, and include plural nouns for resources where appropriate to maintain consistency\.
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Notify
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Notify
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Notify
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Notify Policy Term
 
@@ -297,9 +332,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for collections where applicable\.
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Notify Regulatory Term
 
@@ -313,9 +352,13 @@ GET: The name of the path should be:
 
 \`/sub\-custodian\-agreements/\{subcustodianagreementid\}/regulatory\-terms/\{regulatorytermid\}/notify\`
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Request
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Request
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Request
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Request Legal Term
 
@@ -327,9 +370,13 @@ This API path allows you to update a specific legal term related to a sub\-custo
 
 PUT: The name of the path could be '/sub\-custodian\-agreements/\{subcustodianagreementid\}/legal\-terms/\{legaltermid\}/requests' following REST best practices\.
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Request
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Request
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Request
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Request Policy Term
 
@@ -348,9 +395,13 @@ In this naming convention:
 \- Words are separated by hyphens for readability
 \- Plural nouns are used for resources where appropriate
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Request Regulatory Term
 
@@ -371,9 +422,13 @@ In this path:
 \- Path parameters such as \`subcustodianagreementid\` and \`regulatorytermid\` should be in curly braces to indicate they are variables\.
 \- The path should use camel case for readability and consistency\.
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Retrieve
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Retrieve Legal Term
 
@@ -389,9 +444,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens to separate words in the path names\.
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Retrieve
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Retrieve Policy Term
 
@@ -405,9 +464,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/sub\-custodian\-agreements/\{subcustodianagreementid\}/policy\-terms/\{policytermid\}/retrieve'
 
-### GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
+## GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Retrieve Regulatory Term
 
@@ -423,9 +486,13 @@ GET: Based on REST best practices\, the name of the path should be:
 GET /sub\-custodian\-agreements/\{subcustodianagreementid\}/regulatory\-terms/\{regulatorytermid\}
 \`\`\`
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Update
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Update
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/LegalTerm/\{legaltermid\}/Update
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Update Legal Term
 
@@ -439,9 +506,13 @@ PUT: The appropriate name for this path following REST best practices would be:
 
 '/sub\-custodian\-agreements/\{subcustodianagreementid\}/legal\-terms/\{legaltermid\}'
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Update
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Update
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/PolicyTerm/\{policytermid\}/Update
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Update Policy Term
 
@@ -453,9 +524,13 @@ This API path allows you to update a policy term related to a sub custodian agre
 
 PUT: Based on REST best practices\, the name of the path could be \`/sub\-custodian\-agreements/\{subcustodianagreementid\}/policy\-terms/\{policytermid\}\` for updating a policy term within a sub\-custodian agreement\.
 
-### PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update
+## PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update
 
-**Description**
+:::info Path
+PUT: /SubCustodianAgreement/\{subcustodianagreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update
+:::
+
+### Description
 
 This Service Domain establishes and maintains the terms governing sub custodian relationship Update Regulatory Term
 

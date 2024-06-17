@@ -1,56 +1,14 @@
 # CorporateAction
 
-## Table of Contents
-- [PUT: /CorporateAction/\{corporateactionid\}/Control](#put-/corporateaction/\{corporateactionid\}/control)
-- [PUT: /CorporateAction/\{corporateactionid\}/Exchange](#put-/corporateaction/\{corporateactionid\}/exchange)
-- [PUT: /CorporateAction/\{corporateactionid\}/Execute](#put-/corporateaction/\{corporateactionid\}/execute)
-- [POST: /CorporateAction/Initiate](#post-/corporateaction/initiate)
-- [GET: /CorporateAction/\{corporateactionid\}/Notify](#get-/corporateaction/\{corporateactionid\}/notify)
-- [PUT: /CorporateAction/\{corporateactionid\}/Request](#put-/corporateaction/\{corporateactionid\}/request)
-- [GET: /CorporateAction/\{corporateactionid\}/Retrieve](#get-/corporateaction/\{corporateactionid\}/retrieve)
-- [PUT: /CorporateAction/\{corporateactionid\}/Update](#put-/corporateaction/\{corporateactionid\}/update)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Exchange](#put-/corporateaction/\{corporateactionid\}/securitydividendpayment/\{securitydividendpaymentid\}/exchange)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Exchange](#put-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/\{securitymergersandacquisitionactionid\}/exchange)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Exchange](#put-/corporateaction/\{corporateactionid\}/securityrightsissueaction/\{securityrightsissueactionid\}/exchange)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Exchange](#put-/corporateaction/\{corporateactionid\}/securityspin\-offaction/\{securityspin\-offactionid\}/exchange)
-- [PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Exchange](#put-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/\{stocksplitorreversalactionid\}/exchange)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Execute](#put-/corporateaction/\{corporateactionid\}/securitydividendpayment/\{securitydividendpaymentid\}/execute)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Execute](#put-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/\{securitymergersandacquisitionactionid\}/execute)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Execute](#put-/corporateaction/\{corporateactionid\}/securityrightsissueaction/\{securityrightsissueactionid\}/execute)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Execute](#put-/corporateaction/\{corporateactionid\}/securityspin\-offaction/\{securityspin\-offactionid\}/execute)
-- [PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Execute](#put-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/\{stocksplitorreversalactionid\}/execute)
-- [POST: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/Initiate](#post-/corporateaction/\{corporateactionid\}/securitydividendpayment/initiate)
-- [POST: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/Initiate](#post-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/initiate)
-- [POST: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/Initiate](#post-/corporateaction/\{corporateactionid\}/securityrightsissueaction/initiate)
-- [POST: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/Initiate](#post-/corporateaction/\{corporateactionid\}/securityspin\-offaction/initiate)
-- [POST: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/Initiate](#post-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/initiate)
-- [GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Notify](#get-/corporateaction/\{corporateactionid\}/securitydividendpayment/\{securitydividendpaymentid\}/notify)
-- [GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Notify](#get-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/\{securitymergersandacquisitionactionid\}/notify)
-- [GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Notify](#get-/corporateaction/\{corporateactionid\}/securityrightsissueaction/\{securityrightsissueactionid\}/notify)
-- [GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Notify](#get-/corporateaction/\{corporateactionid\}/securityspin\-offaction/\{securityspin\-offactionid\}/notify)
-- [GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Notify](#get-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/\{stocksplitorreversalactionid\}/notify)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Request](#put-/corporateaction/\{corporateactionid\}/securitydividendpayment/\{securitydividendpaymentid\}/request)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Request](#put-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/\{securitymergersandacquisitionactionid\}/request)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Request](#put-/corporateaction/\{corporateactionid\}/securityrightsissueaction/\{securityrightsissueactionid\}/request)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Request](#put-/corporateaction/\{corporateactionid\}/securityspin\-offaction/\{securityspin\-offactionid\}/request)
-- [PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Request](#put-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/\{stocksplitorreversalactionid\}/request)
-- [GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Retrieve](#get-/corporateaction/\{corporateactionid\}/securitydividendpayment/\{securitydividendpaymentid\}/retrieve)
-- [GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Retrieve](#get-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/\{securitymergersandacquisitionactionid\}/retrieve)
-- [GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Retrieve](#get-/corporateaction/\{corporateactionid\}/securityrightsissueaction/\{securityrightsissueactionid\}/retrieve)
-- [GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Retrieve](#get-/corporateaction/\{corporateactionid\}/securityspin\-offaction/\{securityspin\-offactionid\}/retrieve)
-- [GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Retrieve](#get-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/\{stocksplitorreversalactionid\}/retrieve)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Update](#put-/corporateaction/\{corporateactionid\}/securitydividendpayment/\{securitydividendpaymentid\}/update)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Update](#put-/corporateaction/\{corporateactionid\}/securitymergersandacquisitionaction/\{securitymergersandacquisitionactionid\}/update)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Update](#put-/corporateaction/\{corporateactionid\}/securityrightsissueaction/\{securityrightsissueactionid\}/update)
-- [PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Update](#put-/corporateaction/\{corporateactionid\}/securityspin\-offaction/\{securityspin\-offactionid\}/update)
-- [PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Update](#put-/corporateaction/\{corporateactionid\}/stocksplitorreversalaction/\{stocksplitorreversalactionid\}/update)
-
-
 **BIAN Documentation:** [CorporateAction v12](https://app.swaggerhub.com/apis/BIAN-3/CorporateAction/12.0.0)
 
-### PUT: /CorporateAction/\{corporateactionid\}/Control
+## PUT: /CorporateAction/\{corporateactionid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/Control
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Control Corporate Action Procedure
 
@@ -66,9 +24,13 @@ PUT: Based on REST best practices\, the name of the endpoint should be:
 /CorporateActions/\{corporateActionId\}/Control
 \`\`\`
 
-### PUT: /CorporateAction/\{corporateactionid\}/Exchange
+## PUT: /CorporateAction/\{corporateactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Exchange Corporate Action Procedure
 
@@ -80,9 +42,13 @@ This API path allows you to update an existing corporate action task associated 
 
 PUT: The name of the path should be '/corporate\-actions/\{corporateactionid\}/exchanges'\. This follows REST best practices\, including using lowercase letters\, using hyphens to separate words in the path\, and using plural nouns for collections\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/Execute
+## PUT: /CorporateAction/\{corporateactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Execute Corporate Action Procedure
 
@@ -103,9 +69,13 @@ Key points to consider are:
 4\. Use specific identifiers in singular form for specific resources \(like "corporateactionid" here\)\.
 5\. Use standard HTTP methods like GET
 
-### POST: /CorporateAction/Initiate
+## POST: /CorporateAction/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateAction/Initiate
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Initiate Corporate Action Procedure
 
@@ -117,9 +87,13 @@ This API path "/CorporateAction/Initiate" allows you to start the process of han
 
 POST: If the path '/CorporateAction/Initiate' followed REST best practices\, it would likely be named in a more resource\-oriented manner\. A more suitable name could be '/actions' or '/corporate\-actions'\, emphasizing the concept of actions being initiated within the corporate context\. The specific name would depend on the context of the application and the resources being manipulated\.
 
-### GET: /CorporateAction/\{corporateactionid\}/Notify
+## GET: /CorporateAction/\{corporateactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Notify Corporate Action Procedure
 
@@ -135,9 +109,13 @@ GET: A good name for this path would be:
 
 This naming convention aligns with RESTful principles by using the appropriate HTTP method \(POST\) for creating a new notification related to a specific corporate action identified by \`\{corporateactionid\}\`\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/Request
+## PUT: /CorporateAction/\{corporateactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Request Corporate Action Procedure
 
@@ -149,9 +127,13 @@ This BIAN API path allows you to update an existing resource related to corporat
 
 PUT: A suitable name for this path following REST best practices could be "/CorporateActions/\{corporateactionid\}/Requests"\.
 
-### GET: /CorporateAction/\{corporateactionid\}/Retrieve
+## GET: /CorporateAction/\{corporateactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Retrieve Corporate Action Procedure
 
@@ -163,9 +145,13 @@ This API path allows you to retrieve information about a specific corporate acti
 
 GET: The path '/CorporateActions/\{corporateactionid\}' would be following REST best practices\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/Update
+## PUT: /CorporateAction/\{corporateactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Update Corporate Action Procedure
 
@@ -179,9 +165,13 @@ PUT: In following REST best practices\, the name of the path should be:
 
 PUT /CorporateAction/\{corporateactionid\}
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Exchange
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Exchange Security Dividend Payment Workstep
 
@@ -197,9 +187,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase letters and use hyphens to separate words for better readability and consistency\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Exchange
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Exchange Security Mergers and Acquisition Action Workstep
 
@@ -213,9 +207,13 @@ PUT: The name of the path should be:
 
 \`/corporate\-actions/\{corporate\-action\-id\}/security\-mergers\-and\-acquisitions\-action/\{security\-mergers\-and\-acquisition\-action\-id\}/exchange\`
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Exchange
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Exchange Security Rights Issue Action Workstep
 
@@ -232,9 +230,13 @@ In this revised path name:
 \- Words are separated by dashes for improved readability\.
 \- The path segments clearly describe the resource hierarchy and relationships\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Exchange
+## PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Exchange Security Spin\-Off Action Workstep
 
@@ -247,9 +249,13 @@ This API path is used to update information related to a specific security spin\
 PUT: The name of the path should be:
 '/corporate\-actions/\{corporateactionid\}/security\-spin\-offs/\{securityspin\-offactionid\}/exchanges'
 
-### PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Exchange
+## PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Exchange Stock Split or Reversal Action Workstep
 
@@ -265,9 +271,13 @@ PUT: The name of the path should be:
 
 In RESTful design\, paths should be in lowercase and use hyphens to separate words for readability and consistency\. Additionally\, resources should be in the plural form\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Execute
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Execute Security Dividend Payment Workstep
 
@@ -281,9 +291,13 @@ PUT: A possible RESTful path name following best practices could be:
 
 '/corporate\-actions/\{corporateactionid\}/dividend\-payments/\{securitydividendpaymentid\}/execute'
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Execute
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Execute Security Mergers and Acquisition Action Workstep
 
@@ -296,9 +310,13 @@ This BIAN API path is used to update an existing resource related to executing s
 PUT: Based on REST best practices\, the name of the path should be:
 '/corporate\-actions/\{corporateactionid\}/security\-ma\-actions/\{securitymergersandacquisitionactionid\}/execute'
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Execute
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Execute Security Rights Issue Action Workstep
 
@@ -312,9 +330,13 @@ PUT: A suitable name for the path according to REST best practices could be:
 
 \`/corporate\-actions/\{corporateactionid\}/security\-rights\-issues/\{securityrightsissueactionid\}/execute\`
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Execute
+## PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Execute Security Spin\-Off Action Workstep
 
@@ -332,9 +354,13 @@ Breaking down the changes:
 3\. Eliminating unnecessary and more technical terms \('SecuritySpin\-OffAction'\) and simply describing the resources being accessed \('security\-spin\-offs'\)\.
 4\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Execute
+## PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Execute Stock Split or Reversal Action Workstep
 
@@ -348,9 +374,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path '/Corpo
 
 '/corporate\-actions/\{corporateactionid\}/stock\-split\-reversal\-actions/\{stocksplitorreversalactionid\}/execute'
 
-### POST: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/Initiate
+## POST: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/Initiate
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Initiate Security Dividend Payment Workstep
 
@@ -364,9 +394,13 @@ POST: The name of the path should be:
 
 '/corporate\-actions/\{corporateactionid\}/security\-dividend\-payments/initiate'
 
-### POST: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/Initiate
+## POST: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/Initiate
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Initiate Security Mergers and Acquisition Action Workstep
 
@@ -378,9 +412,13 @@ This API path is used to initiate the processing of security mergers and acquisi
 
 POST: Following REST best practices\, the name of the path can be simplified to reflect the resource being accessed\. Therefore\, the path '/CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/Initiate' can be named as '/corporate\-actions/\{corporateactionid\}/mergers\-acquisitions/initiate'\. This naming convention is more concise and clear\, making it easier for developers to understand and work with the API endpoint\.
 
-### POST: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/Initiate
+## POST: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/Initiate
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Initiate Security Rights Issue Action Workstep
 
@@ -394,9 +432,13 @@ POST: The name of the path should be:
 
 '/corporate\-actions/\{corporate\-action\-id\}/security\-rights\-issue\-actions/initiate'
 
-### POST: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/Initiate
+## POST: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/Initiate
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Initiate Security Spin\-Off Action Workstep
 
@@ -410,9 +452,13 @@ POST: A suitable name for the path '/CorporateAction/\{corporateactionid\}/Secur
 
 POST /corporate\-actions/\{corporateactionid\}/security\-spin\-offs/initiate
 
-### POST: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/Initiate
+## POST: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/Initiate
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Initiate Stock Split or Reversal Action Workstep
 
@@ -428,9 +474,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase\, use hyphens to separate words\, and include resource names instead of actions in the URL\.
 
-### GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Notify
+## GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Notify Security Dividend Payment Workstep
 
@@ -444,9 +494,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /CorporateActions/\{corporateactionId\}/SecurityDividendPayments/\{securitydividendpaymentId\}/Notify
 
-### GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Notify
+## GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Notify Security Mergers and Acquisition Action Workstep
 
@@ -460,9 +514,13 @@ GET: The name of the path should be:
 
 '/corporate\-actions/\{corporateactionid\}/security\-mergers\-and\-acquisition\-actions/\{securitymergersandacquisitionactionid\}/notify'
 
-### GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Notify
+## GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Notify Security Rights Issue Action Workstep
 
@@ -475,9 +533,13 @@ This API path allows you to retrieve information related to notifying a specific
 GET: A suitable name for the path following REST best practices would be:
 '/corporate\-actions/\{corporate\-action\-id\}/security\-rights\-issue\-actions/\{security\-rights\-issue\-action\-id\}/notify'
 
-### GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Notify
+## GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Notify Security Spin\-Off Action Workstep
 
@@ -489,9 +551,13 @@ This API path retrieves information about the workstep related to notifying cust
 
 GET: The name of the path should be:
 
-### GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Notify
+## GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Notify Stock Split or Reversal Action Workstep
 
@@ -505,9 +571,13 @@ GET: The name of the path should be as follows:
 
 '/corporate\-actions/\{corporateactionid\}/stock\-splits\-or\-reversals/\{stocksplitorreversalactionid\}/notify'
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Request
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Request Security Dividend Payment Workstep
 
@@ -519,9 +589,13 @@ This BIAN API path is used to update an existing resource related to requesting 
 
 PUT: The name of the path should be:  \`/corporate\-actions/\{corporate\-action\-id\}/security\-dividend\-payments/\{security\-dividend\-payment\-id\}/requests\`
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Request
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Request Security Mergers and Acquisition Action Workstep
 
@@ -535,9 +609,13 @@ PUT: A recommended name for this path following REST best practices could be:
 
 '/corporate\-actions/\{corporateactionid\}/mergers\-and\-acquisitions/\{securitymergersandacquisitionactionid\}/request'
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Request
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Request Security Rights Issue Action Workstep
 
@@ -555,9 +633,13 @@ PUT: The name of the path should follow REST best practices and be resource\-ori
 
 This name reflects the hierarchical relationship between the resources represented in the path and follows the convention of using plural nouns for resource names\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Request
+## PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Request Security Spin\-Off Action Workstep
 
@@ -572,9 +654,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 /CorporateActions/\{corporateactionid\}/SecuritySpinOffActions/\{securityspin\-offactionid\}/Requests
 \`\`\`
 
-### PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Request
+## PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Request
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Request Stock Split or Reversal Action Workstep
 
@@ -588,9 +674,13 @@ PUT: The RESTful name for this path could be:
 
 '/corporate\-actions/\{corporateactionid\}/stock\-split\-or\-reversal\-actions/\{stocksplitorreversalactionid\}/requests'
 
-### GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Retrieve
+## GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Retrieve Security Dividend Payment Workstep
 
@@ -604,9 +694,13 @@ GET: Based on REST best practices\, the suggested name for this path could be:
 
 GET '/corporate\-actions/\{corporateActionId\}/security\-dividend\-payments/\{securityDividendPaymentId\}'
 
-### GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Retrieve
+## GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Retrieve Security Mergers and Acquisition Action Workstep
 
@@ -620,9 +714,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-actions/\{corporateactionid\}/security\-ma\-actions/\{securitymergersandacquisitionactionid\}'
 
-### GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Retrieve
+## GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Retrieve Security Rights Issue Action Workstep
 
@@ -640,9 +738,13 @@ A suggestion for the path name could be:
 
 This path clearly indicates the hierarchy of resources and the specific action being taken\.
 
-### GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Retrieve
+## GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Retrieve Security Spin\-Off Action Workstep
 
@@ -656,9 +758,13 @@ GET: A more appropriate name for the path '/CorporateAction/\{corporateactionid\
 
 '/corporate\-actions/\{corporateactionid\}/security\-spin\-off\-actions/\{securityspin\-offactionid\}'
 
-### GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Retrieve
+## GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Retrieve Stock Split or Reversal Action Workstep
 
@@ -670,9 +776,13 @@ This API path is used to retrieve information about a specific stock split or re
 
 GET: Based on REST best practices\, the name of the path could be '/corporate\-actions/\{corporateactionid\}/stock\-split\-or\-reversal\-actions/\{stocksplitorreversalactionid\}'\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Update
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityDividendPayment/\{securitydividendpaymentid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Update Security Dividend Payment Workstep
 
@@ -685,9 +795,13 @@ This BIAN API path allows you to update a specific security dividend payment wor
 PUT: The name of the path should be:
 '/CorporateActions/\{corporateactionid\}/SecurityDividendPayments/\{securitydividendpaymentid\}'
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Update
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityMergersandAcquisitionAction/\{securitymergersandacquisitionactionid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Update Security Mergers and Acquisition Action Workstep
 
@@ -700,9 +814,13 @@ This API path allows you to update a specific security merger and acquisition ac
 PUT: Based on REST best practices\, the name of the path you provided can be updated to:  
 '/corporate\-actions/\{corporateactionid\}/security\-M&A\-actions/\{securitymergersandacquisitionactionid\}'
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Update
+## PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecurityRightsIssueAction/\{securityrightsissueactionid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Update Security Rights Issue Action Workstep
 
@@ -718,9 +836,13 @@ PUT: Based on REST best practices\, the name of the path should be structured in
 
 This name emphasizes the resources being interacted with \(Corporate Actions and Security Rights Issue Actions\) and follows a clear and consistent structure\.
 
-### PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Update
+## PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/SecuritySpin\-OffAction/\{securityspin\-offactionid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Update Security Spin\-Off Action Workstep
 
@@ -736,9 +858,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PUT /corporate\-actions/\{corporateactionid\}/security\-spin\-offs/\{securityspin\-offactionid\}
 \`\`\`
 
-### PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Update
+## PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateAction/\{corporateactionid\}/StockSplitorReversalAction/\{stocksplitorreversalactionid\}/Update
+:::
+
+### Description
 
 This Service Domain supports the various custodial tasks associated with processing associated corporate actions for customer's with securities held at the bank Update Stock Split or Reversal Action Workstep
 

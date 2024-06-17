@@ -1,36 +1,14 @@
 # Loan
 
-## Table of Contents
-- [POST: /Loan/Initiate](#post-/loan/initiate)
-- [PUT: /Loan/\{loanid\}/Update](#put-/loan/\{loanid\}/update)
-- [PUT: /Loan/\{loanid\}/Control](#put-/loan/\{loanid\}/control)
-- [GET: /Loan/\{loanid\}/Retrieve](#get-/loan/\{loanid\}/retrieve)
-- [GET: /Loan/\{loanid\}/Interest/\{interestid\}/Retrieve](#get-/loan/\{loanid\}/interest/\{interestid\}/retrieve)
-- [PUT: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/loan/\{loanid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/loan/\{loanid\}/servicefees/\{servicefeesid\}/retrieve)
-- [GET: /Loan/\{loanid\}/Disbursement/\{disbursementid\}/Retrieve](#get-/loan/\{loanid\}/disbursement/\{disbursementid\}/retrieve)
-- [PUT: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Request](#put-/loan/\{loanid\}/maintenance/\{maintenanceid\}/request)
-- [GET: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Retrieve](#get-/loan/\{loanid\}/maintenance/\{maintenanceid\}/retrieve)
-- [PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Update](#put-/loan/\{loanid\}/withdrawal/\{withdrawalid\}/update)
-- [PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Execute](#put-/loan/\{loanid\}/withdrawal/\{withdrawalid\}/execute)
-- [PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Request](#put-/loan/\{loanid\}/withdrawal/\{withdrawalid\}/request)
-- [GET: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Retrieve](#get-/loan/\{loanid\}/withdrawal/\{withdrawalid\}/retrieve)
-- [PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Update](#put-/loan/\{loanid\}/repayment/\{repaymentid\}/update)
-- [PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Execute](#put-/loan/\{loanid\}/repayment/\{repaymentid\}/execute)
-- [PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Request](#put-/loan/\{loanid\}/repayment/\{repaymentid\}/request)
-- [GET: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Retrieve](#get-/loan/\{loanid\}/repayment/\{repaymentid\}/retrieve)
-- [POST: /Loan/\{loanid\}/Restructuring/Initiate](#post-/loan/\{loanid\}/restructuring/initiate)
-- [PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Update](#put-/loan/\{loanid\}/restructuring/\{restructuringid\}/update)
-- [PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Exchange](#put-/loan/\{loanid\}/restructuring/\{restructuringid\}/exchange)
-- [PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Request](#put-/loan/\{loanid\}/restructuring/\{restructuringid\}/request)
-- [GET: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Retrieve](#get-/loan/\{loanid\}/restructuring/\{restructuringid\}/retrieve)
-
-
 **BIAN Documentation:** [Loan v12](https://app.swaggerhub.com/apis/BIAN-3/Loan/12.0.0)
 
-### POST: /Loan/Initiate
+## POST: /Loan/Initiate
 
-**Description**
+:::info Path
+POST: /Loan/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks InCR Initiate a loan
 
@@ -44,9 +22,13 @@ POST: The name for the path '/Loan/Initiate' following REST best practices shoul
 
 So\, a more appropriate name for the path '/Loan/Initiate' could be '/loans'\. This name is more generic and represents a collection of loans\, which aligns with the resource\-based approach of REST architecture\.
 
-### PUT: /Loan/\{loanid\}/Update
+## PUT: /Loan/\{loanid\}/Update
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpCR Update details for an existing loan
 
@@ -58,9 +40,13 @@ This API path allows you to update the details of an existing loan by providing 
 
 PUT: The correct name for the path '/Loan/\{loanid\}/Update' following REST best practices would be PUT /Loan/\{loanid\}\.
 
-### PUT: /Loan/\{loanid\}/Control
+## PUT: /Loan/\{loanid\}/Control
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Control
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks CoCR Control a loan
 
@@ -72,9 +58,13 @@ This API path allows you to update an existing loan resource by controlling vari
 
 PUT: The path '/Loan/\{loanid\}/Control' would be appropriately named '/loans/\{loanid\}/controls' following REST best practices\.
 
-### GET: /Loan/\{loanid\}/Retrieve
+## GET: /Loan/\{loanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReCR Retrieve details about a loan
 
@@ -86,9 +76,13 @@ This API path allows you to retrieve details about a specific loan by providing 
 
 GET: Following REST best practices\, the name of the path '/Loan/\{loanid\}/Retrieve' should be simply '/loans/\{loanid\}' to retrieve a specific loan resource\.
 
-### GET: /Loan/\{loanid\}/Interest/\{interestid\}/Retrieve
+## GET: /Loan/\{loanid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about interest applied to a loan
 
@@ -102,9 +96,13 @@ GET: A suitable name following REST best practices for the path '/Loan/\{loanid\
 
 GET /loans/\{loanid\}/interests/\{interestid\}
 
-### PUT: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute Apply Service Fee
 
@@ -120,9 +118,13 @@ POST '/loans/\{loanid\}/service\-fees/\{servicefeesid\}/execute'
 
 Following REST naming conventions\, it is recommended to use lowercase letters and hyphens to separate words in the URL path\. Additionally\, the use of singular nouns for resources is encouraged\.
 
-### GET: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a loan fees
 
@@ -138,9 +140,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /loans/\{loanId\}/serviceFees/\{serviceFeeId\}
 \`\`\`
 
-### GET: /Loan/\{loanid\}/Disbursement/\{disbursementid\}/Retrieve
+## GET: /Loan/\{loanid\}/Disbursement/\{disbursementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Disbursement/\{disbursementid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a disbursement paid against a loan
 
@@ -156,9 +162,13 @@ GET /loans/\{loanid\}/disbursements/\{disbursementid\}
 
 This name is clear and concise\, uses lowercase letters\, utilizes nouns to represent resources \(loan and disbursement\)\, and includes the appropriate HTTP method \(GET\) to denote the action of retrieving information\.
 
-### PUT: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Request
+## PUT: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request a maintenance activity for a consumer load
 
@@ -170,9 +180,13 @@ This API path allows you to request a maintenance activity for a particular cons
 
 PUT: A suggestion based on REST best practices would be to name the path '/loans/\{loanid\}/maintenances/\{maintenanceid\}/requests'\. This naming convention follows the plural form for resources and uses lower case letters with hyphens to separate words\.
 
-### GET: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Retrieve
+## GET: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Maintenance/\{maintenanceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about maintenance processing for a loan
 
@@ -186,9 +200,13 @@ GET: The name of the path should be:
 
 '/loans/\{loanid\}/maintenances/\{maintenanceid\}'
 
-### PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Update
+## PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Update
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update details of a withdrawal from a loan
 
@@ -202,9 +220,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /loans/\{loanId\}/withdrawals/\{withdrawalId\}/update
 
-### PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Execute
+## PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute an automated withdrawal against a loan
 
@@ -218,9 +240,13 @@ PUT: Based on REST best practices\, a potential name for the path could be:
 
 '/loans/\{loanid\}/withdrawals/\{withdrawalid\}/execute'
 
-### PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Request
+## PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Request
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request handling of a withdrawal
 
@@ -236,9 +262,13 @@ PUT: Following RESTful best practices\, a suitable name for the path '/Loan/\{lo
 
 This naming convention uses all lowercase letters\, uses plural nouns to represent collections\, and maintains a clear hierarchical structure\.
 
-### GET: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Retrieve
+## GET: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a loan withdrawal
 
@@ -252,9 +282,13 @@ GET: A possible name for the path '/Loan/\{loanid\}/Withdrawal/\{withdrawalid\}/
 
 GET /loans/\{loanid\}/withdrawals/\{withdrawalid\}
 
-### PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Update
+## PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update a repayment transaction made to the loan
 
@@ -271,9 +305,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 This path reflects the hierarchical structure of resources and uses plural nouns to represent collections of resources \(like loans and repayments\) and singular nouns for specific resource instances \(like loanid and repaymentid\)\. The specific action "Update" can be inferred from the HTTP method used for the request \(e\.g\.\, PUT or PATCH\)\.
 
-### PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Execute
+## PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute an automated repayment transaction
 
@@ -285,9 +323,13 @@ This BIAN API path allows you to execute an automated repayment transaction for 
 
 PUT: The name of the path could be \`/loans/\{loanId\}/repayments/\{repaymentId\}/execute\` to adhere to REST best practices\.
 
-### PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Request
+## PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request handling of an exceptional repayment
 
@@ -300,9 +342,13 @@ This API path allows you to handle requests for exceptional repayments on a spec
 PUT: The name of the path should be:
 '/loans/\{loanId\}/repayments/\{repaymentId\}/requests'
 
-### GET: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Retrieve
+## GET: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Repayment/\{repaymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a loan repayment
 
@@ -318,9 +364,13 @@ GET /loans/\{loanid\}/repayments/\{repaymentid\}
 
 This naming convention clearly identifies the resource \(repayment\) being retrieved within the context of a specific loan\.
 
-### POST: /Loan/\{loanid\}/Restructuring/Initiate
+## POST: /Loan/\{loanid\}/Restructuring/Initiate
 
-**Description**
+:::info Path
+POST: /Loan/\{loanid\}/Restructuring/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks InBQ Initiate loan account restructuring
 
@@ -336,9 +386,13 @@ POST: The name of the path '/Loan/\{loanid\}/Restructuring/Initiate' should idea
 
 This revised name highlights the loan resource being accessed \(with the specific loan identified by \{loanid\}\) and the type of operation being performed on it \(Restructuring\)\. The
 
-### PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Update
+## PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Update
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update details of a loan or restructuring activities
 
@@ -352,9 +406,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 PUT /loans/\{loanid\}/restructuring/\{restructuringid\}
 
-### PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Exchange
+## PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks EcBQ Accept\, reject etc a loan restructuring proposal
 
@@ -370,9 +428,13 @@ PUT: Based on REST best practices\, the name of the path '/Loan/\{loanid\}/Restr
 2\. /loans/\{loanid\}/restructurings/\{restructuringid\}/exchanges
 3\. /loans/\{loan
 
-### PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Request
+## PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Request
 
-**Description**
+:::info Path
+PUT: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request activity associated with a restructuring effort
 
@@ -388,9 +450,13 @@ PUT: The name of the path should be:
 /loans/\{loanId\}/restructuring/\{restructuringId\}/requests
 \`\`\`
 
-### GET: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Retrieve
+## GET: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Loan/\{loanid\}/Restructuring/\{restructuringid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a general loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a loan restructuring task
 

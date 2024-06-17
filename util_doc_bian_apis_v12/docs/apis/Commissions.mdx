@@ -1,30 +1,14 @@
 # Commissions
 
-## Table of Contents
-- [PUT: /Commissions/\{commissionsid\}/Control](#put-/commissions/\{commissionsid\}/control)
-- [PUT: /Commissions/\{commissionsid\}/Exchange](#put-/commissions/\{commissionsid\}/exchange)
-- [PUT: /Commissions/\{commissionsid\}/Execute](#put-/commissions/\{commissionsid\}/execute)
-- [POST: /Commissions/Initiate](#post-/commissions/initiate)
-- [GET: /Commissions/\{commissionsid\}/Retrieve](#get-/commissions/\{commissionsid\}/retrieve)
-- [PUT: /Commissions/\{commissionsid\}/Request](#put-/commissions/\{commissionsid\}/request)
-- [PUT: /Commissions/\{commissionsid\}/Update](#put-/commissions/\{commissionsid\}/update)
-- [PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Exchange](#put-/commissions/\{commissionsid\}/calculation/\{calculationid\}/exchange)
-- [PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Exchange](#put-/commissions/\{commissionsid\}/check/\{checkid\}/exchange)
-- [PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Exchange](#put-/commissions/\{commissionsid\}/payment/\{paymentid\}/exchange)
-- [POST: /Commissions/\{commissionsid\}/Check/Initiate](#post-/commissions/\{commissionsid\}/check/initiate)
-- [GET: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Retrieve](#get-/commissions/\{commissionsid\}/calculation/\{calculationid\}/retrieve)
-- [GET: /Commissions/\{commissionsid\}/Check/\{checkid\}/Retrieve](#get-/commissions/\{commissionsid\}/check/\{checkid\}/retrieve)
-- [GET: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Retrieve](#get-/commissions/\{commissionsid\}/payment/\{paymentid\}/retrieve)
-- [PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Update](#put-/commissions/\{commissionsid\}/calculation/\{calculationid\}/update)
-- [PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Update](#put-/commissions/\{commissionsid\}/check/\{checkid\}/update)
-- [PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Update](#put-/commissions/\{commissionsid\}/payment/\{paymentid\}/update)
-
-
 **BIAN Documentation:** [Commissions v12](https://app.swaggerhub.com/apis/BIAN-3/Commissions/12.0.0)
 
-### PUT: /Commissions/\{commissionsid\}/Control
+## PUT: /Commissions/\{commissionsid\}/Control
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Control
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees CoCR Control the processing of Commission Transaction
 
@@ -40,9 +24,13 @@ PUT: Based on REST best practices\, the name of the path would typically be:
 
 In RESTful design\, paths are usually in lowercase to improve readability and consistency\.
 
-### PUT: /Commissions/\{commissionsid\}/Exchange
+## PUT: /Commissions/\{commissionsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Exchange
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees EcCR Accept\, verify\, etc\. aspects of Commission Transaction processing
 
@@ -58,9 +46,13 @@ PUT: The name of the path '/Commissions/\{commissionsid\}/Exchange' should typic
 
 This naming convention indicates that the endpoint involves trading or exchanging commissions associated with a specific commissionsid\. Remember to choose a name that accurately reflects the functionality of the endpoint while maintaining a clear and logical structure for your API
 
-### PUT: /Commissions/\{commissionsid\}/Execute
+## PUT: /Commissions/\{commissionsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Execute
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees ExCR Execute an available automated action for Commission Transaction
 
@@ -76,9 +68,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path names should be in lowercase letters and use hyphens to separate multiple words\.
 
-### POST: /Commissions/Initiate
+## POST: /Commissions/Initiate
 
-**Description**
+:::info Path
+POST: /Commissions/Initiate
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees InCR Instantiate a new Commission Transaction
 
@@ -90,9 +86,13 @@ This BIAN API path allows you to create a new commission transaction for eligibl
 
 POST: The path '/Commissions/Initiate' could be renamed to follow REST best practices by using a more appropriate and descriptive term that represents the action being performed on the resource\. For example\, '/Commissions/Start' or '/Commissions/BeginProcess' could be more meaningful and indicative of the action to initiate the commission process\.
 
-### GET: /Commissions/\{commissionsid\}/Retrieve
+## GET: /Commissions/\{commissionsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Commissions/\{commissionsid\}/Retrieve
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees ReCR Retrieve details about any aspect of Commission Transaction
 
@@ -108,9 +108,13 @@ GET '/Commissions/\{commissionsid\}'
 
 This path signifies that you are retrieving a specific commission resource identified by the commissionsid\.
 
-### PUT: /Commissions/\{commissionsid\}/Request
+## PUT: /Commissions/\{commissionsid\}/Request
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Request
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees RqCR Request manual intervention or a decision with respect to Commission Transaction
 
@@ -124,9 +128,13 @@ PUT: The name of the path should be:
 
 GET /commissions/\{commissionsid\}/request
 
-### PUT: /Commissions/\{commissionsid\}/Update
+## PUT: /Commissions/\{commissionsid\}/Update
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Update
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees UpCR Update details relating to Commission Transaction
 
@@ -140,9 +148,13 @@ PUT: The name of the path should be:
 
 PUT /Commissions/\{commissionsid\}
 
-### PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Exchange
+## PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Exchange
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees EcBQ Accept\, verify\, etc\. aspects of Calculation processing
 
@@ -158,9 +170,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, using plural nouns for resource names\, and utilizing descriptive and self\-explanatory names for each segment of the path\.
 
-### PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Exchange
+## PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Exchange
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees EcBQ Accept\, verify\, etc\. aspects of Check processing
 
@@ -174,9 +190,13 @@ PUT: A suitable name for the path '/Commissions/\{commissionsid\}/Check/\{checki
 
 '/commissions/\{commissionId\}/checks/\{checkId\}/exchange'
 
-### PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Exchange
+## PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Exchange
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees EcBQ Accept\, verify\, etc\. aspects of Payment processing
 
@@ -190,9 +210,13 @@ PUT: The name of the path following RESTful best practices could be:
 
 '/commissions/\{commissionId\}/payments/\{paymentId\}/exchange'
 
-### POST: /Commissions/\{commissionsid\}/Check/Initiate
+## POST: /Commissions/\{commissionsid\}/Check/Initiate
 
-**Description**
+:::info Path
+POST: /Commissions/\{commissionsid\}/Check/Initiate
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees InBQ Instantiate a new Check
 
@@ -206,9 +230,13 @@ POST: A more RESTful path name for "/Commissions/\{commissionsid\}/Check/Initiat
 
 "/commissions/\{commissionsid\}/checks/initiate"
 
-### GET: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Retrieve
+## GET: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Retrieve
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees ReBQ Retrieve details about any aspect of Calculation
 
@@ -222,9 +250,13 @@ GET: A suitable name for the path '/Commissions/\{commissionsid\}/Calculation/\{
 
 GET /commissions/\{commissionsid\}/calculations/\{calculationid\}
 
-### GET: /Commissions/\{commissionsid\}/Check/\{checkid\}/Retrieve
+## GET: /Commissions/\{commissionsid\}/Check/\{checkid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Commissions/\{commissionsid\}/Check/\{checkid\}/Retrieve
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees ReBQ Retrieve details about any aspect of Check
 
@@ -242,9 +274,13 @@ GET /commissions/\{commissionsid\}/checks/\{checkid\}
 
 This naming convention uses lowercase letters\, separates words with hyphens\, and follows a clear structure with each resource being represented by a descriptive noun \(e\.g\.\, 'commissions' and
 
-### GET: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Retrieve
+## GET: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Retrieve
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees ReBQ Retrieve details about any aspect of Payment
 
@@ -260,9 +296,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens or underscores\. It should be simple\, descriptive\, and follow a hierarchical structure to indicate the relationship between resources\.
 
-### PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Update
+## PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Update
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Calculation/\{calculationid\}/Update
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees UpBQ Update details relating to Calculation
 
@@ -276,9 +316,13 @@ PUT: The name of the path should be \`/commissions/\{commissionsId\}/calculation
 
 Endpoints in REST should use lowercase letters and separate words with dashes\. Additionally\, it's recommended to use nouns as resource names instead of actions like "update"\. The HTTP method used for updating a resource should be indicated by the HTTP verb \(PUT\, PATCH\, etc\.\) rather than including it in the endpoint name\.
 
-### PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Update
+## PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Update
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Check/\{checkid\}/Update
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees UpBQ Update details relating to Check
 
@@ -292,9 +336,13 @@ PUT: The appropriate name for the path '/Commissions/\{commissionsid\}/Check/\{c
 
 PATCH /commissions/\{commissionsid\}/checks/\{checkid\}
 
-### PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Update
+## PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /Commissions/\{commissionsid\}/Payment/\{paymentid\}/Update
+:::
+
+### Description
 
 The service domain processes commissions for transactions for eligible employees UpBQ Update details relating to Payment
 

@@ -1,26 +1,14 @@
 # CustomerBehaviorModels
 
-## Table of Contents
-- [POST: /CustomerBehaviorModels/Create](#post-/customerbehaviormodels/create)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Execute](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/execute)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Request](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/request)
-- [GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Retrieve](#get-/customerbehaviormodels/\{customerbehaviormodelsid\}/retrieve)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/functionalrequirements/\{functionalrequirementsid\}/update)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/functionalrequirements/\{functionalrequirementsid\}/capture)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/functionalrequirements/\{functionalrequirementsid\}/request)
-- [GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve](#get-/customerbehaviormodels/\{customerbehaviormodelsid\}/functionalrequirements/\{functionalrequirementsid\}/retrieve)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Update](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/testing/\{testingid\}/update)
-- [GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Retrieve](#get-/customerbehaviormodels/\{customerbehaviormodelsid\}/testing/\{testingid\}/retrieve)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Execute](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/production/\{productionid\}/execute)
-- [PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Request](#put-/customerbehaviormodels/\{customerbehaviormodelsid\}/production/\{productionid\}/request)
-- [GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Retrieve](#get-/customerbehaviormodels/\{customerbehaviormodelsid\}/production/\{productionid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerBehaviorModels v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerBehaviorModels/12.0.0)
 
-### POST: /CustomerBehaviorModels/Create
+## POST: /CustomerBehaviorModels/Create
 
-**Description**
+:::info Path
+POST: /CustomerBehaviorModels/Create
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment CrCR Create or register an imported customer behavior model
 
@@ -32,9 +20,13 @@ This API path allows you to create or register a new customer behavior model wit
 
 POST: If the path '/CustomerBehaviorModels/Create' followed all REST best practices\, the name of the path should be changed to '/CustomerBehaviorModels' using the POST method to create a new customer behavior model resource\. This adheres to the RESTful convention of using the HTTP methods \(GET\, POST\, PUT\, DELETE\) to interact with resources\.
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Execute
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Execute
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment ExCR Automatically download a customer behavior model
 
@@ -49,9 +41,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path segments should be in lowercase with words separated by hyphens\. The path should be named in a way that clearly indicates the resource and action being performed\.
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Request
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment RqCR Request the use of a customer behavior model
 
@@ -63,9 +59,13 @@ This API path allows you to request the use of a specific customer behavior mode
 
 PUT: The name of the path should be '/customer\-behavior\-models/\{customer\-behavior\-models\-id\}/request'\, following REST best practices\.
 
-### GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Retrieve
+## GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment ReCR Retrieve details about a customer behavior model
 
@@ -79,9 +79,13 @@ GET: The name of the path should be:
 
 '/customer\-behavior\-models/\{customerBehaviorModelId\}'
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment UpBQ Update the requirements or other properties of a model
 
@@ -95,9 +99,13 @@ PUT: A suitable name for the path following REST best practices could be:
 
 PUT /customer\-behavior\-models/\{customerBehaviorModelId\}/functional\-requirements/\{functionalRequirementsId\}
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment CaBQ Capture usage reports for a customer behavior model
 
@@ -117,9 +125,13 @@ In this revised path name:
 \- The whole path is in plural form for collections \('customer\-behavior\-models'\, 'functional\-requirements'\)\.
 \- Each segment is clearly described
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment RqBQ Request changes or improvements to a model
 
@@ -135,9 +147,13 @@ PUT: The name of the path should be:
 /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Requests
 \`\`\`
 
-### GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
+## GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment ReBQ Retrieve details about the model specification and properties
 
@@ -153,9 +169,13 @@ GET: Based on REST best practices\, the name of the path should reflect the reso
 
 This naming convention follows the RESTful principles of using lowercase letters\, hyphens to separate words\, and clearly identifying the resource and action in the URI\.
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Update
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment UpBQ Update user testing content
 
@@ -169,9 +189,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path would b
 
 '/customer\-behavior\-models/\{customerBehaviorModelsId\}/testing/\{testingId\}/update'
 
-### GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Retrieve
+## GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Testing/\{testingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment ReBQ Retrieve details and testing results
 
@@ -191,9 +215,13 @@ A few key points to note based on REST best practices:
 3\. Use plural nouns for collections \(e\.g\.\, customer\-behavior\-models\) and singular nouns for single resources \(e\.g\.\, retrieve\)\.
 4\. Use path parameters for dynamic parts
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Execute
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Execute
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment ExBQ Get automated support for model deployment
 
@@ -209,9 +237,13 @@ PUT: A suitable name for the path '/CustomerBehaviorModels/\{customerbehaviormod
 
 This naming convention uses lowercase letters and dashes for readability and follows the RESTful convention of using plural nouns for resource names\. It is also important to use meaningful and consistent naming to enhance the usability and maintainability of the API\.
 
-### PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Request
+## PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment RqBQ Request production support for a deployed model
 
@@ -225,9 +257,13 @@ PUT: Based on REST best practices\, the path name should be:
 
 '/customer\-behavior\-models/\{customerBehaviorModelsId\}/production/\{productionId\}/request'
 
-### GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Retrieve
+## GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerBehaviorModels/\{customerbehaviormodelsid\}/Production/\{productionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of customer behavior models that might be used in all aspects of customer relationship development\, sales\, servicing and product fulfillment ReBQ Retrieve details and documentation covering model production deployment
 

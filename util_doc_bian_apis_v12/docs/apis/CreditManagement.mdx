@@ -1,16 +1,14 @@
 # CreditManagement
 
-## Table of Contents
-- [POST: /CreditManagement/Evaluate](#post-/creditmanagement/evaluate)
-- [PUT: /CreditManagement/\{creditmanagementid\}/Update](#put-/creditmanagement/\{creditmanagementid\}/update)
-- [GET: /CreditManagement/\{creditmanagementid\}/Retrieve](#get-/creditmanagement/\{creditmanagementid\}/retrieve)
-
-
 **BIAN Documentation:** [CreditManagement v12](https://app.swaggerhub.com/apis/BIAN-3/CreditManagement/12.0.0)
 
-### POST: /CreditManagement/Evaluate
+## POST: /CreditManagement/Evaluate
 
-**Description**
+:::info Path
+POST: /CreditManagement/Evaluate
+:::
+
+### Description
 
 This service domain provides a bank\-wide/oversight function to qualify credit pricing for offered products and services to reflect the bank's appetite to write the business\. This decision can override the standard product pricing procedure EvCR Evaluate a proposed transaction pricing against group credit policy
 
@@ -22,9 +20,13 @@ This API path allows the bank to evaluate the pricing of credit transactions aga
 
 POST: If the path '/CreditManagement/Evaluate' followed REST best practices\, it should be named based on the resource it represents rather than the action being performed\. A more appropriate name would be '/CreditEvaluation' to better align with RESTful principles\.
 
-### PUT: /CreditManagement/\{creditmanagementid\}/Update
+## PUT: /CreditManagement/\{creditmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditManagement/\{creditmanagementid\}/Update
+:::
+
+### Description
 
 This service domain provides a bank\-wide/oversight function to qualify credit pricing for offered products and services to reflect the bank's appetite to write the business\. This decision can override the standard product pricing procedure UpCR Update details of an active credit pricing assessment
 
@@ -38,9 +40,13 @@ PUT: The name of the path should be:
 
 PATCH /CreditManagement/\{creditmanagementid\}
 
-### GET: /CreditManagement/\{creditmanagementid\}/Retrieve
+## GET: /CreditManagement/\{creditmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditManagement/\{creditmanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain provides a bank\-wide/oversight function to qualify credit pricing for offered products and services to reflect the bank's appetite to write the business\. This decision can override the standard product pricing procedure ReCR Retrieve details about a credit pricing assessment
 

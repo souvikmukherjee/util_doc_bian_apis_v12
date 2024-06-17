@@ -1,20 +1,14 @@
 # CardTransactionSwitch
 
-## Table of Contents
-- [POST: /CardTransactionSwitch/Initiate](#post-/cardtransactionswitch/initiate)
-- [PUT: /CardTransactionSwitch/\{cardtransactionswitchid\}/Update](#put-/cardtransactionswitch/\{cardtransactionswitchid\}/update)
-- [GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/Retrieve](#get-/cardtransactionswitch/\{cardtransactionswitchid\}/retrieve)
-- [POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/Initiate](#post-/cardtransactionswitch/\{cardtransactionswitchid\}/transactioncapture/initiate)
-- [GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve](#get-/cardtransactionswitch/\{cardtransactionswitchid\}/transactioncapture/\{transactioncaptureid\}/retrieve)
-- [POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/Initiate](#post-/cardtransactionswitch/\{cardtransactionswitchid\}/transactionrouting/initiate)
-- [GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/\{transactionroutingid\}/Retrieve](#get-/cardtransactionswitch/\{cardtransactionswitchid\}/transactionrouting/\{transactionroutingid\}/retrieve)
-
-
 **BIAN Documentation:** [CardTransactionSwitch v12](https://app.swaggerhub.com/apis/BIAN-3/CardTransactionSwitch/12.0.0)
 
-### POST: /CardTransactionSwitch/Initiate
+## POST: /CardTransactionSwitch/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionSwitch/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. InCR Initiate a card transaction switch operating session
 
@@ -30,9 +24,13 @@ A more RESTful naming convention for this path could be something like '/card\-t
 
 Remember\, in RESTful design\, paths should be named based on the resource being manipulated rather than the action being performed\. This allows for a more intuitive and standardized API design
 
-### PUT: /CardTransactionSwitch/\{cardtransactionswitchid\}/Update
+## PUT: /CardTransactionSwitch/\{cardtransactionswitchid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTransactionSwitch/\{cardtransactionswitchid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. UpCR Update an active card transaction switch operating session
 
@@ -46,9 +44,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 PATCH /card\-transaction\-switches/\{cardtransactionswitchid\}
 
-### GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/Retrieve
+## GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. ReCR Retrieve details about an active card transaction switch operating session
 
@@ -62,9 +64,13 @@ GET: A suitable name for the path '/CardTransactionSwitch/\{cardtransactionswitc
 
 GET /card\-transaction\-switch/\{cardtransactionswitchid\}
 
-### POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/Initiate
+## POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. InBQ Initiate a card transaction switch capture function
 
@@ -78,9 +84,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /card\-transaction\-switches/\{cardtransactionswitchid\}/transaction\-capture/initiate
 
-### GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve
+## GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. ReBQ Retrieve details about a card capture transaction
 
@@ -94,9 +104,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 /card\-transaction\-switches/\{cardtransactionswitchid\}/transaction\-captures/\{transactioncaptureid\}
 
-### POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/Initiate
+## POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. InBQ Initiate the routing function
 
@@ -110,9 +124,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /card\-transaction\-switches/\{cardtransactionswitchid\}/transaction\-routing/initiate
 
-### GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/\{transactionroutingid\}/Retrieve
+## GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/\{transactionroutingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionSwitch/\{cardtransactionswitchid\}/TransactionRouting/\{transactionroutingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the switching and routing of Card Authorization and Financial transactions received through the Card POS Network\, Card E\-Commerce Gateway\, or the ATM Network from the Acquirer to the Issuer through the Card Networks\. ReBQ Retrieve details about a card transaction switch routing transaction
 

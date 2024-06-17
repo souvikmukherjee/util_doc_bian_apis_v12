@@ -1,17 +1,14 @@
 # MarketAnalysis
 
-## Table of Contents
-- [POST: /MarketAnalysis/Evaluate](#post-/marketanalysis/evaluate)
-- [PUT: /MarketAnalysis/\{marketanalysisid\}/Execute](#put-/marketanalysis/\{marketanalysisid\}/execute)
-- [PUT: /MarketAnalysis/\{marketanalysisid\}/Request](#put-/marketanalysis/\{marketanalysisid\}/request)
-- [GET: /MarketAnalysis/\{marketanalysisid\}/Retrieve](#get-/marketanalysis/\{marketanalysisid\}/retrieve)
-
-
 **BIAN Documentation:** [MarketAnalysis v12](https://app.swaggerhub.com/apis/BIAN-3/MarketAnalysis/12.0.0)
 
-### POST: /MarketAnalysis/Evaluate
+## POST: /MarketAnalysis/Evaluate
 
-**Description**
+:::info Path
+POST: /MarketAnalysis/Evaluate
+:::
+
+### Description
 
 This service domain analyzes internal and external market information sources as necessary to develop specific market insights\. It may maintain a collection of predefined market analyses and may also offer specific ad\-hoc analysis on request EvCR Initialize a market research analysis
 
@@ -23,9 +20,13 @@ This BIAN API path allows you to create a new market research analysis\. You can
 
 POST: In order to follow REST best practices\, the path should use nouns rather than verbs\. So\, the name of the path '/MarketAnalysis/Evaluate' could be changed to something like '/market\-analysis\-report'\.
 
-### PUT: /MarketAnalysis/\{marketanalysisid\}/Execute
+## PUT: /MarketAnalysis/\{marketanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketAnalysis/\{marketanalysisid\}/Execute
+:::
+
+### Description
 
 This service domain analyzes internal and external market information sources as necessary to develop specific market insights\. It may maintain a collection of predefined market analyses and may also offer specific ad\-hoc analysis on request ExCR Obtain an automated refresh of market research analysis
 
@@ -45,9 +46,13 @@ In this convention:
 \- The resource 'MarketAnalysis' is represented as 'market\-analyses' in the plural form\.
 \- The action 'Execute' is included as part of the path to indicate the action being performed on the specific market analysis identified by 'marketanalysisid'\.
 
-### PUT: /MarketAnalysis/\{marketanalysisid\}/Request
+## PUT: /MarketAnalysis/\{marketanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketAnalysis/\{marketanalysisid\}/Request
+:::
+
+### Description
 
 This service domain analyzes internal and external market information sources as necessary to develop specific market insights\. It may maintain a collection of predefined market analyses and may also offer specific ad\-hoc analysis on request RqCR Request a manual refresh of market research analysis
 
@@ -63,9 +68,13 @@ PUT: The name of the path '/MarketAnalysis/\{marketanalysisid\}/Request' followi
 
 It is recommended to use clear and meaningful resource names in lowercase and plural form\. Make sure that the names are easy to read and understand for other developers\.
 
-### GET: /MarketAnalysis/\{marketanalysisid\}/Retrieve
+## GET: /MarketAnalysis/\{marketanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketAnalysis/\{marketanalysisid\}/Retrieve
+:::
+
+### Description
 
 This service domain analyzes internal and external market information sources as necessary to develop specific market insights\. It may maintain a collection of predefined market analyses and may also offer specific ad\-hoc analysis on request ReCR Retrieve details about market research analysis\, including recent results
 

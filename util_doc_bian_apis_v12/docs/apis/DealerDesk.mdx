@@ -1,42 +1,14 @@
 # DealerDesk
 
-## Table of Contents
-- [PUT: /DealerDesk/\{dealerdeskid\}/Control](#put-/dealerdesk/\{dealerdeskid\}/control)
-- [PUT: /DealerDesk/\{dealerdeskid\}/Exchange](#put-/dealerdesk/\{dealerdeskid\}/exchange)
-- [PUT: /DealerDesk/\{dealerdeskid\}/Execute](#put-/dealerdesk/\{dealerdeskid\}/execute)
-- [POST: /DealerDesk/Initiate](#post-/dealerdesk/initiate)
-- [GET: /DealerDesk/\{dealerdeskid\}/Notify](#get-/dealerdesk/\{dealerdeskid\}/notify)
-- [PUT: /DealerDesk/\{dealerdeskid\}/Request](#put-/dealerdesk/\{dealerdeskid\}/request)
-- [GET: /DealerDesk/\{dealerdeskid\}/Retrieve](#get-/dealerdesk/\{dealerdeskid\}/retrieve)
-- [PUT: /DealerDesk/\{dealerdeskid\}/Update](#put-/dealerdesk/\{dealerdeskid\}/update)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Exchange](#put-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/\{dealerdeskconsolidatedpositiontrackingid\}/exchange)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Exchange](#put-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/\{dealerdesktradingassignmentandlimitsid\}/exchange)
-- [PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Exchange](#put-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/\{informationfeedadministrationid\}/exchange)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Execute](#put-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/\{dealerdeskconsolidatedpositiontrackingid\}/execute)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Execute](#put-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/\{dealerdesktradingassignmentandlimitsid\}/execute)
-- [PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Execute](#put-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/\{informationfeedadministrationid\}/execute)
-- [POST: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/Initiate](#post-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/initiate)
-- [POST: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/Initiate](#post-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/initiate)
-- [POST: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/Initiate](#post-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/initiate)
-- [GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Notify](#get-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/\{dealerdeskconsolidatedpositiontrackingid\}/notify)
-- [GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Notify](#get-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/\{dealerdesktradingassignmentandlimitsid\}/notify)
-- [GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Notify](#get-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/\{informationfeedadministrationid\}/notify)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Request](#put-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/\{dealerdeskconsolidatedpositiontrackingid\}/request)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Request](#put-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/\{dealerdesktradingassignmentandlimitsid\}/request)
-- [PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Request](#put-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/\{informationfeedadministrationid\}/request)
-- [GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Retrieve](#get-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/\{dealerdeskconsolidatedpositiontrackingid\}/retrieve)
-- [GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Retrieve](#get-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/\{dealerdesktradingassignmentandlimitsid\}/retrieve)
-- [GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Retrieve](#get-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/\{informationfeedadministrationid\}/retrieve)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Update](#put-/dealerdesk/\{dealerdeskid\}/dealerdeskconsolidatedpositiontracking/\{dealerdeskconsolidatedpositiontrackingid\}/update)
-- [PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Update](#put-/dealerdesk/\{dealerdeskid\}/dealerdesktradingassignmentandlimits/\{dealerdesktradingassignmentandlimitsid\}/update)
-- [PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Update](#put-/dealerdesk/\{dealerdeskid\}/informationfeedadministration/\{informationfeedadministrationid\}/update)
-
-
 **BIAN Documentation:** [DealerDesk v12](https://app.swaggerhub.com/apis/BIAN-3/DealerDesk/12.0.0)
 
-### PUT: /DealerDesk/\{dealerdeskid\}/Control
+## PUT: /DealerDesk/\{dealerdeskid\}/Control
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/Control
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Control Dealer Desk Operating Session
 
@@ -50,9 +22,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/dealer\-desks/\{dealerdeskid\}/controls'
 
-### PUT: /DealerDesk/\{dealerdeskid\}/Exchange
+## PUT: /DealerDesk/\{dealerdeskid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/Exchange
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Exchange Dealer Desk Operating Session
 
@@ -66,9 +42,13 @@ PUT: The name of the path should be: \`/dealer\-desks/\{dealerdeskid\}/exchanges
 
 It is recommended to use lowercase letters\, hyphens instead of underscores\, and plural nouns to represent resources in RESTful API paths\.
 
-### PUT: /DealerDesk/\{dealerdeskid\}/Execute
+## PUT: /DealerDesk/\{dealerdeskid\}/Execute
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/Execute
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Execute Dealer Desk Operating Session
 
@@ -84,9 +64,13 @@ PUT: The name of the path should be:
 
 In REST best practices\, it is recommended to use lowercase letters for the path and follow a consistent naming convention\. Additionally\, using plural nouns for resource names is also a common practice\.
 
-### POST: /DealerDesk/Initiate
+## POST: /DealerDesk/Initiate
 
-**Description**
+:::info Path
+POST: /DealerDesk/Initiate
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Initiate Dealer Desk Operating Session
 
@@ -100,9 +84,13 @@ POST: The name of the path '/DealerDesk/Initiate' should be more descriptive and
 
 A possible name for this path following REST best practices could be '/DealerDesk/StartTransaction'\. This name provides clear and concise information about the action being taken\, making it easier for clients to understand the purpose of the resource\.
 
-### GET: /DealerDesk/\{dealerdeskid\}/Notify
+## GET: /DealerDesk/\{dealerdeskid\}/Notify
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/Notify
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Notify Dealer Desk Operating Session
 
@@ -116,9 +104,13 @@ GET: The name of the path should be:
 
 /DealerDesks/\{dealerdeskid\}/Notifications
 
-### PUT: /DealerDesk/\{dealerdeskid\}/Request
+## PUT: /DealerDesk/\{dealerdeskid\}/Request
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/Request
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Request Dealer Desk Operating Session
 
@@ -132,9 +124,13 @@ PUT: The name of the path should be '/dealer\-desks/\{dealerdeskid\}/requests'\.
 
 In RESTful APIs\, path names are typically in lowercase and use hyphens to separate words for better readability\. Using plural nouns for resource names is also a common convention\.
 
-### GET: /DealerDesk/\{dealerdeskid\}/Retrieve
+## GET: /DealerDesk/\{dealerdeskid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/Retrieve
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Retrieve Dealer Desk Operating Session
 
@@ -148,9 +144,13 @@ GET: The name of the path should be:
 
 '/dealer\-desks/\{dealerdeskid\}'
 
-### PUT: /DealerDesk/\{dealerdeskid\}/Update
+## PUT: /DealerDesk/\{dealerdeskid\}/Update
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/Update
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Update Dealer Desk Operating Session
 
@@ -164,9 +164,13 @@ PUT: The name of the path '/DealerDesk/\{dealerdeskid\}/Update' following REST b
 
 PUT /DealerDesk/\{dealerdeskid\}
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Exchange
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Exchange
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Exchange Dealer Desk Consolidated Position Tracking Function
 
@@ -178,9 +182,13 @@ This API path allows you to update the Exchange Dealer Desk Consolidated Positio
 
 PUT: The name of the path should be '/dealer\-desks/\{dealerdeskid\}/position\-trackings/\{dealerdeskconsolidatedpositiontrackingid\}/exchanges'\. It follows the REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns to represent collections of resources\.
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Exchange
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Exchange
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Exchange Dealer Desk Trading Assignment and Limits Function
 
@@ -194,9 +202,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/dealer\-desks/\{dealerdeskid\}/trading\-assignments\-and\-limits/\{dealerdesktradingassignmentandlimitsid\}/exchange'
 
-### PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Exchange
+## PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Exchange
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Exchange Information Feed Administration Function
 
@@ -210,9 +222,13 @@ PUT: Based on REST best practices\, the name of the path should be in lowercase 
 
 /dealer\-desk/\{dealerdeskid\}/information\-feed\-administration/\{informationfeedadministrationid\}/exchange
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Execute
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Execute
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Execute Dealer Desk Consolidated Position Tracking Function
 
@@ -232,9 +248,13 @@ In this updated path:
 \- "\{dealerdeskId\}" and "\{dealerdeskConsolidatedPositionTrackingId\}" are in camelCase for readability and consistency\.
 \- "ConsolidatedPositionTrackings" is in its plural form to
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Execute
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Execute
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Execute Dealer Desk Trading Assignment and Limits Function
 
@@ -254,9 +274,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 \- Use lowercase letters for endpoint names
 \- Use
 
-### PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Execute
+## PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Execute
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Execute Information Feed Administration Function
 
@@ -270,9 +294,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/dealer\-desks/\{dealerdeskid\}/information\-feed\-administrations/\{informationfeedadministrationid\}/execute\`
 
-### POST: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/Initiate
+## POST: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/Initiate
 
-**Description**
+:::info Path
+POST: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/Initiate
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Initiate Dealer Desk Consolidated Position Tracking Function
 
@@ -284,9 +312,13 @@ This BIAN API path allows a user to initiate the function of tracking consolidat
 
 POST: The name of the path should be: \`/dealer\-desks/\{dealerdeskid\}/consolidated\-position\-tracking/initiate\`
 
-### POST: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/Initiate
+## POST: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/Initiate
 
-**Description**
+:::info Path
+POST: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/Initiate
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Initiate Dealer Desk Trading Assignment and Limits Function
 
@@ -307,9 +339,13 @@ In this naming convention:
 \- The resource name should be in plural form if representing a collection of resources \(e\.g\.\, DealerDesks\)\.
 \- The endpoint 'initiate' should be
 
-### POST: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/Initiate
+## POST: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/Initiate
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Initiate Information Feed Administration Function
 
@@ -327,9 +363,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 This naming convention ensures that the path is clear\, concise\, and adheres to standard RESTful practices\.
 
-### GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Notify
+## GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Notify
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Notify
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Notify Dealer Desk Consolidated Position Tracking Function
 
@@ -344,9 +384,13 @@ GET: The name of the path should be:
 /DealerDesks/\{dealerdeskId\}/ConsolidatedPositionTrackings/\{consolidatedPositionTrackingId\}/Notify
 \`\`\`
 
-### GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Notify
+## GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Notify
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Notify
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Notify Dealer Desk Trading Assignment and Limits Function
 
@@ -360,9 +404,13 @@ GET: The RESTful naming convention for this path would be:
 
 \`/dealerdesks/\{dealerdeskid\}/dealerdesktradingassignmentsandlimits/\{dealerdesktradingassignmentandlimitsid\}/notify\`
 
-### GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Notify
+## GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Notify
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Notify Information Feed Administration Function
 
@@ -376,9 +424,13 @@ GET: The RESTful name for this path could be:
 
 '/dealers/\{dealerId\}/information\-feeds/\{feedId\}/notifications'
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Request
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Request
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Request
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Request Dealer Desk Consolidated Position Tracking Function
 
@@ -392,9 +444,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /DealerDesks/\{dealerDeskId\}/DealerDeskConsolidatedPositionTrackings/\{dealerDeskConsolidatedPositionTrackingId\}/Requests
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Request
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Request
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Request
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Request Dealer Desk Trading Assignment and Limits Function
 
@@ -410,9 +466,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, use lowercase letters\, separate words with dashes\, and keep the path structure hierarchical and descriptive\. Be consistent with pluralization where applicable\.
 
-### PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Request
+## PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Request
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Request Information Feed Administration Function
 
@@ -426,9 +486,13 @@ PUT: The name of the path should be:
 
 '/dealerdesks/\{dealerdeskid\}/information\-feed\-administrations/\{informationfeedadministrationid\}/requests'
 
-### GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Retrieve
+## GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Retrieve
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Retrieve Dealer Desk Consolidated Position Tracking Function
 
@@ -442,9 +506,13 @@ GET: The name of the path should be:
 
 '/dealer\-desks/\{dealerDeskId\}/consolidated\-position\-tracking/\{dealerDeskConsolidatedPositionTrackingId\}'
 
-### GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Retrieve
+## GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Retrieve
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Retrieve Dealer Desk Trading Assignment and Limits Function
 
@@ -458,9 +526,13 @@ GET: Based on REST best practices\, the name of the path should be simplified an
 
 /DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}
 
-### GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Retrieve
+## GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Retrieve
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Retrieve Information Feed Administration Function
 
@@ -476,9 +548,13 @@ GET: A possible name for this path following REST best practices could be:
 GET /dealer\-desks/\{dealerdeskid\}/information\-feed\-administrations/\{informationfeedadministrationid\}
 \`\`\`
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Update
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Update
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskConsolidatedPositionTracking/\{dealerdeskconsolidatedpositiontrackingid\}/Update
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Update Dealer Desk Consolidated Position Tracking Function
 
@@ -496,9 +572,13 @@ PATCH /DealerDesks/\{dealerdeskId\}/ConsolidatedPositionTrackings/\{consolidated
 
 This path follows REST best practices by using the appropriate HTTP method \(PATCH for updating resources\)\, using plural nouns to represent collections \(DealerDesks and ConsolidatedPositionTrackings\)\, and using camel case with the first letter of each word in lower camel case\.
 
-### PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Update
+## PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Update
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/DealerDeskTradingAssignmentandLimits/\{dealerdesktradingassignmentandlimitsid\}/Update
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Update Dealer Desk Trading Assignment and Limits Function
 
@@ -514,9 +594,13 @@ PUT: A more appropriate name for the provided path following REST best practices
 
 This naming convention uses lowercase letters\, hyphens for better readability\, and descriptive names that represent resources and their relationships accurately\. It also eliminates the verb "Update" since HTTP methods \(such as PUT or PATCH\) would be used to update the resource\.
 
-### PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Update
+## PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /DealerDesk/\{dealerdeskid\}/InformationFeedAdministration/\{informationfeedadministrationid\}/Update
+:::
+
+### Description
 
 The Dealer Workbench represents the bank's dealing desk facility supporting one or more trading lines of activity for both agency and principal trading in all chosen market instruments\. It also supports sales and market risk trading desk functions Update Information Feed Administration Function
 

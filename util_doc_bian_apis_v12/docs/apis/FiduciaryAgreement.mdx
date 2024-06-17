@@ -1,33 +1,14 @@
 # FiduciaryAgreement
 
-## Table of Contents
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Control](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/control)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Exchange](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/exchange)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Execute](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/execute)
-- [POST: /FiduciaryAgreement/Initiate](#post-/fiduciaryagreement/initiate)
-- [GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Retrieve](#get-/fiduciaryagreement/\{fiduciaryagreementid\}/retrieve)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Request](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/request)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Update](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/update)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Exchange](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/agreement/\{agreementid\}/exchange)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Exchange](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/fees/\{feesid\}/exchange)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Exchange](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/fulfillment/\{fulfillmentid\}/exchange)
-- [POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/Initiate](#post-/fiduciaryagreement/\{fiduciaryagreementid\}/agreement/initiate)
-- [POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/Initiate](#post-/fiduciaryagreement/\{fiduciaryagreementid\}/assessmentandreporting/initiate)
-- [GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Retrieve](#get-/fiduciaryagreement/\{fiduciaryagreementid\}/agreement/\{agreementid\}/retrieve)
-- [GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/\{assessmentandreportingid\}/Retrieve](#get-/fiduciaryagreement/\{fiduciaryagreementid\}/assessmentandreporting/\{assessmentandreportingid\}/retrieve)
-- [GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Retrieve](#get-/fiduciaryagreement/\{fiduciaryagreementid\}/fees/\{feesid\}/retrieve)
-- [GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Retrieve](#get-/fiduciaryagreement/\{fiduciaryagreementid\}/fulfillment/\{fulfillmentid\}/retrieve)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Request](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/agreement/\{agreementid\}/request)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Request](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/fees/\{feesid\}/request)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Request](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/fulfillment/\{fulfillmentid\}/request)
-- [PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Update](#put-/fiduciaryagreement/\{fiduciaryagreementid\}/agreement/\{agreementid\}/update)
-
-
 **BIAN Documentation:** [FiduciaryAgreement v12](https://app.swaggerhub.com/apis/BIAN-3/FiduciaryAgreement/12.0.0)
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Control
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Control
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Control
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms CoCR Control the processing of Fiduciary Relationship Facility
 
@@ -39,9 +20,13 @@ This API path allows you to update an existing fiduciary agreement between a ban
 
 PUT: A suitable name for the path '/FiduciaryAgreement/\{fiduciaryagreementid\}/Control' following REST best practices could be '/FiduciaryAgreement/\{fiduciaryagreementid\}/Controls'\. This path is pluralized\, which is a common convention for endpoints that represent collections of resources\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Exchange
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Exchange
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms EcCR Accept\, verify\, etc\. aspects of Fiduciary Relationship Facility processing
 
@@ -59,9 +44,13 @@ Note:
 \- The path segments should be in lowercase\.
 \- The path should use plural nouns for collections\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Execute
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Execute
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms ExCR Execute an available automated action for Fiduciary Relationship Facility
 
@@ -79,9 +68,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 Note the plural form "FiduciaryAgreements" for the resource collection and lowercase "Execute" for the action\.
 
-### POST: /FiduciaryAgreement/Initiate
+## POST: /FiduciaryAgreement/Initiate
 
-**Description**
+:::info Path
+POST: /FiduciaryAgreement/Initiate
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms InCR Instantiate a new Fiduciary Relationship Facility
 
@@ -97,9 +90,13 @@ Path: /fiduciary\-agreements
 
 This path uses a lowercase and plural noun to represent a collection of fiduciary agreements\, which aligns with REST conventions\.
 
-### GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Retrieve
+## GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Retrieve
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms ReCR Retrieve details about any aspect of Fiduciary Relationship Facility
 
@@ -111,9 +108,13 @@ This BIAN API path allows you to retrieve details about a specific Fiduciary Agr
 
 GET: Based on REST best practices\, the name of the path should ideally be \`/fiduciary\-agreements/\{fiduciaryAgreementId\}\` for retrieving a specific fiduciary agreement resource identified by \`fiduciaryAgreementId\`\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Request
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Request
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Request
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms RqCR Request manual intervention or a decision with respect to Fiduciary Relationship Facility
 
@@ -127,9 +128,13 @@ PUT: The name of the path should be:
 
 /FiduciaryAgreements/\{fiduciaryagreementid\}/Requests
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Update
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Update
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms UpCR Update details relating to Fiduciary Relationship Facility
 
@@ -141,9 +146,13 @@ This API path allows you to update details related to a specific Fiduciary Agree
 
 PUT: The name of the path \`/FiduciaryAgreement/\{fiduciaryagreementid\}/Update\` should be \`/fiduciaryagreements/\{fiduciaryagreementid\}\` to follow REST best practices\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Exchange
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Exchange
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms EcBQ Accept\, verify\, etc\. aspects of Agreement processing
 
@@ -157,9 +166,13 @@ PUT: The name of the path should be '/fiduciary\-agreements/\{fiduciary\-agreeme
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens instead of camel case or underscores\. Additionally\, plural nouns are typically preferred for resource names\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Exchange
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Exchange
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms EcBQ Accept\, verify\, etc\. aspects of Fees processing
 
@@ -173,9 +186,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /FiduciaryAgreements/\{fiduciaryAgreementId\}/Fees/\{feesId\}/Exchange
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Exchange
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Exchange
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms EcBQ Accept\, verify\, etc\. aspects of Fulfillment processing
 
@@ -189,9 +206,13 @@ PUT: Based on REST best practices\, a suitable name for the path could be:
 
 /FiduciaryAgreements/\{fiduciaryagreementid\}/Fulfillments/\{fulfillmentid\}/Exchanges
 
-### POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/Initiate
+## POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/Initiate
 
-**Description**
+:::info Path
+POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/Initiate
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms InBQ Instantiate a new Agreement
 
@@ -207,9 +228,13 @@ POST: The name of the path '/FiduciaryAgreement/\{fiduciaryagreementid\}/Agreeme
 
 This naming convention uses lowercase letters\, separates words with hyphens\, and clearly indicates the resource and action being performed\.
 
-### POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/Initiate
+## POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/Initiate
 
-**Description**
+:::info Path
+POST: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/Initiate
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms InBQ Instantiate a new Assessment and Reporting
 
@@ -231,9 +256,13 @@ In the path:
 \- \`/AssessmentAndReporting\`: Sub\-resource name\, which should be descriptive and non\-hierarchical\.
 \- \`/
 
-### GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Retrieve
+## GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Retrieve
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms ReBQ Retrieve details about any aspect of Agreement
 
@@ -247,9 +276,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 /fiduciary\-agreements/\{fiduciaryagreementid\}/agreements/\{agreementid\}
 
-### GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/\{assessmentandreportingid\}/Retrieve
+## GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/\{assessmentandreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/AssessmentandReporting/\{assessmentandreportingid\}/Retrieve
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms ReBQ Retrieve details about any aspect of Assessment and Reporting
 
@@ -265,9 +298,13 @@ GET /fiduciary\-agreements/\{fiduciaryagreementid\}/assessment\-and\-reporting/\
 
 This name is more descriptive and follows the convention of using lowercase letters\, hyphens for readability\, and using the resource's plural form when applicable\.
 
-### GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Retrieve
+## GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Retrieve
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms ReBQ Retrieve details about any aspect of Fees
 
@@ -281,9 +318,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Fiduc
 
 '/fiduciary\-agreements/\{fiduciaryagreementid\}/fees/\{feesid\}'
 
-### GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Retrieve
+## GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Retrieve
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms ReBQ Retrieve details about any aspect of Fulfillment
 
@@ -295,9 +336,13 @@ This BIAN API path allows you to retrieve details about a specific aspect of the
 
 GET: The name of the path could be \`/fiduciary\-agreements/\{fiduciaryAgreementId\}/fulfillments/\{fulfillmentId\}\` based on REST best practices\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Request
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Request
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Request
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms RqBQ Request manual intervention or a decision with respect to Agreement
 
@@ -309,9 +354,13 @@ This API path allows for updating a specific fiduciary agreement by sending a re
 
 PUT: A possible name for the path could be \`/fiduciary\-agreements/\{fiduciaryagreementid\}/agreements/\{agreementid\}/requests\`\. Remember to use lowercase letters\, separate words with dashes\, and ensure that the path is clear\, concise\, and follows a hierarchical structure that reflects the relationships between the resources\.
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Request
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Request
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Request
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms RqBQ Request manual intervention or a decision with respect to Fees
 
@@ -325,9 +374,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /FiduciaryAgreement/\{fiduciaryagreementid\}/Fees/\{feesid\}/Requests
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Request
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Fulfillment/\{fulfillmentid\}/Request
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms RqBQ Request manual intervention or a decision with respect to Fulfillment
 
@@ -341,9 +394,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 /fiduciary\-agreements/\{fiduciaryagreementid\}/fulfillments/\{fulfillmentid\}/requests
 
-### PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Update
+## PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /FiduciaryAgreement/\{fiduciaryagreementid\}/Agreement/\{agreementid\}/Update
+:::
+
+### Description
 
 An agreement where the bank agrees to act on behalf of the customer in a financial matter and in accordance with the agreement terms UpBQ Update details relating to Agreement
 

@@ -1,16 +1,14 @@
 # GuidelineCompliance
 
-## Table of Contents
-- [POST: /GuidelineCompliance/Evaluate](#post-/guidelinecompliance/evaluate)
-- [PUT: /GuidelineCompliance/\{guidelinecomplianceid\}/Update](#put-/guidelinecompliance/\{guidelinecomplianceid\}/update)
-- [GET: /GuidelineCompliance/\{guidelinecomplianceid\}/Retrieve](#get-/guidelinecompliance/\{guidelinecomplianceid\}/retrieve)
-
-
 **BIAN Documentation:** [GuidelineCompliance v12](https://app.swaggerhub.com/apis/BIAN-3/GuidelineCompliance/12.0.0)
 
-### POST: /GuidelineCompliance/Evaluate
+## POST: /GuidelineCompliance/Evaluate
 
-**Description**
+:::info Path
+POST: /GuidelineCompliance/Evaluate
+:::
+
+### Description
 
 This service domain develops and applies a portfolio of guideline compliance tests to confirm adherence to bank and regulator imposed internal procedures\. Tests may be made on complete transaction data or a meaningful samples as appropriate to mitigate exposure to non\-compliant behaviors\. Compliance checks may be in response to a schedule\, a specific request as part of normal processing or may be initiated randomly as an oversight activity EvCR Start a guideline compliance evaluation assessment
 
@@ -22,9 +20,13 @@ This API path\, /GuidelineCompliance/Evaluate\, is used to initiate a new assess
 
 POST: The name of the path '/GuidelineCompliance/Evaluate' should ideally be a noun representing a resource rather than a verb\. So a more RESTful naming for this path could be '/compliance\-reports' or '/guideline\-evaluations'\. This provides a clearer indication of the resource being accessed or manipulated at that endpoint\.
 
-### PUT: /GuidelineCompliance/\{guidelinecomplianceid\}/Update
+## PUT: /GuidelineCompliance/\{guidelinecomplianceid\}/Update
 
-**Description**
+:::info Path
+PUT: /GuidelineCompliance/\{guidelinecomplianceid\}/Update
+:::
+
+### Description
 
 This service domain develops and applies a portfolio of guideline compliance tests to confirm adherence to bank and regulator imposed internal procedures\. Tests may be made on complete transaction data or a meaningful samples as appropriate to mitigate exposure to non\-compliant behaviors\. Compliance checks may be in response to a schedule\, a specific request as part of normal processing or may be initiated randomly as an oversight activity UpCR Update submitted details or content for an on\-going guideline compliance assessment
 
@@ -42,9 +44,13 @@ PATCH /guidelinecompliances/\{guidelinecomplianceid\}
 
 Following REST best practices\, the HTTP method \`PATCH\` is typically used to update an existing resource\. The path should be in lowercase and use plural nouns to represent resources\. The \`\{guidelinecomplianceid\}\` should be included as a parameter in the path\.
 
-### GET: /GuidelineCompliance/\{guidelinecomplianceid\}/Retrieve
+## GET: /GuidelineCompliance/\{guidelinecomplianceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /GuidelineCompliance/\{guidelinecomplianceid\}/Retrieve
+:::
+
+### Description
 
 This service domain develops and applies a portfolio of guideline compliance tests to confirm adherence to bank and regulator imposed internal procedures\. Tests may be made on complete transaction data or a meaningful samples as appropriate to mitigate exposure to non\-compliant behaviors\. Compliance checks may be in response to a schedule\, a specific request as part of normal processing or may be initiated randomly as an oversight activity ReCR Retrieve details and content from an active guideline compliance assessment
 

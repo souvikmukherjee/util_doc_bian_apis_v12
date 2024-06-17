@@ -1,24 +1,14 @@
 # FraudModel
 
-## Table of Contents
-- [POST: /FraudModel/Create](#post-/fraudmodel/create)
-- [GET: /FraudModel/\{fraudmodelid\}/Retrieve](#get-/fraudmodel/\{fraudmodelid\}/retrieve)
-- [PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update](#put-/fraudmodel/\{fraudmodelid\}/functionalrequirements/\{functionalrequirementsid\}/update)
-- [PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture](#put-/fraudmodel/\{fraudmodelid\}/functionalrequirements/\{functionalrequirementsid\}/capture)
-- [PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request](#put-/fraudmodel/\{fraudmodelid\}/functionalrequirements/\{functionalrequirementsid\}/request)
-- [GET: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve](#get-/fraudmodel/\{fraudmodelid\}/functionalrequirements/\{functionalrequirementsid\}/retrieve)
-- [PUT: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Update](#put-/fraudmodel/\{fraudmodelid\}/testing/\{testingid\}/update)
-- [GET: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Retrieve](#get-/fraudmodel/\{fraudmodelid\}/testing/\{testingid\}/retrieve)
-- [PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Execute](#put-/fraudmodel/\{fraudmodelid\}/production/\{productionid\}/execute)
-- [PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Request](#put-/fraudmodel/\{fraudmodelid\}/production/\{productionid\}/request)
-- [GET: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Retrieve](#get-/fraudmodel/\{fraudmodelid\}/production/\{productionid\}/retrieve)
-
-
 **BIAN Documentation:** [FraudModel v12](https://app.swaggerhub.com/apis/BIAN-3/FraudModel/12.0.0)
 
-### POST: /FraudModel/Create
+## POST: /FraudModel/Create
 
-**Description**
+:::info Path
+POST: /FraudModel/Create
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties CrCR Create or register an imported fraud model
 
@@ -30,9 +20,13 @@ This API path allows users to create or register a new fraud model within a syst
 
 POST: If the path '/FraudModel/Create' followed all REST best practices\, it should be named as '/fraud\-models'\. The Create operation in REST is typically represented via an HTTP POST request to create a new resource under the specified collection\, which in this case is the "fraud models" collection\.
 
-### GET: /FraudModel/\{fraudmodelid\}/Retrieve
+## GET: /FraudModel/\{fraudmodelid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudModel/\{fraudmodelid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties ReCR Retrieve details about a fraud model
 
@@ -46,9 +40,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /fraudmodels/\{fraudmodelid\}
 
-### PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
+## PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
 
-**Description**
+:::info Path
+PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties UpBQ Update the requirements or other properties of a model
 
@@ -62,9 +60,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /fraudModels/\{fraudModelId\}/functionalRequirements/\{functionalRequirementsId\}
 
-### PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
+## PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
 
-**Description**
+:::info Path
+PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties CaBQ Capture usage reports for a fraud model
 
@@ -81,9 +83,13 @@ One possible name for the path could be:
 
 This path communicates the hierarchical relationship between the resources "fraud models" and "functional requirements"\, with "capture" being a potential sub\-resource or action related to functional requirements within a specific fraud
 
-### PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
+## PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
 
-**Description**
+:::info Path
+PUT: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties RqBQ Request changes or improvements to a model
 
@@ -97,9 +103,13 @@ PUT: A suitable name for this path following RESTful best practices could be:
 
 /fraud\-models/\{fraudmodelid\}/functional\-requirements/\{functionalrequirementsid\}/requests
 
-### GET: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
+## GET: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudModel/\{fraudmodelid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties ReBQ Retrieve details about the model specification and properties
 
@@ -113,9 +123,13 @@ GET: A suitable name for the path '/FraudModel/\{fraudmodelid\}/FunctionalRequir
 
 GET /fraud\-models/\{fraudmodelid\}/functional\-requirements/\{functionalrequirementsid\}
 
-### PUT: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Update
+## PUT: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Update
 
-**Description**
+:::info Path
+PUT: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties UpBQ Update user testing content
 
@@ -129,9 +143,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PATCH /fraudModels/\{fraudModelId\}/testing/\{testingId\}
 
-### GET: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Retrieve
+## GET: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudModel/\{fraudmodelid\}/Testing/\{testingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties ReBQ Retrieve details and testing results
 
@@ -145,9 +163,13 @@ GET: The name of the path should be:
 
 /fraud\-models/\{fraudmodelid\}/testing/\{testingid\}
 
-### PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Execute
+## PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Execute
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties ExBQ Get automated support for model deployment
 
@@ -169,9 +191,13 @@ Here are some key points to consider in naming the path according to REST princi
 
 2\. Use lowercase letters and separate words with hyphens or underscores
 
-### PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Request
+## PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Request
 
-**Description**
+:::info Path
+PUT: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties RqBQ Request production support for a deployed model
 
@@ -185,9 +211,13 @@ PUT: A suitable name for the path '/FraudModel/\{fraudmodelid\}/Production/\{pro
 
 '/fraud\-models/\{fraudmodelid\}/productions/\{productionid\}/requests'
 
-### GET: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Retrieve
+## GET: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudModel/\{fraudmodelid\}/Production/\{productionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of fraud models used across all production activity to detect potential fraud on the part of customers\, merchants and other involved parties ReBQ Retrieve details and documentation covering model production deployment
 

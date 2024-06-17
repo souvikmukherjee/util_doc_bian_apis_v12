@@ -1,44 +1,14 @@
 # CorporateLoan
 
-## Table of Contents
-- [POST: /CorporateLoan/Initiate](#post-/corporateloan/initiate)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Update](#put-/corporateloan/\{corporateloanid\}/update)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Control](#put-/corporateloan/\{corporateloanid\}/control)
-- [GET: /CorporateLoan/\{corporateloanid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/retrieve)
-- [GET: /CorporateLoan/\{corporateloanid\}/Interest/\{interestid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/interest/\{interestid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/corporateloan/\{corporateloanid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/servicefees/\{servicefeesid\}/retrieve)
-- [GET: /CorporateLoan/\{corporateloanid\}/Disbursement/\{disbursementid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/disbursement/\{disbursementid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Request](#put-/corporateloan/\{corporateloanid\}/maintenance/\{maintenanceid\}/request)
-- [GET: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/maintenance/\{maintenanceid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Update](#put-/corporateloan/\{corporateloanid\}/withdrawal/\{withdrawalid\}/update)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Execute](#put-/corporateloan/\{corporateloanid\}/withdrawal/\{withdrawalid\}/execute)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Request](#put-/corporateloan/\{corporateloanid\}/withdrawal/\{withdrawalid\}/request)
-- [GET: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/withdrawal/\{withdrawalid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Update](#put-/corporateloan/\{corporateloanid\}/repayment/\{repaymentid\}/update)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Execute](#put-/corporateloan/\{corporateloanid\}/repayment/\{repaymentid\}/execute)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Request](#put-/corporateloan/\{corporateloanid\}/repayment/\{repaymentid\}/request)
-- [GET: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/repayment/\{repaymentid\}/retrieve)
-- [POST: /CorporateLoan/\{corporateloanid\}/Restructuring/Initiate](#post-/corporateloan/\{corporateloanid\}/restructuring/initiate)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Update](#put-/corporateloan/\{corporateloanid\}/restructuring/\{restructuringid\}/update)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Exchange](#put-/corporateloan/\{corporateloanid\}/restructuring/\{restructuringid\}/exchange)
-- [PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Request](#put-/corporateloan/\{corporateloanid\}/restructuring/\{restructuringid\}/request)
-- [GET: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/restructuring/\{restructuringid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Update](#put-/corporateloan/\{corporateloanid\}/servicefees/\{servicefeesid\}/update)
-- [POST: /CorporateLoan/\{corporateloanid\}/AmountBlock/Initiate](#post-/corporateloan/\{corporateloanid\}/amountblock/initiate)
-- [GET: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/amountblock/\{amountblockid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Update](#put-/corporateloan/\{corporateloanid\}/amountblock/\{amountblockid\}/update)
-- [PUT: /CorporateLoan/\{corporateloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/corporateloan/\{corporateloanid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-- [POST: /CorporateLoan/\{corporateloanid\}/IssuedDevice/Initiate](#post-/corporateloan/\{corporateloanid\}/issueddevice/initiate)
-- [GET: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/corporateloan/\{corporateloanid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/corporateloan/\{corporateloanid\}/issueddevice/\{issueddeviceid\}/update)
-
-
 **BIAN Documentation:** [CorporateLoan v12](https://app.swaggerhub.com/apis/BIAN-3/CorporateLoan/12.0.0)
 
-### POST: /CorporateLoan/Initiate
+## POST: /CorporateLoan/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateLoan/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks InCR Initiate a corporate loan
 
@@ -50,9 +20,13 @@ This API path\, /CorporateLoan/Initiate\, allows users to create a new corporate
 
 POST: A suitable name for the path '/CorporateLoan/Initiate' following REST best practices could be '/loans/corporate/initiate'\. It is always recommended to use lowercase letters\, plural nouns\, and descriptive terms in RESTful URLs\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpCR Update details for an existing corporate loan
 
@@ -68,9 +42,13 @@ PUT: A suitable name for the path '/CorporateLoan/\{corporateloanid\}/Update' fo
 
 This name is more concise and aligns better with RESTful naming conventions\, which typically use lowercase letters and hyphens to separate words in the URL path\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Control
+## PUT: /CorporateLoan/\{corporateloanid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Control
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks CoCR Control a corporate loan
 
@@ -91,9 +69,13 @@ According to REST conventions:
 
 So\, the final path for the endpoint should follow these conventions\.
 
-### GET: /CorporateLoan/\{corporateloanid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReCR Retrieve details about a corporate loan
 
@@ -109,9 +91,13 @@ GET /corporate\-loans/\{corporateloanid\}
 
 This name is more descriptive and follows the REST convention of using lowercase letters and hyphens for better readability and consistency\.
 
-### GET: /CorporateLoan/\{corporateloanid\}/Interest/\{interestid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about interest applied to a corporate loan
 
@@ -127,9 +113,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 It is recommended to use lowercase letters and hyphens to separate words in the path rather than camel case\. Additionally\, it's best to use plural nouns for resource names and avoid unnecessary words like "Retrieve" which can be inferred from the HTTP method used\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute Apply Service Fee
 
@@ -145,9 +135,13 @@ PUT: The name of the path '/CorporateLoan/\{corporateloanid\}/ServiceFees/\{serv
 
 This name conveys the idea that some processing or action is being done on the service fees associated with the corporate loan
 
-### GET: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a corporate loan fees
 
@@ -163,9 +157,13 @@ GET /corporate\-loans/\{corporateLoanId\}/service\-fees/\{serviceFeesId\}
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and utilizing resource identifiers in the path\.
 
-### GET: /CorporateLoan/\{corporateloanid\}/Disbursement/\{disbursementid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Disbursement/\{disbursementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Disbursement/\{disbursementid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a disbursement paid against a corporate loan
 
@@ -177,9 +175,13 @@ This API path allows you to retrieve details about a disbursement that was paid 
 
 GET: Based on REST best practices\, the name of the path '/CorporateLoan/\{corporateloanid\}/Disbursement/\{disbursementid\}/Retrieve' should be simply '/corporate\-loans/\{corporateLoanId\}/disbursements/\{disbursementId\}'\. The use of lowercase letters\, hyphens to separate words\, and the plural form for collections are in line with REST conventions\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Request
+## PUT: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request a maintenance activity for a consumer load
 
@@ -193,9 +195,13 @@ PUT: The name of the path could be more simplified and follow RESTful best pract
 
 '/loans/\{corporateLoanId\}/maintenance/\{maintenanceId\}/requests'
 
-### GET: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Maintenance/\{maintenanceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about maintenance processing for a corporate loan
 
@@ -209,9 +215,13 @@ GET: A suggestion for the name of the path following REST best practices could b
 
 '/corporate\-loans/\{corporateLoanId\}/maintenance/\{maintenanceId\}/retrieve'
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update details of a withdrawal from a corporate loan
 
@@ -225,9 +235,13 @@ PUT: The name of the path should be:
 
 '/corporate\-loan/\{corporateLoanId\}/withdrawal/\{withdrawalId\}'
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Execute
+## PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute an automated withdrawal against a corporate loan
 
@@ -241,9 +255,13 @@ PUT: Following REST best practices\, the name of the path could be:
 
 '/corporate\-loans/\{corporateLoanId\}/withdrawals/\{withdrawalId\}/execute'
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Request
+## PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request handling of a withdrawal
 
@@ -257,9 +275,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/corporate\-loans/\{corporateLoanId\}/withdrawals/\{withdrawalId\}/requests'
 
-### GET: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Withdrawal/\{withdrawalid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a corporate loan withdrawal
 
@@ -271,9 +293,13 @@ This API path allows you to retrieve details about a specific corporate loan wit
 
 GET: A more appropriate naming convention for the path would be '/corporate\-loans/\{corporateLoanId\}/withdrawals/\{withdrawalId\}'\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update a repayment transaction made to the corporate loan
 
@@ -289,9 +315,13 @@ PUT: The name of the path should be:
 PUT /corporate\-loans/\{corporateLoanId\}/repayments/\{repaymentId\}
 \`\`\`
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Execute
+## PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ExBQ Execute an automated repayment transaction
 
@@ -310,9 +340,13 @@ In this naming convention:
 \- Plural nouns are used for collection resources \(like 'corporate\-loans' and 'repayments'\)\.
 \- Singular nouns are used for individual resources \(like 'corporateLoan' and 'repayment
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Request
+## PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request handling of an exceptional repayment
 
@@ -326,9 +360,13 @@ PUT: A good name for this endpoint following REST best practices could be:
 
 '/loans/\{loanId\}/repayments/\{repaymentId\}/requests'
 
-### GET: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Repayment/\{repaymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a corporate loan repayment
 
@@ -342,9 +380,13 @@ GET: A suitable name for the path '/CorporateLoan/\{corporateloanid\}/Repayment/
 
 GET /corporate\-loans/\{corporateLoanId\}/repayments/\{repaymentId\}
 
-### POST: /CorporateLoan/\{corporateloanid\}/Restructuring/Initiate
+## POST: /CorporateLoan/\{corporateloanid\}/Restructuring/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateLoan/\{corporateloanid\}/Restructuring/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks InBQ Initiate corporate loan account restructuring
 
@@ -361,9 +403,13 @@ Here are a few suggestions for a more RESTful path name:
 2\. /loans/\{loanid\}/restructuring
 3\. /cor
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks UpBQ Update details of a corporate loan or restructuring activities
 
@@ -375,9 +421,13 @@ This API path allows users to update the details of a corporate loan or restruct
 
 PUT: The name of the path could be '/corporate\-loans/\{corporateLoanId\}/restructurings/\{restructuringId\}'\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Exchange
+## PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks EcBQ Accept\, reject etc a corporate loan restructuring proposal
 
@@ -395,9 +445,13 @@ A suitable name for the path '/CorporateLoan/\{corporateloanid\}/Restructuring/\
 
 This name is in lowercase and uses hyphens to separate words for
 
-### PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Request
+## PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Request
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks RqBQ Request activity associated with a restructuring effort
 
@@ -411,9 +465,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-loans/\{corporateLoanId\}/restructurings/\{restructuringId\}/requests'
 
-### GET: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/Restructuring/\{restructuringid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks ReBQ Retrieve details about a corporate loan restructuring task
 
@@ -427,9 +485,13 @@ GET: A more RESTful name for the path '/CorporateLoan/\{corporateloanid\}/Restru
 
 '/corporate\-loans/\{corporateLoanId\}/restructuring/\{restructuringId\}'
 
-### PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Update details about an applied service fee
 
@@ -443,9 +505,13 @@ PUT: The appropriate name for this path following REST best practices would be:
 
 PATCH /CorporateLoan/\{corporateloanid\}/ServiceFees/\{servicefeesid\}
 
-### POST: /CorporateLoan/\{corporateloanid\}/AmountBlock/Initiate
+## POST: /CorporateLoan/\{corporateloanid\}/AmountBlock/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateLoan/\{corporateloanid\}/AmountBlock/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Initiate an amount block
 
@@ -459,9 +525,13 @@ POST: A possible name for the path '/CorporateLoan/\{corporateloanid\}/AmountBlo
 
 '/corporate\-loans/\{corporateLoanId\}/amount\-block/initiate'
 
-### GET: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Retrieve details about an amount block
 
@@ -475,9 +545,13 @@ GET: The appropriate name for this path following REST best practices could be:
 
 GET /corporate\-loans/\{corporateloanId\}/amount\-blocks/\{amountblockId\}
 
-### PUT: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Update details of an amount block
 
@@ -493,9 +567,13 @@ PUT: The name of the path should be:
 PUT /CorporateLoan/\{corporateloanid\}/AmountBlock/\{amountblockid\}
 \`\`\`
 
-### PUT: /CorporateLoan/\{corporateloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /CorporateLoan/\{corporateloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Execute Authorization of Booking
 
@@ -509,9 +587,13 @@ PUT: A suitable name for this path following RESTful best practices could be:
 
 '/corporate\-loans/\{corporateLoanId\}/booking\-authorizations/\{bookingAuthorizationId\}/execute'
 
-### POST: /CorporateLoan/\{corporateloanid\}/IssuedDevice/Initiate
+## POST: /CorporateLoan/\{corporateloanid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateLoan/\{corporateloanid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Initiate Provision of Issued Device
 
@@ -525,9 +607,13 @@ POST: A suitable name for the path '/CorporateLoan/\{corporateloanid\}/IssuedDev
 
 POST /corporate\-loans/\{corporateLoanId\}/issued\-devices/initiate
 
-### GET: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Retrieve Details about Issued Device
 
@@ -543,9 +629,13 @@ GET /corporate\-loans/\{corporateLoanId\}/issued\-devices/\{issuedDeviceId\}
 
 The path name should be in lowercase letters and should use hyphens to separate words for better readability\. Also\, it should use plural nouns to indicate collections and singular nouns to indicate individual resources\.
 
-### PUT: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateLoan/\{corporateloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 This service domain handles the fulfillment of a corporate loan product\. This includes the initial set\-up of the loan facility and the completion of scheduled and ad\-hoc product processing tasks Update Details of Issued Device Allocated to This Account
 

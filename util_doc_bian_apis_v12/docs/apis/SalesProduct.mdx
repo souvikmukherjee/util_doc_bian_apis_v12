@@ -1,22 +1,14 @@
 # SalesProduct
 
-## Table of Contents
-- [POST: /SalesProduct/Evaluate](#post-/salesproduct/evaluate)
-- [PUT: /SalesProduct/\{salesproductid\}/Update](#put-/salesproduct/\{salesproductid\}/update)
-- [PUT: /SalesProduct/\{salesproductid\}/Control](#put-/salesproduct/\{salesproductid\}/control)
-- [GET: /SalesProduct/\{salesproductid\}/Retrieve](#get-/salesproduct/\{salesproductid\}/retrieve)
-- [POST: /SalesProduct/\{salesproductid\}/OperationalTerm/Evaluate](#post-/salesproduct/\{salesproductid\}/operationalterm/evaluate)
-- [PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Update](#put-/salesproduct/\{salesproductid\}/operationalterm/\{operationaltermid\}/update)
-- [PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Exchange](#put-/salesproduct/\{salesproductid\}/operationalterm/\{operationaltermid\}/exchange)
-- [PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Grant](#put-/salesproduct/\{salesproductid\}/operationalterm/\{operationaltermid\}/grant)
-- [GET: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Retrieve](#get-/salesproduct/\{salesproductid\}/operationalterm/\{operationaltermid\}/retrieve)
-
-
 **BIAN Documentation:** [SalesProduct v12](https://app.swaggerhub.com/apis/BIAN-3/SalesProduct/12.0.0)
 
-### POST: /SalesProduct/Evaluate
+## POST: /SalesProduct/Evaluate
 
-**Description**
+:::info Path
+POST: /SalesProduct/Evaluate
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements EvCR Set\-up the operational terms agreement for a sales product instance
 
@@ -28,9 +20,13 @@ This BIAN API path allows you to create a new resource that represents a product
 
 POST: The name of the path '/SalesProduct/Evaluate' should be '/products/\{productId\}/evaluations' following REST best practices\.
 
-### PUT: /SalesProduct/\{salesproductid\}/Update
+## PUT: /SalesProduct/\{salesproductid\}/Update
 
-**Description**
+:::info Path
+PUT: /SalesProduct/\{salesproductid\}/Update
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements UpCR Update sales product operational terms agreement
 
@@ -46,9 +42,13 @@ PUT /SalesProducts/\{salesproductid\}
 
 This path indicates that a PUT request can be made to update a specific sales product resource identified by its ID\.
 
-### PUT: /SalesProduct/\{salesproductid\}/Control
+## PUT: /SalesProduct/\{salesproductid\}/Control
 
-**Description**
+:::info Path
+PUT: /SalesProduct/\{salesproductid\}/Control
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements CoCR Control the execution/application of the operational terms
 
@@ -60,9 +60,13 @@ This BIAN API path allows you to update the control or execution/application of 
 
 PUT: The name of the path should be: '/sales\-products/\{salesProductId\}/control'
 
-### GET: /SalesProduct/\{salesproductid\}/Retrieve
+## GET: /SalesProduct/\{salesproductid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SalesProduct/\{salesproductid\}/Retrieve
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements ReCR Retrieve details about the sales product operational terms agreement
 
@@ -74,9 +78,13 @@ This BIAN API path allows you to retrieve details about a specific sales product
 
 GET: A more appropriate and RESTful name for this path would be "/products/\{productId\}" based on REST best practices\.
 
-### POST: /SalesProduct/\{salesproductid\}/OperationalTerm/Evaluate
+## POST: /SalesProduct/\{salesproductid\}/OperationalTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /SalesProduct/\{salesproductid\}/OperationalTerm/Evaluate
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements EvBQ Set up specific operational arrangements under the agreement
 
@@ -92,9 +100,13 @@ POST: Following REST best practices\, the name of the path should be structured 
 
 This name conveys the hierarchy of resources in a clear and structured way\.
 
-### PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Update
+## PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Update
 
-**Description**
+:::info Path
+PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Update
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements UpBQ Update details of an operational term arrangement
 
@@ -108,9 +120,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/sales\-products/\{salesproductid\}/operational\-terms/\{operationaltermid\}'
 
-### PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Exchange
+## PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Exchange
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements EcBQ Accept\, reject etc an operational term arrangement
 
@@ -124,9 +140,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/sales\-products/\{salesproductid\}/operational\-terms/\{operationaltermid\}/exchange\`
 
-### PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Grant
+## PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Grant
 
-**Description**
+:::info Path
+PUT: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Grant
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements GrBQ Provide a permission grant associated with an operational term arrangement
 
@@ -140,9 +160,13 @@ PUT: A suitable name for the path would be "/sales\-products/\{salesproductid\}/
 
 According to REST best practices\, it is recommended to use lowercase letters\, use hyphens to separate words in URIs\, and make the URIs descriptive and easy to understand for users\.
 
-### GET: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Retrieve
+## GET: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SalesProduct/\{salesproductid\}/OperationalTerm/\{operationaltermid\}/Retrieve
+:::
+
+### Description
 
 A representation of a product as sold to a customer\, covering the operational fulfillment requirements ReBQ Retrieve details about an individual arrangement
 

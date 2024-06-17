@@ -1,21 +1,14 @@
 # InvestmentPortfolioPlanning
 
-## Table of Contents
-- [POST: /InvestmentPortfolioPlanning/Evaluate](#post-/investmentportfolioplanning/evaluate)
-- [PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Update](#put-/investmentportfolioplanning/\{investmentportfolioplanningid\}/update)
-- [PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Request](#put-/investmentportfolioplanning/\{investmentportfolioplanningid\}/request)
-- [GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Retrieve](#get-/investmentportfolioplanning/\{investmentportfolioplanningid\}/retrieve)
-- [POST: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/Evaluate](#post-/investmentportfolioplanning/\{investmentportfolioplanningid\}/investmentterms/evaluate)
-- [PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Update](#put-/investmentportfolioplanning/\{investmentportfolioplanningid\}/investmentterms/\{investmenttermsid\}/update)
-- [PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Request](#put-/investmentportfolioplanning/\{investmentportfolioplanningid\}/investmentterms/\{investmenttermsid\}/request)
-- [GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Retrieve](#get-/investmentportfolioplanning/\{investmentportfolioplanningid\}/investmentterms/\{investmenttermsid\}/retrieve)
-
-
 **BIAN Documentation:** [InvestmentPortfolioPlanning v12](https://app.swaggerhub.com/apis/BIAN-3/InvestmentPortfolioPlanning/12.0.0)
 
-### POST: /InvestmentPortfolioPlanning/Evaluate
+## POST: /InvestmentPortfolioPlanning/Evaluate
 
-**Description**
+:::info Path
+POST: /InvestmentPortfolioPlanning/Evaluate
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed EvCR Establish a managed investment portfolio agreement
 
@@ -27,9 +20,13 @@ This API path is used to create a new managed investment portfolio agreement by 
 
 POST: The name of the path should be \`/investment\-portfolio\-planning/evaluate\` following REST best practices\. RESTful URLs are typically all lowercase\, use hyphens to separate words\, and represent resources instead of actions\.
 
-### PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Update
+## PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Update
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed UpCR Update details of an active managed investment portfolio agreement
 
@@ -47,9 +44,13 @@ PUT /investment\-portfolio\-planning/\{investmentportfolioplanningid\}
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using the HTTP method \`PUT\` to indicate updating a specific resource\.
 
-### PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Request
+## PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Request
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed RqCR Request review that proposed activity is compatible with the agreement
 
@@ -63,9 +64,13 @@ PUT: The name of the path should be:
 
 /investment\-portfolio\-planning/\{investmentPortfolioPlanningId\}/requests
 
-### GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Retrieve
+## GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/Retrieve
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed ReCR Retrieve details about a managed investment portfolio agreement
 
@@ -77,9 +82,13 @@ This API path allows you to retrieve details about a managed investment portfoli
 
 GET: The name of the path should be '/investment\-portfolio\-planning/\{investmentportfolioPlanningId\}'\.
 
-### POST: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/Evaluate
+## POST: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/Evaluate
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed EvBQ Establish the specific terms/conditions making up the investment agreement
 
@@ -93,9 +102,13 @@ POST: The name of this path following REST best practices could be:
 
 /InvestmentPortfolios/\{investmentPortfolioId\}/InvestmentTerms/Evaluation
 
-### PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Update
+## PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Update
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed UpBQ Update the terms/conditions for an investment agreement
 
@@ -109,9 +122,13 @@ PUT: The name of the path should be:
 
 /investment\-portfolios/\{investmentPortfolioId\}/investment\-terms/\{investmentTermsId\}
 
-### PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Request
+## PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Request
 
-**Description**
+:::info Path
+PUT: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Request
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed RqBQ Request check of a proposed activity is compatible with a specific term of the agreement
 
@@ -127,9 +144,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and separate words with hyphens when naming paths\. Additionally\, path parameters like "investmentportfolioplanningid" and "investmenttermsid" should be formatted in camelCase with the first letter lowercase\.
 
-### GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Retrieve
+## GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InvestmentPortfolioPlanning/\{investmentportfolioplanningid\}/InvestmentTerms/\{investmenttermsid\}/Retrieve
+:::
+
+### Description
 
 Agree the policies and required make\-up of an investment portfolio and ensure all required bank and regulatory terms and conditions are addressed ReBQ Retrieve details about the specific terms of an agreement
 

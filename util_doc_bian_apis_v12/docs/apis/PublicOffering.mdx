@@ -1,63 +1,14 @@
 # PublicOffering
 
-## Table of Contents
-- [PUT: /PublicOffering/\{publicofferingid\}/Control](#put-/publicoffering/\{publicofferingid\}/control)
-- [PUT: /PublicOffering/\{publicofferingid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/Execute](#put-/publicoffering/\{publicofferingid\}/execute)
-- [POST: /PublicOffering/Initiate](#post-/publicoffering/initiate)
-- [GET: /PublicOffering/\{publicofferingid\}/Notify](#get-/publicoffering/\{publicofferingid\}/notify)
-- [PUT: /PublicOffering/\{publicofferingid\}/Request](#put-/publicoffering/\{publicofferingid\}/request)
-- [GET: /PublicOffering/\{publicofferingid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/retrieve)
-- [PUT: /PublicOffering/\{publicofferingid\}/Update](#put-/publicoffering/\{publicofferingid\}/update)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/\{publicplacementfinancialassessmentandauditid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/\{publicplacementipoandunderwritingid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/\{publicplacementinstrumentregistrationid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/\{publicplacementinstrumentspecificationid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/publicplacementprospectus/\{publicplacementprospectusid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Exchange](#put-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/\{publicplacementroadshowandmarketingid\}/exchange)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Execute](#put-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/\{publicplacementfinancialassessmentandauditid\}/execute)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Execute](#put-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/\{publicplacementipoandunderwritingid\}/execute)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Execute](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/\{publicplacementinstrumentregistrationid\}/execute)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Execute](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/\{publicplacementinstrumentspecificationid\}/execute)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Execute](#put-/publicoffering/\{publicofferingid\}/publicplacementprospectus/\{publicplacementprospectusid\}/execute)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Execute](#put-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/\{publicplacementroadshowandmarketingid\}/execute)
-- [POST: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/Initiate](#post-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/initiate)
-- [POST: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/Initiate](#post-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/initiate)
-- [POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/Initiate](#post-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/initiate)
-- [POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/Initiate](#post-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/initiate)
-- [POST: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/Initiate](#post-/publicoffering/\{publicofferingid\}/publicplacementprospectus/initiate)
-- [POST: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/Initiate](#post-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/initiate)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Notify](#get-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/\{publicplacementfinancialassessmentandauditid\}/notify)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Notify](#get-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/\{publicplacementipoandunderwritingid\}/notify)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Notify](#get-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/\{publicplacementinstrumentregistrationid\}/notify)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Notify](#get-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/\{publicplacementinstrumentspecificationid\}/notify)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Notify](#get-/publicoffering/\{publicofferingid\}/publicplacementprospectus/\{publicplacementprospectusid\}/notify)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Notify](#get-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/\{publicplacementroadshowandmarketingid\}/notify)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Request](#put-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/\{publicplacementfinancialassessmentandauditid\}/request)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Request](#put-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/\{publicplacementipoandunderwritingid\}/request)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Request](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/\{publicplacementinstrumentregistrationid\}/request)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Request](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/\{publicplacementinstrumentspecificationid\}/request)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Request](#put-/publicoffering/\{publicofferingid\}/publicplacementprospectus/\{publicplacementprospectusid\}/request)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Request](#put-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/\{publicplacementroadshowandmarketingid\}/request)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/\{publicplacementfinancialassessmentandauditid\}/retrieve)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/\{publicplacementipoandunderwritingid\}/retrieve)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/\{publicplacementinstrumentregistrationid\}/retrieve)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/\{publicplacementinstrumentspecificationid\}/retrieve)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/publicplacementprospectus/\{publicplacementprospectusid\}/retrieve)
-- [GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Retrieve](#get-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/\{publicplacementroadshowandmarketingid\}/retrieve)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Update](#put-/publicoffering/\{publicofferingid\}/publicplacementfinancialassessmentandaudit/\{publicplacementfinancialassessmentandauditid\}/update)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Update](#put-/publicoffering/\{publicofferingid\}/publicplacementipoandunderwriting/\{publicplacementipoandunderwritingid\}/update)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Update](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentregistration/\{publicplacementinstrumentregistrationid\}/update)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Update](#put-/publicoffering/\{publicofferingid\}/publicplacementinstrumentspecification/\{publicplacementinstrumentspecificationid\}/update)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Update](#put-/publicoffering/\{publicofferingid\}/publicplacementprospectus/\{publicplacementprospectusid\}/update)
-- [PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Update](#put-/publicoffering/\{publicofferingid\}/publicplacementroadshowandmarketing/\{publicplacementroadshowandmarketingid\}/update)
-
-
 **BIAN Documentation:** [PublicOffering v12](https://app.swaggerhub.com/apis/BIAN-3/PublicOffering/12.0.0)
 
-### PUT: /PublicOffering/\{publicofferingid\}/Control
+## PUT: /PublicOffering/\{publicofferingid\}/Control
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/Control
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Control Public Offering Facility
 
@@ -78,9 +29,13 @@ Here are the modifications made to adhere to REST conventions:
 2\. The path parameter "publicofferingid" within curly braces describes the specific PublicOffering resource being referred to\.
 3\. The endpoint name is in lowercase and plural form to represent
 
-### PUT: /PublicOffering/\{publicofferingid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Offering Facility
 
@@ -93,9 +48,13 @@ This BIAN API path is used to update an existing resource related to a public of
 PUT: Based on REST best practices\, the name of the path should be:
 /public\-offerings/\{publicofferingid\}/exchanges
 
-### PUT: /PublicOffering/\{publicofferingid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Offering Facility
 
@@ -107,9 +66,13 @@ This BIAN API path allows users to update an existing resource related to execut
 
 PUT: The name of the path should be \`/public\-offerings/\{publicofferingid\}/execute\` following REST best practices\.
 
-### POST: /PublicOffering/Initiate
+## POST: /PublicOffering/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Offering Facility
 
@@ -121,9 +84,13 @@ This BIAN API path allows users to create a new resource for initiating a public
 
 POST: If the path '/PublicOffering/Initiate' followed all REST best practices\, it should be named according to the action it performs\. A suggested RESTful name for this path could be '/public\-offerings'\.
 
-### GET: /PublicOffering/\{publicofferingid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Offering Facility
 
@@ -141,9 +108,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using plural nouns for resources\, utilizing lowercase letters\, separating words with hyphens for better readability\, and including resource identifiers within curly braces\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Offering Facility
 
@@ -156,9 +127,13 @@ This API path allows you to update an existing resource related to a public offe
 PUT: The name of the path should be:
 '/public\-offerings/\{publicofferingid\}/requests'
 
-### GET: /PublicOffering/\{publicofferingid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Offering Facility
 
@@ -170,9 +145,13 @@ This API path allows users to retrieve information about a specific public offer
 
 GET: The name of the path should be: \`/public\-offering/\{publicOfferingId\}\`
 
-### PUT: /PublicOffering/\{publicofferingid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Offering Facility
 
@@ -188,9 +167,13 @@ PUT: The RESTful path \`/PublicOfferings/\{publicofferingid\}\` typically repres
 
 This path follows the REST convention for updating a specific resource by using the HTTP method \`PUT\` and specifying the unique identifier \(\`publicofferingid\`\) in the path\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Placement Financial Assessment and Audit Fulfillment
 
@@ -204,9 +187,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /PublicOfferings/\{publicofferingId\}/FinancialAssessments/\{financialAssessmentId\}/Exchanges
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Placement IPO and Underwriting Fulfillment
 
@@ -220,9 +207,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/public\-offerings/\{publicOffeRingId\}/public\-placement\-ipo\-and\-underwriting/\{publicPlacementIpoAndUnderwritingId\}/exchange'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Placement Instrument Registration Fulfillment
 
@@ -238,9 +229,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, and using plural nouns to represent collections of resources\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Placement Instrument Specification Fulfillment
 
@@ -253,9 +248,13 @@ This BIAN API path allows you to update the details of a public placement instru
 PUT: Based on RESTful best practices\, the name of the path should be:
 /public\-offerings/\{publicofferingid\}/public\-placement\-instrument\-specifications/\{publicplacementinstrumentspecificationid\}/exchange
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Placement Prospectus Fulfillment
 
@@ -271,9 +270,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase letters\, use hyphens to separate words\, and include resource names in the plural form where appropriate\. It is also important to use meaningful and descriptive names for the path segments\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Exchange
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Exchange Public Placement Roadshow and Marketing Fulfillment
 
@@ -294,9 +297,13 @@ Here are some key reasons for the recommended naming convention:
 \- Use of plural nouns for collections\, such as \`PublicOfferings\` and \`PublicPlacementRoadshows\`
 \- Use of camel case for multi\-word identifiers\, such as \`publicoffering
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Placement Financial Assessment and Audit Fulfillment
 
@@ -310,9 +317,13 @@ PUT: A possible name for the path could be:
 
 '/public\-offerings/\{publicofferingid\}/public\-placement\-financial\-assessments\-and\-audits/\{publicplacementfinancialassessmentandauditid\}/execute'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Placement IPO and Underwriting Fulfillment
 
@@ -328,9 +339,13 @@ PUT: A possible name for the path '/PublicOffering/\{publicofferingid\}/PublicPl
 /offerings/\{offeringId\}/placements/\{placementId\}/execute
 \`\`\`
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Placement Instrument Registration Fulfillment
 
@@ -345,9 +360,13 @@ PUT: The name of the path should follow the RESTful convention of using nouns to
 A suggested name for this path could be: 
 '/public\-offerings/\{publicofferingid\}/public\-placement\-instrument\-registrations/\{publicplacementinstrumentregistrationid\}/execute'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Placement Instrument Specification Fulfillment
 
@@ -363,9 +382,13 @@ PUT: A possible RESTful path name for this endpoint following best practices cou
 /offerings/\{publicofferingid\}/specifications/\{publicplacementinstrumentspecificationid\}/execute
 \`\`\`
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Placement Prospectus Fulfillment
 
@@ -379,9 +402,13 @@ PUT: The name of the path could be:
   
 '/public\-offerings/\{publicofferingid\}/public\-placement\-prospectus/\{publicplacementprospectusid\}/execute'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Execute
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Execute
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Execute Public Placement Roadshow and Marketing Fulfillment
 
@@ -397,9 +424,13 @@ PUT: Following REST best practices\, the name of the path should be:
 /PublicOfferings/\{publicofferingId\}/PublicPlacementRoadshowsAndMarketing/\{publicPlacementRoadshowAndMarketingId\}/Execute
 \`\`\`
 
-### POST: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/Initiate
+## POST: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Placement Financial Assessment and Audit Fulfillment
 
@@ -413,9 +444,13 @@ POST: A possible RESTful name for the path '/PublicOffering/\{publicofferingid\}
 
 GET /public\-offerings/\{publicofferingid\}/financial\-assessment\-and\-audit/initiate
 
-### POST: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/Initiate
+## POST: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Placement IPO and Underwriting Fulfillment
 
@@ -434,9 +469,13 @@ In the path name:
 \- Use plural forms for resources when applicable\.
 \- Separate words with hyphens for better readability\.
 
-### POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/Initiate
+## POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Placement Instrument Registration Fulfillment
 
@@ -448,9 +487,13 @@ This API path allows you to initiate the registration process for public placeme
 
 POST: Based on REST best practices\, the name of the path \`/PublicOfferings/\{publicofferingid\}/PublicPlacementInstrumentRegistrations\` would be more appropriate\. The idea is to use nouns for resources and avoid verbs in the path names\.
 
-### POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/Initiate
+## POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Placement Instrument Specification Fulfillment
 
@@ -462,9 +505,13 @@ This API path allows users to create a new public offering placement instrument 
 
 POST: The name of the path should be "/public\-offering/\{publicofferingid\}/public\-placement\-instrument\-specification/initiate" to follow REST best practices\.
 
-### POST: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/Initiate
+## POST: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Placement Prospectus Fulfillment
 
@@ -480,9 +527,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, use lowercase letters and hyphens to separate words in the path\.
 
-### POST: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/Initiate
+## POST: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/Initiate
 
-**Description**
+:::info Path
+POST: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/Initiate
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Initiate Public Placement Roadshow and Marketing Fulfillment
 
@@ -496,9 +547,13 @@ POST: The name of the path '/PublicOffering/\{publicofferingid\}/PublicPlacement
 
 '/public\-offerings/\{publicofferingid\}/roadshow\-marketing/initiate'
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Placement Financial Assessment and Audit Fulfillment
 
@@ -512,9 +567,13 @@ GET: The name of the path should be as follows:
 
 '/public\-offerings/\{publicofferingid\}/public\-placement\-financial\-assessments\-and\-audits/\{publicplacementfinancialassessmentandauditid\}/notify'
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Placement IPO and Underwriting Fulfillment
 
@@ -530,9 +589,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwritings/\{publicplacementipoandunderwritingid\}/Notify
 \`\`\`
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Placement Instrument Registration Fulfillment
 
@@ -554,9 +617,13 @@ In this naming convention:
 \- Use specific and meaningful resource names
 \- Avoid unnecessary nesting if possible
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Placement Instrument Specification Fulfillment
 
@@ -572,9 +639,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /PublicOfferings/\{publicofferingId\}/PublicPlacementInstrumentSpecifications/\{publicplacementInstrumentSpecificationId\}/Notify
 \`\`\`
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Placement Prospectus Fulfillment
 
@@ -590,9 +661,13 @@ GET: A suitable name for the path in accordance with REST best practices could b
 /PublicOfferings/\{publicofferingId\}/PublicPlacementProspectuses/\{publicplacementProspectusId\}/Notify
 \`\`\`
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Notify
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Notify
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Notify
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Notify Public Placement Roadshow and Marketing Fulfillment
 
@@ -612,9 +687,13 @@ A possible name for the path could be:
 
 This path name clearly identifies the primary resource being accessed \("/PublicOfferings"\) along with the associated marketing activity \("MarketingActivities"\) and the specific activity ID
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Placement Financial Assessment and Audit Fulfillment
 
@@ -628,9 +707,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /PublicOfferings/\{publicofferingid\}/PublicPlacementFinancialAssessments/\{publicplacementfinancialassessmentandauditid\}/Requests
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Placement IPO and Underwriting Fulfillment
 
@@ -644,9 +727,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/public\-offerings/\{publicofferingid\}/public\-placements\-ipo\-and\-underwritings/\{publicplacementipoandunderwritingid\}/requests'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Placement Instrument Registration Fulfillment
 
@@ -664,9 +751,13 @@ PUT: The name of the path should ideally be:
 
 This path name follows REST best practices by using all plural nouns for resources and lowercase for resource names\. Additionally\, it includes the IDs of the specific resources in the path to make it more specific and meaningful\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Placement Instrument Specification Fulfillment
 
@@ -680,9 +771,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /PublicOfferings/\{publicofferingId\}/PublicPlacementInstrumentSpecifications/\{publicplacementinstrumentSpecificationId\}/Requests
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Placement Prospectus Fulfillment
 
@@ -700,9 +795,13 @@ PUT: The name of the path could be:
 
 This follows the REST best practices by using plural nouns for resource names\, using camelCase for path variables\, and keeping the path descriptive and organized\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Request
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Request
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Request
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Request Public Placement Roadshow and Marketing Fulfillment
 
@@ -718,9 +817,13 @@ PUT: A RESTful name for the path '/PublicOffering/\{publicofferingid\}/PublicPla
 
 This naming follows the best practices of using lowercase letters\, using hyphens to separate words in URLs\, and using plural nouns for collections in the URL path\.
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Placement Financial Assessment and Audit Fulfillment
 
@@ -736,9 +839,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /PublicOfferings/\{publicofferingId\}/PublicPlacementFinancialAssessments/\{publicplacementFinancialAssessmentId\}
 \`\`\`
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Placement IPO and Underwriting Fulfillment
 
@@ -752,9 +859,13 @@ GET: A more appropriate name for the path would be:
 
 '/publicofferings/\{publicofferingid\}/public\-placement\-ipo\-underwriting/\{publicplacementipoandunderwritingid\}'
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Placement Instrument Registration Fulfillment
 
@@ -770,9 +881,13 @@ GET /public\-offerings/\{publicofferingid\}/public\-placement\-instrument\-regis
 
 This name is more descriptive and follows the RESTful convention of using lowercase letters and dashes to separate words in the path\.
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Placement Instrument Specification Fulfillment
 
@@ -786,9 +901,13 @@ GET: The name of the path should be:
 
 '/public\-offerings/\{publicofferingId\}/public\-placement\-instrument\-specifications/\{publicPlacementInstrumentSpecificationId\}'
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Placement Prospectus Fulfillment
 
@@ -802,9 +921,13 @@ GET: The name of the path should be:
 
 GET /public\-offerings/\{publicofferingid\}/public\-placement\-prospectuses/\{publicplacementprospectusid\}
 
-### GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Retrieve
+## GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Retrieve Public Placement Roadshow and Marketing Fulfillment
 
@@ -818,9 +941,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/public\-offerings/\{publicofferingid\}/public\-placement\-roadshows\-and\-marketing/\{publicplacementroadshowandmarketingid\}'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementFinancialAssessmentandAudit/\{publicplacementfinancialassessmentandauditid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Placement Financial Assessment and Audit Fulfillment
 
@@ -836,9 +963,13 @@ PUT /public\-offerings/\{publicofferingId\}/public\-placement\-financial\-assess
 
 This path name follows the convention of using lowercase letters\, using hyphens to separate words\, and using plural nouns for resource names\. Additionally\, it follows the format of using the HTTP method 'PUT' to update a specific resource identified by its unique identifier\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementIPOandUnderwriting/\{publicplacementipoandunderwritingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Placement IPO and Underwriting Fulfillment
 
@@ -854,9 +985,13 @@ PUT: The name of the path could be something like:
 
 Following REST best practices\, it is recommended to use lower case letters and separate words with hyphens to make the URL more readable and user\-friendly\.
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentRegistration/\{publicplacementinstrumentregistrationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Placement Instrument Registration Fulfillment
 
@@ -872,9 +1007,13 @@ PUT: Following REST best practices\, the name of the path should be:
 PUT /public\-offerings/\{publicofferingid\}/public\-placement\-instrument\-registrations/\{publicplacementinstrumentregistrationid\}
 \`\`\`
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementInstrumentSpecification/\{publicplacementinstrumentspecificationid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Placement Instrument Specification Fulfillment
 
@@ -890,9 +1029,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PUT /public\-offerings/\{publicofferingid\}/public\-placement\-instrument\-specifications/\{publicplacementinstrumentspecificationid\}
 \`\`\`
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementProspectus/\{publicplacementprospectusid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Placement Prospectus Fulfillment
 
@@ -905,9 +1048,13 @@ This API path allows you to update an existing public placement prospectus fulfi
 PUT: A possible RESTful path for this scenario could be:
 '/public\-offerings/\{publicofferingid\}/public\-placement\-prospectuses/\{publicplacementprospectusid\}/update'
 
-### PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Update
+## PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Update
 
-**Description**
+:::info Path
+PUT: /PublicOffering/\{publicofferingid\}/PublicPlacementRoadshowandMarketing/\{publicplacementroadshowandmarketingid\}/Update
+:::
+
+### Description
 
 This Service Domain supports a broad range of complex financial\, accounting and regulatory actions involved in providing advice and practical support to companies going public and/or raising additional capital through the issuance of publicly traded securities Update Public Placement Roadshow and Marketing Fulfillment
 

@@ -1,20 +1,14 @@
 # ProductInventoryItemManagement
 
-## Table of Contents
-- [PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Update](#put-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/update)
-- [PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Request](#put-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/request)
-- [GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Retrieve](#get-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/retrieve)
-- [POST: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/Provide](#post-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/assignment/provide)
-- [PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Update](#put-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/assignment/\{assignmentid\}/update)
-- [PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Request](#put-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/assignment/\{assignmentid\}/request)
-- [GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Retrieve](#get-/productinventoryitemmanagement/\{productinventoryitemmanagementid\}/assignment/\{assignmentid\}/retrieve)
-
-
 **BIAN Documentation:** [ProductInventoryItemManagement v12](https://app.swaggerhub.com/apis/BIAN-3/ProductInventoryItemManagement/12.0.0)
 
-### PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Update
+## PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Update
+:::
+
+### Description
 
 Maintain and distribute product inventory UpCR Update details of the product inventory distribution service
 
@@ -28,9 +22,13 @@ PUT: The name of the path should be:
 
 '/product\-inventory\-items/\{productinventoryitemmanagementid\}'
 
-### PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Request
+## PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Request
+:::
+
+### Description
 
 Maintain and distribute product inventory RqCR Request manual intervention with the inventory distribution service
 
@@ -44,9 +42,13 @@ PUT: A more suitable name for the path '/ProductInventoryItemManagement/\{produc
 
 This naming convention uses all lowercase letters\, separates words with hyphens for better readability\, and is more clear and concise in describing the resource being accessed\.
 
-### GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Retrieve
+## GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Retrieve
+:::
+
+### Description
 
 Maintain and distribute product inventory ReCR Retrieve details about the product inventory distribution
 
@@ -60,9 +62,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/product\-inventory\-items/\{productInventoryItemId\}'
 
-### POST: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/Provide
+## POST: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/Provide
 
-**Description**
+:::info Path
+POST: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/Provide
+:::
+
+### Description
 
 Maintain and distribute product inventory PrBQ Obtain the provision of product inventory
 
@@ -76,9 +82,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /product\-inventory\-items/\{product\-inventory\-item\-id\}/assignments/provide
 
-### PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Update
+## PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Update
+:::
+
+### Description
 
 Maintain and distribute product inventory UpBQ Update details of a scheduled item assignment
 
@@ -98,9 +108,13 @@ In this naming convention:
 \- "\{productinventoryitemmanagementid\}" is a specific identifier for the product inventory item being updated\.
 \- "/assignments" represents a sub\-resource related
 
-### PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Request
+## PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Request
+:::
+
+### Description
 
 Maintain and distribute product inventory RqBQ Request manual intervention with a product inventory item assignment
 
@@ -114,9 +128,13 @@ PUT: The name of the path should be:
 
 '/product\-inventory\-items/\{product\_inventory\_item\_id\}/assignments/\{assignment\_id\}/requests'
 
-### GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Retrieve
+## GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductInventoryItemManagement/\{productinventoryitemmanagementid\}/Assignment/\{assignmentid\}/Retrieve
+:::
+
+### Description
 
 Maintain and distribute product inventory ReBQ Retrieve details about a product inventory item's distribution
 

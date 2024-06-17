@@ -1,24 +1,14 @@
 # IntellectualPropertyPortfolio
 
-## Table of Contents
-- [POST: /IntellectualPropertyPortfolio/Initiate](#post-/intellectualpropertyportfolio/initiate)
-- [PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Update](#put-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/update)
-- [GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Retrieve](#get-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/retrieve)
-- [POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/Initiate](#post-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/maintenance/initiate)
-- [PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Update](#put-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/maintenance/\{maintenanceid\}/update)
-- [PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Request](#put-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/maintenance/\{maintenanceid\}/request)
-- [GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Retrieve](#get-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/maintenance/\{maintenanceid\}/retrieve)
-- [POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/Initiate](#post-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/assignment/initiate)
-- [PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Update](#put-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/assignment/\{assignmentid\}/update)
-- [PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Request](#put-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/assignment/\{assignmentid\}/request)
-- [GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Retrieve](#get-/intellectualpropertyportfolio/\{intellectualpropertyportfolioid\}/assignment/\{assignmentid\}/retrieve)
-
-
 **BIAN Documentation:** [IntellectualPropertyPortfolio v12](https://app.swaggerhub.com/apis/BIAN-3/IntellectualPropertyPortfolio/12.0.0)
 
-### POST: /IntellectualPropertyPortfolio/Initiate
+## POST: /IntellectualPropertyPortfolio/Initiate
 
-**Description**
+:::info Path
+POST: /IntellectualPropertyPortfolio/Initiate
+:::
+
+### Description
 
 Administer the bank's intellectual property assets InCR Initiate administration for an intellectual property asset
 
@@ -30,9 +20,13 @@ This API path "/IntellectualPropertyPortfolio/Initiate" allows users to initiate
 
 POST: The name of the path '/IntellectualPropertyPortfolio/Initiate' should be modified to align with REST best practices by representing a resource rather than an action\. A more suitable name for the path could be '/IntellectualPropertyPortfolios/' to represent the collection of intellectual property portfolios\.
 
-### PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Update
+## PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Update
 
-**Description**
+:::info Path
+PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Update
+:::
+
+### Description
 
 Administer the bank's intellectual property assets UpCR Update details of an asset administration plan
 
@@ -45,9 +39,13 @@ This BIAN API path allows you to update details of an asset administration plan 
 PUT: The name of the path could be:
 '/intellectual\-property\-portfolios/\{intellectualpropertyportfolioid\}'
 
-### GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Retrieve
+## GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Retrieve
+:::
+
+### Description
 
 Administer the bank's intellectual property assets ReCR Retrieve details about an intellectual property asset administrative plan
 
@@ -59,9 +57,13 @@ This BIAN API path allows you to retrieve details about a specific intellectual 
 
 GET: The name of the path should be '/intellectual\-property\-portfolios/\{intellectualpropertyportfolioid\}'\.
 
-### POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/Initiate
+## POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/Initiate
 
-**Description**
+:::info Path
+POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/Initiate
+:::
+
+### Description
 
 Administer the bank's intellectual property assets InBQ Initiate maintenance activity for an intellectual property asset
 
@@ -75,9 +77,13 @@ POST: Based on REST best practices\, the name of the path could be:
 
 '/intellectual\-property\-portfolios/\{intellectualPropertyPortfolioId\}/maintenance/initiate'
 
-### PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Update
+## PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Update
+:::
+
+### Description
 
 Administer the bank's intellectual property assets UpBQ Update maintenance activity details for an intellectual property asset
 
@@ -96,9 +102,13 @@ In this naming convention:
 \- \`IntellectualPropertyPortfolios\` and \`Maintenances\` are in plural form to indicate that they represent collections of resources\.
 \- \`\{intellectualPropertyPortfolioId\}\` and \`\{maintenanceId\}\` are placeholders representing the unique identifiers
 
-### PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Request
+## PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Request
+:::
+
+### Description
 
 Administer the bank's intellectual property assets RqBQ Request a maintenance task is undertaken for an intellectual property asset
 
@@ -118,9 +128,13 @@ Here are the key principles we followed to craft the path name:
 2\. Use hyphens for readability: Hyphens are used to separate words in the path\, making it easier to read and understand\.
 3\.
 
-### GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Retrieve
+## GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Maintenance/\{maintenanceid\}/Retrieve
+:::
+
+### Description
 
 Administer the bank's intellectual property assets ReBQ Retrieve details about asset maintenance activity
 
@@ -132,9 +146,13 @@ This BIAN API path allows users to retrieve details about asset maintenance acti
 
 GET: Based on REST best practices\, the path name should be something like \`/intellectualpropertyportfolios/\{intellectualpropertyportfolioid\}/maintenances/\{maintenanceid\}\`\.
 
-### POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/Initiate
+## POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/Initiate
 
-**Description**
+:::info Path
+POST: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/Initiate
+:::
+
+### Description
 
 Administer the bank's intellectual property assets InBQ Initiate the assignment of an intellectual property asset
 
@@ -154,9 +172,13 @@ Here are some of the key corrections made based on REST best practices:
 3\. Pluralization of resource names where appropriate \(e\.g\.\, intellectual\_property\_portfolios\)\.
 4\. Avoidance of nested paths for specific
 
-### PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Update
+## PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Update
+:::
+
+### Description
 
 Administer the bank's intellectual property assets UpBQ Update details about an intellectual property asset assignment
 
@@ -170,9 +192,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /intellectual\-property\-portfolios/\{intellectual\-property\-portfolio\-id\}/assignments/\{assignment\-id\}
 
-### PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Request
+## PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Request
+:::
+
+### Description
 
 Administer the bank's intellectual property assets RqBQ Request manual intervention in an assignment
 
@@ -186,9 +212,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/intellectual\-property\-portfolios/\{intellectualpropertyportfolioid\}/assignments/\{assignmentid\}/requests'
 
-### GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Retrieve
+## GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /IntellectualPropertyPortfolio/\{intellectualpropertyportfolioid\}/Assignment/\{assignmentid\}/Retrieve
+:::
+
+### Description
 
 Administer the bank's intellectual property assets ReBQ Retrieve details about an intellectual property asset assignment
 

@@ -1,32 +1,14 @@
 # ProductMatching
 
-## Table of Contents
-- [PUT: /ProductMatching/\{productmatchingid\}/Exchange](#put-/productmatching/\{productmatchingid\}/exchange)
-- [PUT: /ProductMatching/\{productmatchingid\}/Execute](#put-/productmatching/\{productmatchingid\}/execute)
-- [PUT: /ProductMatching/\{productmatchingid\}/Grant](#put-/productmatching/\{productmatchingid\}/grant)
-- [POST: /ProductMatching/Evaluate](#post-/productmatching/evaluate)
-- [GET: /ProductMatching/\{productmatchingid\}/Retrieve](#get-/productmatching/\{productmatchingid\}/retrieve)
-- [PUT: /ProductMatching/\{productmatchingid\}/Request](#put-/productmatching/\{productmatchingid\}/request)
-- [PUT: /ProductMatching/\{productmatchingid\}/Update](#put-/productmatching/\{productmatchingid\}/update)
-- [POST: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/Evaluate](#post-/productmatching/\{productmatchingid\}/bankandcampaignalignment/evaluate)
-- [POST: /ProductMatching/\{productmatchingid\}/ContextCriteria/Evaluate](#post-/productmatching/\{productmatchingid\}/contextcriteria/evaluate)
-- [POST: /ProductMatching/\{productmatchingid\}/ProductEligibility/Evaluate](#post-/productmatching/\{productmatchingid\}/producteligibility/evaluate)
-- [POST: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/Evaluate](#post-/productmatching/\{productmatchingid\}/producttypeselection/evaluate)
-- [GET: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Retrieve](#get-/productmatching/\{productmatchingid\}/bankandcampaignalignment/\{bankandcampaignalignmentid\}/retrieve)
-- [GET: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Retrieve](#get-/productmatching/\{productmatchingid\}/contextcriteria/\{contextcriteriaid\}/retrieve)
-- [GET: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Retrieve](#get-/productmatching/\{productmatchingid\}/producteligibility/\{producteligibilityid\}/retrieve)
-- [GET: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Retrieve](#get-/productmatching/\{productmatchingid\}/producttypeselection/\{producttypeselectionid\}/retrieve)
-- [PUT: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Update](#put-/productmatching/\{productmatchingid\}/bankandcampaignalignment/\{bankandcampaignalignmentid\}/update)
-- [PUT: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Update](#put-/productmatching/\{productmatchingid\}/contextcriteria/\{contextcriteriaid\}/update)
-- [PUT: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Update](#put-/productmatching/\{productmatchingid\}/producteligibility/\{producteligibilityid\}/update)
-- [PUT: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Update](#put-/productmatching/\{productmatchingid\}/producttypeselection/\{producttypeselectionid\}/update)
-
-
 **BIAN Documentation:** [ProductMatching v12](https://app.swaggerhub.com/apis/BIAN-3/ProductMatching/12.0.0)
 
-### PUT: /ProductMatching/\{productmatchingid\}/Exchange
+## PUT: /ProductMatching/\{productmatchingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/Exchange
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment EcCR Accept\, verify\, etc\. aspects of Product/Customer Combination Assessment processing
 
@@ -42,9 +24,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using resource\-oriented naming conventions and accurately reflects the hierarchical relationship between the resources\.
 
-### PUT: /ProductMatching/\{productmatchingid\}/Execute
+## PUT: /ProductMatching/\{productmatchingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/Execute
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment ExCR Execute an available automated action for Product/Customer Combination Assessment
 
@@ -59,9 +45,13 @@ PUT: The name of the path could be '/product\-matchings/\{productMatchingId\}/ex
 \- '\{productMatchingId\}' follows the common practice of using lowercase alphanumeric characters and dashes for path parameters\.
 \- 'execute' is a clear and concise verb that represents the action intended to be performed on the specified resource\.
 
-### PUT: /ProductMatching/\{productmatchingid\}/Grant
+## PUT: /ProductMatching/\{productmatchingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/Grant
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment GrCR Obtain permission to act in relation to Product/Customer Combination Assessment
 
@@ -75,9 +65,13 @@ PUT: A suitable name for the path '/ProductMatching/\{productmatchingid\}/Grant'
 
 '/products/\{productid\}/grant'
 
-### POST: /ProductMatching/Evaluate
+## POST: /ProductMatching/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductMatching/Evaluate
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment EvCR Instantiate a new Product/Customer Combination Assessment
 
@@ -91,9 +85,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /product\-matching/evaluate
 
-### GET: /ProductMatching/\{productmatchingid\}/Retrieve
+## GET: /ProductMatching/\{productmatchingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductMatching/\{productmatchingid\}/Retrieve
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment ReCR Retrieve details about any aspect of Product/Customer Combination Assessment
 
@@ -107,9 +105,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /product\-matchings/\{productmatchingid\}
 
-### PUT: /ProductMatching/\{productmatchingid\}/Request
+## PUT: /ProductMatching/\{productmatchingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/Request
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment RqCR Request manual intervention or a decision with respect to Product/Customer Combination Assessment
 
@@ -123,9 +125,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 \`/product\-matchings/\{productmatchingid\}/requests\`
 
-### PUT: /ProductMatching/\{productmatchingid\}/Update
+## PUT: /ProductMatching/\{productmatchingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/Update
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment UpCR Update details relating to Product/Customer Combination Assessment
 
@@ -141,9 +147,13 @@ PUT: The name of the path should be:
 /ProductMatchings/\{productmatchingid\}
 \`\`\`
 
-### POST: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/Evaluate
+## POST: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/Evaluate
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment EvBQ Instantiate a new Bank and Campaign Alignment
 
@@ -161,9 +171,13 @@ POST: Based on REST best practices\, the name of the path could be:
 
 This path reflects the plural form of the main resource "ProductMatchings"\, includes the specific identifier "productmatchingid"\, and describes the relationship between the product matching and bank campaign alignments\.
 
-### POST: /ProductMatching/\{productmatchingid\}/ContextCriteria/Evaluate
+## POST: /ProductMatching/\{productmatchingid\}/ContextCriteria/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductMatching/\{productmatchingid\}/ContextCriteria/Evaluate
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment EvBQ Instantiate a new Context Criteria
 
@@ -181,9 +195,13 @@ POST: Based on REST best practices\, the name of the path could be:
 
 In RESTful design\, it's ideal to use nouns to represent resources in the path rather than verbs\. By using \`\{evaluate\}\` as a placeholder within the path\, it indicates that some form of evaluation or action is being performed on the context criteria related to the specified product matching ID\.
 
-### POST: /ProductMatching/\{productmatchingid\}/ProductEligibility/Evaluate
+## POST: /ProductMatching/\{productmatchingid\}/ProductEligibility/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductMatching/\{productmatchingid\}/ProductEligibility/Evaluate
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment EvBQ Instantiate a new Product Eligibility
 
@@ -195,9 +213,13 @@ This API path allows you to create a new resource for evaluating the eligibility
 
 POST: The name of the path should be "/product\-matchings/\{productmatchingid\}/product\-eligibility/evaluate" in accordance with REST best practices\.
 
-### POST: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/Evaluate
+## POST: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/Evaluate
 
-**Description**
+:::info Path
+POST: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/Evaluate
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment EvBQ Instantiate a new Product Type Selection
 
@@ -213,9 +235,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 In general\, it is recommended to use lowercase letters\, hyphens to separate words\, and plural nouns for resource names in RESTful API paths\.
 
-### GET: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Retrieve
+## GET: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Retrieve
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment ReBQ Retrieve details about any aspect of Bank and Campaign Alignment
 
@@ -229,9 +255,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`/product\-matchings/\{productmatchingid\}/bank\-campaign\-alignments/\{bankandcampaignalignmentid\}\`
 
-### GET: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Retrieve
+## GET: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Retrieve
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment ReBQ Retrieve details about any aspect of Context Criteria
 
@@ -245,9 +275,13 @@ GET: Based on REST best practices\, an appropriate name for the path '/ProductMa
 
 GET /product\-matchings/\{productmatchingid\}/context\-criteria/\{contextcriteriaid\}
 
-### GET: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Retrieve
+## GET: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Retrieve
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment ReBQ Retrieve details about any aspect of Product Eligibility
 
@@ -260,9 +294,13 @@ This API path allows you to retrieve details about the eligibility of a product 
 GET: The name of the path should be:
 '/product\-matching/\{productMatchingId\}/product\-eligibility/\{productEligibilityId\}'
 
-### GET: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Retrieve
+## GET: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Retrieve
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment ReBQ Retrieve details about any aspect of Product Type Selection
 
@@ -275,9 +313,13 @@ This API path allows you to retrieve details about the product type selection re
 GET: A RESTful URI for this path could be:
 "/product\-matchings/\{productMatchingId\}/product\-type\-selections/\{productTypeSelectionId\}"
 
-### PUT: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Update
+## PUT: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/BankandCampaignAlignment/\{bankandcampaignalignmentid\}/Update
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment UpBQ Update details relating to Bank and Campaign Alignment
 
@@ -291,9 +333,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /product\-matchings/\{productmatchingid\}/bank\-campaign\-alignments/\{bankandcampaignalignmentid\}
 
-### PUT: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Update
+## PUT: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/ContextCriteria/\{contextcriteriaid\}/Update
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment UpBQ Update details relating to Context Criteria
 
@@ -312,9 +358,13 @@ In this naming convention:
 \- The path segments are all in lowercase and use hyphens to separate words for better readability and consistency\.
 \- The resource names \('product\-match
 
-### PUT: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Update
+## PUT: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/ProductEligibility/\{producteligibilityid\}/Update
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment UpBQ Update details relating to Product Eligibility
 
@@ -330,9 +380,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The last segment 'Update' is not necessary in the path\, as the HTTP method used for updating resources would typically be a 'PUT' or 'PATCH' request\. This path follows the convention of using lowercase letters\, hyphens to separate words\, and using resource identifiers in the path\.
 
-### PUT: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Update
+## PUT: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductMatching/\{productmatchingid\}/ProductTypeSelection/\{producttypeselectionid\}/Update
+:::
+
+### Description
 
 Capability used to match eligible product and product combinations to a customer based on prevailing conditions such as customer type\, product interest\, solicitation/retention\, campaign alignment UpBQ Update details relating to Product Type Selection
 

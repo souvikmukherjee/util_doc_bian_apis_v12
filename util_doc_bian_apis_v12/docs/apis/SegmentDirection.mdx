@@ -1,23 +1,14 @@
 # SegmentDirection
 
-## Table of Contents
-- [POST: /SegmentDirection/Create](#post-/segmentdirection/create)
-- [PUT: /SegmentDirection/\{segmentdirectionid\}/Update](#put-/segmentdirection/\{segmentdirectionid\}/update)
-- [PUT: /SegmentDirection/\{segmentdirectionid\}/Capture](#put-/segmentdirection/\{segmentdirectionid\}/capture)
-- [PUT: /SegmentDirection/\{segmentdirectionid\}/Request](#put-/segmentdirection/\{segmentdirectionid\}/request)
-- [GET: /SegmentDirection/\{segmentdirectionid\}/Retrieve](#get-/segmentdirection/\{segmentdirectionid\}/retrieve)
-- [POST: /SegmentDirection/\{segmentdirectionid\}/Initiative/Create](#post-/segmentdirection/\{segmentdirectionid\}/initiative/create)
-- [PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Update](#put-/segmentdirection/\{segmentdirectionid\}/initiative/\{initiativeid\}/update)
-- [PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Capture](#put-/segmentdirection/\{segmentdirectionid\}/initiative/\{initiativeid\}/capture)
-- [PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Request](#put-/segmentdirection/\{segmentdirectionid\}/initiative/\{initiativeid\}/request)
-- [GET: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Retrieve](#get-/segmentdirection/\{segmentdirectionid\}/initiative/\{initiativeid\}/retrieve)
-
-
 **BIAN Documentation:** [SegmentDirection v12](https://app.swaggerhub.com/apis/BIAN-3/SegmentDirection/12.0.0)
 
-### POST: /SegmentDirection/Create
+## POST: /SegmentDirection/Create
 
-**Description**
+:::info Path
+POST: /SegmentDirection/Create
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals CrCR Create a segment strategy for the associated division
 
@@ -29,9 +20,13 @@ This API path\, /SegmentDirection/Create\, allows you to define market segments 
 
 POST: The path '/SegmentDirections' would be more aligned with REST best practices\. The segment 'Create' implies a specific operation \(creating a new segment direction\)\, which is better represented as a HTTP POST request to the collection resource 'SegmentDirections'\.
 
-### PUT: /SegmentDirection/\{segmentdirectionid\}/Update
+## PUT: /SegmentDirection/\{segmentdirectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /SegmentDirection/\{segmentdirectionid\}/Update
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals UpCR Update details of the segment strategy
 
@@ -44,9 +39,13 @@ This API path allows you to update details of a segment strategy within a market
 PUT: Based on REST best practices\, the name of the path should be as follows:
 \`PATCH /SegmentDirections/\{segmentdirectionid\}\`
 
-### PUT: /SegmentDirection/\{segmentdirectionid\}/Capture
+## PUT: /SegmentDirection/\{segmentdirectionid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SegmentDirection/\{segmentdirectionid\}/Capture
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals CaCR Capture activity details related to implementation of the strategy
 
@@ -58,9 +57,13 @@ This BIAN API path allows you to update existing resources related to defining m
 
 PUT: Based on REST best practices\, the path '/SegmentDirection/\{segmentdirectionid\}/Capture' can be renamed to '/segment\-directions/\{segmentdirectionid\}/captures'\. This naming convention follows the use of lowercase letters\, hyphens for multi\-word structures\, and plural nouns for collections\.
 
-### PUT: /SegmentDirection/\{segmentdirectionid\}/Request
+## PUT: /SegmentDirection/\{segmentdirectionid\}/Request
 
-**Description**
+:::info Path
+PUT: /SegmentDirection/\{segmentdirectionid\}/Request
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals RqCR Request manual intervention
 
@@ -77,9 +80,13 @@ Here are the key points to consider for improving the path name:
 2\. Use plural nouns to indicate collections of resources\.
 3\. Ensure consistency in naming conventions throughout the API\.
 
-### GET: /SegmentDirection/\{segmentdirectionid\}/Retrieve
+## GET: /SegmentDirection/\{segmentdirectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SegmentDirection/\{segmentdirectionid\}/Retrieve
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals ReCR Retrieve details relating to the strategy and any supporting activities
 
@@ -95,9 +102,13 @@ GET /segments/\{segmentId\}/direction
 
 This name follows REST best practices by using nouns to represent resources \(segments\) and keeping the URL simple and easy to understand\.
 
-### POST: /SegmentDirection/\{segmentdirectionid\}/Initiative/Create
+## POST: /SegmentDirection/\{segmentdirectionid\}/Initiative/Create
 
-**Description**
+:::info Path
+POST: /SegmentDirection/\{segmentdirectionid\}/Initiative/Create
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals CrBQ Create/instigate a supporting segment initiative
 
@@ -113,9 +124,13 @@ POST: Based on REST best practices\, the path should be named in a way that is c
 
 This path follows the guideline of using nouns to represent resources and using HTTP methods \(in this case POST\) to indicate the action to be performed on that resource\. Additionally\, it maintains a consistent naming convention and a logical structure based on the
 
-### PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Update
+## PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Update
 
-**Description**
+:::info Path
+PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Update
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals UpBQ Update details for a segment initiative
 
@@ -131,9 +146,13 @@ PATCH /segmentDirections/\{segmentdirectionid\}/initiatives/\{initiativeid\}
 
 This path clearly indicates that it is used to update a specific initiative under a segment direction\, following the standard RESTful convention of using HTTP verbs and resource names in the URL path\.
 
-### PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Capture
+## PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Capture
 
-**Description**
+:::info Path
+PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Capture
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals CaBQ Capture activity details for a segment initiative
 
@@ -145,9 +164,13 @@ This BIAN API path allows you to update and capture activity details for a speci
 
 PUT: The name of the path should be: /segment\-directions/\{segmentdirectionid\}/initiatives/\{initiativeid\}/captures
 
-### PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Request
+## PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Request
 
-**Description**
+:::info Path
+PUT: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Request
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals RqBQ Request manual intervention into a segment initiative
 
@@ -161,9 +184,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /segment\-directions/\{segmentdirectionid\}/initiatives/\{initiativeid\}/requests
 
-### GET: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Retrieve
+## GET: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SegmentDirection/\{segmentdirectionid\}/Initiative/\{initiativeid\}/Retrieve
+:::
+
+### Description
 
 Define market segments and develop and assess performance against the segment plan's performance goals ReBQ Retrieve details about a segment initiative
 

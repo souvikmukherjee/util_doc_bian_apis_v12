@@ -1,39 +1,14 @@
 # CustodyAdministration
 
-## Table of Contents
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Control](#put-/custodyadministration/\{custodyadministrationid\}/control)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Exchange](#put-/custodyadministration/\{custodyadministrationid\}/exchange)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Execute](#put-/custodyadministration/\{custodyadministrationid\}/execute)
-- [POST: /CustodyAdministration/Initiate](#post-/custodyadministration/initiate)
-- [GET: /CustodyAdministration/\{custodyadministrationid\}/Retrieve](#get-/custodyadministration/\{custodyadministrationid\}/retrieve)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Request](#put-/custodyadministration/\{custodyadministrationid\}/request)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Update](#put-/custodyadministration/\{custodyadministrationid\}/update)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Control](#put-/custodyadministration/\{custodyadministrationid\}/safekeeping/\{safekeepingid\}/control)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Exchange](#put-/custodyadministration/\{custodyadministrationid\}/fees/\{feesid\}/exchange)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Execute](#put-/custodyadministration/\{custodyadministrationid\}/securitiesreporting/\{securitiesreportingid\}/execute)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Execute](#put-/custodyadministration/\{custodyadministrationid\}/settlement/\{settlementid\}/execute)
-- [POST: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/Initiate](#post-/custodyadministration/\{custodyadministrationid\}/dividendsandinterest/initiate)
-- [POST: /CustodyAdministration/\{custodyadministrationid\}/Fees/Initiate](#post-/custodyadministration/\{custodyadministrationid\}/fees/initiate)
-- [POST: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/Initiate](#post-/custodyadministration/\{custodyadministrationid\}/securitiesreporting/initiate)
-- [POST: /CustodyAdministration/\{custodyadministrationid\}/Settlement/Initiate](#post-/custodyadministration/\{custodyadministrationid\}/settlement/initiate)
-- [GET: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/\{dividendsandinterestid\}/Retrieve](#get-/custodyadministration/\{custodyadministrationid\}/dividendsandinterest/\{dividendsandinterestid\}/retrieve)
-- [GET: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Retrieve](#get-/custodyadministration/\{custodyadministrationid\}/fees/\{feesid\}/retrieve)
-- [GET: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Retrieve](#get-/custodyadministration/\{custodyadministrationid\}/safekeeping/\{safekeepingid\}/retrieve)
-- [GET: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Retrieve](#get-/custodyadministration/\{custodyadministrationid\}/securitiesreporting/\{securitiesreportingid\}/retrieve)
-- [GET: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Retrieve](#get-/custodyadministration/\{custodyadministrationid\}/settlement/\{settlementid\}/retrieve)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Request](#put-/custodyadministration/\{custodyadministrationid\}/safekeeping/\{safekeepingid\}/request)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Request](#put-/custodyadministration/\{custodyadministrationid\}/securitiesreporting/\{securitiesreportingid\}/request)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Request](#put-/custodyadministration/\{custodyadministrationid\}/settlement/\{settlementid\}/request)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Update](#put-/custodyadministration/\{custodyadministrationid\}/fees/\{feesid\}/update)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Update](#put-/custodyadministration/\{custodyadministrationid\}/safekeeping/\{safekeepingid\}/update)
-- [PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Update](#put-/custodyadministration/\{custodyadministrationid\}/settlement/\{settlementid\}/update)
-
-
 **BIAN Documentation:** [CustodyAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/CustodyAdministration/12.0.0)
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Control
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Control
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers CoCR Control the processing of Custody Facility
 
@@ -47,9 +22,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 \`/custody\-administration/\{custodyadministrationid\}/controls\`
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Exchange
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Exchange
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers EcCR Accept\, verify\, etc\. aspects of Custody Facility processing
 
@@ -61,9 +40,13 @@ This BIAN API path is used to update an existing resource related to custody adm
 
 PUT: The name of the path should be \`/custody\-administrations/\{custodyadministrationid\}/exchanges\` following REST best practices\. It should be in lowercase letters and use hyphens to separate words for better readability and consistency\.
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Execute
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Execute
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ExCR Execute an available automated action for Custody Facility
 
@@ -75,9 +58,13 @@ This BIAN API path is used to execute an available automated action for a Custod
 
 PUT: The name of the path should be \`/custody\-administrations/\{custodyadministrationid\}/execute\` in kebab case\, following REST best practices\.
 
-### POST: /CustodyAdministration/Initiate
+## POST: /CustodyAdministration/Initiate
 
-**Description**
+:::info Path
+POST: /CustodyAdministration/Initiate
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers InCR Instantiate a new Custody Facility
 
@@ -93,9 +80,13 @@ POST: The path should be named as follows according to REST best practices:
 POST /custody\-administration/initiate
 \`\`\`
 
-### GET: /CustodyAdministration/\{custodyadministrationid\}/Retrieve
+## GET: /CustodyAdministration/\{custodyadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustodyAdministration/\{custodyadministrationid\}/Retrieve
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ReCR Retrieve details about any aspect of Custody Facility
 
@@ -109,9 +100,13 @@ GET: The name of the path should be:
 
 GET /custody\-administrations/\{custodyadministrationid\}
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Request
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Request
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers RqCR Request manual intervention or a decision with respect to Custody Facility
 
@@ -129,9 +124,13 @@ PUT: A good name for that path following REST best practices could be something 
 
 This path is clean\, descriptive\, and follows the convention of using plural nouns for resource names\.
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Update
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Update
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers UpCR Update details relating to Custody Facility
 
@@ -145,9 +144,13 @@ PUT: The name of the path should be:
 
 PUT /custody\-administrations/\{custodyadministrationid\}
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Control
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Control
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Control
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers CoBQ Control the processing of Safe Keeping
 
@@ -159,9 +162,13 @@ This API path allows you to update the control settings for safekeeping services
 
 PUT: The name of the path should be: '/custody\-administration/\{custodyadministrationid\}/safekeeping/\{safekeepingid\}/control'
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Exchange
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Exchange
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers EcBQ Accept\, verify\, etc\. aspects of Fees processing
 
@@ -175,9 +182,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/custody\-administration/\{custodyadministrationid\}/fees/\{feesid\}/exchange\`
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Execute
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Execute
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ExBQ Execute an available automated action for Securities Reporting
 
@@ -193,9 +204,13 @@ PUT: Based on REST best practices\, the name of the path should be structured in
 
 This naming convention uses lowercase letters\, hyphens to separate words\, and uses plural nouns to represent resources\. It also includes specific identifiers for the custody administration and securities reporting
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Execute
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Execute
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ExBQ Execute an available automated action for Settlement
 
@@ -213,9 +228,13 @@ PUT: Based on REST best practices\, the name of the path should ideally reflect 
 
 In this revised path\, the resource names are in plural form and the action of executing a settlement is clearly indicated by the endpoint name\.
 
-### POST: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/Initiate
+## POST: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/Initiate
 
-**Description**
+:::info Path
+POST: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/Initiate
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers InBQ Instantiate a new Dividends and Interest
 
@@ -228,9 +247,13 @@ This API path allows you to create a new instance of Dividends and Interest as p
 POST: The name of the path should be:
 /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterestInitialization
 
-### POST: /CustodyAdministration/\{custodyadministrationid\}/Fees/Initiate
+## POST: /CustodyAdministration/\{custodyadministrationid\}/Fees/Initiate
 
-**Description**
+:::info Path
+POST: /CustodyAdministration/\{custodyadministrationid\}/Fees/Initiate
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers InBQ Instantiate a new Fees
 
@@ -244,9 +267,13 @@ POST: The name of the path '/CustodyAdministration/\{custodyadministrationid\}/F
 
 \- POST /custody\-administrations/\{custodyadministrationid\}/fees/initiate
 
-### POST: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/Initiate
+## POST: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/Initiate
 
-**Description**
+:::info Path
+POST: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/Initiate
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers InBQ Instantiate a new Securities Reporting
 
@@ -260,9 +287,13 @@ POST: A more RESTful and descriptive name for the path could be:
 
 \`/custody\-administration/\{custodyadministrationid\}/securities\-reporting/initiate\`
 
-### POST: /CustodyAdministration/\{custodyadministrationid\}/Settlement/Initiate
+## POST: /CustodyAdministration/\{custodyadministrationid\}/Settlement/Initiate
 
-**Description**
+:::info Path
+POST: /CustodyAdministration/\{custodyadministrationid\}/Settlement/Initiate
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers InBQ Instantiate a new Settlement
 
@@ -284,9 +315,13 @@ In this convention:
 \- Path parameters are in lowercase and include the resource's identifier\.
 \- The action 'Init
 
-### GET: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/\{dividendsandinterestid\}/Retrieve
+## GET: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/\{dividendsandinterestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustodyAdministration/\{custodyadministrationid\}/DividendsandInterest/\{dividendsandinterestid\}/Retrieve
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ReBQ Retrieve details about any aspect of Dividends and Interest
 
@@ -302,9 +337,13 @@ GET: Based on REST best practices\, a more suitable name for this path could be:
 
 This path is more descriptive and follows the convention of using lowercase letters and hyphens to separate words in URLs\.
 
-### GET: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Retrieve
+## GET: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Retrieve
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ReBQ Retrieve details about any aspect of Fees
 
@@ -324,9 +363,13 @@ In RESTful naming conventions:
 \- Resource names are typically in plural lowercase format\.
 \- Path parameters such as \{custodyadministrationid\} and \{feesid\} should be included in the URL path to identify specific
 
-### GET: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Retrieve
+## GET: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Retrieve
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ReBQ Retrieve details about any aspect of Safe Keeping
 
@@ -343,9 +386,13 @@ Note the following adjustments:
 \- Use hyphens to separate words in the path segments for better readability\.
 \- Path segment names should be in plural form if they represent collections of resources\.
 
-### GET: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Retrieve
+## GET: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Retrieve
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ReBQ Retrieve details about any aspect of Securities Reporting
 
@@ -361,9 +408,13 @@ GET: The name of the path following REST best practices could be:
 
 This path structure uses lowercase letters\, separates words with hyphens\, and represents a hierarchical relationship between "CustodyAdministrations" and "SecuritiesReportings" resources\.
 
-### GET: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Retrieve
+## GET: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Retrieve
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers ReBQ Retrieve details about any aspect of Settlement
 
@@ -375,9 +426,13 @@ This API path allows you to retrieve details about any aspect of a settlement re
 
 GET: The name of the path should be: "/custody\-administration/\{custodyadministrationid\}/settlement/\{settlementid\}/retrieve"
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Request
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Request
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers RqBQ Request manual intervention or a decision with respect to Safe Keeping
 
@@ -389,9 +444,13 @@ This API path allows users to update an existing request for manual intervention
 
 PUT: A possible name for the path could be '/custody\-administrations/\{custodyadministrationid\}/safekeeping/\{safekeepingid\}/requests' as it uses lowercase letters and words are separated by hyphens\, following REST best practices for URLs\.
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Request
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/SecuritiesReporting/\{securitiesreportingid\}/Request
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers RqBQ Request manual intervention or a decision with respect to Securities Reporting
 
@@ -407,9 +466,13 @@ PUT: The name of the path should be:
 GET /custodyAdministration/\{custodyAdministrationId\}/securitiesReporting/\{securitiesReportingId\}/request
 \`\`\`
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Request
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Request
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers RqBQ Request manual intervention or a decision with respect to Settlement
 
@@ -423,9 +486,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/custody\-administrations/\{custodyadministrationid\}/settlements/\{settlementid\}/requests\`
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Update
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Fees/\{feesid\}/Update
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers UpBQ Update details relating to Fees
 
@@ -441,9 +508,13 @@ PUT /custodyadministrations/\{custodyadministrationId\}/fees/\{feesId\}
 
 This path name follows RESTful best practices by using the HTTP method PUT to update a specific resource identified by custodyadministrationId and feesId in a hierarchical structure\. Make sure to keep the path lowercase and use plural nouns for resource names\.
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Update
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/SafeKeeping/\{safekeepingid\}/Update
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers UpBQ Update details relating to Safe Keeping
 
@@ -458,9 +529,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PUT /custody\-administrations/\{custodyadministrationid\}/safe\-keeping/\{safekeepingid\}
 \`\`\`
 
-### PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Update
+## PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustodyAdministration/\{custodyadministrationid\}/Settlement/\{settlementid\}/Update
+:::
+
+### Description
 
 A service to provide safe custody services for marketable securities for bank customers UpBQ Update details relating to Settlement
 

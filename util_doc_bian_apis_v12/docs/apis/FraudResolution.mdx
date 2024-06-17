@@ -1,20 +1,14 @@
 # FraudResolution
 
-## Table of Contents
-- [POST: /FraudResolution/Initiate](#post-/fraudresolution/initiate)
-- [PUT: /FraudResolution/\{fraudresolutionid\}/Update](#put-/fraudresolution/\{fraudresolutionid\}/update)
-- [GET: /FraudResolution/\{fraudresolutionid\}/Retrieve](#get-/fraudresolution/\{fraudresolutionid\}/retrieve)
-- [GET: /FraudResolution/\{fraudresolutionid\}/CaseAnalysis/\{caseanalysisid\}/Retrieve](#get-/fraudresolution/\{fraudresolutionid\}/caseanalysis/\{caseanalysisid\}/retrieve)
-- [GET: /FraudResolution/\{fraudresolutionid\}/CaseDetermination/\{casedeterminationid\}/Retrieve](#get-/fraudresolution/\{fraudresolutionid\}/casedetermination/\{casedeterminationid\}/retrieve)
-- [PUT: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Request](#put-/fraudresolution/\{fraudresolutionid\}/caseresolution/\{caseresolutionid\}/request)
-- [GET: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Retrieve](#get-/fraudresolution/\{fraudresolutionid\}/caseresolution/\{caseresolutionid\}/retrieve)
-
-
 **BIAN Documentation:** [FraudResolution v12](https://app.swaggerhub.com/apis/BIAN-3/FraudResolution/12.0.0)
 
-### POST: /FraudResolution/Initiate
+## POST: /FraudResolution/Initiate
 
-**Description**
+:::info Path
+POST: /FraudResolution/Initiate
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing InCR Initiate a fraud case
 
@@ -26,9 +20,13 @@ This API path "/FraudResolution/Initiate" is used to create a new fraud case in 
 
 POST: If the path '/FraudResolution/Initiate' followed REST best practices\, it should be named as '/fraud\-resolutions' using plural form for collections\. So the updated path would be '/fraud\-resolutions'\.
 
-### PUT: /FraudResolution/\{fraudresolutionid\}/Update
+## PUT: /FraudResolution/\{fraudresolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /FraudResolution/\{fraudresolutionid\}/Update
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing UpCR Update details of an active fraud case
 
@@ -40,9 +38,13 @@ This API path allows you to update the details of an active fraud case identifie
 
 PUT: The appropriate name for the path '/FraudResolution/\{fraudresolutionid\}/Update' following REST best practices would be to use the HTTP PUT method for updating a specific resource identified by 'fraudresolutionid'\. Therefore\, the recommended path name would be '/FraudResolution/\{fraudresolutionid\}' or '/FraudResolution/\{fraudresolutionid\}' to indicate an update operation on the identified resource\.
 
-### GET: /FraudResolution/\{fraudresolutionid\}/Retrieve
+## GET: /FraudResolution/\{fraudresolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudResolution/\{fraudresolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing ReCR Retrieve information about an active fraud case
 
@@ -56,9 +58,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/fraud\-resolutions/\{fraudresolutionid\}'
 
-### GET: /FraudResolution/\{fraudresolutionid\}/CaseAnalysis/\{caseanalysisid\}/Retrieve
+## GET: /FraudResolution/\{fraudresolutionid\}/CaseAnalysis/\{caseanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudResolution/\{fraudresolutionid\}/CaseAnalysis/\{caseanalysisid\}/Retrieve
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing ReCR Retrieve information about an active fraud case analysis
 
@@ -74,9 +80,13 @@ GET '/fraud\-resolutions/\{fraudresolutionid\}/case\-analyses/\{caseanalysisid\}
 
 REST best practices recommend using lowercase letters\, separating words with hyphens\, and avoiding unnecessary words like "Retrieve\."
 
-### GET: /FraudResolution/\{fraudresolutionid\}/CaseDetermination/\{casedeterminationid\}/Retrieve
+## GET: /FraudResolution/\{fraudresolutionid\}/CaseDetermination/\{casedeterminationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudResolution/\{fraudresolutionid\}/CaseDetermination/\{casedeterminationid\}/Retrieve
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing ReCR Retrieve information about an active fraud case determination
 
@@ -92,9 +102,13 @@ GET: Following REST best practices\, the name of the path should be:
 /FraudResolutions/\{fraudresolutionId\}/CaseDeterminations/\{caseDeterminationId\}
 \`\`\`
 
-### PUT: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Request
+## PUT: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Request
 
-**Description**
+:::info Path
+PUT: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Request
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing RqBQ Request reworking of resolution to a case
 
@@ -108,9 +122,13 @@ PUT: A more simplified and RESTful name for the path could be:
 
 /fraud\-resolutions/\{fraudresolutionid\}/case\-resolutions/\{caseresolutionid\}/requests
 
-### GET: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Retrieve
+## GET: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FraudResolution/\{fraudresolutionid\}/CaseResolution/\{caseresolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain sets up and processes a fraud case resulting from fraud behavior that has been detected during production processing ReCR Retrieve information about an active fraud case resolution
 

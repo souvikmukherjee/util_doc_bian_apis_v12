@@ -1,25 +1,14 @@
 # ProspectCampaignExecution
 
-## Table of Contents
-- [POST: /ProspectCampaignExecution/Initiate](#post-/prospectcampaignexecution/initiate)
-- [GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Retrieve](#get-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/retrieve)
-- [PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update](#put-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/candidateselection/\{candidateselectionid\}/update)
-- [GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve](#get-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/candidateselection/\{candidateselectionid\}/retrieve)
-- [POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/Initiate](#post-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/execution/initiate)
-- [PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Update](#put-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/execution/\{executionid\}/update)
-- [PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Request](#put-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/execution/\{executionid\}/request)
-- [GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Retrieve](#get-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/execution/\{executionid\}/retrieve)
-- [POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/Initiate](#post-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/analysisfeedback/initiate)
-- [PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update](#put-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/analysisfeedback/\{analysisfeedbackid\}/update)
-- [PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request](#put-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/analysisfeedback/\{analysisfeedbackid\}/request)
-- [GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve](#get-/prospectcampaignexecution/\{prospectcampaignexecutionid\}/analysisfeedback/\{analysisfeedbackid\}/retrieve)
-
-
 **BIAN Documentation:** [ProspectCampaignExecution v12](https://app.swaggerhub.com/apis/BIAN-3/ProspectCampaignExecution/12.0.0)
 
-### POST: /ProspectCampaignExecution/Initiate
+## POST: /ProspectCampaignExecution/Initiate
 
-**Description**
+:::info Path
+POST: /ProspectCampaignExecution/Initiate
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact InCR Initiate prospect campaign processing
 
@@ -31,9 +20,13 @@ This API path allows you to initiate the processing of a prospect campaign execu
 
 POST: If the path '/ProspectCampaignExecution/Initiate' followed REST best practices\, it should be named based on the resource it represents rather than the action being taken\. A more appropriate name for the path could be '/ProspectCampaigns' to represent the collection of prospect campaigns\, with a POST method used to initiate a new campaign creation\.
 
-### GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Retrieve
+## GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Retrieve
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact ReCR Retrieve details about an active prospect campaign
 
@@ -45,9 +38,13 @@ This API's path allows you to retrieve details about an active prospect campaign
 
 GET: The name of the path could be \`/prospect\-campaign\-executions/\{prospectcampaignexecutionid\}\`\. This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, and providing a clear and concise description of the resource being accessed\.
 
-### PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update
+## PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Update
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact UpBQ Update a campaign candidate list
 
@@ -61,9 +58,13 @@ PUT: Following REST best practices\, the name of the path should ideally be:
 
 / prospect\-campaign\-executions / \{prospect\-campaign\-execution\-id\} / candidate\-selection / \{candidate\-selection\-id\} / update
 
-### GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve
+## GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/CandidateSelection/\{candidateselectionid\}/Retrieve
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact ReBQ Retrieve details about a campaign candidate list
 
@@ -84,9 +85,13 @@ Here are the key changes made to follow best practices:
 
 If you have any more questions or need further assistance\, feel free to ask\!
 
-### POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/Initiate
+## POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/Initiate
 
-**Description**
+:::info Path
+POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/Initiate
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact InBQ Initiate a campaign execution task
 
@@ -102,9 +107,13 @@ POST /prospect\-campaign\-executions/\{prospectcampaignexecutionid\}/initiate
 
 This path indicates that a new action \(POST\) is being performed on a specific prospect campaign execution identified by \{prospectcampaignexecutionid\}
 
-### PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Update
+## PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Update
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact UpBQ Update details of a campaign execution task
 
@@ -118,9 +127,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 '/prospect\-campaign\-executions/\{prospectcampaignexecutionid\}/executions/\{executionid\}'
 
-### PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Request
+## PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Request
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact RqBQ Request manual intervention in a campaign execution task
 
@@ -134,9 +147,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /ProspectCampaignExecutions/\{prospectcampaignexecutionid\}/Executions/\{executionid\}/Requests
 
-### GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Retrieve
+## GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/Execution/\{executionid\}/Retrieve
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact ReBQ Retrieve details about a campaign execution task
 
@@ -150,9 +167,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /prospect\-campaign\-executions/\{prospectcampaignexecutionid\}/executions/\{executionid\}
 
-### POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/Initiate
+## POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/Initiate
 
-**Description**
+:::info Path
+POST: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/Initiate
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact InBQ Initiate campaign execution analysis
 
@@ -168,9 +189,13 @@ POST /prospect\-campaign\-executions/\{prospectcampaignexecutionid\}/analysis\-f
 
 This naming convention follows RESTful guidelines by using all lowercase letters\, separating words with hyphens\, and using the appropriate HTTP method \(POST\) for initiating a new analysis feedback related to a specific prospect campaign execution\.
 
-### PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update
+## PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Update
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact UpBQ Update details of campaign execution activity/performance analysis
 
@@ -186,9 +211,13 @@ PUT: The path should be named as follows\, according to RESTful best practices:
 
 Then\, to update a specific analysis feedback\, you could use the HTTP PUT method on this path\.
 
-### PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request
+## PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Request
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact ReBQ Request manual intervention in campaign analysis
 
@@ -210,9 +239,13 @@ Here are some key points considered in the naming:
 \- Use camelCase for compound words within resource names\.
 \- Use descriptive and meaningful resource names\.
 
-### GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve
+## GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProspectCampaignExecution/\{prospectcampaignexecutionid\}/AnalysisFeedback/\{analysisfeedbackid\}/Retrieve
+:::
+
+### Description
 
 Execute a prospect campaign \(version\) and track and respond to impact ReBQ Retrieve details about prospect campaign analysis activity
 

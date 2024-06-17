@@ -1,42 +1,14 @@
 # OperationalGateway
 
-## Table of Contents
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/Control](#put-/operationalgateway/\{operationalgatewayid\}/control)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/Exchange](#put-/operationalgateway/\{operationalgatewayid\}/exchange)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/Execute](#put-/operationalgateway/\{operationalgatewayid\}/execute)
-- [POST: /OperationalGateway/Initiate](#post-/operationalgateway/initiate)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/Notify](#get-/operationalgateway/\{operationalgatewayid\}/notify)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/Request](#put-/operationalgateway/\{operationalgatewayid\}/request)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/Retrieve](#get-/operationalgateway/\{operationalgatewayid\}/retrieve)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/Update](#put-/operationalgateway/\{operationalgatewayid\}/update)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Exchange](#put-/operationalgateway/\{operationalgatewayid\}/inboundmessage/\{inboundmessageid\}/exchange)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Exchange](#put-/operationalgateway/\{operationalgatewayid\}/outboundmessage/\{outboundmessageid\}/exchange)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Exchange](#put-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/\{outboundwithresponseid\}/exchange)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Execute](#put-/operationalgateway/\{operationalgatewayid\}/inboundmessage/\{inboundmessageid\}/execute)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Execute](#put-/operationalgateway/\{operationalgatewayid\}/outboundmessage/\{outboundmessageid\}/execute)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Execute](#put-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/\{outboundwithresponseid\}/execute)
-- [POST: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/Initiate](#post-/operationalgateway/\{operationalgatewayid\}/inboundmessage/initiate)
-- [POST: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/Initiate](#post-/operationalgateway/\{operationalgatewayid\}/outboundmessage/initiate)
-- [POST: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/Initiate](#post-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/initiate)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Notify](#get-/operationalgateway/\{operationalgatewayid\}/inboundmessage/\{inboundmessageid\}/notify)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Notify](#get-/operationalgateway/\{operationalgatewayid\}/outboundmessage/\{outboundmessageid\}/notify)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Notify](#get-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/\{outboundwithresponseid\}/notify)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Request](#put-/operationalgateway/\{operationalgatewayid\}/inboundmessage/\{inboundmessageid\}/request)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Request](#put-/operationalgateway/\{operationalgatewayid\}/outboundmessage/\{outboundmessageid\}/request)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Request](#put-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/\{outboundwithresponseid\}/request)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Retrieve](#get-/operationalgateway/\{operationalgatewayid\}/inboundmessage/\{inboundmessageid\}/retrieve)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Retrieve](#get-/operationalgateway/\{operationalgatewayid\}/outboundmessage/\{outboundmessageid\}/retrieve)
-- [GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve](#get-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/\{outboundwithresponseid\}/retrieve)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Update](#put-/operationalgateway/\{operationalgatewayid\}/inboundmessage/\{inboundmessageid\}/update)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Update](#put-/operationalgateway/\{operationalgatewayid\}/outboundmessage/\{outboundmessageid\}/update)
-- [PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update](#put-/operationalgateway/\{operationalgatewayid\}/outboundwithresponse/\{outboundwithresponseid\}/update)
-
-
 **BIAN Documentation:** [OperationalGateway v12](https://app.swaggerhub.com/apis/BIAN-3/OperationalGateway/12.0.0)
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/Control
+## PUT: /OperationalGateway/\{operationalgatewayid\}/Control
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/Control
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Control Operational Gateway Operating Session
 
@@ -58,9 +30,13 @@ Here are some key points to consider for following RESTful conventions:
 
 By adhering to these conventions\, the path becomes more predictable\, readable
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/Exchange
+## PUT: /OperationalGateway/\{operationalgatewayid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/Exchange
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Exchange Operational Gateway Operating Session
 
@@ -76,9 +52,13 @@ PUT: If the path '/OperationalGateway/\{operationalgatewayid\}/Exchange' followe
 
 In this revised path name\, the collections are pluralized for consistency\, and the URI template variables are in camel case for readability\.
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/Execute
+## PUT: /OperationalGateway/\{operationalgatewayid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/Execute
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Execute Operational Gateway Operating Session
 
@@ -92,9 +72,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 \`/operational\_gateways/\{operational\_gateway\_id\}/execute\`
 
-### POST: /OperationalGateway/Initiate
+## POST: /OperationalGateway/Initiate
 
-**Description**
+:::info Path
+POST: /OperationalGateway/Initiate
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Initiate Operational Gateway Operating Session
 
@@ -112,9 +96,13 @@ Alternatively\, if 'OperationalGateway' represents a specific entity\, the path 
 
 '/operational\-gateways/\{id\}'
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/Notify
+## GET: /OperationalGateway/\{operationalgatewayid\}/Notify
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/Notify
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Notify Operational Gateway Operating Session
 
@@ -128,9 +116,13 @@ GET: If the path '/OperationalGateway/\{operationalgatewayid\}/Notify' followed 
 
 '/operationalgateways/\{operationalgatewayid\}/notifications'
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/Request
+## PUT: /OperationalGateway/\{operationalgatewayid\}/Request
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/Request
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Request Operational Gateway Operating Session
 
@@ -144,9 +136,13 @@ PUT: A suitable name for this path following REST best practices could be: '/ope
 
 This naming convention uses lowercase letters\, plural nouns for collection resources\, and uses separators \('/'\) to structure the path in a readable way\.
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/Retrieve
+## GET: /OperationalGateway/\{operationalgatewayid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Retrieve Operational Gateway Operating Session
 
@@ -160,9 +156,13 @@ GET: A good and RESTful naming convention for this path would be:
 
 GET /operationalgateways/\{operationalgatewayid\}
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/Update
+## PUT: /OperationalGateway/\{operationalgatewayid\}/Update
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/Update
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Update Operational Gateway Operating Session
 
@@ -174,9 +174,13 @@ This API path allows you to update an existing Operational Gateway operating ses
 
 PUT: The name of the path should be \`/operational\-gateways/\{operationalgatewayid\}\` for updating a specific operational gateway resource\.
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Exchange
+## PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Exchange
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Exchange Inbound Message Function
 
@@ -190,9 +194,13 @@ PUT: For the given path '/OperationalGateway/\{operationalgatewayid\}/InboundMes
 
 \`/operationalgateways/\{operationalgatewayid\}/inboundmessages/\{inboundmessageid\}/exchanges\`
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Exchange
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Exchange
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Exchange Outbound Message Function
 
@@ -204,9 +212,13 @@ This API path allows you to update an existing outbound message within the Opera
 
 PUT: The RESTful path should be named as follows: \`/operationalgateways/\{operationalgatewayid\}/outboundmessages/\{outboundmessageid\}/exchanges\`
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Exchange
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Exchange
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Exchange Outbound With Response Function
 
@@ -222,9 +234,13 @@ PUT: The name of the path should be in the plural form and represent a collectio
 
 This path structure uses plural nouns to represent the resources at each level\,
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Execute
+## PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Execute
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Execute Inbound Message Function
 
@@ -236,9 +252,13 @@ This API path allows you to update an existing inbound message function within t
 
 PUT: The name of the path should be \`POST /operationalgateways/\{operationalgatewayid\}/inboundmessages/\{inboundmessageid\}/execute\` to follow REST best practices\.
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Execute
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Execute
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Execute Outbound Message Function
 
@@ -252,9 +272,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /operationalgateways/\{operationalgatewayid\}/outboundmessages/\{outboundmessageid\}/execute
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Execute
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Execute
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Execute Outbound With Response Function
 
@@ -273,9 +297,13 @@ In this naming convention:
 \- Plural nouns are used for collections \(e\.g\.\, 'operationalGateways' and 'outboundWithResponses'\)
 \- Path parameters are enclosed in curly braces \(e\.g\.\, '\{operationalGatewayId\}' and '\{out
 
-### POST: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/Initiate
+## POST: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/Initiate
 
-**Description**
+:::info Path
+POST: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/Initiate
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Initiate Inbound Message Function
 
@@ -289,9 +317,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /operationalgateways/\{operationalgatewayid\}/inboundmessages/initiate
 
-### POST: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/Initiate
+## POST: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/Initiate
 
-**Description**
+:::info Path
+POST: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/Initiate
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Initiate Outbound Message Function
 
@@ -313,9 +345,13 @@ Here are some reasons for this naming convention:
 \- Use plural nouns: The path segments should use plural nouns to indicate that the endpoint represents a collection of resources\.
 \- Use hyphens for readability: Hyphens or underscores can replace spaces to
 
-### POST: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/Initiate
+## POST: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/Initiate
 
-**Description**
+:::info Path
+POST: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/Initiate
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Initiate Outbound With Response Function
 
@@ -336,9 +372,13 @@ In RESTful API naming conventions:
 
 These practices help make the API paths easier to read and understand\.
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Notify
+## GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Notify
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Notify
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Notify Inbound Message Function
 
@@ -354,9 +394,13 @@ GET: The name of the path should be:
 
 Followed REST best practice guidelines\, it is recommended to use lowercase letters\, use plural nouns for collections\, separate words with hyphens or underscores\, and include resource identifiers in the path\.
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Notify
+## GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Notify
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Notify
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Notify Outbound Message Function
 
@@ -379,9 +423,13 @@ In this naming convention:
 \- Parentheses are removed\, and dashes are used to separate words\.
 \- Path parameters like \`operationalgatewayid
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Notify
+## GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Notify
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Notify
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Notify Outbound With Response Function
 
@@ -393,9 +441,13 @@ This API path retrieves information about the operational gateway's outbound mes
 
 GET: The path '/OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Notify' could be renamed to a more RESTful structure\, following best practices\. One suggestion might be '/operationalgateways/\{operationalgatewayid\}/outboundwithresponses/\{outboundwithresponseid\}/notify'\. This path uses lowercase letters and plural nouns\, which are commonly recommended in RESTful API design\.
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Request
+## PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Request
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Request
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Request Inbound Message Function
 
@@ -408,9 +460,13 @@ This API path allows you to update an existing inbound message in the Operationa
 PUT: Following REST best practices\, the name of the path should be:
 '/operationalgateways/\{operationalgatewayid\}/inboundmessages/\{inboundmessageid\}/requests'
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Request
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Request
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Request
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Request Outbound Message Function
 
@@ -424,9 +480,13 @@ PUT: A suitable name for the path '/OperationalGateway/\{operationalgatewayid\}/
 
 '/operationalgateways/\{operationalgatewayid\}/outboundmessages/\{outboundmessageid\}/request'
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Request
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Request
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Request
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Request Outbound With Response Function
 
@@ -444,9 +504,13 @@ In this naming convention:
 \- The path is in lowercase to maintain consistency\.
 \- The endpoints are named as plural nouns to represent collections of resources \(e\.g\.\, operationalgateways\, outboundwithresponses
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Retrieve
+## GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Retrieve Inbound Message Function
 
@@ -462,9 +526,13 @@ GET: Following REST best practices\, the name of the path should be:
 /operationalgateways/\{operationalgatewayid\}/inboundmessages/\{inboundmessageid\}
 \`\`\`
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Retrieve
+## GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Retrieve Outbound Message Function
 
@@ -484,9 +552,13 @@ In this revised path:
 \- The HTTP method \`GET\` specifies the retrieval action\.
 \- Path parameters are in camelCase to
 
-### GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve
+## GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Retrieve Outbound With Response Function
 
@@ -500,9 +572,13 @@ GET: The name of the path should be:
 
 \`GET /operationalgateways/\{operationalgatewayid\}/outboundwithresponses/\{outboundwithresponseid\}\`
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Update
+## PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Update
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessageid\}/Update
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Update Inbound Message Function
 
@@ -520,9 +596,13 @@ PUT /OperationalGateway/\{operationalgatewayid\}/InboundMessage/\{inboundmessage
 
 This path clearly
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Update
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Update
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundMessage/\{outboundmessageid\}/Update
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Update Outbound Message Function
 
@@ -536,9 +616,13 @@ PUT: Following REST best practices\, the name of the path should accurately repr
 
 '/operationalgateways/\{operationalgatewayid\}/outboundmessages/\{outboundmessageid\}'
 
-### PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update
+## PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update
 
-**Description**
+:::info Path
+PUT: /OperationalGateway/\{operationalgatewayid\}/OutboundWithResponse/\{outboundwithresponseid\}/Update
+:::
+
+### Description
 
 This Service Domain operates production information exchanges with external parties for non\-financial messages/transactions\. It may employ a broad range of channels\, media and technologies as needed to support the different requirements of any particular third party interface Update Outbound With Response Function
 

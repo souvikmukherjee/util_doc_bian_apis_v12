@@ -1,37 +1,14 @@
 # Collections
 
-## Table of Contents
-- [PUT: /Collections/\{collectionsid\}/Control](#put-/collections/\{collectionsid\}/control)
-- [PUT: /Collections/\{collectionsid\}/Exchange](#put-/collections/\{collectionsid\}/exchange)
-- [PUT: /Collections/\{collectionsid\}/Execute](#put-/collections/\{collectionsid\}/execute)
-- [POST: /Collections/Initiate](#post-/collections/initiate)
-- [GET: /Collections/\{collectionsid\}/Retrieve](#get-/collections/\{collectionsid\}/retrieve)
-- [PUT: /Collections/\{collectionsid\}/Request](#put-/collections/\{collectionsid\}/request)
-- [PUT: /Collections/\{collectionsid\}/Update](#put-/collections/\{collectionsid\}/update)
-- [PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Exchange](#put-/collections/\{collectionsid\}/collateralliquidation/\{collateralliquidationid\}/exchange)
-- [PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Exchange](#put-/collections/\{collectionsid\}/collateralvaluation/\{collateralvaluationid\}/exchange)
-- [PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Exchange](#put-/collections/\{collectionsid\}/debtfactoring/\{debtfactoringid\}/exchange)
-- [POST: /Collections/\{collectionsid\}/CollateralLiquidation/Initiate](#post-/collections/\{collectionsid\}/collateralliquidation/initiate)
-- [POST: /Collections/\{collectionsid\}/CollateralValuation/Initiate](#post-/collections/\{collectionsid\}/collateralvaluation/initiate)
-- [POST: /Collections/\{collectionsid\}/CollectionsAssessment/Initiate](#post-/collections/\{collectionsid\}/collectionsassessment/initiate)
-- [POST: /Collections/\{collectionsid\}/DebtFactoring/Initiate](#post-/collections/\{collectionsid\}/debtfactoring/initiate)
-- [GET: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Retrieve](#get-/collections/\{collectionsid\}/collateralliquidation/\{collateralliquidationid\}/retrieve)
-- [GET: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Retrieve](#get-/collections/\{collectionsid\}/collateralvaluation/\{collateralvaluationid\}/retrieve)
-- [GET: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Retrieve](#get-/collections/\{collectionsid\}/collectionsaccountupdate/\{collectionsaccountupdateid\}/retrieve)
-- [GET: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Retrieve](#get-/collections/\{collectionsid\}/collectionsassessment/\{collectionsassessmentid\}/retrieve)
-- [GET: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Retrieve](#get-/collections/\{collectionsid\}/debtfactoring/\{debtfactoringid\}/retrieve)
-- [PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Update](#put-/collections/\{collectionsid\}/collateralliquidation/\{collateralliquidationid\}/update)
-- [PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Update](#put-/collections/\{collectionsid\}/collateralvaluation/\{collateralvaluationid\}/update)
-- [PUT: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Update](#put-/collections/\{collectionsid\}/collectionsaccountupdate/\{collectionsaccountupdateid\}/update)
-- [PUT: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Update](#put-/collections/\{collectionsid\}/collectionsassessment/\{collectionsassessmentid\}/update)
-- [PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Update](#put-/collections/\{collectionsid\}/debtfactoring/\{debtfactoringid\}/update)
-
-
 **BIAN Documentation:** [Collections v12](https://app.swaggerhub.com/apis/BIAN-3/Collections/12.0.0)
 
-### PUT: /Collections/\{collectionsid\}/Control
+## PUT: /Collections/\{collectionsid\}/Control
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/Control
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts CoCR Control the processing of Collateral Asset Liquidation Procedure
 
@@ -45,9 +22,13 @@ PUT: A suitable name for the path '/Collections/\{collectionsid\}/Control' follo
 
 \`/Collections/\{collectionsid\}/Settings\`
 
-### PUT: /Collections/\{collectionsid\}/Exchange
+## PUT: /Collections/\{collectionsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/Exchange
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts EcCR Accept\, verify\, etc\. aspects of Collateral Asset Liquidation Procedure processing
 
@@ -59,9 +40,13 @@ This API path allows you to update an existing collection process by handling th
 
 PUT: The name of the path '/Collections/\{collectionsid\}/Exchange' should be formulated using nouns to represent resources and sub\-resources\. It should be descriptive and follow RESTful conventions\. A suitable name for this path could be '/collections/\{collectionId\}/exchange'\.
 
-### PUT: /Collections/\{collectionsid\}/Execute
+## PUT: /Collections/\{collectionsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/Execute
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ExCR Execute an available automated action for Collateral Asset Liquidation Procedure
 
@@ -78,9 +63,13 @@ PUT: The name of the path '/Collections/\{collectionsid\}/Execute' should ideall
 
 These suggestions reflect the purpose of the endpoint \("/Execute" or "Run"\) within the context of the "Collections" resource\. Always strive to choose a path name that accurately con
 
-### POST: /Collections/Initiate
+## POST: /Collections/Initiate
 
-**Description**
+:::info Path
+POST: /Collections/Initiate
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts InCR Instantiate a new Collateral Asset Liquidation Procedure
 
@@ -92,9 +81,13 @@ This BIAN API path\, \*\*/Collections/Initiate\*\*\, allows you to create a new 
 
 POST: Following REST best practices\, the name of the path '/Collections/Initiate' could be simplified to '/collections'\. REST recommends using plural nouns to represent collections of resources\.
 
-### GET: /Collections/\{collectionsid\}/Retrieve
+## GET: /Collections/\{collectionsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Collections/\{collectionsid\}/Retrieve
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ReCR Retrieve details about any aspect of Collateral Asset Liquidation Procedure
 
@@ -106,9 +99,13 @@ This API path allows you to retrieve information about the collateral asset liqu
 
 GET: The name of the path should ideally be '/collections/\{collectionId\}' following REST best practices\. The resource identifier should be in singular form \('collection'\) and the path parameter \('collectionId'\) should be in camelCase format\.
 
-### PUT: /Collections/\{collectionsid\}/Request
+## PUT: /Collections/\{collectionsid\}/Request
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/Request
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts RqCR Request manual intervention or a decision with respect to Collateral Asset Liquidation Procedure
 
@@ -122,9 +119,13 @@ PUT: For the path '/Collections/\{collectionsid\}/Request' following REST best p
 
 '/collections/\{collectionId\}/requests'
 
-### PUT: /Collections/\{collectionsid\}/Update
+## PUT: /Collections/\{collectionsid\}/Update
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/Update
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts UpCR Update details relating to Collateral Asset Liquidation Procedure
 
@@ -142,9 +143,13 @@ PUT /Collections/\{collectionId\}
 
 In RESTful architecture\, we use the HTTP methods such as PUT for updating a specific resource identified by its unique identifier \(in this case\, \{collectionId\}\)\. The use of the HTTP method \(PUT\) in the path conveys the action being performed \(update\) on the resource \(collection\)\.
 
-### PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Exchange
+## PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Exchange
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts EcBQ Accept\, verify\, etc\. aspects of Collateral Liquidation processing
 
@@ -160,9 +165,13 @@ PUT: The name of the path should be:
 
 According to REST best practices\, path names should be in lowercase letters\, and words should be separated by hyphens for better readability and consistency\.
 
-### PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Exchange
+## PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Exchange
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts EcBQ Accept\, verify\, etc\. aspects of Collateral Valuation processing
 
@@ -176,9 +185,13 @@ PUT: The name of the path should be:
 
 '/collections/\{collectionId\}/collateralValuations/\{collateralValuationId\}/exchange'
 
-### PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Exchange
+## PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Exchange
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts EcBQ Accept\, verify\, etc\. aspects of Debt Factoring processing
 
@@ -198,9 +211,13 @@ In this naming convention:
 \- Parameter names are kept in curly braces indicating variable path parameters\.
 \- The use of hyphens for separating multiple words instead
 
-### POST: /Collections/\{collectionsid\}/CollateralLiquidation/Initiate
+## POST: /Collections/\{collectionsid\}/CollateralLiquidation/Initiate
 
-**Description**
+:::info Path
+POST: /Collections/\{collectionsid\}/CollateralLiquidation/Initiate
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts InBQ Instantiate a new Collateral Liquidation
 
@@ -218,9 +235,13 @@ POST /collections/\{collectionId\}/collateral\-liquidation/initiate
 
 This naming convention follows REST best practices by using lowercase letters\, using hyphens to separate words\, and keeping the path parameter \`\{collectionId\}\` in lowercase with descriptive names\.
 
-### POST: /Collections/\{collectionsid\}/CollateralValuation/Initiate
+## POST: /Collections/\{collectionsid\}/CollateralValuation/Initiate
 
-**Description**
+:::info Path
+POST: /Collections/\{collectionsid\}/CollateralValuation/Initiate
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts InBQ Instantiate a new Collateral Valuation
 
@@ -232,9 +253,13 @@ This BIAN API path allows you to create a new Collateral Valuation specifically 
 
 POST: Based on REST best practices\, the name of the path could be: \`/collections/\{collectionId\}/collateralValuation/initiate\`
 
-### POST: /Collections/\{collectionsid\}/CollectionsAssessment/Initiate
+## POST: /Collections/\{collectionsid\}/CollectionsAssessment/Initiate
 
-**Description**
+:::info Path
+POST: /Collections/\{collectionsid\}/CollectionsAssessment/Initiate
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts InBQ Instantiate a new Collections Assessment
 
@@ -246,9 +271,13 @@ This API path \`/Collections/\{collectionsid\}/CollectionsAssessment/Initiate\` 
 
 POST: The name of the path should be \`/collections/\{collectionId\}/collections\-assessment/initiate\`\, following REST best practices\. Make sure to use lowercase letters\, separate words with hyphens\, and include specific resource identifiers like \`collectionId\` in singular form\.
 
-### POST: /Collections/\{collectionsid\}/DebtFactoring/Initiate
+## POST: /Collections/\{collectionsid\}/DebtFactoring/Initiate
 
-**Description**
+:::info Path
+POST: /Collections/\{collectionsid\}/DebtFactoring/Initiate
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts InBQ Instantiate a new Debt Factoring
 
@@ -261,9 +290,13 @@ This API path allows you to initiate the process of debt factoring for a specifi
 POST: A suitable name for this path following REST best practices could be:
 '/collections/\{collectionId\}/debt\-factoring/initiate'
 
-### GET: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Retrieve
+## GET: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Retrieve
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ReBQ Retrieve details about any aspect of Collateral Liquidation
 
@@ -277,9 +310,13 @@ GET: Based on RESTful best practices\, the name of the path could be:
 
 GET /collections/\{collectionId\}/collateral\-liquidations/\{collateralLiquidationId\}
 
-### GET: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Retrieve
+## GET: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Retrieve
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ReBQ Retrieve details about any aspect of Collateral Valuation
 
@@ -291,9 +328,13 @@ This API path\, /Collections/\{collectionsid\}/CollateralValuation/\{collateralv
 
 GET: Based on REST best practices\, the path '/Collections/\{collectionId\}/CollateralValuations/\{collateralValuationId\}' could be a suitable name for the resource endpoint\.
 
-### GET: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Retrieve
+## GET: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Retrieve
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ReBQ Retrieve details about any aspect of Collections Account Update
 
@@ -307,9 +348,13 @@ GET: The name of the path should ideally be:
 
 '/collections/\{collectionId\}/collectionsAccountUpdate/\{collectionsAccountUpdateId\}'
 
-### GET: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Retrieve
+## GET: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Retrieve
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ReBQ Retrieve details about any aspect of Collections Assessment
 
@@ -325,9 +370,13 @@ GET /collections/\{collectionId\}/assessments/\{assessmentId\}
 
 This path name makes use of lowercase letters and separates words with hyphens for better readability\. It also uses singular nouns to represent resource names consistently\.
 
-### GET: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Retrieve
+## GET: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Retrieve
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts ReBQ Retrieve details about any aspect of Debt Factoring
 
@@ -341,9 +390,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/collections/\{collectionId\}/debt\-factoring/\{debtFactoringId\}'
 
-### PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Update
+## PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/CollateralLiquidation/\{collateralliquidationid\}/Update
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts UpBQ Update details relating to Collateral Liquidation
 
@@ -355,9 +408,13 @@ This BIAN API path allows you to update details related to collateral liquidatio
 
 PUT: The name of the path should be: \`/collections/\{collectionId\}/collateral\-liquidations/\{collateralLiquidationId\}\`\.
 
-### PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Update
+## PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Update
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid\}/Update
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts UpBQ Update details relating to Collateral Valuation
 
@@ -373,9 +430,13 @@ PATCH /Collections/\{collectionsid\}/CollateralValuation/\{collateralvaluationid
 
 This naming convention indicates that a partial update operation \(using the HTTP PATCH method\) is performed on the resource located at the specified path\.
 
-### PUT: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Update
+## PUT: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Update
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/CollectionsAccountUpdate/\{collectionsaccountupdateid\}/Update
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts UpBQ Update details relating to Collections Account Update
 
@@ -387,9 +448,13 @@ This BIAN API path allows you to update specific details related to a Collection
 
 PUT: The name of the path should be '/collections/\{collectionId\}/collectionsAccountUpdates/\{collectionsAccountUpdateId\}' as per REST best practices\.
 
-### PUT: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Update
+## PUT: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/CollectionsAssessment/\{collectionsassessmentid\}/Update
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts UpBQ Update details relating to Collections Assessment
 
@@ -405,9 +470,13 @@ PUT /collections/\{collectionsid\}/collectionsassessments/\{collectionsassessmen
 
 This name accurately reflects the action being taken \(updating a collections assessment\)\, the resource being acted upon \(collections assessment\)\, and the specific instance of that resource being updated \(identified by collectionsassessmentid within the specified collection\)\.
 
-### PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Update
+## PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Update
 
-**Description**
+:::info Path
+PUT: /Collections/\{collectionsid\}/DebtFactoring/\{debtfactoringid\}/Update
+:::
+
+### Description
 
 Handles the liquidation of assets to offset the losses for problem accounts UpBQ Update details relating to Debt Factoring
 

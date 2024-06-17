@@ -1,41 +1,14 @@
 # CashManagementAndAccountServices
 
-## Table of Contents
-- [POST: /CashManagementAndAccountServices/Initiate](#post-/cashmanagementandaccountservices/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Update](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/update)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/retrieve)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Interest/\{interestid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/interest/\{interestid\}/retrieve)
-- [POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/Initiate](#post-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/servicefees/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/servicefees/\{servicefeesid\}/retrieve)
-- [POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/Initiate](#post-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountlien/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Update](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountlien/\{accountlienid\}/update)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountlien/\{accountlienid\}/retrieve)
-- [POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/Initiate](#post-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountsweep/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Update](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountsweep/\{accountsweepid\}/update)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Execute](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountsweep/\{accountsweepid\}/execute)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/accountsweep/\{accountsweepid\}/retrieve)
-- [POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/Initiate](#post-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/depositsandwithdrawals/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/update)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/execute)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/retrieve)
-- [POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/Initiate](#post-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/payments/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Update](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/payments/\{paymentsid\}/update)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Execute](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/payments/\{paymentsid\}/execute)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/payments/\{paymentsid\}/retrieve)
-- [POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/Initiate](#post-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/issueddevice/initiate)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/issueddevice/\{issueddeviceid\}/update)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Request](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/issueddevice/\{issueddeviceid\}/request)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Exchange](#put-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/positivepay/\{positivepayid\}/exchange)
-- [GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Retrieve](#get-/cashmanagementandaccountservices/\{cashmanagementandaccountservicesid\}/positivepay/\{positivepayid\}/retrieve)
-
-
 **BIAN Documentation:** [CashManagementAndAccountServices v12](https://app.swaggerhub.com/apis/BIAN-3/CashManagementAndAccountServices/12.0.0)
 
-### POST: /CashManagementAndAccountServices/Initiate
+## POST: /CashManagementAndAccountServices/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InCR Initiate a new cash management and accounting services account
 
@@ -51,9 +24,13 @@ A more RESTful way to name this path could be something like "/cash\-accounts" o
 
 It's recommended to keep paths concise\, meaningful\, and focused on the specific resources and actions they represent rather than including specific service or functionality names\.
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Update
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts UpCR Update properties of an active cash management and accounting services account
 
@@ -67,9 +44,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/cash\-management\-and\-account\-services/\{cashmanagementandaccountservicesid\}'
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReCR Retrieve information about a cash management and accounting services account \- either standard canned reports or selected instance attribute values
 
@@ -83,9 +64,13 @@ GET: The name of the path should be as follows:
 
 '/cash\-management\-and\-account\-services/\{cashManagementAndAccountServicesId\}'
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Interest/\{interestid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details of an interest transaction applied internally to the account
 
@@ -105,9 +90,13 @@ Here are some reasons behind the changes made to the original path:
 2\. Use singular nouns for resource names \(\`cash\-management\-and\-account\-services\` instead of \`CashManagementAndAccountServices\`\)\.
 3\. Use singular nouns for path parameters
 
-### POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/Initiate
+## POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InBQ Initiate service fees against an account
 
@@ -125,9 +114,13 @@ POST: The path should be named in a way that clearly communicates its intent and
 
 This path follows the RESTful convention of using nouns to represent resources and avoids using action verbs like "Initiate" in the path name\.
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ExBQ Apply a service fee to the account
 
@@ -141,9 +134,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/cash\-management\-account\-services/\{cashmanagementandaccountservicesid\}/service\-fees/\{servicefeesid\}/execute\`
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve information about a service fee applied to the account
 
@@ -155,9 +152,13 @@ This BIAN API path allows you to retrieve information about a service fee applie
 
 GET: A RESTful approach for naming the path would be: /cash\-management\-and\-account\-services/\{cash\-management\-and\-account\-services\-id\}/service\-fees/\{service\-fees\-id\}/retrieve
 
-### POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/Initiate
+## POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InBQ Set up an account lien
 
@@ -171,9 +172,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 '/cash\-management\-and\-account\-services/\{cash\-management\-and\-account\-services\-id\}/account\-lien/initiate'
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Update
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts UpBQ Update details of an existing account lien
 
@@ -189,9 +194,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLiens/\{accountlienid\}
 \`\`\`
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountLien/\{accountlienid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details about an active account lien
 
@@ -209,9 +218,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This naming convention is more concise and uses plural nouns for better readability and consistency\.
 
-### POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/Initiate
+## POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InBQ Set up an account sweep
 
@@ -227,9 +240,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and identify resources using nouns rather than verbs\. Additionally\, the path should be specific\, descriptive\, and convey the action being performed\.
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Update
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts UpBQ Update details of an existing account sweep
 
@@ -243,9 +260,13 @@ PUT: Based on REST best practices\, a more suitable name for the path '/CashMana
 
 PUT /cash\-management\-and\-account\-services/\{cashManagementAndAccountServicesId\}/account\-sweep/\{accountSweepId\}
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Execute
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ExBQ Trigger an account sweep transaction
 
@@ -261,9 +282,13 @@ PUT: Based on REST best practices\, a clearer and more concise name for the path
 
 This naming convention follows RESTful principles by using lowercase letters\, separating words with hyphens or underscores\, and focusing on the resources being manipulated in the endpoint\.
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/AccountSweep/\{accountsweepid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details about an active sweep facility or specific sweep transaction
 
@@ -277,9 +302,13 @@ GET: Based on REST best practices\, the name of the path should ideally be desig
 
 '/cash\-management\-account\-services/\{cashmanagementandaccountservicesid\}/account\-sweep/\{accountsweepid\}'
 
-### POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/Initiate
+## POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InBQ Initialize deposit or withdrawal transaction
 
@@ -293,9 +322,13 @@ POST: A suitable name for this path following REST best practices could be somet
 
 '/cash\-management\-account\-services/\{cashManagementAndAccountServicesId\}/deposits\-withdrawals/initiate'
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts UpBQ Update/correct a deposit or withdrawal transaction
 
@@ -309,9 +342,13 @@ PUT: Based on REST best practices\, a suitable name for this path could be:
 
 '/cash\-management\-account\-services/\{cashManagementAndAccountServicesId\}/deposits\-withdrawals/\{depositsWithdrawalsId\}'
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ExBQ Execute a deposit or withdrawal transaction
 
@@ -332,9 +369,13 @@ In this naming convention:
 
 This follows the standard RESTful naming convention for paths\.
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details about a deposit or withdrawal transaction
 
@@ -348,9 +389,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/cash\-management\-and\-account\-services/\{cashManagementAndAccountServicesId\}/deposits\-and\-withdrawals/\{depositsAndWithdrawalsId\}'
 
-### POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/Initiate
+## POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InBQ Initialize a payment transaction
 
@@ -366,9 +411,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase\, use hyphens to separate words\, and contain nouns instead of verbs\. Additionally\, the path parameters should be in lowercase and separated by underscores\.
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Update
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts UpBQ Update a payment transaction configuration or specific transaction
 
@@ -382,9 +431,13 @@ PUT: The name of the path should be:
 
 '/cash\-management\-and\-account\-services/\{cashmanagementandaccountservicesid\}/payments/\{paymentsid\}'
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Execute
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ExBQ Trigger a payment for a repeating payment set up
 
@@ -398,9 +451,13 @@ PUT: The name of the path '/CashManagementAndAccountServices/\{cashmanagementand
 
 '/cash\-management/\{cashmanagementandaccountservicesid\}/payments/\{paymentsid\}/execute'
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details about a payment transaction or arrangement
 
@@ -414,9 +471,13 @@ GET: The name of the path should be:
 
 GET /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/Payments/\{paymentsid\}
 
-### POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/Initiate
+## POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts InBQ Initiate the provision of issued inventory for the account
 
@@ -432,9 +493,13 @@ POST: Based on RESTful best practices\, the name of the path '/CashManagementAnd
 
 This naming convention follows RESTful principles by using lowercase letters\, separating words with hyphens\, and focusing on resource\-oriented naming\.
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts UpBQ Update the issued inventory details and provisioning configuration or status
 
@@ -446,9 +511,13 @@ This API path allows you to update the inventory details and provisioning config
 
 PUT: The name of the path should be '/cash\-management\-and\-account\-services/\{cashmanagementandaccountservicesid\}/issued\-devices/\{issueddeviceid\}'\.
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Request
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Request
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts RqBQ Request changes or replacement device/inventory
 
@@ -462,9 +531,13 @@ PUT: Based on REST best practices\, the name of the path could be '/cash\-manage
 
 This naming convention follows the use of lowercase letters\, hyphens for readability\, plurals for collections\, and uses nouns to represent resources\.
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details about issued device/inventory
 
@@ -482,9 +555,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path follows best practices by using nouns to represent resources \(e\.g\.\, CashManagementAndAccountServices\, IssuedDevices\) and by avoiding verbs like "Retrieve\."
 
-### PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Exchange
+## PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ExBQ Submit a check register report that the bank uses to check submitted checks
 
@@ -498,9 +575,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Exchange
 
-### GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Retrieve
+## GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CashManagementAndAccountServices/\{cashmanagementandaccountservicesid\}/PositivePay/\{positivepayid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a cash management and accounting services facility typically used by corporations to support additional cash management features over and above the standard facilities of current and savings accounts ReBQ Retrieve details about positive pay check processing
 

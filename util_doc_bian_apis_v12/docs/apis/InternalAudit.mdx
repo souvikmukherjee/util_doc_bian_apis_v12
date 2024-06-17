@@ -1,27 +1,14 @@
 # InternalAudit
 
-## Table of Contents
-- [PUT: /InternalAudit/\{internalauditid\}/Exchange](#put-/internalaudit/\{internalauditid\}/exchange)
-- [PUT: /InternalAudit/\{internalauditid\}/Execute](#put-/internalaudit/\{internalauditid\}/execute)
-- [PUT: /InternalAudit/\{internalauditid\}/Grant](#put-/internalaudit/\{internalauditid\}/grant)
-- [POST: /InternalAudit/Initiate](#post-/internalaudit/initiate)
-- [GET: /InternalAudit/\{internalauditid\}/Retrieve](#get-/internalaudit/\{internalauditid\}/retrieve)
-- [PUT: /InternalAudit/\{internalauditid\}/Request](#put-/internalaudit/\{internalauditid\}/request)
-- [PUT: /InternalAudit/\{internalauditid\}/Update](#put-/internalaudit/\{internalauditid\}/update)
-- [PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Exchange](#put-/internalaudit/\{internalauditid\}/audit/\{auditid\}/exchange)
-- [PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Execute](#put-/internalaudit/\{internalauditid\}/audit/\{auditid\}/execute)
-- [PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Grant](#put-/internalaudit/\{internalauditid\}/audit/\{auditid\}/grant)
-- [POST: /InternalAudit/\{internalauditid\}/Audit/Initiate](#post-/internalaudit/\{internalauditid\}/audit/initiate)
-- [GET: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Retrieve](#get-/internalaudit/\{internalauditid\}/audit/\{auditid\}/retrieve)
-- [PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Request](#put-/internalaudit/\{internalauditid\}/audit/\{auditid\}/request)
-- [PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Update](#put-/internalaudit/\{internalauditid\}/audit/\{auditid\}/update)
-
-
 **BIAN Documentation:** [InternalAudit v12](https://app.swaggerhub.com/apis/BIAN-3/InternalAudit/12.0.0)
 
-### PUT: /InternalAudit/\{internalauditid\}/Exchange
+## PUT: /InternalAudit/\{internalauditid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Exchange
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance EcCR Accept\, verify\, etc\. aspects of Internal Audit Assessment processing
 
@@ -33,9 +20,13 @@ This API path allows you to update an existing internal audit check within a por
 
 PUT: The name of the path should be "/internal\-audit/\{internalauditid\}/exchange" in kebab case format\. Remember to use lower case letters and separate words with hyphens to adhere to REST best practices for naming URI paths\.
 
-### PUT: /InternalAudit/\{internalauditid\}/Execute
+## PUT: /InternalAudit/\{internalauditid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Execute
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance ExCR Execute an available automated action for Internal Audit Assessment
 
@@ -49,9 +40,13 @@ PUT: The name of the path \`/InternalAudit/\{internalauditid\}/Execute\` followi
 
 \`/internal\-audits/\{internalauditid\}/execute\`
 
-### PUT: /InternalAudit/\{internalauditid\}/Grant
+## PUT: /InternalAudit/\{internalauditid\}/Grant
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Grant
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance GrCR Obtain permission to act in relation to Internal Audit Assessment
 
@@ -67,9 +62,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using nouns to represent resources and incorporating the specific resource identifier \(internalauditid\) in the path to access a specific grant related to the internal audit\.
 
-### POST: /InternalAudit/Initiate
+## POST: /InternalAudit/Initiate
 
-**Description**
+:::info Path
+POST: /InternalAudit/Initiate
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance InCR Instantiate a new Internal Audit Assessment
 
@@ -83,9 +82,13 @@ POST: If the path '/InternalAudit/Initiate' were following REST best practices\,
 
 A more appropriate RESTful name for this path could be '/audit/initiation' or '/audits'\. This naming convention aligns better with REST principles by focusing on the resource being accessed or acted upon \('audit'\) rather than the specific internal department \('InternalAudit'\) and action \('Initiate'\)\.
 
-### GET: /InternalAudit/\{internalauditid\}/Retrieve
+## GET: /InternalAudit/\{internalauditid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InternalAudit/\{internalauditid\}/Retrieve
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance ReCR Retrieve details about any aspect of Internal Audit Assessment
 
@@ -103,9 +106,13 @@ GET /internal\-audits/\{internalauditid\}
 
 This naming convention uses lowercase letters\, dashes for readability\, and specifies the action being performed in a clear and concise manner\.
 
-### PUT: /InternalAudit/\{internalauditid\}/Request
+## PUT: /InternalAudit/\{internalauditid\}/Request
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Request
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance RqCR Request manual intervention or a decision with respect to Internal Audit Assessment
 
@@ -117,9 +124,13 @@ This API path allows you to update an existing internal audit check by requestin
 
 PUT: The name of the path should be '/internal\-audit/\{internalauditid\}/request' in kebab\-case format to follow REST best practices\.
 
-### PUT: /InternalAudit/\{internalauditid\}/Update
+## PUT: /InternalAudit/\{internalauditid\}/Update
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Update
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance UpCR Update details relating to Internal Audit Assessment
 
@@ -133,9 +144,13 @@ PUT: The name of the path '/InternalAudit/\{internalauditid\}/Update' following 
 
 PUT /InternalAudit/\{internalauditid\}
 
-### PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Exchange
+## PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Exchange
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance EcBQ Accept\, verify\, etc\. aspects of Audit processing
 
@@ -147,9 +162,13 @@ This API path allows you to update information related to internal audits by mai
 
 PUT: The name of the path should be: '/internal\-audit/\{internalauditid\}/audit/\{auditid\}/exchange'
 
-### PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Execute
+## PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Execute
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Execute
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance ExBQ Execute an available automated action for Audit
 
@@ -163,9 +182,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/internal\-audit/\{internalauditid\}/audit/\{auditid\}/execute'
 
-### PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Grant
+## PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Grant
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Grant
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance GrBQ Obtain permission to act in relation to Audit
 
@@ -184,9 +207,13 @@ In the above path:
 \- Hyphens are used for better readability\.
 \- The path segments represent a hierarchical structure with resource identifiers\.
 
-### POST: /InternalAudit/\{internalauditid\}/Audit/Initiate
+## POST: /InternalAudit/\{internalauditid\}/Audit/Initiate
 
-**Description**
+:::info Path
+POST: /InternalAudit/\{internalauditid\}/Audit/Initiate
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance InBQ Instantiate a new Audit
 
@@ -199,9 +226,13 @@ This API path allows you to create a new internal audit check within a portfolio
 POST: Based on REST best practices\, the name of the path should be:
 '/internal\-audit/\{internalauditid\}/audit/initiate'
 
-### GET: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Retrieve
+## GET: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Retrieve
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance ReBQ Retrieve details about any aspect of Audit
 
@@ -217,9 +248,13 @@ GET: Following REST best practices\, the name of the path should be:
 /InternalAudit/\{internalauditid\}/Audit/\{auditid\}
 \`\`\`
 
-### PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Request
+## PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Request
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Request
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance RqBQ Request manual intervention or a decision with respect to Audit
 
@@ -233,9 +268,13 @@ PUT: The name of the resource path '/InternalAudit/\{internalauditid\}/Audit/\{a
 
 '/internal\-audits/\{internalauditid\}/audits/\{auditid\}/requests'
 
-### PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Update
+## PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Update
 
-**Description**
+:::info Path
+PUT: /InternalAudit/\{internalauditid\}/Audit/\{auditid\}/Update
+:::
+
+### Description
 
 Maintain and portfolio of internal audit checks\. Select and execute a meaningful sample of checks and identify and resolve non\-compliance UpBQ Update details relating to Audit
 

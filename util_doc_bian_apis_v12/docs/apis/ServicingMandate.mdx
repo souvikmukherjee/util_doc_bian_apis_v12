@@ -1,26 +1,14 @@
 # ServicingMandate
 
-## Table of Contents
-- [POST: /ServicingMandate/Evaluate](#post-/servicingmandate/evaluate)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/Update](#put-/servicingmandate/\{servicingmandateid\}/update)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/Control](#put-/servicingmandate/\{servicingmandateid\}/control)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/Exchange](#put-/servicingmandate/\{servicingmandateid\}/exchange)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/Request](#put-/servicingmandate/\{servicingmandateid\}/request)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/Grant](#put-/servicingmandate/\{servicingmandateid\}/grant)
-- [GET: /ServicingMandate/\{servicingmandateid\}/Retrieve](#get-/servicingmandate/\{servicingmandateid\}/retrieve)
-- [POST: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/Evaluate](#post-/servicingmandate/\{servicingmandateid\}/customermandate/evaluate)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Update](#put-/servicingmandate/\{servicingmandateid\}/customermandate/\{customermandateid\}/update)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Control](#put-/servicingmandate/\{servicingmandateid\}/customermandate/\{customermandateid\}/control)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Exchange](#put-/servicingmandate/\{servicingmandateid\}/customermandate/\{customermandateid\}/exchange)
-- [PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Grant](#put-/servicingmandate/\{servicingmandateid\}/customermandate/\{customermandateid\}/grant)
-- [GET: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Retrieve](#get-/servicingmandate/\{servicingmandateid\}/customermandate/\{customermandateid\}/retrieve)
-
-
 **BIAN Documentation:** [ServicingMandate v12](https://app.swaggerhub.com/apis/BIAN-3/ServicingMandate/12.0.0)
 
-### POST: /ServicingMandate/Evaluate
+## POST: /ServicingMandate/Evaluate
 
-**Description**
+:::info Path
+POST: /ServicingMandate/Evaluate
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements EvCR Agree terms for a third party servicing mandate
 
@@ -32,9 +20,13 @@ This API path is used for evaluating and creating new customer servicing arrange
 
 POST: If the path '/ServicingMandate/Evaluate' followed all REST best practices\, the name of the path should reflect a resource\, not a verb\. A suitable name for this path could be '/servicing\-mandates'\.
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/Update
+## PUT: /ServicingMandate/\{servicingmandateid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/Update
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements UpCR Update terms for a third part mandate
 
@@ -46,9 +38,13 @@ This API path allows you to update existing customer servicing arrangements for 
 
 PUT: The name of the path '/ServicingMandate/\{servicingmandateid\}/Update' should ideally be '/ServicingMandates/\{servicingmandateid\}'\. This follows REST best practices by using a plural noun \('ServicingMandates'\) to represent a collection of resources and a specific identifier \('\{servicingmandateid\}'\) to uniquely identify a single resource within that collection\.
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/Control
+## PUT: /ServicingMandate/\{servicingmandateid\}/Control
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/Control
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements CoCR Control the handling of a third party mandate \(e\.g\. terminate\)
 
@@ -67,9 +63,13 @@ Following REST best practices:
 \- Use plural nouns for collections \(i\.e\.\, 'servicingmandates'\)
 \- Use the specific resource name \('controls'\) for actions on an individual resource
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/Exchange
+## PUT: /ServicingMandate/\{servicingmandateid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements EcCR Accept\, verify\, reject\, etc a third party servicing mandate
 
@@ -81,9 +81,13 @@ This API path allows you to update an existing servicing mandate by providing a 
 
 PUT: The name of the path should be \`/servicing\-mandates/\{servicingmandateid\}/exchanges\` following REST best practices\. It is recommended to use lowercase letters\, use hyphens to separate words\, and use plural nouns for resource names in the URL path\.
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/Request
+## PUT: /ServicingMandate/\{servicingmandateid\}/Request
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/Request
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements RqCR Request manual intervention in a third party mandate \(e\.g\. reinstate after production issues\)
 
@@ -97,9 +101,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /ServicingMandates/\{servicingmandateId\}/Request
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/Grant
+## PUT: /ServicingMandate/\{servicingmandateid\}/Grant
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/Grant
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements GrCR Grant access under the third party mandate
 
@@ -111,9 +119,13 @@ This API path allows you to update an existing resource related to customer serv
 
 PUT: The name of the path could be '/servicing\-mandates/\{servicingmandateid\}/grant'\. Using lowercase letters and hyphens to separate words is a common practice in REST API naming conventions\.
 
-### GET: /ServicingMandate/\{servicingmandateid\}/Retrieve
+## GET: /ServicingMandate/\{servicingmandateid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingMandate/\{servicingmandateid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements ReCR Retrieve details about a third party mandate
 
@@ -125,9 +137,13 @@ This BIAN API path allows you to retrieve details about a specific customer serv
 
 GET: The name of the path should be \`/servicing\-mandates/\{servicingmandateid\}\`\.
 
-### POST: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/Evaluate
+## POST: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/Evaluate
 
-**Description**
+:::info Path
+POST: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/Evaluate
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements EvBQ Agree terms for a customer mandate under the service mandate
 
@@ -143,9 +159,13 @@ A better naming convention could be something like '/servicingmandates/\{servici
 
 This naming convention conveys a clear structure and hierarchy to the API endpoints\, making it easier
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Update
+## PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Update
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Update
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements UpBQ Update details of the customer mandate
 
@@ -161,9 +181,13 @@ PUT: The name of the path could be:
 
 This path follows REST best practices by using all lowercase letters\, using plural nouns for resources\, and using resource IDs to uniquely identify specific resources\.
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Control
+## PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Control
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Control
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements CoBQ Control the handling of the customer mandate \(e\.g\. suspend\)
 
@@ -176,9 +200,13 @@ This API path allows you to update the control settings related to a specific cu
 PUT: The name for the path should be:
 '/servicing\-mandates/\{servicingmandateid\}/customer\-mandates/\{customermandateid\}/controls'
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Exchange
+## PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements EcBQ Accept\, verify\, reject etc\. a customer mandate
 
@@ -192,9 +220,13 @@ PUT: A suitable name for the path could be:
 
 \`/servicing\-mandates/\{servicingmandateid\}/customer\-mandates/\{customermandateid\}/exchanges\`
 
-### PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Grant
+## PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Grant
 
-**Description**
+:::info Path
+PUT: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Grant
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements GrBQ Grant access under the customer mandate
 
@@ -208,9 +240,13 @@ PUT: The name of the path should be:
 
 '/servicing\-mandates/\{servicingmandateid\}/customer\-mandates/\{customermandateid\}/grant'
 
-### GET: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Retrieve
+## GET: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ServicingMandate/\{servicingmandateid\}/CustomerMandate/\{customermandateid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the allowed customer servicing arrangements for a service provider covering general access to the bank's products and services and optionally customer specific arrangements ReBQ Retrieve details about the customer mandate
 

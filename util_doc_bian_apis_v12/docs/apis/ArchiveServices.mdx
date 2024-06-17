@@ -1,42 +1,14 @@
 # ArchiveServices
 
-## Table of Contents
-- [PUT: /ArchiveServices/\{archiveservicesid\}/Control](#put-/archiveservices/\{archiveservicesid\}/control)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/Exchange](#put-/archiveservices/\{archiveservicesid\}/exchange)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/Execute](#put-/archiveservices/\{archiveservicesid\}/execute)
-- [POST: /ArchiveServices/Initiate](#post-/archiveservices/initiate)
-- [GET: /ArchiveServices/\{archiveservicesid\}/Notify](#get-/archiveservices/\{archiveservicesid\}/notify)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/Request](#put-/archiveservices/\{archiveservicesid\}/request)
-- [GET: /ArchiveServices/\{archiveservicesid\}/Retrieve](#get-/archiveservices/\{archiveservicesid\}/retrieve)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/Update](#put-/archiveservices/\{archiveservicesid\}/update)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Exchange](#put-/archiveservices/\{archiveservicesid\}/documentcapture/\{documentcaptureid\}/exchange)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Exchange](#put-/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/exchange)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Exchange](#put-/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/exchange)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Execute](#put-/archiveservices/\{archiveservicesid\}/documentcapture/\{documentcaptureid\}/execute)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Execute](#put-/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/execute)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Execute](#put-/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/execute)
-- [POST: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/Initiate](#post-/archiveservices/\{archiveservicesid\}/documentcapture/initiate)
-- [POST: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/Initiate](#post-/archiveservices/\{archiveservicesid\}/documentmaintenance/initiate)
-- [POST: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/Initiate](#post-/archiveservices/\{archiveservicesid\}/documentretrieval/initiate)
-- [GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Notify](#get-/archiveservices/\{archiveservicesid\}/documentcapture/\{documentcaptureid\}/notify)
-- [GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Notify](#get-/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/notify)
-- [GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Notify](#get-/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/notify)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Request](#put-/archiveservices/\{archiveservicesid\}/documentcapture/\{documentcaptureid\}/request)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Request](#put-/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/request)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Request](#put-/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/request)
-- [GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Retrieve](#get-/archiveservices/\{archiveservicesid\}/documentcapture/\{documentcaptureid\}/retrieve)
-- [GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Retrieve](#get-/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/retrieve)
-- [GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Retrieve](#get-/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/retrieve)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Update](#put-/archiveservices/\{archiveservicesid\}/documentcapture/\{documentcaptureid\}/update)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Update](#put-/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/update)
-- [PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Update](#put-/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/update)
-
-
 **BIAN Documentation:** [ArchiveServices v12](https://app.swaggerhub.com/apis/BIAN-3/ArchiveServices/12.0.0)
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/Control
+## PUT: /ArchiveServices/\{archiveservicesid\}/Control
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/Control
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Control Archive Operating Session
 
@@ -52,9 +24,13 @@ PUT: A suitable name for the endpoint could be:
 
 Using lowercase letters and using plural nouns would be in line with REST best practices\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/Exchange
+## PUT: /ArchiveServices/\{archiveservicesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/Exchange
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Exchange Archive Operating Session
 
@@ -70,9 +46,13 @@ PUT: The name of the path should be \`/archiveservices/\{archiveservicesid\}/exc
 \- \`exchange\` represents a resource or action related to exchanging data or services within the context of the archive service identified by \`\{archiveservicesid\}\`\.
 \- All path components are in lowercase as per REST best practices\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/Execute
+## PUT: /ArchiveServices/\{archiveservicesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/Execute
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Execute Archive Operating Session
 
@@ -86,9 +66,13 @@ PUT: According to REST best practices\, the name of the path should be:
 
 /ArchiveServices/\{archiveservicesid\}/Actions/execute
 
-### POST: /ArchiveServices/Initiate
+## POST: /ArchiveServices/Initiate
 
-**Description**
+:::info Path
+POST: /ArchiveServices/Initiate
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Initiate Archive Operating Session
 
@@ -104,9 +88,13 @@ A more appropriate name for the path could be '/archives' if it represents a col
 
 Remember that RESTful API design principles recommend using nouns for resources and avoiding verbs or actions in the path names\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/Notify
+## GET: /ArchiveServices/\{archiveservicesid\}/Notify
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/Notify
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Notify Archive Operating Session
 
@@ -122,9 +110,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /ArchiveServices/\{archiveservicesid\}/Notifications
 \`\`\`
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/Request
+## PUT: /ArchiveServices/\{archiveservicesid\}/Request
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/Request
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Request Archive Operating Session
 
@@ -136,9 +128,13 @@ This API path allows for the updating of an existing archive operating session w
 
 PUT: Based on REST best practices\, a suitable name for the path '/ArchiveServices/\{archiveservicesid\}/Request' could be 'GET /ArchiveServices/\{archiveservicesid\}/Requests'\. This path follows the convention of using the plural form for resource names and using standard HTTP methods like GET to retrieve resources\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/Retrieve
+## GET: /ArchiveServices/\{archiveservicesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/Retrieve
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Retrieve Archive Operating Session
 
@@ -154,9 +150,13 @@ GET: One possible naming convention for this path could be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and clearly indicate the resource being retrieved\. By using the HTTP method \`GET\`\, it indicates that the client is retrieving information or data related to a specific archive service identified by \`archiveServiceId\`\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/Update
+## PUT: /ArchiveServices/\{archiveservicesid\}/Update
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/Update
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Update Archive Operating Session
 
@@ -168,9 +168,13 @@ This API path allows the bank to update an existing archive operating session wi
 
 PUT: The REST best practice for naming paths is to use plural nouns to represent collections of resources\. In this case\, the path '/ArchiveServices/\{archiveservicesid\}/Update' should be updated to '/ArchiveServices/\{archiveservicesid\}' to follow the convention of using the resource name \(ArchiveServices\) in the path and using the specific identifier \(archiveservicesid\) to identify a resource within that collection\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Exchange
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Exchange
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Exchange Document Capture Function
 
@@ -186,9 +190,13 @@ PUT: The name of the path should be:
 /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Exchange
 \`\`\`
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Exchange
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Exchange
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Exchange Document Maintenance Function
 
@@ -206,9 +214,13 @@ PUT: A good name for this path following REST best practices could be:
 
 This path name provides a clear hierarchical structure that reflects the relationships between the resources involved\. Remember to use nouns to represent resources and avoid including verbs or actions in the path name\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Exchange
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Exchange
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Exchange Document Retrieval Function
 
@@ -222,9 +234,13 @@ PUT: The name of the path should be:
 
 \`/archiveservices/\{archiveservicesid\}/documentretrieval/\{documentretrievalid\}/exchange\`
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Execute
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Execute
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Execute Document Capture Function
 
@@ -240,9 +256,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 In RESTful API design\, paths are typically in lowercase letters\, and words are separated by hyphens or underscores\. Additionally\, resource names in the path are usually pluralized and should represent the logical hierarchy of the resources\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Execute
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Execute
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Execute Document Maintenance Function
 
@@ -256,9 +276,13 @@ PUT: A possible name for this path that follows REST best practices would be:
 
 '/archiveservices/\{archiveservicesid\}/documentmaintenance/\{documentmaintenanceid\}/execute'
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Execute
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Execute
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Execute Document Retrieval Function
 
@@ -274,9 +298,13 @@ PUT: A possible RESTful naming convention for this path could be:
 
 The path is in lowercase letters and uses hyphens to separate words for improved readability\. It also follows the convention of using resource names in the plural form \('archiveservices'\, 'documentRetrieval'\) and includes specific identifiers for each resource \('archiveservicesId'\, 'documentRetrievalId'\)\.
 
-### POST: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/Initiate
+## POST: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/Initiate
 
-**Description**
+:::info Path
+POST: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/Initiate
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Initiate Document Capture Function
 
@@ -295,9 +323,13 @@ In this convention:
 \- Words are separated by hyphens to improve readability
 \- The path represents a hierarchical structure with resources nested inside each other
 
-### POST: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/Initiate
+## POST: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/Initiate
 
-**Description**
+:::info Path
+POST: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/Initiate
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Initiate Document Maintenance Function
 
@@ -311,9 +343,13 @@ POST: The name of the path could be \`/archiveservices/\{archiveservicesid\}/doc
 
 In the RESTful convention\, it is recommended to use lowercase letters and separate words with a hyphen for readability and consistency\.
 
-### POST: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/Initiate
+## POST: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/Initiate
 
-**Description**
+:::info Path
+POST: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/Initiate
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Initiate Document Retrieval Function
 
@@ -329,9 +365,13 @@ POST: A RESTful path should be designed to be resource\-based and hierarchical\.
 
 This path follows the convention of using lowercase letters with hyphens to separate words for better readability\. It also maintains a clear hierarchy and resource\-based structure\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Notify
+## GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Notify
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Notify
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Notify Document Capture Function
 
@@ -347,9 +387,13 @@ GET: A suitable name for the path could be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, hyphens for multi\-word resources\, and use plurals for collection resources\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Notify
+## GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Notify
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Notify Document Maintenance Function
 
@@ -363,9 +407,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`/archive\-services/\{archive\-services\-id\}/document\-maintenance/\{document\-maintenance\-id\}/notify\`
 
-### GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Notify
+## GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Notify
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Notify
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Notify Document Retrieval Function
 
@@ -384,9 +432,13 @@ This path already appears suitable and follows RESTful principles by using resou
 
 If a more detailed version of the operation could be
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Request
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Request
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Request
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Request Document Capture Function
 
@@ -402,9 +454,13 @@ PUT: The name for the path '/ArchiveServices/\{archiveservicesid\}/DocumentCaptu
 
 This name conveys the intent of the endpoint to create a new document capture request within the specified archive service and document capture IDs\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Request
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Request
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Request Document Maintenance Function
 
@@ -420,9 +476,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Requests
 \`\`\`
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Request
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Request
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Request
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Request Document Retrieval Function
 
@@ -440,9 +500,13 @@ A more suitable name for the path could be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens or underscores\, and accurately representing the resources and actions being accessed in the API\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Retrieve
+## GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Retrieve
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Retrieve Document Capture Function
 
@@ -458,9 +522,13 @@ GET: The name of this path following REST best practices could be:
 
 Following REST naming conventions\, we use lowercase letters and hyphens to separate words in the path\. Additionally\, we use plural nouns for collections and singular nouns for resources\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Retrieve
+## GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Retrieve
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Retrieve Document Maintenance Function
 
@@ -472,9 +540,13 @@ This API path allows a bank to retrieve information about a specific document ma
 
 GET: Based on the REST best practices\, the name of the path should focus on the resource being accessed rather than the action being performed\. Following this naming convention\, the path could be named as '/ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Document'\. This reflects the resource being retrieved \(document\) in the context of the archive services and document maintenance\.
 
-### GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Retrieve
+## GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Retrieve
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Retrieve Document Retrieval Function
 
@@ -486,9 +558,13 @@ This API path is used to retrieve information about a specific document within t
 
 GET: The name of the path should be \`/archive\-services/\{archiveservicesid\}/document\-retrieval/\{documentretrievalid\}/retrieve\`\, following REST best practices of using lowercase letters and hyphens to separate words in the URL path\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Update
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}/Update
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Update Document Capture Function
 
@@ -502,9 +578,13 @@ PUT: The name of the path following REST best practices should be:
 
 \`PUT /ArchiveServices/\{archiveservicesid\}/DocumentCapture/\{documentcaptureid\}\`
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Update
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentMaintenance/\{documentmaintenanceid\}/Update
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Update Document Maintenance Function
 
@@ -516,9 +596,13 @@ This API path is used to update an existing document maintenance function within
 
 PUT: The name of the path should be \`/archive\-services/\{archiveServiceId\}/document\-maintenance/\{documentMaintenanceId\}\`\.
 
-### PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Update
+## PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Update
 
-**Description**
+:::info Path
+PUT: /ArchiveServices/\{archiveservicesid\}/DocumentRetrieval/\{documentretrievalid\}/Update
+:::
+
+### Description
 
 The Archive Services Service Domain enables the bank to retain\, maintain and access significant documents that are no longer actively accessed but that might be required in the future Update Document Retrieval Function
 

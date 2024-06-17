@@ -1,43 +1,14 @@
 # SavingsAccount
 
-## Table of Contents
-- [POST: /SavingsAccount/Initiate](#post-/savingsaccount/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/update)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/Control](#put-/savingsaccount/\{savingsaccountid\}/control)
-- [GET: /SavingsAccount/\{savingsaccountid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/retrieve)
-- [GET: /SavingsAccount/\{savingsaccountid\}/Interest/\{interestid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/interest/\{interestid\}/retrieve)
-- [POST: /SavingsAccount/\{savingsaccountid\}/ServiceFees/Initiate](#post-/savingsaccount/\{savingsaccountid\}/servicefees/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/savingsaccount/\{savingsaccountid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/servicefees/\{servicefeesid\}/retrieve)
-- [POST: /SavingsAccount/\{savingsaccountid\}/AccountLien/Initiate](#post-/savingsaccount/\{savingsaccountid\}/accountlien/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/accountlien/\{accountlienid\}/update)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Exchange](#put-/savingsaccount/\{savingsaccountid\}/accountlien/\{accountlienid\}/exchange)
-- [GET: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/accountlien/\{accountlienid\}/retrieve)
-- [POST: /SavingsAccount/\{savingsaccountid\}/AccountSweep/Initiate](#post-/savingsaccount/\{savingsaccountid\}/accountsweep/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/accountsweep/\{accountsweepid\}/update)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Execute](#put-/savingsaccount/\{savingsaccountid\}/accountsweep/\{accountsweepid\}/execute)
-- [GET: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/accountsweep/\{accountsweepid\}/retrieve)
-- [POST: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/Initiate](#post-/savingsaccount/\{savingsaccountid\}/depositsandwithdrawals/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/update)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute](#put-/savingsaccount/\{savingsaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/execute)
-- [GET: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/depositsandwithdrawals/\{depositsandwithdrawalsid\}/retrieve)
-- [POST: /SavingsAccount/\{savingsaccountid\}/Payments/Initiate](#post-/savingsaccount/\{savingsaccountid\}/payments/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/payments/\{paymentsid\}/update)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Exchange](#put-/savingsaccount/\{savingsaccountid\}/payments/\{paymentsid\}/exchange)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Execute](#put-/savingsaccount/\{savingsaccountid\}/payments/\{paymentsid\}/execute)
-- [GET: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/payments/\{paymentsid\}/retrieve)
-- [POST: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/Initiate](#post-/savingsaccount/\{savingsaccountid\}/issueddevice/initiate)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/issueddevice/\{issueddeviceid\}/update)
-- [GET: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/savingsaccount/\{savingsaccountid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Update](#put-/savingsaccount/\{savingsaccountid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /SavingsAccount/\{savingsaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/savingsaccount/\{savingsaccountid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-
-
 **BIAN Documentation:** [SavingsAccount v12](https://app.swaggerhub.com/apis/BIAN-3/SavingsAccount/12.0.0)
 
-### POST: /SavingsAccount/Initiate
+## POST: /SavingsAccount/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. InCR Initiate A new savings account
 
@@ -53,9 +24,13 @@ POST: The name of the path should be as follows:
 
 It is recommended to use lowercase letters\, separate words with hyphens\, and use plural nouns for collections\, such as "savings\-accounts"\.
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. UpCR Update details of a savings account
 
@@ -69,9 +44,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /savingsaccounts/\{savingsaccountid\}
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/Control
+## PUT: /SavingsAccount/\{savingsaccountid\}/Control
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/Control
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. CoCR Control the processing of an a savings account
 
@@ -85,9 +64,13 @@ PUT: The name of the path should be \`/savings\-accounts/\{savingsaccountid\}/co
 
 In RESTful API design\, it is recommended to use plural nouns for resource names\, separate words with hyphens for readability\, and use lowercase letters for consistency\.
 
-### GET: /SavingsAccount/\{savingsaccountid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReCR Retrieve information about a savings account \- either standard canned reports or selected instance attribute values
 
@@ -105,9 +88,13 @@ A suitable RESTful path name for this endpoint could be:
 GET /savings\-accounts/\{savingsaccountId\}
 \`\`\`
 
-### GET: /SavingsAccount/\{savingsaccountid\}/Interest/\{interestid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReBQ Retrieve details of an interest transaction applied internally to the account
 
@@ -123,9 +110,13 @@ GET: Based on REST best practices\, a clearer and more descriptive name for the 
 
 This name uses lowercase letters\, separates words with hyphens\, and provides a clean and understandable structure that follows REST conventions\.
 
-### POST: /SavingsAccount/\{savingsaccountid\}/ServiceFees/Initiate
+## POST: /SavingsAccount/\{savingsaccountid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/\{savingsaccountid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. InBQ Initiate service fees against an account
 
@@ -138,9 +129,13 @@ This BIAN API path allows you to initiate service fees for a specific savings ac
 POST: The name of the path should be:
 /savings\-accounts/\{savingsaccountid\}/service\-fees/initiate
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ExBQ Execute Apply Service Fee
 
@@ -156,9 +151,13 @@ PUT: A more appropriate name for the path /SavingsAccount/\{savingsaccountid\}/S
 
 Make sure to use lowercase letters and hyphens between words for better readability and consistency\.
 
-### GET: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReBQ Retrieve information about a service fee applied to the account
 
@@ -172,9 +171,13 @@ GET: A suitable name for the described path following REST best practices could 
 
 '/savings\-accounts/\{savingsAccountId\}/service\-fees/\{serviceFeesId\}'
 
-### POST: /SavingsAccount/\{savingsaccountid\}/AccountLien/Initiate
+## POST: /SavingsAccount/\{savingsaccountid\}/AccountLien/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/\{savingsaccountid\}/AccountLien/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. InBQ Set up an account lien
 
@@ -188,9 +191,13 @@ POST: The name of the path should ideally be structured as follows based on REST
 
 GET /savings\-accounts/\{savingsaccountid\}/account\-lien/initiate
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. UpBQ Update details of an existing account lien
 
@@ -206,9 +213,13 @@ PUT: The name of the endpoint should typically describe the action being perform
 
 This name indicates that a \`PUT\` request is being made to update a specific account lien associated with a savings account identified by \`savingsaccountid\`\.
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Exchange
+## PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. EcBQ Exchange \(i\.e\. confirm\, reject\) details of an account lien
 
@@ -224,9 +235,13 @@ PUT: A suitable name for this path following REST best practices would be:
 /SavingsAccounts/\{savingsAccountId\}/AccountLiens/\{accountLienId\}/Exchanges
 \`\`\`
 
-### GET: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/AccountLien/\{accountlienid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReBQ Retrieve details about an account lien
 
@@ -240,9 +255,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 GET /savings\-accounts/\{savingsaccountid\}/liens/\{accountlienid\}
 
-### POST: /SavingsAccount/\{savingsaccountid\}/AccountSweep/Initiate
+## POST: /SavingsAccount/\{savingsaccountid\}/AccountSweep/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/\{savingsaccountid\}/AccountSweep/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. InBQ Set up an account sweep
 
@@ -256,9 +275,13 @@ POST: A possible name for the path could be: \`/savings\-accounts/\{savingsAccou
 
 This name follows REST best practices by using lowercase letters\, separating words with dashes for readability\, and including relevant resource identifiers in the path\.
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. UpBQ Update details of an existing account sweep
 
@@ -272,9 +295,13 @@ PUT: A suitable name for the path could be:
 
 PUT /savings\-accounts/\{savingsAccountId\}/account\-sweeps/\{accountSweepId\}
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Execute
+## PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ExBQ Trigger an account sweep transaction
 
@@ -287,9 +314,13 @@ This API path allows you to trigger an account sweep transaction for a specific 
 PUT: A possible name for the path following REST best practices could be:
 '/savings\-accounts/\{savingsAccountId\}/account\-sweeps/\{accountSweepId\}/execute'
 
-### GET: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/AccountSweep/\{accountsweepid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReBQ Retrieve details about a sweep facility or specific sweep transaction
 
@@ -301,9 +332,13 @@ This API path allows you to retrieve details about a sweep facility or a specifi
 
 GET: The name of the path should be: /savings\-accounts/\{savingsAccountId\}/account\-sweeps/\{accountSweepId\}/retrieve
 
-### POST: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/Initiate
+## POST: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. InBQ Initialize deposit or withdrawal transaction
 
@@ -316,9 +351,13 @@ This API path allows you to initiate a deposit or withdrawal transaction for a s
 POST: The name of the path should be:
 '/savings\-accounts/\{savingsAccountId\}/transactions/initiate'
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. UpBQ Update/correct a deposit or withdrawal transaction
 
@@ -332,9 +371,13 @@ PUT: The appropriate name for this path following REST best practices would be:
 
 PUT /savings\-accounts/\{savingsaccountid\}/transactions/\{transactionsid\}
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+## PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ExBQ Execute a deposit or withdrawal transaction
 
@@ -350,9 +393,13 @@ PUT: A suitable name for the path could be something like:
 
 Following REST best practices means using clear and descriptive resource names\, using lowercase letters\, and using hyphens to separate words in URLs for better readability\.
 
-### GET: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/DepositsandWithdrawals/\{depositsandwithdrawalsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReBQ Retrieve details about a deposit or withdrawal transaction
 
@@ -370,9 +417,13 @@ GET /savings\-accounts/\{savingsAccountId\}/transactions/\{transactionId\}
 
 This path follows REST best practices by using lowercase letters\, hyphens to separate words\, plural nouns for resource names\, and descriptive endpoint names\.
 
-### POST: /SavingsAccount/\{savingsaccountid\}/Payments/Initiate
+## POST: /SavingsAccount/\{savingsaccountid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/\{savingsaccountid\}/Payments/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. InBQ Initialize a payment transaction \(can be single or repeating\)
 
@@ -394,9 +445,13 @@ Here are the reasons why this name follows REST best practices:
 
 3\. Use of hyphens: Hy
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. UpBQ Update a payment transaction configuration or specific transaction
 
@@ -410,9 +465,13 @@ PUT: The name of the path should be:
 
 /SavingsAccounts/\{savingsaccountid\}/Payments/\{paymentid\}
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Exchange
+## PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. EcBQ Verify/approve a scheduled repeating payment
 
@@ -426,9 +485,13 @@ PUT: A RESTful path should ideally use nouns to represent resources rather than 
 
 /savingsaccounts/\{savingsaccountid\}/payments/\{paymentsid\}/exchanges
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Execute
+## PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ExBQ Trigger a payment for a repeating payment set up
 
@@ -444,9 +507,13 @@ PUT: The name of this path should be:
 
 Following REST best practices means using lowercase letters and hyphens to separate words in the path\, and using plural nouns for collections\.
 
-### GET: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. ReBQ Retrieve details about a payment transaction or arrangement
 
@@ -458,9 +525,13 @@ This BIAN API path allows you to retrieve details about a specific payment trans
 
 GET: The name of the path should be: \`/savings\-accounts/\{savingsaccountid\}/payments/\{paymentsid\}\`\.
 
-### POST: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/Initiate
+## POST: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. Initiate Provision of Issued Device
 
@@ -474,9 +545,13 @@ POST: A good name for the path following REST best practices could be:
 
 /savings\-accounts/\{savingsAccountId\}/issued\-devices/initiate
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. Update Details of Issued Device Allocated to This Account
 
@@ -490,9 +565,13 @@ PUT: The name of the path should be as follows according to REST best practices:
 
 /savings\-accounts/\{savingsAccountId\}/issued\-devices/\{issuedDeviceId\}
 
-### GET: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SavingsAccount/\{savingsaccountid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. Retrieve Details about Issued Device
 
@@ -506,9 +585,13 @@ GET: A suitable name for this path following REST best practices could be:
 
 '/savings\-accounts/\{savingsAccountId\}/issued\-devices/\{issuedDeviceId\}' or '/savings\-accounts/\{savingsAccountId\}/issued\-devices/\{issuedDeviceId\}/retrieve'
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. Update details about an applied service fee
 
@@ -522,9 +605,13 @@ PUT: The name of the path following REST best practices should be something like
 
 '/savings\-accounts/\{savingsAccountId\}/service\-fees/\{serviceFeesId\}'
 
-### PUT: /SavingsAccount/\{savingsaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /SavingsAccount/\{savingsaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SavingsAccount/\{savingsaccountid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates a consumer savings account\. The typical range of services and fees covers payments from and scheduled and ad\-hoc deposits to the account\, standing orders\, sweeps\, and liens\. Execute authorization of booking
 

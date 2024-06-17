@@ -1,24 +1,14 @@
 # CustomerAgreement
 
-## Table of Contents
-- [POST: /CustomerAgreement/Evaluate](#post-/customeragreement/evaluate)
-- [GET: /CustomerAgreement/\{customeragreementid\}/Retrieve](#get-/customeragreement/\{customeragreementid\}/retrieve)
-- [POST: /CustomerAgreement/\{customeragreementid\}/LegalTerms/Evaluate](#post-/customeragreement/\{customeragreementid\}/legalterms/evaluate)
-- [PUT: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Update](#put-/customeragreement/\{customeragreementid\}/legalterms/\{legaltermsid\}/update)
-- [GET: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve](#get-/customeragreement/\{customeragreementid\}/legalterms/\{legaltermsid\}/retrieve)
-- [POST: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/Evaluate](#post-/customeragreement/\{customeragreementid\}/regulatoryterms/evaluate)
-- [PUT: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update](#put-/customeragreement/\{customeragreementid\}/regulatoryterms/\{regulatorytermsid\}/update)
-- [GET: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve](#get-/customeragreement/\{customeragreementid\}/regulatoryterms/\{regulatorytermsid\}/retrieve)
-- [POST: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/Evaluate](#post-/customeragreement/\{customeragreementid\}/policyterms/evaluate)
-- [PUT: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Update](#put-/customeragreement/\{customeragreementid\}/policyterms/\{policytermsid\}/update)
-- [GET: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve](#get-/customeragreement/\{customeragreementid\}/policyterms/\{policytermsid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerAgreement v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerAgreement/12.0.0)
 
-### POST: /CustomerAgreement/Evaluate
+## POST: /CustomerAgreement/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAgreement/Evaluate
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products EvCR Establish a customer master agreement \(evaluate applicable rules\)
 
@@ -34,9 +24,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 In RESTful API design\, paths are typically in lowercase and in plural form to represent resources\.
 
-### GET: /CustomerAgreement/\{customeragreementid\}/Retrieve
+## GET: /CustomerAgreement/\{customeragreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAgreement/\{customeragreementid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products ReCR Retrieve details about a customer master agreement
 
@@ -48,9 +42,13 @@ This API path allows you to retrieve details about a customer's master agreement
 
 GET: Based on REST best practices\, the name of the path should be '/customerAgreements/\{customerAgreementId\}'\.
 
-### POST: /CustomerAgreement/\{customeragreementid\}/LegalTerms/Evaluate
+## POST: /CustomerAgreement/\{customeragreementid\}/LegalTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAgreement/\{customeragreementid\}/LegalTerms/Evaluate
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products EvBQ Establish the legal terms for a customer master agreement
 
@@ -66,9 +64,13 @@ POST: If the path '/CustomerAgreement/\{customeragreementid\}/LegalTerms/Evaluat
 
 This naming convention follows the guidelines for RESTful APIs\, which typically use lowercase letters and hyphens for better readability and consistency\. It also uses the HTTP method \`PUT\` to indicate that the request is updating or creating a resource\.
 
-### PUT: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Update
+## PUT: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Update
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products UpBQ Update the legal terms for a customer master agreement
 
@@ -82,9 +84,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 /customerAgreements/\{customerAgreementId\}/legalTerms/\{legalTermsId\}
 
-### GET: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve
+## GET: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAgreement/\{customeragreementid\}/LegalTerms/\{legaltermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products ReBQ Retrieve details about the legal terms of an agreement
 
@@ -100,9 +106,13 @@ GET: Based on REST best practices\, the name of the path should be something tha
 
 This path follows the convention of using lowercase letters and hyphens for better readability\. Additionally\, it uses plural nouns for the resource names and expresses the action of retrieving legal terms associated with a specific customer agreement\.
 
-### POST: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/Evaluate
+## POST: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/Evaluate
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products EvBQ Establish the regulatory terms for a customer master agreement
 
@@ -120,9 +130,13 @@ A possible name for the path '/CustomerAgreement/\{customeragreementid\}/Regulat
 
 This name is descriptive\, accurately represents the resources and action involved\, and does not contain any unnecessary words or
 
-### PUT: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update
+## PUT: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Update
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products UpBQ Update the regulatory terms for a customer master agreement
 
@@ -136,9 +150,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/customer\-agreements/\{customeragreementid\}/regulatory\-terms/\{regulatorytermsid\}/update'
 
-### GET: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve
+## GET: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAgreement/\{customeragreementid\}/RegulatoryTerms/\{regulatorytermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products ReBQ Retrieve details about the regulatory terms of an agreement
 
@@ -152,9 +170,13 @@ GET: The name of the path should be:
 
 '/customer\-agreements/\{customeragreementid\}/regulatory\-terms/\{regulatorytermsid\}/retrieve'
 
-### POST: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/Evaluate
+## POST: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/Evaluate
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products EvBQ Establish the corporate policy terms for a customer master agreement
 
@@ -174,9 +196,13 @@ In this naming convention:
 \- Use plural forms for collections \(e\.g\.\, 'customer\-agreements' instead of 'customer\-agreement'\)\.
 \- Path segment names are descriptive\, representing the resource they point to\.
 
-### PUT: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Update
+## PUT: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Update
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products UpBQ Update the corporate policy terms for a customer master agreement
 
@@ -190,9 +216,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/customers/\{customeragreementid\}/policy\-terms/\{policytermsid\}/update'
 
-### GET: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve
+## GET: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAgreement/\{customeragreementid\}/PolicyTerms/\{policytermsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the master customer agreement/legal contract\. Note that a customer can be a complex corporate entity with many subsidiaries operating in different geopolitical areas\. The customer agreement is linked to as many Sales Product Agreements as needed for all in\-force products ReBQ Retrieve details about the corporate policy terms of an agreement
 

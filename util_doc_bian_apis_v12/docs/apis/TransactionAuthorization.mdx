@@ -1,18 +1,14 @@
 # TransactionAuthorization
 
-## Table of Contents
-- [POST: /TransactionAuthorization/Evaluate](#post-/transactionauthorization/evaluate)
-- [PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Update](#put-/transactionauthorization/\{transactionauthorizationid\}/update)
-- [PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Execute](#put-/transactionauthorization/\{transactionauthorizationid\}/execute)
-- [PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Request](#put-/transactionauthorization/\{transactionauthorizationid\}/request)
-- [GET: /TransactionAuthorization/\{transactionauthorizationid\}/Retrieve](#get-/transactionauthorization/\{transactionauthorizationid\}/retrieve)
-
-
 **BIAN Documentation:** [TransactionAuthorization v12](https://app.swaggerhub.com/apis/BIAN-3/TransactionAuthorization/12.0.0)
 
-### POST: /TransactionAuthorization/Evaluate
+## POST: /TransactionAuthorization/Evaluate
 
-**Description**
+:::info Path
+POST: /TransactionAuthorization/Evaluate
+:::
+
+### Description
 
 This service domain handles risk based authorization for interactive customer transactions\. This combines the context \(channel\) transaction\, customer details and recent activity analysis as appropriate\. The authorization may require a specific level of party/customer authentication to get approval\. EvCR Evaluate a proposed interactive transaction for authorization
 
@@ -24,9 +20,13 @@ This BIAN API path is used for evaluating interactive customer transactions to d
 
 POST: If the path '/TransactionAuthorization/Evaluate' were to follow RESTful best practices\, it could be named using nouns that represent resources rather than actions\. A more RESTful name for this path could be '/TransactionAuthorizations'\.
 
-### PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Update
+## PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Update
+:::
+
+### Description
 
 This service domain handles risk based authorization for interactive customer transactions\. This combines the context \(channel\) transaction\, customer details and recent activity analysis as appropriate\. The authorization may require a specific level of party/customer authentication to get approval\. UpCR Update details of a proposed transaction for authorization
 
@@ -40,9 +40,13 @@ PUT: The name of the path should be:
 
 '/TransactionAuthorizations/\{transactionAuthorizationId\}'
 
-### PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Execute
+## PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Execute
+:::
+
+### Description
 
 This service domain handles risk based authorization for interactive customer transactions\. This combines the context \(channel\) transaction\, customer details and recent activity analysis as appropriate\. The authorization may require a specific level of party/customer authentication to get approval\. ExCR Execute an automated action for transaction authorization \(e\.g\. upload data\)
 
@@ -61,9 +65,13 @@ In this naming convention:
 \- The resource segment is pluralized as \`TransactionAuthorizations\` to follow the convention of using plural nouns for collections of resources\.
 \- \`\{transaction
 
-### PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Request
+## PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Request
 
-**Description**
+:::info Path
+PUT: /TransactionAuthorization/\{transactionauthorizationid\}/Request
+:::
+
+### Description
 
 This service domain handles risk based authorization for interactive customer transactions\. This combines the context \(channel\) transaction\, customer details and recent activity analysis as appropriate\. The authorization may require a specific level of party/customer authentication to get approval\. RqCR Request manual intervention \(e\.g\. engage a specialist\)
 
@@ -75,9 +83,13 @@ This API path allows you to update an existing transaction authorization request
 
 PUT: The path should be named as follows: '/transaction\-authorizations/\{transactionAuthorizationId\}/requests' to follow REST best practices\.
 
-### GET: /TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
+## GET: /TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles risk based authorization for interactive customer transactions\. This combines the context \(channel\) transaction\, customer details and recent activity analysis as appropriate\. The authorization may require a specific level of party/customer authentication to get approval\. ReCR Retrieve details about an interactive transaction authorization
 

@@ -1,20 +1,14 @@
 # CollateralAllocationManagement
 
-## Table of Contents
-- [POST: /CollateralAllocationManagement/Provide](#post-/collateralallocationmanagement/provide)
-- [PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Update](#put-/collateralallocationmanagement/\{collateralallocationmanagementid\}/update)
-- [GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Retrieve](#get-/collateralallocationmanagement/\{collateralallocationmanagementid\}/retrieve)
-- [POST: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/Provide](#post-/collateralallocationmanagement/\{collateralallocationmanagementid\}/allocation/provide)
-- [PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Update](#put-/collateralallocationmanagement/\{collateralallocationmanagementid\}/allocation/\{allocationid\}/update)
-- [PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Capture](#put-/collateralallocationmanagement/\{collateralallocationmanagementid\}/allocation/\{allocationid\}/capture)
-- [GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Retrieve](#get-/collateralallocationmanagement/\{collateralallocationmanagementid\}/allocation/\{allocationid\}/retrieve)
-
-
 **BIAN Documentation:** [CollateralAllocationManagement v12](https://app.swaggerhub.com/apis/BIAN-3/CollateralAllocationManagement/12.0.0)
 
-### POST: /CollateralAllocationManagement/Provide
+## POST: /CollateralAllocationManagement/Provide
 
-**Description**
+:::info Path
+POST: /CollateralAllocationManagement/Provide
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. PrCR Record an asset provided for collateralization
 
@@ -32,9 +26,13 @@ POST: In accordance with REST best practices\, the name of the path should be:
 
 The path should be in lowercase and use hyphens to separate words for better readability\.
 
-### PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Update
+## PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Update
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. UpCR Update details and status of a collateral asset and its allocation
 
@@ -50,9 +48,13 @@ PUT: According to REST best practices\, the name of the path should be:
 PUT /CollateralAllocationManagement/\{collateralallocationmanagementid\}
 \`\`\`
 
-### GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Retrieve
+## GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Retrieve
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. ReCR Retrieve details and status of a collateral asset and its allocation
 
@@ -66,9 +68,13 @@ GET: The name of the path should be:
 
 '/collateral\-allocations/\{collateralAllocationId\}'
 
-### POST: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/Provide
+## POST: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/Provide
 
-**Description**
+:::info Path
+POST: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/Provide
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. PrBQ Allocate a collateral asset to a lending product
 
@@ -82,9 +88,13 @@ POST: The name of the path should typically represent a resource\, so if I under
 
 A more RESTful approach would be to focus on the resource being addressed\, for instance\, if you are dealing with an allocation related to collateral allocation management\, you could name the path '/collateral\-allocations/\{allocationId\}/provide'\. In this way
 
-### PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Update
+## PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Update
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. UpBQ Update details about an allocation request and in force
 
@@ -98,9 +108,13 @@ PUT: Based on REST best practices\, the name of the path would be:
 
 PATCH /collateral\-allocations/\{collateralallocationmanagementid\}/allocations/\{allocationid\}
 
-### PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Capture
+## PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Capture
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. CaBQ Record usage details for a collateral allocation
 
@@ -118,9 +132,13 @@ POST /collateral\-allocations/\{collateralallocationmanagementid\}/allocations/\
 
 This path follows typical REST conventions\, using lowercase letters and dashes to separate words in the URI\. It specifies the operation to capture an allocation related to a collateral allocation management\.
 
-### GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Retrieve
+## GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CollateralAllocationManagement/\{collateralallocationmanagementid\}/Allocation/\{allocationid\}/Retrieve
+:::
+
+### Description
 
 The Service Domain manages the allocation of party owned assets to bank issued lending and other asset products\. ReBQ Retrieve details about a collateral allocation
 

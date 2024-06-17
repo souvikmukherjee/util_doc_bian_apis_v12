@@ -1,29 +1,14 @@
 # ChannelActivityAnalysis
 
-## Table of Contents
-- [POST: /ChannelActivityAnalysis/Evaluate](#post-/channelactivityanalysis/evaluate)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Exchange](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/exchange)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Request](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/request)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/retrieve)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Execute](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/customerfraud/\{customerfraudid\}/execute)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/customerfraud/\{customerfraudid\}/retrieve)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Execute](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/merchantfraud/\{merchantfraudid\}/execute)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/merchantfraud/\{merchantfraudid\}/retrieve)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Execute](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/customerbehavior/\{customerbehaviorid\}/execute)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/customerbehavior/\{customerbehaviorid\}/retrieve)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Execute](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/merchantbehavior/\{merchantbehaviorid\}/execute)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/merchantbehavior/\{merchantbehaviorid\}/retrieve)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Execute](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/bot/\{botid\}/execute)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/bot/\{botid\}/retrieve)
-- [PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Execute](#put-/channelactivityanalysis/\{channelactivityanalysisid\}/deviceerror/\{deviceerrorid\}/execute)
-- [GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Retrieve](#get-/channelactivityanalysis/\{channelactivityanalysisid\}/deviceerror/\{deviceerrorid\}/retrieve)
-
-
 **BIAN Documentation:** [ChannelActivityAnalysis v12](https://app.swaggerhub.com/apis/BIAN-3/ChannelActivityAnalysis/12.0.0)
 
-### POST: /ChannelActivityAnalysis/Evaluate
+## POST: /ChannelActivityAnalysis/Evaluate
 
-**Description**
+:::info Path
+POST: /ChannelActivityAnalysis/Evaluate
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) EvCR Initialize channel activity analysis
 
@@ -35,9 +20,13 @@ This API path allows users to initialize the analysis of channel activity\, whic
 
 POST: If the path '/ChannelActivityAnalysis/Evaluate' followed REST best practices\, a more appropriate name would be '/channel\-activity\-analysis'\.RESTful APIs typically use lowercase letters and hyphens to make the URLs more readable and user\-friendly\.
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Exchange
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Exchange
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExCR Obtain an automated refresh of channel activity analysis
 
@@ -53,9 +42,13 @@ PUT: The name of the path should be:
 
 It is following REST best practices by using a plural noun for the resource "Exchanges" to represent a collection of resources\.
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Request
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Request
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) RqCR Request a manual refresh of channel activity analysis
 
@@ -67,9 +60,13 @@ This API path allows a user to request a manual refresh of the analysis of chann
 
 PUT: The name of the path should be \`/channel\-activity\-analysis/\{channelActivityAnalysisId\}/request\` following REST best practices\.
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReCR Retrieve details about channel activity analysis\, including recent results
 
@@ -85,9 +82,13 @@ GET: Based on REST best practices\, the name of the resource should be a noun th
 
 This name is more reflective of the resource being accessed \(ChannelActivityAnalysis\) and uses a plural noun to represent a collection of resources\.
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Execute
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Execute
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExBQ Obtain an automated refresh of customer fraud analysis
 
@@ -101,9 +102,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/channel\-activity\-analysis/\{channelactivityanalysisid\}/customer\-fraud/\{customerfraudid\}/execute'
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerFraud/\{customerfraudid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReBQ Retrieve details about customer fraud analysis\, including recent results
 
@@ -117,9 +122,13 @@ GET: Based on REST best practices\, a suitable name for this path could be:
 
 GET /channel\-activity\-analyses/\{channel\-activity\-analysis\-id\}/customer\-frauds/\{customer\-fraud\-id\}
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Execute
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Execute
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExBQ Obtain an automated refresh of merchant fraud analysis
 
@@ -132,9 +141,13 @@ This API path allows users to execute an automated refresh of merchant fraud ana
 PUT: A more appropriate RESTful path for this endpoint could be as follows:
 '/channel\-activity\-analysis/\{channelactivityanalysisid\}/merchant\-fraud/\{merchantfraudid\}/execute'
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantFraud/\{merchantfraudid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReBQ Retrieve details about merchant fraud analysis\, including recent results
 
@@ -148,9 +161,13 @@ GET: Based on REST best practices\, a more suitable name for the path could be:
 
 '/channel\-activities/\{channelactivityanalysisid\}/merchant\-fraud/\{merchantfraudid\}'
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Execute
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Execute
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExBQ Obtain an automated refresh of customer out of pattern behavior analysis
 
@@ -164,9 +181,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/channel\-activity\-analysis/\{channelactivityanalysisid\}/customer\-behavior/\{customerbehaviorid\}/execute'
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/CustomerBehavior/\{customerbehaviorid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReBQ Retrieve details about customer out of pattern behavior analysis\, including recent results
 
@@ -180,9 +201,13 @@ GET: Based on REST best practices\, the name of the path should be structured to
 
 '/channel\-activity\-analysis/\{channelactivityanalysisid\}/customer\-behavior/\{customerbehaviorid\}'
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Execute
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Execute
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExBQ Obtain an automated refresh of merchant out of pattern behavior analysis
 
@@ -198,9 +223,13 @@ PUT: Following REST best practices\, the name of the path should be structured a
 
 This path is already named in a RESTful manner\. It follows the convention of using nouns to represent resources \(ChannelActivityAnalysis and MerchantBehavior\) and using identifiers \(ids\) to specify specific instances of those resources\. The "Execute" segment indicates an action being performed on the specified resources\.
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/MerchantBehavior/\{merchantbehaviorid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReBQ Retrieve details about merchant out of pattern behavior analysis\, including recent results
 
@@ -216,9 +245,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path indicates that you are retrieving specific merchant behavior related to a particular channel activity analysis\. The specific operation of retrieving the merchant behavior data would be implied by the HTTP method used \(e\.g\.\, GET for retrieving data\)\.
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Execute
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Execute
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExBQ Obtain an automated refresh of bot detection analysis
 
@@ -232,9 +265,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/channel\-activity\-analyses/\{channelactivityanalysisid\}/bots/\{botid\}/execute'
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/Bot/\{botid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReBQ Retrieve details about bot detection analysis\, including recent results
 
@@ -248,9 +285,13 @@ GET: A suitable name for the path would be:
 
 '/channel\-activity\-analysis/\{channelactivityanalysisid\}/bot/\{botid\}/retrieve'
 
-### PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Execute
+## PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Execute
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ExBQ Obtain an automated refresh of device error detection analysis
 
@@ -266,9 +307,13 @@ PUT: A RESTful naming convention for the given path could be:
 
 This naming convention follows best practices by using lowercase letters\, separating words with hyphens\, and structuring the URL to clearly represent the resource hierarchy and actions being performed\.
 
-### GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Retrieve
+## GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityAnalysis/\{channelactivityanalysisid\}/DeviceError/\{deviceerrorid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks and analyzes channel activity to support relationship development\, to detect unwanted behavior\, possible fraud\, and to constrain channel use as necessary \(for example tracking usage frequency and cumulative transaction amounts within a period\) ReBQ Retrieve details about device error detection analysis\, including recent results
 

@@ -1,40 +1,14 @@
 # CreditCard
 
-## Table of Contents
-- [POST: /CreditCard/Initiate](#post-/creditcard/initiate)
-- [PUT: /CreditCard/\{creditcardid\}/Update](#put-/creditcard/\{creditcardid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/Control](#put-/creditcard/\{creditcardid\}/control)
-- [GET: /CreditCard/\{creditcardid\}/Retrieve](#get-/creditcard/\{creditcardid\}/retrieve)
-- [GET: /CreditCard/\{creditcardid\}/Interest/\{interestid\}/Retrieve](#get-/creditcard/\{creditcardid\}/interest/\{interestid\}/retrieve)
-- [PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Update](#put-/creditcard/\{creditcardid\}/fees/\{feesid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Execute](#put-/creditcard/\{creditcardid\}/fees/\{feesid\}/execute)
-- [GET: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Retrieve](#get-/creditcard/\{creditcardid\}/fees/\{feesid\}/retrieve)
-- [PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Update](#put-/creditcard/\{creditcardid\}/billing/\{billingid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Execute](#put-/creditcard/\{creditcardid\}/billing/\{billingid\}/execute)
-- [GET: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Retrieve](#get-/creditcard/\{creditcardid\}/billing/\{billingid\}/retrieve)
-- [PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Update](#put-/creditcard/\{creditcardid\}/repayment/\{repaymentid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Execute](#put-/creditcard/\{creditcardid\}/repayment/\{repaymentid\}/execute)
-- [GET: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Retrieve](#get-/creditcard/\{creditcardid\}/repayment/\{repaymentid\}/retrieve)
-- [PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Update](#put-/creditcard/\{creditcardid\}/cardtransaction/\{cardtransactionid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Exchange](#put-/creditcard/\{creditcardid\}/cardtransaction/\{cardtransactionid\}/exchange)
-- [PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Execute](#put-/creditcard/\{creditcardid\}/cardtransaction/\{cardtransactionid\}/execute)
-- [GET: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Retrieve](#get-/creditcard/\{creditcardid\}/cardtransaction/\{cardtransactionid\}/retrieve)
-- [POST: /CreditCard/\{creditcardid\}/IssuedDevice/Initiate](#post-/creditcard/\{creditcardid\}/issueddevice/initiate)
-- [PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/creditcard/\{creditcardid\}/issueddevice/\{issueddeviceid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Exchange](#put-/creditcard/\{creditcardid\}/issueddevice/\{issueddeviceid\}/exchange)
-- [PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Request](#put-/creditcard/\{creditcardid\}/issueddevice/\{issueddeviceid\}/request)
-- [GET: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/creditcard/\{creditcardid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [POST: /CreditCard/\{creditcardid\}/CreditPlan/Initiate](#post-/creditcard/\{creditcardid\}/creditplan/initiate)
-- [PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Update](#put-/creditcard/\{creditcardid\}/creditplan/\{creditplanid\}/update)
-- [PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Request](#put-/creditcard/\{creditcardid\}/creditplan/\{creditplanid\}/request)
-- [GET: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Retrieve](#get-/creditcard/\{creditcardid\}/creditplan/\{creditplanid\}/retrieve)
-
-
 **BIAN Documentation:** [CreditCard v12](https://app.swaggerhub.com/apis/BIAN-3/CreditCard/12.0.0)
 
-### POST: /CreditCard/Initiate
+## POST: /CreditCard/Initiate
 
-**Description**
+:::info Path
+POST: /CreditCard/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment InCR Initiate a new card account
 
@@ -46,9 +20,13 @@ This API path \`/CreditCard/Initiate\` allows you to create a new credit card ac
 
 POST: If it follows REST best practices\, the name of the path '/CreditCard/Initiate' should be revised to something more resource\-oriented and clear\, such as '/payments/card\-initiation'\.
 
-### PUT: /CreditCard/\{creditcardid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpCR Update details about a card account
 
@@ -64,9 +42,13 @@ PUT: The appropriate name for the path '/CreditCard/\{creditcardid\}/Update' fol
 
 This path uses the HTTP PUT method to update a specific credit card resource identified by the \{creditcardid\} parameter within the 'CreditCards' resource collection\.
 
-### PUT: /CreditCard/\{creditcardid\}/Control
+## PUT: /CreditCard/\{creditcardid\}/Control
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Control
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment CoCR Control the processing of a card account \(e\.g\. suspend\)
 
@@ -78,9 +60,13 @@ This API path \`/CreditCard/\{creditcardid\}/Control\` allows you to update an e
 
 PUT: The name of the path '/CreditCard/\{creditcardid\}/Control' following REST best practices would typically be something like '/CreditCard/\{creditcardid\}/Actions' or '/CreditCard/\{creditcardid\}/Operations'\. This conveys the idea that the endpoint is used for performing specific actions or operations related to the credit card resource identified by the 'creditcardid'\.
 
-### GET: /CreditCard/\{creditcardid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReCR Retrieve details about a card account
 
@@ -102,9 +88,13 @@ In this naming convention:
 
 This naming convention is more consistent with RESTful API design principles and makes the endpoint more
 
-### GET: /CreditCard/\{creditcardid\}/Interest/\{interestid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve details about interest accrued to an account
 
@@ -120,9 +110,13 @@ GET: A possible name for the path could be:
 
 This name adheres to REST best practices by using lowercase letters\, separating words with dashes\, and using nouns to represent resources\.
 
-### PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpBQ Update a fee transaction applied to a card account
 
@@ -135,9 +129,13 @@ This API path\, \`/CreditCard/\{creditcardid\}/Fees/\{feesid\}/Update\`\, allows
 PUT: The name of the path should be:
 '/credit\-cards/\{creditcardId\}/fees/\{feesId\}'
 
-### PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Execute
+## PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ExBQ Apply fees to a card account
 
@@ -153,9 +151,13 @@ PUT: Following REST best practices\, the name of the path should be:
 /CreditCards/\{creditcardid\}/Fees/\{feesid\}/Payment
 \`\`\`
 
-### GET: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/Fees/\{feesid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve details about fees applied to an account
 
@@ -171,9 +173,13 @@ GET /credit\-cards/\{creditcardid\}/fees/\{feesid\}
 
 This path follows REST best practices by using lowercase letters\, using hyphens to separate words\, being specific in its resource naming\, and using the appropriate HTTP method \(GET\) for retrieval operations\.
 
-### PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpBQ Update details of a billing transaction \(invoice\)
 
@@ -185,9 +191,13 @@ This API path allows you to update the details of a billing transaction \(invoic
 
 PUT: The name of this path could be: \`PUT /credit\-cards/\{creditcardid\}/billing/\{billingid\}\`\.
 
-### PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Execute
+## PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ExBQ Execute the billing process for a card account
 
@@ -201,9 +211,13 @@ PUT: A possible name for this resource path following REST best practices would 
 
 '/payments/\{creditcardid\}/billing/\{billingid\}/process'
 
-### GET: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/Billing/\{billingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve details about a billing process for a card account
 
@@ -215,9 +229,13 @@ This API path allows you to retrieve details about a billing process associated 
 
 GET: Based on REST best practices\, the name of the path \`/CreditCard/\{creditcardid\}/Billing/\{billingid\}/Retrieve\` can be simplified to \`/credit\-cards/\{creditcardid\}/billing/\{billingid\}\`\.
 
-### PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpBQ Update a repayment transaction \(bill payment\)
 
@@ -233,9 +251,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 And the HTTP method for updating the repayment should be \`PUT\`\, as updating an existing resource is typically done with a \`PUT\` request in RESTful APIs\.
 
-### PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Execute
+## PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ExBQ Execute a repayment transaction against the card account
 
@@ -247,9 +269,13 @@ This API path allows you to execute a repayment transaction against a specific c
 
 PUT: The name of the path could be "/credit\-cards/\{creditcardid\}/repayments/\{repaymentid\}/execute" based on REST best practices\. Using lowercase letters\, separating words with hyphens\, and using plural nouns for resources are common conventions in RESTful API design\.
 
-### GET: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/Repayment/\{repaymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve detail about a repayment transaction
 
@@ -263,9 +289,13 @@ GET: The name of the path should ideally be structured in a resource\-oriented m
 
 \`/creditcards/\{creditcardid\}/repayments/\{repaymentid\}\`
 
-### PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpBQ Update a card transaction
 
@@ -279,9 +309,13 @@ PUT: If the path '/CreditCard/\{creditcardid\}/CardTransaction/\{cardtransaction
 
 '/CreditCards/\{creditcardid\}/Transactions/\{cardtransactionid\}'
 
-### PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Exchange
+## PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment EcBQ Verify\, accept etc\. a card account transaction
 
@@ -295,9 +329,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/credit\-cards/\{creditcardid\}/card\-transactions/\{cardtransactionid\}/exchange'
 
-### PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Execute
+## PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Execute
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ExBQ Execute a card account transaction
 
@@ -315,9 +353,13 @@ A suitable name for the path '/CreditCard/\{creditcardid\}/CardTransaction/\{car
 
 This path indicates that it allows actions to be performed on the specified card transaction resource\.
 
-### GET: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/CardTransaction/\{cardtransactionid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve details about a card account transaction
 
@@ -331,9 +373,13 @@ GET: The name of the path should be:
 
 '/credit\-cards/\{creditcardid\}/card\-transactions/\{cardtransactionid\}'
 
-### POST: /CreditCard/\{creditcardid\}/IssuedDevice/Initiate
+## POST: /CreditCard/\{creditcardid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /CreditCard/\{creditcardid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment InBQ Initiate/enable a type of device for the card account
 
@@ -350,9 +396,13 @@ Here are some key points considered in this naming convention:
 2\. Plural nouns: The use of plural nouns in the URL path helps to indicate that the endpoint represents a collection of resources\.
 3\. Descriptive names: Each segment of the path
 
-### PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpBQ Update details about an issued device
 
@@ -366,9 +416,13 @@ PUT: A suitable name for the path '/CreditCard/\{creditcardid\}/IssuedDevice/\{i
 
 PATCH /creditcards/\{creditcardid\}/issueddevices/\{issueddeviceid\}
 
-### PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Exchange
+## PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Exchange
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment EcBQ Accept\, reject\, verify etc\. an issued device
 
@@ -382,9 +436,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/credit\-cards/\{creditcardid\}/issued\-devices/\{issueddeviceid\}/exchange\`
 
-### PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Request
+## PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Request
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment RqBQ Request the issuance of a device \(e\.g\. a new card\)
 
@@ -396,9 +454,13 @@ This API path allows you to update an existing resource related to credit cards\
 
 PUT: A possible name for the path could be "/credit\-cards/\{creditcardid\}/issued\-devices/\{issueddeviceid\}/requests"\. This name uses lowercase letters\, separates words with hyphens\, and uses plural nouns to represent collections\, which align with REST best practices\.
 
-### GET: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve details about an issued device
 
@@ -410,9 +472,13 @@ This API path allows you to retrieve details about an issued device related to a
 
 GET: The name of the path should be '/credit\-cards/\{creditcardid\}/issued\-devices/\{issueddeviceid\}'\.
 
-### POST: /CreditCard/\{creditcardid\}/CreditPlan/Initiate
+## POST: /CreditCard/\{creditcardid\}/CreditPlan/Initiate
 
-**Description**
+:::info Path
+POST: /CreditCard/\{creditcardid\}/CreditPlan/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment InBQ Initiate a credit plan linked to the card account
 
@@ -428,9 +494,13 @@ POST: The name of the path '/CreditCard/\{creditcardid\}/CreditPlan/Initiate' sh
 
 This path is more descriptive\, uses lowercase letters\, uses hyphens to separate words\, and follows the convention of
 
-### PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Update
+## PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment UpBQ Update details of the credit plan
 
@@ -442,9 +512,13 @@ This API path allows you to update the details of a credit plan associated with 
 
 PUT: Based on REST best practices\, the name for the path '/CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Update' should be simplified to include only the essential resource it represents\. A more concise and descriptive name for the path could be '/CreditCardCreditPlanUpdate'\.
 
-### PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Request
+## PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Request
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment RqBQ Request manual intervention with a credit plan
 
@@ -458,9 +532,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/credit\-cards/\{creditcardid\}/credit\-plans/\{creditplanid\}/requests'
 
-### GET: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Retrieve
+## GET: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCard/\{creditcardid\}/CreditPlan/\{creditplanid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the scheduled maintenance and transactional activities associated with credit card product fulfillment ReBQ Retrieve details about a linked credit plan
 

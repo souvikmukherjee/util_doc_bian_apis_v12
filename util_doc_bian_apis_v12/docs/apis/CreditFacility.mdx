@@ -1,20 +1,14 @@
 # CreditFacility
 
-## Table of Contents
-- [POST: /CreditFacility/Initiate](#post-/creditfacility/initiate)
-- [PUT: /CreditFacility/\{creditfacilityid\}/Update](#put-/creditfacility/\{creditfacilityid\}/update)
-- [GET: /CreditFacility/\{creditfacilityid\}/Retrieve](#get-/creditfacility/\{creditfacilityid\}/retrieve)
-- [PUT: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Execute](#put-/creditfacility/\{creditfacilityid\}/servicefees/\{servicefeesid\}/execute)
-- [GET: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/creditfacility/\{creditfacilityid\}/servicefees/\{servicefeesid\}/retrieve)
-- [PUT: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Request](#put-/creditfacility/\{creditfacilityid\}/maintenance/\{maintenanceid\}/request)
-- [GET: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Retrieve](#get-/creditfacility/\{creditfacilityid\}/maintenance/\{maintenanceid\}/retrieve)
-
-
 **BIAN Documentation:** [CreditFacility v12](https://app.swaggerhub.com/apis/BIAN-3/CreditFacility/12.0.0)
 
-### POST: /CreditFacility/Initiate
+## POST: /CreditFacility/Initiate
 
-**Description**
+:::info Path
+POST: /CreditFacility/Initiate
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. InCR Initiate a credit facility
 
@@ -26,9 +20,13 @@ This API path allows you to create a new credit facility for a corporate custome
 
 POST: In following RESTful best practices\, the name of the path should represent a resource rather than an action\. Therefore\, a more suitable name for the path '/CreditFacility/Initiate' in a RESTful API could be '/creditFacilities' to reflect the collection of credit facilities or '/creditFacility' if referring to a single credit facility\.
 
-### PUT: /CreditFacility/\{creditfacilityid\}/Update
+## PUT: /CreditFacility/\{creditfacilityid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditFacility/\{creditfacilityid\}/Update
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. UpCR Update details for an existing credit facility
 
@@ -41,9 +39,13 @@ This API path allows you to update the details of an existing credit facility th
 PUT: The name of the path should be:
 '/credit\-facilities/\{creditfacilityid\}' \- Considering REST best practices\, the path should reflect the resource being manipulated\, i\.e\.\, 'credit\-facilities'\, and include the specific identifier for the resource\, \{creditfacilityid\}\. This name is more meaningful and follows RESTful URL conventions\.
 
-### GET: /CreditFacility/\{creditfacilityid\}/Retrieve
+## GET: /CreditFacility/\{creditfacilityid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditFacility/\{creditfacilityid\}/Retrieve
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. ReCR Retrieve details about a credit facility
 
@@ -57,9 +59,13 @@ GET: A good name for the path '/CreditFacility/\{creditfacilityid\}/Retrieve' fo
 
 GET /credit\-facilities/\{creditfacilityid\}
 
-### PUT: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Execute
+## PUT: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Execute
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. ExBQ Execute Apply Service Fee
 
@@ -73,9 +79,13 @@ PUT: The name of the path should be:
 
 '/credit\-facilities/\{creditfacilityid\}/service\-fees/\{servicefeesid\}'
 
-### GET: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditFacility/\{creditfacilityid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. ReBQ Retrieve details about a credit facility's applied fees
 
@@ -89,9 +99,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /credit\-facilities/\{creditfacilityid\}/service\-fees/\{servicefeesid\}
 
-### PUT: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Request
+## PUT: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Request
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. RqBQ Request a maintenance activity for a credit facility
 
@@ -105,9 +119,13 @@ PUT: A good name for this path following REST best practices could be:
 
 '/credit\-facilities/\{creditfacilityid\}/maintenance/\{maintenanceid\}/requests'
 
-### GET: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Retrieve
+## GET: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditFacility/\{creditfacilityid\}/Maintenance/\{maintenanceid\}/Retrieve
+:::
+
+### Description
 
 The Credit Facility Service Domain manages the Credit Facilities that a Corporate Customer has with the bank\. A Credit Facility is an agreement between the bank and a \(corporate\) customer to allow the customer to acquire asset products from the bank up to the limit of the credit facility without the need for a full due diligence and underwriting for each of these products\. ReBQ Retrieve details about maintenance processing for a credit facility
 

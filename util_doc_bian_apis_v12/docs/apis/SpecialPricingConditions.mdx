@@ -1,23 +1,14 @@
 # SpecialPricingConditions
 
-## Table of Contents
-- [PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Control](#put-/specialpricingconditions/\{specialpricingconditionsid\}/control)
-- [PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Exchange](#put-/specialpricingconditions/\{specialpricingconditionsid\}/exchange)
-- [PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Execute](#put-/specialpricingconditions/\{specialpricingconditionsid\}/execute)
-- [POST: /SpecialPricingConditions/Initiate](#post-/specialpricingconditions/initiate)
-- [GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/Retrieve](#get-/specialpricingconditions/\{specialpricingconditionsid\}/retrieve)
-- [PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Request](#put-/specialpricingconditions/\{specialpricingconditionsid\}/request)
-- [PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Update](#put-/specialpricingconditions/\{specialpricingconditionsid\}/update)
-- [POST: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/Initiate](#post-/specialpricingconditions/\{specialpricingconditionsid\}/pricingterms/initiate)
-- [GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Retrieve](#get-/specialpricingconditions/\{specialpricingconditionsid\}/pricingterms/\{pricingtermsid\}/retrieve)
-- [PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Update](#put-/specialpricingconditions/\{specialpricingconditionsid\}/pricingterms/\{pricingtermsid\}/update)
-
-
 **BIAN Documentation:** [SpecialPricingConditions v12](https://app.swaggerhub.com/apis/BIAN-3/SpecialPricingConditions/12.0.0)
 
-### PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Control
+## PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Control
 
-**Description**
+:::info Path
+PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Control
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) CoCR Control the processing of Special Pricing Conditions Directory Entry
 
@@ -29,9 +20,13 @@ This API path allows you to update an existing resource related to special prici
 
 PUT: The name of the path should be \`/special\-pricing\-conditions/\{specialpricingconditionsid\}/control\` if it followed REST best practices\.
 
-### PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Exchange
+## PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Exchange
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) EcCR Accept\, verify\, etc\. aspects of Special Pricing Conditions Directory Entry processing
 
@@ -47,9 +42,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path names should be in lowercase and separate words should be hyphenated for better readability\.
 
-### PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Execute
+## PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Execute
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) ExCR Execute an available automated action for Special Pricing Conditions Directory Entry
 
@@ -61,9 +60,13 @@ This BIAN API path allows you to update and execute a special pricing condition 
 
 PUT: The name of the path should be \`/special\-pricing\-conditions/\{specialpricingconditionsid\}/execute\` following REST best practices\. It is important to use lowercase letters and separate words with hyphens for better readability and consistency\.
 
-### POST: /SpecialPricingConditions/Initiate
+## POST: /SpecialPricingConditions/Initiate
 
-**Description**
+:::info Path
+POST: /SpecialPricingConditions/Initiate
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) InCR Instantiate a new Special Pricing Conditions Directory Entry
 
@@ -75,9 +78,13 @@ This API path allows users to create a new entry in the Special Pricing Conditio
 
 POST: The name of the path should ideally be '/special\-pricing\-conditions/initiate' following REST best practices\. It should use lowercase letters\, hyphens to separate words\, and represent the resource and action it pertains to clearly\.
 
-### GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/Retrieve
+## GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/Retrieve
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) ReCR Retrieve details about any aspect of Special Pricing Conditions Directory Entry
 
@@ -91,9 +98,13 @@ GET: The name of the path should be:
 
 '/special\-pricing\-conditions/\{specialPricingConditionsId\}'
 
-### PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Request
+## PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Request
 
-**Description**
+:::info Path
+PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Request
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) RqCR Request manual intervention or a decision with respect to Special Pricing Conditions Directory Entry
 
@@ -107,9 +118,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /SpecialPricingConditions/\{specialpricingconditionsid\}/Requests
 
-### PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Update
+## PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Update
 
-**Description**
+:::info Path
+PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/Update
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) UpCR Update details relating to Special Pricing Conditions Directory Entry
 
@@ -121,9 +136,13 @@ This API path allows you to update details related to special pricing conditions
 
 PUT: The name of the path should be '/special\-pricing\-conditions/\{specialpricingconditionsid\}'\.
 
-### POST: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/Initiate
+## POST: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/Initiate
 
-**Description**
+:::info Path
+POST: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/Initiate
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) InBQ Instantiate a new Pricing Terms
 
@@ -141,9 +160,13 @@ POST: The name of the path should be:
 
 This path follows REST best practices by being concise\, descriptive\, hierarchical\, and avoiding unnecessary nesting\.
 
-### GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Retrieve
+## GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Retrieve
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) ReBQ Retrieve details about any aspect of Pricing Terms
 
@@ -157,9 +180,13 @@ GET: The name of the path should be:
 
 '/special\-pricing\-conditions/\{specialpricingconditionsid\}/pricing\-terms/\{pricingtermsid\}'
 
-### PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Update
+## PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Update
 
-**Description**
+:::info Path
+PUT: /SpecialPricingConditions/\{specialpricingconditionsid\}/PricingTerms/\{pricingtermsid\}/Update
+:::
+
+### Description
 
 Maintain a pricing list or conditions \(with ranges and optional terms\) categorized by various dimensions to impose exceptional product pricing conditions that override standard pricing terms \(for special events/situations\) UpBQ Update details relating to Pricing Terms
 

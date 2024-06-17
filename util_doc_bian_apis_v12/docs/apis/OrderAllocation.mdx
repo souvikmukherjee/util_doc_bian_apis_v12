@@ -1,35 +1,14 @@
 # OrderAllocation
 
-## Table of Contents
-- [PUT: /OrderAllocation/\{orderallocationid\}/Control](#put-/orderallocation/\{orderallocationid\}/control)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Exchange](#put-/orderallocation/\{orderallocationid\}/exchange)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Execute](#put-/orderallocation/\{orderallocationid\}/execute)
-- [POST: /OrderAllocation/Initiate](#post-/orderallocation/initiate)
-- [GET: /OrderAllocation/\{orderallocationid\}/Notify](#get-/orderallocation/\{orderallocationid\}/notify)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Request](#put-/orderallocation/\{orderallocationid\}/request)
-- [GET: /OrderAllocation/\{orderallocationid\}/Retrieve](#get-/orderallocation/\{orderallocationid\}/retrieve)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Update](#put-/orderallocation/\{orderallocationid\}/update)
-- [PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Exchange](#put-/orderallocation/\{orderallocationid\}/applyorderallocationrules/\{applyorderallocationrulesid\}/exchange)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Exchange](#put-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/\{update\(partiallycompleted\)marketorderid\}/exchange)
-- [PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Execute](#put-/orderallocation/\{orderallocationid\}/applyorderallocationrules/\{applyorderallocationrulesid\}/execute)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Execute](#put-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/\{update\(partiallycompleted\)marketorderid\}/execute)
-- [POST: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/Initiate](#post-/orderallocation/\{orderallocationid\}/applyorderallocationrules/initiate)
-- [POST: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/Initiate](#post-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/initiate)
-- [GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Notify](#get-/orderallocation/\{orderallocationid\}/applyorderallocationrules/\{applyorderallocationrulesid\}/notify)
-- [GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Notify](#get-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/\{update\(partiallycompleted\)marketorderid\}/notify)
-- [PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Request](#put-/orderallocation/\{orderallocationid\}/applyorderallocationrules/\{applyorderallocationrulesid\}/request)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Request](#put-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/\{update\(partiallycompleted\)marketorderid\}/request)
-- [GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Retrieve](#get-/orderallocation/\{orderallocationid\}/applyorderallocationrules/\{applyorderallocationrulesid\}/retrieve)
-- [GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Retrieve](#get-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/\{update\(partiallycompleted\)marketorderid\}/retrieve)
-- [PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Update](#put-/orderallocation/\{orderallocationid\}/applyorderallocationrules/\{applyorderallocationrulesid\}/update)
-- [PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Update](#put-/orderallocation/\{orderallocationid\}/update\(partiallycompleted\)marketorder/\{update\(partiallycompleted\)marketorderid\}/update)
-
-
 **BIAN Documentation:** [OrderAllocation v12](https://app.swaggerhub.com/apis/BIAN-3/OrderAllocation/12.0.0)
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Control
+## PUT: /OrderAllocation/\{orderallocationid\}/Control
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Control
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Control Securities Allocation Procedure
 
@@ -43,9 +22,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/order\-allocations/\{orderallocationid\}/control'
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Exchange
+## PUT: /OrderAllocation/\{orderallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Exchange Securities Allocation Procedure
 
@@ -61,9 +44,13 @@ PUT: The name of the path should be:
 
 where \`\{orderId\}\` is the unique identifier for the order within the 'Order Allocation' resource\.
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Execute
+## PUT: /OrderAllocation/\{orderallocationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Execute
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Execute Securities Allocation Procedure
 
@@ -75,9 +62,13 @@ This BIAN API path is for updating and executing the allocation of partially ful
 
 PUT: Following REST best practices\, the path should be named something like '/orders/\{orderId\}/execute'\. This path is more concise and describes the resource and action being performed in a clear manner\.
 
-### POST: /OrderAllocation/Initiate
+## POST: /OrderAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /OrderAllocation/Initiate
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Initiate Securities Allocation Procedure
 
@@ -89,9 +80,13 @@ This API path \`/OrderAllocation/Initiate\` allows users to initiate the allocat
 
 POST: If the path '/OrderAllocation/Initiate' follows REST best practices\, it should be named in a resource\-oriented manner\. A suitable name for this path could be '/orders/initiate'\. This naming convention reflects a more resource\-focused approach and follows REST principles by using nouns to represent resources and avoiding action\-oriented names\.
 
-### GET: /OrderAllocation/\{orderallocationid\}/Notify
+## GET: /OrderAllocation/\{orderallocationid\}/Notify
 
-**Description**
+:::info Path
+GET: /OrderAllocation/\{orderallocationid\}/Notify
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Notify Securities Allocation Procedure
 
@@ -104,9 +99,13 @@ This API path is used to retrieve information related to securities allocation f
 GET: A more RESTful name for the path '/OrderAllocation/\{orderallocationid\}/Notify' could be:
 '/order\-allocations/\{orderallocationid\}/notifications'
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Request
+## PUT: /OrderAllocation/\{orderallocationid\}/Request
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Request
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Request Securities Allocation Procedure
 
@@ -122,9 +121,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be all lowercase\, use hyphens to separate words\, and use plural nouns to represent collections of resources\.
 
-### GET: /OrderAllocation/\{orderallocationid\}/Retrieve
+## GET: /OrderAllocation/\{orderallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OrderAllocation/\{orderallocationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Retrieve Securities Allocation Procedure
 
@@ -136,9 +139,13 @@ This API path allows you to retrieve information about the allocation of securit
 
 GET: The name of the path should be \`/order\-allocations/\{orderAllocationId\}\`\.
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Update
+## PUT: /OrderAllocation/\{orderallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Update
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Update Securities Allocation Procedure
 
@@ -150,9 +157,13 @@ This BIAN API path \`/OrderAllocation/\{orderallocationid\}/Update\` with the PU
 
 PUT: The name of the path should be '/orders/\{order\_id\}/allocation'\.
 
-### PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Exchange
+## PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Exchange
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Exchange Apply Order Allocation Rules Workstep
 
@@ -166,9 +177,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 \`/order\-allocations/\{orderAllocationId\}/apply\-order\-allocation\-rules/\{applyOrderAllocationRulesId\}/exchange\`
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Exchange
+## PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Exchange
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Exchange Update \(Partially Completed\) Market Order Workstep
 
@@ -182,9 +197,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/orders/\{order\_id\}/update\-market\-order/\{market\_order\_id\}/exchange'
 
-### PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Execute
+## PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Execute
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Execute Apply Order Allocation Rules Workstep
 
@@ -198,9 +217,13 @@ PUT: Based on REST best practices\, the name of the path should be something mor
 
 A more appropriate name for the path could be something like '/order\-allocations/\{orderallocationid\}/rule\-applications/\{applyorderallocationrulesid\}/execution'\. This name provides a clearer understanding of the resources being accessed and maintains the RESTful convention of using nouns to represent resources\.
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Execute
+## PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Execute
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Execute
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Execute Update \(Partially Completed\) Market Order Workstep
 
@@ -214,9 +237,13 @@ PUT: Based on REST best practices\, the name of the path should focus on resourc
 
 \`/order\-allocations/\{orderallocationid\}/partially\-completed\-market\-orders/\{partiallycompletedmarketorderid\}/execute\`
 
-### POST: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/Initiate
+## POST: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/Initiate
 
-**Description**
+:::info Path
+POST: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/Initiate
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Initiate Apply Order Allocation Rules Workstep
 
@@ -232,9 +259,13 @@ POST: A suitable name for the path would be:
 
 Following REST best practices\, it is recommended to use all lowercase letters\, separate words with dashes\, and include resource identifiers \(such as "order\-allocations" and "orderallocationid"\) for readability and clarity\.
 
-### POST: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/Initiate
+## POST: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/Initiate
 
-**Description**
+:::info Path
+POST: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/Initiate
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Initiate Update \(Partially Completed\) Market Order Workstep
 
@@ -254,9 +285,13 @@ A suggested name for the path could be:
 
 This name clearly indicates the resource endpoints for OrderAllocations and MarketOrders and the action to initiate the market order\.
 
-### GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Notify
+## GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Notify
 
-**Description**
+:::info Path
+GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Notify
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Notify Apply Order Allocation Rules Workstep
 
@@ -272,9 +307,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, separate words with hyphens\, and be as descriptive and concise as possible\.
 
-### GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Notify
+## GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Notify
 
-**Description**
+:::info Path
+GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Notify
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Notify Update \(Partially Completed\) Market Order Workstep
 
@@ -290,9 +329,13 @@ GET: Based on REST best practices\, the name of the path should be as follows:
 
 '/orders/\{orderallocationid\}/updates/\{updateid\}/notify'
 
-### PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Request
+## PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Request
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Request
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Request Apply Order Allocation Rules Workstep
 
@@ -306,9 +349,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 \`/order\-allocations/\{orderallocationid\}/apply\-order\-allocation\-rules/\{applyorderallocationrulesid\}/request\`
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Request
+## PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Request
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Request
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Request Update \(Partially Completed\) Market Order Workstep
 
@@ -322,9 +369,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path could b
 
 PUT /order\-allocations/\{orderallocationid\}/partially\-completed\-market\-orders/\{update\(partiallycompleted\)marketorderid\}/request
 
-### GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Retrieve
+## GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Retrieve Apply Order Allocation Rules Workstep
 
@@ -338,9 +389,13 @@ GET: Based on REST best practices\, a more appropriate name for the path would b
 
 '/order\-allocations/\{orderallocationid\}/apply\-rules/\{applyorderallocationrulesid\}/retrieve'
 
-### GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Retrieve
+## GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Retrieve Update \(Partially Completed\) Market Order Workstep
 
@@ -356,9 +411,13 @@ GET /order\-allocations/\{orderallocationid\}/partially\-completed\-market\-orde
 
 This naming convention follows the standard RESTful practice of using lowercase letters\, separating words with hyphens\, and focusing on the resources being accessed in a hierarchical structure\.
 
-### PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Update
+## PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Update
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}/Update
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Update Apply Order Allocation Rules Workstep
 
@@ -372,9 +431,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 \`PUT /OrderAllocation/\{orderallocationid\}/ApplyOrderAllocationRules/\{applyorderallocationrulesid\}\`
 
-### PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Update
+## PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /OrderAllocation/\{orderallocationid\}/Update\(PartiallyCompleted\)MarketOrder/\{update\(partiallycompleted\)marketorderid\}/Update
+:::
+
+### Description
 
 This Service Domain allocates partially fulfilled market trades Update Update \(Partially Completed\) Market Order Workstep
 

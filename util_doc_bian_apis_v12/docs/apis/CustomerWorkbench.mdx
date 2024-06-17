@@ -1,31 +1,14 @@
 # CustomerWorkbench
 
-## Table of Contents
-- [POST: /CustomerWorkbench/Initiate](#post-/customerworkbench/initiate)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/Update](#put-/customerworkbench/\{customerworkbenchid\}/update)
-- [GET: /CustomerWorkbench/\{customerworkbenchid\}/Retrieve](#get-/customerworkbench/\{customerworkbenchid\}/retrieve)
-- [POST: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/Initiate](#post-/customerworkbench/\{customerworkbenchid\}/swupdate/initiate)
-- [GET: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/\{swupdateid\}/Retrieve](#get-/customerworkbench/\{customerworkbenchid\}/swupdate/\{swupdateid\}/retrieve)
-- [POST: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/Initiate](#post-/customerworkbench/\{customerworkbenchid\}/broadcast/initiate)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/\{broadcastid\}/Request](#put-/customerworkbench/\{customerworkbenchid\}/broadcast/\{broadcastid\}/request)
-- [POST: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/Initiate](#post-/customerworkbench/\{customerworkbenchid\}/browsing/initiate)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Execute](#put-/customerworkbench/\{customerworkbenchid\}/browsing/\{browsingid\}/execute)
-- [GET: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Retrieve](#get-/customerworkbench/\{customerworkbenchid\}/browsing/\{browsingid\}/retrieve)
-- [POST: /CustomerWorkbench/\{customerworkbenchid\}/Contact/Initiate](#post-/customerworkbench/\{customerworkbenchid\}/contact/initiate)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Execute](#put-/customerworkbench/\{customerworkbenchid\}/contact/\{contactid\}/execute)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Request](#put-/customerworkbench/\{customerworkbenchid\}/contact/\{contactid\}/request)
-- [GET: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Retrieve](#get-/customerworkbench/\{customerworkbenchid\}/contact/\{contactid\}/retrieve)
-- [POST: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/Initiate](#post-/customerworkbench/\{customerworkbenchid\}/productandserviceaccess/initiate)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Execute](#put-/customerworkbench/\{customerworkbenchid\}/productandserviceaccess/\{productandserviceaccessid\}/execute)
-- [PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Request](#put-/customerworkbench/\{customerworkbenchid\}/productandserviceaccess/\{productandserviceaccessid\}/request)
-- [GET: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Retrieve](#get-/customerworkbench/\{customerworkbenchid\}/productandserviceaccess/\{productandserviceaccessid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerWorkbench v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerWorkbench/12.0.0)
 
-### POST: /CustomerWorkbench/Initiate
+## POST: /CustomerWorkbench/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerWorkbench/Initiate
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device InCR Initiate a customer workbench operating session
 
@@ -37,9 +20,13 @@ This API path allows users to start a session on the customer workbench platform
 
 POST: In accordance with REST best practices\, the name of the path '/CustomerWorkbench/Initiate' should ideally be renamed to '/customer\-workbench/initiate' to use lowercase letters and hyphens for better readability and consistency\.
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/Update
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/Update
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device UpCR Update details of a workbench session
 
@@ -53,9 +40,13 @@ PUT: The recommended naming convention for this path following RESTful best prac
 
 '/customer\-workbenches/\{customerworkbenchid\}'
 
-### GET: /CustomerWorkbench/\{customerworkbenchid\}/Retrieve
+## GET: /CustomerWorkbench/\{customerworkbenchid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerWorkbench/\{customerworkbenchid\}/Retrieve
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ReCR Retrieve details about the workbench session
 
@@ -69,9 +60,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/customer\-workbenches/\{customerWorkbenchId\}'
 
-### POST: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/Initiate
+## POST: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/Initiate
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device InBQ Initiate a SW update
 
@@ -85,9 +80,13 @@ POST: A suitable name for the path '/CustomerWorkbench/\{customerworkbenchid\}/S
 
 '/customer\-workbenches/\{customerworkbenchid\}/software\-updates/initiate'
 
-### GET: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/\{swupdateid\}/Retrieve
+## GET: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/\{swupdateid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerWorkbench/\{customerworkbenchid\}/SWUpdate/\{swupdateid\}/Retrieve
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ReBQ Retrieve details about a SW update
 
@@ -101,9 +100,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/customer\-workbenches/\{customerworkbenchid\}/software\-updates/\{swupdateid\}'
 
-### POST: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/Initiate
+## POST: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/Initiate
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device InBQ Initiate a workstation broadcast
 
@@ -115,9 +118,13 @@ This API path allows for the initiation of a workstation broadcast in the Custom
 
 POST: The name of the path should be a noun representing the resource\, so it could be something like '/customer\-workbench\-broadcasts'\.
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/\{broadcastid\}/Request
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/\{broadcastid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/Broadcast/\{broadcastid\}/Request
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ReBQ Retrieve details about a workstation broadcast
 
@@ -135,9 +142,13 @@ Here are some key points to consider while naming the path:
 2\. Use plural nouns for collections \(e\.g\.\, broadcasts instead of broadcast\)\.
 3\. Use hyphens to separate words within a segment
 
-### POST: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/Initiate
+## POST: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/Initiate
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device InBQ Initiate a browsing session
 
@@ -158,9 +169,13 @@ In this naming convention:
 
 This naming convention aligns with REST best practices for creating predictable and user\-friendly URLs\.
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Execute
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Execute
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ExBQ Execute tasks within a browsing session
 
@@ -178,9 +193,13 @@ PUT: Based on REST best practices\, a suitable name for the given path could be:
 
 This naming convention uses lowercase letters and hyphens to separate words in the path\, which is a common practice in REST API design\.
 
-### GET: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Retrieve
+## GET: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerWorkbench/\{customerworkbenchid\}/Browsing/\{browsingid\}/Retrieve
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ReBQ Retrieve details about a browsing session
 
@@ -194,9 +213,13 @@ GET: A more suitable and RESTful name for this path following best practices wou
 
 GET /customer\-workbenches/\{customer\-workbench\-id\}/browsings/\{browsing\-id\}
 
-### POST: /CustomerWorkbench/\{customerworkbenchid\}/Contact/Initiate
+## POST: /CustomerWorkbench/\{customerworkbenchid\}/Contact/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerWorkbench/\{customerworkbenchid\}/Contact/Initiate
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device InBQ Initiate a contact with the bank
 
@@ -212,9 +235,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, all lowercase letters should be used\, words should be separated by hyphens\, and the path segments should be descriptive and follow a hierarchical structure\.
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Execute
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Execute
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ExBQ Execute an automated action within the contact \(e\.g\. self serve\)
 
@@ -228,9 +255,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/customers/\{customerId\}/contacts/\{contactId\}/execute'
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Request
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Request
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device RqBQ Request manual intervention in a contact \(e\.g\. request service\)
 
@@ -244,9 +275,13 @@ PUT: A possible name following REST best practices for this path could be:
 
 '/customer\-workbenches/\{customerworkbenchid\}/contacts/\{contactid\}/requests'
 
-### GET: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Retrieve
+## GET: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerWorkbench/\{customerworkbenchid\}/Contact/\{contactid\}/Retrieve
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ReBQ Retrieve details about a contact
 
@@ -260,9 +295,13 @@ GET: A good name for the path '/CustomerWorkbench/\{customerworkbenchid\}/Contac
 
 GET /customerWorkbenches/\{customerWorkbenchId\}/contacts/\{contactId\}
 
-### POST: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/Initiate
+## POST: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/Initiate
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device InBQ Initiate product/service access within the contact
 
@@ -276,9 +315,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 \`/customer\-workbenches/\{customerWorkbenchId\}/product\-and\-service\-access/initiate\`
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Execute
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Execute
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ExBQ Execute an automated action with the product/service access \(e\.g\. self serve\)
 
@@ -291,9 +334,13 @@ This API path allows you to update an existing resource related to customer work
 PUT: Following REST best practices\, the name of the path should be:
 '/customer\-workbenches/\{customerworkbenchid\}/product\-and\-service\-access/\{productandserviceaccessid\}/execute'
 
-### PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Request
+## PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Request
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device RqBQ Request manual intervention in a product/service access \(e\.g\. request service\)
 
@@ -305,9 +352,13 @@ This API path allows you to update an existing resource related to a customer's 
 
 PUT: The name of the path should be \`/customer\-workbench/\{customerworkbenchid\}/product\-and\-service\-access/\{productandserviceaccessid\}/request\` in kebab case to follow REST best practices\.
 
-### GET: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Retrieve
+## GET: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerWorkbench/\{customerworkbenchid\}/ProductandServiceAccess/\{productandserviceaccessid\}/Retrieve
+:::
+
+### Description
 
 This service domain represents customer side devices\. Most commonly providing a customer access portal to the banks products and services through any suitable channel and device ReBQ Retrieve details about product/service access
 

@@ -1,62 +1,14 @@
 # MortgageLoan
 
-## Table of Contents
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Control](#put-/mortgageloan/\{mortgageloanid\}/control)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Exchange](#put-/mortgageloan/\{mortgageloanid\}/exchange)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Execute](#put-/mortgageloan/\{mortgageloanid\}/execute)
-- [POST: /MortgageLoan/Initiate](#post-/mortgageloan/initiate)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/retrieve)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Request](#put-/mortgageloan/\{mortgageloanid\}/request)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Exchange](#put-/mortgageloan/\{mortgageloanid\}/billing/\{billingid\}/exchange)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Exchange](#put-/mortgageloan/\{mortgageloanid\}/fees/\{feesid\}/exchange)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Exchange](#put-/mortgageloan/\{mortgageloanid\}/lien/\{lienid\}/exchange)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Exchange](#put-/mortgageloan/\{mortgageloanid\}/payments/\{paymentsid\}/exchange)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Exchange](#put-/mortgageloan/\{mortgageloanid\}/sweep/\{sweepid\}/exchange)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Billing/Initiate](#post-/mortgageloan/\{mortgageloanid\}/billing/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Collateral/Initiate](#post-/mortgageloan/\{mortgageloanid\}/collateral/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Deposits/Initiate](#post-/mortgageloan/\{mortgageloanid\}/deposits/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Fees/Initiate](#post-/mortgageloan/\{mortgageloanid\}/fees/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/Initiate](#post-/mortgageloan/\{mortgageloanid\}/financialinstrument/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/Initiate](#post-/mortgageloan/\{mortgageloanid\}/issueddevice/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Lien/Initiate](#post-/mortgageloan/\{mortgageloanid\}/lien/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Payments/Initiate](#post-/mortgageloan/\{mortgageloanid\}/payments/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Sweep/Initiate](#post-/mortgageloan/\{mortgageloanid\}/sweep/initiate)
-- [POST: /MortgageLoan/\{mortgageloanid\}/Withdrawals/Initiate](#post-/mortgageloan/\{mortgageloanid\}/withdrawals/initiate)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/billing/\{billingid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/collateral/\{collateralid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/deposits/\{depositsid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/fees/\{feesid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/financialaccounting/\{financialaccountingid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/financialinstrument/\{financialinstrumentid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/interest/\{interestid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/lien/\{lienid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/payments/\{paymentsid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/sweep/\{sweepid\}/retrieve)
-- [GET: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve](#get-/mortgageloan/\{mortgageloanid\}/withdrawals/\{withdrawalsid\}/retrieve)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Request](#put-/mortgageloan/\{mortgageloanid\}/collateral/\{collateralid\}/request)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Request](#put-/mortgageloan/\{mortgageloanid\}/fees/\{feesid\}/request)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/billing/\{billingid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/collateral/\{collateralid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/deposits/\{depositsid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/fees/\{feesid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/financialaccounting/\{financialaccountingid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/financialinstrument/\{financialinstrumentid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/interest/\{interestid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/issueddevice/\{issueddeviceid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/lien/\{lienid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/payments/\{paymentsid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/sweep/\{sweepid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Update](#put-/mortgageloan/\{mortgageloanid\}/withdrawals/\{withdrawalsid\}/update)
-- [PUT: /MortgageLoan/\{mortgageloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/mortgageloan/\{mortgageloanid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-
-
 **BIAN Documentation:** [MortgageLoan v12](https://app.swaggerhub.com/apis/BIAN-3/MortgageLoan/12.0.0)
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Control
+## PUT: /MortgageLoan/\{mortgageloanid\}/Control
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Control
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments CoCR Control the processing of Mortgage Loan Arrangement
 
@@ -70,9 +22,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /MortgageLoans/\{mortgageloanid\}/Control
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Exchange
+## PUT: /MortgageLoan/\{mortgageloanid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments EcCR Accept\, verify\, etc\. aspects of Mortgage Loan Arrangement processing
 
@@ -88,9 +44,13 @@ PUT: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/Exchange' fo
 
 This follows the convention of using plural nouns for resources and using HTTP methods to define the actions performed on those resources\, in this case\, creating a new exchange related to a specific mortgage loan\.
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Execute
+## PUT: /MortgageLoan/\{mortgageloanid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Execute
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ExCR Execute an available automated action for Mortgage Loan Arrangement
 
@@ -104,9 +64,13 @@ PUT: A RESTful path should typically be named using nouns to represent the resou
 
 A more appropriate name for this path could be '/mortgage\-loans/\{mortgageloanid\}/execution'\. This new path name uses lowercase letters and dashed to separate words for better readability and adherence to REST convention\.
 
-### POST: /MortgageLoan/Initiate
+## POST: /MortgageLoan/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InCR Instantiate a new Mortgage Loan Facility
 
@@ -120,9 +84,13 @@ POST: To follow REST best practices\, the name of the path should be in lower ca
 
 So\, the name of the path '/MortgageLoan/Initiate' could be changed to '/mortgage\-loan/initiate' to adhere to REST conventions\.
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReCR Retrieve details about any aspect of Mortgage Loan Arrangement
 
@@ -134,9 +102,13 @@ This API path allows you to retrieve information about a specific Mortgage Loan 
 
 GET: The name of the path should be: GET /mortgage\-loans/\{mortgageloanid\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Request
+## PUT: /MortgageLoan/\{mortgageloanid\}/Request
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Request
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments RqCR Request manual intervention or a decision with respect to Mortgage Loan Arrangement
 
@@ -152,9 +124,13 @@ PUT: The name of the path '/MortgageLoan/\{mortgageloanid\}/Request' should idea
 
 Following REST best practices\, it is recommended to use lowercase letters\, hyphens to separate words\, and plural nouns for resource names\.
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpCR Update details relating to Mortgage Loan Arrangement
 
@@ -168,9 +144,13 @@ PUT: The name of the path should be:
 
 PUT /mortgage\-loans/\{mortgageloanid\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Exchange
+## PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments EcBQ Accept\, verify\, etc\. aspects of Billing processing
 
@@ -184,9 +164,13 @@ PUT: A possible name for the path '/MortgageLoan/\{mortgageloanid\}/Billing/\{bi
 
 '/mortgage\-loans/\{mortgageloanid\}/billing/\{billingid\}/exchange'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Exchange
+## PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments EcBQ Accept\, verify\, etc\. aspects of Fees processing
 
@@ -198,9 +182,13 @@ This API path allows you to update information related to the fees associated wi
 
 PUT: A possible name for this path could be \`/mortgage\-loans/\{mortgageLoanId\}/fees/\{feesId\}/exchange\`\. This path follows REST best practices by using lowercase letters\, hyphens to separate words\, and utilizing descriptive names for resources\.
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Exchange
+## PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments EcBQ Accept\, verify\, etc\. aspects of Lien processing
 
@@ -214,9 +202,13 @@ PUT: A suggested name for the path could be:
 
 /MortgageLoans/\{mortgageloanId\}/Liens/\{lienId\}/Exchanges
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Exchange
+## PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments EcBQ Accept\, verify\, etc\. aspects of Payments processing
 
@@ -230,9 +222,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/mortgage\-loans/\{mortgageloanid\}/payments/\{paymentsid\}/exchange'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Exchange
+## PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments EcBQ Accept\, verify\, etc\. aspects of Sweep processing
 
@@ -248,9 +244,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it's recommended to use plural nouns for collections\, so "MortgageLoans" and "Sweeps" have been used in their plural form\. Each segment in the path should be clear and descriptive\, representing the resource it points to\, which is why "Exchanges" is used to represent the the
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Billing/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Billing/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Billing/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Billing
 
@@ -264,9 +264,13 @@ POST: A possible RESTful path name following best practices could be '/mortgage\
 
 This path name follows best practices by using lowercase letters\, hyphens to separate words\, and using plural nouns for resources \('mortgage\-loans' instead of 'mortgage\-loan'\)\.
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Collateral/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Collateral/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Collateral/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Collateral
 
@@ -280,9 +284,13 @@ POST: Based on REST best practices\, a more appropriate name for the path '/Mort
 
 '/mortgage\-loans/\{mortgageloanid\}/collateral/initiate'
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Deposits/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Deposits/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Deposits/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Deposits
 
@@ -296,9 +304,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 \`/mortgage\-loans/\{mortgageloanid\}/deposits/initiate\`
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Fees/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Fees/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Fees/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Fees
 
@@ -314,9 +326,13 @@ POST: The name of the path '/MortgageLoan/\{mortgageloanid\}/Fees/Initiate' shou
 
 This name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using plural nouns for collections when appropriate\.
 
-### POST: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Financial Instrument
 
@@ -330,9 +346,13 @@ POST: A good name for this path following REST best practices would be:
 
 /MortgageLoans/\{mortgageloanid\}/FinancialInstruments/Initiate
 
-### POST: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments Initiate Provision of Issued Device
 
@@ -348,9 +368,13 @@ POST /mortgage\-loans/\{mortgageloanid\}/issued\-devices/initiate
 
 This naming convention uses lowercase letters\, hyphens for word separation\, and plural nouns for resource names\. It also specifies the HTTP method \(POST\) to indicate the action of initiating an issued device for a specific mortgage loan ID\.
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Lien/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Lien/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Lien/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Lien
 
@@ -364,9 +388,13 @@ POST: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/Lien/Initia
 
 '/mortgage\-loans/\{mortgageloanid\}/liens/initiate'
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Payments/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Payments/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Payments
 
@@ -380,9 +408,13 @@ POST: A suitable name for this path following REST best practices could be:
 
 POST /mortgage\-loans/\{mortgageloanid\}/payments
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Sweep/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Sweep/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Sweep/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Sweep
 
@@ -398,9 +430,13 @@ POST: A conforming path for this endpoint in compliance with REST best practices
 
 This naming follows conventions for using lowercase letters\, using hyphens for readability\, and using plural nouns for consistent resource naming\.
 
-### POST: /MortgageLoan/\{mortgageloanid\}/Withdrawals/Initiate
+## POST: /MortgageLoan/\{mortgageloanid\}/Withdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /MortgageLoan/\{mortgageloanid\}/Withdrawals/Initiate
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments InBQ Instantiate a new Withdrawals
 
@@ -414,9 +450,13 @@ POST: A more RESTful name for the path '/MortgageLoan/\{mortgageloanid\}/Withdra
 
 '/mortgage\-loans/\{mortgageloanid\}/withdrawals/initiate'
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Billing
 
@@ -430,9 +470,13 @@ GET: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/Billing/\{bi
 
 GET /mortgage\-loans/\{mortgageloanid\}/billings/\{billingid\}
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Collateral
 
@@ -450,9 +494,13 @@ GET /mortgage\-loans/\{mortgageloanid\}/collaterals/\{collateralid\}
 
 This name follows REST best practices by using lowercase letters\, hyphens for readability\, and utilizing plural nouns for collections\.
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Deposits
 
@@ -468,9 +516,13 @@ GET /MortgageLoans/\{mortgageloanid\}/Deposits/\{depositsid\}
 
 This path follows the convention of using nouns to represent resources \(mortgageloan\, deposits\)\, and using HTTP methods like GET to specify the action on those resources\.
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Fees
 
@@ -484,9 +536,13 @@ GET: A more RESTful path name for '/MortgageLoan/\{mortgageloanid\}/Fees/\{feesi
 
 '/mortgage\-loans/\{mortgageloanid\}/fees/\{feesid\}'
 
-### GET: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Financial Accounting
 
@@ -500,9 +556,13 @@ GET: In RESTful best practices\, resource URIs should be designed to be intuitiv
 
 '/mortgage\-loans/\{mortgage\-loan\-id\}/financial\-accounting/\{financial\-accounting\-id\}/retrieve'
 
-### GET: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Financial Instrument
 
@@ -516,9 +576,13 @@ GET: The name of this path should ideally be:
 
 GET /mortgage\-loans/\{mortgageloanid\}/financial\-instruments/\{financialinstrumentid\}
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Interest
 
@@ -534,9 +598,13 @@ GET /mortgage\-loans/\{mortgageloanid\}/interests/\{interestid\}
 
 This makes use of lowercase letters and hyphens to separate words\, and it clearly indicates the resource being retrieved with the HTTP verb included\.
 
-### GET: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments Retrieve Details about Issued Device
 
@@ -550,9 +618,13 @@ GET: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/IssuedDevice
 
 GET /mortgage\-loans/\{mortgageloanid\}/issued\-devices/\{issueddeviceid\}
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Lien
 
@@ -569,9 +641,13 @@ A suggestion for the name of the path could be:
 
 This naming convention follows REST best practices and makes the path more descriptive and readable\.
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Payments
 
@@ -585,9 +661,13 @@ GET: A suitable name for the given path would be:
 
 GET /mortgage\-loans/\{mortgageloanid\}/payments/\{paymentsid\}
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Sweep
 
@@ -599,9 +679,13 @@ This BIAN API path allows you to retrieve details about a specific aspect of a "
 
 GET: A suitable name for this path following REST best practices would be: GET /mortgage\-loans/\{mortgageloanid\}/sweeps/\{sweepid\}
 
-### GET: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
+## GET: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments ReBQ Retrieve details about any aspect of Withdrawals
 
@@ -617,9 +701,13 @@ GET: A suitable name for the path following REST best practices could be:
 GET /mortgage\-loans/\{mortgageLoanId\}/withdrawals/\{withdrawalId\}
 \`\`\`
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Request
+## PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Request
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Request
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments RqBQ Request manual intervention or a decision with respect to Collateral
 
@@ -633,9 +721,13 @@ PUT: The RESTful path should be named as follows:
 
 '/mortgage\-loans/\{mortgageloanid\}/collaterals/\{collateralid\}/requests'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Request
+## PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Request
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Request
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments RqBQ Request manual intervention or a decision with respect to Fees
 
@@ -649,9 +741,13 @@ PUT: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/Fees/\{feesi
 
 '/mortgage\-loans/\{mortgageloanid\}/fees/\{feesid\}/requests'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Billing/\{billingid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Billing
 
@@ -669,9 +765,13 @@ PUT /mortgage\-loans/\{mortgageloanid\}/billing/\{billingid\}
 
 This naming convention reflects the HTTP method \(PUT\)\, the resource hierarchy \(mortgage loans and billing\)\, and the action being performed \(update\)\. By using lowercase letters and separating words with hyphens\, the path becomes
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Collateral/\{collateralid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Collateral
 
@@ -685,9 +785,13 @@ PUT: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/Collateral/\
 
 PATCH /mortgage\-loans/\{mortgageloanid\}/collateral/\{collateralid\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Deposits/\{depositsid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Deposits
 
@@ -701,9 +805,13 @@ PUT: A suitable name for this path following REST best practices would be:
 
 '/loans/\{mortgageloanid\}/deposits/\{depositsid\}'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Fees
 
@@ -715,9 +823,13 @@ This API pathway allows you to update details related to fees associated with a 
 
 PUT: A suitable RESTful path name for '/MortgageLoan/\{mortgageloanid\}/Fees/\{feesid\}/Update' could be '/mortgage\-loans/\{mortgageloanid\}/fees/\{feesid\}'\.
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Financial Accounting
 
@@ -731,9 +843,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PUT /mortgage\-loans/\{mortgageloanid\}/financial\-accounting/\{financialaccountingid\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Financial Instrument
 
@@ -749,9 +865,13 @@ PUT /mortgage\-loans/\{mortgageloanid\}/financial\-instruments/\{financialinstru
 
 This naming convention follows REST principles by using lowercase letters\, hyphens for readability\, and describes the action being performed \(in this case\, updating a specific financial instrument associated with a mortgage loan\)\.
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Interest/\{interestid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Interest
 
@@ -765,9 +885,13 @@ PUT: A suitable name for the path '/MortgageLoan/\{mortgageloanid\}/Interest/\{i
 
 '/mortgage\-loans/\{mortgageloanid\}/interests/\{interestid\}'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments Update Details of Issued Device Allocated to This Account
 
@@ -781,9 +905,13 @@ PUT: The name of the path should be:
 
 PUT /mortgage\-loans/\{mortgageLoanId\}/issued\-devices/\{issuedDeviceId\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Lien/\{lienid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Lien
 
@@ -796,9 +924,13 @@ This API path allows you to update details related to a specific lien associated
 PUT: Following REST best practices\, the path should be named as follows:
 '/mortgage\-loans/\{mortgageLoanId\}/liens/\{lienId\}'
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Payments
 
@@ -813,9 +945,13 @@ PUT /mortgage\-loans/\{mortgageloanid\}/payments/\{paymentsid\}
 
 In RESTful API design\, it is recommended to use lowercase letters\, hyphens for word separation in URI paths\, and plural nouns for resource names\. Additionally\, the HTTP method PUT is commonly used for updating an existing resource\.
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Sweep/\{sweepid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Sweep
 
@@ -829,9 +965,13 @@ PUT: A good name for this path according to REST best practices would be:
 
 PUT /mortgage\-loans/\{mortgageloanid\}/sweeps/\{sweepid\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Update
+## PUT: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/Withdrawals/\{withdrawalsid\}/Update
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments UpBQ Update details relating to Withdrawals
 
@@ -845,9 +985,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 PUT /mortgage\-loans/\{mortgageloanid\}/withdrawals/\{withdrawalsid\}
 
-### PUT: /MortgageLoan/\{mortgageloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /MortgageLoan/\{mortgageloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MortgageLoan/\{mortgageloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 Fulfillment of a loan product for  the purpose of property purchase\. Note different servicing patterns can be applied to interest calculations and principle and interest repayments Execute Authorization of Booking
 

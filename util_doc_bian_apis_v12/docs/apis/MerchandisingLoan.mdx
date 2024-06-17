@@ -1,62 +1,14 @@
 # MerchandisingLoan
 
-## Table of Contents
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Control](#put-/merchandisingloan/\{merchandisingloanid\}/control)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Exchange](#put-/merchandisingloan/\{merchandisingloanid\}/exchange)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Execute](#put-/merchandisingloan/\{merchandisingloanid\}/execute)
-- [POST: /MerchandisingLoan/Initiate](#post-/merchandisingloan/initiate)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/retrieve)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Request](#put-/merchandisingloan/\{merchandisingloanid\}/request)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Exchange](#put-/merchandisingloan/\{merchandisingloanid\}/billing/\{billingid\}/exchange)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Exchange](#put-/merchandisingloan/\{merchandisingloanid\}/servicefees/\{servicefeesid\}/exchange)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Exchange](#put-/merchandisingloan/\{merchandisingloanid\}/lien/\{lienid\}/exchange)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Exchange](#put-/merchandisingloan/\{merchandisingloanid\}/payments/\{paymentsid\}/exchange)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Exchange](#put-/merchandisingloan/\{merchandisingloanid\}/sweep/\{sweepid\}/exchange)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Billing/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/billing/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/collateral/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/deposits/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/servicefees/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/financialinstrument/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/issueddevice/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Lien/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/lien/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/payments/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/sweep/initiate)
-- [POST: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/Initiate](#post-/merchandisingloan/\{merchandisingloanid\}/withdrawals/initiate)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/billing/\{billingid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/collateral/\{collateralid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/deposits/\{depositsid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/servicefees/\{servicefeesid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/financialaccounting/\{financialaccountingid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/financialinstrument/\{financialinstrumentid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/interest/\{interestid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/issueddevice/\{issueddeviceid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/lien/\{lienid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/payments/\{paymentsid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/sweep/\{sweepid\}/retrieve)
-- [GET: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve](#get-/merchandisingloan/\{merchandisingloanid\}/withdrawals/\{withdrawalsid\}/retrieve)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Request](#put-/merchandisingloan/\{merchandisingloanid\}/collateral/\{collateralid\}/request)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Request](#put-/merchandisingloan/\{merchandisingloanid\}/servicefees/\{servicefeesid\}/request)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/billing/\{billingid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/collateral/\{collateralid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/deposits/\{depositsid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/servicefees/\{servicefeesid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/financialaccounting/\{financialaccountingid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/financialinstrument/\{financialinstrumentid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/interest/\{interestid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/issueddevice/\{issueddeviceid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/lien/\{lienid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/payments/\{paymentsid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/sweep/\{sweepid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Update](#put-/merchandisingloan/\{merchandisingloanid\}/withdrawals/\{withdrawalsid\}/update)
-- [PUT: /MerchandisingLoan/\{merchandisingloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute](#put-/merchandisingloan/\{merchandisingloanid\}/bookingauthorization/\{bookingauthorizationid\}/execute)
-
-
 **BIAN Documentation:** [MerchandisingLoan v12](https://app.swaggerhub.com/apis/BIAN-3/MerchandisingLoan/12.0.0)
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Control
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Control
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Control
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan CoCR Control the processing of Merchandising Loan Facility
 
@@ -70,9 +22,13 @@ PUT: The name of the path following REST best practices should be:
 
 '/merchandising\-loans/\{merchandisingLoanId\}/control'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Exchange
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan EcCR Accept\, verify\, etc\. aspects of Merchandising Loan Facility processing
 
@@ -88,9 +44,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path uses lowercase letters\, separates words with hyphens for readability\, and includes plural nouns to indicate a collection of resources \(exchanges\)\. Additionally\, path parameters are enclosed in curly braces and use descriptive names\, such as 'merchandisingLoanId'\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Execute
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Execute
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ExCR Execute an available automated action for Merchandising Loan Facility
 
@@ -102,9 +62,13 @@ This BIAN API path allows you to execute an available automated action for a spe
 
 PUT: The name of the path \`/MerchandisingLoan/\{merchandisingloanid\}/Execute\` should be renamed to \`/merchandising\-loans/\{merchandisingloanid\}/execute\` following REST best practices\. This naming convention uses lowercase letters\, hyphens for readability\, and avoids capitalized or camelCase words\.
 
-### POST: /MerchandisingLoan/Initiate
+## POST: /MerchandisingLoan/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InCR Instantiate a new Merchandising Loan Facility
 
@@ -116,9 +80,13 @@ This API path allows you to create a new Merchandising Loan Facility\, which is 
 
 POST: The name of the path '/MerchandisingLoan/Initiate' should be more descriptive and follow RESTful conventions by using nouns to represent resources\. Considering this\, a more appropriate name for the path could be '/merchandising\-loans' to represent the collection of merchandising loans or '/merchandising\-loans/initiate' to indicate an action on the merchandising loans resource\.
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReCR Retrieve details about any aspect of Merchandising Loan Facility
 
@@ -130,9 +98,13 @@ This BIAN API path allows you to retrieve details about a specific Merchandising
 
 GET: The name of the path should be \`/merchandising\-loans/\{merchandisingloanid\}\`\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Request
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Request
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan RqCR Request manual intervention or a decision with respect to Merchandising Loan Facility
 
@@ -148,9 +120,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using all lowercase letters\, using plural nouns for resource names\, separating words with dashes\, and using the proper singular/plural form for the resource names\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpCR Update details relating to Merchandising Loan Facility
 
@@ -162,9 +138,13 @@ This BIAN API path\, /MerchandisingLoan/\{merchandisingloanid\}/Update with the 
 
 PUT: The RESTful path should be named as follows: '/merchandising\-loans/\{merchandisingloanid\}'\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Exchange
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan EcBQ Accept\, verify\, etc\. aspects of Billing processing
 
@@ -178,9 +158,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/merchandising\-loans/\{merchandisingloanid\}/billings/\{billingid\}/exchange'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Exchange
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan EcBQ Accept\, verify\, etc\. aspects of Fees processing
 
@@ -194,9 +178,13 @@ PUT: The name of the path should be \`/merchandising\-loans/\{merchandisingloani
 
 Following REST best practices\, the path should use lowercase letters and hyphens to separate words\. The path should be descriptive and use plural nouns to represent collections of resources\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Exchange
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan EcBQ Accept\, verify\, etc\. aspects of Lien processing
 
@@ -210,9 +198,13 @@ PUT: A good name for the path \`/MerchandisingLoan/\{merchandisingloanid\}/Lien/
 
 \`/merchandising\-loans/\{merchandisingloanid\}/liens/\{lienid\}/exchanges\`
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Exchange
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan EcBQ Accept\, verify\, etc\. aspects of Payments processing
 
@@ -226,9 +218,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/merchandising\-loans/\{merchandisingloanid\}/payments/\{paymentsid\}/exchange'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Exchange
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Exchange
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan EcBQ Accept\, verify\, etc\. aspects of Sweep processing
 
@@ -242,9 +238,13 @@ PUT: A suitable name for the path '/MerchandisingLoan/\{merchandisingloanid\}/Sw
 
 '/merchandising\-loans/\{merchandisingloanid\}/sweeps/\{sweepid\}/exchange'
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Billing/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Billing/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Billing/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Billing
 
@@ -263,9 +263,13 @@ In this naming convention:
 2\. Separate words with hyphens for better readability
 3\. Use plural nouns for collections \(e\.g\.\, 'merchandising\-loans
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Collateral
 
@@ -281,9 +285,13 @@ POST: Following REST best practices\, the name of the path should be:
 /MerchandisingLoans/\{merchandisingloanid\}/CollateralInitiation
 \`\`\`
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Deposits
 
@@ -299,9 +307,13 @@ POST: A more RESTful naming convention for the path '/MerchandisingLoan/\{mercha
 
 This naming convention uses lowercase letters\, hyphens to separate words\, and follows a hierarchical structure that is more aligned with RESTful practices\.
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Fees
 
@@ -315,9 +327,13 @@ POST: The name of the path '/MerchandisingLoan/\{merchandisingloanid\}/ServiceFe
 
 '/merchandising\-loans/\{merchandisingloanid\}/service\-fees/initiate'
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Financial Instrument
 
@@ -331,9 +347,13 @@ POST: Based on REST best practices\, a more appropriate naming convention for th
 
 '/merchandising\-loans/\{merchandisingloanid\}/financial\-instruments/initiate'
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan Initiate Provision of Issued Device
 
@@ -347,9 +367,13 @@ POST: A more RESTful name for the path '/MerchandisingLoan/\{merchandisingloanid
 
 '/merchandising\-loans/\{merchandisingloanid\}/issued\-devices/initiate'
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Lien/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Lien/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Lien/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Lien
 
@@ -369,9 +393,13 @@ Here are some key points to consider for following REST best practices:
 \- Use plural nouns for collections \(e\.g\.\, 'merchandising\-loans' instead of 'merchandising\-loan'\)
 \- Use specific resource names instead of generic terms \(e
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Payments
 
@@ -383,9 +411,13 @@ This API path allows you to initiate a new payment related to a specific merchan
 
 POST: If the path '/MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate' followed REST best practices\, it could be named '/merchandising\-loans/\{merchandisingloanid\}/payments/initiate' to adhere to resource naming conventions and use lowercase letters with hyphens for readability\.
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Sweep
 
@@ -397,9 +429,13 @@ This BIAN API path\, /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate\,
 
 POST: The name of the path could be '/merchandising\-loans/\{merchandisingLoanId\}/sweep/initiate' following REST best practices\.
 
-### POST: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/Initiate
+## POST: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/Initiate
 
-**Description**
+:::info Path
+POST: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/Initiate
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan InBQ Instantiate a new Withdrawals
 
@@ -412,9 +448,13 @@ This API path allows you to initiate a new withdrawal request for a merchandisin
 POST: The name of the path should be:  
 '/merchandising\-loans/\{merchandisingLoanId\}/withdrawals/initiate'
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Billing
 
@@ -428,9 +468,13 @@ GET: The name of the path '/MerchandisingLoan/\{merchandisingloanid\}/Billing/\{
 
 GET /merchandising\-loans/\{merchandisingloanid\}/billing/\{billingid\}
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Collateral
 
@@ -442,9 +486,13 @@ This API path allows you to retrieve details about a specific aspect of the coll
 
 GET: Based on REST best practices\, the name of the path could be '/merchandising\-loans/\{merchandisingloanid\}/collaterals/\{collateralid\}'\.
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Deposits
 
@@ -457,9 +505,13 @@ This API path is used to retrieve details about deposits related to a specific m
 GET: Following REST best practices\, the name of the path should be:
 '/merchandising\-loans/\{merchandisingloanid\}/deposits/\{depositsid\}'
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Fees
 
@@ -475,9 +527,13 @@ GET: Based on REST best practices\, the name of the path '/MerchandisingLoan/\{m
 
 This naming convention uses lowercase letters\, separate words with hyphens\, and accurately describes the resources being accessed\.
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Financial Accounting
 
@@ -491,9 +547,13 @@ GET: A suitable name for this path\, following REST best practices\, could be:
 
 GET /merchandisingloans/\{merchandisingloanid\}/financialaccounting/\{financialaccountingid\}
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Financial Instrument
 
@@ -507,9 +567,13 @@ GET: The name of the path should be:
 
 GET /merchandising\-loans/\{merchandisingloanid\}/financial\-instruments/\{financialinstrumentid\}
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Interest
 
@@ -523,9 +587,13 @@ GET: Based on REST best practices\, the name for the path '/MerchandisingLoan/\{
 
 GET '/merchandising\-loans/\{merchandisingloanid\}/interests/\{interestid\}'
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan Retrieve Details about Issued Device
 
@@ -539,9 +607,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 GET /merchandising\-loans/\{merchandisingloanid\}/issued\-devices/\{issueddeviceid\}
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Lien
 
@@ -555,9 +627,13 @@ GET: The name of the path should be:
 
 '/merchandising\-loans/\{merchandisingloanid\}/liens/\{lienid\}'
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Payments
 
@@ -573,9 +649,13 @@ GET /merchandising\-loans/\{merchandisingloanid\}/payments/\{paymentid\}
 
 This path indicates the method \(GET\) and the specific resources being targeted in a clear and consistent manner\. It also uses lowercase letters and hyphens for better readability\.
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Sweep
 
@@ -591,9 +671,13 @@ GET: A suitable name for the given path would be:
 
 Following REST best practices\, it's important to use lowercase letters\, separate words with hyphens or underscores for better readability\, and use plural nouns for endpoints representing collections\. Additionally\, the path should use nouns to represent resources and include appropriate HTTP methods to indicate the action being performed\.
 
-### GET: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
+## GET: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan ReBQ Retrieve details about any aspect of Withdrawals
 
@@ -607,9 +691,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/merchandising\-loans/\{merchandisingloanid\}/withdrawals/\{withdrawalsid\}'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Request
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Request
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan RqBQ Request manual intervention or a decision with respect to Collateral
 
@@ -623,9 +711,13 @@ PUT: The name of the path following REST best practices should be:
 
 /MerchandisingLoans/\{merchandisingLoanId\}/Collaterals/\{collateralId\}/Requests
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Request
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Request
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Request
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan RqBQ Request manual intervention or a decision with respect to Fees
 
@@ -639,9 +731,13 @@ PUT: A RESTful path should be descriptive and follow a resource\-oriented naming
 
 1\. \*\*Use Nouns for Resources\*\*: Each part of the path should represent a noun \(resource\)\. In this case\, "MerchandisingLoan" and "ServiceFees" are good nouns\, but "
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Billing
 
@@ -653,9 +749,13 @@ This API path allows you to update billing details related to a specific billing
 
 PUT: Based on REST best practices\, the name of the path '/MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update' should be simplified to '/merchandisingloans/\{merchandisingloanid\}/billing/\{billingid\}'\. The path should describe the main resource in a plural form \('merchandisingloans'\)\, followed by IDs of specific resources \('\{merchandisingloanid\}' and '\{billingid\}'\)\. This naming convention is
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Collateral
 
@@ -669,9 +769,13 @@ PUT: The name of the path should be:
 
 '/merchandising\-loans/\{merchandisingLoanId\}/collaterals/\{collateralId\}'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Deposits
 
@@ -685,9 +789,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 '/merchandising\-loans/\{merchandisingLoanId\}/deposits/\{depositsId\}/update'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan Update details relating to Fees
 
@@ -703,9 +811,13 @@ PUT /merchandising\-loans/\{merchandisingloanid\}/service\-fees/\{servicefeesid\
 
 This naming convention follows the standard RESTful practice of using HTTP methods to indicate the action to be performed on a specific resource\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Financial Accounting
 
@@ -719,9 +831,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /merchandising\-loans/\{merchandisingloanid\}/financial\-accounting/\{financialaccountingid\}
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Financial Instrument
 
@@ -737,9 +853,13 @@ PUT: The naming of a RESTful resource should be descriptive and follow path conv
 
 This naming convention follows the REST best practices by using plural nouns for resources\, camelCase for multi\-word resource names\, and descriptive identifiers for parameters in curly braces\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Interest
 
@@ -753,9 +873,13 @@ PUT: The name of the path should be '/merchandising\-loans/\{merchandisingLoanId
 
 REST best practices recommend using lowercase letters and hyphens to separate words in the path names\. Also\, path parameters like 'merchandisingLoanId' and 'interestId' should be in camelCase format instead of using capital letters\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan Update Details of Issued Device Allocated to This Account
 
@@ -767,9 +891,13 @@ This API path allows you to update the details of a device that has been allocat
 
 PUT: The name of the path could be '/merchandising\-loans/\{merchandisingloanid\}/issued\-devices/\{issueddeviceid\}'\.
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Lien
 
@@ -783,9 +911,13 @@ PUT: A potential name for the path could be:
 
 '/merchandising\-loans/\{merchandisingLoanId\}/liens/\{lienId\}'
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Payments
 
@@ -799,9 +931,13 @@ PUT: The name of the path should be:
 
 PUT /merchandising\-loans/\{merchandising\_loan\_id\}/payments/\{payment\_id\}
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Sweep
 
@@ -815,9 +951,13 @@ PUT: The name of the path should be:
 
 PUT /MerchandisingLoans/\{merchandisingloanid\}/Sweeps/\{sweepid\}
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Update
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Update
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Update
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan UpBQ Update details relating to Withdrawals
 
@@ -833,9 +973,13 @@ PUT: Based on REST best practices\, the path should be named using nouns and sho
 
 This path name follows RESTful conventions by using lowercase letters\, hyphens for readability\, and
 
-### PUT: /MerchandisingLoan/\{merchandisingloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+## PUT: /MerchandisingLoan/\{merchandisingloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MerchandisingLoan/\{merchandisingloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
+:::
+
+### Description
 
 Fulfillment of loan product used in the purchase of a larger merchandise item such as a car or boat\. The purchased item is typically treated as collateral for the loan Execute authorization of booking
 

@@ -1,49 +1,14 @@
 # CorporateFinance
 
-## Table of Contents
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/Control](#put-/corporatefinance/\{corporatefinanceid\}/control)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/Exchange](#put-/corporatefinance/\{corporatefinanceid\}/exchange)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/Execute](#put-/corporatefinance/\{corporatefinanceid\}/execute)
-- [POST: /CorporateFinance/Initiate](#post-/corporatefinance/initiate)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/Notify](#get-/corporatefinance/\{corporatefinanceid\}/notify)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/Request](#put-/corporatefinance/\{corporatefinanceid\}/request)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/Retrieve](#get-/corporatefinance/\{corporatefinanceid\}/retrieve)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/Update](#put-/corporatefinance/\{corporatefinanceid\}/update)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Exchange](#put-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/\{capitalstructuringid\}/exchange)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Exchange](#put-/corporatefinance/\{corporatefinanceid\}/strategicfunding/\{strategicfundingid\}/exchange)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Exchange](#put-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/\{tacticalfundingid\}/exchange)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Exchange](#put-/corporatefinance/\{corporatefinanceid\}/taxoptimization/\{taxoptimizationid\}/exchange)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Execute](#put-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/\{capitalstructuringid\}/execute)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Execute](#put-/corporatefinance/\{corporatefinanceid\}/strategicfunding/\{strategicfundingid\}/execute)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Execute](#put-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/\{tacticalfundingid\}/execute)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Execute](#put-/corporatefinance/\{corporatefinanceid\}/taxoptimization/\{taxoptimizationid\}/execute)
-- [POST: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/Initiate](#post-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/initiate)
-- [POST: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/Initiate](#post-/corporatefinance/\{corporatefinanceid\}/strategicfunding/initiate)
-- [POST: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/Initiate](#post-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/initiate)
-- [POST: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/Initiate](#post-/corporatefinance/\{corporatefinanceid\}/taxoptimization/initiate)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Notify](#get-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/\{capitalstructuringid\}/notify)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Notify](#get-/corporatefinance/\{corporatefinanceid\}/strategicfunding/\{strategicfundingid\}/notify)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Notify](#get-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/\{tacticalfundingid\}/notify)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Notify](#get-/corporatefinance/\{corporatefinanceid\}/taxoptimization/\{taxoptimizationid\}/notify)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Request](#put-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/\{capitalstructuringid\}/request)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Request](#put-/corporatefinance/\{corporatefinanceid\}/strategicfunding/\{strategicfundingid\}/request)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Request](#put-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/\{tacticalfundingid\}/request)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Request](#put-/corporatefinance/\{corporatefinanceid\}/taxoptimization/\{taxoptimizationid\}/request)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Retrieve](#get-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/\{capitalstructuringid\}/retrieve)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Retrieve](#get-/corporatefinance/\{corporatefinanceid\}/strategicfunding/\{strategicfundingid\}/retrieve)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Retrieve](#get-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/\{tacticalfundingid\}/retrieve)
-- [GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve](#get-/corporatefinance/\{corporatefinanceid\}/taxoptimization/\{taxoptimizationid\}/retrieve)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Update](#put-/corporatefinance/\{corporatefinanceid\}/capitalstructuring/\{capitalstructuringid\}/update)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Update](#put-/corporatefinance/\{corporatefinanceid\}/strategicfunding/\{strategicfundingid\}/update)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Update](#put-/corporatefinance/\{corporatefinanceid\}/tacticalfunding/\{tacticalfundingid\}/update)
-- [PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Update](#put-/corporatefinance/\{corporatefinanceid\}/taxoptimization/\{taxoptimizationid\}/update)
-
-
 **BIAN Documentation:** [CorporateFinance v12](https://app.swaggerhub.com/apis/BIAN-3/CorporateFinance/12.0.0)
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/Control
+## PUT: /CorporateFinance/\{corporatefinanceid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Control Corporate Finance Services Advice
 
@@ -55,9 +20,13 @@ This API path allows you to update information related to controlling corporate 
 
 PUT: The path in a RESTful API design should be descriptive\, specific\, and resource\-oriented\. Following REST best practices\, the name of the path '/CorporateFinance/\{corporatefinanceid\}/Control' could be simplified to '/corporate\-finances/\{corporatefinanceid\}/controls' for better clarity and consistency\.
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/Exchange
+## PUT: /CorporateFinance/\{corporatefinanceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Exchange Corporate Finance Services Advice
 
@@ -71,9 +40,13 @@ PUT: The name of the path should be:
 
 '/corporate\-finances/\{corporatefinanceid\}/exchanges'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/Execute
+## PUT: /CorporateFinance/\{corporatefinanceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Execute Corporate Finance Services Advice
 
@@ -91,9 +64,13 @@ POST /CorporateFinance/\{corporatefinanceid\}/Actions/Execute
 
 By including the 'Actions' segment in the path\, it helps to indicate that an action is being performed on the specific corporate
 
-### POST: /CorporateFinance/Initiate
+## POST: /CorporateFinance/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateFinance/Initiate
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Initiate Corporate Finance Services Advice
 
@@ -105,9 +82,13 @@ This API path allows users to create and initiate a new resource for providing f
 
 POST: If the path '/CorporateFinance/Initiate' followed REST best practices\, it should be named based on the resource it represents\. Following REST conventions\, the path name should be a noun that represents the resource being worked with\. For example\, a suitable name for this path could be '/CorporateFinances' or '/Initiations'\. Both names are clearer and more aligned with REST principles\.
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/Notify
+## GET: /CorporateFinance/\{corporatefinanceid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Notify Corporate Finance Services Advice
 
@@ -123,9 +104,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 Note that all letters are in lower case and words are separated by hyphens for readability and consistency\.
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/Request
+## PUT: /CorporateFinance/\{corporatefinanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Request Corporate Finance Services Advice
 
@@ -141,9 +126,13 @@ PUT: Based on REST best practices\, the name of the path should be structured as
 
 It is recommended to use plural nouns for resource names in RESTful APIs\.
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/Retrieve
+## GET: /CorporateFinance/\{corporatefinanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Retrieve Corporate Finance Services Advice
 
@@ -159,9 +148,13 @@ GET: If it followed all REST best practices\, the name of the path should be:
 /CorporateFinance/\{corporatefinanceid\}
 \`\`\`
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/Update
+## PUT: /CorporateFinance/\{corporatefinanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Update Corporate Finance Services Advice
 
@@ -173,9 +166,13 @@ This BIAN API path allows you to update an existing resource related to corporat
 
 PUT: The name of the path should be '/CorporateFinance/\{corporatefinanceid\}'\. This is because in the REST architecture\, the path should represent a resource and the HTTP methods \(such as PUT\, POST\, DELETE\) should be used to perform operations on that resource\. In this case\, the resource is a specific corporate finance entity identified by the \{corporatefinanceid\}\, and the specific operation being performed is an update\, which is typically done using the HTTP PUT method\. So\, the path '/Corporate
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Exchange
+## PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Exchange Capital Structuring Topic
 
@@ -189,9 +186,13 @@ PUT: The name of the path should be:
 
 '/CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Exchanges'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Exchange
+## PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Exchange Strategic Funding Topic
 
@@ -203,9 +204,13 @@ This API path allows you to update an existing resource related to Corporate Fin
 
 PUT: The recommended name for the path would be: '/corporate\-finances/\{corporatefinanceid\}/strategic\-fundings/\{strategicfundingid\}/exchanges'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Exchange
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Exchange Tactical Funding Topic
 
@@ -221,9 +226,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, use plural nouns for collections\, separate words with hyphens for better readability\, and keep the path descriptive while representing the resource hierarchy\.
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Exchange
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Exchange Tax Optimization Topic
 
@@ -237,9 +246,13 @@ PUT: The name of the path could be:
 
 '/corporate\-finance/\{corporatefinanceid\}/tax\-optimization/\{taxoptimizationid\}/exchange'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Execute
+## PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Execute Capital Structuring Topic
 
@@ -253,9 +266,13 @@ PUT: Based on REST best practices\, a more appropriate naming convention for the
 
 '/corporate\-finances/\{corporatefinanceid\}/capital\-structuring/\{capitalstructuringid\}/execute'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Execute
+## PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Execute Strategic Funding Topic
 
@@ -269,9 +286,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Execution
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Execute
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Execute Tactical Funding Topic
 
@@ -287,9 +308,13 @@ PUT: The name of the path should be:
 
 According to REST best practices\, the path should use lowercase letters and hyphens for better readability and consistency\.
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Execute
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Execute Tax Optimization Topic
 
@@ -303,9 +328,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-finance/\{corporatefinanceid\}/tax\-optimization/\{taxoptimizationid\}/execute'
 
-### POST: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/Initiate
+## POST: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/Initiate
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Initiate Capital Structuring Topic
 
@@ -319,9 +348,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/Initiate
 
-### POST: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/Initiate
+## POST: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/Initiate
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Initiate Strategic Funding Topic
 
@@ -337,9 +370,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and words should be separated by hyphens for increased readability and consistency\.
 
-### POST: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/Initiate
+## POST: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/Initiate
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Initiate Tactical Funding Topic
 
@@ -355,9 +392,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 This naming convention follows the guidelines of using lowercase letters\, hyphens to separate words\, and meaningful\, descriptive names that reflect the resource hierarchy\.
 
-### POST: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/Initiate
+## POST: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/Initiate
 
-**Description**
+:::info Path
+POST: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/Initiate
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Initiate Tax Optimization Topic
 
@@ -372,9 +413,13 @@ POST: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with hyphens\, and conveying a clear and descriptive structure\.
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Notify
+## GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Notify Capital Structuring Topic
 
@@ -396,9 +441,13 @@ Here are the reasons for this naming convention:
 
 3\. Use plural nouns for resource names: The
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Notify
+## GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Notify Strategic Funding Topic
 
@@ -414,9 +463,13 @@ GET: The name of the path '/CorporateFinance/\{corporatefinanceid\}/StrategicFun
 
 This path name uses lowercase letters\, hyphens to separate words\, and plural nouns for resource collections\, which are commonly recommended conventions in REST
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Notify
+## GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Notify Tactical Funding Topic
 
@@ -434,9 +487,13 @@ GET: A suitable name for the path would be:
 
 This path name follows REST best practices by using nouns to represent resources and using sub\-resources to denote relationships between resources\. The path is clear and descriptive\, making it easy to understand and follow RESTful principles\.
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Notify
+## GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Notify Tax Optimization Topic
 
@@ -450,9 +507,13 @@ GET: The name of the path should be:
 
 /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Notify
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Request
+## PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Request Capital Structuring Topic
 
@@ -468,9 +529,13 @@ PUT: Following REST best practices\, the name of the path should be:
 /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Requests
 \`\`\`
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Request
+## PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Request Strategic Funding Topic
 
@@ -488,9 +553,13 @@ PUT: A suitable name for this path following REST best practices would be:
 
 It's recommended to use a plural noun for endpoints that represent a collection of resources\, and 'Requests' implies that it deals with a collection of requests related to strategic funding within the context of corporate finance\.
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Request
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Request Tactical Funding Topic
 
@@ -504,9 +573,13 @@ PUT: A suitable name for the path /CorporateFinance/\{corporatefinanceid\}/Tacti
 
 /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Requests
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Request
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Request Tax Optimization Topic
 
@@ -518,9 +591,13 @@ This API path allows you to update an existing resource related to tax optimizat
 
 PUT: A RESTful naming convention for the given path could be '/corporate\-finance/\{corporatefinanceid\}/tax\-optimizations/\{taxoptimizationid\}/requests'\. This naming style reflects the hierarchy and relationships between resources while using lowercase letters\, hyphens for readability\, and plural nouns for collections\.
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Retrieve
+## GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Retrieve Capital Structuring Topic
 
@@ -534,9 +611,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-finances/\{corporatefinanceid\}/capital\-structurings/\{capitalstructuringid\}'
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Retrieve
+## GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Retrieve Strategic Funding Topic
 
@@ -548,9 +629,13 @@ This BIAN API path is used to retrieve information about a specific strategic fu
 
 GET: The name of the path should be: \`/corporate\-finance/\{corporatefinanceid\}/strategic\-funding/\{strategicfundingid\}\`\.
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Retrieve
+## GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Retrieve Tactical Funding Topic
 
@@ -564,9 +649,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 GET /corporate\-finances/\{corporatefinanceid\}/tactical\-fundings/\{tacticalfundingid\}
 
-### GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve
+## GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Retrieve Tax Optimization Topic
 
@@ -580,9 +669,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /corporate\-finance/\{corporatefinanceid\}/tax\-optimization/\{taxoptimizationid\}
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Update
+## PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/CapitalStructuring/\{capitalstructuringid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Update Capital Structuring Topic
 
@@ -596,9 +689,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/corporate\-finance/\{corporatefinanceid\}/capital\-structuring/\{capitalstructuringid\}'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Update
+## PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfundingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Update Strategic Funding Topic
 
@@ -614,9 +711,13 @@ PUT /CorporateFinance/\{corporatefinanceid\}/StrategicFunding/\{strategicfunding
 
 This path follows the best practices by using the HTTP method PUT to update a specific resource within the hierarchy of CorporateFinance and StrategicFunding\.
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Update
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TacticalFunding/\{tacticalfundingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Update Tactical Funding Topic
 
@@ -630,9 +731,13 @@ PUT: The name of the path should be:
 
 '/corporate\-finance/\{corporatefinanceid\}/tactical\-funding/\{tacticalfundingid\}'
 
-### PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Update
+## PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorporateFinance/\{corporatefinanceid\}/TaxOptimization/\{taxoptimizationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the provision of a broad range of financial advisory services to corporate clients Update Tax Optimization Topic
 

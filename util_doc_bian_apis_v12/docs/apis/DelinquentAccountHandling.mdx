@@ -1,25 +1,14 @@
 # DelinquentAccountHandling
 
-## Table of Contents
-- [POST: /DelinquentAccountHandling/Initiate](#post-/delinquentaccounthandling/initiate)
-- [PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Update](#put-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/update)
-- [GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Retrieve](#get-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/retrieve)
-- [GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Assessment/\{assessmentid\}/Retrieve](#get-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/assessment/\{assessmentid\}/retrieve)
-- [POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/Initiate](#post-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/contact/initiate)
-- [PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Request](#put-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/contact/\{contactid\}/request)
-- [GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Retrieve](#get-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/contact/\{contactid\}/retrieve)
-- [POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/Initiate](#post-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/payment/initiate)
-- [PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Update](#put-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/payment/\{paymentid\}/update)
-- [GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Retrieve](#get-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/payment/\{paymentid\}/retrieve)
-- [PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Update](#put-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/resolution/\{resolutionid\}/update)
-- [GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Retrieve](#get-/delinquentaccounthandling/\{delinquentaccounthandlingid\}/resolution/\{resolutionid\}/retrieve)
-
-
 **BIAN Documentation:** [DelinquentAccountHandling v12](https://app.swaggerhub.com/apis/BIAN-3/DelinquentAccountHandling/12.0.0)
 
-### POST: /DelinquentAccountHandling/Initiate
+## POST: /DelinquentAccountHandling/Initiate
 
-**Description**
+:::info Path
+POST: /DelinquentAccountHandling/Initiate
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections InCR Initiate delinquent account processing
 
@@ -35,9 +24,13 @@ POST: If the path '/DelinquentAccountHandling/Initiate' followed REST best pract
 
 2\. '/account\-actions' \[POST\]: This path name is more generic and can be used for various account
 
-### PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Update
+## PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Update
 
-**Description**
+:::info Path
+PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Update
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections UpCR Update details of delinquent account processing
 
@@ -49,9 +42,13 @@ This API path allows you to update the details of handling delinquent accounts\.
 
 PUT: The name of the path should be: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}
 
-### GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Retrieve
+## GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections ReCR Retrieve details about a delinquent account procedure
 
@@ -65,9 +62,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /delinquent\-account\-handling/\{delinquentaccounthandlingid\}
 
-### GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Assessment/\{assessmentid\}/Retrieve
+## GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Assessment/\{assessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Assessment/\{assessmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections ReBQ Retrieve details about a delinquent account assessment
 
@@ -81,9 +82,13 @@ GET: Based on RESTful best practices\, a more appropriate name for the path coul
 
 GET /delinquent\-account\-handling/\{delinquentaccounthandlingid\}/assessments/\{assessmentid\}
 
-### POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/Initiate
+## POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/Initiate
 
-**Description**
+:::info Path
+POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/Initiate
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections InBQ Initiate contact with the customer for a delinquent account
 
@@ -101,9 +106,13 @@ PUT /delinquent\-account\-handling/\{delinquent\-account\-handling\-id\}/contact
 
 Following REST best practices\, the path should use lowercase letters\, separated by hyphens\, and should be descriptive and use nouns rather than verbs\. It should also include the HTTP method that should be used for the operation\.
 
-### PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Request
+## PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Request
 
-**Description**
+:::info Path
+PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Request
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections RqBQ Request contact processing for an active delinquent account procedure
 
@@ -117,9 +126,13 @@ PUT: A possible name for the path following REST best practices could be:
 
 /delinquent\-account\-handlings/\{delinquentaccounthandlingid\}/contacts/\{contactid\}/requests
 
-### GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Retrieve
+## GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Contact/\{contactid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections ReBQ Retrieve details about a contact
 
@@ -133,9 +146,13 @@ GET: A possible name for this path following REST best practices could be:
 
 GET /delinquent\-account\-handling/\{delinquentaccounthandlingid\}/contacts/\{contactid\}
 
-### POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/Initiate
+## POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/Initiate
 
-**Description**
+:::info Path
+POST: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/Initiate
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections InBQ Initiate payment processing against the delinquent account
 
@@ -153,9 +170,13 @@ POST: A good RESTful name for the given path could be:
 
 This name reflects the hierarchy of resources\, uses hyphens for readability\, and is more concise and clear\.
 
-### PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Update
+## PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Update
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections UpBQ Update a payment transaction
 
@@ -169,9 +190,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 PUT /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}
 
-### GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Retrieve
+## GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Payment/\{paymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections ReBQ Retrieve details about a payment made against the delinquent account
 
@@ -187,9 +212,13 @@ GET: The name of the path should be:
 /delinquent\-account\-handlings/\{delinquent\-account\-handling\-id\}/payments/\{payment\-id\}
 \`\`\`
 
-### PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Update
+## PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Update
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections UpBQ Update a resolution plan
 
@@ -207,9 +236,13 @@ PUT: Based on REST best practices\, the name of the path should reflect the reso
 
 This path clearly identifies the resource being updated \(a resolution for a delinquent account\) and follows good RESTful design principles\.
 
-### GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Retrieve
+## GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /DelinquentAccountHandling/\{delinquentaccounthandlingid\}/Resolution/\{resolutionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles delinquent accounts \(typically for active credit/charge cards\) for follow\-up of payments due through periodic review and contacts\. This process ends when the account is cancelled and is transferred to Collections ReBQ Retrieve details about a delinquent account recovery plan
 

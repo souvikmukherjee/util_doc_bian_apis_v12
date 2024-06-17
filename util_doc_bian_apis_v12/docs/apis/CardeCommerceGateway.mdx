@@ -1,25 +1,14 @@
 # CardeCommerceGateway
 
-## Table of Contents
-- [POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/Initiate](#post-/cardecommercegateway/\{cardecommercegatewayid\}/cardtransaction/initiate)
-- [PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Update](#put-/cardecommercegateway/\{cardecommercegatewayid\}/cardtransaction/\{cardtransactionid\}/update)
-- [GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Retrieve](#get-/cardecommercegateway/\{cardecommercegatewayid\}/cardtransaction/\{cardtransactionid\}/retrieve)
-- [PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Update](#put-/cardecommercegateway/\{cardecommercegatewayid\}/transactionbatch/\{transactionbatchid\}/update)
-- [POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/Initiate](#post-/cardecommercegateway/\{cardecommercegatewayid\}/transactionbatch/initiate)
-- [GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Retrieve](#get-/cardecommercegateway/\{cardecommercegatewayid\}/transactionbatch/\{transactionbatchid\}/retrieve)
-- [POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/Initiate](#post-/cardecommercegateway/\{cardecommercegatewayid\}/cardauthentication/initiate)
-- [PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Update](#put-/cardecommercegateway/\{cardecommercegatewayid\}/cardauthentication/\{cardauthenticationid\}/update)
-- [GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Retrieve](#get-/cardecommercegateway/\{cardecommercegatewayid\}/cardauthentication/\{cardauthenticationid\}/retrieve)
-- [POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/Initiate](#post-/cardecommercegateway/\{cardecommercegatewayid\}/transactionauthorization/initiate)
-- [PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update](#put-/cardecommercegateway/\{cardecommercegatewayid\}/transactionauthorization/\{transactionauthorizationid\}/update)
-- [GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve](#get-/cardecommercegateway/\{cardecommercegatewayid\}/transactionauthorization/\{transactionauthorizationid\}/retrieve)
-
-
 **BIAN Documentation:** [CardeCommerceGateway v12](https://app.swaggerhub.com/apis/BIAN-3/CardeCommerceGateway/12.0.0)
 
-### POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/Initiate
+## POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/Initiate
 
-**Description**
+:::info Path
+POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. InBQ Initiate a card transaction \(initiated at merchant location\)
 
@@ -35,9 +24,13 @@ POST: The name of the path you mentioned should ideally be:
 
 This name follows REST best practices by using lowercase letters\, separating words with dashes\, and clearly indicating the resource hierarchy\.
 
-### PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Update
+## PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. UpBQ Update details of a card transaction
 
@@ -51,9 +44,13 @@ PUT: The name of the path should be:
 
 '/carde\-commerce\-gateways/\{carde\-commerce\-gateway\-id\}/card\-transactions/\{card\-transaction\-id\}'
 
-### GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Retrieve
+## GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardTransaction/\{cardtransactionid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. ReBQ Retrieve details about a card transaction
 
@@ -67,9 +64,13 @@ GET: The path should be named as follows considering REST best practices:
 
 GET /cardecommercegateways/\{cardecommercegatewayid\}/cardtransactions/\{cardtransactionid\}
 
-### PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Update
+## PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. UpBQ Update details of a batch of card transactions
 
@@ -82,9 +83,13 @@ This API path allows you to update the details of a batch of card transactions w
 PUT: The name of the path should be:
 '/carde\-commerce\-gateways/\{cardecommercegatewayid\}/transaction\-batches/\{transactionbatchid\}'
 
-### POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/Initiate
+## POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/Initiate
 
-**Description**
+:::info Path
+POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. InBQ Initiate a batch of card transaction \(initiated at merchant location\)
 
@@ -102,9 +107,13 @@ POST: The name of the path should be:
 
 This name follows REST best practices by using plural nouns for resource names\, using lowercase letters\, and utilizing camel case for multi\-word resource names\.
 
-### GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Retrieve
+## GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionBatch/\{transactionbatchid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. ReBQ Retrieve details about a batch of card transactions
 
@@ -118,9 +127,13 @@ GET: A more suitable name for the given path '/CardeCommerceGateway/\{cardecomme
 
 GET /carde\-commerce\-gateways/\{cardecommercegatewayid\}/transaction\-batches/\{transactionbatchid\}
 
-### POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/Initiate
+## POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/Initiate
 
-**Description**
+:::info Path
+POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. InBQ Initiate card authentication \(routed to issuing bank\)
 
@@ -134,9 +147,13 @@ POST: Based on REST best practices\, the recommended name for the path '/CardeCo
 
 A more RESTful path name could be '/carde\-commerce\-gateways/\{gatewayId\}/card\-authentications/initiate'\, where 'gatewayId' is used instead of 'cardecommercegatewayid' to convey the resource being accessed\, and 'card\-authentications/init
 
-### PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Update
+## PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. UpBQ Update details of a card transaction used in authentication
 
@@ -152,9 +169,13 @@ PUT: Based on REST best practices\, the name of the path could be structured as 
 
 It is recommended to use lowercase letters\, hyphens to separate words\, and plurals for resources\. Make sure that the resource names are clear and concise to improve readability and maintainability\.
 
-### GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Retrieve
+## GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/CardAuthentication/\{cardauthenticationid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. ReBQ Retrieve details about a card authentication
 
@@ -166,9 +187,13 @@ This API path allows you to retrieve details about a specific card authenticatio
 
 GET: Based on REST best practices\, a more appropriate name for this path could be '/carde\-commerce\-gateways/\{carde\-commerce\-gateway\-id\}/card\-authentications/\{card\-authentication\-id\}'\.
 
-### POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/Initiate
+## POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/Initiate
 
-**Description**
+:::info Path
+POST: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. InBQ Initiate card transaction authorization \(routed to issuing bank\)
 
@@ -184,9 +209,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path uses lowercase letters and dashes to separate words\. The path reflects a hierarchical structure\, with resources \('card commerce gateways' and 'transactions'\) represented as nouns\, and actions \('authorizations' and 'initiate'\) as verbs\. The path parameters are enclosed in curly braces\.
 
-### PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update
+## PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. UpBQ Update details of a card transaction used for authorization
 
@@ -202,9 +231,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, separate words with hyphens\, and to use singular nouns for resource names\. These conventions help make the URL more readable and user\-friendly\.
 
-### GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
+## GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardeCommerceGateway/\{cardecommercegatewayid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the processing of e\-commerce transactions for authentication\, authorization and capture of the financial transactions\. ReBQ Retrieve details about a card transaction authorization
 

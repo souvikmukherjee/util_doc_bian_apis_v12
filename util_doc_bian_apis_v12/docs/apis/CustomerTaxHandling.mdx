@@ -1,22 +1,14 @@
 # CustomerTaxHandling
 
-## Table of Contents
-- [POST: /CustomerTaxHandling/Initiate](#post-/customertaxhandling/initiate)
-- [PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Update](#put-/customertaxhandling/\{customertaxhandlingid\}/update)
-- [GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Retrieve](#get-/customertaxhandling/\{customertaxhandlingid\}/retrieve)
-- [PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Update](#put-/customertaxhandling/\{customertaxhandlingid\}/consolidation/\{consolidationid\}/update)
-- [GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Retrieve](#get-/customertaxhandling/\{customertaxhandlingid\}/consolidation/\{consolidationid\}/retrieve)
-- [PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Update](#put-/customertaxhandling/\{customertaxhandlingid\}/analysis/\{analysisid\}/update)
-- [GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Retrieve](#get-/customertaxhandling/\{customertaxhandlingid\}/analysis/\{analysisid\}/retrieve)
-- [PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Update](#put-/customertaxhandling/\{customertaxhandlingid\}/reporting/\{reportingid\}/update)
-- [GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Retrieve](#get-/customertaxhandling/\{customertaxhandlingid\}/reporting/\{reportingid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerTaxHandling v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerTaxHandling/12.0.0)
 
-### POST: /CustomerTaxHandling/Initiate
+## POST: /CustomerTaxHandling/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerTaxHandling/Initiate
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity InCR Initiate customer tax handling
 
@@ -32,9 +24,13 @@ POST: If the path '/CustomerTaxHandling/Initiate' followed REST best practices\,
 
 This naming follows the convention of using lowercase letters\, using plural nouns for collections\, and using specific identifiers like customerId where necessary to specify resources\.
 
-### PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Update
+## PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Update
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity UpCR Update details of the customer tax handling facility
 
@@ -48,9 +44,13 @@ PUT: The name of the path following REST best practices would typically be:
 
 \`PUT /CustomerTaxHandling/\{customertaxhandlingid\}\`
 
-### GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Retrieve
+## GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity ReCR Retrieve details relating to the customer tax handling
 
@@ -64,9 +64,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 \`/customer\-tax\-handling/\{customertaxhandlingid\}\`
 
-### PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Update
+## PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Update
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity UpCR Update consolidated product reports
 
@@ -80,9 +84,13 @@ PUT: The name of the path should be:
 
 PUT /customers/\{customerId\}/tax\-handling/\{customerTaxHandlingId\}/consolidations/\{consolidationId\}
 
-### GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Retrieve
+## GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Consolidation/\{consolidationid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity ReCR Retrieve details about the consolidated reports used for tax reporting
 
@@ -100,9 +108,13 @@ The endpoint to retrieve a specific consolidation for a customer's tax handling 
 
 \`GET /customers/\{customerId\}/tax\-handlings/\{taxHandlingId\}/consolidations/\{consolidationId\}\`
 
-### PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Update
+## PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Update
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity UpBQ Update aspects of the tax handling analysis
 
@@ -116,9 +128,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 
 '/customers/\{customerId\}/tax\-handlings/\{taxHandlingId\}/analyses/\{analysisId\}/update'
 
-### GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Retrieve
+## GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Analysis/\{analysisid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity ReBQ Retrieve details about the tax reporting analysis
 
@@ -130,9 +146,13 @@ This API path allows you to retrieve details about a specific tax reporting anal
 
 GET: The name of the path could be \`/customers/\{customerId\}/tax\-handlings/\{taxHandlingId\}/analyses/\{analysisId\}\`\.
 
-### PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Update
+## PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Update
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity UpBQ Update customer tax reporting details
 
@@ -144,9 +164,13 @@ This BIAN API path allows you to update customer tax reporting details within th
 
 PUT: The name of the path should be: \`/customers/\{customerId\}/tax\-handling/\{taxHandlingId\}/reporting/\{reportingId\}\`
 
-### GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Retrieve
+## GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerTaxHandling/\{customertaxhandlingid\}/Reporting/\{reportingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles consumer tax reporting obligations including the consolidation and reporting of customer tax related financial activity ReBQ Retrieve details about the customer tax reporting
 

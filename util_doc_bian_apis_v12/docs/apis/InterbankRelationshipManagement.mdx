@@ -1,21 +1,14 @@
 # InterbankRelationshipManagement
 
-## Table of Contents
-- [POST: /InterbankRelationshipManagement/Create](#post-/interbankrelationshipmanagement/create)
-- [PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Update](#put-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/update)
-- [PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Request](#put-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/request)
-- [GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Retrieve](#get-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/retrieve)
-- [POST: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/Create](#post-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/contact/create)
-- [PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Update](#put-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/contact/\{contactid\}/update)
-- [PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Request](#put-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/contact/\{contactid\}/request)
-- [GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve](#get-/interbankrelationshipmanagement/\{interbankrelationshipmanagementid\}/contact/\{contactid\}/retrieve)
-
-
 **BIAN Documentation:** [InterbankRelationshipManagement v12](https://app.swaggerhub.com/apis/BIAN-3/InterbankRelationshipManagement/12.0.0)
 
-### POST: /InterbankRelationshipManagement/Create
+## POST: /InterbankRelationshipManagement/Create
 
-**Description**
+:::info Path
+POST: /InterbankRelationshipManagement/Create
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. CrCR Create an initial bank relationship management plan
 
@@ -29,9 +22,13 @@ POST: If the path '/InterbankRelationshipManagement/Create' followed all REST be
 
 In RESTful design\, resource names should be in plural form and represent the concept of the resource itself rather than specific actions like 'Create'\. The naming should be consistent\, descriptive\, and follow a hierarchical structure\.
 
-### PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Update
+## PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Update
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. UpCR Update details of an active bank relationship plan
 
@@ -43,9 +40,13 @@ This API path allows you to update the details of an active bank relationship pl
 
 PUT: The name of this path should be \`/interbank\-relationship\-management/\{interbank\_relationship\_management\_id\}\`\.
 
-### PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Request
+## PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Request
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. RqCR Request intervention with a bank relationship plan
 
@@ -57,9 +58,13 @@ This BIAN API path allows users to update an existing resource related to managi
 
 PUT: The name of the path should be '/interbank\-relationships/\{interbankrelationshipmanagementid\}/requests' for following REST best practices\.
 
-### GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Retrieve
+## GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Retrieve
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. ReCR Retrieve details about a bank relationship plan and associated activity
 
@@ -73,9 +78,13 @@ GET: The name of the path should be:
 
 '/interbank\-relationship\-management/\{interbankRelationshipManagementId\}'
 
-### POST: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/Create
+## POST: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/Create
 
-**Description**
+:::info Path
+POST: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/Create
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. CrBQ Create a bank contact
 
@@ -89,9 +98,13 @@ POST: The name of the path should be:
 
 POST /interbankrelationships/\{id\}/contacts
 
-### PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Update
+## PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Update
 
-**Description**
+:::info Path
+PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Update
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. UpBQ Update details about the bank contact schedule or a contact record
 
@@ -109,9 +122,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using lowercase letters\, separating words with hyphens\, and making the resource names plural where appropriate\.
 
-### PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Request
+## PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Request
 
-**Description**
+:::info Path
+PUT: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Request
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. RqBQ Request manual intervention with the bank relationship
 
@@ -124,9 +141,13 @@ This BIAN API path allows you to update a specific contact's request for manual 
 PUT: Based on REST best practices\, the name of the path should be:
 '/interbank\-relationships/\{interbankrelationshipmanagementid\}/contacts/\{contactid\}/requests'
 
-### GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve
+## GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /InterbankRelationshipManagement/\{interbankrelationshipmanagementid\}/Contact/\{contactid\}/Retrieve
+:::
+
+### Description
 
 Manage the bank's relationship with other banks\, covering any specific agreements that may be in place and overseeing operational issues\. ReBQ Retrieve details about the contact schedule or specific contacts
 

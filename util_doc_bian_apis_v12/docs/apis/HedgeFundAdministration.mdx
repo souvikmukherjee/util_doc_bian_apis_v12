@@ -1,75 +1,14 @@
 # HedgeFundAdministration
 
-## Table of Contents
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Control](#put-/hedgefundadministration/\{hedgefundadministrationid\}/control)
-- [POST: /HedgeFundAdministration/Create](#post-/hedgefundadministration/create)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/grant)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/notify)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/request)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/retrieve)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundaccounting/\{fundaccountingid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/funddevelopment/\{funddevelopmentid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundenrolmentcertification/\{fundenrolmentcertificationid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundmanagement/\{fundmanagementid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundperformancefee/\{fundperformancefeeid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/exchange)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundaccounting/\{fundaccountingid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/funddevelopment/\{funddevelopmentid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundenrolmentcertification/\{fundenrolmentcertificationid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundmanagement/\{fundmanagementid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundperformancefee/\{fundperformancefeeid\}/grant)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/grant)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundaccounting/\{fundaccountingid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/funddevelopment/\{funddevelopmentid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundenrolmentcertification/\{fundenrolmentcertificationid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundmanagement/\{fundmanagementid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundperformancefee/\{fundperformancefeeid\}/notify)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/notify)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundaccounting/\{fundaccountingid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/funddevelopment/\{funddevelopmentid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundenrolmentcertification/\{fundenrolmentcertificationid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundmanagement/\{fundmanagementid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundperformancefee/\{fundperformancefeeid\}/request)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/request)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundaccounting/\{fundaccountingid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/funddevelopment/\{funddevelopmentid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundenrolmentcertification/\{fundenrolmentcertificationid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundmanagement/\{fundmanagementid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundperformancefee/\{fundperformancefeeid\}/retrieve)
-- [GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve](#get-/hedgefundadministration/\{hedgefundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/retrieve)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundaccounting/\{fundaccountingid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/funddevelopment/\{funddevelopmentid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundenrolmentcertification/\{fundenrolmentcertificationid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundfinancialreporting/\{fundfinancialreportingid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinflowsandoutflow/\{fundinflowsandoutflowid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundinvestor\_middleandbackofficeservice/\{fundinvestor\_middleandbackofficeserviceid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundmanagement/\{fundmanagementid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundperformancefee/\{fundperformancefeeid\}/update)
-- [PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update](#put-/hedgefundadministration/\{hedgefundadministrationid\}/fundtaxadministration/\{fundtaxadministrationid\}/update)
-
-
 **BIAN Documentation:** [HedgeFundAdministration v12](https://app.swaggerhub.com/apis/BIAN-3/HedgeFundAdministration/12.0.0)
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Control
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Control
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Control
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Control Hedge Fund Administrative Plan
 
@@ -81,9 +20,13 @@ This API path allows you to update the control plan for a specific hedge fund ad
 
 PUT: The name of the path should be \`/hedge\-fund\-administration/\{hedgefundadministrationid\}/control\` in adherence to REST best practices\.
 
-### POST: /HedgeFundAdministration/Create
+## POST: /HedgeFundAdministration/Create
 
-**Description**
+:::info Path
+POST: /HedgeFundAdministration/Create
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Create Hedge Fund Administrative Plan
 
@@ -95,9 +38,13 @@ This BIAN API path allows users to create a new resource for the Hedge Fund Admi
 
 POST: In RESTful design\, the path '/HedgeFundAdministration/Create' should be updated to use a more standard convention by utilizing a POST request to the collection resource '/HedgeFundAdministrations'\. The new path will be more aligned with the principles of REST and semantics\. So\, the new path could be '/HedgeFundAdministrations'\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Hedge Fund Administrative Plan
 
@@ -115,9 +62,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, path segments should generally be in plural form and use CamelCase for multi\-word identifiers\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Hedge Fund Administrative Plan
 
@@ -133,9 +84,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase with hyphens used to separate words\. Additionally\, using plural nouns for resource names and using IDs to uniquely identify resources are common practices in RESTful API design\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Hedge Fund Administrative Plan
 
@@ -149,9 +104,13 @@ GET: The name of the path following REST best practices should be:
 
 /HedgeFundAdministration/\{hedgefundadministrationid\}/notifications
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Hedge Fund Administrative Plan
 
@@ -167,9 +126,13 @@ PUT: The name of the path should be:
 
 This follows REST best practices by using plurals for resource names and using camel case for naming paths with multiple words\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Hedge Fund Administrative Plan
 
@@ -182,9 +145,13 @@ This BIAN API path allows you to retrieve information about the administrative p
 GET: The name of the path should be:
 '/hedge\-fund\-administration/\{hedge\-fund\-administration\-id\}'
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Hedge Fund Administrative Plan
 
@@ -196,9 +163,13 @@ This API path allows you to update an existing Hedge Fund Administrative Plan wi
 
 PUT: Following REST best practices\, the name of the path could be '/hedge\-fund\-administrations/\{hedgefundadministrationid\}'\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Accounting Routine
 
@@ -212,9 +183,13 @@ PUT: A suitable name for the path following REST best practices could be:
 
 \`/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-accounting/\{fundaccountingid\}/exchange\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Development Routine
 
@@ -230,9 +205,13 @@ PUT: The name of the path should be:
 
 It's important in RESTful API design to use lowercase letters and separate words with hyphens in the path names\. Also\, the path parameters should be in camel case to improve readability\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Enrolment Certification Routine
 
@@ -246,9 +225,13 @@ PUT: A suitable name for the path '/HedgeFundAdministration/\{hedgefundadministr
 
 \`/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-enrolment\-certification/\{fundenrolmentcertificationid\}/exchange\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Financial Reporting Routine
 
@@ -261,9 +244,13 @@ This API path is used to update information related to fund financial reporting 
 PUT: The name of the path should be:
 '/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}/exchange'
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Inflows and Outflow Routine
 
@@ -279,9 +266,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsAndOutflows/\{fundinflowsandoutflowid\}/Exchange
 \`\`\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Investor\, Middle and Back Office Service Routine
 
@@ -294,9 +285,13 @@ This API path allows you to update an existing resource related to the operation
 PUT: Based on REST best practices\, the name of the path should be:
 /hedge\-fund\-administration/\{hedge\_fund\_administration\_id\}/fund\-investor\-middle\-and\-back\-office\-service/\{fund\_investor\_middle\_and\_back\_office\_service\_id\}/exchange
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Management Routine
 
@@ -312,9 +307,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Exchange
 \`\`\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Performance Fee Routine
 
@@ -328,9 +327,13 @@ PUT: A suitable RESTful name for this path could be:
 
 /HedgeFunds/\{hedgeFundId\}/FundPerformanceFees/\{fundPerformanceFeeId\}/Exchanges
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Exchange Fund Tax Administration Routine
 
@@ -346,9 +349,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Exchange
 \`\`\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Accounting Routine
 
@@ -360,9 +367,13 @@ This API path allows you to update specific details related to the grant fund ac
 
 PUT: The name of the path following REST best practices could be \`/hedge\-fund\-administrations/\{hedgeFundAdministrationId\}/fund\-accountings/\{fundAccountingId\}/grants\`\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Development Routine
 
@@ -378,9 +389,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using meaningful\, resource\-centric URIs that represent the hierarchy and relationships between different resources\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Enrolment Certification Routine
 
@@ -393,9 +408,13 @@ This API path is used to update an existing grant related to fund enrollment cer
 PUT: The name of the path should be:
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Grant
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Financial Reporting Routine
 
@@ -409,9 +428,13 @@ PUT: The name of the path should be:
 
 /HedgeFunds/\{hedgefundId\}/FinancialReports/\{financialreportId\}/Grants
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Inflows and Outflow Routine
 
@@ -424,9 +447,13 @@ This API path allows you to update information related to the grant fund inflows
 PUT: Based on REST best practices\, the name of the path should be:
 /hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-inflows\-and\-outflows/\{fundinflowsandoutflowid\}/grant
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Investor\, Middle and Back Office Service Routine
 
@@ -442,9 +469,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use camelCase for readability and consistency\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Management Routine
 
@@ -458,9 +489,13 @@ PUT: The name of the path following REST best practices would be:
 
 \`/hedge\-fund\-administrations/\{hedgefundadministrationid\}/fund\-managements/\{fundmanagementid\}/grants\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Performance Fee Routine
 
@@ -482,9 +517,13 @@ In this naming convention:
 
 This naming
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Grant
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Grant Fund Tax Administration Routine
 
@@ -500,9 +539,13 @@ PUT: The name of the path should be:
 
 This follows REST best practices by using lowercase letters\, hyphens for word separation\, and including resource identifiers in the path\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Accounting Routine
 
@@ -516,9 +559,13 @@ GET: The name of the path should be:
 
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Notify
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Development Routine
 
@@ -534,9 +581,13 @@ GET: A suitable name for the path following REST best practices could be:
 
 This naming convention uses lowercase letters and separates words with hyphens to improve readability and maintain consistency\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Enrolment Certification Routine
 
@@ -552,9 +603,13 @@ GET: The name of the path should ideally be:
 
 Following REST best practices involves using lowercase letters\, using hyphens to separate words\, and using plural nouns for resource names\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Financial Reporting Routine
 
@@ -570,9 +625,13 @@ GET: The path could be named as:
 
 This path follows REST best practices by using plural nouns for resources\, lowercase letters\, and using specific resource identifiers \(\`\{hedgeFundId\}\` and \`\{reportId\}\`\)\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Inflows and Outflow Routine
 
@@ -591,9 +650,13 @@ Key points to consider:
 3\. Use plural nouns for resource names \('fund\-inflows\-and\-outflows' instead of 'fund\-inflows\-and\-outflow'\)\.
 4\. Use clear and concise terms that
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Investor\, Middle and Back Office Service Routine
 
@@ -607,9 +670,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 \`/hedge\-fund\-administration/\{hedge\_fund\_administration\_id\}/fund\-investor\-middle\-and\-back\-office\-service/\{fund\_investor\_middle\_and\_back\_office\_service\_id\}/notify\`
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Management Routine
 
@@ -623,9 +690,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Notifications
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Performance Fee Routine
 
@@ -639,9 +710,13 @@ GET: The name of the path should be:
 
 /HedgeFundAdministrations/\{hedgefundadministrationid\}/FundPerformanceFees/\{fundperformancefeeid\}/Notifications
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Notify
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Notify Fund Tax Administration Routine
 
@@ -655,9 +730,13 @@ GET: The name of the path should be:
 
 \`/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-tax\-administration/\{fundtaxadministrationid\}/notify\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Accounting Routine
 
@@ -671,9 +750,13 @@ PUT: Based on REST best practices\, a more appropriate path name for '/HedgeFund
 
 '/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-accounting/\{fundaccountingid\}/requests'
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Development Routine
 
@@ -689,9 +772,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The path should be in plural form to indicate a collection of resources\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Enrolment Certification Routine
 
@@ -710,9 +797,13 @@ In this path name:
 \- "FundEnrolmentCertifications" should be in plural form to represent a collection of fund enrolment certifications\.
 \- "Requests" should be in plural form to represent a collection
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Financial Reporting Routine
 
@@ -728,9 +819,13 @@ PUT: The name of the path should be:
 
 following REST best practices\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Inflows and Outflow Routine
 
@@ -746,9 +841,13 @@ PUT: Following REST best practices\, the naming convention for the path should b
 
 Make sure to use plural nouns for resource names and follow camel case for multi\-word resource names\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Investor\, Middle and Back Office Service Routine
 
@@ -762,9 +861,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestorMiddleAndBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Request
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Management Routine
 
@@ -780,9 +883,13 @@ PUT: The name of the path could be:
 
 Following REST best practices\, the path uses lowercase letters\, separate words with hyphens\, and clearly represents the hierarchical structure of the resources\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Performance Fee Routine
 
@@ -796,9 +903,13 @@ PUT: A suggested name for the path '/HedgeFundAdministration/\{hedgefundadminist
 
 '/hedge\-funds/\{hedgefundadministrationid\}/fees/\{fundperformancefeeid\}/requests'
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Request
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Request Fund Tax Administration Routine
 
@@ -812,9 +923,13 @@ PUT: The name of the path following REST best practices would be:
 
 /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Requests
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Accounting Routine
 
@@ -837,9 +952,13 @@ In this naming convention:
   
 This naming pattern helps to create a more user\-friendly and
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Development Routine
 
@@ -853,9 +972,13 @@ GET: Based on REST best practices\, a more appropriate naming convention for thi
 
 GET '/hedge\-fund\-administrations/\{hedgefundadministrationid\}/fund\-developments/\{funddevelopmentid\}'
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Enrolment Certification Routine
 
@@ -871,9 +994,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using lowercase letters\, using hyphens to separate words\, and using plural nouns for collection resources\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Financial Reporting Routine
 
@@ -886,9 +1013,13 @@ This BIAN API path allows you to retrieve information related to fund financial 
 GET: Based on REST best practices\, the name of the path should be:
 '/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-financial\-reporting/\{fundfinancialreportingid\}/retrieve'
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Inflows and Outflow Routine
 
@@ -902,9 +1033,13 @@ GET: Following RESTful practices\, the name of the path should be:
 
 '/hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-inflows\-and\-outflows/\{fundinflowsandoutflowid\}'
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Investor\, Middle and Back Office Service Routine
 
@@ -920,9 +1055,13 @@ GET: A suitable name for the path following REST best practices could be:
 
 This path name is in lowercase\, uses hyphens to separate words\, and provides a clear and concise description of the resource being accessed\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Management Routine
 
@@ -940,9 +1079,13 @@ GET /hedge\-funds/\{hedgefundadministrationid\}/funds/\{fundmanagementid\}
 
 This name is clearer\, more concise\, and follows the convention of using lowercase letters and hyphens to separate words in the URIs\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Performance Fee Routine
 
@@ -958,9 +1101,13 @@ GET: The name for this path could simply be:
 
 In RESTful design\, path names should be clear\, concise\, and descriptive\. Hyphens can be used to separate words for better readability\. The "Retrieve" action is implied and does not need to be included in the path name\.
 
-### GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
+## GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Retrieve
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Retrieve Fund Tax Administration Routine
 
@@ -978,9 +1125,13 @@ GET: A more RESTful and clearer path name for "/HedgeFundAdministration/\{hedgef
 
 This path name follows the RESTful best practices of using lowercase letters\, using hyphens for readability\, and using resource names instead of actions in the URI\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundAccounting/\{fundaccountingid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Accounting Routine
 
@@ -996,9 +1147,13 @@ PUT: A more RESTful naming convention for the path could be:
 
 This path suggests a hierarchical structure where a specific hedge fund is accessed based on its ID\, and then the fund accounting information is retrieved based on its ID under that specific hedge fund\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundDevelopment/\{funddevelopmentid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Development Routine
 
@@ -1014,9 +1169,13 @@ PUT: The name of the path should ideally be:
 PUT /hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-development/\{funddevelopmentid\}
 \`\`\`
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundEnrolmentCertification/\{fundenrolmentcertificationid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Enrolment Certification Routine
 
@@ -1032,9 +1191,13 @@ PUT: Based on REST best practices\, the name of the path should be structured to
 
 This path is designed to be more descriptive\, following a hierarchy where each segment represents a specific resource in a clear and organized manner\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundFinancialReporting/\{fundfinancialreportingid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Financial Reporting Routine
 
@@ -1052,9 +1215,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The endpoint itself should represent a resource\, in this case\, a specific fund financial report\. To update this resource\, you can use an HTTP method\, typically PUT or PATCH\, on the same resource URL\. So the update operation would be achieved by sending a PUT request to the resource URL above with updated data
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInflowsandOutflow/\{fundinflowsandoutflowid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Inflows and Outflow Routine
 
@@ -1068,9 +1235,13 @@ PUT: A suitable name for the given path would be:
 
 PUT /hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-inflows\-and\-outflows/\{fundinflowsandoutflowid\}
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundInvestor\_MiddleandBackOfficeService/\{fundinvestor\_middleandbackofficeserviceid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Investor\, Middle and Back Office Service Routine
 
@@ -1086,9 +1257,13 @@ PUT: The name of the path could be:
 
 This name follows REST best practices by using lowercase letters\, hyphens to separate words\, and descriptive yet concise naming\.
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundManagement/\{fundmanagementid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Management Routine
 
@@ -1102,9 +1277,13 @@ PUT: The name of the path following REST best practices should be:
 
 /HedgeFundAdministrations/\{hedgefundadministrationid\}/FundManagements/\{fundmanagementid\}
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundPerformanceFee/\{fundperformancefeeid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Performance Fee Routine
 
@@ -1118,9 +1297,13 @@ PUT: A potential name for this path following REST best practices could be:
 
 PUT /hedge\-fund\-administration/\{hedgefundadministrationid\}/fund\-performance\-fee/\{fundperformancefeeid\}
 
-### PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
+## PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
 
-**Description**
+:::info Path
+PUT: /HedgeFundAdministration/\{hedgefundadministrationid\}/FundTaxAdministration/\{fundtaxadministrationid\}/Update
+:::
+
+### Description
 
 The Hedge Fund Administration Service Domain handles all aspects of the set\-up and operation of a hedge fund that is offered to accredited investors within the bank's customer base Update Fund Tax Administration Routine
 

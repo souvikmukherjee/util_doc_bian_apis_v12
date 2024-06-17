@@ -1,30 +1,14 @@
 # ACHOperations
 
-## Table of Contents
-- [PUT: /ACHOperations/\{achoperationsid\}/Update](#put-/achoperations/\{achoperationsid\}/update)
-- [GET: /ACHOperations/\{achoperationsid\}/Retrieve](#get-/achoperations/\{achoperationsid\}/retrieve)
-- [POST: /ACHOperations/\{achoperationsid\}/InboundACH/Initiate](#post-/achoperations/\{achoperationsid\}/inboundach/initiate)
-- [PUT: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Update](#put-/achoperations/\{achoperationsid\}/inboundach/\{inboundachid\}/update)
-- [GET: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Retrieve](#get-/achoperations/\{achoperationsid\}/inboundach/\{inboundachid\}/retrieve)
-- [POST: /ACHOperations/\{achoperationsid\}/OutboundACH/Initiate](#post-/achoperations/\{achoperationsid\}/outboundach/initiate)
-- [PUT: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Update](#put-/achoperations/\{achoperationsid\}/outboundach/\{outboundachid\}/update)
-- [GET: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Retrieve](#get-/achoperations/\{achoperationsid\}/outboundach/\{outboundachid\}/retrieve)
-- [POST: /ACHOperations/\{achoperationsid\}/Warehousing/Initiate](#post-/achoperations/\{achoperationsid\}/warehousing/initiate)
-- [PUT: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Update](#put-/achoperations/\{achoperationsid\}/warehousing/\{warehousingid\}/update)
-- [GET: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Retrieve](#get-/achoperations/\{achoperationsid\}/warehousing/\{warehousingid\}/retrieve)
-- [POST: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/Initiate](#post-/achoperations/\{achoperationsid\}/clearingandsettlement/initiate)
-- [PUT: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update](#put-/achoperations/\{achoperationsid\}/clearingandsettlement/\{clearingandsettlementid\}/update)
-- [GET: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve](#get-/achoperations/\{achoperationsid\}/clearingandsettlement/\{clearingandsettlementid\}/retrieve)
-- [POST: /ACHOperations/\{achoperationsid\}/Reconciliation/Initiate](#post-/achoperations/\{achoperationsid\}/reconciliation/initiate)
-- [PUT: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Update](#put-/achoperations/\{achoperationsid\}/reconciliation/\{reconciliationid\}/update)
-- [GET: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve](#get-/achoperations/\{achoperationsid\}/reconciliation/\{reconciliationid\}/retrieve)
-
-
 **BIAN Documentation:** [ACHOperations v12](https://app.swaggerhub.com/apis/BIAN-3/ACHOperations/12.0.0)
 
-### PUT: /ACHOperations/\{achoperationsid\}/Update
+## PUT: /ACHOperations/\{achoperationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ACHOperations/\{achoperationsid\}/Update
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider UpCR Update the operating schedule parameters
 
@@ -36,9 +20,13 @@ This API path allows you to update the operating schedule parameters for ACH Ope
 
 PUT: Based on REST best practices\, the name of the path should be '/ach\-operations/\{ach\_operations\_id\}'\.
 
-### GET: /ACHOperations/\{achoperationsid\}/Retrieve
+## GET: /ACHOperations/\{achoperationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ACHOperations/\{achoperationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider ReCR Retrieve details about the ACH access service session
 
@@ -50,9 +38,13 @@ This API path allows you to retrieve details about a specific ACH access service
 
 GET: Based on REST best practices\, the name of the path should describe the resource being accessed\. Therefore\, the name of the path '/ACHOperations/\{achoperationsid\}/Retrieve' should be simplified to something like '/operations/\{id\}' or '/ach\-operations/\{id\}'\. This name should clearly indicate that it is for retrieving a specific ACH operation resource based on its ID\.
 
-### POST: /ACHOperations/\{achoperationsid\}/InboundACH/Initiate
+## POST: /ACHOperations/\{achoperationsid\}/InboundACH/Initiate
 
-**Description**
+:::info Path
+POST: /ACHOperations/\{achoperationsid\}/InboundACH/Initiate
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider InBQ Initiate an inbound ACH transaction batch handling
 
@@ -66,9 +58,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /ach\-operations/\{achOperationId\}/inbound\-ach/initiate
 
-### PUT: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Update
+## PUT: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Update
 
-**Description**
+:::info Path
+PUT: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Update
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider UpBQ Update an inbound ACH transaction batch
 
@@ -82,9 +78,13 @@ PUT: Following REST best practices\, the name of the path should accurately repr
 
 If the update operation does not need its own unique endpoint and can be achieved via a HTTP PUT or PATCH request to the resource itself\,
 
-### GET: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Retrieve
+## GET: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ACHOperations/\{achoperationsid\}/InboundACH/\{inboundachid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider ReBQ Retrieve details about an inbound ACH transaction batch
 
@@ -98,9 +98,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /ach\-operations/\{achoperationsid\}/inbound\-ach/\{inboundachid\}
 
-### POST: /ACHOperations/\{achoperationsid\}/OutboundACH/Initiate
+## POST: /ACHOperations/\{achoperationsid\}/OutboundACH/Initiate
 
-**Description**
+:::info Path
+POST: /ACHOperations/\{achoperationsid\}/OutboundACH/Initiate
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider InBQ Initiate an outbound ACH transaction batch handling
 
@@ -114,9 +118,13 @@ POST: Based on REST best practices\, the name of the path should be something th
 
 '/ach\-operations/\{achoperationsid\}/outbound\-ach/initiate'
 
-### PUT: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Update
+## PUT: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Update
 
-**Description**
+:::info Path
+PUT: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Update
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider UpBQ Update an outbound ACH transaction batch
 
@@ -128,9 +136,13 @@ This BIAN API path allows you to update an existing outbound ACH transaction bat
 
 PUT: Based on REST best practices\, the name of the path could be something like '/ach\-operations/\{achoperationsid\}/outbound\-ach/\{outboundachid\}'\.
 
-### GET: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Retrieve
+## GET: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ACHOperations/\{achoperationsid\}/OutboundACH/\{outboundachid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider ReBQ Retrieve details about an outbound ACH transaction batch
 
@@ -142,9 +154,13 @@ This API path allows you to retrieve details about a specific outbound ACH trans
 
 GET: The name for the path could be: GET /ach\-operations/\{achoperationsid\}/outbound\-ach/\{outboundachid\}
 
-### POST: /ACHOperations/\{achoperationsid\}/Warehousing/Initiate
+## POST: /ACHOperations/\{achoperationsid\}/Warehousing/Initiate
 
-**Description**
+:::info Path
+POST: /ACHOperations/\{achoperationsid\}/Warehousing/Initiate
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider InBQ Initiate a warehoused outbound ACH transaction batch
 
@@ -156,9 +172,13 @@ This BIAN API path allows users to initiate a new resource for warehousing outbo
 
 POST: The name of the path should be \`/ach\-operations/\{achOperationsId\}/warehousing/initiate\` in accordance with REST best practices\.
 
-### PUT: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Update
+## PUT: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Update
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider UpBQ Update a warehoused outbound ACH transaction batch
 
@@ -174,9 +194,13 @@ PATCH /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}
 
 This naming convention indicates that a partial update operation should be performed on the resource identified by 'warehousingid' within the context of the ACH operation identified by 'achoperationsid'\.
 
-### GET: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Retrieve
+## GET: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider ReBQ Retrieve details about a warehoused outbound ACH transaction batch
 
@@ -190,9 +214,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /ACHOperations/\{achoperationsid\}/Warehousing/\{warehousingid\}
 
-### POST: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/Initiate
+## POST: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/Initiate
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider InBQ Initiate an ACH transaction batch clearing and settlement processing
 
@@ -211,9 +239,13 @@ According to REST best practices:
 \- Separate words with hyphens instead of underscores 
 \- Use nouns to represent resources in the path
 
-### PUT: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
+## PUT: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Update
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider UpBQ Update an ACH transaction batch in clearing and settlement
 
@@ -229,9 +261,13 @@ PUT /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettle
 
 This conforms to REST best practices by using the HTTP method PUT to update a specific resource identified by the 'achoperationsid' and 'clearingandsettlementid' parameters\.
 
-### GET: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
+## GET: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ACHOperations/\{achoperationsid\}/ClearingandSettlement/\{clearingandsettlementid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider ReBQ Retrieve details about an ACH transaction batch in clearing and settlement
 
@@ -245,9 +281,13 @@ GET: A suitable name for the path '/ACHOperations/\{achoperationsid\}/Clearingan
 
 '/ach\-operations/\{achoperationsid\}/clearing\-and\-settlement/\{clearingandsettlementid\}'
 
-### POST: /ACHOperations/\{achoperationsid\}/Reconciliation/Initiate
+## POST: /ACHOperations/\{achoperationsid\}/Reconciliation/Initiate
 
-**Description**
+:::info Path
+POST: /ACHOperations/\{achoperationsid\}/Reconciliation/Initiate
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider InBQ Initiate the reconciliation of ACH transactions
 
@@ -261,9 +301,13 @@ POST: Following REST best practices\, the name of the path should be something l
 
 '/ach\-operations/\{achOperationId\}/reconciliation/initiate'
 
-### PUT: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Update
+## PUT: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Update
 
-**Description**
+:::info Path
+PUT: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Update
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider UpBQ Update an transaction in reconciliations
 
@@ -277,9 +321,13 @@ PUT: The name of the path should be:
 
 PUT '/ach\-operations/\{achoperationsid\}/reconciliation/\{reconciliationid\}'
 
-### GET: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve
+## GET: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ACHOperations/\{achoperationsid\}/Reconciliation/\{reconciliationid\}/Retrieve
+:::
+
+### Description
 
 This service domain operates the Automated Clearing House \(ACH\) access gateway between the bank and the ACH service provider ReBQ Retrieve details about ACH transaction reconciliations
 

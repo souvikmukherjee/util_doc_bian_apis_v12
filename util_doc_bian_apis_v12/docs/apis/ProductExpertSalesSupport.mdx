@@ -1,22 +1,14 @@
 # ProductExpertSalesSupport
 
-## Table of Contents
-- [POST: /ProductExpertSalesSupport/Create](#post-/productexpertsalessupport/create)
-- [PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Update](#put-/productexpertsalessupport/\{productexpertsalessupportid\}/update)
-- [PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Request](#put-/productexpertsalessupport/\{productexpertsalessupportid\}/request)
-- [GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Retrieve](#get-/productexpertsalessupport/\{productexpertsalessupportid\}/retrieve)
-- [POST: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/Create](#post-/productexpertsalessupport/\{productexpertsalessupportid\}/assignment/create)
-- [PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Update](#put-/productexpertsalessupport/\{productexpertsalessupportid\}/assignment/\{assignmentid\}/update)
-- [PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Capture](#put-/productexpertsalessupport/\{productexpertsalessupportid\}/assignment/\{assignmentid\}/capture)
-- [PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Request](#put-/productexpertsalessupport/\{productexpertsalessupportid\}/assignment/\{assignmentid\}/request)
-- [GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Retrieve](#get-/productexpertsalessupport/\{productexpertsalessupportid\}/assignment/\{assignmentid\}/retrieve)
-
-
 **BIAN Documentation:** [ProductExpertSalesSupport v12](https://app.swaggerhub.com/apis/BIAN-3/ProductExpertSalesSupport/12.0.0)
 
-### POST: /ProductExpertSalesSupport/Create
+## POST: /ProductExpertSalesSupport/Create
 
-**Description**
+:::info Path
+POST: /ProductExpertSalesSupport/Create
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity CrCR Create or set\-up the administrative plan for sales specialist assignments
 
@@ -28,9 +20,13 @@ This API path \`/ProductExpertSalesSupport/Create\` is used to create a new reso
 
 POST: Based on REST best practices\, the path should be named based on the resource it represents rather than the action being performed on it\. Therefore\, a more appropriate name for the path '/ProductExpertSalesSupport/Create' could be '/ProductExpertSalesSupport' to represent the resource being created or perhaps '/ProductExperts' if the resource is the product expert itself\.
 
-### PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Update
+## PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Update
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity UpCR Update details of the overall sale specialist support administrative plan
 
@@ -44,9 +40,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/product\-expert\-sales\-support/\{product\-expert\-sales\-support\-id\}'
 
-### PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Request
+## PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Request
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity RqCR Request manual intervention with the administrative plan
 
@@ -59,9 +59,13 @@ This BIAN API path allows administrators to update the availability and allocati
 PUT: The name of the path should be:
 '/product\-expert\-sales\-support/\{productexpertsalessupportid\}/request'
 
-### GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Retrieve
+## GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Retrieve
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity ReCR Retrieve details about the administrative plan
 
@@ -73,9 +77,13 @@ This BIAN API path allows users to retrieve details about the administrative pla
 
 GET: Based on REST best practices\, if the path follows a resource\-oriented approach\, the name of the path could be \`/product\-experts/\{productExpertId\}/sales\-support\` for retrieving sales support information for a specific product expert identified by \`productExpertId\`\.
 
-### POST: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/Create
+## POST: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/Create
 
-**Description**
+:::info Path
+POST: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/Create
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity CrBQ Create a sales specialist support assignment
 
@@ -89,9 +97,13 @@ POST: The name of the path should be something like:
 
 '/products/\{productId\}/experts/\{expertId\}/assignments'
 
-### PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Update
+## PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Update
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity UpBQ Update details of a support assignment task
 
@@ -105,9 +117,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/product\-experts/\{productexpertsalessupportid\}/assignments/\{assignmentid\}'
 
-### PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Capture
+## PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Capture
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity CaBQ Provide feedback relating to a sales support assignment
 
@@ -123,9 +139,13 @@ PUT: Based on REST best practices\, the path name should be:
 
 The path name should be descriptive and follow a hierarchy that reflects the relationships between the resources\. Each segment should represent a specific resource or subresource\, and should use nouns to represent the resources\.
 
-### PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Request
+## PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Request
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity RqBQ Request manual intervention in an assignment
 
@@ -139,9 +159,13 @@ PUT: A good RESTful naming convention for this path could be:
 
 '/product\-experts/\{productexpertsalessupportid\}/assignments/\{assignmentid\}/requests'
 
-### GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Retrieve
+## GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductExpertSalesSupport/\{productexpertsalessupportid\}/Assignment/\{assignmentid\}/Retrieve
+:::
+
+### Description
 
 Administer the availability and allocation of product specialists to support sales activity ReBQ Retrieve details about a sales specialist support assignment
 

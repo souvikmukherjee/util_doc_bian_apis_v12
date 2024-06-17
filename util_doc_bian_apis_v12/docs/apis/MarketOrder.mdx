@@ -1,20 +1,14 @@
 # MarketOrder
 
-## Table of Contents
-- [POST: /MarketOrder/Initiate](#post-/marketorder/initiate)
-- [PUT: /MarketOrder/\{marketorderid\}/Update](#put-/marketorder/\{marketorderid\}/update)
-- [GET: /MarketOrder/\{marketorderid\}/Retrieve](#get-/marketorder/\{marketorderid\}/retrieve)
-- [GET: /MarketOrder/\{marketorderid\}/Compliance/\{complianceid\}/Retrieve](#get-/marketorder/\{marketorderid\}/compliance/\{complianceid\}/retrieve)
-- [GET: /MarketOrder/\{marketorderid\}/FundingCheck/\{fundingcheckid\}/Retrieve](#get-/marketorder/\{marketorderid\}/fundingcheck/\{fundingcheckid\}/retrieve)
-- [GET: /MarketOrder/\{marketorderid\}/CustomerProcessing/\{customerprocessingid\}/Retrieve](#get-/marketorder/\{marketorderid\}/customerprocessing/\{customerprocessingid\}/retrieve)
-- [GET: /MarketOrder/\{marketorderid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve](#get-/marketorder/\{marketorderid\}/tradeinitiation/\{tradeinitiationid\}/retrieve)
-
-
 **BIAN Documentation:** [MarketOrder v12](https://app.swaggerhub.com/apis/BIAN-3/MarketOrder/12.0.0)
 
-### POST: /MarketOrder/Initiate
+## POST: /MarketOrder/Initiate
 
-**Description**
+:::info Path
+POST: /MarketOrder/Initiate
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. InCR Initiate a market order
 
@@ -26,9 +20,13 @@ This BIAN API path allows a user to initiate a market order\, which is a request
 
 POST: Following REST best practices\, the path '/MarketOrder/Initiate' should ideally be renamed to a more resource\-oriented and URL\-friendly format\. For instance\, it could be renamed to something like '/market\-orders' to better represent the resource that is being interacted with\.
 
-### PUT: /MarketOrder/\{marketorderid\}/Update
+## PUT: /MarketOrder/\{marketorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketOrder/\{marketorderid\}/Update
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. UpCR Update details on an active market order
 
@@ -40,9 +38,13 @@ This BIAN API path allows you to update the details of an active market order id
 
 PUT: A more appropriate name for the path '/MarketOrder/\{marketorderid\}/Update' following REST best practices could be  '/market\-orders/\{marketorderid\}'\.
 
-### GET: /MarketOrder/\{marketorderid\}/Retrieve
+## GET: /MarketOrder/\{marketorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrder/\{marketorderid\}/Retrieve
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. ReCR Retrieve details about a market order
 
@@ -54,9 +56,13 @@ This BIAN API path allows you to retrieve details about a specific market order 
 
 GET: The path '/MarketOrders/\{marketorderid\}' would be a better option\, following REST best practices\. This path reflects the resource being retrieved \(market order\) at a specific identifier \(marketorderid\)\.
 
-### GET: /MarketOrder/\{marketorderid\}/Compliance/\{complianceid\}/Retrieve
+## GET: /MarketOrder/\{marketorderid\}/Compliance/\{complianceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrder/\{marketorderid\}/Compliance/\{complianceid\}/Retrieve
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. ReBQ Retrieve details about a market order compliance check
 
@@ -72,9 +78,13 @@ In RESTful API design\, it is recommended to use all lowercase letters\, use hyp
 
 By following
 
-### GET: /MarketOrder/\{marketorderid\}/FundingCheck/\{fundingcheckid\}/Retrieve
+## GET: /MarketOrder/\{marketorderid\}/FundingCheck/\{fundingcheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrder/\{marketorderid\}/FundingCheck/\{fundingcheckid\}/Retrieve
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. ReBQ Retrieve details about a market order funding check
 
@@ -88,9 +98,13 @@ GET: The appropriate name for the path would be:
 
 '/market\-orders/\{marketorderid\}/funding\-checks/\{fundingcheckid\}'
 
-### GET: /MarketOrder/\{marketorderid\}/CustomerProcessing/\{customerprocessingid\}/Retrieve
+## GET: /MarketOrder/\{marketorderid\}/CustomerProcessing/\{customerprocessingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrder/\{marketorderid\}/CustomerProcessing/\{customerprocessingid\}/Retrieve
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. ReBQ Retrieve details about customer specific processing for a market order
 
@@ -104,9 +118,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/market\-orders/\{marketorderid\}/customer\-processing/\{customerprocessingid\}'
 
-### GET: /MarketOrder/\{marketorderid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
+## GET: /MarketOrder/\{marketorderid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketOrder/\{marketorderid\}/TradeInitiation/\{tradeinitiationid\}/Retrieve
+:::
+
+### Description
 
 Market Order records an instruction from a customer or his or her representative to buy or sell securities\. It follows the order during its lifetime and reports back to the requestor on the execution\. ReBQ Retrieve details about a market order's market trade
 

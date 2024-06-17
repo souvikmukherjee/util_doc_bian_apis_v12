@@ -1,49 +1,14 @@
 # PaymentRailOperations
 
-## Table of Contents
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Control](#put-/paymentrailoperations/\{paymentrailoperationsid\}/control)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Exchange](#put-/paymentrailoperations/\{paymentrailoperationsid\}/exchange)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Execute](#put-/paymentrailoperations/\{paymentrailoperationsid\}/execute)
-- [POST: /PaymentRailOperations/Initiate](#post-/paymentrailoperations/initiate)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Notify](#get-/paymentrailoperations/\{paymentrailoperationsid\}/notify)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Request](#put-/paymentrailoperations/\{paymentrailoperationsid\}/request)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Retrieve](#get-/paymentrailoperations/\{paymentrailoperationsid\}/retrieve)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Update](#put-/paymentrailoperations/\{paymentrailoperationsid\}/update)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Exchange](#put-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/\{inboundtransactionid\}/exchange)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Exchange](#put-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/\{outboundtransactionid\}/exchange)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Exchange](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/\{paymentaccountreconciliationid\}/exchange)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Exchange](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/\{paymentclearingandsettlementid\}/exchange)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Execute](#put-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/\{inboundtransactionid\}/execute)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Execute](#put-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/\{outboundtransactionid\}/execute)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Execute](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/\{paymentaccountreconciliationid\}/execute)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Execute](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/\{paymentclearingandsettlementid\}/execute)
-- [POST: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/Initiate](#post-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/initiate)
-- [POST: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/Initiate](#post-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/initiate)
-- [POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/Initiate](#post-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/initiate)
-- [POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/Initiate](#post-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/initiate)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Notify](#get-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/\{inboundtransactionid\}/notify)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Notify](#get-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/\{outboundtransactionid\}/notify)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Notify](#get-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/\{paymentaccountreconciliationid\}/notify)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Notify](#get-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/\{paymentclearingandsettlementid\}/notify)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Request](#put-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/\{inboundtransactionid\}/request)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Request](#put-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/\{outboundtransactionid\}/request)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Request](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/\{paymentaccountreconciliationid\}/request)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Request](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/\{paymentclearingandsettlementid\}/request)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Retrieve](#get-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/\{inboundtransactionid\}/retrieve)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Retrieve](#get-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/\{outboundtransactionid\}/retrieve)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Retrieve](#get-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/\{paymentaccountreconciliationid\}/retrieve)
-- [GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Retrieve](#get-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/\{paymentclearingandsettlementid\}/retrieve)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Update](#put-/paymentrailoperations/\{paymentrailoperationsid\}/inboundtransaction/\{inboundtransactionid\}/update)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Update](#put-/paymentrailoperations/\{paymentrailoperationsid\}/outboundtransaction/\{outboundtransactionid\}/update)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Update](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentaccountreconciliation/\{paymentaccountreconciliationid\}/update)
-- [PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Update](#put-/paymentrailoperations/\{paymentrailoperationsid\}/paymentclearingandsettlement/\{paymentclearingandsettlementid\}/update)
-
-
 **BIAN Documentation:** [PaymentRailOperations v12](https://app.swaggerhub.com/apis/BIAN-3/PaymentRailOperations/12.0.0)
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Control
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Control
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Control Payment Rail Operating Session
 
@@ -55,9 +20,13 @@ This API path allows you to update and control the operational sessions related 
 
 PUT: Based on REST best practices\, the path '/PaymentRailOperations/\{paymentrailoperationsid\}/Control' should be named as '/payment\-rail\-operations/\{paymentrailoperationsid\}/controls'\. It is recommended to use lowercase letters and hyphens to separate words in the path for better readability and consistency\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Exchange
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Exchange Payment Rail Operating Session
 
@@ -73,9 +42,13 @@ PUT: The RESTful path name for the resource should reflect the resource itself\.
 
 This naming convention conveys that the resource represents multiple exchanges related to a specific payment rail operation identified by \{paymentrailoperationsid\}\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Execute
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Execute Payment Rail Operating Session
 
@@ -93,9 +66,13 @@ POST /PaymentRailOperations/\{paymentrailoperationsid\}/execution
 
 This name follows the convention of using nouns for resources and using specific actions as part of the URI to represent the operation being performed\. By using \`execution\` instead of \`execute\`\, it helps to indicate that the action is being triggered for a specific resource identified by \`paymentrailoperations
 
-### POST: /PaymentRailOperations/Initiate
+## POST: /PaymentRailOperations/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentRailOperations/Initiate
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Initiate Payment Rail Operating Session
 
@@ -109,9 +86,13 @@ POST: Following REST best practices\, the path '/PaymentRailOperations/Initiate'
 
 This name aligns better with REST conventions by using lowercase letters\, separating words with hyphens\, and focusing on the resource being interacted with \('transactions' in this case\)\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Notify
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Notify Payment Rail Operating Session
 
@@ -127,9 +108,13 @@ GET: The name of the path should be:
 /PaymentRailOperations/\{paymentrailoperationsid\}/notifications
 \`\`\`
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Request
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Request Payment Rail Operating Session
 
@@ -141,9 +126,13 @@ This API path allows you to update an existing resource related to Payment Rail 
 
 PUT: The name of the path should be '/payment\-rail\-operations/\{paymentrailoperationsid\}/request' following REST best practices\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Retrieve
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Retrieve Payment Rail Operating Session
 
@@ -157,9 +146,13 @@ GET: The name of the path should be:
 
 '/payment\-rail\-operations/\{paymentrailoperationsid\}'
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Update
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Update Payment Rail Operating Session
 
@@ -175,9 +168,13 @@ PUT: The name of the path should be:
 PUT /paymentrailoperations/\{paymentrailoperationsid\}
 \`\`\`
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Exchange
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Exchange Inbound Transaction Function
 
@@ -191,9 +188,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/payment\-rails/\{paymentrailoperationsid\}/inbound\-transactions/\{inboundtransactionid\}/exchange\`
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Exchange
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Exchange Outbound Transaction Function
 
@@ -206,9 +207,13 @@ This API path allows you to update an existing outbound transaction related to p
 PUT: Based on REST best practices\, the name for this path should be: 
 \`/payment\-rail\-operations/\{paymentrailoperationsid\}/outbound\-transactions/\{outboundtransactionid\}/exchange\`
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Exchange
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Exchange Payment Account Reconciliation Function
 
@@ -224,9 +229,13 @@ PUT: Based on REST best practices\, the name of the path should be structured in
 
 In this structure\, all words are in lowercase\, separated by hyphens to enhance readability and maintain consistency\. The path communicates the relationships between the resources and the action being performed\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Exchange
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Exchange Payment Clearing and Settlement Function
 
@@ -239,9 +248,13 @@ This API path allows you to update and manage the process of payment clearing an
 PUT: The name of the path should be: 
 '/payment\-rail\-operations/\{payment\_rail\_operations\_id\}/payment\-clearing\-and\-settlement/\{payment\_clearing\_and\_settlement\_id\}/exchange'
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Execute
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Execute Inbound Transaction Function
 
@@ -255,9 +268,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Execution
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Execute
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Execute Outbound Transaction Function
 
@@ -274,9 +291,13 @@ A suggestion for the path name could be:
 
 This name is descriptive and follows the convention of using lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Execute
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Execute Payment Account Reconciliation Function
 
@@ -294,9 +315,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using nouns to represent resources and using singular nouns for resource names\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Execute
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Execute Payment Clearing and Settlement Function
 
@@ -312,9 +337,13 @@ A more suitable name for the path '/PaymentRailOperations/\{paymentrailoperation
 
 '/payment\-rail\-operations/\{paymentrailoperationsid\}/payment\-clearing\-settlement/\{paymentclearingandsettlementid\}/execute'
 
-### POST: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/Initiate
+## POST: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/Initiate
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Initiate Inbound Transaction Function
 
@@ -330,9 +359,13 @@ POST: Following REST best practices\, the name of the path should be:
 /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransactions
 \`\`\`
 
-### POST: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/Initiate
+## POST: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/Initiate
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Initiate Outbound Transaction Function
 
@@ -346,9 +379,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 '/payment\-rail\-operations/\{payment\-rail\-operations\-id\}/outbound\-transactions/initiate'
 
-### POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/Initiate
+## POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Initiate Payment Account Reconciliation Function
 
@@ -364,9 +401,13 @@ POST: Following RESTful best practices\, the name of the path should be:
 /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliations
 \`\`\`
 
-### POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/Initiate
+## POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/Initiate
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Initiate Payment Clearing and Settlement Function
 
@@ -382,9 +423,13 @@ POST: Based on REST best practices\, the name of the path should reflect the res
 
 This path indicates that it is specifically for initiating the payment clearing and settlement process related to a particular payment rail operations ID\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Notify
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Notify Inbound Transaction Function
 
@@ -400,9 +445,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase\, use hyphens to separate words\, and include only nouns to represent resources\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Notify
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Notify Outbound Transaction Function
 
@@ -418,9 +467,13 @@ GET: The name of the path should be:
 
 This path follows REST best practices by using nouns for resource names and URIs that are hierarchical and use of path parameters to identify specific resources\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Notify
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Notify Payment Account Reconciliation Function
 
@@ -438,9 +491,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 This path reflects the resource hierarchy and uses plural nouns for resource names\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Notify
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Notify
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Notify Payment Clearing and Settlement Function
 
@@ -454,9 +511,13 @@ GET: Based on REST best practices\, a more appropriate naming for this path woul
 
 '/payment\-rail\-operations/\{paymentRailOperationsId\}/payment\-clearing\-and\-settlement/\{paymentClearingAndSettlementId\}/notify'
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Request
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Request Inbound Transaction Function
 
@@ -470,9 +531,13 @@ PUT: Following REST best practices\, the name of the path could be "/payment\-ra
 
 Key principles to consider in naming the path include using lowercase characters\, separating words with hyphens\, using plural nouns for collections\, using singular nouns for individual resources\, and organizing resources hierarchically\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Request
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Request Outbound Transaction Function
 
@@ -485,9 +550,13 @@ This API path allows you to update an existing outbound transaction request with
 PUT: Following REST best practices\, the name of the path should be:
 \`/payment\-rail\-operations/\{paymentrailoperationsid\}/outbound\-transactions/\{outboundtransactionid\}/request\`
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Request
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Request Payment Account Reconciliation Function
 
@@ -503,9 +572,13 @@ PUT: The name of the path should be:
 
 By using lowercase letters and hyphens to separate words\, we adhere to the REST best practices for naming conventions\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Request
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Request Payment Clearing and Settlement Function
 
@@ -521,9 +594,13 @@ PUT: Based on REST best practices\, a suitable name for the path '/PaymentRailOp
 
 This naming convention uses lowercase letters\, hyphens to separate words\, and follows a hierarchy where resources are organized in a meaningful manner\.
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Retrieve
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Retrieve Inbound Transaction Function
 
@@ -537,9 +614,13 @@ GET: The name of the path should follow RESTful naming conventions\, which typic
 
 '/payment\-rail\-operations/\{paymentrailoperationsid\}/inbound\-transactions/\{inboundtransactionid\}'
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Retrieve
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Retrieve Outbound Transaction Function
 
@@ -553,9 +634,13 @@ GET: Based on REST best practices\, a more appropriate name for the path '/Payme
 
 '/payment\-rail\-operations/\{paymentrailoperationsid\}/outbound\-transactions/\{outboundtransactionid\}'
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Retrieve
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Retrieve Payment Account Reconciliation Function
 
@@ -569,9 +654,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/payment\-rail\-operations/\{paymentRailOperationsId\}/payment\-account\-reconciliation/\{paymentAccountReconciliationId\}'
 
-### GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Retrieve
+## GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Retrieve Payment Clearing and Settlement Function
 
@@ -585,9 +674,13 @@ GET: The name of the path should be:
 
 GET /payment\-rail\-operations/\{paymentrailoperationsid\}/clearing\-and\-settlement/\{paymentclearingandsettlementid\}
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Update
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Update Inbound Transaction Function
 
@@ -603,9 +696,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 PATCH /PaymentRailOperations/\{paymentrailoperationsid\}/InboundTransaction/\{inboundtransactionid\}
 \`\`\`
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Update
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/OutboundTransaction/\{outboundtransactionid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Update Outbound Transaction Function
 
@@ -617,9 +714,13 @@ This API path allows you to update an existing outbound transaction within the P
 
 PUT: The name of the path should be \`/payment\-rail\-operations/\{paymentrailoperationsid\}/outbound\-transactions/\{outboundtransactionid\}\` as per REST best practices\.
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Update
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentAccountReconciliation/\{paymentaccountreconciliationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Update Payment Account Reconciliation Function
 
@@ -633,9 +734,13 @@ PUT: The name of the path should be:
 
 PUT /payment\-rail\-operations/\{payment\_rail\_operations\_id\}/payment\-account\-reconciliation/\{payment\_account\_reconciliation\_id\}
 
-### PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Update
+## PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /PaymentRailOperations/\{paymentrailoperationsid\}/PaymentClearingandSettlement/\{paymentclearingandsettlementid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the operational interface with payment service providers\, formatting outbound transactions and onward routing inbound transactions during scheduled operating sessions\. It also links to holding account facilities for net payment handling Update Payment Clearing and Settlement Function
 

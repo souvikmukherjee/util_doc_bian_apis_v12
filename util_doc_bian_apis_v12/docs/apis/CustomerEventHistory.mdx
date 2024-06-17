@@ -1,34 +1,14 @@
 # CustomerEventHistory
 
-## Table of Contents
-- [POST: /CustomerEventHistory/Initiate](#post-/customereventhistory/initiate)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/update)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/retrieve)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/relationship/\{relationshipid\}/update)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Capture](#put-/customereventhistory/\{customereventhistoryid\}/relationship/\{relationshipid\}/capture)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/relationship/\{relationshipid\}/retrieve)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/sales/\{salesid\}/update)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Capture](#put-/customereventhistory/\{customereventhistoryid\}/sales/\{salesid\}/capture)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/sales/\{salesid\}/retrieve)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/servicing/\{servicingid\}/update)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Capture](#put-/customereventhistory/\{customereventhistoryid\}/servicing/\{servicingid\}/capture)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/servicing/\{servicingid\}/retrieve)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/productprocessing/\{productprocessingid\}/update)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Capture](#put-/customereventhistory/\{customereventhistoryid\}/productprocessing/\{productprocessingid\}/capture)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/productprocessing/\{productprocessingid\}/retrieve)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/fraud/\{fraudid\}/update)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Capture](#put-/customereventhistory/\{customereventhistoryid\}/fraud/\{fraudid\}/capture)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/fraud/\{fraudid\}/retrieve)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Update](#put-/customereventhistory/\{customereventhistoryid\}/life/\{lifeid\}/update)
-- [PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Capture](#put-/customereventhistory/\{customereventhistoryid\}/life/\{lifeid\}/capture)
-- [GET: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Retrieve](#get-/customereventhistory/\{customereventhistoryid\}/life/\{lifeid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerEventHistory v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerEventHistory/12.0.0)
 
-### POST: /CustomerEventHistory/Initiate
+## POST: /CustomerEventHistory/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerEventHistory/Initiate
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges InCR Initiate customer event history tracking for a customer
 
@@ -40,9 +20,13 @@ This API path \`/CustomerEventHistory/Initiate\` allows you to start tracking th
 
 POST: If the path '/CustomerEventHistory/Initiate' followed all REST best practices\, a more appropriate name could be '/customers/\{customerId\}/events'\. This new path reflects the resource \(customers\) and the action \(events\) being taken\, which is preferable in RESTful design\.
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpCR Update details about the log
 
@@ -56,9 +40,13 @@ PUT: A RESTful name for the path '/CustomerEventHistory/\{customereventhistoryid
 
 This is because in RESTful design\, the HTTP methods like PUT or PATCH are typically used to update a resource identified by its unique identifier within the path\, rather than including the action 'Update' in the path itself\. The HTTP method used on this path to update the resource would indicate the action being performed\.
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReCR Retrieve details about the customer event log
 
@@ -75,9 +63,13 @@ A more RESTful path for retrieving a specific customer event history resource co
 
 This path focuses on the resource being accessed \(customer event history\) and uses the identifier in the URI to specify
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpBQ Update captured relationship management event details
 
@@ -91,9 +83,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/relationship/\{relationshipid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Capture
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges CaBQ Capture relationship management event details
 
@@ -109,9 +105,13 @@ PUT: The name of the path should be:
 
 In the path names\, it is recommended to use lowercase letters and separate words with hyphens\, following the REST best practices for naming resources in a URL\.
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/Relationship/\{relationshipid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReBQ Retrieve relationship management event details
 
@@ -125,9 +125,13 @@ GET: The name of the path should be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/relationships/\{relationshipid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpBQ Update captured sales event details
 
@@ -141,9 +145,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/sales/\{salesid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Capture
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges CaBQ Capture sales event details
 
@@ -161,9 +169,13 @@ PUT: A recommended name for the path would be:
 
 This path closely follows RESTful best practices by using clear and descriptive resource names that are hierarchical and reflect the relationships between the resources\.
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/Sales/\{salesid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReBQ Retrieve sales event details
 
@@ -177,9 +189,13 @@ GET: The name of the path should be:
 
 GET /customer\-event\-history/\{customereventhistoryid\}/sales/\{salesid\}
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpBQ Update captured servicing event details
 
@@ -193,9 +209,13 @@ PUT: The name of the path should be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/servicing/\{servicingid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Capture
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges CaBQ Capture servicing event details
 
@@ -208,9 +228,13 @@ This API path allows you to update an existing record of a servicing event relat
 PUT: Following REST best practices\, the name of the path should be as follows:  
 \`/customer\-event\-history/\{customereventhistoryid\}/servicing/\{servicingid\}/capture\`
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/Servicing/\{servicingid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReBQ Retrieve servicing event details
 
@@ -223,9 +247,13 @@ This BIAN API path allows you to retrieve information about a specific servicing
 GET: The name of the path should be:
 '/customer\-event\-history/\{customereventhistoryid\}/servicing/\{servicingid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpBQ Update captured product processing event details
 
@@ -239,9 +267,13 @@ PUT: To follow REST best practices\, the name of the path should be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/product\-processing/\{productprocessingid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Capture
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges CaBQ Capture product processing event details
 
@@ -262,9 +294,13 @@ In this naming convention:
 \- Use hyphens to separate words in a segment\, rather than underscores or camel case
 \- Avoid unnecessary nesting or hierarchical structures in the path naming
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/ProductProcessing/\{productprocessingid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReBQ Retrieve product processing event details
 
@@ -278,9 +314,13 @@ GET: The name of the path should ideally be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/product\-processing/\{productprocessingid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpBQ Update captured fraud event details
 
@@ -294,9 +334,13 @@ PUT: The name of the path following REST best practices would be:
 
 '/customer\-event\-history/\{customereventhistoryid\}/fraud/\{fraudid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Capture
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges CaBQ Capture fraud event details
 
@@ -312,9 +356,13 @@ PUT: Based on REST best practices\, the name of the path '/CustomerEventHistory/
 
 It is recommended to use lowercase letters\, hyphens for word separation\, no camel case\, and keep the URI descriptive and concise\.
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/Fraud/\{fraudid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReBQ Retrieve fraud event details
 
@@ -328,9 +376,13 @@ GET: Based on REST best practices\, the appropriate name for this path would be:
 
 '/customer\-event\-history/\{customer\_event\_history\_id\}/fraud/\{fraud\_id\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Update
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges UpBQ Update captured customer life event details
 
@@ -344,9 +396,13 @@ PUT: Based on REST best practices\, a possible name for the path could be:
 
 '/customer\-event\-histories/\{customereventhistoryid\}/lives/\{lifeid\}'
 
-### PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Capture
+## PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Capture
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges CaBQ Capture customer life event details
 
@@ -362,9 +418,13 @@ PUT: A commonly used pattern for naming RESTful paths is to use nouns that repre
 
 Here\, the path components represent resources \(customer event history\, life\) with identifiers \(customereventhistoryid\, lifeid\) and the action "capture" is described in a way that aligns with REST principles\. Remember to use lowercase letters
 
-### GET: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Retrieve
+## GET: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerEventHistory/\{customereventhistoryid\}/Life/\{lifeid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and stores relationship\, servicing and product fulfillment related customer events\. In addition to servicing and product transaction details\, the log can capture life/relationship events that are revealed during customer exchanges ReBQ Retrieve customer life event details
 

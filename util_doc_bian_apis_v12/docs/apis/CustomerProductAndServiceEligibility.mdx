@@ -1,23 +1,14 @@
 # CustomerProductAndServiceEligibility
 
-## Table of Contents
-- [POST: /CustomerProductAndServiceEligibility/Evaluate](#post-/customerproductandserviceeligibility/evaluate)
-- [PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Update](#put-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/update)
-- [PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Exchange](#put-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/exchange)
-- [PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Execute](#put-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/execute)
-- [PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Request](#put-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/request)
-- [PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Grant](#put-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/grant)
-- [GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Retrieve](#get-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/retrieve)
-- [GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/EligibilityCheck/\{eligibilitycheckid\}/Retrieve](#get-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/eligibilitycheck/\{eligibilitycheckid\}/retrieve)
-- [PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Update](#put-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/nextbest/\{nextbestid\}/update)
-- [GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Retrieve](#get-/customerproductandserviceeligibility/\{customerproductandserviceeligibilityid\}/nextbest/\{nextbestid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerProductAndServiceEligibility v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerProductAndServiceEligibility/12.0.0)
 
-### POST: /CustomerProductAndServiceEligibility/Evaluate
+## POST: /CustomerProductAndServiceEligibility/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerProductAndServiceEligibility/Evaluate
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. EvCR Evaluate a customer's eligibility for a product/service
 
@@ -29,9 +20,13 @@ This API path allows you to evaluate a customer's eligibility for a specific pro
 
 POST: A more suitable name for the path '/CustomerProductAndServiceEligibility/Evaluate' following REST best practices might be '/customer/product\-service/eligibility'\. This name follows the conventions of using lowercase letters\, separating words with hyphens\, and using descriptive and specific terms to represent resources\.
 
-### PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Update
+## PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. UpCR Update the product/service eligibility record \(e\.g\. for newly sold products\)
 
@@ -45,9 +40,13 @@ PUT: Based on REST best practices\, the name of the path should be in the form o
 
 '/CustomerProductAndServiceEligibilities/\{customerproductandserviceeligibilityid\}'
 
-### PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Exchange
+## PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Exchange
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. EcCR Accept\, reject\, verify etc\. an eligibility assessment
 
@@ -61,9 +60,13 @@ PUT: According to REST best practices\, the name of the path should be:
 
 '/customer\-product\-and\-service\-eligibility/\{customerProductAndServiceEligibilityId\}/exchange'
 
-### PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Execute
+## PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Execute
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. ExCR Execute an automated action against an active evaluation \(e\.g\. provide additional data\)
 
@@ -79,9 +82,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and hyphens to separate words for better readability and consistency\.
 
-### PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Request
+## PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. RqCR Request manual intervention in an evaluation \(e\.g\. engage a specialist or negotiator\)
 
@@ -95,9 +102,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/customer\-product\-and\-service\-eligibility/\{customerproductandserviceeligibilityid\}/request\`
 
-### PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Grant
+## PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Grant
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. GrCR Obtain a permission grant reflecting eligibility \(perhaps defining a term or other considerations\)
 
@@ -113,9 +124,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using lowercase letters\, separating words with dashes\, and including the resource identifier within curly braces for clarity\.
 
-### GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Retrieve
+## GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. ReCR Retrieve details about an eligibility request
 
@@ -131,9 +146,13 @@ GET: The name of the path should adhere to REST best practices by being clear\, 
 
 Following REST conventions\, we have replaced camel case with kebab case\, made the path lowercase\, removed unnecessary words like "Retrieve"\, and used a shorter and more precise naming
 
-### GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/EligibilityCheck/\{eligibilitycheckid\}/Retrieve
+## GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/EligibilityCheck/\{eligibilitycheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/EligibilityCheck/\{eligibilitycheckid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. ReBQ Retrieve details about an eligibility assessment
 
@@ -149,9 +168,13 @@ GET: Based on REST best practices\, the name for the path could be simplified to
 
 This path follows the best practice of using lowercase letters\, using nouns instead of verbs\, and keeping the path concise and easy to understand\.
 
-### PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Update
+## PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. UpBQ Update details about a next best eligibility test
 
@@ -165,9 +188,13 @@ PUT: A more appropriate and RESTful name for the path '/CustomerProductAndServic
 
 '/customers/\{customerId\}/products/\{productId\}/nextbest/\{nextBestId\}'
 
-### GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Retrieve
+## GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerProductAndServiceEligibility/\{customerproductandserviceeligibilityid\}/NextBest/\{nextbestid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains a list of products and services for which a customer is eligible\. ReBQ Retrieve details about a next best test
 

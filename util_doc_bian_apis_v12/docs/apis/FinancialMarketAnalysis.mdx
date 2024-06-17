@@ -1,23 +1,14 @@
 # FinancialMarketAnalysis
 
-## Table of Contents
-- [PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Execute](#put-/financialmarketanalysis/\{financialmarketanalysisid\}/execute)
-- [POST: /FinancialMarketAnalysis/Initiate](#post-/financialmarketanalysis/initiate)
-- [GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Retrieve](#get-/financialmarketanalysis/\{financialmarketanalysisid\}/retrieve)
-- [PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Request](#put-/financialmarketanalysis/\{financialmarketanalysisid\}/request)
-- [PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Update](#put-/financialmarketanalysis/\{financialmarketanalysisid\}/update)
-- [PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Execute](#put-/financialmarketanalysis/\{financialmarketanalysisid\}/financialmarketinsight/\{financialmarketinsightid\}/execute)
-- [POST: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/Initiate](#post-/financialmarketanalysis/\{financialmarketanalysisid\}/financialmarketinsight/initiate)
-- [GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Retrieve](#get-/financialmarketanalysis/\{financialmarketanalysisid\}/financialmarketinsight/\{financialmarketinsightid\}/retrieve)
-- [PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Request](#put-/financialmarketanalysis/\{financialmarketanalysisid\}/financialmarketinsight/\{financialmarketinsightid\}/request)
-- [PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Update](#put-/financialmarketanalysis/\{financialmarketanalysisid\}/financialmarketinsight/\{financialmarketinsightid\}/update)
-
-
 **BIAN Documentation:** [FinancialMarketAnalysis v12](https://app.swaggerhub.com/apis/BIAN-3/FinancialMarketAnalysis/12.0.0)
 
-### PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Execute
+## PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Execute
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research ExCR Execute an available automated action for Financial Market Analysis
 
@@ -31,9 +22,13 @@ PUT: The name of the path '/FinancialMarketAnalysis/\{financialmarketanalysisid\
 
 '/financial\-market\-analyses/\{financialmarketanalysisid\}/executions'
 
-### POST: /FinancialMarketAnalysis/Initiate
+## POST: /FinancialMarketAnalysis/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialMarketAnalysis/Initiate
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research InCR Instantiate a new Financial Market Analysis
 
@@ -45,9 +40,13 @@ This API path allows users to create a new instance of a Financial Market Analys
 
 POST: In REST\, the convention is to use nouns for resource names rather than verbs\. Therefore\, the name of the path should be '/financial\-market\-analysis/initiate' to follow REST best practices\.
 
-### GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Retrieve
+## GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Retrieve
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research ReCR Retrieve details about any aspect of Financial Market Analysis
 
@@ -61,9 +60,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /financial\-market\-analysis/\{financialmarketanalysisid\}
 
-### PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Request
+## PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Request
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research RqCR Request manual intervention or a decision with respect to Financial Market Analysis
 
@@ -83,9 +86,13 @@ According to REST best practices:
 \- Use plural nouns for collections\.
 \- Parameters should be enclosed in curly braces and use camelCase for variable names\.
 
-### PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Update
+## PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/Update
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research UpCR Update details relating to Financial Market Analysis
 
@@ -102,9 +109,13 @@ PUT: The name of the path could be:
 
 In RESTful naming conventions\, path parameters are usually named with lowercase words separated by hyphens\. The endpoint itself should be named to represent the resource it is interacting with\, in this case\, the financial market analysis\.
 
-### PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Execute
+## PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Execute
 
-**Description**
+:::info Path
+PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Execute
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research ExBQ Execute an available automated action for Financial Market Insight
 
@@ -122,9 +133,13 @@ In this naming convention:
 \- The path uses all lowercase letters with words separated by hyphens\, following the kebab case style\.
 \- The path identifies resources in a clear and hierarchical manner\, starting with the top\-level
 
-### POST: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/Initiate
+## POST: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/Initiate
 
-**Description**
+:::info Path
+POST: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/Initiate
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research InBQ Instantiate a new Financial Market Insight
 
@@ -140,9 +155,13 @@ POST: The name of the path should be:
 
 This naming follows the REST best practices of using lowercase letters\, separating words with hyphens\, and using plural nouns for collections of resources\.
 
-### GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Retrieve
+## GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Retrieve
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research ReBQ Retrieve details about any aspect of Financial Market Insight
 
@@ -158,9 +177,13 @@ GET '/financial\-market\-analysis/\{financialmarketanalysisid\}/financial\-marke
 
 This convention follows the best practices for REST API naming\, which includes using lowercase letters\, hyphens to separate words\, and using plural nouns for collections where applicable\. It also simplifies the path to focus on the
 
-### PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Request
+## PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Request
 
-**Description**
+:::info Path
+PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Request
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research RqBQ Request manual intervention or a decision with respect to Financial Market Insight
 
@@ -174,9 +197,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /financial\-market\-analyses/\{financialmarketanalysisid\}/financial\-market\-insights/\{financialmarketinsightid\}/requests
 
-### PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Update
+## PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Update
 
-**Description**
+:::info Path
+PUT: /FinancialMarketAnalysis/\{financialmarketanalysisid\}/FinancialMarketInsight/\{financialmarketinsightid\}/Update
+:::
+
+### Description
 
 Provide different types of financial market analysis using available financial market information and research UpBQ Update details relating to Financial Market Insight
 

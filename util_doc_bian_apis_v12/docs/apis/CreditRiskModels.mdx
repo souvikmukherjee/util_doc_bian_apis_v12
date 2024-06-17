@@ -1,32 +1,14 @@
 # CreditRiskModels
 
-## Table of Contents
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Capture](#put-/creditriskmodels/\{creditriskmodelsid\}/capture)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Control](#put-/creditriskmodels/\{creditriskmodelsid\}/control)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Exchange](#put-/creditriskmodels/\{creditriskmodelsid\}/exchange)
-- [POST: /CreditRiskModels/Initiate](#post-/creditriskmodels/initiate)
-- [GET: /CreditRiskModels/\{creditriskmodelsid\}/Retrieve](#get-/creditriskmodels/\{creditriskmodelsid\}/retrieve)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Request](#put-/creditriskmodels/\{creditriskmodelsid\}/request)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Update](#put-/creditriskmodels/\{creditriskmodelsid\}/update)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture](#put-/creditriskmodels/\{creditriskmodelsid\}/functionalrequirements/\{functionalrequirementsid\}/capture)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Capture](#put-/creditriskmodels/\{creditriskmodelsid\}/production/\{productionid\}/capture)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Capture](#put-/creditriskmodels/\{creditriskmodelsid\}/testing/\{testingid\}/capture)
-- [GET: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve](#get-/creditriskmodels/\{creditriskmodelsid\}/functionalrequirements/\{functionalrequirementsid\}/retrieve)
-- [GET: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Retrieve](#get-/creditriskmodels/\{creditriskmodelsid\}/production/\{productionid\}/retrieve)
-- [GET: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Retrieve](#get-/creditriskmodels/\{creditriskmodelsid\}/testing/\{testingid\}/retrieve)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request](#put-/creditriskmodels/\{creditriskmodelsid\}/functionalrequirements/\{functionalrequirementsid\}/request)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Request](#put-/creditriskmodels/\{creditriskmodelsid\}/production/\{productionid\}/request)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Request](#put-/creditriskmodels/\{creditriskmodelsid\}/testing/\{testingid\}/request)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update](#put-/creditriskmodels/\{creditriskmodelsid\}/functionalrequirements/\{functionalrequirementsid\}/update)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Update](#put-/creditriskmodels/\{creditriskmodelsid\}/production/\{productionid\}/update)
-- [PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Update](#put-/creditriskmodels/\{creditriskmodelsid\}/testing/\{testingid\}/update)
-
-
 **BIAN Documentation:** [CreditRiskModels v12](https://app.swaggerhub.com/apis/BIAN-3/CreditRiskModels/12.0.0)
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Capture
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Capture
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments CaCR Capture Credit Risk Model Specification activity or event related information
 
@@ -44,9 +26,13 @@ POST /CreditRiskModels/\{creditriskmodelsid\}/Captures
 
 This path indicates creating a new resource "Capture" under the specified "CreditRiskModels" resource identified by \{creditriskmodelsid\}\. The use of a plural noun "Captures" is recommended to imply a collection of captures for the individual credit risk model\, and
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Control
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Control
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Control
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments CoCR Control the processing of Credit Risk Model Specification
 
@@ -60,9 +46,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 "/credit\-risk\-models/\{creditriskmodelsid\}/control"
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Exchange
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Exchange
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments EcCR Accept\, verify\, etc\. aspects of Credit Risk Model Specification processing
 
@@ -78,9 +68,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters\, use hyphens to separate words\, and avoid including unnecessary abbreviations\. Additionally\, the path should clearly represent the resource hierarchy and relationships\.
 
-### POST: /CreditRiskModels/Initiate
+## POST: /CreditRiskModels/Initiate
 
-**Description**
+:::info Path
+POST: /CreditRiskModels/Initiate
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments InCR Instantiate a new Credit Risk Model Specification
 
@@ -92,9 +86,13 @@ This API path allows users to create a new Credit Risk Model Specification withi
 
 POST: The path should ideally be named as '/credit\-risk\-models/initiate' following REST best practices\. This uses lowercase letters and hyphens to separate words for better readability and consistency\.
 
-### GET: /CreditRiskModels/\{creditriskmodelsid\}/Retrieve
+## GET: /CreditRiskModels/\{creditriskmodelsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditRiskModels/\{creditriskmodelsid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments ReCR Retrieve details about any aspect of Credit Risk Model Specification
 
@@ -106,9 +104,13 @@ This API path allows you to retrieve details about a specific Credit Risk Model\
 
 GET: Based on RESTful best practices\, the name of the path '/CreditRiskModels/\{creditriskmodelsid\}/Retrieve' should be structured as: GET /credit\-risk\-models/\{creditriskmodelsid\}
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Request
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments RqCR Request manual intervention or a decision with respect to Credit Risk Model Specification
 
@@ -122,9 +124,13 @@ PUT: Following REST best practices\, the name of the path could be something lik
 
 '/credit\-risk\-models/\{credit\-risk\-model\-id\}/requests'
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Update
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments UpCR Update details relating to Credit Risk Model Specification
 
@@ -138,9 +144,13 @@ PUT: The name of the path should be:
 
 PUT /CreditRiskModels/\{creditriskmodelsid\}
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Capture
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments CaBQ Capture Functional Requirements activity or event related information
 
@@ -154,9 +164,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/credit\-risk\-models/\{creditriskmodelsid\}/functional\-requirements/\{functionalrequirementsid\}/capture'
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Capture
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Capture
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments CaBQ Capture Production activity or event related information
 
@@ -170,9 +184,13 @@ PUT: The name of the path should be:
 
 '/CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Capture'
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Capture
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Capture
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments CaBQ Capture Testing activity or event related information
 
@@ -186,9 +204,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/credit\-risk\-models/\{creditriskmodelsid\}/testing/\{testingid\}/capture'
 
-### GET: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
+## GET: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments ReBQ Retrieve details about any aspect of Functional Requirements
 
@@ -202,9 +224,13 @@ GET: The name of the path following RESTful best practices could be:
 
 \`/credit\-risk\-models/\{creditriskmodelsid\}/functional\-requirements/\{functionalrequirementsid\}\`
 
-### GET: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Retrieve
+## GET: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments ReBQ Retrieve details about any aspect of Production
 
@@ -218,9 +244,13 @@ GET: Following REST best practices\, the name of the path should describe the re
 
 A more appropriate name for the path could be '/CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}'\, which represents the specific production resource within a credit risk model\.
 
-### GET: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Retrieve
+## GET: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Retrieve
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments ReBQ Retrieve details about any aspect of Testing
 
@@ -234,9 +264,13 @@ If you have any more questions or need further clarification\, feel free to ask\
 
 GET: The name of the path should be '/credit\-risk\-models/\{creditriskmodelsid\}/testing/\{testingid\}'\.
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments RqBQ Request manual intervention or a decision with respect to Functional Requirements
 
@@ -255,9 +289,13 @@ In this naming convention:
 \- Words are separated by hyphens for better readability\.
 \- Resource names are in plural form\.
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Request
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments RqBQ Request manual intervention or a decision with respect to Production
 
@@ -271,9 +309,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/credit\-risk\-models/\{creditriskmodelsid\}/production/\{productionid\}/request'
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Request
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Request
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments RqBQ Request manual intervention or a decision with respect to Testing
 
@@ -289,9 +331,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens or underscores for better readability and consistency\.
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/FunctionalRequirements/\{functionalrequirementsid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments UpBQ Update details relating to Functional Requirements
 
@@ -305,9 +351,13 @@ PUT: A more suitable name for the path '/CreditRiskModels/\{creditriskmodelsid\}
 
 PATCH /credit\-risk\-models/\{creditriskmodelsid\}/functional\-requirements/\{functionalrequirementsid\}
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Update
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Production/\{productionid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments UpBQ Update details relating to Production
 
@@ -323,9 +373,13 @@ PUT: Based on REST best practices\, the path could be named as follows:
 
 This naming convention follows the guidelines of using lowercase letters\, using hyphens to separate words\, and using specific resource identifiers within the URL\.
 
-### PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Update
+## PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditRiskModels/\{creditriskmodelsid\}/Testing/\{testingid\}/Update
+:::
+
+### Description
 
 This service domain handles the design and maintenance of a portfolio of credit models that are used in all aspects of customer credit assessments UpBQ Update details relating to Testing
 

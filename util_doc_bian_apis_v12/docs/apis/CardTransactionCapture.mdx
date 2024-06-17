@@ -1,35 +1,14 @@
 # CardTransactionCapture
 
-## Table of Contents
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Control](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/control)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Exchange](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/exchange)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Execute](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/execute)
-- [POST: /CardTransactionCapture/Initiate](#post-/cardtransactioncapture/initiate)
-- [GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/Retrieve](#get-/cardtransactioncapture/\{cardtransactioncaptureid\}/retrieve)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Request](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/request)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Update](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/update)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Control](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionconsolidation/\{transactionconsolidationid\}/control)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Exchange](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionconsolidation/\{transactionconsolidationid\}/exchange)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Execute](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionconsolidation/\{transactionconsolidationid\}/execute)
-- [POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/Initiate](#post-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionauthorization/initiate)
-- [POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/Initiate](#post-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactioncapture/initiate)
-- [POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/Initiate](#post-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionconsolidation/initiate)
-- [POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/Initiate](#post-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionreversal/initiate)
-- [GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve](#get-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionauthorization/\{transactionauthorizationid\}/retrieve)
-- [GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve](#get-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactioncapture/\{transactioncaptureid\}/retrieve)
-- [GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Retrieve](#get-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionconsolidation/\{transactionconsolidationid\}/retrieve)
-- [GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Retrieve](#get-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionreversal/\{transactionreversalid\}/retrieve)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionauthorization/\{transactionauthorizationid\}/update)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Update](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactioncapture/\{transactioncaptureid\}/update)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Update](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionconsolidation/\{transactionconsolidationid\}/update)
-- [PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Update](#put-/cardtransactioncapture/\{cardtransactioncaptureid\}/transactionreversal/\{transactionreversalid\}/update)
-
-
 **BIAN Documentation:** [CardTransactionCapture v12](https://app.swaggerhub.com/apis/BIAN-3/CardTransactionCapture/12.0.0)
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Control
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Control
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Control
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale CoCR Control the processing of Credit Charge Card Financial Capture Transaction
 
@@ -47,9 +26,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 In this naming convention\, the resources are typically named in plural form to indicate that they represent collections of resources\.
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Exchange
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Exchange
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale EcCR Accept\, verify\, etc\. aspects of Credit Charge Card Financial Capture Transaction processing
 
@@ -63,9 +46,13 @@ PUT: The name of the path should be: \`/cardtransactioncaptures/\{cardtransactio
 
 REST best practices typically suggest using all lowercase letters and using the plural form for resources\.
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Execute
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Execute
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ExCR Execute an available automated action for Credit Charge Card Financial Capture Transaction
 
@@ -79,9 +66,13 @@ PUT: The name of the path should be:
 
 '/card\-transaction\-capture/\{cardtransactioncaptureid\}/execute'
 
-### POST: /CardTransactionCapture/Initiate
+## POST: /CardTransactionCapture/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionCapture/Initiate
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale InCR Instantiate a new Credit Charge Card Financial Capture Transaction
 
@@ -93,9 +84,13 @@ This API path allows you to create a new credit card transaction capture at the 
 
 POST: The name of the path '/CardTransactionCapture/Initiate' following REST best practices should ideally be a noun representing a resource\. For example\, a more appropriate name for this path could be '/CardTransactions' if it represents a collection of card transactions\.
 
-### GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/Retrieve
+## GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ReCR Retrieve details about any aspect of Credit Charge Card Financial Capture Transaction
 
@@ -109,9 +104,13 @@ GET: The name of the path should be:
 
 GET /card\-transactions/\{cardtransactioncaptureid\}
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Request
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Request
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Request
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale RqCR Request manual intervention or a decision with respect to Credit Charge Card Financial Capture Transaction
 
@@ -127,9 +126,13 @@ PUT: The most appropriate name for the path would be:
 
 Following REST best practices\, the path should be in lowercase letters and use hyphens to separate words for better readability and consistency\.
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Update
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/Update
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale UpCR Update details relating to Credit Charge Card Financial Capture Transaction
 
@@ -141,9 +144,13 @@ This API path allows you to update details related to a credit card transaction 
 
 PUT: The name of the path should be '\{cardtransactioncaptureid\}' since REST best practices recommend using resource identifiers \(such as the unique ID of the resource\) rather than action words in the URL paths\.
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Control
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Control
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Control
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale CoBQ Control the processing of Transaction Consolidation
 
@@ -161,9 +168,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using nouns to represent resources and utilizing camel case for readability\. It includes specific identifiers for the card transaction capture and transaction consolidation resources\, which helps in identifying and accessing the desired data in a structured manner\.
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Exchange
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Exchange
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale EcBQ Accept\, verify\, etc\. aspects of Transaction Consolidation processing
 
@@ -177,9 +188,13 @@ PUT: The name of the path should follow RESTful conventions and be descriptive o
 
 '/card\-transactions/\{cardtransactioncaptureid\}/consolidations/\{transactionconsolidationid\}/exchange'
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Execute
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Execute
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ExBQ Execute an available automated action for Transaction Consolidation
 
@@ -198,9 +213,13 @@ Here are some key points to consider:
 3\. The path should be descriptive and accurately represent the resources being accessed\.
 4\. Use singular nouns for resource names
 
-### POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/Initiate
+## POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/Initiate
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale InBQ Instantiate a new Transaction Authorization
 
@@ -216,9 +235,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and separate words with hyphens in the path names\.
 
-### POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/Initiate
+## POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/Initiate
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale InBQ Instantiate a new Transaction Capture
 
@@ -232,9 +255,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 '/card\-transaction\-captures/\{card\-transaction\-capture\-id\}/transaction\-capture/initiate'
 
-### POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/Initiate
+## POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/Initiate
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale InBQ Instantiate a new Transaction Consolidation
 
@@ -248,9 +275,13 @@ POST: Based on REST best practices\, a suitable name for the path you described 
 
 '/card\-transaction\-capture/\{cardtransactioncaptureid\}/transaction\-consolidation/initiate'
 
-### POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/Initiate
+## POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/Initiate
 
-**Description**
+:::info Path
+POST: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/Initiate
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale InBQ Instantiate a new Transaction Reversal
 
@@ -266,9 +297,13 @@ POST: The name of the path should be:
 PUT /card\-transaction\-capture/\{cardtransactioncaptureid\}/transaction\-reversal
 \`\`\`
 
-### GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
+## GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Retrieve
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ReBQ Retrieve details about any aspect of Transaction Authorization
 
@@ -282,9 +317,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/card\-transaction\-capture/\{cardtransactioncaptureid\}/transaction\-authorization/\{transactionauthorizationid\}/retrieve'
 
-### GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve
+## GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ReBQ Retrieve details about any aspect of Transaction Capture
 
@@ -297,9 +336,13 @@ This API path \`/CardTransactionCapture/\{cardtransactioncaptureid\}/Transaction
 GET: Based on REST best practices\, the name of the path should preferably be descriptive and focus on the resource being accessed\. A possible name for the path could be:
 '/card\-transactions/\{cardtransactioncaptureid\}/capture/\{transactioncaptureid\}/retrieve'
 
-### GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Retrieve
+## GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Retrieve
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ReBQ Retrieve details about any aspect of Transaction Consolidation
 
@@ -315,9 +358,13 @@ GET: Based on REST best practices\, the name of the path should reflect the reso
 /CardTransactionCaptures/\{cardtransactioncaptureid\}/TransactionConsolidations/\{transactionconsolidationid\}/RetrieveTransaction
 \`\`\`
 
-### GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Retrieve
+## GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Retrieve
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale ReBQ Retrieve details about any aspect of Transaction Reversal
 
@@ -331,9 +378,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 '/card\-transaction\-capture/\{cardtransactioncaptureid\}/transaction\-reversal/\{transactionreversalid\}'
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionAuthorization/\{transactionauthorizationid\}/Update
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale UpBQ Update details relating to Transaction Authorization
 
@@ -347,9 +398,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/card\-transaction\-captures/\{cardtransactioncaptureid\}/transaction\-authorizations/\{transactionauthorizationid\}'
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Update
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionCapture/\{transactioncaptureid\}/Update
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale UpBQ Update details relating to Transaction Capture
 
@@ -363,9 +418,13 @@ PUT: Based on REST best practices\, the name for this path should be:
 
 '/cardtransactioncaptures/\{cardtransactioncaptureid\}/transactioncaptures/\{transactioncaptureid\}'
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Update
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionConsolidation/\{transactionconsolidationid\}/Update
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale UpBQ Update details relating to Transaction Consolidation
 
@@ -383,9 +442,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path represents a hierarchical structure where resources are accessed in a consistent and predictable manner\. The "Update" operation should be represented by using the HTTP verb PATCH or PUT on this resource URL\.
 
-### PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Update
+## PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardTransactionCapture/\{cardtransactioncaptureid\}/TransactionReversal/\{transactionreversalid\}/Update
+:::
+
+### Description
 
 A distributed facility to capture card transactions at the point of sale UpBQ Update details relating to Transaction Reversal
 

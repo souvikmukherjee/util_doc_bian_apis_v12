@@ -1,27 +1,14 @@
 # RewardPointsAwardsAndRedemption
 
-## Table of Contents
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Exchange](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/exchange)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Execute](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/execute)
-- [POST: /RewardPointsAwardsAndRedemption/Initiate](#post-/rewardpointsawardsandredemption/initiate)
-- [GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Retrieve](#get-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/retrieve)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Request](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/request)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Update](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/update)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Exchange](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/award/\{awardid\}/exchange)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Exchange](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/redemption/\{redemptionid\}/exchange)
-- [POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/Initiate](#post-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/award/initiate)
-- [POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/Initiate](#post-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/redemption/initiate)
-- [GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Retrieve](#get-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/award/\{awardid\}/retrieve)
-- [GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Retrieve](#get-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/redemption/\{redemptionid\}/retrieve)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Update](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/award/\{awardid\}/update)
-- [PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Update](#put-/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/redemption/\{redemptionid\}/update)
-
-
 **BIAN Documentation:** [RewardPointsAwardsAndRedemption v12](https://app.swaggerhub.com/apis/BIAN-3/RewardPointsAwardsAndRedemption/12.0.0)
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Exchange
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Exchange
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity EcCR Accept\, verify\, etc\. aspects of Reward Points Transaction processing
 
@@ -35,9 +22,13 @@ PUT: The name for the path '/RewardPointsAwardsAndRedemption/\{rewardpointsaward
 
 '/rewards/\{id\}/exchange'
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Execute
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Execute
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity ExCR Execute an available automated action for Reward Points Transaction
 
@@ -49,9 +40,13 @@ This BIAN API path is used to execute an available automated action for the allo
 
 PUT: The name of the path should be '/reward\-points\-awards\-and\-redemption/\{id\}/execute'\.
 
-### POST: /RewardPointsAwardsAndRedemption/Initiate
+## POST: /RewardPointsAwardsAndRedemption/Initiate
 
-**Description**
+:::info Path
+POST: /RewardPointsAwardsAndRedemption/Initiate
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity InCR Instantiate a new Reward Points Transaction
 
@@ -67,9 +62,13 @@ POST: Based on REST best practices\, the name of the path should be something th
 \- /reward\-points/awards\-and\-redemption/initiate
 \- /reward\-programs/initiate
 
-### GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Retrieve
+## GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Retrieve
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity ReCR Retrieve details about any aspect of Reward Points Transaction
 
@@ -81,9 +80,13 @@ This BIAN API path allows you to retrieve details related to the allocation and 
 
 GET: Based on REST best practices\, the name of the path could be "/reward\-points\-awards\-and\-redemption/\{rewardpointsawardsandredemptionid\}"\.
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Request
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Request
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Request
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity RqCR Request manual intervention or a decision with respect to Reward Points Transaction
 
@@ -97,9 +100,13 @@ PUT: Based on REST best practices\, the name of the path could be '/reward\-poin
 
 It uses lowercase letters\, separates words with hyphens\, and clearly indicates the resource being accessed \('request'\) within the context of the parent resource \('reward\-points\-awards\-redemption'\)\.
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Update
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Update
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Update
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity UpCR Update details relating to Reward Points Transaction
 
@@ -113,9 +120,13 @@ PUT: The name of the path should be:
 
 '/reward\-points\-awards\-and\-redemption/\{rewardpointsawardsandredemptionid\}'
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Exchange
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Exchange
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity EcBQ Accept\, verify\, etc\. aspects of Award processing
 
@@ -129,9 +140,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /reward\-points\-awards\-and\-redemption/\{rewardpointsawardsandredemptionid\}/awards/\{awardid\}/exchange
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Exchange
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Exchange
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity EcBQ Accept\, verify\, etc\. aspects of Redemption processing
 
@@ -147,9 +162,13 @@ PUT: The name of that endpoint should be:
 
 This naming convention follows REST best practices by using lowercase letters\, hyphens to separate words\, and utilizing descriptive names that reflect the resource structure and hierarchy\.
 
-### POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/Initiate
+## POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/Initiate
 
-**Description**
+:::info Path
+POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/Initiate
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity InBQ Instantiate a new Award
 
@@ -167,9 +186,13 @@ POST /rewardpoints/\{rewardpointsawardsandredemptionid\}/award
 
 This name reflects the HTTP method \(POST\) to initiate a new award for a specific reward points transaction identified by \`rewardpointsawardsandredemptionid\`\.
 
-### POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/Initiate
+## POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/Initiate
 
-**Description**
+:::info Path
+POST: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/Initiate
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity InBQ Instantiate a new Redemption
 
@@ -182,9 +205,13 @@ This API path allows you to create a new redemption for reward points earned or 
 POST: Based on REST best practices\, the name of the path should be something like:
 '/reward\-points\-awards\-and\-redemption/\{id\}/redemption/initiate'
 
-### GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Retrieve
+## GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Retrieve
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity ReBQ Retrieve details about any aspect of Award
 
@@ -197,9 +224,13 @@ This API path allows you to retrieve details about a specific award in the conte
 GET: The name of the path should be:
 '/reward\-points\-awards\-redemption/\{rewardpointsawardsandredemptionid\}/awards/\{awardid\}'
 
-### GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Retrieve
+## GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Retrieve
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity ReBQ Retrieve details about any aspect of Redemption
 
@@ -213,9 +244,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET '/reward\-points\-awards\-and\-redemption/\{reward\-points\-awards\-and\-redemption\-id\}/redemption/\{redemption\-id\}'
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Update
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Update
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Award/\{awardid\}/Update
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity UpBQ Update details relating to Award
 
@@ -229,9 +264,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/rewardpointsawardsandredemption/\{rewardpointsawardsandredemptionid\}/award/\{awardid\}' \- to represent the resource endpoint for updating a specific award associated with a reward points awards and redemption entity\.
 
-### PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Update
+## PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Update
 
-**Description**
+:::info Path
+PUT: /RewardPointsAwardsAndRedemption/\{rewardpointsawardsandredemptionid\}/Redemption/\{redemptionid\}/Update
+:::
+
+### Description
 
 Handle the allocation and redemption of rewards points for customer transaction activity UpBQ Update details relating to Redemption
 

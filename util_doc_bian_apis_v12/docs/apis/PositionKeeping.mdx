@@ -1,20 +1,14 @@
 # PositionKeeping
 
-## Table of Contents
-- [POST: /PositionKeeping/Initiate](#post-/positionkeeping/initiate)
-- [PUT: /PositionKeeping/\{positionkeepingid\}/Update](#put-/positionkeeping/\{positionkeepingid\}/update)
-- [PUT: /PositionKeeping/\{positionkeepingid\}/Control](#put-/positionkeeping/\{positionkeepingid\}/control)
-- [GET: /PositionKeeping/\{positionkeepingid\}/Retrieve](#get-/positionkeeping/\{positionkeepingid\}/retrieve)
-- [PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update](#put-/positionkeeping/\{positionkeepingid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/update)
-- [PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Capture](#put-/positionkeeping/\{positionkeepingid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/capture)
-- [GET: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve](#get-/positionkeeping/\{positionkeepingid\}/financialtransactioncapture/\{financialtransactioncaptureid\}/retrieve)
-
-
 **BIAN Documentation:** [PositionKeeping v12](https://app.swaggerhub.com/apis/BIAN-3/PositionKeeping/12.0.0)
 
-### POST: /PositionKeeping/Initiate
+## POST: /PositionKeeping/Initiate
 
-**Description**
+:::info Path
+POST: /PositionKeeping/Initiate
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems InCR Initiate a position keeping transaction log
 
@@ -26,9 +20,13 @@ This API path allows you to create a new entry in the financial transaction log 
 
 POST: If following REST best practices\, the name of the path '/PositionKeeping/Initiate' could be simplified to something that more accurately represents the resource being accessed\. You could rename it to '/position\-keeping' or '/position\-keeping/initiate'\. By using clear and descriptive resource names without verbs\, it better aligns with REST principles\.
 
-### PUT: /PositionKeeping/\{positionkeepingid\}/Update
+## PUT: /PositionKeeping/\{positionkeepingid\}/Update
 
-**Description**
+:::info Path
+PUT: /PositionKeeping/\{positionkeepingid\}/Update
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems UpCR Update details for an active financial transaction log\, including reflecting an account block
 
@@ -44,9 +42,13 @@ PUT /PositionKeeping/\{positionkeepingid\}
 
 This path follows the convention of using the HTTP method PUT to update a specific resource identified by its unique identifier \(positionkeepingid\) within the '/PositionKeeping' resource collection\.
 
-### PUT: /PositionKeeping/\{positionkeepingid\}/Control
+## PUT: /PositionKeeping/\{positionkeepingid\}/Control
 
-**Description**
+:::info Path
+PUT: /PositionKeeping/\{positionkeepingid\}/Control
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems CoCR Control the processing of the log
 
@@ -60,9 +62,13 @@ PUT: The name of the path should be: \`/position\-keeping/\{positionkeepingid\}/
 
 Following REST best practices\, the path should be in lowercase letters with words separated by hyphens\, to improve readability and maintain consistency\.
 
-### GET: /PositionKeeping/\{positionkeepingid\}/Retrieve
+## GET: /PositionKeeping/\{positionkeepingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PositionKeeping/\{positionkeepingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems ReCR Retrieve information about the log
 
@@ -74,9 +80,13 @@ This API path allows you to retrieve information about a specific financial tran
 
 GET: Based on REST best practices\, the name of the path would ideally be structured to indicate the specific resource being retrieved\. A suitable name could be '/PositionKeeping/\{positionkeepingid\}'\, since it already implies retrieval by including the resource identifier 'positionkeepingid'\.
 
-### PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update
+## PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update
 
-**Description**
+:::info Path
+PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Update
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems UpBQ Update details of a captured financial transaction
 
@@ -92,9 +102,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 This path clearly represents the hierarchy and relationship between the resources while also avoiding unnecessary details like the "Update" keyword\, which can be implied by using appropriate HTTP methods like PUT or PATCH\.
 
-### PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Capture
+## PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Capture
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems CaBQ Capture details of a financial transaction in the log
 
@@ -110,9 +124,13 @@ PUT: Based on REST best practices\, a suitable name for the path would be:
 /position\-keeping/\{positionkeepingid\}/financial\-transaction\-capture/\{financialtransactioncaptureid\}/capture
 \`\`\`
 
-### GET: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve
+## GET: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PositionKeeping/\{positionkeepingid\}/FinancialTransactionCapture/\{financialtransactioncaptureid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a financial transaction log to support production\. Reconciled financial transactions are subsequently posted to the accounting systems ReBQ Retrieve details of financial transactions captured in the log
 

@@ -1,19 +1,14 @@
 # ChannelActivityHistory
 
-## Table of Contents
-- [POST: /ChannelActivityHistory/Initiate](#post-/channelactivityhistory/initiate)
-- [PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Update](#put-/channelactivityhistory/\{channelactivityhistoryid\}/update)
-- [GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Retrieve](#get-/channelactivityhistory/\{channelactivityhistoryid\}/retrieve)
-- [PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Update](#put-/channelactivityhistory/\{channelactivityhistoryid\}/event/\{eventid\}/update)
-- [PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Capture](#put-/channelactivityhistory/\{channelactivityhistoryid\}/event/\{eventid\}/capture)
-- [GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Retrieve](#get-/channelactivityhistory/\{channelactivityhistoryid\}/event/\{eventid\}/retrieve)
-
-
 **BIAN Documentation:** [ChannelActivityHistory v12](https://app.swaggerhub.com/apis/BIAN-3/ChannelActivityHistory/12.0.0)
 
-### POST: /ChannelActivityHistory/Initiate
+## POST: /ChannelActivityHistory/Initiate
 
-**Description**
+:::info Path
+POST: /ChannelActivityHistory/Initiate
+:::
+
+### Description
 
 This service domains consolidates and captures customer channel usage activity to support channel activity analysis and also can be referenced for customer access authorization and routing decisions InCR Initiate channel activity logging for a customer
 
@@ -29,9 +24,13 @@ A more suitable approach would involve using nouns that represent resources inst
 
 Therefore\, the improved name for the path following REST best practices could be '/ChannelActivityHistories'\.
 
-### PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Update
+## PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Update
+:::
+
+### Description
 
 This service domains consolidates and captures customer channel usage activity to support channel activity analysis and also can be referenced for customer access authorization and routing decisions UpCR Update channel activity logging details for a customer
 
@@ -47,9 +46,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase with separate words separated by hyphens\. The endpoint should be named based on the resource it is interacting with\.
 
-### GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Retrieve
+## GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Retrieve
+:::
+
+### Description
 
 This service domains consolidates and captures customer channel usage activity to support channel activity analysis and also can be referenced for customer access authorization and routing decisions ReCR Retrieve details about customer channel activity logging
 
@@ -61,9 +64,13 @@ This BIAN API path allows you to retrieve details about customer channel activit
 
 GET: The name of the path should be \`/channel\-activity\-history/\{channelActivityHistoryId\}\` for better adherence to RESTful naming conventions\.
 
-### PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Update
+## PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Update
+:::
+
+### Description
 
 This service domains consolidates and captures customer channel usage activity to support channel activity analysis and also can be referenced for customer access authorization and routing decisions UpBQ Update a logged event for a customer
 
@@ -77,9 +84,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}'
 
-### PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Capture
+## PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Capture
 
-**Description**
+:::info Path
+PUT: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Capture
+:::
+
+### Description
 
 This service domains consolidates and captures customer channel usage activity to support channel activity analysis and also can be referenced for customer access authorization and routing decisions CaBQ Capture a channel access event in the log
 
@@ -93,9 +104,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 '/channel\-activity\-history/\{channelactivityhistoryid\}/events/\{eventid\}/capture'
 
-### GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Retrieve
+## GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChannelActivityHistory/\{channelactivityhistoryid\}/Event/\{eventid\}/Retrieve
+:::
+
+### Description
 
 This service domains consolidates and captures customer channel usage activity to support channel activity analysis and also can be referenced for customer access authorization and routing decisions ReBQ Retrieve details about a logged channel activity event
 

@@ -1,28 +1,14 @@
 # PartyLifecycleManagement
 
-## Table of Contents
-- [POST: /PartyLifecycleManagement/Initiate](#post-/partylifecyclemanagement/initiate)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Update](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/update)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Control](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/control)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Exchange](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/exchange)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Execute](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/execute)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Request](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/request)
-- [GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Retrieve](#get-/partylifecyclemanagement/\{partylifecyclemanagementid\}/retrieve)
-- [GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Qualification/\{qualificationid\}/Retrieve](#get-/partylifecyclemanagement/\{partylifecyclemanagementid\}/qualification/\{qualificationid\}/retrieve)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Update](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/documentation/\{documentationid\}/update)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Execute](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/documentation/\{documentationid\}/execute)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Request](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/documentation/\{documentationid\}/request)
-- [GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Retrieve](#get-/partylifecyclemanagement/\{partylifecyclemanagementid\}/documentation/\{documentationid\}/retrieve)
-- [PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Update](#put-/partylifecyclemanagement/\{partylifecyclemanagementid\}/precedents/\{precedentsid\}/update)
-- [GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Retrieve](#get-/partylifecyclemanagement/\{partylifecyclemanagementid\}/precedents/\{precedentsid\}/retrieve)
-- [GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/IdentityProofing/\{identityproofingid\}/Retrieve](#get-/partylifecyclemanagement/\{partylifecyclemanagementid\}/identityproofing/\{identityproofingid\}/retrieve)
-
-
 **BIAN Documentation:** [PartyLifecycleManagement v12](https://app.swaggerhub.com/apis/BIAN-3/PartyLifecycleManagement/12.0.0)
 
-### POST: /PartyLifecycleManagement/Initiate
+## POST: /PartyLifecycleManagement/Initiate
 
-**Description**
+:::info Path
+POST: /PartyLifecycleManagement/Initiate
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. InCR Initiate party life\-cycle administrative plan
 
@@ -34,9 +20,13 @@ This API path allows users to create a new resource that initiates the process o
 
 POST: If the path '/PartyLifecycleManagement/Initiate' followed REST best practices\, it should be renamed to just '/parties' to better represent the resource being acted upon\.RESTful URLs typically use nouns to represent resources and avoid verbs or actions in the URL\.
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Update
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Update
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. UpCR Update details about a party life\-cycle administrative plan
 
@@ -50,9 +40,13 @@ PUT: A good name for the path '/PartyLifecycleManagement/\{partylifecyclemanagem
 
 PUT /party\-lifecycle\-management/\{partylifecyclemanagementid\}
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Control
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Control
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. CoCR Control the processing of a party\-life\-cycle administrative plan \(e\.g\. terminate\)
 
@@ -68,9 +62,13 @@ PUT: The name of the path should be:
 
 This naming convention follows REST best practices by using lowercase letters\, hyphens to separate words\, and pluralizing resource names when appropriate\.
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Exchange
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Exchange
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. EcCR Accept\, verify\, etc\. of the party life\-cycle administrative plan
 
@@ -84,9 +82,13 @@ PUT: Based on standard REST best practices\, the name of the path should be:
 
 /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Exchanges
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Execute
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Execute
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ExCR Execute an automated action \(e\.g\. input data\)
 
@@ -100,9 +102,13 @@ PUT: The path '/PartyLifecycleManagement/\{partylifecyclemanagementid\}/Execute'
 
 '/party\-lifecycle\-management/\{partylifecyclemanagementid\}/execute'
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Request
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Request
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. RqCR Request manual intervention \(e\.g\. negotiate resolution\)
 
@@ -120,9 +126,13 @@ PUT: The name of the path should be:
 
 In REST best practices\, resource names should typically be plural nouns to represent a collection of resources\.
 
-### GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Retrieve
+## GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ReCR Retrieve details about a party life\-cycle administrative plan
 
@@ -137,9 +147,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 RESTful paths should use lowercase letters and hyphens to separate words for better readability and consistency\. Also\, the use of verbs like "Retrieve" in the path is not recommended in RESTful design since the HTTP method used \(e\.g\.\, GET\) should already convey the action taking place\.
 
-### GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Qualification/\{qualificationid\}/Retrieve
+## GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Qualification/\{qualificationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Qualification/\{qualificationid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ReBQ Retrieve details about a party qualification routine
 
@@ -155,9 +169,13 @@ GET: The name of the path should be:
 
 This path reflects the hierarchical relationship between party lifecycle management and qualifications\, where a specific qualification is retrieved for a given party in the context of party lifecycle management\.
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Update
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Update
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. UpBQ Update details about document handling
 
@@ -173,9 +191,13 @@ PUT: The name of the path should be:
 
 In this naming convention\, we use the HTTP method \`PUT\` to indicate that we are updating an existing resource\. The path segments are in lowercase and separated by hyphens\, representing the resource hierarchy\.
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Execute
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Execute
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ExBQ Execute an automated action \(e\.g\. input data about a document\)
 
@@ -188,9 +210,13 @@ This API path allows you to update an existing document related to the lifecycle
 PUT: Following REST best practices\, the name of the path should be:
 '/party\-lifecycle\-management/\{party\-lifecycle\-management\-id\}/documentation/\{documentation\-id\}/execute'
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Request
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Request
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Request
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. RqBQ Request manual intervention \(e\.g\. handle a document exchange\)
 
@@ -204,9 +230,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 \`/party\-lifecycle\-management/\{partylifecyclemanagementid\}/documentation/\{documentationid\}/request\`
 
-### GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Retrieve
+## GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Documentation/\{documentationid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ReBQ Retrieve details about document processing for a party life\-cycle administration
 
@@ -218,9 +248,13 @@ This API path allows you to retrieve details about document processing for manag
 
 GET: The name of the path should be \`/party\-lifecycle\-management/\{party\-lifecycle\-management\-id\}/documentation/\{documentation\-id\}\` to comply with REST best practices\.
 
-### PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Update
+## PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Update
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. UpBQ Update details about customer precedents
 
@@ -236,9 +270,13 @@ PUT: The name of the path following REST best practices could be:
 PUT /party\-lifecycle\-management/\{partylifecyclemanagementid\}/precedents/\{precedentsid\}
 \`\`\`
 
-### GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Retrieve
+## GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/Precedents/\{precedentsid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ReBQ Retrieve details about customer precedent maintenance
 
@@ -256,9 +294,13 @@ GET: The path could be named as:
 
 This path structure reflects the hierarchy of resources in a more RESTful manner\. The "Retrieve" operation can be implied by sending a GET request to this endpoint\.
 
-### GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/IdentityProofing/\{identityproofingid\}/Retrieve
+## GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/IdentityProofing/\{identityproofingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /PartyLifecycleManagement/\{partylifecyclemanagementid\}/IdentityProofing/\{identityproofingid\}/Retrieve
+:::
+
+### Description
 
 This service domain tracks the state of a party relationship with the bank from the initial checks made during the establishment of a new party connection and subsequently maintained as necessary over the duration of the relationship\. The checks and the maintenance requirements will vary by party type and jurisdiction\. The checks cover bank specific and legal and regulatory considerations and may be updated based on a standard schedule or by request in specific circumstances\. ReBQ Retrieve details about a party identity proofing routine
 

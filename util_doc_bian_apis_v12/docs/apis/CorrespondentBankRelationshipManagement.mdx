@@ -1,39 +1,14 @@
 # CorrespondentBankRelationshipManagement
 
-## Table of Contents
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Control](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/control)
-- [POST: /CorrespondentBankRelationshipManagement/Create](#post-/correspondentbankrelationshipmanagement/create)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Exchange](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/exchange)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Grant](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/grant)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Notify](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/notify)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Request](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/request)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Retrieve](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/retrieve)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Update](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/update)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Exchange](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/incidenttroubleshootingoversight/\{incidenttroubleshootingoversightid\}/exchange)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Exchange](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipdevelopment/\{relationshipdevelopmentid\}/exchange)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Exchange](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipreciprocityassessment/\{relationshipreciprocityassessmentid\}/exchange)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Grant](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/incidenttroubleshootingoversight/\{incidenttroubleshootingoversightid\}/grant)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Grant](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipdevelopment/\{relationshipdevelopmentid\}/grant)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Grant](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipreciprocityassessment/\{relationshipreciprocityassessmentid\}/grant)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Notify](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/incidenttroubleshootingoversight/\{incidenttroubleshootingoversightid\}/notify)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Notify](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipdevelopment/\{relationshipdevelopmentid\}/notify)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Notify](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipreciprocityassessment/\{relationshipreciprocityassessmentid\}/notify)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Request](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/incidenttroubleshootingoversight/\{incidenttroubleshootingoversightid\}/request)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Request](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipdevelopment/\{relationshipdevelopmentid\}/request)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Request](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipreciprocityassessment/\{relationshipreciprocityassessmentid\}/request)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Retrieve](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/incidenttroubleshootingoversight/\{incidenttroubleshootingoversightid\}/retrieve)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Retrieve](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipdevelopment/\{relationshipdevelopmentid\}/retrieve)
-- [GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Retrieve](#get-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipreciprocityassessment/\{relationshipreciprocityassessmentid\}/retrieve)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Update](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/incidenttroubleshootingoversight/\{incidenttroubleshootingoversightid\}/update)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Update](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipdevelopment/\{relationshipdevelopmentid\}/update)
-- [PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Update](#put-/correspondentbankrelationshipmanagement/\{correspondentbankrelationshipmanagementid\}/relationshipreciprocityassessment/\{relationshipreciprocityassessmentid\}/update)
-
-
 **BIAN Documentation:** [CorrespondentBankRelationshipManagement v12](https://app.swaggerhub.com/apis/BIAN-3/CorrespondentBankRelationshipManagement/12.0.0)
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Control
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Control
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Control Correpondent Bank Relationship Management Plan
 
@@ -47,9 +22,13 @@ PUT: The name of the path should be:
 
 /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Control
 
-### POST: /CorrespondentBankRelationshipManagement/Create
+## POST: /CorrespondentBankRelationshipManagement/Create
 
-**Description**
+:::info Path
+POST: /CorrespondentBankRelationshipManagement/Create
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Create Correpondent Bank Relationship Management Plan
 
@@ -61,9 +40,13 @@ This API path \`/CorrespondentBankRelationshipManagement/Create\` allows users t
 
 POST: Based on REST best practices\, the name of the path '/CorrespondentBankRelationshipManagement/Create' could be simplified to '/correspondent\-bank\-relationships'\. This path should use nouns to represent resources rather than verbs\. The 'Create' operation can be achieved by making a POST request to this path to create a new correspondent bank relationship\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Exchange
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Exchange Correpondent Bank Relationship Management Plan
 
@@ -77,9 +60,13 @@ PUT: The name of the path would be '/correspondent\-bank\-relationships/\{corres
 
 Following REST best practices\, the path should be in lowercase letters and should use hyphens to separate words for better readability and consistency\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Grant
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Grant
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Grant Correpondent Bank Relationship Management Plan
 
@@ -93,9 +80,13 @@ PUT: Based on REST best practices\, the name of the path should ideally be:
 
 /CorrespondentBankRelationshipManagements/\{correspondentbankrelationshipmanagementid\}/Grants
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Notify
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Notify Correpondent Bank Relationship Management Plan
 
@@ -116,9 +107,13 @@ According to REST best practices:
 \- Use lower case letters
 \- Use hyphen \(\-\) between words in the resource name
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Request
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Request
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Request Correpondent Bank Relationship Management Plan
 
@@ -132,9 +127,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /CorrespondentBankRelationshipManagements/\{correspondentbankrelationshipmanagementid\}/Requests
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Retrieve
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Retrieve Correpondent Bank Relationship Management Plan
 
@@ -148,9 +147,13 @@ GET: The name of the path should be:
 
 /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Update
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/Update
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Update Correpondent Bank Relationship Management Plan
 
@@ -166,9 +169,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is common to use the HTTP verb \`PATCH\` to update resources and use lowercase letters with hyphens to separate words in the URI path\. In this case\, the resource being updated is a correspondent bank relationship management identified by \`\{correspondentbankrelationshipmanagementid\}\`\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Exchange
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Exchange
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Exchange Incident Troubleshooting Oversight Duty
 
@@ -181,9 +188,13 @@ This BIAN API path is designed to update an existing resource related to the man
 PUT: Based on REST best practices\, the name of the path should be:
 '/correspondent\-bank\-relationship\-management/\{correspondentbankrelationshipmanagementid\}/incident\-troubleshooting\-oversight/\{incidenttroubleshootingoversightid\}/exchange'
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Exchange
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Exchange Relationship Development Duty
 
@@ -197,9 +208,13 @@ PUT: The name of the path should be:
 
 \`/correspondent\-bank\-relationship\-management/\{correspondentbankrelationshipmanagementid\}/relationship\-development/\{relationshipdevelopmentid\}/exchange\`
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Exchange
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Exchange Relationship Reciprocity Assessment Duty
 
@@ -215,9 +230,13 @@ PUT: Based on REST best practices\, the name of the path could be structured as 
 
 This naming convention uses lowercase letters\, separates words with hyphens for readability\, and presents a clear and descriptive path that follows RESTful principles\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Grant
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Grant
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Grant Incident Troubleshooting Oversight Duty
 
@@ -235,9 +254,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path follows the convention of using nouns for resource names\, keeping the hierarchy logical and concise\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Grant
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Grant
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Grant Relationship Development Duty
 
@@ -251,9 +274,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /CorrespondentBanks/\{correspondentbankId\}/Relationships/\{relationshipId\}/Grants
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Grant
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Grant
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Grant Relationship Reciprocity Assessment Duty
 
@@ -267,9 +294,13 @@ PUT: The name of the path following REST best practices should be:
 
 \`/correspondent\-bank\-relationships/\{correspondentbankrelationshipmanagementid\}/relationship\-reciprocity\-assessments/\{relationshipreciprocityassessmentid\}/grant\`
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Notify
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Notify Incident Troubleshooting Oversight Duty
 
@@ -285,9 +316,13 @@ GET: Based on REST best practices\, a suitable name for this path could be:
 /relationships/\{correspondentbankrelationshipmanagementid\}/incidents/\{incidenttroubleshootingoversightid\}/notify
 \`\`\`
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Notify
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Notify Relationship Development Duty
 
@@ -301,9 +336,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 \`/correspondent\-banks/\{correspondentBankId\}/relationships/\{relationshipId\}/notify\`
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Notify
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Notify
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Notify Relationship Reciprocity Assessment Duty
 
@@ -322,9 +361,13 @@ In this updated version:
 \- Plural nouns are used where appropriate for better readability\.
 \- Descriptive terms are used to enhance the understandability of the path\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Request
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Request
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Request Incident Troubleshooting Oversight Duty
 
@@ -338,9 +381,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/correspondent\-bank\-relationship\-management/\{correspondent\-bank\-relationship\-management\-id\}/incident\-troubleshooting\-oversight/\{incident\-troubleshooting\-oversight\-id\}/request'
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Request
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Request
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Request Relationship Development Duty
 
@@ -356,9 +403,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path structure appears to be following RESTful principles by including resource identifiers in the URI path to uniquely identify specific resources and their relationships\. Each identifier is separated by slashes to represent a hierarchical structure\.
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Request
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Request
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Request Relationship Reciprocity Assessment Duty
 
@@ -372,9 +423,13 @@ PUT: The name of the path should be:
 
 '/correspondent\-bank\-relationships/\{correspondentBankRelationshipManagementId\}/relationship\-reciprocity\-assessments/\{relationshipReciprocityAssessmentId\}/requests'
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Retrieve
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Retrieve Incident Troubleshooting Oversight Duty
 
@@ -392,9 +447,13 @@ GET /correspondent\-bank\-relationship\-management/\{correspondent\_bank\_relati
 
 This naming convention follows the guidelines of using lowercase letters\, using hyphens to separate words\, being singular for resources\, and including only nouns in the URI path\.
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Retrieve
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Retrieve Relationship Development Duty
 
@@ -410,9 +469,13 @@ GET: Based on REST best practices\, the name of the path should be structured as
 
 This path is descriptive and follows a hierarchical structure\, which helps convey the relationship between resources\. The specific action "Retrieve" does not need to be included in the path name\, as the HTTP method \(such as GET\) will define the nature of the operation being performed on the resource\.
 
-### GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Retrieve
+## GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Retrieve Relationship Reciprocity Assessment Duty
 
@@ -426,9 +489,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET /correspondent\-bank\-relationships/\{correspondentBankRelationshipId\}/relationship\-reciprocity\-assessments/\{relationshipReciprocityAssessmentId\}
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Update
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/IncidentTroubleshootingOversight/\{incidenttroubleshootingoversightid\}/Update
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Update Incident Troubleshooting Oversight Duty
 
@@ -442,9 +509,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path would b
 
 PUT /correspondent\-bank\-relationships/\{correspondentbankrelationshipid\}/incident\-troubleshooting\-oversights/\{incidenttroubleshootingoversightid\}
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Update
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipDevelopment/\{relationshipdevelopmentid\}/Update
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Update Relationship Development Duty
 
@@ -458,9 +529,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/correspondent\-bank\-relationship\-managements/\{correspondentbankrelationshipmanagementid\}/relationship\-developments/\{relationshipdevelopmentid\}'
 
-### PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Update
+## PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CorrespondentBankRelationshipManagement/\{correspondentbankrelationshipmanagementid\}/RelationshipReciprocityAssessment/\{relationshipreciprocityassessmentid\}/Update
+:::
+
+### Description
 
 This Service Domain manages correspondent bank relations\, ensuring reciprocity and developing business where possible Update Relationship Reciprocity Assessment Duty
 

@@ -1,39 +1,14 @@
 # ContractorandSupplierAgreement
 
-## Table of Contents
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Control](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/control)
-- [POST: /ContractorandSupplierAgreement/Evaluate](#post-/contractorandsupplieragreement/evaluate)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Exchange](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/exchange)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Grant](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/grant)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Notify](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/notify)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Request](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/request)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Retrieve](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/retrieve)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Update](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/update)
-- [POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/Evaluate](#post-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/legalterm/evaluate)
-- [POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/Evaluate](#post-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/policyterm/evaluate)
-- [POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/Evaluate](#post-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/regulatoryterm/evaluate)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Exchange](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/legalterm/\{legaltermid\}/exchange)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Exchange](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/policyterm/\{policytermid\}/exchange)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/regulatoryterm/\{regulatorytermid\}/exchange)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Notify](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/legalterm/\{legaltermid\}/notify)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Notify](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/policyterm/\{policytermid\}/notify)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/regulatoryterm/\{regulatorytermid\}/notify)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Request](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/legalterm/\{legaltermid\}/request)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Request](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/policyterm/\{policytermid\}/request)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/regulatoryterm/\{regulatorytermid\}/request)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Retrieve](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/legalterm/\{legaltermid\}/retrieve)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Retrieve](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/policyterm/\{policytermid\}/retrieve)
-- [GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve](#get-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/regulatoryterm/\{regulatorytermid\}/retrieve)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Update](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/legalterm/\{legaltermid\}/update)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Update](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/policyterm/\{policytermid\}/update)
-- [PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update](#put-/contractorandsupplieragreement/\{contractorandsupplieragreementid\}/regulatoryterm/\{regulatorytermid\}/update)
-
-
 **BIAN Documentation:** [ContractorandSupplierAgreement v12](https://app.swaggerhub.com/apis/BIAN-3/ContractorandSupplierAgreement/12.0.0)
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Control
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Control
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Control
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Control Supplier Agreement
 
@@ -49,9 +24,13 @@ PUT: The name of the path should be:
 
 Remember to use lowercase letters\, separate words with hyphens\, and use plural nouns for consistency with REST best practices\.
 
-### POST: /ContractorandSupplierAgreement/Evaluate
+## POST: /ContractorandSupplierAgreement/Evaluate
 
-**Description**
+:::info Path
+POST: /ContractorandSupplierAgreement/Evaluate
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Evaluate Supplier Agreement
 
@@ -63,9 +42,13 @@ This API path allows users to create a new resource to evaluate supplier agreeme
 
 POST: The path '/contractor\-supplier\-agreements/evaluate' would be a good choice following REST best practices\. It uses lowercase letters\, words are separated by hyphens\, and it is clear and descriptive\.
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Exchange
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Exchange
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Exchange Supplier Agreement
 
@@ -87,9 +70,13 @@ or
 
 These names are clear\, concise\, and accurately represent the resource being accessed\.
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Grant
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Grant
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Grant Supplier Agreement
 
@@ -103,9 +90,13 @@ PUT: The name of the path could be:
 
 /contractor\-and\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/grant
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Notify
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Notify
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Notify Supplier Agreement
 
@@ -120,9 +111,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters\, hyphens to separate words\, and plural nouns for resource names\.
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Request
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Request Supplier Agreement
 
@@ -135,9 +130,13 @@ This API path is used to update an existing contractor and supplier agreement by
 PUT: The name of the path should be as follows:
 '/contractor\-and\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/request'
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Retrieve
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Retrieve Supplier Agreement
 
@@ -151,9 +150,13 @@ GET: The name of the path should be:
 
 GET '/contractor\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}'
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Update
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Update Supplier Agreement
 
@@ -166,9 +169,13 @@ This API path allows a user to update an existing contractor or supplier agreeme
 PUT: The name of the path should be 
 '/contractor\-and\-supplier\-agreements/\{contractorandsupplieragreementid\}' for updating a specific contractor and supplier agreement resource\.
 
-### POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/Evaluate
+## POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/Evaluate
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Evaluate Legal Term
 
@@ -182,9 +189,13 @@ POST: The name of the path should be:
 
 /contractor\-and\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/legal\-terms/evaluate
 
-### POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/Evaluate
+## POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/Evaluate
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Evaluate Policy Term
 
@@ -198,9 +209,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 '/contractor\-supplier\-agreements/\{contractorandsupplieragreementid\}/policy\-terms/evaluate'
 
-### POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/Evaluate
+## POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/Evaluate
 
-**Description**
+:::info Path
+POST: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/Evaluate
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Evaluate Regulatory Term
 
@@ -214,9 +229,13 @@ POST: A more RESTful naming for the path '/ContractorandSupplierAgreement/\{cont
 
 '/contractor\-supplier\-agreements/\{agreementId\}/regulatory\-terms/evaluate'
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Exchange
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Exchange
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Exchange Legal Term
 
@@ -234,9 +253,13 @@ A possible name for the path could be:
 
 Remember to use lowercase letters\, hyphens for readability\, and avoid using camel case in path names\.
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Exchange
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Exchange
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Exchange Policy Term
 
@@ -250,9 +273,13 @@ PUT: The name of the path should be:
 
 \`/contractor\-supplier\-agreements/\{contractorandsupplieragreementid\}/policy\-terms/\{policytermid\}/exchanges\`
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Exchange
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Exchange Regulatory Term
 
@@ -266,9 +293,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /contractor\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/regulatory\-terms/\{regulatory\-term\-id\}/exchange
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Notify
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Notify
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Notify Legal Term
 
@@ -282,9 +313,13 @@ GET: The name of the path following REST best practices could be:
 
 \`/contractor\-and\-supplier\-agreements/\{contractorandsupplieragreementid\}/legal\-terms/\{legaltermid\}/notify\`
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Notify
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Notify
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Notify Policy Term
 
@@ -298,9 +333,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/contractor\-and\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/policy\-terms/\{policy\-term\-id\}/notify'
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Notify
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Notify Regulatory Term
 
@@ -314,9 +353,13 @@ GET: The name of the path following RESTful best practices could be:
 
 /contractor\-and\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/regulatory\-terms/\{regulatory\-term\-id\}/notify
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Request
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Request Legal Term
 
@@ -330,9 +373,13 @@ PUT: Based on REST best practices\, the name of the path should ideally be:
 
 /contractor\-supplier\-agreements/\{contractorandsupplieragreementid\}/legal\-terms/\{legaltermid\}/requests
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Request
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Request Policy Term
 
@@ -346,9 +393,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path would b
 
 \`/contractor\-and\-supplier\-agreements/\{contractorandsupplieragreementid\}/policy\-terms/\{policytermid\}/requests\`
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Request
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Request Regulatory Term
 
@@ -362,9 +413,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /contractor\-supplier\-agreements/\{contractorandsupplieragreementid\}/regulatory\-terms/\{regulatorytermid\}/requests
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Retrieve
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Retrieve Legal Term
 
@@ -380,9 +435,13 @@ GET: Following REST best practices\, the name of the path should be:
 /contractor\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/legal\-terms/\{legal\-term\-id\}/retrieve
 \`\`\`
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Retrieve
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Retrieve Policy Term
 
@@ -396,9 +455,13 @@ GET: The name of the path should be:
 
 GET '/contractor\-supplier\-agreements/\{contractor\-supplier\-agreement\-id\}/policy\-terms/\{policy\-term\-id\}'
 
-### GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
+## GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Retrieve Regulatory Term
 
@@ -412,9 +475,13 @@ GET: Based on REST best practices\, the path should be named using nouns to repr
 
 GET '/contractors/\{contractorId\}/suppliers/\{supplierId\}/agreement/\{agreementId\}/regulatoryterms/\{regulatoryTermId\}'
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Update
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/LegalTerm/\{legaltermid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Update Legal Term
 
@@ -430,9 +497,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 PUT /contractor\-supplier\-agreements/\{contractorandsupplieragreementid\}/legal\-terms/\{legaltermid\}
 \`\`\`
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Update
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/PolicyTerm/\{policytermid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Update Policy Term
 
@@ -446,9 +517,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/contractor\-and\-supplier\-agreements/\{contractor\-and\-supplier\-agreement\-id\}/policy\-terms/\{policy\-term\-id\}/updates'
 
-### PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update
+## PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContractorandSupplierAgreement/\{contractorandsupplieragreementid\}/RegulatoryTerm/\{regulatorytermid\}/Update
+:::
+
+### Description
 
 This Service Domain maintains appropriate supplier agreements/contracts Update Regulatory Term
 

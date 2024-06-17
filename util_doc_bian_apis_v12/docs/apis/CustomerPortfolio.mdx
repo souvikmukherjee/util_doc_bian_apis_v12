@@ -1,22 +1,14 @@
 # CustomerPortfolio
 
-## Table of Contents
-- [POST: /CustomerPortfolio/Evaluate](#post-/customerportfolio/evaluate)
-- [PUT: /CustomerPortfolio/\{customerportfolioid\}/Update](#put-/customerportfolio/\{customerportfolioid\}/update)
-- [PUT: /CustomerPortfolio/\{customerportfolioid\}/Request](#put-/customerportfolio/\{customerportfolioid\}/request)
-- [GET: /CustomerPortfolio/\{customerportfolioid\}/Retrieve](#get-/customerportfolio/\{customerportfolioid\}/retrieve)
-- [POST: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/Evaluate](#post-/customerportfolio/\{customerportfolioid\}/performanceanalysis/evaluate)
-- [PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update](#put-/customerportfolio/\{customerportfolioid\}/performanceanalysis/\{performanceanalysisid\}/update)
-- [PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute](#put-/customerportfolio/\{customerportfolioid\}/performanceanalysis/\{performanceanalysisid\}/execute)
-- [PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request](#put-/customerportfolio/\{customerportfolioid\}/performanceanalysis/\{performanceanalysisid\}/request)
-- [GET: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve](#get-/customerportfolio/\{customerportfolioid\}/performanceanalysis/\{performanceanalysisid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerPortfolio v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerPortfolio/12.0.0)
 
-### POST: /CustomerPortfolio/Evaluate
+## POST: /CustomerPortfolio/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerPortfolio/Evaluate
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis EvCR Evaluate customer segment performance
 
@@ -28,9 +20,13 @@ This BIAN API path\, /CustomerPortfolio/Evaluate\, allows you to create a new re
 
 POST: If the path '/CustomerPortfolio/Evaluate' followed all REST best practices\, the name of the endpoint should be structured in a resource\-oriented way to reflect the action being performed\. A suggestion for a more RESTful naming convention for this path could be '/customers/\{customerId\}/portfolio/evaluation'\. This name clearly indicates the resource being accessed \(customers\) and the action being performed \(evaluation of a customer's portfolio\)\.
 
-### PUT: /CustomerPortfolio/\{customerportfolioid\}/Update
+## PUT: /CustomerPortfolio/\{customerportfolioid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerPortfolio/\{customerportfolioid\}/Update
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis UpCR Update settings or content for customer segment analysis activity
 
@@ -44,9 +40,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/customers/\{customerid\}/portfolio'
 
-### PUT: /CustomerPortfolio/\{customerportfolioid\}/Request
+## PUT: /CustomerPortfolio/\{customerportfolioid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerPortfolio/\{customerportfolioid\}/Request
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis RqCR Request manual intervention in the customer segment analysis activity
 
@@ -58,9 +58,13 @@ This BIAN API path allows you to update an existing customer portfolio by reques
 
 PUT: The appropriate name for the path \`/CustomerPortfolio/\{customerportfolioid\}/Request\` following REST best practices would be something like \`/customer\-portfolios/\{customerportfolioid\}/requests\`\. It is recommended to use lowercase letters and hyphens to separate words for better readability and consistency in RESTful URI naming conventions\.
 
-### GET: /CustomerPortfolio/\{customerportfolioid\}/Retrieve
+## GET: /CustomerPortfolio/\{customerportfolioid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerPortfolio/\{customerportfolioid\}/Retrieve
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis ReCR Retrieve details about customer segment analysis activity
 
@@ -74,9 +78,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/customerportfolios/\{customerportfolioid\}'
 
-### POST: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/Evaluate
+## POST: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/Evaluate
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis EvBQ Evaluate customer segment performance using a specific type of analysis
 
@@ -90,9 +98,13 @@ POST: The name of the path should be:
 
 '/customerportfolios/\{customerportfolioid\}/performance\-analysis/evaluate'
 
-### PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update
+## PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Update
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis UpBQ Update details of a specific customer segment performance analysis
 
@@ -106,9 +118,13 @@ PUT: The name of the path should be:
 
 PUT /customer\-portfolios/\{customerPortfolioid\}/performance\-analyses/\{performanceAnalysisid\}
 
-### PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
+## PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Execute
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis ExBQ Execute an automated action against on\-going analysis
 
@@ -129,9 +145,13 @@ In this path:
 \- Use singular nouns for resources
 \- Use unique identifiers for specific resource instances
 
-### PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
+## PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Request
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis RqBQ Request manual intervention to on\-going analysis
 
@@ -144,9 +164,13 @@ This API path allows you to update a specific performance analysis within a cust
 PUT: Based on REST best practices\, the name of the path could be structured as follows:
 '/customer\-portfolios/\{customerPortfolioId\}/performance\-analyses/\{performanceAnalysisId\}/requests'
 
-### GET: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
+## GET: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerPortfolio/\{customerportfolioid\}/PerformanceAnalysis/\{performanceanalysisid\}/Retrieve
+:::
+
+### Description
 
 Maintain a portfolio of analytical views of the customer base to support customer segment profitability and performance analysis ReBQ Retrieve details about a specific customer segment performance analysis
 

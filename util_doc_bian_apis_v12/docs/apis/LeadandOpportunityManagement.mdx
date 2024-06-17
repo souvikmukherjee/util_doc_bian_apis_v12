@@ -1,21 +1,14 @@
 # LeadandOpportunityManagement
 
-## Table of Contents
-- [POST: /LeadandOpportunityManagement/Initiate](#post-/leadandopportunitymanagement/initiate)
-- [PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Update](#put-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/update)
-- [GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Retrieve](#get-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/retrieve)
-- [POST: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/Initiate](#post-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/development/initiate)
-- [PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Update](#put-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/development/\{developmentid\}/update)
-- [PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Execute](#put-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/development/\{developmentid\}/execute)
-- [PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Request](#put-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/development/\{developmentid\}/request)
-- [GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Retrieve](#get-/leadandopportunitymanagement/\{leadandopportunitymanagementid\}/development/\{developmentid\}/retrieve)
-
-
 **BIAN Documentation:** [LeadandOpportunityManagement v12](https://app.swaggerhub.com/apis/BIAN-3/LeadandOpportunityManagement/12.0.0)
 
-### POST: /LeadandOpportunityManagement/Initiate
+## POST: /LeadandOpportunityManagement/Initiate
 
-**Description**
+:::info Path
+POST: /LeadandOpportunityManagement/Initiate
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. InCR Initiate lead/opportunity procedure \(capture the lead details\)
 
@@ -27,9 +20,13 @@ This API path allows users to initiate the process of capturing and classifying 
 
 POST: The name of the path should be "/lead\-opportunity\-management/initiate" following REST best practices\. It is recommended to use lowercase letters\, hyphens as separators\, and descriptive words for path names in a RESTful API\.
 
-### PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Update
+## PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. UpCR Update details about a lead/opportunity
 
@@ -43,9 +40,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/lead\-and\-opportunity\-management/\{leadandopportunitymanagementid\}/update'
 
-### GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Retrieve
+## GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. ReCR Retrieve details about a lead/opportunity
 
@@ -61,9 +62,13 @@ GET /leads/\{leadId\}
 
 This name clearly indicates that a single lead resource is being retrieved based on its unique identifier\.
 
-### POST: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/Initiate
+## POST: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/Initiate
 
-**Description**
+:::info Path
+POST: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/Initiate
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. InBQ Initiate\, assign development of a lead/opportunity
 
@@ -81,9 +86,13 @@ Here\, I have made the following changes to follow best practices:
 1\. Used lowercase letters and hyphens in the path for better readability and consistency\.
 2\. Used a singular noun 'lead\-opportunity\-management' instead of 'LeadandOpportunityManagement' for
 
-### PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Update
+## PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Update
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. UpBQ Update details about lean/opportunity development task
 
@@ -96,9 +105,13 @@ This API path allows you to update details related to the development of a sales
 PUT: Based on RESTful naming conventions\, the path should be named as follows:
 '/lead\-and\-opportunity\-management/\{leadandopportunitymanagementid\}/development/\{developmentid\}'
 
-### PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Execute
+## PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Execute
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. ExBQ Execute automated action against a lead opportunity development task \(e\.g\. generate message\)
 
@@ -114,9 +127,13 @@ PUT: Based on REST best practices\, the name of the path should be as follows:
 
 In RESTful naming conventions\, paths should be in lowercase letters\, with hyphens used to separate words for better readability\. Additionally\, resource identifiers are typically in plural form\.
 
-### PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Request
+## PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Request
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. RqBQ Request manual intervention in development \(e\.g\. prospect contact\)
 
@@ -132,9 +149,13 @@ In this case\, the suggested name for the path "/LeadandOpportunityManagement/\{
 
 "/leads/\{leadId\}/opportunities/\{opportunityId\}/developments/\{developmentId\}/requests"
 
-### GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Retrieve
+## GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LeadandOpportunityManagement/\{leadandopportunitymanagementid\}/Development/\{developmentid\}/Retrieve
+:::
+
+### Description
 
 This service domain captures\, classifies and track sales lead/opportunities with established clients for additional products or services\. It handles the processing of the opportunity through to the point of formal offer processing\. ReBQ Retrieve details about lead/opportunity development
 

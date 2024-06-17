@@ -1,27 +1,14 @@
 # LocationDataManagement
 
-## Table of Contents
-- [POST: /LocationDataManagement/Register](#post-/locationdatamanagement/register)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Update](#put-/locationdatamanagement/\{locationdatamanagementid\}/update)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Control](#put-/locationdatamanagement/\{locationdatamanagementid\}/control)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Request](#put-/locationdatamanagement/\{locationdatamanagementid\}/request)
-- [GET: /LocationDataManagement/\{locationdatamanagementid\}/Retrieve](#get-/locationdatamanagement/\{locationdatamanagementid\}/retrieve)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Exchange](#put-/locationdatamanagement/\{locationdatamanagementid\}/exchange)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Execute](#put-/locationdatamanagement/\{locationdatamanagementid\}/execute)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Exchange](#put-/locationdatamanagement/\{locationdatamanagementid\}/location/\{locationid\}/exchange)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Update](#put-/locationdatamanagement/\{locationdatamanagementid\}/location/\{locationid\}/update)
-- [GET: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Retrieve](#get-/locationdatamanagement/\{locationdatamanagementid\}/location/\{locationid\}/retrieve)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Update](#put-/locationdatamanagement/\{locationdatamanagementid\}/use/\{useid\}/update)
-- [GET: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Retrieve](#get-/locationdatamanagement/\{locationdatamanagementid\}/use/\{useid\}/retrieve)
-- [PUT: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Update](#put-/locationdatamanagement/\{locationdatamanagementid\}/occupancy/\{occupancyid\}/update)
-- [GET: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Retrieve](#get-/locationdatamanagement/\{locationdatamanagementid\}/occupancy/\{occupancyid\}/retrieve)
-
-
 **BIAN Documentation:** [LocationDataManagement v12](https://app.swaggerhub.com/apis/BIAN-3/LocationDataManagement/12.0.0)
 
-### POST: /LocationDataManagement/Register
+## POST: /LocationDataManagement/Register
 
-**Description**
+:::info Path
+POST: /LocationDataManagement/Register
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities InCR Register a location in the catalog
 
@@ -33,9 +20,13 @@ This API path allows the bank to register a new location in its catalog\. The ba
 
 POST: The path '/LocationDataManagement/Register' following REST best practices should ideally be named '/locations' since it should reflect the resource being acted upon rather than the action itself\.
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Update
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Update
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities UpCR Update details about the location's directory entry
 
@@ -47,9 +38,13 @@ This API path is used to update details about a specific location's directory en
 
 PUT: The name of the path would typically be \`/location\-data\-management/\{id\}\` for updating a specific location data management resource\. The use of lowercase letters and hyphens in the resource name is common\, and the \`\{id\}\` placeholder indicates the specific identifier of the resource being updated\.
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Control
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Control
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities CoCR Control the handling of a location entry \(e\.g\. terminate\)
 
@@ -61,9 +56,13 @@ This API path allows you to update and control the details of a specific locatio
 
 PUT: The RESTful path should be named in a way that accurately reflects the resource it represents\. In this case\, '/LocationDataManagement/\{locationdatamanagementid\}/Control' seems to suggest an operation performed on a specific location data management resource\. A more appropriate name could be '/locations/\{locationId\}/control'\, where "locations" represents the collection of location resources and "control" could refer to the action being taken on a specific location identified by its unique ID\.
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Request
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Request
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities RqCR Request manual intervention with an entry \(e\.g\. refresh content\)
 
@@ -82,9 +81,13 @@ According to REST best practices:
 
 Therefore\, the name of the path should be in lowercase letters\, use hyphens to separate words\, and use the plural noun 'location\-data\-management' for the resource name\.
 
-### GET: /LocationDataManagement/\{locationdatamanagementid\}/Retrieve
+## GET: /LocationDataManagement/\{locationdatamanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LocationDataManagement/\{locationdatamanagementid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities ReCR Retrieve details about a location directory entry
 
@@ -102,9 +105,13 @@ GET: Based on REST best practices\, the name of the path '/LocationDataManagemen
 
 These suggestions make the endpoint more intuitive\, focused on the resource being accessed\, and follow the standard convention of using
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Exchange
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Exchange
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities EcCR Accept\, verify\, reject a directory entry
 
@@ -122,9 +129,13 @@ In this updated path:
 \- 'locationId' is used instead of 'locationdatamanagementid' for clarity and consistency with variable naming conventions\.
 \- 'exchanges' is used in the plural form to indicate that this
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Execute
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Execute
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Execute
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities ExCR Execute an automated action against an entry
 
@@ -145,9 +156,13 @@ In this naming convention:
 \- The use of lowercase letters and plural form in "locations" follows RESTful conventions for naming resources\.
 \- The action "execute" is represented as a part of the URL to indicate the specific action being performed on the resource\.
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Exchange
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Exchange
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities EcBQ Accept\, verify\, reject etc\. details of a location directory entry
 
@@ -161,9 +176,13 @@ PUT: The name of the path following REST best practices could be:
 
 /locations/\{locationId\}/exchanges
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Update
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Update
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Update
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities UpBQ Update details about a location entry
 
@@ -179,9 +198,13 @@ PUT /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}
 
 This naming convention follows the REST best practice of using HTTP verbs to represent the action being performed \(in this case\, updating data\) and includes the resource identifiers for the location data management and location\.
 
-### GET: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Retrieve
+## GET: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LocationDataManagement/\{locationdatamanagementid\}/Location/\{locationid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities ReBQ Retrieve details about location entries in the directory
 
@@ -199,9 +222,13 @@ A more appropriate name could be:
 GET /locations/\{locationid\}
 \`\`\`
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Update
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Update
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Update
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities UpBQ Update details about an usage entry for the location
 
@@ -219,9 +246,13 @@ PUT: The name for the path should be:
 
 In REST best practices\, it is recommended to use plural nouns for resources in the URL path\. The path should be descriptive and easy to understand\, using appropriate resource names that represent the entities being accessed\.
 
-### GET: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Retrieve
+## GET: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LocationDataManagement/\{locationdatamanagementid\}/Use/\{useid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities ReBQ Retrieve details about usage entries in the location directory
 
@@ -235,9 +266,13 @@ GET: The name of the path should be:
 
 \`/location\-data\-management/\{locationdatamanagementid\}/use/\{useid\}\`
 
-### PUT: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Update
+## PUT: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Update
 
-**Description**
+:::info Path
+PUT: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Update
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities UpBQ Update details about a location's occupancy
 
@@ -253,9 +288,13 @@ PUT: The name of the path could be:
 
 This path follows REST best practices by using the HTTP method \`PATCH\` to update a specific resource identified by the \`locationdatamanagementid\` and \`occupancyid\` path parameters\.
 
-### GET: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Retrieve
+## GET: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /LocationDataManagement/\{locationdatamanagementid\}/Occupancy/\{occupancyid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintain details of the use and state of locations of interest to the bank\. This can include both physical and virtual addresses\. It is used to check for valid use and for sales/marketing activities ReBQ Retrieve details about location's occupancy entry in the directory
 

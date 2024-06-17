@@ -1,32 +1,14 @@
 # ProductQualityAssurance
 
-## Table of Contents
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Exchange](#put-/productqualityassurance/\{productqualityassuranceid\}/exchange)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Execute](#put-/productqualityassurance/\{productqualityassuranceid\}/execute)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Grant](#put-/productqualityassurance/\{productqualityassuranceid\}/grant)
-- [POST: /ProductQualityAssurance/Initiate](#post-/productqualityassurance/initiate)
-- [GET: /ProductQualityAssurance/\{productqualityassuranceid\}/Retrieve](#get-/productqualityassurance/\{productqualityassuranceid\}/retrieve)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Request](#put-/productqualityassurance/\{productqualityassuranceid\}/request)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Update](#put-/productqualityassurance/\{productqualityassuranceid\}/update)
-- [POST: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/Initiate](#post-/productqualityassurance/\{productqualityassuranceid\}/functionalconsistencychecks/initiate)
-- [POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/Initiate](#post-/productqualityassurance/\{productqualityassuranceid\}/processingerrorandintegritychecks/initiate)
-- [POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/Initiate](#post-/productqualityassurance/\{productqualityassuranceid\}/resiliencyandperformancechecks/initiate)
-- [POST: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/Initiate](#post-/productqualityassurance/\{productqualityassuranceid\}/usabilitychecks/initiate)
-- [GET: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Retrieve](#get-/productqualityassurance/\{productqualityassuranceid\}/functionalconsistencychecks/\{functionalconsistencychecksid\}/retrieve)
-- [GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Retrieve](#get-/productqualityassurance/\{productqualityassuranceid\}/processingerrorandintegritychecks/\{processingerrorandintegritychecksid\}/retrieve)
-- [GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Retrieve](#get-/productqualityassurance/\{productqualityassuranceid\}/resiliencyandperformancechecks/\{resiliencyandperformancechecksid\}/retrieve)
-- [GET: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Retrieve](#get-/productqualityassurance/\{productqualityassuranceid\}/usabilitychecks/\{usabilitychecksid\}/retrieve)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Update](#put-/productqualityassurance/\{productqualityassuranceid\}/functionalconsistencychecks/\{functionalconsistencychecksid\}/update)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Update](#put-/productqualityassurance/\{productqualityassuranceid\}/processingerrorandintegritychecks/\{processingerrorandintegritychecksid\}/update)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Update](#put-/productqualityassurance/\{productqualityassuranceid\}/resiliencyandperformancechecks/\{resiliencyandperformancechecksid\}/update)
-- [PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Update](#put-/productqualityassurance/\{productqualityassuranceid\}/usabilitychecks/\{usabilitychecksid\}/update)
-
-
 **BIAN Documentation:** [ProductQualityAssurance v12](https://app.swaggerhub.com/apis/BIAN-3/ProductQualityAssurance/12.0.0)
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Exchange
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Exchange
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance EcCR Accept\, verify\, etc\. aspects of Product and Service Assessment processing
 
@@ -44,9 +26,13 @@ PUT: The suggested name for the endpoint should be:
 
 This path already follows REST best practices by including the resource identifier \(\`productqualityassuranceid\`\) and providing a clear and meaningful description of the action being performed \(in this case\, an exchange related to product quality assurance\)\.
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Execute
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Execute
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance ExCR Execute an available automated action for Product and Service Assessment
 
@@ -62,9 +48,13 @@ PUT: A recommended name for the path \`/ProductQualityAssurance/\{productquality
 
 Using the POST method indicates that executing the operation will create a new resource or perform a non\-idempotent action\, which is appropriate for this type of operation\. This naming convention follows the RESTful principles of using HTTP methods to convey the intended action\.
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Grant
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Grant
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Grant
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance GrCR Obtain permission to act in relation to Product and Service Assessment
 
@@ -78,9 +68,13 @@ PUT: The name of the path should be:
 
 /ProductQualityAssurance/\{productqualityassuranceid\}/Grant
 
-### POST: /ProductQualityAssurance/Initiate
+## POST: /ProductQualityAssurance/Initiate
 
-**Description**
+:::info Path
+POST: /ProductQualityAssurance/Initiate
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance InCR Instantiate a new Product and Service Assessment
 
@@ -98,9 +92,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 The "Initiate" part of the original path is not recommended in RESTful design as it suggests an action or operation\. Instead\, in RESTful APIs\, use HTTP methods like POST to initiate actions on a resource\.
 
-### GET: /ProductQualityAssurance/\{productqualityassuranceid\}/Retrieve
+## GET: /ProductQualityAssurance/\{productqualityassuranceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductQualityAssurance/\{productqualityassuranceid\}/Retrieve
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance ReCR Retrieve details about any aspect of Product and Service Assessment
 
@@ -114,9 +112,13 @@ GET: The name of the path should be:
 
 '/product\-quality\-assurance/\{id\}'
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Request
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Request
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance RqCR Request manual intervention or a decision with respect to Product and Service Assessment
 
@@ -132,9 +134,13 @@ PUT: The name of the path should be:
 
 This URL path follows REST best practices by using plural nouns for resources and avoiding camel case in resource names\.
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Update
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/Update
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance UpCR Update details relating to Product and Service Assessment
 
@@ -148,9 +154,13 @@ PUT: The name of the path should be:
 
 PUT /product\-quality\-assurance/\{productqualityassuranceid\}
 
-### POST: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/Initiate
+## POST: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/Initiate
 
-**Description**
+:::info Path
+POST: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/Initiate
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance InBQ Instantiate a new Functional Consistency Checks
 
@@ -164,9 +174,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks
 
-### POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/Initiate
+## POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/Initiate
 
-**Description**
+:::info Path
+POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/Initiate
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance InBQ Instantiate a new Processing Error and Integrity Checks
 
@@ -182,9 +196,13 @@ POST: Based on REST best practices\, the name of the path should be:
 /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorAndIntegrityChecks
 \`\`\`
 
-### POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/Initiate
+## POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/Initiate
 
-**Description**
+:::info Path
+POST: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/Initiate
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance InBQ Instantiate a new Resiliency and Performance Checks
 
@@ -198,9 +216,13 @@ POST: Based on REST best practices\, an appropriate name for the path '/ProductQ
 
 '/products/\{productId\}/quality\-assurance/resiliency\-checks/initiate'
 
-### POST: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/Initiate
+## POST: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/Initiate
 
-**Description**
+:::info Path
+POST: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/Initiate
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance InBQ Instantiate a new Usability Checks
 
@@ -214,9 +236,13 @@ POST: It should be named as follows according to REST best practices:
 
 "/product\-quality\-assurance/\{productqualityassuranceid\}/usability\-checks/initiate"
 
-### GET: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Retrieve
+## GET: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Retrieve
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance ReBQ Retrieve details about any aspect of Functional Consistency Checks
 
@@ -230,9 +256,13 @@ GET: The name of the path should be:
 
 '/products/\{productId\}/quality\-assurance/functional\-consistency\-checks/\{checkId\}'
 
-### GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Retrieve
+## GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Retrieve
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance ReBQ Retrieve details about any aspect of Processing Error and Integrity Checks
 
@@ -246,9 +276,13 @@ GET: Based on REST best practices\, the name of the path should be something tha
 
 GET /product\-quality\-assurance/\{productqualityassuranceid\}/processing\-error\-and\-integrity\-checks/\{processingerrorandintegritychecksid\}
 
-### GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Retrieve
+## GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Retrieve
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance ReBQ Retrieve details about any aspect of Resiliency and Performance Checks
 
@@ -268,9 +302,13 @@ For the given path\, a suggestion for the name could be:
 
 This revised path maintains clarity and conciseness while following RESTful conventions\.
 
-### GET: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Retrieve
+## GET: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Retrieve
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance ReBQ Retrieve details about any aspect of Usability Checks
 
@@ -286,9 +324,13 @@ GET /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usa
 
 This path follows REST best practices by using plural nouns for resource names\, including relevant identifiers for specific resources \(productqualityassuranceid and usabilitychecksid\)\, and using HTTP methods to indicate the action being performed \(in this case\, retrieving usability checks information\)\.
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Update
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/FunctionalConsistencyChecks/\{functionalconsistencychecksid\}/Update
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance UpBQ Update details relating to Functional Consistency Checks
 
@@ -304,9 +346,13 @@ PUT: The name of the path should be:
 PUT /products/\{productId\}/qualityAssurance/\{qualityAssuranceId\}/functionalConsistencyChecks/\{checkId\}
 \`\`\`
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Update
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ProcessingErrorandIntegrityChecks/\{processingerrorandintegritychecksid\}/Update
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance UpBQ Update details relating to Processing Error and Integrity Checks
 
@@ -320,9 +366,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/products/\{productid\}/quality\-assurance/\{qualityassuranceid\}/processing\-errors\-and\-integrity\-checks/\{checksid\}'
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Update
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/ResiliencyandPerformanceChecks/\{resiliencyandperformancechecksid\}/Update
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance UpBQ Update details relating to Resiliency and Performance Checks
 
@@ -338,9 +388,13 @@ PUT: A possible name for the path could be:
 
 This name follows REST best practices by using lowercase letters\, using hyphens to separate words\, and including resource identifiers instead of specific names like 'ProductQualityAssurance' and 'ResiliencyandPerformanceChecks'\.
 
-### PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Update
+## PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductQualityAssurance/\{productqualityassuranceid\}/UsabilityChecks/\{usabilitychecksid\}/Update
+:::
+
+### Description
 
 Maintain and execute a portfolio of product quality assurance tests and certifications that can be applied to evaluate any aspect of production activity for quality assurance UpBQ Update details relating to Usability Checks
 

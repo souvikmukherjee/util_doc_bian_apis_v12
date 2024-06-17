@@ -1,29 +1,14 @@
 # RewardPointsAccount
 
-## Table of Contents
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/capture)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Control](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/control)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Exchange](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/exchange)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Grant](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/grant)
-- [POST: /RewardPointsAccount/Initiate](#post-/rewardpointsaccount/initiate)
-- [GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Retrieve](#get-/rewardpointsaccount/\{rewardpointsaccountid\}/retrieve)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Request](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/request)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Update](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/update)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Capture](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/capture/\{captureid\}/capture)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Capture](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/expiration/\{expirationid\}/capture)
-- [POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/Initiate](#post-/rewardpointsaccount/\{rewardpointsaccountid\}/capture/initiate)
-- [POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/Initiate](#post-/rewardpointsaccount/\{rewardpointsaccountid\}/expiration/initiate)
-- [GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Retrieve](#get-/rewardpointsaccount/\{rewardpointsaccountid\}/capture/\{captureid\}/retrieve)
-- [GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Retrieve](#get-/rewardpointsaccount/\{rewardpointsaccountid\}/expiration/\{expirationid\}/retrieve)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Update](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/capture/\{captureid\}/update)
-- [PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Update](#put-/rewardpointsaccount/\{rewardpointsaccountid\}/expiration/\{expirationid\}/update)
-
-
 **BIAN Documentation:** [RewardPointsAccount v12](https://app.swaggerhub.com/apis/BIAN-3/RewardPointsAccount/12.0.0)
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points CaCR Capture Reward Points Log activity or event related information
 
@@ -37,9 +22,13 @@ PUT: A suitable name for the path '/RewardPointsAccount/\{rewardpointsaccountid\
 
 '/reward\-points\-accounts/\{rewardpointsaccountid\}/capture'
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Control
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Control
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Control
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points CoCR Control the processing of Reward Points Log
 
@@ -53,9 +42,13 @@ PUT: A suitable name for the path '/RewardPointsAccount/\{rewardpointsaccountid\
 
 '/rewardpointsaccounts/\{rewardpointsaccountid\}/controls'
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Exchange
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Exchange
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points EcCR Accept\, verify\, etc\. aspects of Reward Points Log processing
 
@@ -69,9 +62,13 @@ PUT: A suitable name for this path following REST best practices would be:
 
 '/reward\-points\-accounts/\{rewardpointsaccountid\}/exchanges'
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Grant
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Grant
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Grant
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points GrCR Obtain permission to act in relation to Reward Points Log
 
@@ -83,9 +80,13 @@ This BIAN API path allows you to update an existing reward points account by gra
 
 PUT: A more RESTful name for this path could be \`/reward\-points\-accounts/\{rewardpointsaccountid\}/grants\`\.
 
-### POST: /RewardPointsAccount/Initiate
+## POST: /RewardPointsAccount/Initiate
 
-**Description**
+:::info Path
+POST: /RewardPointsAccount/Initiate
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points InCR Instantiate a new Reward Points Log
 
@@ -97,9 +98,13 @@ This BIAN API path "Reward Points Account \- Initiate" allows you to create a ne
 
 POST: In RESTful design\, the path "/RewardPointsAccount/Initiate" should be renamed to something that represents a resource or a collection of resources in a more intuitive and standardized manner\. Following REST best practices\, a possible name for this path could be "/rewardPointsAccounts" or "/reward\-points\-accounts" to better indicate that it is related to a collection of reward points accounts\.
 
-### GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Retrieve
+## GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Retrieve
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points ReCR Retrieve details about any aspect of Reward Points Log
 
@@ -115,9 +120,13 @@ GET /RewardPointsAccounts/\{rewardpointsaccountid\}
 
 This naming convention reflects the resource \(RewardPointsAccounts\) and the specific account being retrieved based on its unique identifier \(rewardpointsaccountid\)\.
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Request
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Request
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Request
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points RqCR Request manual intervention or a decision with respect to Reward Points Log
 
@@ -131,9 +140,13 @@ PUT: A suitable name for the path '/RewardPointsAccount/\{rewardpointsaccountid\
 
 GET /rewardPointsAccounts/\{rewardPointsAccountId\}/requests
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Update
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Update
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Update
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points UpCR Update details relating to Reward Points Log
 
@@ -145,9 +158,13 @@ This API path allows users to update details related to a specific rewards point
 
 PUT: The name of the path should be \`/reward\-points\-account/\{rewardpointsaccountid\}\` to follow REST best practices\.
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Capture
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Capture
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Capture
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points CaBQ Capture Capture activity or event related information
 
@@ -161,9 +178,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /reward\-points\-accounts/\{rewardpointsaccountid\}/captures/\{captureid\}
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Capture
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Capture
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points CaBQ Capture Expiration activity or event related information
 
@@ -184,9 +205,13 @@ Some key points to consider:
 2\. Use lowercase letters and separate words with hyphens for better readability\.
 3\. Avoid unnecessary capitalization and maintain consistency\.
 
-### POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/Initiate
+## POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/Initiate
 
-**Description**
+:::info Path
+POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/Initiate
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points InBQ Instantiate a new Capture
 
@@ -207,9 +232,13 @@ In this naming convention:
 \- \`\{rewardpointsaccountid\}\` is a placeholder for the specific id of the resource\.
 \- \`Capture\` and \`Initiate\` are used to represent the actions or sub\-resources related to the specific \`rewardpointsaccount
 
-### POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/Initiate
+## POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/Initiate
 
-**Description**
+:::info Path
+POST: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/Initiate
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points InBQ Instantiate a new Expiration
 
@@ -225,9 +254,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use lowercase letters and separate words with hyphens for readability and consistency\.
 
-### GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Retrieve
+## GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Retrieve
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points ReBQ Retrieve details about any aspect of Capture
 
@@ -241,9 +274,13 @@ GET: A RESTful naming convention for the given path could be:
 
 '/reward\-points\-accounts/\{rewardpointsaccountid\}/captures/\{captureid\}'
 
-### GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Retrieve
+## GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Retrieve
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points ReBQ Retrieve details about any aspect of Expiration
 
@@ -259,9 +296,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path follows the guidelines of using lowercase letters\, separating words with hyphens\, and using plural nouns to represent collections of resources\.
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Update
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Update
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Update
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points UpBQ Update details relating to Capture
 
@@ -274,9 +315,13 @@ This API path allows users to update details related to capturing reward points 
 PUT: The name of the path '/RewardPointsAccount/\{rewardpointsaccountid\}/Capture/\{captureid\}/Update' following REST best practices could be:
 PUT /reward\-points\-accounts/\{rewardpointsaccountid\}/captures/\{captureid\}
 
-### PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Update
+## PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Update
 
-**Description**
+:::info Path
+PUT: /RewardPointsAccount/\{rewardpointsaccountid\}/Expiration/\{expirationid\}/Update
+:::
+
+### Description
 
 Administer the booking and remittance of rewards points UpBQ Update details relating to Expiration
 

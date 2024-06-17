@@ -1,26 +1,14 @@
 # CustomerAccessEntitlement
 
-## Table of Contents
-- [POST: /CustomerAccessEntitlement/Evaluate](#post-/customeraccessentitlement/evaluate)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Update](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/update)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Control](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/control)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Exchange](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/exchange)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Request](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/request)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Grant](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/grant)
-- [GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Retrieve](#get-/customeraccessentitlement/\{customeraccessentitlementid\}/retrieve)
-- [POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/Evaluate](#post-/customeraccessentitlement/\{customeraccessentitlementid\}/restrictions/evaluate)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Update](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/restrictions/\{restrictionsid\}/update)
-- [GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Retrieve](#get-/customeraccessentitlement/\{customeraccessentitlementid\}/restrictions/\{restrictionsid\}/retrieve)
-- [POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/Evaluate](#post-/customeraccessentitlement/\{customeraccessentitlementid\}/preferences/evaluate)
-- [PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Update](#put-/customeraccessentitlement/\{customeraccessentitlementid\}/preferences/\{preferencesid\}/update)
-- [GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Retrieve](#get-/customeraccessentitlement/\{customeraccessentitlementid\}/preferences/\{preferencesid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerAccessEntitlement v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerAccessEntitlement/12.0.0)
 
-### POST: /CustomerAccessEntitlement/Evaluate
+## POST: /CustomerAccessEntitlement/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAccessEntitlement/Evaluate
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. EvCR Establish a customer access profile agreement
 
@@ -33,9 +21,13 @@ This API path allows you to create a new customer access profile agreement\. It 
 POST: In RESTful API design\, the path '/CustomerAccessEntitlement/Evaluate' should represent a resource and not an action\. A better practice is to use nouns for resource paths\. 
 One suggestion could be to rename the path to '/customer\-access\-entitlements'\. This indicates that it represents a collection of customer access entitlements\. Then\, to perform an evaluation action on a specific customer access entitlement\, you can use a combination of the resource path and an HTTP method to indicate the action\, such
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Update
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Update
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. UpCR Update details of a customer access profile agreement
 
@@ -47,9 +39,13 @@ This API path allows you to update details of a customer's access profile agreem
 
 PUT: The name of the path should be '/customer\-access\-entitlements/\{customeraccessentitlementid\}'\.
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Control
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Control
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Control
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. CoCR Control the handling of a customer access profile \(e\.g\. suspend\)
 
@@ -66,9 +62,13 @@ Some key considerations to keep in mind for the path naming are:
 \- Use plural nouns for collections \(e\.g\.\, 'customer\-access\-entitlements' instead of 'customer\-access\-entitlement'\)
 \- Use specific resource identifiers \(e\.g\.\, 'customeraccessentitlementid'\) for
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Exchange
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Exchange
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. EcCR Accept\, verify\, etc\. a customer access profile agreement
 
@@ -80,9 +80,13 @@ This API path allows you to update an existing customer access entitlement profi
 
 PUT: A suitable name for the path '/CustomerAccessEntitlement/\{customeraccessentitlementid\}/Exchange' following REST best practices could be '/customer\-access\-entitlements/\{customeraccessentitlementid\}/exchange'\.
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Request
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Request
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. RqCR Request manual intervention in a customer access profile \(e\.g\. handle exceptions\)
 
@@ -96,9 +100,13 @@ PUT: In RESTful design\, the path should describe a resource\, so in this case\,
 
 The nouns in the path should be in plural form to represent a collection of resources \(CustomerAccessEntitlements\) and sub\-resources \(Requests\)\. Plural nouns create a clear and consistent naming convention in RESTful APIs\.
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Grant
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Grant
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Grant
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. GrCR Grant access under the agreement
 
@@ -112,9 +120,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/customer\-access\-entitlements/\{customerAccessEntitlementId\}/grants'
 
-### GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Retrieve
+## GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. ReCR Retrieve details about a customer access profile agreement
 
@@ -129,9 +141,13 @@ GET: Based on REST best practices\, the name of the path '/CustomerAccessEntitle
 A more appropriate name for this path could be:
 '/customer\-access\-entitlements/\{customeraccessentitlementid\}'
 
-### POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/Evaluate
+## POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/Evaluate
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. EvBQ Establish restrictions for the access profile agreement
 
@@ -145,9 +161,13 @@ POST: The name of the path should be \`/customer\-access\-entitlements/\{custome
 
 Following REST best practices\, the path should use lowercase letters and hyphens to separate words for better readability and consistency\. Additionally\, plural nouns should be used for collections \(e\.g\.\, entitlements instead of entitlement\) and resource identifiers should be in the singular form\.
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Update
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Update
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. UpBQ Update details for the restrictions in the agreement
 
@@ -163,9 +183,13 @@ PUT: Based on RESTful best practices\, the name of the path should be:
 /entitlements/\{entitlementId\}/restrictions/\{restrictionId\}
 \`\`\`
 
-### GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Retrieve
+## GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. ReBQ Retrieve details about the restrictions in the agreement
 
@@ -177,9 +201,13 @@ This BIAN API path allows users to retrieve information about access restriction
 
 GET: Based on REST best practices\, a better name for the path '/CustomerAccessEntitlement/\{customeraccessentitlementid\}/Restrictions/\{restrictionsid\}/Retrieve' could be '/customer\-access\-entitlements/\{customeraccessentitlementid\}/restrictions/\{restrictionsid\}'\. This path is more closely aligned with REST conventions by using lowercase letters and hyphens to separate words\, making it more readable and user\-friendly\.
 
-### POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/Evaluate
+## POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/Evaluate
 
-**Description**
+:::info Path
+POST: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/Evaluate
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. EvBQ Establish preferences for the access profile agreement
 
@@ -195,9 +223,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, paths should be in lowercase\, use dashes to separate words\, and should be descriptive and specific\.
 
-### PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Update
+## PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Update
 
-**Description**
+:::info Path
+PUT: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Update
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. UpBQ Update details for the preferences in the agreement
 
@@ -211,9 +243,13 @@ PUT: Following REST best practices\, the path should be named in a way that iden
 
 "/customer\-access\-entitlements/\{customeraccessentitlementid\}/preferences/\{preferencesid\}"
 
-### GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Retrieve
+## GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerAccessEntitlement/\{customeraccessentitlementid\}/Preferences/\{preferencesid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains the details of the allowed channel/device based access to products and services that the customer has in place\.  This profile is referenced in servicing and fulfillment activity and may include customer preferences and access limits/constraints that span multiple products\. ReBQ Retrieve details about the preferences in the agreement
 

@@ -1,24 +1,14 @@
 # ContactCenterManagement
 
-## Table of Contents
-- [POST: /ContactCenterManagement/Create](#post-/contactcentermanagement/create)
-- [PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Update](#put-/contactcentermanagement/\{contactcentermanagementid\}/update)
-- [PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Request](#put-/contactcentermanagement/\{contactcentermanagementid\}/request)
-- [GET: /ContactCenterManagement/\{contactcentermanagementid\}/Retrieve](#get-/contactcentermanagement/\{contactcentermanagementid\}/retrieve)
-- [PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Update](#put-/contactcentermanagement/\{contactcentermanagementid\}/performance/\{performanceid\}/update)
-- [PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Request](#put-/contactcentermanagement/\{contactcentermanagementid\}/performance/\{performanceid\}/request)
-- [GET: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Retrieve](#get-/contactcentermanagement/\{contactcentermanagementid\}/performance/\{performanceid\}/retrieve)
-- [POST: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/Create](#post-/contactcentermanagement/\{contactcentermanagementid\}/troubleshooting/create)
-- [PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Update](#put-/contactcentermanagement/\{contactcentermanagementid\}/troubleshooting/\{troubleshootingid\}/update)
-- [PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Request](#put-/contactcentermanagement/\{contactcentermanagementid\}/troubleshooting/\{troubleshootingid\}/request)
-- [GET: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve](#get-/contactcentermanagement/\{contactcentermanagementid\}/troubleshooting/\{troubleshootingid\}/retrieve)
-
-
 **BIAN Documentation:** [ContactCenterManagement v12](https://app.swaggerhub.com/apis/BIAN-3/ContactCenterManagement/12.0.0)
 
-### POST: /ContactCenterManagement/Create
+## POST: /ContactCenterManagement/Create
 
-**Description**
+:::info Path
+POST: /ContactCenterManagement/Create
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center CrCR Create the management plan for the contact center
 
@@ -30,9 +20,13 @@ This BIAN API path\, \`/ContactCenterManagement/Create\`\, is used to create a n
 
 POST: In RESTful conventions\, the name of the path could be \`/contact\-center\-management\`\. The resource name \`Create\` in the original path is typically not needed in RESTful design as the HTTP method \(POST\) is used to create a new resource at that endpoint\. This path reflects the resource \`contact\-center\-management\` and the HTTP method \(\`POST\`\) that would be used to create a new resource under that category\.
 
-### PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Update
+## PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Update
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center UpCR Update aspects of the contact center management plan
 
@@ -44,9 +38,13 @@ This API path allows you to update specific aspects of the customer contact cent
 
 PUT: The name of the path should be "/contact\-centers/\{contactcenterId\}"\.
 
-### PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Request
+## PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Request
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center RqCR Request manual intervention with the plan \(e\.g\. reprioritize activities\)
 
@@ -62,9 +60,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The path components should be lowercase\, separated by hyphens\, and descriptive of the resources being accessed\.
 
-### GET: /ContactCenterManagement/\{contactcentermanagementid\}/Retrieve
+## GET: /ContactCenterManagement/\{contactcentermanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterManagement/\{contactcentermanagementid\}/Retrieve
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center ReCR Retrieve details about the contact center management plan
 
@@ -76,9 +78,13 @@ This API path allows you to retrieve details about a specific contact center man
 
 GET: The name of the path should be \`/contact\-center\-management/\{contact\-center\-management\-id\}\` to follow REST best practices\.
 
-### PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Update
+## PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Update
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center UpBQ Update details of the activity analysis for the contact center
 
@@ -92,9 +98,13 @@ PUT: A suitable name for this path following REST best practices could be:
 
 PUT /contact\-centers/\{contactcenterId\}/performances/\{performanceId\}
 
-### PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Request
+## PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Request
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center RqBQ Request manual intervention in the contact center performance analysis \(e\.g\. revise projections\)
 
@@ -108,9 +118,13 @@ PUT: The name of the path '/ContactCenterManagement/\{contactcentermanagementid\
 
 '/contact\-center\-management/\{contactcentermanagementid\}/performance/\{performanceid\}/requests'
 
-### GET: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Retrieve
+## GET: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterManagement/\{contactcentermanagementid\}/Performance/\{performanceid\}/Retrieve
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center ReBQ Retrieve details about the contact center activity analysis
 
@@ -126,9 +140,13 @@ GET: Based on RESTful best practices\, the name for the path '/ContactCenterMana
 
 In this way\, the path uses lowercase letters\, separates words with hyphens\, and clearly indicates the resource hierarchy\.
 
-### POST: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/Create
+## POST: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/Create
 
-**Description**
+:::info Path
+POST: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/Create
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center CrBQ Create a service troubleshooting activity \(to address major production issue\)
 
@@ -148,9 +166,13 @@ In this format:
 \- Indicating the action to be performed \(in this case\, creating a troubleshooting entry\) as part of the path
 \- Reflecting the resource
 
-### PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+## PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center UpBQ Update details of a troubleshooting plan item
 
@@ -166,9 +188,13 @@ PUT: Based on REST best practices\, the name of the path could be:
 
 This naming convention indicates that an update operation can be performed on a specific troubleshooting resource identified by the troubleshootingid within the context of a particular contact center management resource identified by contactcentermanagementid\.
 
-### PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+## PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center RqBQ Request manual intervention to a troubleshooting action
 
@@ -184,9 +210,13 @@ PUT: The name of the path should be:
 
 following REST best practices by using lowercase letters\, hyphens for readability\, and using plural nouns for consistency\.
 
-### GET: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+## GET: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ContactCenterManagement/\{contactcentermanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+:::
+
+### Description
 
 Oversee the assignment and operation of the customer contact center ReBQ Retrieve details about troubleshooting activity
 

@@ -1,24 +1,14 @@
 # BusinessUnitManagement
 
-## Table of Contents
-- [POST: /BusinessUnitManagement/Create](#post-/businessunitmanagement/create)
-- [PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Update](#put-/businessunitmanagement/\{businessunitmanagementid\}/update)
-- [PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Request](#put-/businessunitmanagement/\{businessunitmanagementid\}/request)
-- [GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Retrieve](#get-/businessunitmanagement/\{businessunitmanagementid\}/retrieve)
-- [PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Update](#put-/businessunitmanagement/\{businessunitmanagementid\}/performance/\{performanceid\}/update)
-- [PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Request](#put-/businessunitmanagement/\{businessunitmanagementid\}/performance/\{performanceid\}/request)
-- [GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Retrieve](#get-/businessunitmanagement/\{businessunitmanagementid\}/performance/\{performanceid\}/retrieve)
-- [POST: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/Create](#post-/businessunitmanagement/\{businessunitmanagementid\}/troubleshooting/create)
-- [PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update](#put-/businessunitmanagement/\{businessunitmanagementid\}/troubleshooting/\{troubleshootingid\}/update)
-- [PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request](#put-/businessunitmanagement/\{businessunitmanagementid\}/troubleshooting/\{troubleshootingid\}/request)
-- [GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve](#get-/businessunitmanagement/\{businessunitmanagementid\}/troubleshooting/\{troubleshootingid\}/retrieve)
-
-
 **BIAN Documentation:** [BusinessUnitManagement v12](https://app.swaggerhub.com/apis/BIAN-3/BusinessUnitManagement/12.0.0)
 
-### POST: /BusinessUnitManagement/Create
+## POST: /BusinessUnitManagement/Create
 
-**Description**
+:::info Path
+POST: /BusinessUnitManagement/Create
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance CrCR Create the management plan for the business unit
 
@@ -30,9 +20,13 @@ This API path \`/BusinessUnitManagement/Create\` allows you to create a new mana
 
 POST: If the path '/BusinessUnitManagement/Create' followed all REST best practices\, it should be named something like '/business\-units' using plural nouns to represent collections of resources\. To create a new business unit\, a POST request could be made to this endpoint\, indicating the intent to create a new resource in the collection of business units\.
 
-### PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Update
+## PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Update
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance UpCR Update aspects of the business unit management plan
 
@@ -46,9 +40,13 @@ PUT: A suitable name for the path '/BusinessUnitManagement/\{businessunitmanagem
 
 PUT /business\-unit\-management/\{businessunitmanagementid\}
 
-### PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Request
+## PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Request
 
-**Description**
+:::info Path
+PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Request
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance RqCR Request manual intervention with the plan \(e\.g\. reprioritize activities\)
 
@@ -62,9 +60,13 @@ PUT: The name of the path should be:
 '/business\-unit\-management/\{businessunitmanagementid\}/request'\.  
 It follows REST best practices by using lowercase letters\, hyphens to separate words\, and using plural nouns for resource collections\.
 
-### GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Retrieve
+## GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Retrieve
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance ReCR Retrieve details about the business unit management plan
 
@@ -76,9 +78,13 @@ This API path allows users to retrieve details about a specific business unit ma
 
 GET: A possible name for the path could be '/businessunits/\{id\}'\.
 
-### PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Update
+## PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Update
 
-**Description**
+:::info Path
+PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Update
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance UpBQ Update details of the activity analysis for the business unit
 
@@ -92,9 +98,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /BusinessUnits/\{businessunitmanagementid\}/Performances/\{performanceid\}
 
-### PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Request
+## PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Request
 
-**Description**
+:::info Path
+PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Request
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance RqBQ Request manual intervention in the business unit performance analysis \(e\.g\. revise projections\)
 
@@ -108,9 +118,13 @@ PUT: Following REST best practices\, the name of the path could be something lik
 
 /business\-units/\{business\-unit\-id\}/performances/\{performance\-id\}/requests
 
-### GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Retrieve
+## GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Performance/\{performanceid\}/Retrieve
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance ReBQ Retrieve details about the business unit activity analysis
 
@@ -124,9 +138,13 @@ GET: The path should be named as:
 
 /business\-units/\{businessunitId\}/performance/\{performanceId\}
 
-### POST: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/Create
+## POST: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/Create
 
-**Description**
+:::info Path
+POST: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/Create
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance CrBQ Create a service troubleshooting activity \(to address major production issue\)
 
@@ -140,9 +158,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 '/business\-units/\{businessUnitId\}/troubleshooting/create'
 
-### PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+## PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
 
-**Description**
+:::info Path
+PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance UpBQ Update details of a troubleshooting plan item
 
@@ -154,9 +176,13 @@ This BIAN API path allows you to update the details of a troubleshooting plan it
 
 PUT: The name of the path could be something like \`PUT /business\-unit\-management/\{businessunitmanagementid\}/troubleshooting/\{troubleshootingid\}\` to follow REST best practices\.
 
-### PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+## PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
 
-**Description**
+:::info Path
+PUT: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance RqBQ Request manual intervention to a troubleshooting action
 
@@ -174,9 +200,13 @@ PUT: The name of the path should be:
 
 The suggested naming convention follows REST best practices by using plural nouns for resources\, making the path clear and meaningful\.
 
-### GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+## GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BusinessUnitManagement/\{businessunitmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+:::
+
+### Description
 
 Track and report on business unit activity and financial performance ReBQ Retrieve details about troubleshooting activity
 

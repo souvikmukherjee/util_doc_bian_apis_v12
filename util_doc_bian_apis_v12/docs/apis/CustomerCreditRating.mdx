@@ -1,23 +1,14 @@
 # CustomerCreditRating
 
-## Table of Contents
-- [POST: /CustomerCreditRating/Initiate](#post-/customercreditrating/initiate)
-- [PUT: /CustomerCreditRating/\{customercreditratingid\}/Execute](#put-/customercreditrating/\{customercreditratingid\}/execute)
-- [PUT: /CustomerCreditRating/\{customercreditratingid\}/Request](#put-/customercreditrating/\{customercreditratingid\}/request)
-- [GET: /CustomerCreditRating/\{customercreditratingid\}/Retrieve](#get-/customercreditrating/\{customercreditratingid\}/retrieve)
-- [PUT: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Capture](#put-/customercreditrating/\{customercreditratingid\}/alerts/\{alertsid\}/capture)
-- [GET: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Retrieve](#get-/customercreditrating/\{customercreditratingid\}/alerts/\{alertsid\}/retrieve)
-- [PUT: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Capture](#put-/customercreditrating/\{customercreditratingid\}/internalreporting/\{internalreportingid\}/capture)
-- [GET: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Retrieve](#get-/customercreditrating/\{customercreditratingid\}/internalreporting/\{internalreportingid\}/retrieve)
-- [PUT: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Capture](#put-/customercreditrating/\{customercreditratingid\}/externalreporting/\{externalreportingid\}/capture)
-- [GET: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Retrieve](#get-/customercreditrating/\{customercreditratingid\}/externalreporting/\{externalreportingid\}/retrieve)
-
-
 **BIAN Documentation:** [CustomerCreditRating v12](https://app.swaggerhub.com/apis/BIAN-3/CustomerCreditRating/12.0.0)
 
-### POST: /CustomerCreditRating/Initiate
+## POST: /CustomerCreditRating/Initiate
 
-**Description**
+:::info Path
+POST: /CustomerCreditRating/Initiate
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports InCR Initiate credit state monitoring for a customer
 
@@ -29,9 +20,13 @@ This API path \`/CustomerCreditRating/Initiate\` allows you to create and start 
 
 POST: In accordance with REST best practices\, the path '/CustomerCreditRating/Initiate' should be named as '/customer\-credit\-ratings' with HTTP POST method to initiate a new customer credit rating resource\.
 
-### PUT: /CustomerCreditRating/\{customercreditratingid\}/Execute
+## PUT: /CustomerCreditRating/\{customercreditratingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CustomerCreditRating/\{customercreditratingid\}/Execute
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports ExCR Execute an automated task for credit state \(e\.g\. auto refresh\)
 
@@ -43,9 +38,13 @@ This BIAN API path allows you to update an existing customer's credit rating ass
 
 PUT: The name of the path could be simplified to '/customers/\{customerId\}/credit\-ratings' to adhere to REST best practices\.
 
-### PUT: /CustomerCreditRating/\{customercreditratingid\}/Request
+## PUT: /CustomerCreditRating/\{customercreditratingid\}/Request
 
-**Description**
+:::info Path
+PUT: /CustomerCreditRating/\{customercreditratingid\}/Request
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports RqCR Request manual intervention for credit state \(e\.g\. revise underlying assessment\)
 
@@ -59,9 +58,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/customerCreditRatings/\{customerCreditRatingId\}/request'
 
-### GET: /CustomerCreditRating/\{customercreditratingid\}/Retrieve
+## GET: /CustomerCreditRating/\{customercreditratingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCreditRating/\{customercreditratingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports ReCR Retrieve details about credit state monitoring for a customer
 
@@ -75,9 +78,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 GET '/customer\-credit\-ratings/\{customercreditratingid\}'
 
-### PUT: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Capture
+## PUT: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Capture
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports CaBQ Capture notification of a credit alert
 
@@ -97,9 +104,13 @@ In this format:
 \- Resource names are plural when a collection of items is being referenced
 \- Path parameters are enclosed in curly braces and use lowercase letters
 
-### GET: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Retrieve
+## GET: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCreditRating/\{customercreditratingid\}/Alerts/\{alertsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports ReBQ Retrieve details about a credit alert
 
@@ -113,9 +124,13 @@ GET: The name of the path should be:
 
 /customer\-credit\-ratings/\{customerCreditRatingId\}/alerts/\{alertsId\}/retrieve
 
-### PUT: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Capture
+## PUT: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Capture
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports CaBQ Capture internal product reports to support credit analysis
 
@@ -136,9 +151,13 @@ Some key points to note:
 \- Use camelCase for parameter names\.
 \- Use proper spelling and avoid abbreviations where possible\.
 
-### GET: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Retrieve
+## GET: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCreditRating/\{customercreditratingid\}/InternalReporting/\{internalreportingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports ReBQ Retrieve details about internal reporting to the credit monitoring activity
 
@@ -152,9 +171,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/customers/\{customerId\}/creditRating/\{creditRatingId\}/internalReporting/\{internalReportingId\}'
 
-### PUT: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Capture
+## PUT: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Capture
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports CaBQ Capture external credit reports to support credit analysis and state
 
@@ -168,9 +191,13 @@ PUT: A RESTful name for the path would be:
 
 '/customers/\{customerid\}/credit\-rating/\{customercreditratingid\}/external\-reporting/\{externalreportingid\}/capture'
 
-### GET: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Retrieve
+## GET: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CustomerCreditRating/\{customercreditratingid\}/ExternalReporting/\{externalreportingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains and administers the bank's credit assessment for customers based on consolidated internal data and optionally by referencing external credit agency reports ReBQ Retrieve details about external reporting to the credit monitoring activity
 

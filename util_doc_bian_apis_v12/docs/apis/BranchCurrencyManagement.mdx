@@ -1,25 +1,14 @@
 # BranchCurrencyManagement
 
-## Table of Contents
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Capture](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/capture)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Control](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/control)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Exchange](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/exchange)
-- [POST: /BranchCurrencyManagement/Initiate](#post-/branchcurrencymanagement/initiate)
-- [GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Retrieve](#get-/branchcurrencymanagement/\{branchcurrencymanagementid\}/retrieve)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Update](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/update)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Capture](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/inventoryallocation/\{inventoryallocationid\}/capture)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Control](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/inventoryallocation/\{inventoryallocationid\}/control)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Exchange](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/inventoryallocation/\{inventoryallocationid\}/exchange)
-- [POST: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/Initiate](#post-/branchcurrencymanagement/\{branchcurrencymanagementid\}/inventoryallocation/initiate)
-- [GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Retrieve](#get-/branchcurrencymanagement/\{branchcurrencymanagementid\}/inventoryallocation/\{inventoryallocationid\}/retrieve)
-- [PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Update](#put-/branchcurrencymanagement/\{branchcurrencymanagementid\}/inventoryallocation/\{inventoryallocationid\}/update)
-
-
 **BIAN Documentation:** [BranchCurrencyManagement v12](https://app.swaggerhub.com/apis/BIAN-3/BranchCurrencyManagement/12.0.0)
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Capture
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Capture
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch CaCR Capture Branch Cash Allocation activity or event related information
 
@@ -35,9 +24,13 @@ PUT: The name of the path should be:
 
 In RESTful conventions\, resource names are typically in plural form to represent collections of resources\.
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Control
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Control
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Control
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch CoCR Control the processing of Branch Cash Allocation
 
@@ -50,9 +43,13 @@ This API path allows users to update and control the cash inventory within a bra
 PUT: The name of the path should be:
 '/branch\-currency\-management/\{branchCurrencyManagementId\}/control'
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Exchange
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Exchange
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch EcCR Accept\, verify\, etc\. aspects of Branch Cash Allocation processing
 
@@ -66,9 +63,13 @@ PUT: The name of the path should be:
 
 '/branches/\{branchId\}/currencies/\{currencyId\}/exchange'
 
-### POST: /BranchCurrencyManagement/Initiate
+## POST: /BranchCurrencyManagement/Initiate
 
-**Description**
+:::info Path
+POST: /BranchCurrencyManagement/Initiate
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch InCR Instantiate a new Branch Cash Allocation
 
@@ -84,9 +85,13 @@ One possible suitable name for this path could be '/currency/initiate' or '/bran
 
 It is generally recommended to use nouns to represent resources and avoid verbs in the
 
-### GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Retrieve
+## GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Retrieve
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch ReCR Retrieve details about any aspect of Branch Cash Allocation
 
@@ -100,9 +105,13 @@ GET: The name for this path following REST best practices could be:
 
 GET /branch\-currency\-management/\{branchcurrencymanagementid\}
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Update
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/Update
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch UpCR Update details relating to Branch Cash Allocation
 
@@ -118,9 +127,13 @@ PUT: The name of the path should be:
 /branches/\{branchId\}/currencyManagement/\{currencyManagementId\}
 \`\`\`
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Capture
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Capture
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Capture
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch CaBQ Capture Inventory Allocation activity or event related information
 
@@ -134,9 +147,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/branch\-currency\-management/\{branchcurrencymanagementid\}/inventory\-allocation/\{inventoryallocationid\}/capture'
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Control
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Control
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Control
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch CoBQ Control the processing of Inventory Allocation
 
@@ -152,9 +169,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This naming convention uses plural nouns to represent collections of resources\, uses lowercase letters and hyphens for readability\, and includes the specific IDs for each resource to provide a clear and hierarchical structure\.
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Exchange
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Exchange
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch EcBQ Accept\, verify\, etc\. aspects of Inventory Allocation processing
 
@@ -168,9 +189,13 @@ PUT: The name of the path should be:
 
 /BranchCurrencyManagements/\{branchcurrencymanagementid\}/InventoryAllocations/\{inventoryallocationid\}/Exchanges
 
-### POST: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/Initiate
+## POST: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/Initiate
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch InBQ Instantiate a new Inventory Allocation
 
@@ -186,9 +211,13 @@ POST: The name of the path should be:
 /branch\-currency\-management/\{branch\_currency\_management\_id\}/inventory\-allocation/initiate
 \`\`\`
 
-### GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Retrieve
+## GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Retrieve
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch ReBQ Retrieve details about any aspect of Inventory Allocation
 
@@ -204,9 +233,13 @@ GET: The name of the path should be:
 
 This path name follows REST best practices by using lowercase letters\, separating words with hyphens\, and using resource\-oriented terminology\.
 
-### PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Update
+## PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /BranchCurrencyManagement/\{branchcurrencymanagementid\}/InventoryAllocation/\{inventoryallocationid\}/Update
+:::
+
+### Description
 
 Track cash inventory\, project demand and ensure all cash is accounted for within the branch UpBQ Update details relating to Inventory Allocation
 

@@ -1,25 +1,14 @@
 # ChequeProcessing
 
-## Table of Contents
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/Control](#put-/chequeprocessing/\{chequeprocessingid\}/control)
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/Exchange](#put-/chequeprocessing/\{chequeprocessingid\}/exchange)
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/Execute](#put-/chequeprocessing/\{chequeprocessingid\}/execute)
-- [POST: /ChequeProcessing/Initiate](#post-/chequeprocessing/initiate)
-- [GET: /ChequeProcessing/\{chequeprocessingid\}/Retrieve](#get-/chequeprocessing/\{chequeprocessingid\}/retrieve)
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/Request](#put-/chequeprocessing/\{chequeprocessingid\}/request)
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/Update](#put-/chequeprocessing/\{chequeprocessingid\}/update)
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Exchange](#put-/chequeprocessing/\{chequeprocessingid\}/financialtransactioninitiation/\{financialtransactioninitiationid\}/exchange)
-- [GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Retrieve](#get-/chequeprocessing/\{chequeprocessingid\}/chequeexceptionhandling/\{chequeexceptionhandlingid\}/retrieve)
-- [GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExtraction/\{chequeextractionid\}/Retrieve](#get-/chequeprocessing/\{chequeprocessingid\}/chequeextraction/\{chequeextractionid\}/retrieve)
-- [GET: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Retrieve](#get-/chequeprocessing/\{chequeprocessingid\}/financialtransactioninitiation/\{financialtransactioninitiationid\}/retrieve)
-- [PUT: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Update](#put-/chequeprocessing/\{chequeprocessingid\}/chequeexceptionhandling/\{chequeexceptionhandlingid\}/update)
-
-
 **BIAN Documentation:** [ChequeProcessing v12](https://app.swaggerhub.com/apis/BIAN-3/ChequeProcessing/12.0.0)
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/Control
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/Control
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/Control
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing CoCR Control the processing of Cheque Processing Operating Session
 
@@ -31,9 +20,13 @@ This API path allows you to update an existing resource related to the processin
 
 PUT: Based on REST best practices\, the name of the path '/ChequeProcessing/\{chequeprocessingid\}/Control' should likely be something like '/cheque\-processings/\{chequeprocessingid\}/controls'\. This name is more likely to follow common REST conventions\, which typically use plural nouns for resources\.
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/Exchange
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing EcCR Accept\, verify\, etc\. aspects of Cheque Processing Operating Session processing
 
@@ -48,9 +41,13 @@ PUT: The name of the path should be as follows\, following REST best practices:
 /ChequeProcessing/\{chequeprocessingid\}/Exchanges
 \`\`\`
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/Execute
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/Execute
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing ExCR Execute an available automated action for Cheque Processing Operating Session
 
@@ -64,9 +61,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/cheque\-processings/\{chequeprocessingid\}/execute'
 
-### POST: /ChequeProcessing/Initiate
+## POST: /ChequeProcessing/Initiate
 
-**Description**
+:::info Path
+POST: /ChequeProcessing/Initiate
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing InCR Instantiate a new Cheque Processing Operating Session
 
@@ -78,9 +79,13 @@ This API path \`/ChequeProcessing/Initiate\` allows you to create a new resource
 
 POST: If the path '/ChequeProcessing/Initiate' were to follow REST best practices\, it should be named in a more resource\-oriented and action\-neutral manner\. A suitable name for this path could be something like '/cheques'\, emphasizing the resource being accessed\, with different HTTP methods like POST or PUT used to initiate the processing\.
 
-### GET: /ChequeProcessing/\{chequeprocessingid\}/Retrieve
+## GET: /ChequeProcessing/\{chequeprocessingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeProcessing/\{chequeprocessingid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing ReCR Retrieve details about any aspect of Cheque Processing Operating Session
 
@@ -94,9 +99,13 @@ GET: The appropriate name for this path following REST best practices could be:
 
 GET /cheque\-processings/\{chequeprocessingid\}
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/Request
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/Request
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/Request
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing RqCR Request manual intervention or a decision with respect to Cheque Processing Operating Session
 
@@ -112,9 +121,13 @@ PUT: A potential name for the path '/ChequeProcessing/\{chequeprocessingid\}/Req
 
 This path uses lowercase letters\, utilizes hyphens to separate words\, and uses plural nouns to represent collections of resources\, which are all common conventions in RESTful API design\.
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/Update
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/Update
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing UpCR Update details relating to Cheque Processing Operating Session
 
@@ -126,9 +139,13 @@ This BIAN API path allows you to update details related to Cheque Processing Ope
 
 PUT: The name of the path should ideally be '/cheque\-processings/\{chequeprocessingid\}'\. It is more common in RESTful practices to use kebab\-case for URL paths\, use lowercase letters\, and use plural nouns for resource names\.
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Exchange
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Exchange
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing EcBQ Accept\, verify\, etc\. aspects of Financial Transaction Initiation processing
 
@@ -142,9 +159,13 @@ PUT: A possible appropriate name for this path following REST best practices cou
 
 '/cheque\-processing/\{chequeprocessingid\}/financial\-transaction\-initiation/\{financialtransactioninitiationid\}/exchange'
 
-### GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Retrieve
+## GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing Retrieve details about Cancelled Cheque Handling
 
@@ -160,9 +181,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 This path clearly indicates the hierarchy and structure of the resources being accessed\, while also using a descriptive name that conveys the action being performed \(retrieving a cheque exception\)\.
 
-### GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExtraction/\{chequeextractionid\}/Retrieve
+## GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExtraction/\{chequeextractionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeProcessing/\{chequeprocessingid\}/ChequeExtraction/\{chequeextractionid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing ReBQ Retrieve details about any aspect of Cheque Extraction
 
@@ -176,9 +201,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/cheque\-processing/\{chequeprocessingid\}/cheque\-extraction/\{chequeextractionid\}'
 
-### GET: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Retrieve
+## GET: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ChequeProcessing/\{chequeprocessingid\}/FinancialTransactionInitiation/\{financialtransactioninitiationid\}/Retrieve
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing ReBQ Retrieve details about any aspect of Financial Transaction Initiation
 
@@ -192,9 +221,13 @@ GET: The name of the path should be:
 
 GET /chequeprocessings/\{chequeprocessingid\}/financialtransactioninitiations/\{financialtransactioninitiationid\}
 
-### PUT: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Update
+## PUT: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ChequeProcessing/\{chequeprocessingid\}/ChequeExceptionHandling/\{chequeexceptionhandlingid\}/Update
+:::
+
+### Description
 
 Handle the processing of paper cheques\, generating financial transactions for processing Update details of Cancelled Cheque Handling
 

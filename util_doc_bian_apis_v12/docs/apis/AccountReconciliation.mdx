@@ -1,35 +1,14 @@
 # AccountReconciliation
 
-## Table of Contents
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/Control](#put-/accountreconciliation/\{accountreconciliationid\}/control)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/Exchange](#put-/accountreconciliation/\{accountreconciliationid\}/exchange)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/Execute](#put-/accountreconciliation/\{accountreconciliationid\}/execute)
-- [POST: /AccountReconciliation/Initiate](#post-/accountreconciliation/initiate)
-- [GET: /AccountReconciliation/\{accountreconciliationid\}/Notify](#get-/accountreconciliation/\{accountreconciliationid\}/notify)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/Request](#put-/accountreconciliation/\{accountreconciliationid\}/request)
-- [GET: /AccountReconciliation/\{accountreconciliationid\}/Retrieve](#get-/accountreconciliation/\{accountreconciliationid\}/retrieve)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/Update](#put-/accountreconciliation/\{accountreconciliationid\}/update)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Exchange](#put-/accountreconciliation/\{accountreconciliationid\}/accountassessment/\{accountassessmentid\}/exchange)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Exchange](#put-/accountreconciliation/\{accountreconciliationid\}/accountresolution/\{accountresolutionid\}/exchange)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Execute](#put-/accountreconciliation/\{accountreconciliationid\}/accountassessment/\{accountassessmentid\}/execute)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Execute](#put-/accountreconciliation/\{accountreconciliationid\}/accountresolution/\{accountresolutionid\}/execute)
-- [POST: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/Initiate](#post-/accountreconciliation/\{accountreconciliationid\}/accountassessment/initiate)
-- [POST: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/Initiate](#post-/accountreconciliation/\{accountreconciliationid\}/accountresolution/initiate)
-- [GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Notify](#get-/accountreconciliation/\{accountreconciliationid\}/accountassessment/\{accountassessmentid\}/notify)
-- [GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Notify](#get-/accountreconciliation/\{accountreconciliationid\}/accountresolution/\{accountresolutionid\}/notify)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Request](#put-/accountreconciliation/\{accountreconciliationid\}/accountassessment/\{accountassessmentid\}/request)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Request](#put-/accountreconciliation/\{accountreconciliationid\}/accountresolution/\{accountresolutionid\}/request)
-- [GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Retrieve](#get-/accountreconciliation/\{accountreconciliationid\}/accountassessment/\{accountassessmentid\}/retrieve)
-- [GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Retrieve](#get-/accountreconciliation/\{accountreconciliationid\}/accountresolution/\{accountresolutionid\}/retrieve)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Update](#put-/accountreconciliation/\{accountreconciliationid\}/accountassessment/\{accountassessmentid\}/update)
-- [PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Update](#put-/accountreconciliation/\{accountreconciliationid\}/accountresolution/\{accountresolutionid\}/update)
-
-
 **BIAN Documentation:** [AccountReconciliation v12](https://app.swaggerhub.com/apis/BIAN-3/AccountReconciliation/12.0.0)
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/Control
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/Control
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/Control
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Control Account Reconciliation Procedure
 
@@ -45,9 +24,13 @@ PUT: The name of the path should be:
 
 This URI path follows REST best practices by using lowercase letters\, separating words with dashes for readability\, and using a plural noun to indicate that it represents a collection of resources \(controls\) related to a specific account reconciliation identified by \{accountreconciliationid\}\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/Exchange
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Exchange Account Reconciliation Procedure
 
@@ -63,9 +46,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 In REST\, paths should be in lowercase letters and words should be separated by hyphens to improve readability and maintain consistency\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/Execute
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Execute Account Reconciliation Procedure
 
@@ -81,9 +68,13 @@ PUT: Following RESTful best practices\, the name of the path should be:
 
 This path is more structured and aligns with the resource being accessed \(accounts\)\, the specific account identified by an account ID\, the purpose of the operation \(reconciliation\)\, and the action being performed \(execute\)\.
 
-### POST: /AccountReconciliation/Initiate
+## POST: /AccountReconciliation/Initiate
 
-**Description**
+:::info Path
+POST: /AccountReconciliation/Initiate
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Initiate Account Reconciliation Procedure
 
@@ -95,9 +86,13 @@ This API path \`/AccountReconciliation/Initiate\` allows users to create a new r
 
 POST: If the path '/AccountReconciliation/Initiate' follows REST best practices\, its name should be something that represents a resource rather than an action\. One possible suggestion could be '/AccountReconciliationRequests' which represents a collection of account reconciliation requests\.
 
-### GET: /AccountReconciliation/\{accountreconciliationid\}/Notify
+## GET: /AccountReconciliation/\{accountreconciliationid\}/Notify
 
-**Description**
+:::info Path
+GET: /AccountReconciliation/\{accountreconciliationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Notify Account Reconciliation Procedure
 
@@ -109,9 +104,13 @@ This API path \`/AccountReconciliation/\{accountreconciliationid\}/Notify\` is u
 
 GET: The name of the path should be '/accounts/\{accountId\}/reconciliation/notify'\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/Request
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/Request
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Request Account Reconciliation Procedure
 
@@ -127,9 +126,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase and use hyphens to separate words\. The collection name "requests" usually indicates a collection of resources related to a specific account reconciliation\.
 
-### GET: /AccountReconciliation/\{accountreconciliationid\}/Retrieve
+## GET: /AccountReconciliation/\{accountreconciliationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountReconciliation/\{accountreconciliationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Retrieve Account Reconciliation Procedure
 
@@ -141,9 +144,13 @@ This BIAN API path allows you to retrieve information about a specific account r
 
 GET: Based on REST best practices\, the name of the path could be \`/account\-reconciliations/\{accountReconciliationId\}\`\. This path would use lowercase letters and dash separator for readability\, and the endpoint name would indicate the resource being retrieved without including the verb \`Retrieve\`\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/Update
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Update Account Reconciliation Procedure
 
@@ -159,9 +166,13 @@ PATCH /AccountReconciliation/\{accountreconciliationid\}
 
 This naming convention suggests using the HTTP method PATCH to update the resource identified by the account reconciliation ID\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Exchange
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Exchange Account Assessment Workstep
 
@@ -175,9 +186,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 '/accounts/\{accountId\}/assessments/\{assessmentId\}/exchanges'
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Exchange
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Exchange Account Resolution Workstep
 
@@ -193,9 +208,13 @@ PUT: The name of the path should ideally be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens for better readability and consistency\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Execute
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Execute Account Assessment Workstep
 
@@ -209,9 +228,13 @@ PUT: Based on REST best practices\, the name of the path should be something lik
 
 '/accounts/\{accountId\}/reconciliation/\{reconciliationId\}/assessment/\{assessmentId\}/execute'
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Execute
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Execute Account Resolution Workstep
 
@@ -225,9 +248,13 @@ PUT: Based on REST best practices\, a more appropriate name for the path would b
 
 '/accounts/\{accountId\}/resolutions/\{resolutionId\}/execute'
 
-### POST: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/Initiate
+## POST: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/Initiate
 
-**Description**
+:::info Path
+POST: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/Initiate
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Initiate Account Assessment Workstep
 
@@ -241,9 +268,13 @@ POST: Based on REST best practices\, the name of the path should convey the reso
 
 \`/accounts/\{accountreconciliationid\}/assessments/initiate\`
 
-### POST: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/Initiate
+## POST: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/Initiate
 
-**Description**
+:::info Path
+POST: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/Initiate
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Initiate Account Resolution Workstep
 
@@ -257,9 +288,13 @@ POST: Following REST best practices\, the name of the path should be '/accounts/
 
 The use of plural nouns 'accounts' and 'resolutions' instead of 'AccountReconciliation' and 'AccountResolution' reflects the resource collections in the URI\, while using the specific 'accountId' as a parameter to identify the particular account being accessed\.
 
-### GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Notify
+## GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Notify
 
-**Description**
+:::info Path
+GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Notify Account Assessment Workstep
 
@@ -272,9 +307,13 @@ This API path is used to retrieve information about a specific account assessmen
 GET: Based on REST best practices\, the name of the path should be:  
 '/account\-reconciliation/\{accountreconciliationid\}/account\-assessment/\{accountassessmentid\}/notify'
 
-### GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Notify
+## GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Notify
 
-**Description**
+:::info Path
+GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Notify Account Resolution Workstep
 
@@ -288,9 +327,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Notifications
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Request
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Request
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Request
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Request Account Assessment Workstep
 
@@ -304,9 +347,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /accounts/\{accountreconciliationid\}/assessments/\{accountassessmentid\}/requests
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Request
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Request
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Request
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Request Account Resolution Workstep
 
@@ -322,9 +369,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 This path is more concise\, uses lowercase letters\, and clearly represents the hierarchical relationship between resources\.
 
-### GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Retrieve
+## GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Retrieve Account Assessment Workstep
 
@@ -338,9 +389,13 @@ GET: A suitable name for this RESTful path could be:
 
 GET '/account\-reconciliations/\{accountReconciliationId\}/account\-assessments/\{accountAssessmentId\}'
 
-### GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Retrieve
+## GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Retrieve Account Resolution Workstep
 
@@ -358,9 +413,13 @@ GET: Based on REST best practices\, the name of the path could be something like
 
 This path is more descriptive and follows the convention of using plural nouns to represent collections of resources\.
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Update
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountAssessment/\{accountassessmentid\}/Update
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Update Account Assessment Workstep
 
@@ -374,9 +433,13 @@ PUT: The name of the path should be:
 
 '/accounts/\{accountid\}/assessments/\{assessmentid\}'
 
-### PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Update
+## PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Update
 
-**Description**
+:::info Path
+PUT: /AccountReconciliation/\{accountreconciliationid\}/AccountResolution/\{accountresolutionid\}/Update
+:::
+
+### Description
 
 This Service Domain handles account reconciliation tasks Update Account Resolution Workstep
 

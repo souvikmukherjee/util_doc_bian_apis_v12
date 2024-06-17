@@ -1,17 +1,14 @@
 # SuitabilityChecking
 
-## Table of Contents
-- [POST: /SuitabilityChecking/Evaluate](#post-/suitabilitychecking/evaluate)
-- [PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Update](#put-/suitabilitychecking/\{suitabilitycheckingid\}/update)
-- [PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Request](#put-/suitabilitychecking/\{suitabilitycheckingid\}/request)
-- [GET: /SuitabilityChecking/\{suitabilitycheckingid\}/Retrieve](#get-/suitabilitychecking/\{suitabilitycheckingid\}/retrieve)
-
-
 **BIAN Documentation:** [SuitabilityChecking v12](https://app.swaggerhub.com/apis/BIAN-3/SuitabilityChecking/12.0.0)
 
-### POST: /SuitabilityChecking/Evaluate
+## POST: /SuitabilityChecking/Evaluate
 
-**Description**
+:::info Path
+POST: /SuitabilityChecking/Evaluate
+:::
+
+### Description
 
 Confirm that all involved counterparties are suitable for a proposed market trade\. EvCR Evaluate the suitability of a proposed transaction
 
@@ -23,9 +20,13 @@ This BIAN API path\, "/SuitabilityChecking/Evaluate" with the method POST\, is u
 
 POST: In RESTful design\, the name of the path should represent a resource rather than an action\. Therefore\, a more suitable name for the path '/SuitabilityChecking/Evaluate' could be '/SuitabilityChecks' or '/Evaluations'\.
 
-### PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Update
+## PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Update
 
-**Description**
+:::info Path
+PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Update
+:::
+
+### Description
 
 Confirm that all involved counterparties are suitable for a proposed market trade\. UpCR Update details of a suitability evaluation
 
@@ -39,9 +40,13 @@ PUT: Based on RESTful best practices\, the path should be named as follows:
 
 PUT /SuitabilityCheckings/\{suitabilitycheckingid\}
 
-### PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Request
+## PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Request
 
-**Description**
+:::info Path
+PUT: /SuitabilityChecking/\{suitabilitycheckingid\}/Request
+:::
+
+### Description
 
 Confirm that all involved counterparties are suitable for a proposed market trade\. RqCR Request manual intervention into an active evaluation
 
@@ -57,9 +62,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The URL should use plural nouns for consistency and clarity\.
 
-### GET: /SuitabilityChecking/\{suitabilitycheckingid\}/Retrieve
+## GET: /SuitabilityChecking/\{suitabilitycheckingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /SuitabilityChecking/\{suitabilitycheckingid\}/Retrieve
+:::
+
+### Description
 
 Confirm that all involved counterparties are suitable for a proposed market trade\. ReCR Retrieve details about a suitability evaluation
 

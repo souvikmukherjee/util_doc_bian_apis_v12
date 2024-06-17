@@ -1,42 +1,14 @@
 # MarketMaking
 
-## Table of Contents
-- [PUT: /MarketMaking/\{marketmakingid\}/Control](#put-/marketmaking/\{marketmakingid\}/control)
-- [PUT: /MarketMaking/\{marketmakingid\}/Exchange](#put-/marketmaking/\{marketmakingid\}/exchange)
-- [PUT: /MarketMaking/\{marketmakingid\}/Execute](#put-/marketmaking/\{marketmakingid\}/execute)
-- [POST: /MarketMaking/Initiate](#post-/marketmaking/initiate)
-- [GET: /MarketMaking/\{marketmakingid\}/Notify](#get-/marketmaking/\{marketmakingid\}/notify)
-- [PUT: /MarketMaking/\{marketmakingid\}/Request](#put-/marketmaking/\{marketmakingid\}/request)
-- [GET: /MarketMaking/\{marketmakingid\}/Retrieve](#get-/marketmaking/\{marketmakingid\}/retrieve)
-- [PUT: /MarketMaking/\{marketmakingid\}/Update](#put-/marketmaking/\{marketmakingid\}/update)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Exchange](#put-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/\{marketmakingbuyandsellorderid\}/exchange)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Exchange](#put-/marketmaking/\{marketmakingid\}/marketmakingquote/\{marketmakingquoteid\}/exchange)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Exchange](#put-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/\{marketmakingsecuritytradedpositionid\}/exchange)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Execute](#put-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/\{marketmakingbuyandsellorderid\}/execute)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Execute](#put-/marketmaking/\{marketmakingid\}/marketmakingquote/\{marketmakingquoteid\}/execute)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Execute](#put-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/\{marketmakingsecuritytradedpositionid\}/execute)
-- [POST: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/Initiate](#post-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/initiate)
-- [POST: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/Initiate](#post-/marketmaking/\{marketmakingid\}/marketmakingquote/initiate)
-- [POST: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/Initiate](#post-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/initiate)
-- [GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Notify](#get-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/\{marketmakingbuyandsellorderid\}/notify)
-- [GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Notify](#get-/marketmaking/\{marketmakingid\}/marketmakingquote/\{marketmakingquoteid\}/notify)
-- [GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Notify](#get-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/\{marketmakingsecuritytradedpositionid\}/notify)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Request](#put-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/\{marketmakingbuyandsellorderid\}/request)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Request](#put-/marketmaking/\{marketmakingid\}/marketmakingquote/\{marketmakingquoteid\}/request)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Request](#put-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/\{marketmakingsecuritytradedpositionid\}/request)
-- [GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Retrieve](#get-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/\{marketmakingbuyandsellorderid\}/retrieve)
-- [GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Retrieve](#get-/marketmaking/\{marketmakingid\}/marketmakingquote/\{marketmakingquoteid\}/retrieve)
-- [GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Retrieve](#get-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/\{marketmakingsecuritytradedpositionid\}/retrieve)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Update](#put-/marketmaking/\{marketmakingid\}/marketmakingbuyandsellorder/\{marketmakingbuyandsellorderid\}/update)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Update](#put-/marketmaking/\{marketmakingid\}/marketmakingquote/\{marketmakingquoteid\}/update)
-- [PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Update](#put-/marketmaking/\{marketmakingid\}/marketmakingsecuritytradedposition/\{marketmakingsecuritytradedpositionid\}/update)
-
-
 **BIAN Documentation:** [MarketMaking v12](https://app.swaggerhub.com/apis/BIAN-3/MarketMaking/12.0.0)
 
-### PUT: /MarketMaking/\{marketmakingid\}/Control
+## PUT: /MarketMaking/\{marketmakingid\}/Control
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/Control
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Control Market Making Facility
 
@@ -48,9 +20,13 @@ This API path allows a bank to update and control its market making activities w
 
 PUT: The RESTful path '/MarketMaking/\{marketmakingid\}/Control' can be named using a noun that accurately describes the resource being accessed\. In this case\, the name for the path could be '/MarketMakers/\{marketmakingid\}/Controls'\. This name is more standardized\, descriptive\, and in line with RESTful best practices\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/Exchange
+## PUT: /MarketMaking/\{marketmakingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Exchange Market Making Facility
 
@@ -68,9 +44,13 @@ PUT: It is recommended to use a consistent and meaningful naming convention for 
 
 This path reflects a hierarchical structure where a particular "MarketMaking" resource identified by "marketmakingId" may have an "Exchange" sub\-resource\. Using camelCase for parameter names is a common practice in REST APIs\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/Execute
+## PUT: /MarketMaking/\{marketmakingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/Execute
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Execute Market Making Facility
 
@@ -86,9 +66,13 @@ PUT: A RESTful name for this path could be:
 /MarketMaking/\{marketmakingid\}/Execution
 \`\`\`
 
-### POST: /MarketMaking/Initiate
+## POST: /MarketMaking/Initiate
 
-**Description**
+:::info Path
+POST: /MarketMaking/Initiate
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Initiate Market Making Facility
 
@@ -100,9 +84,13 @@ This API path allows a bank to establish a market making facility\. Market makin
 
 POST: The name of the path '/MarketMaking/Initiate' could be updated to align with REST best practices by simplifying it to '/marketMaking'\. This path should be used to initiate a new market\-making activity\. Remember to use lowercase letters and hyphens to separate words for better readability and adherence to REST conventions\.
 
-### GET: /MarketMaking/\{marketmakingid\}/Notify
+## GET: /MarketMaking/\{marketmakingid\}/Notify
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/Notify
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Notify Market Making Facility
 
@@ -118,9 +106,13 @@ GET: Based on REST best practices\, the name of the path for '/MarketMaking/\{ma
 
 Note that all lowercase letters and hyphens \(instead of camel case or underscores\) are typically used in RESTful URLs for better readability and consistency\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/Request
+## PUT: /MarketMaking/\{marketmakingid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/Request
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Request Market Making Facility
 
@@ -132,9 +124,13 @@ This API path allows a bank to update a specific market making facility identifi
 
 PUT: The name of the path could be "/marketmaking/\{marketmakingid\}/requests" following REST best practices\.
 
-### GET: /MarketMaking/\{marketmakingid\}/Retrieve
+## GET: /MarketMaking/\{marketmakingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Retrieve Market Making Facility
 
@@ -147,9 +143,13 @@ This API path allows you to retrieve information about a specific Market Making 
 GET: Following REST best practices\, the name of the path should be:  
 \`/market\-making/\{marketmakingid\}\`
 
-### PUT: /MarketMaking/\{marketmakingid\}/Update
+## PUT: /MarketMaking/\{marketmakingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/Update
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Update Market Making Facility
 
@@ -167,9 +167,13 @@ PUT /market\-making/\{marketmakingid\}
 
 This path reflects the best practices of using lowercase letters\, hyphens for readability\, and using the appropriate HTTP method for updating a resource\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Exchange
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Exchange
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Exchange Market Making Buy and Sell Order Fulfillment
 
@@ -183,9 +187,13 @@ PUT: The name of the path following REST best practices could be:
 
 '/market\-making/\{marketmakingid\}/orders/\{marketmakingbuyandsellorderid\}/exchange'
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Exchange
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Exchange
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Exchange Market Making Quote Fulfillment
 
@@ -198,9 +206,13 @@ This BIAN API path allows the bank to update and fulfill market making quotes fo
 PUT: Based on RESTful best practices\, the name of the path you provided should be something like:
 '/marketmaking/\{marketmakingId\}/marketmakingquote/\{marketmakingQuoteId\}/exchange'
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Exchange
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Exchange
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Exchange Market Making Security Traded Position Fulfillment
 
@@ -216,9 +228,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use lowercase letters and hyphens to separate words in the path for better readability and consistency\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Execute
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Execute
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Execute Market Making Buy and Sell Order Fulfillment
 
@@ -234,9 +250,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 Keep in mind that it's recommended to use plural nouns for collections\, so "Orders" is used instead of "Order" in the path\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Execute
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Execute
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Execute Market Making Quote Fulfillment
 
@@ -249,9 +269,13 @@ This API path allows a bank to fulfill its market making function in cooperation
 PUT: Based on REST best practices\, the name of the path could be:  
 "/market\-makings/\{marketmakingid\}/quotes/\{marketmakingquoteid\}/execute"
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Execute
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Execute
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Execute Market Making Security Traded Position Fulfillment
 
@@ -265,9 +289,13 @@ PUT: A suitable name for the path '/MarketMaking/\{marketmakingid\}/MarketMaking
 
 '/market\-making/\{marketmakingid\}/security\-traded\-positions/\{marketmakingsecuritytradedpositionid\}/execute'
 
-### POST: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/Initiate
+## POST: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/Initiate
 
-**Description**
+:::info Path
+POST: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/Initiate
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Initiate Market Making Buy and Sell Order Fulfillment
 
@@ -281,9 +309,13 @@ POST: Based on REST best practices\, the name of the path '/MarketMaking/\{marke
 
 '/market\-making/\{marketmakingid\}/buy\-sell\-order/initiate'
 
-### POST: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/Initiate
+## POST: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/Initiate
 
-**Description**
+:::info Path
+POST: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/Initiate
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Initiate Market Making Quote Fulfillment
 
@@ -297,9 +329,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 \`POST /market\-making/\{marketmakingid\}/quotes/initiate\`
 
-### POST: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/Initiate
+## POST: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/Initiate
 
-**Description**
+:::info Path
+POST: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/Initiate
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Initiate Market Making Security Traded Position Fulfillment
 
@@ -313,9 +349,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 /MarketMaking/\{marketmakingid\}/market\-making\-security\-traded\-position/initiate
 
-### GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Notify
+## GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Notify
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Notify
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Notify Market Making Buy and Sell Order Fulfillment
 
@@ -331,9 +371,13 @@ GET: The name of the path should be:
 
 Following REST best practices\, it is recommended to use all lowercase letters\, separate words with hyphens\, and avoid using camel case in URLs\.
 
-### GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Notify
+## GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Notify
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Notify
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Notify Market Making Quote Fulfillment
 
@@ -349,9 +393,13 @@ GET: The path should be named as follows:
 
 Following REST best practices\, the path should be named based on the resource it is interacting with and the action being performed\. In this case\, the path is interacting with a specific market making quote resource and notifying it\.
 
-### GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Notify
+## GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Notify
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Notify
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Notify Market Making Security Traded Position Fulfillment
 
@@ -367,9 +415,13 @@ GET: The appropriate name for the path would be:
 
 Following REST best practices\, the path should be in all lowercase letters\, separated by hyphens\, and should use plural nouns wherever possible\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Request
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Request
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Request Market Making Buy and Sell Order Fulfillment
 
@@ -383,9 +435,13 @@ PUT: A possible name for the path '/MarketMaking/\{marketmakingid\}/MarketMaking
 
 '/markets/\{marketId\}/orders/\{orderId\}/request'
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Request
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Request
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Request Market Making Quote Fulfillment
 
@@ -399,9 +455,13 @@ PUT: The name of the path should be:
 '/market\-making/\{marketmakingid\}/quotes/\{marketmakingquoteid\}/request'  
 Following REST best practices\, path names should be in lowercase letters\, use hyphens to separate words\, and resource names should be in plural form\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Request
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Request
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Request Market Making Security Traded Position Fulfillment
 
@@ -415,9 +475,13 @@ PUT: Based on REST best practices\, the name for the path '/MarketMaking/\{marke
 
 '/marketmakings/\{marketmakingid\}/securitytradedpositions/\{marketmakingsecuritytradedpositionid\}/requests'
 
-### GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Retrieve
+## GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Retrieve Market Making Buy and Sell Order Fulfillment
 
@@ -430,9 +494,13 @@ This API path allows a bank to retrieve information about fulfilling buy and sel
 GET: The name of the path should be:  
 \`/market\-making/\{marketmakingid\}/buy\-sell\-orders/\{marketmakingbuyandsellorderid\}\`
 
-### GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Retrieve
+## GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Retrieve Market Making Quote Fulfillment
 
@@ -446,9 +514,13 @@ GET: A good name for this path following REST best practices could be:
 
 GET /market\-making/\{marketmakingid\}/quotes/\{marketmakingquoteid\}
 
-### GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Retrieve
+## GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Retrieve Market Making Security Traded Position Fulfillment
 
@@ -461,9 +533,13 @@ This API path allows the bank to retrieve information related to fulfilling its 
 GET: Based on REST best practices\, the name of the path should be:
 '/market\-making/\{marketmakingid\}/securities\-traded/\{marketmakingsecuritytradedpositionid\}'
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Update
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingBuyandSellOrder/\{marketmakingbuyandsellorderid\}/Update
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Update Market Making Buy and Sell Order Fulfillment
 
@@ -477,9 +553,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/market\-making/\{marketmakingid\}/buy\-and\-sell\-orders/\{marketmakingbuyandsellorderid\}/update'
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Update
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingQuote/\{marketmakingquoteid\}/Update
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Update Market Making Quote Fulfillment
 
@@ -497,9 +577,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 The endpoint should ideally be a representation of a resource\, and the action to update it can be inferred from the HTTP method used \(e\.g\.\, PUT or PATCH\)\. The action to update the resource would typically be performed by sending a PUT or PATCH request to the above path\.
 
-### PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Update
+## PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketMaking/\{marketmakingid\}/MarketMakingSecurityTradedPosition/\{marketmakingsecuritytradedpositionid\}/Update
+:::
+
+### Description
 
 This Service Domain enables the bank to fulfill its market making function typically in collaboration with a trading exchange\. The bank maintains a buy/sell quote for the securities it supports as a market maker and accepts buy/sell orders on request Update Market Making Security Traded Position Fulfillment
 

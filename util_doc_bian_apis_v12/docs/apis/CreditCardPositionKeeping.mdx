@@ -1,23 +1,14 @@
 # CreditCardPositionKeeping
 
-## Table of Contents
-- [PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Capture](#put-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/capture)
-- [PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Control](#put-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/control)
-- [POST: /CreditCardPositionKeeping/Initiate](#post-/creditcardpositionkeeping/initiate)
-- [GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Notify](#get-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/notify)
-- [GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Retrieve](#get-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/retrieve)
-- [PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Update](#put-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/update)
-- [PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Capture](#put-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/cardtransactionevent/\{cardtransactioneventid\}/capture)
-- [GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Notify](#get-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/cardtransactionevent/\{cardtransactioneventid\}/notify)
-- [GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Retrieve](#get-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/cardtransactionevent/\{cardtransactioneventid\}/retrieve)
-- [PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Update](#put-/creditcardpositionkeeping/\{creditcardpositionkeepingid\}/cardtransactionevent/\{cardtransactioneventid\}/update)
-
-
 **BIAN Documentation:** [CreditCardPositionKeeping v12](https://app.swaggerhub.com/apis/BIAN-3/CreditCardPositionKeeping/12.0.0)
 
-### PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Capture
+## PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Capture
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Capture Credit Card Position Log
 
@@ -33,9 +24,13 @@ PUT: The name of the path should be:
 
 In this naming convention\, the path uses lowercase letters and separates words with hyphens for better readability and adherence to REST best practices\.
 
-### PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Control
+## PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Control
 
-**Description**
+:::info Path
+PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Control
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Control Credit Card Position Log
 
@@ -54,9 +49,13 @@ PUT: Based on REST best practices\, the name of the path "/CreditCardPositionKee
 
 Please choose a name that best fits
 
-### POST: /CreditCardPositionKeeping/Initiate
+## POST: /CreditCardPositionKeeping/Initiate
 
-**Description**
+:::info Path
+POST: /CreditCardPositionKeeping/Initiate
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Initiate Credit Card Position Log
 
@@ -72,9 +71,13 @@ One suggestion for renaming the path could be '/CreditCardPositions' to represen
 
 So\, the new path following REST best practices could be '/CreditCardPositions/Initiation' or '/CreditCardPositions/\{positionId\}/Initiation' depending on
 
-### GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Notify
+## GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Notify
 
-**Description**
+:::info Path
+GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Notify
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Notify Credit Card Position Log
 
@@ -87,9 +90,13 @@ This API path allows you to retrieve information related to a specific credit ca
 GET: Based on REST best practices\, the name of the path should be:  
 '/credit\-card\-position\-keeping/\{creditcardpositionkeepingid\}/notify'
 
-### GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Retrieve
+## GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Retrieve
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Retrieve Credit Card Position Log
 
@@ -105,9 +112,13 @@ GET: The name of the path should be:
 
 This naming follows REST best practices by using lowercase letters\, dashes to separate words\, and not including verbs in the path\.
 
-### PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Update
+## PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/Update
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Update Credit Card Position Log
 
@@ -125,9 +136,13 @@ PUT: The name of the path should be:
 
 This path follows REST best practices by using plural nouns to represent resources and avoiding verbs in the URI\.
 
-### PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Capture
+## PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Capture
 
-**Description**
+:::info Path
+PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Capture
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Capture Card Transaction Event
 
@@ -141,9 +156,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 \`/credit\-card\-position\-keeping/\{creditcardpositionkeepingid\}/card\-transaction\-event/\{cardtransactioneventid\}/capture\`
 
-### GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Notify
+## GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Notify
 
-**Description**
+:::info Path
+GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Notify
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Notify Card Transaction Event
 
@@ -157,9 +176,13 @@ GET: The appropriate name for the path '/CreditCardPositionKeeping/\{creditcardp
 
 '/credit\-card\-positions/\{creditcardpositionkeepingid\}/card\-transaction\-events/\{cardtransactioneventid\}/notify'
 
-### GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Retrieve
+## GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Retrieve
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Retrieve Card Transaction Event
 
@@ -173,9 +196,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 '/credit\-card\-position\-keeping/\{credit\_card\_position\_keeping\_id\}/card\-transaction\-event/\{card\_transaction\_event\_id\}'
 
-### PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Update
+## PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Update
 
-**Description**
+:::info Path
+PUT: /CreditCardPositionKeeping/\{creditcardpositionkeepingid\}/CardTransactionEvent/\{cardtransactioneventid\}/Update
+:::
+
+### Description
 
 Maintain a log of credit card bookings and authorizations for operational and management information\, tracking and reconciliation purposes\. Update Card Transaction Event
 

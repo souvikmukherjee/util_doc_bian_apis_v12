@@ -1,20 +1,14 @@
 # ConsumerInvestments
 
-## Table of Contents
-- [POST: /ConsumerInvestments/Initiate](#post-/consumerinvestments/initiate)
-- [PUT: /ConsumerInvestments/\{consumerinvestmentsid\}/Update](#put-/consumerinvestments/\{consumerinvestmentsid\}/update)
-- [GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Retrieve](#get-/consumerinvestments/\{consumerinvestmentsid\}/retrieve)
-- [GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Quote/\{quoteid\}/Retrieve](#get-/consumerinvestments/\{consumerinvestmentsid\}/quote/\{quoteid\}/retrieve)
-- [GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Compliance/\{complianceid\}/Retrieve](#get-/consumerinvestments/\{consumerinvestmentsid\}/compliance/\{complianceid\}/retrieve)
-- [GET: /ConsumerInvestments/\{consumerinvestmentsid\}/FundingCheck/\{fundingcheckid\}/Retrieve](#get-/consumerinvestments/\{consumerinvestmentsid\}/fundingcheck/\{fundingcheckid\}/retrieve)
-- [GET: /ConsumerInvestments/\{consumerinvestmentsid\}/OrderInitiation/\{orderinitiationid\}/Retrieve](#get-/consumerinvestments/\{consumerinvestmentsid\}/orderinitiation/\{orderinitiationid\}/retrieve)
-
-
 **BIAN Documentation:** [ConsumerInvestments v12](https://app.swaggerhub.com/apis/BIAN-3/ConsumerInvestments/12.0.0)
 
-### POST: /ConsumerInvestments/Initiate
+## POST: /ConsumerInvestments/Initiate
 
-**Description**
+:::info Path
+POST: /ConsumerInvestments/Initiate
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution InCR Initiate a consumer securities order
 
@@ -26,9 +20,13 @@ This API path\, /ConsumerInvestments/Initiate\, allows users to initiate a reque
 
 POST: A common practice in REST API design is to use nouns to represent resources and actions as verbs\. In this case\, the path '/ConsumerInvestments/Initiate' suggests an action being taken on a resource related to consumer investments\. Following REST best practices\, the name of the path could be updated to better represent a resource\. For example\, a more RESTful approach could be to rename the path to '/consumer\-investment\-initiations' to emphasize the resource being manipulated \('consumer investment initiations'\)\. The
 
-### PUT: /ConsumerInvestments/\{consumerinvestmentsid\}/Update
+## PUT: /ConsumerInvestments/\{consumerinvestmentsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ConsumerInvestments/\{consumerinvestmentsid\}/Update
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution UpCR Update details on an active consumer securities order
 
@@ -42,9 +40,13 @@ PUT: The name of the path should be:
 
 '/consumer\-investments/\{consumerInvestmentsId\}'
 
-### GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Retrieve
+## GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Retrieve
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution ReCR Retrieve details about a consumer securities order
 
@@ -58,9 +60,13 @@ GET: A suitable name for the path '/ConsumerInvestments/\{consumerinvestmentsid\
 
 GET /consumer\-investments/\{consumerinvestmentsid\}
 
-### GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Quote/\{quoteid\}/Retrieve
+## GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Quote/\{quoteid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Quote/\{quoteid\}/Retrieve
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution ReBQ Retrieve bank quote for a security
 
@@ -72,9 +78,13 @@ This API path is used to retrieve bank quotes for a security within the context 
 
 GET: The name of the path should be: \`/consumer\-investments/\{consumerinvestmentsid\}/quotes/\{quoteid\}\`
 
-### GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Compliance/\{complianceid\}/Retrieve
+## GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Compliance/\{complianceid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerInvestments/\{consumerinvestmentsid\}/Compliance/\{complianceid\}/Retrieve
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution ReBQ Retrieve details about a consumer securities order compliance check
 
@@ -93,9 +103,13 @@ In RESTful naming conventions:
 \- Separate words with hyphens for readability and consistency
 \- Avoid using all uppercase letters or underscores
 
-### GET: /ConsumerInvestments/\{consumerinvestmentsid\}/FundingCheck/\{fundingcheckid\}/Retrieve
+## GET: /ConsumerInvestments/\{consumerinvestmentsid\}/FundingCheck/\{fundingcheckid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerInvestments/\{consumerinvestmentsid\}/FundingCheck/\{fundingcheckid\}/Retrieve
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution ReBQ Retrieve details about a funding check for a consumer securities order
 
@@ -109,9 +123,13 @@ GET: The name of the path should be:
 
 /ConsumerInvestments/\{consumerinvestmentsid\}/FundingCheck/\{fundingcheckid\}
 
-### GET: /ConsumerInvestments/\{consumerinvestmentsid\}/OrderInitiation/\{orderinitiationid\}/Retrieve
+## GET: /ConsumerInvestments/\{consumerinvestmentsid\}/OrderInitiation/\{orderinitiationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ConsumerInvestments/\{consumerinvestmentsid\}/OrderInitiation/\{orderinitiationid\}/Retrieve
+:::
+
+### Description
 
 Handle the consumer front\-end trading requests\. These will typically be blocked/netted for market execution ReBQ Retrieve details about a consumer securities order
 

@@ -1,25 +1,14 @@
 # eBranchManagement
 
-## Table of Contents
-- [POST: /eBranchManagement/Create](#post-/ebranchmanagement/create)
-- [GET: /eBranchManagement/\{ebranchmanagementid\}/Retrieve](#get-/ebranchmanagement/\{ebranchmanagementid\}/retrieve)
-- [PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Update](#put-/ebranchmanagement/\{ebranchmanagementid\}/capacityplanning/\{capacityplanningid\}/update)
-- [PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Request](#put-/ebranchmanagement/\{ebranchmanagementid\}/capacityplanning/\{capacityplanningid\}/request)
-- [GET: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Retrieve](#get-/ebranchmanagement/\{ebranchmanagementid\}/capacityplanning/\{capacityplanningid\}/retrieve)
-- [POST: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/Create](#post-/ebranchmanagement/\{ebranchmanagementid\}/maintenanceandupgrades/create)
-- [PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Update](#put-/ebranchmanagement/\{ebranchmanagementid\}/maintenanceandupgrades/\{maintenanceandupgradesid\}/update)
-- [PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Request](#put-/ebranchmanagement/\{ebranchmanagementid\}/maintenanceandupgrades/\{maintenanceandupgradesid\}/request)
-- [GET: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Retrieve](#get-/ebranchmanagement/\{ebranchmanagementid\}/maintenanceandupgrades/\{maintenanceandupgradesid\}/retrieve)
-- [PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update](#put-/ebranchmanagement/\{ebranchmanagementid\}/troubleshooting/\{troubleshootingid\}/update)
-- [PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request](#put-/ebranchmanagement/\{ebranchmanagementid\}/troubleshooting/\{troubleshootingid\}/request)
-- [GET: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve](#get-/ebranchmanagement/\{ebranchmanagementid\}/troubleshooting/\{troubleshootingid\}/retrieve)
-
-
 **BIAN Documentation:** [eBranchManagement v12](https://app.swaggerhub.com/apis/BIAN-3/eBranchManagement/12.0.0)
 
-### POST: /eBranchManagement/Create
+## POST: /eBranchManagement/Create
 
-**Description**
+:::info Path
+POST: /eBranchManagement/Create
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities CrCR Create the management plan for the eBranch channel
 
@@ -31,9 +20,13 @@ This BIAN API path \(/eBranchManagement/Create\) is used to create a new resourc
 
 POST: If the path '/eBranchManagement/Create' followed all RESTful best practices\, it should be named something like '/eBranches' using plural nouns to represent a collection of resources\. The HTTP POST method can be used to create a new resource in the collection\.
 
-### GET: /eBranchManagement/\{ebranchmanagementid\}/Retrieve
+## GET: /eBranchManagement/\{ebranchmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eBranchManagement/\{ebranchmanagementid\}/Retrieve
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities ReCR Retrieve details about the eBranch channel management plan
 
@@ -47,9 +40,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 /eBranchManagement/\{ebranchmanagementid\}
 
-### PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Update
+## PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Update
 
-**Description**
+:::info Path
+PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Update
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities UpBQ Update details of the capacity management plan for the channel
 
@@ -65,9 +62,13 @@ PUT: The name of the path should be:
 /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}
 \`\`\`
 
-### PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Request
+## PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Request
 
-**Description**
+:::info Path
+PUT: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Request
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities RqBQ Request manual intervention in the capacity plan
 
@@ -85,9 +86,13 @@ PUT: The name of the path should be:
 
 It is pluralized at the end to indicate that the endpoint deals with a collection of request resources\.
 
-### GET: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Retrieve
+## GET: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eBranchManagement/\{ebranchmanagementid\}/CapacityPlanning/\{capacityplanningid\}/Retrieve
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities ReBQ Retrieve details about the channel capacity plan
 
@@ -103,9 +108,13 @@ GET: Following REST best practices\, the name of the path should ideally be:
 /eBranchManagement/\{ebranchmanagementId\}/CapacityPlanning/\{capacityPlanningId\}/Retrieve
 \`\`\`
 
-### POST: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/Create
+## POST: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/Create
 
-**Description**
+:::info Path
+POST: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/Create
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities CrBQ Create a maintenance or upgrade task plan item for the channel
 
@@ -121,9 +130,13 @@ POST: Based on REST best practices\, the name of the path should be:
 
 This path indicates creating a new maintenance or upgrade for a specific eBranch management resource identified by \{ebranchmanagementid\}\.
 
-### PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Update
+## PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Update
 
-**Description**
+:::info Path
+PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Update
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities UpBQ Update details of a maintenance or upgrade management plan item
 
@@ -137,9 +150,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 '/eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}'
 
-### PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Request
+## PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Request
 
-**Description**
+:::info Path
+PUT: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Request
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities RqBQ Request manual intervention to a maintenance or upgrade action
 
@@ -151,9 +168,13 @@ This BIAN API path allows you to update or request manual intervention for a spe
 
 PUT: Based on REST best practices\, the name of the path should be "POST /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Requests"\. It is recommended to use plural nouns for resources and follow a consistent naming convention throughout your API design\. Also\, using HTTP methods like POST to indicate creating a new request aligns with REST principles\.
 
-### GET: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Retrieve
+## GET: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eBranchManagement/\{ebranchmanagementid\}/MaintenanceAndUpgrades/\{maintenanceandupgradesid\}/Retrieve
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities ReBQ Retrieve details about a maintenance or upgrade management plan
 
@@ -169,9 +190,13 @@ GET /ebranches/\{ebranchId\}/maintenanceAndUpgrades/\{maintenanceId\}
 
 This name is concise\, uses lowercase letters\, and represents the hierarchical structure of the resources being accessed\.
 
-### PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+## PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
 
-**Description**
+:::info Path
+PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Update
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities UpBQ Update details of a production issue\, root cause or remedial action recommendation
 
@@ -183,9 +208,13 @@ This BIAN API path allows you to update the details of a production issue relate
 
 PUT: The name of the path should be: /ebranches/\{ebranchId\}/troubleshootings/\{troubleshootingId\}\.
 
-### PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+## PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
 
-**Description**
+:::info Path
+PUT: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Request
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities RqBQ Request manual intervention in troubleshooting tasks
 
@@ -199,9 +228,13 @@ PUT: Based on REST best practices\, the name of the path should clearly represen
 
 '/eBranchManagement/\{ebranchmanagementid\}/Troubleshootings/\{troubleshootingid\}/Requests'
 
-### GET: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+## GET: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /eBranchManagement/\{ebranchmanagementid\}/Troubleshooting/\{troubleshootingid\}/Retrieve
+:::
+
+### Description
 
 Oversee the configuration and operation of the e\-branch channel facilities ReBQ Retrieve details about troubleshooting tasks\, root cause and proposed remedial actions
 

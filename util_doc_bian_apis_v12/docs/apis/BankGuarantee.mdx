@@ -1,61 +1,14 @@
 # BankGuarantee
 
-## Table of Contents
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/Control](#put-/bankguarantee/\{bankguaranteeid\}/control)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/exchange)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/notify)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/request)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/retrieve)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/update)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/\{bankguaranteecollectionsid\}/exchange)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/\{bankguaranteedefinitionandpricingid\}/exchange)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/\{bankguaranteeissuanceandbookingid\}/exchange)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/\{bankguaranteepayoutid\}/exchange)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/\{customercollateralallocationid\}/exchange)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Exchange](#put-/bankguarantee/\{bankguaranteeid\}/customerpayment/\{customerpaymentid\}/exchange)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Execute](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/\{bankguaranteecollectionsid\}/execute)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Execute](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/\{bankguaranteedefinitionandpricingid\}/execute)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Execute](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/\{bankguaranteeissuanceandbookingid\}/execute)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Execute](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/\{bankguaranteepayoutid\}/execute)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute](#put-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/\{customercollateralallocationid\}/execute)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Execute](#put-/bankguarantee/\{bankguaranteeid\}/customerpayment/\{customerpaymentid\}/execute)
-- [POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/Initiate](#post-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/initiate)
-- [POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/Initiate](#post-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/initiate)
-- [POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/Initiate](#post-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/initiate)
-- [POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/Initiate](#post-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/initiate)
-- [POST: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/Initiate](#post-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/initiate)
-- [POST: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/Initiate](#post-/bankguarantee/\{bankguaranteeid\}/customerpayment/initiate)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/\{bankguaranteecollectionsid\}/notify)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/\{bankguaranteedefinitionandpricingid\}/notify)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/\{bankguaranteeissuanceandbookingid\}/notify)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/\{bankguaranteepayoutid\}/notify)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/\{customercollateralallocationid\}/notify)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Notify](#get-/bankguarantee/\{bankguaranteeid\}/customerpayment/\{customerpaymentid\}/notify)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/\{bankguaranteecollectionsid\}/request)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/\{bankguaranteedefinitionandpricingid\}/request)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/\{bankguaranteeissuanceandbookingid\}/request)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/\{bankguaranteepayoutid\}/request)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/\{customercollateralallocationid\}/request)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Request](#put-/bankguarantee/\{bankguaranteeid\}/customerpayment/\{customerpaymentid\}/request)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/\{bankguaranteecollectionsid\}/retrieve)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/\{bankguaranteedefinitionandpricingid\}/retrieve)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/\{bankguaranteeissuanceandbookingid\}/retrieve)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/\{bankguaranteepayoutid\}/retrieve)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/\{customercollateralallocationid\}/retrieve)
-- [GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Retrieve](#get-/bankguarantee/\{bankguaranteeid\}/customerpayment/\{customerpaymentid\}/retrieve)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteecollections/\{bankguaranteecollectionsid\}/update)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteedefinitionandpricing/\{bankguaranteedefinitionandpricingid\}/update)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteeissuanceandbooking/\{bankguaranteeissuanceandbookingid\}/update)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/bankguaranteepayout/\{bankguaranteepayoutid\}/update)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/customercollateralallocation/\{customercollateralallocationid\}/update)
-- [PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Update](#put-/bankguarantee/\{bankguaranteeid\}/customerpayment/\{customerpaymentid\}/update)
-
-
 **BIAN Documentation:** [BankGuarantee v12](https://app.swaggerhub.com/apis/BIAN-3/BankGuarantee/12.0.0)
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/Control
+## PUT: /BankGuarantee/\{bankguaranteeid\}/Control
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/Control
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Control Bank Guarantee Transaction
 
@@ -67,9 +20,13 @@ This API path allows you to update an existing bank guarantee transaction by pro
 
 PUT: The name of the path should be '/bank\-guarantees/\{bankguaranteeid\}/controls'\, following REST best practices\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Bank Guarantee Transaction
 
@@ -91,9 +48,13 @@ Here are the reasons for the choice:
 
 3
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Bank Guarantee Transaction
 
@@ -107,9 +68,13 @@ GET: The name of the path should be:
 
 /BankGuarantees/\{bankguaranteeid\}/notifications
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Bank Guarantee Transaction
 
@@ -123,9 +88,13 @@ PUT: The name of the path '/BankGuarantee/\{bankguaranteeid\}/Request' should be
 
 /bank\-guarantees/\{bankguaranteeid\}/requests
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Bank Guarantee Transaction
 
@@ -137,9 +106,13 @@ This API path allows you to retrieve information about a specific bank guarantee
 
 GET: The name of the path should be /bank\-guarantees/\{bankguaranteeid\} according to RESTful best practices\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Bank Guarantee Transaction
 
@@ -153,9 +126,13 @@ PUT: Following REST best practices\, the path should be named as:
 
 /BankGuarantees/\{bankguaranteeid\}
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Bank Guarantee Collections Task
 
@@ -169,9 +146,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /BankGuarantees/\{bankguaranteeid\}/Collections/\{bankguaranteecollectionsid\}/Exchanges
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Bank Guarantee Definition and Pricing Task
 
@@ -185,9 +166,13 @@ PUT: The name of the path following REST best practices should be:
 
 /BankGuarantees/\{bankguaranteeId\}/DefinitionsAndPricing/\{definitionsAndPricingId\}/Exchanges
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Bank Guarantee Issuance and Booking Task
 
@@ -201,9 +186,13 @@ PUT: A suitable name for the path you described\, following REST best practices\
 
 \`/bankguarantees/\{bankguaranteeid\}/issuances/\{bankguaranteeissuanceandbookingid\}/exchange\`
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Bank Guarantee Payout Task
 
@@ -215,9 +204,13 @@ This API path allows you to update an existing bank guarantee payout task associ
 
 PUT: The name of the path could be '/bank\-guarantees/\{bankguaranteeid\}/payouts/\{bankguaranteepayoutid\}/exchange' in accordance with REST best practices\. This naming convention uses lowercase letters\, hyphens to separate words\, and plural nouns to indicate collections\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Customer Collateral Allocation Task
 
@@ -231,9 +224,13 @@ PUT: The name of the path should be:
 
 '/bank\-guarantees/\{bankguaranteeid\}/customer\-collateral\-allocations/\{customercollateralallocationid\}/exchanges'
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Exchange
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Exchange
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Exchange Customer Payment Task
 
@@ -247,9 +244,13 @@ PUT: The name of the path should be:
 
 /BankGuarantees/\{bankguaranteeId\}/CustomerPayments/\{customerpaymentId\}/Exchanges
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Execute
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Execute Bank Guarantee Collections Task
 
@@ -263,9 +264,13 @@ PUT: Based on REST best practices\, the name of the path should be '/bank\-guara
 
 This naming convention makes use of lowercase letters and hyphens to separate words for improved readability and consistency\. Additionally\, it uses plural nouns to represent resources and path parameters to identify specific instances within the resource hierarchy\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Execute
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Execute Bank Guarantee Definition and Pricing Task
 
@@ -279,9 +284,13 @@ PUT: Following REST best practices\, the name of the path should be:
 
 /BankGuarantees/\{bankguaranteeId\}/DefinitionAndPricing/\{bankguaranteeDefinitionAndPricingId\}/Execute
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Execute
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Execute Bank Guarantee Issuance and Booking Task
 
@@ -295,9 +304,13 @@ PUT: Based on REST best practices\, the name of the path should be more descript
 
 \`/bank\-guarantees/\{bankguaranteeid\}/issuances\-and\-bookings/\{bankguaranteeissuanceandbookingid\}/execute\`
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Execute
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Execute Bank Guarantee Payout Task
 
@@ -311,9 +324,13 @@ PUT: The name of the path should be '/bank\-guarantees/\{bankguaranteeId\}/payou
 
 Following REST best practices\, the path names should be in lowercase\, use hyphens to separate words\, and resource names should be pluralized\. Additionally\, path parameters should be in curly braces with lowercase letters\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Execute Customer Collateral Allocation Task
 
@@ -327,9 +344,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /bank\-guarantees/\{bankguaranteeid\}/collateral\-allocations/\{customercollateralallocationid\}/execute
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Execute
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Execute
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Execute
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Execute Customer Payment Task
 
@@ -345,9 +366,13 @@ PUT: The name of the path should be:
 
 Following REST best practices\, it is recommended to use nouns in the path segments and use plural nouns for collections\. Also\, resource identifiers like \`bankguaranteeid\` and \`customerpaymentid\` should be camel case and follow the naming conventions\.
 
-### POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/Initiate
+## POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/Initiate
 
-**Description**
+:::info Path
+POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Initiate Bank Guarantee Collections Task
 
@@ -359,9 +384,13 @@ This API path allows you to initiate a bank guarantee collections task for a spe
 
 POST: The name of the path could be \`/bank\-guarantees/\{bankguaranteeid\}/collections/initiate\`\, following REST best practices by using lowercase letters\, hyphens for readability\, and using plural nouns for collections\.
 
-### POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/Initiate
+## POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/Initiate
 
-**Description**
+:::info Path
+POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Initiate Bank Guarantee Definition and Pricing Task
 
@@ -375,9 +404,13 @@ POST: Based on RESTful best practices\, the name of the path should be:
 
 \`/bank\-guarantees/\{bankguaranteeid\}/definitions\-and\-pricing/initiate\`
 
-### POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/Initiate
+## POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/Initiate
 
-**Description**
+:::info Path
+POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Initiate Bank Guarantee Issuance and Booking Task
 
@@ -391,9 +424,13 @@ POST: Following REST best practices\, the name of the path should ideally be:
 
 '/bank\-guarantees/\{bankGuaranteeId\}/issuance\-and\-booking/initiate'
 
-### POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/Initiate
+## POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/Initiate
 
-**Description**
+:::info Path
+POST: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Initiate Bank Guarantee Payout Task
 
@@ -409,9 +446,13 @@ POST: Following REST best practices\, the name of the path should be:
 
 This path indicates the resource "BankGuaranteePayouts" related to a specific "BankGuarantee" identified by \{bankguaranteeid\}\.
 
-### POST: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/Initiate
+## POST: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/Initiate
 
-**Description**
+:::info Path
+POST: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Initiate Customer Collateral Allocation Task
 
@@ -429,9 +470,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should use plural nouns to represent collections of resources\. The path should also be designed to be more descriptive and intuitive\, making it easier for developers to understand and use the API\.
 
-### POST: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/Initiate
+## POST: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/Initiate
 
-**Description**
+:::info Path
+POST: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/Initiate
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Initiate Customer Payment Task
 
@@ -451,9 +496,13 @@ In this updated path:
 \- "CustomerPayments" is also in plural form to indicate a collection of resources\.
 \- "Initiate"
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Bank Guarantee Collections Task
 
@@ -471,9 +520,13 @@ GET: The name of the path should be:
 
 This follows REST best practices by using plural nouns for resource names and avoiding unnecessary redundancy\.
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Bank Guarantee Definition and Pricing Task
 
@@ -486,9 +539,13 @@ This API path retrieves information about a specific bank guarantee definition a
 GET: Based on REST best practices\, the name of this path should be:
 '/bank\-guarantees/\{bankguaranteeid\}/definitions\-and\-pricings/\{bankguaranteedefinitionandpricingid\}/notify'
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Bank Guarantee Issuance and Booking Task
 
@@ -507,9 +564,13 @@ In this naming convention:
 \- Resource names are in plural form
 \- Each entity is referred to in a clear and descriptive manner
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Bank Guarantee Payout Task
 
@@ -529,9 +590,13 @@ In this naming convention:
 \- Each path segment represents a resource or sub\-resource in a hierarchical structure
 \-
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Customer Collateral Allocation Task
 
@@ -545,9 +610,13 @@ GET: A good name for the path following the REST best practices would be:
 
 '/bank\-guarantees/\{bankguaranteeid\}/customer\-collateral\-allocations/\{customercollateralallocationid\}/notify'
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Notify
+## GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Notify
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Notify
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Notify Customer Payment Task
 
@@ -561,9 +630,13 @@ GET: A good name for the path following REST best practices could be:
 
 /bank\-guarantees/\{bankguaranteeid\}/customer\-payments/\{customerpaymentid\}/notify
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Bank Guarantee Collections Task
 
@@ -577,9 +650,13 @@ PUT: The name of the path should be:
 
 /bank\-guarantees/\{bankguaranteeid\}/collections/\{bankguaranteecollectionsid\}/request
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Bank Guarantee Definition and Pricing Task
 
@@ -595,9 +672,13 @@ PUT: The recommended name for the path would be:
 
 This naming convention adheres to REST best practices by using lowercase letters\, hyphens to separate words\, and choosing clear and concise descriptors for each segment of the path\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Bank Guarantee Issuance and Booking Task
 
@@ -611,9 +692,13 @@ PUT: A recommended RESTful naming for this path could be:
 
 /BankGuarantees/\{bankguaranteeid\}/IssuancesAndBookings/\{bankguaranteeissuanceandbookingid\}/Requests
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Bank Guarantee Payout Task
 
@@ -627,9 +712,13 @@ PUT: A possible name for this path following REST best practices could be:
 
 '/bank\-guarantees/\{bankguaranteeId\}/payouts/\{bankguaranteePayoutId\}/requests'
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Customer Collateral Allocation Task
 
@@ -643,9 +732,13 @@ PUT: The appropriate name for the path would be:
 
 /BankGuarantees/\{bankguaranteeid\}/CustomerCollateralAllocations/\{customercollateralallocationid\}/Requests
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Request
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Request
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Request
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Request Customer Payment Task
 
@@ -659,9 +752,13 @@ PUT: The appropriate name for the path would be:
 
 /bank\-guarantees/\{bankguaranteeid\}/customer\-payments/\{customerpaymentid\}/requests
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Bank Guarantee Collections Task
 
@@ -675,9 +772,13 @@ GET: Following REST best practices\, the name of the path should be:
 
 '/bank\-guarantees/\{bankguaranteeid\}/collections/\{bankguaranteecollectionsid\}'
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Bank Guarantee Definition and Pricing Task
 
@@ -691,9 +792,13 @@ GET: The name of the path should be:
 
 '/bank\-guarantees/\{bankGuaranteeId\}/definitions\-pricing/\{definitionPricingId\}'
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Bank Guarantee Issuance and Booking Task
 
@@ -709,9 +814,13 @@ GET: A more cleaner and concise name for this path while following REST best pra
 
 This path maintains a clear and consistent naming convention\, uses lowercase letters\, separates words with hyphens\, and conveys the hierarchy and purpose of the resource in a straightforward manner\.
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Bank Guarantee Payout Task
 
@@ -727,9 +836,13 @@ GET /bank\-guarantees/\{bankguaranteeid\}/payouts/\{bankguaranteepayoutid\}
 
 This naming convention follows the principles of using lowercase letters\, using hyphens for readability\, using plural nouns for collections\, and using specific identifiers like "id" for resource identification\.
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Customer Collateral Allocation Task
 
@@ -742,9 +855,13 @@ This API path is used to retrieve information about a specific customer collater
 GET: The name of the path should be:  
 '/bank\-guarantees/\{bankguaranteeid\}/customer\-collateral\-allocations/\{customercollateralallocationid\}'
 
-### GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
+## GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Retrieve
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Retrieve Customer Payment Task
 
@@ -758,9 +875,13 @@ GET: Based on REST best practices\, a clearer and more meaningful name for this 
 
 GET /bank\-guarantees/\{bankguaranteeid\}/customer\-payments/\{customerpaymentid\}
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeCollections/\{bankguaranteecollectionsid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Bank Guarantee Collections Task
 
@@ -776,9 +897,13 @@ PUT: The name of the path should be:
 
 According to REST best practices\, it is recommended to use all lowercase letters\, separate words with hyphens\, and use plural nouns in paths\. Also\, it is not necessary to include the verb 'Update' in the path as it can be inferred from the HTTP method used \(e\.g\.\, PUT for updating a resource\)\.
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeDefinitionandPricing/\{bankguaranteedefinitionandpricingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Bank Guarantee Definition and Pricing Task
 
@@ -790,9 +915,13 @@ This API path allows you to update the definition and pricing information for a 
 
 PUT: The name of the path should be: \`/bank\-guarantees/\{bankguaranteeid\}/definitions\-pricing/\{bankguaranteedefinitionandpricingid\}/update\`
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteeIssuanceandBooking/\{bankguaranteeissuanceandbookingid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Bank Guarantee Issuance and Booking Task
 
@@ -806,9 +935,13 @@ PUT: The name of the path should follow REST best practices\. Taking this into c
 
 '/bank\-guarantees/\{bankguaranteeId\}/bank\-guarantee\-issuances\-and\-bookings/\{bankGuaranteeIssuanceAndBookingId\}'
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/BankGuaranteePayout/\{bankguaranteepayoutid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Bank Guarantee Payout Task
 
@@ -821,9 +954,13 @@ This BIAN API path allows you to update a specific bank guarantee payout task as
 PUT: The name of the path should be:  
 /BankGuarantees/\{bankguaranteeid\}/BankGuaranteePayouts/\{bankguaranteepayoutid\}
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerCollateralAllocation/\{customercollateralallocationid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Customer Collateral Allocation Task
 
@@ -837,9 +974,13 @@ PUT: The name of the path should follow RESTful principles\, which typically uti
 
 '/bank\-guarantees/\{bankguaranteeid\}/customer\-collateral\-allocations/\{customercollateralallocationid\}'
 
-### PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Update
+## PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /BankGuarantee/\{bankguaranteeid\}/CustomerPayment/\{customerpaymentid\}/Update
+:::
+
+### Description
 
 This Service Domain handles the pricing and issuance of a broad range of bank guarantee instruments Update Customer Payment Task
 

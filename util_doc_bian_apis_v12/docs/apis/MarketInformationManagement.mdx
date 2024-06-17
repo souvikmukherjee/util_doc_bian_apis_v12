@@ -1,23 +1,14 @@
 # MarketInformationManagement
 
-## Table of Contents
-- [POST: /MarketInformationManagement/Create](#post-/marketinformationmanagement/create)
-- [GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Retrieve](#get-/marketinformationmanagement/\{marketinformationmanagementid\}/retrieve)
-- [GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Consolidation/\{consolidationid\}/Retrieve](#get-/marketinformationmanagement/\{marketinformationmanagementid\}/consolidation/\{consolidationid\}/retrieve)
-- [GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Improvement/\{improvementid\}/Retrieve](#get-/marketinformationmanagement/\{marketinformationmanagementid\}/improvement/\{improvementid\}/retrieve)
-- [POST: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/Create](#post-/marketinformationmanagement/\{marketinformationmanagementid\}/reporting/create)
-- [PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Update](#put-/marketinformationmanagement/\{marketinformationmanagementid\}/reporting/\{reportingid\}/update)
-- [PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Capture](#put-/marketinformationmanagement/\{marketinformationmanagementid\}/reporting/\{reportingid\}/capture)
-- [PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Execute](#put-/marketinformationmanagement/\{marketinformationmanagementid\}/reporting/\{reportingid\}/execute)
-- [PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Request](#put-/marketinformationmanagement/\{marketinformationmanagementid\}/reporting/\{reportingid\}/request)
-- [GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Retrieve](#get-/marketinformationmanagement/\{marketinformationmanagementid\}/reporting/\{reportingid\}/retrieve)
-
-
 **BIAN Documentation:** [MarketInformationManagement v12](https://app.swaggerhub.com/apis/BIAN-3/MarketInformationManagement/12.0.0)
 
-### POST: /MarketInformationManagement/Create
+## POST: /MarketInformationManagement/Create
 
-**Description**
+:::info Path
+POST: /MarketInformationManagement/Create
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas CrCR Create an administrative plan for market information management
 
@@ -29,9 +20,13 @@ This BIAN API path\, /MarketInformationManagement/Create\, allows users to creat
 
 POST: In RESTful design\, the endpoint '/MarketInformationManagement/Create' should be updated to '/market\-information' using HTTP POST method to create a new resource under the 'market\-information' collection\.
 
-### GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Retrieve
+## GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Retrieve
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas ReCR Retrieve details about the financial market information management activity
 
@@ -47,9 +42,13 @@ GET /market\-information\-management/\{marketinformationmanagementid\}
 
 This path name is in lowercase\, uses hyphens to separate words\, and specifies the HTTP method \(GET\) for retrieving market information management resources based on a specific identifier\.
 
-### GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Consolidation/\{consolidationid\}/Retrieve
+## GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Consolidation/\{consolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Consolidation/\{consolidationid\}/Retrieve
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas ReBQ Retrieve details about the consolidation of source data
 
@@ -65,9 +64,13 @@ GET /market\-information\-management/\{marketinformationmanagementid\}/consolida
 
 This naming convention follows RESTful best practices by using lowercase letters and hyphens to separate words for better readability\. It also uses the HTTP method \(GET\) to represent the action of retrieving information\, making the API endpoint self\-descriptive\.
 
-### GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Improvement/\{improvementid\}/Retrieve
+## GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Improvement/\{improvementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Improvement/\{improvementid\}/Retrieve
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas ReBQ Retrieve details about the data improvement activities
 
@@ -86,9 +89,13 @@ Following REST best practices:
 \- Use plural forms for resource names when applicable\.
 \- Avoid unnecessary words like verbs\, and keep the path clear and concise\.
 
-### POST: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/Create
+## POST: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/Create
 
-**Description**
+:::info Path
+POST: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/Create
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas CrBQ Create a specific report view of the financial market information
 
@@ -100,9 +107,13 @@ This BIAN API path allows you to create a specific report view of financial mark
 
 POST: The name of the path should be: /market\-information\-management/\{market\-information\-management\-id\}/reporting/create
 
-### PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Update
+## PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Update
 
-**Description**
+:::info Path
+PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Update
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas UpBQ Update properties of a structured view/report
 
@@ -118,9 +129,13 @@ PUT: Based on REST best practices\, a suitable name for the path \`/MarketInform
 
 In this updated path\, we are using the HTTP method \`PUT\` to update a resource\. We have also replaced the longer and more descriptive names with shorter\, more concise identifiers while still maintaining clarity\.
 
-### PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Capture
+## PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Capture
 
-**Description**
+:::info Path
+PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Capture
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas CaBQ Capture usage details for the managed financial information/reports
 
@@ -134,9 +149,13 @@ PUT: Following REST best practices\, the name of the path could be:
 
 /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Capture
 
-### PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Execute
+## PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Execute
 
-**Description**
+:::info Path
+PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Execute
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas ExBQ Execute an automated action for a report
 
@@ -148,9 +167,13 @@ This API path allows you to execute an automated action for a report within the 
 
 PUT: Based on REST best practices\, a more suitable name for this path could be '/market\-information\-management/\{market\-information\-management\-id\}/reporting/\{reporting\-id\}/execute'\. This name follows the convention of using lowercase letters and hyphens to separate words in the path\.
 
-### PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Request
+## PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Request
 
-**Description**
+:::info Path
+PUT: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Request
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas RqBQ Request manual intervention
 
@@ -168,9 +191,13 @@ In this case\, a suitable name for the path '/MarketInformationManagement/\{mark
 
 This naming
 
-### GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Retrieve
+## GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /MarketInformationManagement/\{marketinformationmanagementid\}/Reporting/\{reportingid\}/Retrieve
+:::
+
+### Description
 
 Market information management consolidates and improves market information from multiple sources in order to build up a bank knowledge base in targeted areas ReBQ Retrieve details about managed financial market reporting activity
 

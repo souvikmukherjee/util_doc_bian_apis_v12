@@ -1,29 +1,14 @@
 # ProductDirectory
 
-## Table of Contents
-- [POST: /ProductDirectory/Register](#post-/productdirectory/register)
-- [PUT: /ProductDirectory/\{productdirectoryid\}/Update](#put-/productdirectory/\{productdirectoryid\}/update)
-- [PUT: /ProductDirectory/\{productdirectoryid\}/Request](#put-/productdirectory/\{productdirectoryid\}/request)
-- [GET: /ProductDirectory/\{productdirectoryid\}/Retrieve](#get-/productdirectory/\{productdirectoryid\}/retrieve)
-- [POST: /ProductDirectory/\{productdirectoryid\}/Operations/Register](#post-/productdirectory/\{productdirectoryid\}/operations/register)
-- [PUT: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Update](#put-/productdirectory/\{productdirectoryid\}/operations/\{operationsid\}/update)
-- [GET: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Retrieve](#get-/productdirectory/\{productdirectoryid\}/operations/\{operationsid\}/retrieve)
-- [POST: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/Register](#post-/productdirectory/\{productdirectoryid\}/salesandmarketing/register)
-- [PUT: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Update](#put-/productdirectory/\{productdirectoryid\}/salesandmarketing/\{salesandmarketingid\}/update)
-- [GET: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Retrieve](#get-/productdirectory/\{productdirectoryid\}/salesandmarketing/\{salesandmarketingid\}/retrieve)
-- [POST: /ProductDirectory/\{productdirectoryid\}/Servicing/Register](#post-/productdirectory/\{productdirectoryid\}/servicing/register)
-- [PUT: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Update](#put-/productdirectory/\{productdirectoryid\}/servicing/\{servicingid\}/update)
-- [GET: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Retrieve](#get-/productdirectory/\{productdirectoryid\}/servicing/\{servicingid\}/retrieve)
-- [POST: /ProductDirectory/\{productdirectoryid\}/Production/Register](#post-/productdirectory/\{productdirectoryid\}/production/register)
-- [PUT: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Update](#put-/productdirectory/\{productdirectoryid\}/production/\{productionid\}/update)
-- [GET: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Retrieve](#get-/productdirectory/\{productdirectoryid\}/production/\{productionid\}/retrieve)
-
-
 **BIAN Documentation:** [ProductDirectory v12](https://app.swaggerhub.com/apis/BIAN-3/ProductDirectory/12.0.0)
 
-### POST: /ProductDirectory/Register
+## POST: /ProductDirectory/Register
 
-**Description**
+:::info Path
+POST: /ProductDirectory/Register
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. InCR Register a new product or service in the catalog
 
@@ -35,9 +20,13 @@ This API path allows users to register a new product or service in the bank's Pr
 
 POST: If the path '/ProductDirectory/Register' followed REST best practices\, it should be named '/products' as the resource name should be plural noun and the HTTP method \(POST in this case\) should describe the action to be performed on the resource\.
 
-### PUT: /ProductDirectory/\{productdirectoryid\}/Update
+## PUT: /ProductDirectory/\{productdirectoryid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductDirectory/\{productdirectoryid\}/Update
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. UpCR Update details of a product or service in the catalog
 
@@ -49,9 +38,13 @@ This API path allows you to update the details of a specific product or service 
 
 PUT: The name of the path should be \`/ProductDirectory/\{productdirectoryid\}\`\. The update operation should be done using the HTTP method PUT on this resource URL\.
 
-### PUT: /ProductDirectory/\{productdirectoryid\}/Request
+## PUT: /ProductDirectory/\{productdirectoryid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProductDirectory/\{productdirectoryid\}/Request
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. RqCR Request that an existing entry is updated or revised
 
@@ -67,9 +60,13 @@ PUT: The RESTful naming convention for this path would be:
 
 In REST\, it is recommended to use plural nouns for resource names to represent a collection of resources\. Therefore\, "Requests" is the appropriate name for this path following REST best practices\.
 
-### GET: /ProductDirectory/\{productdirectoryid\}/Retrieve
+## GET: /ProductDirectory/\{productdirectoryid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductDirectory/\{productdirectoryid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. ReCR Retrieve product or service details from the catalog
 
@@ -83,9 +80,13 @@ GET: The name of the path should be:
 
 GET /product\-directory/\{productdirectoryid\}
 
-### POST: /ProductDirectory/\{productdirectoryid\}/Operations/Register
+## POST: /ProductDirectory/\{productdirectoryid\}/Operations/Register
 
-**Description**
+:::info Path
+POST: /ProductDirectory/\{productdirectoryid\}/Operations/Register
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. InBQ Register a new product or service operations details in the catalog
 
@@ -97,9 +98,13 @@ This BIAN API path allows users to register new product or service operations de
 
 POST: The name of the path should be \`/product\-directories/\{productdirectoryid\}/operations/register\` in accordance with REST best practices\. The path should be in lowercase\, use hyphens to separate words\, and should be descriptive of the resource it represents\.
 
-### PUT: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Update
+## PUT: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Update
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. UpBQ Update details of a product or service operations details in the catalog
 
@@ -117,9 +122,13 @@ PUT: The name of the path should be:
 
 To follow REST best practices\, the path should not include the action "Update"\. Instead\, you can use standard HTTP methods like PUT or PATCH to update a resource at the specified URI\.
 
-### GET: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Retrieve
+## GET: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductDirectory/\{productdirectoryid\}/Operations/\{operationsid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. ReBQ Retrieve product or service operations details from the catalog
 
@@ -135,9 +144,13 @@ GET /ProductDirectories/\{productdirectoryid\}/Operations/\{operationsid\}
 
 This follows REST best practices by using the HTTP method GET to retrieve a specific resource \(in this case\, an operation\) within the ProductDirectory collection\, using plural nouns for resource names\, and avoiding unnecessary capitalization and complexity in the path\.
 
-### POST: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/Register
+## POST: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/Register
 
-**Description**
+:::info Path
+POST: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/Register
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. InBQ Register a new product or service sales and marketing details in the catalog
 
@@ -149,9 +162,13 @@ This API path allows users to register new product or service sales and marketin
 
 POST: The name of the path should be "/ProductDirectory/\{productdirectoryid\}/SalesAndMarketing/Registration" to follow REST best practices\.
 
-### PUT: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Update
+## PUT: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Update
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. UpBQ Update details of a product or service sales and marketing details in the catalog
 
@@ -167,9 +184,13 @@ PUT: The name of the path should be:
 PUT /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}
 \`\`\`
 
-### GET: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Retrieve
+## GET: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductDirectory/\{productdirectoryid\}/SalesandMarketing/\{salesandmarketingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. ReBQ Retrieve product or service sales and marketing details from the catalog
 
@@ -190,9 +211,13 @@ In this naming convention:
 \- Resource identifiers are represented within curly braces \{\}\.
 \- The HTTP method \(which would typically be GET for a retrieve operation\) is not included in the path
 
-### POST: /ProductDirectory/\{productdirectoryid\}/Servicing/Register
+## POST: /ProductDirectory/\{productdirectoryid\}/Servicing/Register
 
-**Description**
+:::info Path
+POST: /ProductDirectory/\{productdirectoryid\}/Servicing/Register
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. InBQ Register a new product or service servicing details in the catalog
 
@@ -208,9 +233,13 @@ POST: The name of the path should be:
 
 Following REST best practices\, the path should be in lowercase and use hyphens to separate words for improved readability and consistency\.
 
-### PUT: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Update
+## PUT: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Update
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. UpBQ Update details of a product or service servicing details in the catalog
 
@@ -224,9 +253,13 @@ PUT: Following RESTful best practices\, the name of the path should be:
 
 PUT /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}
 
-### GET: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Retrieve
+## GET: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductDirectory/\{productdirectoryid\}/Servicing/\{servicingid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. ReBQ Retrieve product or service servicing details from the catalog
 
@@ -240,9 +273,13 @@ GET: Based on REST best practices\, the name of the path could be:
 
 "/product\-directory/\{productdirectoryid\}/servicing/\{servicingid\}"
 
-### POST: /ProductDirectory/\{productdirectoryid\}/Production/Register
+## POST: /ProductDirectory/\{productdirectoryid\}/Production/Register
 
-**Description**
+:::info Path
+POST: /ProductDirectory/\{productdirectoryid\}/Production/Register
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. InBQ Register a new product or service production details in the catalog
 
@@ -258,9 +295,13 @@ POST: Following REST best practices\, the name of the path should be:
 /ProductDirectory/\{productdirectoryid\}/ProductionRegistrations
 \`\`\`
 
-### PUT: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Update
+## PUT: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Update
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. UpBQ Update details of a product or service production details in the catalog
 
@@ -274,9 +315,13 @@ PUT: The name of the path should be:
 
 PUT /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}
 
-### GET: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Retrieve
+## GET: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProductDirectory/\{productdirectoryid\}/Production/\{productionid\}/Retrieve
+:::
+
+### Description
 
 This service domain maintains a comprehensive directory of the bank's products and services\. It can be referenced to obtain product details used to support activities including product selection\, sales and marketing\, on\-boarding\, servicing and product fulfillment\. ReBQ Retrieve product or service production details from the catalog
 

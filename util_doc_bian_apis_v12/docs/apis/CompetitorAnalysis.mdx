@@ -1,17 +1,14 @@
 # CompetitorAnalysis
 
-## Table of Contents
-- [POST: /CompetitorAnalysis/Evaluate](#post-/competitoranalysis/evaluate)
-- [PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Execute](#put-/competitoranalysis/\{competitoranalysisid\}/execute)
-- [PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Request](#put-/competitoranalysis/\{competitoranalysisid\}/request)
-- [GET: /CompetitorAnalysis/\{competitoranalysisid\}/Retrieve](#get-/competitoranalysis/\{competitoranalysisid\}/retrieve)
-
-
 **BIAN Documentation:** [CompetitorAnalysis v12](https://app.swaggerhub.com/apis/BIAN-3/CompetitorAnalysis/12.0.0)
 
-### POST: /CompetitorAnalysis/Evaluate
+## POST: /CompetitorAnalysis/Evaluate
 
-**Description**
+:::info Path
+POST: /CompetitorAnalysis/Evaluate
+:::
+
+### Description
 
 Solicit\, consolidate and analyze competitor specific public domain data to develop competitor insights and comparisons EvCR Initialize competitor analysis
 
@@ -23,9 +20,13 @@ This BIAN API path\, "CompetitorAnalysis/Evaluate"\, allows you to create a new 
 
 POST: Following REST best practices\, the path '/CompetitorAnalysis/Evaluate' should ideally be named using nouns to represent resources\. A more appropriate name for the path could be '/competitor\-analyses' to represent a collection of competitor analysis resources\.
 
-### PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Execute
+## PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Execute
 
-**Description**
+:::info Path
+PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Execute
+:::
+
+### Description
 
 Solicit\, consolidate and analyze competitor specific public domain data to develop competitor insights and comparisons ExCR Obtain an automated refresh of maintained competitor analysis
 
@@ -39,9 +40,13 @@ PUT: Based on REST best practices\, the name of the path should be:
 
 /competitor\-analyses/\{competitorAnalysisId\}/execute
 
-### PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Request
+## PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Request
 
-**Description**
+:::info Path
+PUT: /CompetitorAnalysis/\{competitoranalysisid\}/Request
+:::
+
+### Description
 
 Solicit\, consolidate and analyze competitor specific public domain data to develop competitor insights and comparisons RqCR Request a manual intervention in the development of competitor analysis
 
@@ -54,9 +59,13 @@ This BIAN API path allows users to request a manual intervention in the developm
 PUT: The name of the path should be:  
 \`/competitor\-analyses/\{competitoranalysisid\}/requests\`
 
-### GET: /CompetitorAnalysis/\{competitoranalysisid\}/Retrieve
+## GET: /CompetitorAnalysis/\{competitoranalysisid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CompetitorAnalysis/\{competitoranalysisid\}/Retrieve
+:::
+
+### Description
 
 Solicit\, consolidate and analyze competitor specific public domain data to develop competitor insights and comparisons ReCR Retrieve details about competitor analysis activity
 

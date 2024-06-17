@@ -1,24 +1,14 @@
 # CardFinancialSettlement
 
-## Table of Contents
-- [POST: /CardFinancialSettlement/Initiate](#post-/cardfinancialsettlement/initiate)
-- [PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Update](#put-/cardfinancialsettlement/\{cardfinancialsettlementid\}/update)
-- [GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Retrieve](#get-/cardfinancialsettlement/\{cardfinancialsettlementid\}/retrieve)
-- [PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Update](#put-/cardfinancialsettlement/\{cardfinancialsettlementid\}/consolidation/\{consolidationid\}/update)
-- [GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Retrieve](#get-/cardfinancialsettlement/\{cardfinancialsettlementid\}/consolidation/\{consolidationid\}/retrieve)
-- [PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Update](#put-/cardfinancialsettlement/\{cardfinancialsettlementid\}/processing/\{processingid\}/update)
-- [GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Retrieve](#get-/cardfinancialsettlement/\{cardfinancialsettlementid\}/processing/\{processingid\}/retrieve)
-- [PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Update](#put-/cardfinancialsettlement/\{cardfinancialsettlementid\}/instruction/\{instructionid\}/update)
-- [GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Retrieve](#get-/cardfinancialsettlement/\{cardfinancialsettlementid\}/instruction/\{instructionid\}/retrieve)
-- [PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Update](#put-/cardfinancialsettlement/\{cardfinancialsettlementid\}/payment/\{paymentid\}/update)
-- [GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Retrieve](#get-/cardfinancialsettlement/\{cardfinancialsettlementid\}/payment/\{paymentid\}/retrieve)
-
-
 **BIAN Documentation:** [CardFinancialSettlement v12](https://app.swaggerhub.com/apis/BIAN-3/CardFinancialSettlement/12.0.0)
 
-### POST: /CardFinancialSettlement/Initiate
+## POST: /CardFinancialSettlement/Initiate
 
-**Description**
+:::info Path
+POST: /CardFinancialSettlement/Initiate
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. InCR Initiate card financial settlement processing
 
@@ -30,9 +20,13 @@ This API endpoint\, /CardFinancialSettlement/Initiate\, allows users to start th
 
 POST: Following REST best practices\, the name of the path should be something that is a noun and represents a resource\. In this case\, it could be simply '/CardFinancialSettlement'\. The 'Initiate' part can be represented as a HTTP method like POST\, so the complete API endpoint could look like POST /CardFinancialSettlement\.
 
-### PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Update
+## PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. UpCR Update the card financial settlement processing
 
@@ -44,9 +38,13 @@ This API path allows you to update the financial settlement processing related t
 
 PUT: The name of the path should be "/cardFinancialSettlements/\{cardFinancialSettlementId\}"\. REST best practices recommend using lowercase letters\, plural nouns\, and avoiding verbs in the path names\.
 
-### GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Retrieve
+## GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. ReCR Retrieve details and reports about the card settlement processing
 
@@ -60,9 +58,13 @@ GET: Based on REST best practices\, the name of the path should be like the foll
 
 '/card\-financial\-settlements/\{cardFinancialSettlementId\}'
 
-### PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Update
+## PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. UpBQ Update consolidated transaction details for a settlement procedure
 
@@ -76,9 +78,13 @@ PUT: Based on REST best practices\, the name of the path should accurately descr
 
 '/CardFinancialSettlements/\{cardfinancialsettlementid\}/Consolidations/\{consolidationid\}'
 
-### GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Retrieve
+## GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Consolidation/\{consolidationid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. ReBQ Retrieve consolidated transaction details for a settlement procedure
 
@@ -92,9 +98,13 @@ GET: The name of this path following REST best practices could be:
 
 GET /card\-financial\-settlements/\{cardfinancialsettlementid\}/consolidations/\{consolidationid\}
 
-### PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Update
+## PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. UpBQ Update processing transaction details for a settlement procedure
 
@@ -108,9 +118,13 @@ PUT: Based on REST best practices\, a more suitable name for the path '/CardFina
 
 PUT /card\-financial\-settlements/\{cardfinancialsettlementid\}/processings/\{processingid\}
 
-### GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Retrieve
+## GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Processing/\{processingid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. ReBQ Retrieve processing transaction details for a settlement procedure
 
@@ -126,9 +140,13 @@ GET: Based on REST best practices\, the name of the path should be:
 
 This path follows the best practices of using lowercase letters\, separating words with hyphens\, and using plural nouns for resource names\.
 
-### PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Update
+## PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. UpBQ Update payment instruction details for a settlement procedure
 
@@ -142,9 +160,13 @@ PUT: The name of the path that follows REST best practices should be:
 
 '/card\-financial\-settlements/\{cardfinancialsettlementid\}/instructions/\{instructionid\}'
 
-### GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Retrieve
+## GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Instruction/\{instructionid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. ReBQ Retrieve payment instruction details for a settlement procedure
 
@@ -160,9 +182,13 @@ GET: Based on REST best practices\, the name of the path should be:
 /CardFinancialSettlements/\{cardfinancialsettlementid\}/Instructions/\{instructionid\}
 \`\`\`
 
-### PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Update
+## PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Update
 
-**Description**
+:::info Path
+PUT: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Update
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. UpBQ Update payment processing details for a settlement procedure
 
@@ -176,9 +202,13 @@ PUT: The name of the path should be:
 
 PATCH /cardFinancialSettlements/\{cardFinancialSettlementId\}/payments/\{paymentId\}
 
-### GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Retrieve
+## GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /CardFinancialSettlement/\{cardfinancialsettlementid\}/Payment/\{paymentid\}/Retrieve
+:::
+
+### Description
 
 This service domain orchestrates the settlement of the transactions between the Issuers and the Acquirers through the Card Networks\. ReBQ Retrieve payment processing details for a settlement procedure
 

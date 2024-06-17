@@ -1,21 +1,14 @@
 # ProcessingOrder
 
-## Table of Contents
-- [PUT: /ProcessingOrder/\{processingorderid\}/Control](#put-/processingorder/\{processingorderid\}/control)
-- [PUT: /ProcessingOrder/\{processingorderid\}/Exchange](#put-/processingorder/\{processingorderid\}/exchange)
-- [PUT: /ProcessingOrder/\{processingorderid\}/Execute](#put-/processingorder/\{processingorderid\}/execute)
-- [POST: /ProcessingOrder/Initiate](#post-/processingorder/initiate)
-- [GET: /ProcessingOrder/\{processingorderid\}/Notify](#get-/processingorder/\{processingorderid\}/notify)
-- [PUT: /ProcessingOrder/\{processingorderid\}/Request](#put-/processingorder/\{processingorderid\}/request)
-- [GET: /ProcessingOrder/\{processingorderid\}/Retrieve](#get-/processingorder/\{processingorderid\}/retrieve)
-- [PUT: /ProcessingOrder/\{processingorderid\}/Update](#put-/processingorder/\{processingorderid\}/update)
-
-
 **BIAN Documentation:** [ProcessingOrder v12](https://app.swaggerhub.com/apis/BIAN-3/ProcessingOrder/12.0.0)
 
-### PUT: /ProcessingOrder/\{processingorderid\}/Control
+## PUT: /ProcessingOrder/\{processingorderid\}/Control
 
-**Description**
+:::info Path
+PUT: /ProcessingOrder/\{processingorderid\}/Control
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Control Processing Order Procedure
 
@@ -35,9 +28,13 @@ Key points to consider:
 3\. Avoid using camelCase or underscores in paths\.
 4\. Use plural nouns for collections\.
 
-### PUT: /ProcessingOrder/\{processingorderid\}/Exchange
+## PUT: /ProcessingOrder/\{processingorderid\}/Exchange
 
-**Description**
+:::info Path
+PUT: /ProcessingOrder/\{processingorderid\}/Exchange
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Exchange Processing Order Procedure
 
@@ -51,9 +48,13 @@ PUT: Based on REST best practices\, the name for the path '/ProcessingOrder/\{pr
 
 /processing\-orders/\{processingorderid\}/exchange
 
-### PUT: /ProcessingOrder/\{processingorderid\}/Execute
+## PUT: /ProcessingOrder/\{processingorderid\}/Execute
 
-**Description**
+:::info Path
+PUT: /ProcessingOrder/\{processingorderid\}/Execute
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Execute Processing Order Procedure
 
@@ -77,9 +78,13 @@ Here are some key points to align with REST best practices:
 
 3\. Use hyphens to separate words: Hyphens are recommended for separating words within a
 
-### POST: /ProcessingOrder/Initiate
+## POST: /ProcessingOrder/Initiate
 
-**Description**
+:::info Path
+POST: /ProcessingOrder/Initiate
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Initiate Processing Order Procedure
 
@@ -91,9 +96,13 @@ This API path \("/ProcessingOrder/Initiate"\) is used to start the process of ha
 
 POST: The name of the path '/ProcessingOrder/Initiate' should be updated to follow REST best practices by using nouns to describe resources\. It could be renamed to something like '/orders' to better represent the resource being acted upon by the operation\.
 
-### GET: /ProcessingOrder/\{processingorderid\}/Notify
+## GET: /ProcessingOrder/\{processingorderid\}/Notify
 
-**Description**
+:::info Path
+GET: /ProcessingOrder/\{processingorderid\}/Notify
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Notify Processing Order Procedure
 
@@ -107,9 +116,13 @@ GET: The name of the path '/ProcessingOrder/\{processingorderid\}/Notify' could 
 
 '/processing\-orders/\{processingorderid\}/notifications'
 
-### PUT: /ProcessingOrder/\{processingorderid\}/Request
+## PUT: /ProcessingOrder/\{processingorderid\}/Request
 
-**Description**
+:::info Path
+PUT: /ProcessingOrder/\{processingorderid\}/Request
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Request Processing Order Procedure
 
@@ -123,9 +136,13 @@ PUT: The name of the path should be:
 
 '/orders/\{processingorderid\}/request'
 
-### GET: /ProcessingOrder/\{processingorderid\}/Retrieve
+## GET: /ProcessingOrder/\{processingorderid\}/Retrieve
 
-**Description**
+:::info Path
+GET: /ProcessingOrder/\{processingorderid\}/Retrieve
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Retrieve Processing Order Procedure
 
@@ -139,9 +156,13 @@ GET: The RESTful path should be named as follows:
 
 '/processingorders/\{processingorderid\}'
 
-### PUT: /ProcessingOrder/\{processingorderid\}/Update
+## PUT: /ProcessingOrder/\{processingorderid\}/Update
 
-**Description**
+:::info Path
+PUT: /ProcessingOrder/\{processingorderid\}/Update
+:::
+
+### Description
 
 The Processing Order Service Domain handles the processing of a service request that comes in via a secure channel from a known requestor\, which is typically an automated process itself and not a customer\. Update Processing Order Procedure
 
