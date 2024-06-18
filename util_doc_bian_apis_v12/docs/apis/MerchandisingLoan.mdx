@@ -16,12 +16,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to update or control the processing of a specific Merchandising Loan facility identified by its unique ID\. It relates to loans used for purchasing large items like cars or boats\, where the purchased item acts as collateral for the loan\. By using this API\, you can manage and control the workflow and processing of a Merchandising Loan facility\.
 
-**Limitations**
-
-PUT: The name of the path following REST best practices should be:
-
-'/merchandising\-loans/\{merchandisingLoanId\}/control'
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Exchange
 
 :::info Path
@@ -35,14 +29,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to update an existing Merchandising Loan by providing information related to the exchange of the merchandise item that was purchased using the loan\. This could involve details such as accepting\, verifying\, or processing the exchanged item that serves as collateral for the loan\.
-
-**Limitations**
-
-PUT: The name of the path should be:
-
-'/merchandising\-loans/\{merchandisingLoanId\}/exchanges' 
-
-Following REST best practices\, the path uses lowercase letters\, separates words with hyphens for readability\, and includes plural nouns to indicate a collection of resources \(exchanges\)\. Additionally\, path parameters are enclosed in curly braces and use descriptive names\, such as 'merchandisingLoanId'\.
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Execute
 
@@ -58,10 +44,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to execute an available automated action for a specific Merchandising Loan Facility identified by the "merchandisingloanid\." This means that you can trigger a predefined action or process related to a loan used to purchase a big\-ticket item like a car or a boat\. The action taken could be related to the fulfillment of the loan\, potentially involving aspects like disbursement of funds\, updating records\, or managing collateral associated with the purchased item\.
 
-**Limitations**
-
-PUT: The name of the path \`/MerchandisingLoan/\{merchandisingloanid\}/Execute\` should be renamed to \`/merchandising\-loans/\{merchandisingloanid\}/execute\` following REST best practices\. This naming convention uses lowercase letters\, hyphens for readability\, and avoids capitalized or camelCase words\.
-
 ## POST: /MerchandisingLoan/Initiate
 
 :::info Path
@@ -75,10 +57,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to create a new Merchandising Loan Facility\, which is a type of loan used to finance the purchase of a high\-value merchandise item like a car or boat\. The item being purchased usually serves as collateral for the loan\. By using this API\, you can initiate the process of setting up a new loan facility for this specific type of merchandise loan\.
-
-**Limitations**
-
-POST: The name of the path '/MerchandisingLoan/Initiate' should be more descriptive and follow RESTful conventions by using nouns to represent resources\. Considering this\, a more appropriate name for the path could be '/merchandising\-loans' to represent the collection of merchandising loans or '/merchandising\-loans/initiate' to indicate an action on the merchandising loans resource\.
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Retrieve
 
@@ -94,10 +72,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to retrieve details about a specific Merchandising Loan facility by providing the unique ID associated with that loan\. The Merchandising Loan is a type of loan that is used to finance the purchase of a large item such as a car or a boat\. The item being purchased is commonly used as collateral for the loan\. By using this API\, you can access information about various aspects of a specific Merchandising Loan\, helping you to manage and track the details related to the loan facility\.
 
-**Limitations**
-
-GET: The name of the path should be \`/merchandising\-loans/\{merchandisingloanid\}\`\.
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Request
 
 :::info Path
@@ -111,14 +85,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to update an existing Merchandising Loan request by providing the ID of the specific Merchandising Loan\. This loan product is typically used for buying high\-value items like cars or boats\, with the purchased item serving as collateral for the loan\. The PUT method is used to update information or request manual intervention or decision\-making related to the Merchandising Loan Facility\.
-
-**Limitations**
-
-PUT: The name of the path should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/requests'
-
-This path follows REST best practices by using all lowercase letters\, using plural nouns for resource names\, separating words with dashes\, and using the proper singular/plural form for the resource names\.
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Update
 
@@ -134,10 +100,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path\, /MerchandisingLoan/\{merchandisingloanid\}/Update with the PUT method\, allows you to update details related to a Merchandising Loan Facility\. This loan product is specifically designed for purchasing a large merchandise item like a car or boat\, where the purchased item usually serves as collateral for the loan\. By using this API\, you can make changes or updates to the specific details and information associated with an existing Merchandising Loan\.
 
-**Limitations**
-
-PUT: The RESTful path should be named as follows: '/merchandising\-loans/\{merchandisingloanid\}'\.
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Exchange
 
 :::info Path
@@ -151,12 +113,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to update the billing information associated with a merchandising loan\. In other words\, if there are any changes or updates needed for the billing details related to a specific merchandising loan\, this API call will facilitate those adjustments\. This could involve verifying\, accepting\, or processing billing transactions or information related to the loan\.
-
-**Limitations**
-
-PUT: Based on REST best practices\, the name of the path should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/billings/\{billingid\}/exchange'
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Exchange
 
@@ -172,12 +128,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to update the service fees associated with a merchandising loan\. The loan is typically used to purchase a big\-ticket item like a car or a boat\, with that item serving as collateral for the loan\. By using this path\, you can make changes and updates to the fees related to the loan processing\.
 
-**Limitations**
-
-PUT: The name of the path should be \`/merchandising\-loans/\{merchandisingloanid\}/service\-fees/\{servicefeesid\}/exchange\`\. 
-
-Following REST best practices\, the path should use lowercase letters and hyphens to separate words\. The path should be descriptive and use plural nouns to represent collections of resources\.
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Exchange
 
 :::info Path
@@ -191,12 +141,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to update information related to a merchandising loan and the lien associated with it\. Specifically\, it is used to handle the processing of liens on merchandise items such as cars or boats that are used as collateral for the loan\. By making a PUT request to this path\, you can accept\, verify\, and perform other necessary actions in the lien processing workflow for the loan in question\. It helps in managing the fulfillment of the loan product used to purchase high\-value items through proper lien processing procedures\.
-
-**Limitations**
-
-PUT: A good name for the path \`/MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Exchange\` following REST best practices would be:
-
-\`/merchandising\-loans/\{merchandisingloanid\}/liens/\{lienid\}/exchanges\`
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Exchange
 
@@ -212,12 +156,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path\, /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Exchange with the PUT method\, allows you to update the details related to the payment processing for a specific merchandising loan\. It deals with the fulfillment of a loan used for purchasing a high\-value item like a car or boat\, where the purchased item serves as collateral for the loan\. This API can be used to handle various aspects of payments processing such as accepting\, verifying\, and managing the exchange related to the loan and payments associated with the merchandise loan\.
 
-**Limitations**
-
-PUT: Based on REST best practices\, the name of the path should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/payments/\{paymentsid\}/exchange'
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Exchange
 
 :::info Path
@@ -231,12 +169,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path involves updating information related to a specific Merchandising Loan and Sweep Exchange\. It is used for managing the fulfillment of a loan taken out to purchase a high\-value item like a car or boat\. The API allows for the updating of details related to the loan and the collateral item used for the loan\. It may involve actions such as accepting\, verifying\, and processing the transaction associated with the loan and collateral\.
-
-**Limitations**
-
-PUT: A suitable name for the path '/MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Exchange' adhering to REST best practices would be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/sweeps/\{sweepid\}/exchange'
 
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Billing/Initiate
 
@@ -252,17 +184,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to create a new billing instance for a merchandising loan\. This loan is used for purchasing expensive merchandise items like cars or boats\, with the purchased item serving as collateral for the loan\. The initiation of a new billing process is an essential step in managing and tracking the repayment obligations associated with the loan\.
 
-**Limitations**
-
-POST: According to RESTful best practices\, the name of the path '/MerchandisingLoan/\{merchandisingloanid\}/Billing/Initiate' should ideally be as follows:
-
-'/merchandising\-loans/\{merchandisingloanid\}/billing/initiate'
-
-In this naming convention:
-1\. Use lowercase letters for path segments
-2\. Separate words with hyphens for better readability
-3\. Use plural nouns for collections \(e\.g\.\, 'merchandising\-loans
-
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/Initiate
 
 :::info Path
@@ -276,14 +197,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to initiate and create a new collateral for a merchandising loan\. When a customer takes out a loan to purchase a big item like a car or a boat\, the purchased item itself is often used as collateral for the loan\. By using this API\, you can set up a new collateral agreement in the system to secure the loan with the purchased merchandise\.
-
-**Limitations**
-
-POST: Following REST best practices\, the name of the path should be:
-
-\`\`\`
-/MerchandisingLoans/\{merchandisingloanid\}/CollateralInitiation
-\`\`\`
 
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/Initiate
 
@@ -299,14 +212,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to create a new deposit associated with a Merchandising Loan\. The Merchandising Loan is a type of loan used to purchase a high\-value item like a car or boat\, and often the purchased item serves as collateral for the loan\. By initiating a new deposit through this API path\, you can efficiently manage the financial aspects of the Merchandising Loan process\.
 
-**Limitations**
-
-POST: A more RESTful naming convention for the path '/MerchandisingLoan/\{merchandisingloanid\}/Deposits/Initiate' could be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/deposits/initiate'
-
-This naming convention uses lowercase letters\, hyphens to separate words\, and follows a hierarchical structure that is more aligned with RESTful practices\.
-
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/Initiate
 
 :::info Path
@@ -320,12 +225,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to create a new resource for initiating service fees related to a merchandising loan\. This loan product is typically used for the purchase of a large item like a car or boat\, with the purchased item serving as collateral for the loan\. By using this API\, you can instantiate new fees associated with the merchandising loan to manage the financial aspects of the loan agreement\.
-
-**Limitations**
-
-POST: The name of the path '/MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/Initiate' following REST best practices should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/service\-fees/initiate'
 
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/Initiate
 
@@ -341,12 +240,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path creates a new financial instrument for a merchandising loan\. A merchandising loan is used to finance the purchase of a big\-ticket item like a car or boat\, with the purchased item typically serving as collateral for the loan\. By initiating a new financial instrument\, the system facilitates the management and processing of the loan associated with the specific merchandising loan ID provided\.
 
-**Limitations**
-
-POST: Based on REST best practices\, a more appropriate naming convention for the given path '/MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/Initiate' could be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/financial\-instruments/initiate'
-
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/Initiate
 
 :::info Path
@@ -360,12 +253,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path is used to initiate the provision of an issued device related to a merchandising loan\. When a customer takes out a loan to purchase a high\-value item like a car or a boat\, the purchased item acts as collateral for the loan\. By calling this API and providing the necessary information\, the process of issuing the device related to the loan and the purchased merchandise can be started\.
-
-**Limitations**
-
-POST: A more RESTful name for the path '/MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/Initiate' could be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/issued\-devices/initiate'
 
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Lien/Initiate
 
@@ -381,18 +268,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to create a new lien as part of the process involved in obtaining a merchandising loan for a large item like a car or boat\. A lien is a legal right or interest that a lender has in the collateral\, which in this case is the purchased merchandise item\. By initiating a new lien\, you are establishing this legal claim on the item to secure the loan\.
 
-**Limitations**
-
-POST: The name of the path should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/liens/initiate'
-
-Here are some key points to consider for following REST best practices:
-\- Use lowercase letters for path segments
-\- Use hyphens to separate words in path segments
-\- Use plural nouns for collections \(e\.g\.\, 'merchandising\-loans' instead of 'merchandising\-loan'\)
-\- Use specific resource names instead of generic terms \(e
-
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate
 
 :::info Path
@@ -406,10 +281,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to initiate a new payment related to a specific merchandising loan\. Essentially\, it enables the creation of a payment transaction for a loan that was used to purchase a high\-value merchandise item like a car or boat\, where the purchased item serves as collateral for the loan\. By using this API\, you can start the process of making a payment towards the loan associated with the specified merchandising loan ID\.
-
-**Limitations**
-
-POST: If the path '/MerchandisingLoan/\{merchandisingloanid\}/Payments/Initiate' followed REST best practices\, it could be named '/merchandising\-loans/\{merchandisingloanid\}/payments/initiate' to adhere to resource naming conventions and use lowercase letters with hyphens for readability\.
 
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate
 
@@ -425,10 +296,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path\, /MerchandisingLoan/\{merchandisingloanid\}/Sweep/Initiate\, allows you to create a new Sweep associated with a specific Merchandising Loan\. A Sweep in this context refers to the fulfillment process of a loan product that is used to purchase a high\-value item like a car or boat\. The purchased item usually acts as collateral for the loan\. By using this API path\, you can initiate the process of setting up a new Sweep for a particular Merchandising Loan\, helping to manage and track loan transactions effectively\.
 
-**Limitations**
-
-POST: The name of the path could be '/merchandising\-loans/\{merchandisingLoanId\}/sweep/initiate' following REST best practices\.
-
 ## POST: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/Initiate
 
 :::info Path
@@ -442,11 +309,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to initiate a new withdrawal request for a merchandising loan\. This type of loan is used to finance the purchase of a big\-ticket item like a car or boat\, with the purchased item often serving as collateral for the loan\. By making a POST request to this path with the specified merchandising loan ID\, you can create a new withdrawal transaction associated with that loan\, enabling the borrower to access the funds needed for the purchase\.
-
-**Limitations**
-
-POST: The name of the path should be:  
-'/merchandising\-loans/\{merchandisingLoanId\}/withdrawals/initiate'
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Retrieve
 
@@ -462,12 +324,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to retrieve details about billing related to a specific Merchandising Loan and Billing ID\. It is used for obtaining information about the financial aspect of a loan product used to purchase a significant item like a car or boat\. The billing information is crucial for monitoring and managing the payment details associated with the loan transaction\.
 
-**Limitations**
-
-GET: The name of the path '/MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Retrieve' following REST best practices could be:
-
-GET /merchandising\-loans/\{merchandisingloanid\}/billing/\{billingid\}
-
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Retrieve
 
 :::info Path
@@ -481,10 +337,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to retrieve details about a specific aspect of the collateral associated with a merchandising loan\. For example\, if a car or boat is used as collateral for the loan\, you can use this API to get information about that collateral\, such as its value\, condition\, or other related details\. This can help in managing and monitoring the collateral tied to the loan agreement\.
-
-**Limitations**
-
-GET: Based on REST best practices\, the name of the path could be '/merchandising\-loans/\{merchandisingloanid\}/collaterals/\{collateralid\}'\.
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Retrieve
 
@@ -500,11 +352,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path is used to retrieve details about deposits related to a specific merchandising loan\. It allows you to access information about the deposits associated with a particular merchandising loan by providing the loan ID and the deposit ID as parameters\. This can be useful for managing and monitoring the deposits made in relation to the loan\, which may be used to secure the purchase of a high\-value item like a car or boat\.
 
-**Limitations**
-
-GET: Following REST best practices\, the name of the path should be:
-'/merchandising\-loans/\{merchandisingloanid\}/deposits/\{depositsid\}'
-
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Retrieve
 
 :::info Path
@@ -518,14 +365,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This specific BIAN API path is used to retrieve details about fees associated with a merchandising loan\. It allows you to access information about service fees related to a specific merchandising loan ID\. This could include fees charged for processing the loan\, maintaining the loan account\, or any other fees specific to the loan product\. The API provides a way to access and retrieve specific details about the service fees associated with a merchandising loan\.
-
-**Limitations**
-
-GET: Based on REST best practices\, the name of the path '/MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Retrieve' can be simplified as follows:
-
-'/merchandising\-loans/\{merchandisingloanid\}/service\-fees/\{servicefeesid\}'
-
-This naming convention uses lowercase letters\, separate words with hyphens\, and accurately describes the resources being accessed\.
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Retrieve
 
@@ -541,12 +380,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to retrieve details about the financial accounting related to a specific merchandising loan\. This could include information about how the loan is being managed\, any payments made\, the status of the account\, or any other financial transactions associated with the loan\. This can help provide a clear picture of the financial aspects of the loan and its associated merchandise item\.
 
-**Limitations**
-
-GET: A suitable name for this path\, following REST best practices\, could be:
-
-GET /merchandisingloans/\{merchandisingloanid\}/financialaccounting/\{financialaccountingid\}
-
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Retrieve
 
 :::info Path
@@ -560,12 +393,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to retrieve details about a financial instrument related to a specific merchandising loan\. It is designed to provide information about the loan product used for purchasing a large merchandise item like a car or a boat\, where the purchased item usually serves as collateral for the loan\. By accessing this API path with the appropriate IDs\, you can get specific information about the financial instrument linked to a particular merchandising loan\.
-
-**Limitations**
-
-GET: The name of the path should be:
-
-GET /merchandising\-loans/\{merchandisingloanid\}/financial\-instruments/\{financialinstrumentid\}
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Retrieve
 
@@ -581,12 +408,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path retrieves details about the interest associated with a specific merchandising loan\. It allows you to retrieve information related to the interest terms and conditions\, rates\, or other aspects specific to the loan and its interest component\.
 
-**Limitations**
-
-GET: Based on REST best practices\, the name for the path '/MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Retrieve' should be:
-
-GET '/merchandising\-loans/\{merchandisingloanid\}/interests/\{interestid\}'
-
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Retrieve
 
 :::info Path
@@ -600,12 +421,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to retrieve details about an issued device related to a merchandising loan\. For example\, if a loan was taken out to purchase a car or boat that serves as collateral\, this API can provide information about the specific device associated with that loan\. You can use this API to access specific details about the issued device in relation to the loan it is connected to\.
-
-**Limitations**
-
-GET: Based on REST best practices\, the name of the path could be:
-
-GET /merchandising\-loans/\{merchandisingloanid\}/issued\-devices/\{issueddeviceid\}
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Retrieve
 
@@ -621,12 +436,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to retrieve details about a lien associated with a specific merchandising loan\. A lien is a legal right enforced over a valuable item\, such as a car or a boat\, to secure the repayment of the loan used to purchase that item\. By using this API path\, you can access specific information about the lien\, such as its identification number and related details\, for a particular merchandising loan\.
 
-**Limitations**
-
-GET: The name of the path should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/liens/\{lienid\}'
-
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Retrieve
 
 :::info Path
@@ -640,14 +449,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to retrieve details about payments related to a specific merchandising loan\. You would provide the ID of the merchandising loan and the ID of the specific payment you are interested in\, and the API will return information about that payment\. This could include details such as the amount paid\, payment date\, payment method\, and any other relevant information regarding the payment associated with the loan\.
-
-**Limitations**
-
-GET: Based on RESTful design best practices\, an appropriate name for the path '/MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Retrieve' could be:
-
-GET /merchandising\-loans/\{merchandisingloanid\}/payments/\{paymentid\}
-
-This path indicates the method \(GET\) and the specific resources being targeted in a clear and consistent manner\. It also uses lowercase letters and hyphens for better readability\.
 
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Retrieve
 
@@ -663,14 +464,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to retrieve details about a specific aspect of a "Sweep" transaction within the context of a Merchandising Loan\. The Sweep transaction is related to the fulfillment of a loan product used for purchasing a high\-value item like a car or boat\. By providing the Merchandising Loan ID and Sweep ID\, you can access information about the transaction\, potentially including data about the collateral used for the loan\.
 
-**Limitations**
-
-GET: A suitable name for the given path would be:
-
-\`GET /merchandising\-loans/\{merchandisingloanid\}/sweeps/\{sweepid\}\`
-
-Following REST best practices\, it's important to use lowercase letters\, separate words with hyphens or underscores for better readability\, and use plural nouns for endpoints representing collections\. Additionally\, the path should use nouns to represent resources and include appropriate HTTP methods to indicate the action being performed\.
-
 ## GET: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Retrieve
 
 :::info Path
@@ -684,12 +477,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to retrieve specific details about a withdrawal associated with a merchandising loan\. It is designed to provide information about a transaction where funds were taken out from the loan account\, which may be linked to the purchase of a high\-value merchandise item like a car or boat\. The withdrawal ID and merchandising loan ID are used to access and retrieve the information related to that particular transaction\.
-
-**Limitations**
-
-GET: Based on REST best practices\, the name of the path should be:
-
-'/merchandising\-loans/\{merchandisingloanid\}/withdrawals/\{withdrawalsid\}'
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Request
 
@@ -705,12 +492,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path is used to update an existing merchandising loan and request manual intervention or a decision regarding the collateral associated with the loan\. This loan product is typically used for purchasing high\-value merchandise items like cars or boats\, with the purchased item serving as collateral\. By making a PUT request to this path\, stakeholders can update information related to the loan and request manual review or decision\-making regarding the collateral linked to it\.
 
-**Limitations**
-
-PUT: The name of the path following REST best practices should be:
-
-/MerchandisingLoans/\{merchandisingLoanId\}/Collaterals/\{collateralId\}/Requests
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Request
 
 :::info Path
@@ -724,12 +505,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to update an existing resource related to a Merchandising Loan\. Specifically\, it focuses on the service fees associated with a particular merchandising loan\. By making a PUT request to this path\, you can request manual intervention or a decision regarding the fees linked to the loan\. This API is utilized in the context of loans used to purchase big\-ticket items like cars or boats\, where the purchased item often serves as collateral for the loan\.
-
-**Limitations**
-
-PUT: A RESTful path should be descriptive and follow a resource\-oriented naming convention\. The name of the path  '/MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Request' could be improved by considering the following best practices:
-
-1\. \*\*Use Nouns for Resources\*\*: Each part of the path should represent a noun \(resource\)\. In this case\, "MerchandisingLoan" and "ServiceFees" are good nouns\, but "
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update
 
@@ -745,10 +520,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to update billing details related to a specific billing ID within a Merchandising Loan\. It enables you to make changes or modifications to the billing information associated with a particular loan used to purchase a large item like a car or a boat\. This update function is typically used to ensure accurate and up\-to\-date billing information for the merchandise loan\.
 
-**Limitations**
-
-PUT: Based on REST best practices\, the name of the path '/MerchandisingLoan/\{merchandisingloanid\}/Billing/\{billingid\}/Update' should be simplified to '/merchandisingloans/\{merchandisingloanid\}/billing/\{billingid\}'\. The path should describe the main resource in a plural form \('merchandisingloans'\)\, followed by IDs of specific resources \('\{merchandisingloanid\}' and '\{billingid\}'\)\. This naming convention is
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Collateral/\{collateralid\}/Update
 
 :::info Path
@@ -762,12 +533,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to update details related to collateral for a specific merchandise loan\. The collateral could be a valuable item like a car or a boat that was purchased using the loan\. By using this API path with a PUT method\, you can modify information associated with the collateral\, such as its value or ownership details\. This API helps in managing and updating the collateral information attached to a merchandise loan\.
-
-**Limitations**
-
-PUT: The name of the path should be:
-
-'/merchandising\-loans/\{merchandisingLoanId\}/collaterals/\{collateralId\}'
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Deposits/\{depositsid\}/Update
 
@@ -783,12 +548,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows for updating the details related to a deposit made in the context of a Merchandising Loan\. It enables users to modify specific information about a deposit that is associated with a loan used for purchasing a high\-value item like a car or a boat\. The deposit may serve as collateral for the loan\. By using this API\, users can make changes to the deposit information as needed\.
 
-**Limitations**
-
-PUT: Based on REST best practices\, the name of the path should be something like:
-
-'/merchandising\-loans/\{merchandisingLoanId\}/deposits/\{depositsId\}/update'
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Update
 
 :::info Path
@@ -802,14 +561,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path is used to update the details related to service fees for a merchandising loan\. It specifically updates the information related to service fees associated with a particular merchandising loan and its corresponding service fee ID\. This can include adjusting or changing the fees associated with the loan product used to purchase a larger merchandise item like a car or boat\, where the purchased item is used as collateral for the loan\.
-
-**Limitations**
-
-PUT: If the path '/MerchandisingLoan/\{merchandisingloanid\}/ServiceFees/\{servicefeesid\}/Update' were to follow REST best practices\, a more suitable name could be:
-
-PUT /merchandising\-loans/\{merchandisingloanid\}/service\-fees/\{servicefeesid\}
-
-This naming convention follows the standard RESTful practice of using HTTP methods to indicate the action to be performed on a specific resource\.
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialAccounting/\{financialaccountingid\}/Update
 
@@ -825,12 +576,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to update the financial accounting details associated with a specific merchandising loan\. This loan is used to purchase a high\-value item like a car or boat\, and the item itself serves as collateral for the loan\. By using this API\, you can make changes to the financial accounting information related to the loan and its associated transactions\.
 
-**Limitations**
-
-PUT: Based on REST best practices\, the name of the path should be:
-
-PUT /merchandising\-loans/\{merchandisingloanid\}/financial\-accounting/\{financialaccountingid\}
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/FinancialInstrument/\{financialinstrumentid\}/Update
 
 :::info Path
@@ -844,14 +589,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to update details related to a financial instrument that is associated with a specific merchandising loan\. The loan is used to purchase a large item like a car or boat\, with the purchased item serving as collateral for the loan\. By using this API\, you can make changes to the financial instrument's information\, such as updating account details or adjusting loan terms\.
-
-**Limitations**
-
-PUT: The naming of a RESTful resource should be descriptive and follow path conventions\. For the given path\, a suggestion for the resource name could be:
-
-/MerchandisingLoans/\{merchandisingloanid\}/FinancialInstruments/\{financialinstrumentid\}/Update
-
-This naming convention follows the REST best practices by using plural nouns for resources\, camelCase for multi\-word resource names\, and descriptive identifiers for parameters in curly braces\.
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Interest/\{interestid\}/Update
 
@@ -867,12 +604,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to update specific details relating to the interest associated with a merchandising loan\. For example\, you can use this path to modify the interest rate\, terms\, or any other related information of the loan\. It enables you to make changes to the interest details within the context of a merchandising loan\, which is typically used for purchasing big\-ticket items like cars or boats\.
 
-**Limitations**
-
-PUT: The name of the path should be '/merchandising\-loans/\{merchandisingLoanId\}/interests/\{interestId\}'\. 
-
-REST best practices recommend using lowercase letters and hyphens to separate words in the path names\. Also\, path parameters like 'merchandisingLoanId' and 'interestId' should be in camelCase format instead of using capital letters\.
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/IssuedDevice/\{issueddeviceid\}/Update
 
 :::info Path
@@ -886,10 +617,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path allows you to update the details of a device that has been allocated to a specific account within a Merchandising Loan\. The Merchandising Loan is a type of loan used to finance the purchase of larger items like cars or boats\, with the purchased item often serving as collateral for the loan\. By using this API path with a PUT method\, you can make modifications to the information related to a specific device that has been issued and allocated to a particular account under the Merchandising Loan\.
-
-**Limitations**
-
-PUT: The name of the path could be '/merchandising\-loans/\{merchandisingloanid\}/issued\-devices/\{issueddeviceid\}'\.
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Lien/\{lienid\}/Update
 
@@ -905,12 +632,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to update details related to a lien on a merchandise loan\. A lien is a legal right or interest that a lender has in the merchandise\, such as a car or a boat\, that was purchased using the loan\. By making a PUT request to this API\, you can modify information about the lien associated with a specific merchandising loan and lien ID\.
 
-**Limitations**
-
-PUT: A potential name for the path could be:
-
-'/merchandising\-loans/\{merchandisingLoanId\}/liens/\{lienId\}'
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Payments/\{paymentsid\}/Update
 
 :::info Path
@@ -924,12 +645,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This BIAN API path allows you to update details related to payments for a specific merchandising loan\. For example\, if someone has taken out a loan to buy a car or a boat\, this API enables you to make changes or updates to the payment information associated with that loan\. This could include updating payment amounts\, due dates\, or any other payment\-related details for the loan\.
-
-**Limitations**
-
-PUT: The name of the path should be: 
-
-PUT /merchandising\-loans/\{merchandising\_loan\_id\}/payments/\{payment\_id\}
 
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Sweep/\{sweepid\}/Update
 
@@ -945,12 +660,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This API path allows you to update details related to a sweep associated with a specific merchandising loan\. A sweep is a feature of the loan product used for the purchase of a larger item like a car or boat\, where the purchased item serves as collateral for the loan\. By making a PUT request to this path with the correct IDs\, you can modify and update specific information about the sweep within the context of the merchandising loan\.
 
-**Limitations**
-
-PUT: The name of the path should be:
-
-PUT /MerchandisingLoans/\{merchandisingloanid\}/Sweeps/\{sweepid\}
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Update
 
 :::info Path
@@ -965,14 +674,6 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 
 This BIAN API path allows you to update details relating to withdrawals made in the context of a Merchandising Loan\. Specifically\, you can use this API to modify information about a withdrawal associated with a particular merchandising loan\, identified by the \`merchandisingloanid\`\, and with a specific withdrawal ID \(\`withdrawalsid\`\)\. This API is useful for managing and maintaining accurate records of withdrawals in relation to the loan\, which is typically used for purchasing high\-value items like cars or boats\.
 
-**Limitations**
-
-PUT: Based on REST best practices\, the path should be named using nouns and should not include any action words like "Update\." The recommended path name for '/MerchandisingLoan/\{merchandisingloanid\}/Withdrawals/\{withdrawalsid\}/Update' could be structured as follows:
-
-'/merchandising\-loans/\{merchandisingloanid\}/withdrawals/\{withdrawalsid\}'
-
-This path name follows RESTful conventions by using lowercase letters\, hyphens for readability\, and
-
 ## PUT: /MerchandisingLoan/\{merchandisingloanid\}/BookingAuthorization/\{bookingauthorizationid\}/Execute
 
 :::info Path
@@ -986,11 +687,5 @@ Fulfillment of loan product used in the purchase of a larger merchandise item su
 **Documentation**
 
 This API path is used to update an existing resource related to a merchandising loan transaction\. The specific resource being updated is the booking authorization linked to a particular merchandising loan\. By executing this API\, the authorization for booking associated with the loan is processed\, allowing the loan to be utilized in the purchase of a large item like a car or boat\. Typically\, the purchased item acts as collateral for the loan\.
-
-**Limitations**
-
-PUT: The name of the path should be:
-
-"/merchandising\-loans/\{merchandisingLoanId\}/booking\-authorizations/\{bookingAuthorizationId\}/execute"
 
 > **Disclaimer:** This guide was created with OpenAI and might not be perfect. Enjoy the insights, but double-check important details!

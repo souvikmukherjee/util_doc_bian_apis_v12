@@ -16,18 +16,6 @@ The Processing Order Service Domain handles the processing of a service request 
 
 This API path allows you to update an existing resource related to processing an order\. It specifically pertains to controlling the processing of a service request that is received securely from a known source\, usually an automated system rather than a customer\. By using this API\, you can manage and modify the procedures involved in processing orders within the designated service domain\.
 
-**Limitations**
-
-PUT: Based on REST best practices\, the name of the path should be:
-
-/processing\-orders/\{processingorderid\}/control
-
-Key points to consider:
-1\. Use lowercase letters for paths\.
-2\. Use hyphens to separate words in the path to improve readability and SEO\.
-3\. Avoid using camelCase or underscores in paths\.
-4\. Use plural nouns for collections\.
-
 ## PUT: /ProcessingOrder/\{processingorderid\}/Exchange
 
 :::info Path
@@ -41,12 +29,6 @@ The Processing Order Service Domain handles the processing of a service request 
 **Documentation**
 
 This API path "/ProcessingOrder/\{processingorderid\}/Exchange" allows you to update an existing processing order by exchanging information related to the service request\. The processing order service domain manages the processing of service requests that are received securely from a known requestor\, usually an automated system rather than a customer\. By using this API\, you can exchange data or update details related to the processing order identified by the specific processing order ID\.
-
-**Limitations**
-
-PUT: Based on REST best practices\, the name for the path '/ProcessingOrder/\{processingorderid\}/Exchange' should be:
-
-/processing\-orders/\{processingorderid\}/exchange
 
 ## PUT: /ProcessingOrder/\{processingorderid\}/Execute
 
@@ -62,22 +44,6 @@ The Processing Order Service Domain handles the processing of a service request 
 
 This BIAN API path allows you to update an existing resource related to processing an order\. Specifically\, it triggers the execution of the processing order procedure for a specific processing order ID that is provided in the path\. The service is designed to handle service requests that are received securely from a known requester\, which is usually an automated system rather than an individual customer\. The purpose is to initiate the processing of the order using the defined procedure within the Processing Order Service Domain\.
 
-**Limitations**
-
-PUT: The name of the path should be:
-
-\`\`\`
-/processing\-orders/\{processingorderid\}/execute
-\`\`\`
-
-Here are some key points to align with REST best practices:
-
-1\. Use plural nouns for resource names: "processing\-orders" is used as a plural noun to represent the collection of processing orders\.
-
-2\. Use lowercase letters: Path names should be in all lowercase letters to maintain consistency and readability\.
-
-3\. Use hyphens to separate words: Hyphens are recommended for separating words within a
-
 ## POST: /ProcessingOrder/Initiate
 
 :::info Path
@@ -91,10 +57,6 @@ The Processing Order Service Domain handles the processing of a service request 
 **Documentation**
 
 This API path \("/ProcessingOrder/Initiate"\) is used to start the process of handling a service request within the Processing Order Service Domain\. It is designed to be triggered by a secure channel by a known requester\, usually an automated system rather than a person\. When a request is initiated through this API\, it signifies the beginning of the process to handle the service request within the system\.
-
-**Limitations**
-
-POST: The name of the path '/ProcessingOrder/Initiate' should be updated to follow REST best practices by using nouns to describe resources\. It could be renamed to something like '/orders' to better represent the resource being acted upon by the operation\.
 
 ## GET: /ProcessingOrder/\{processingorderid\}/Notify
 
@@ -110,12 +72,6 @@ The Processing Order Service Domain handles the processing of a service request 
 
 This BIAN API path allows you to retrieve information about a specific processing order by providing the processing order ID\. The service is designed to handle requests from automated processes\, not directly from customers\. It is meant to notify the processing order procedure and obtain details related to the order processing\. By using this API\, you can access information related to the processing of a service request within the Processing Order Service Domain\.
 
-**Limitations**
-
-GET: The name of the path '/ProcessingOrder/\{processingorderid\}/Notify' could be named using REST best practices as follows: 
-
-'/processing\-orders/\{processingorderid\}/notifications'
-
 ## PUT: /ProcessingOrder/\{processingorderid\}/Request
 
 :::info Path
@@ -129,12 +85,6 @@ The Processing Order Service Domain handles the processing of a service request 
 **Documentation**
 
 This API path allows you to update an existing resource related to processing an order\. Specifically\, it is used for handling service requests that are received through a secure channel from a known requester\, which is usually an automated process and not an individual customer\. The API facilitates the processing of orders within the service domain\.
-
-**Limitations**
-
-PUT: The name of the path should be:
-
-'/orders/\{processingorderid\}/request'
 
 ## GET: /ProcessingOrder/\{processingorderid\}/Retrieve
 
@@ -150,12 +100,6 @@ The Processing Order Service Domain handles the processing of a service request 
 
 This BIAN API path allows you to retrieve information about a specific processing order by providing the processing order ID as a parameter in the request\. The processing order service domain handles the processing of service requests that are received through a secure channel from a known requestor\, which is often an automated system rather than an individual customer\. By using this API\, you can access details related to a particular processing order in the system\.
 
-**Limitations**
-
-GET: The RESTful path should be named as follows: 
-
-'/processingorders/\{processingorderid\}'
-
 ## PUT: /ProcessingOrder/\{processingorderid\}/Update
 
 :::info Path
@@ -169,9 +113,5 @@ The Processing Order Service Domain handles the processing of a service request 
 **Documentation**
 
 This API path allows you to update an existing processing order by providing the processing order ID\. The service is typically used by automated processes rather than individual customers\, and it helps handle service requests securely\. By using a PUT request method\, you can make changes to the processing order within the Processing Order Service Domain\.
-
-**Limitations**
-
-PUT: The name of the path should ideally be \`/orders/\{orderId\}\` for following REST best practices\.
 
 > **Disclaimer:** This guide was created with OpenAI and might not be perfect. Enjoy the insights, but double-check important details!

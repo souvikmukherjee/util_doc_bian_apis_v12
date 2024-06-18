@@ -16,10 +16,6 @@ This service domain provides a service to interpret regulatory requirements\, pr
 
 This API path allows you to initiate a compliance evaluation assessment within the Regulatory Compliance service domain\. It helps in interpreting regulatory requirements\, offering guidance\, and setting up a series of compliance tests for various banking activities\. By making a POST request to this path\, you can create a new compliance evaluation assessment to ensure that the bank operations meet regulatory standards and requirements\.
 
-**Limitations**
-
-POST: Based on REST best practices\, the name of the path '/RegulatoryCompliance/Evaluate' could be simplified to '/regulatory\-compliance/evaluation'\. It is advisable to use lowercase letters and hyphens to separate words in the URL path for better readability and consistency\.
-
 ## PUT: /RegulatoryCompliance/\{regulatorycomplianceid\}/Update
 
 :::info Path
@@ -33,14 +29,6 @@ This service domain provides a service to interpret regulatory requirements\, pr
 **Documentation**
 
 This API path allows users to update the details or content for an ongoing compliance assessment within the Regulatory Compliance service domain\. Users can provide new information\, make corrections\, or update existing data related to regulatory requirements\, guidance\, and compliance testing for various banking activities\.
-
-**Limitations**
-
-PUT: The name of the path following REST best practices could be: 
-
-PUT /RegulatoryCompliance/\{regulatorycomplianceid\} 
-
-The HTTP method PUT is used when updating a resource in RESTful API design\.
 
 ## PUT: /RegulatoryCompliance/\{regulatorycomplianceid\}/Request
 
@@ -56,14 +44,6 @@ This service domain provides a service to interpret regulatory requirements\, pr
 
 This API path allows you to update an existing resource related to regulatory compliance\. Specifically\, it is used to request a review or adjudication for an assessment pertaining to regulatory compliance within a bank's activities\. It helps in interpreting regulatory requirements\, providing guidance\, and implementing compliance tests to ensure the bank is meeting necessary regulations\.
 
-**Limitations**
-
-PUT: One appropriate name for the path would be:
-
-\`/regulatoryCompliances/\{regulatorycomplianceid\}/requests\` 
-
-Remember to use lowercase letters and plural nouns to adhere to REST best practices\.
-
 ## GET: /RegulatoryCompliance/\{regulatorycomplianceid\}/Retrieve
 
 :::info Path
@@ -77,13 +57,5 @@ This service domain provides a service to interpret regulatory requirements\, pr
 **Documentation**
 
 This BIAN API path allows you to retrieve details and content from an active compliance assessment related to regulatory compliance\. It provides access to information and guidance on regulatory requirements\, and helps define and implement regulatory compliance tests for various activities within a bank\.
-
-**Limitations**
-
-GET: The name of the path should be: 
-
-\`/regulatory\-compliance/\{regulatorycomplianceid\}\`
-
-This follows REST best practices by using lowercase letters\, separating words with hyphens\, and using a resource\-centric naming convention\.
 
 > **Disclaimer:** This guide was created with OpenAI and might not be perfect. Enjoy the insights, but double-check important details!
